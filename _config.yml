@@ -255,3 +255,5 @@ defaults:
       related: true
       # category: undefined
       toc: true
+      toc_label: "My Table of Contents"
+      toc_icon: "bars"
