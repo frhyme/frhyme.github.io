@@ -1,3 +1,10 @@
+---
+title: 
+category: 
+tags: python
+
+---
+
 # buildPalindrome
 
 ## Problem
