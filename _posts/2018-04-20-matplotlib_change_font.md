@@ -49,7 +49,7 @@ plt.show()
 
 
 
-![png](/assets/images/markdown_img/matplotlib_change_font_output_1_0.png)
+![png](/assets/images/markdown_img/matplotlib_change_font_output_1_1.png)
 
 
 ## 어떻게 font를 변경할 수 있나요? 
