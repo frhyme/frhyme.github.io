@@ -1,5 +1,5 @@
 ---
-title: mergeTwoLinkedList(l1, l2)
+title: Algorithm - mergeTwoLinkedList(l1, l2)
 category: algorithm
 tags: python linked-list algorithm code-fight
 

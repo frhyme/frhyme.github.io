@@ -1,5 +1,5 @@
 ---
-title: python - numpy
+title: python lib) `numpy` 기본적인 사용법
 category: python-lib
 tags: python python-lib numpy 
 

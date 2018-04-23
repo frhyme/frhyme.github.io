@@ -1,5 +1,5 @@
 ---
-title: singlePointOfFailure(connections)
+title: Algorithm - singlePointOfFailure(connections)
 category: algorithm
 tags: python graph algorithm networkx codefight
 

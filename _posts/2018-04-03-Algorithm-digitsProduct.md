@@ -1,5 +1,5 @@
 ---
-title: digitsProduct(product)
+title: Algorithm - digitsProduct(product)
 category: algorithm 
 tags: python algorithm codefight dictionary list
 

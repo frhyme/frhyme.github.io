@@ -1,5 +1,5 @@
 ---
-title: member testing in python
+title: python-basic) member testing in python
 category: python-basic
 tags: python python-basic member-testing list set
 

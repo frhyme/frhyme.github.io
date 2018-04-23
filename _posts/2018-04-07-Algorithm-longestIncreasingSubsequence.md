@@ -1,5 +1,5 @@
 ---
-title: longestIncreasingSubsequence(sequence)
+title: Algorithm - longestIncreasingSubsequence(sequence)
 category: algorithm
 tags: python dynamic-programming algorithm codefight
 

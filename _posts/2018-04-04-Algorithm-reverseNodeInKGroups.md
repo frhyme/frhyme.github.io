@@ -1,5 +1,5 @@
 ---
-title: reverseNodesInKGroups(head, k)
+title: Algorithm - reverseNodesInKGroups(head, k)
 category: algorithm
 tags: python linked-list algorithm reversing code-fight
 

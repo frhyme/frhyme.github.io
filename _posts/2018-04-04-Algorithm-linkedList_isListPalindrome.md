@@ -1,5 +1,5 @@
 ---
-title: isListPalindrome(l)
+title: Algorithm - isListPalindrome(l)
 category: algorithm
 tags: python algorithm palindrome linked-list code-fight
 

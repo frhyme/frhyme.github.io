@@ -1,5 +1,5 @@
 ---
-title: removeKFromList(l, k)
+title: Algorithm - removeKFromList(l, k)
 category: algorithm
 tags: python linked-list code-fight
 

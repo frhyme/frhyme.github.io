@@ -1,5 +1,5 @@
 ---
-title: rotateMatrix
+title: Algorithm - rotateMatrix
 category: algorithm
 tags: python algorithm codefight rotation matrix 
 

@@ -1,5 +1,5 @@
 ---
-title: Excel + python(in Pandas)
+title: python에서 `pandas`를 이용해서 excel을 읽어봅시다
 category: python-lib
 tags: python python-lib excel pandas OrderedDict
 

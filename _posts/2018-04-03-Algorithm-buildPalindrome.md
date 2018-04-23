@@ -1,5 +1,5 @@
 ---
-title: buildPalindrome
+title: Algorithm - buildPalindrome
 category: algorithm 
 tags: python algorithm palindrome string codefight
 

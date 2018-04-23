@@ -1,5 +1,5 @@
 ---
-title: fillingBlocks(n)
+title: Algorithm - fillingBlocks(n)
 category: algorithm
 tags: python algorithm dynamic-programming codefight recursion
 

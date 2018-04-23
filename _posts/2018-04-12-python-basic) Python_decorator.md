@@ -1,5 +1,5 @@
 ---
-title: Decorator in python
+title: python-basic) Decorator in python
 category: python-basic
 tags: python python-basic decorator functools
 

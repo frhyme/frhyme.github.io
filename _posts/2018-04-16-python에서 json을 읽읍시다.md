@@ -1,5 +1,5 @@
 ---
-title: read json file in python
+title: python-basic) python에서 json을 읽어봅시다.
 category: python-lib
 tags: python python-lib json 
 

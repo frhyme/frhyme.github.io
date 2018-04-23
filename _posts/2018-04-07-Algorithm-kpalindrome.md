@@ -1,5 +1,5 @@
 ---
-title: kpalindrome
+title: Algorithm - kpalindrome
 category: algorithm
 tags: python algorithm codefight dynamic-programming palindrome 
 

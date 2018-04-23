@@ -1,5 +1,5 @@
 ---
-title: regularExpressionMatching(s, p)
+title: Algorithm - regularExpressionMatching(s, p)
 category: algorithm
 tags: python algorithm dynamic-programming codefight regular-expression
 

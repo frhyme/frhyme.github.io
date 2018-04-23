@@ -1,5 +1,5 @@
 ---
-title: isTreeSymmetric(t)
+title: Algorithm - isTreeSymmetric(t)
 category: algorithm
 tags: python binary-tree algorithm codefight 
 

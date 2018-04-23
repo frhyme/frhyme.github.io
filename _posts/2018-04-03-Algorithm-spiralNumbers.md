@@ -1,5 +1,5 @@
 ---
-title: spiralNumbers(n)
+title: Algorithm - spiralNumbers(n)
 category: algorithm
 tags: python algorithm matrix matrix-traversal code-fight
 

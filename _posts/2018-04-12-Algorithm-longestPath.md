@@ -1,5 +1,5 @@
 ---
-title: longestPath(fileSystem)
+title: Algorithm - longestPath(fileSystem)
 category: algorithm
 tags: python codefight algorithm tree 
 

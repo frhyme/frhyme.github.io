@@ -1,5 +1,5 @@
 ---
-title: dynamic programming - basic
+title: Algorithm - dynamic programming - basic
 category: algorithm 
 tags: python algorithm dynamic-programming codefight recursion
 

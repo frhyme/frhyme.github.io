@@ -1,5 +1,5 @@
 ---
-title: nltk - wordnet 사용하기 
+title: python-lib) `nltk` 에서 영단어 온톨로지(`wordnet`) 사용하기
 category: python-lib
 tags: python nltk python-lib wordnet ontology
 
