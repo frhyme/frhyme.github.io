@@ -1,7 +1,7 @@
 ---
 title: Excel + python(in Pandas)
 category: python-lib
-tags: python python-lib excel pandas OrderedDict 
+tags: python python-lib excel pandas OrderedDict
 
 ---
 
