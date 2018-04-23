@@ -1,4 +1,9 @@
-# spiralNumbers(n)
+---
+title: spiralNumbers(n)
+category: algorithm
+tags: python algorithm matrix matrix-traversal code-fight
+
+---
 
 ## Problem
 
@@ -9,19 +14,28 @@
 
 - 1부터 입력받은 정수까지를 n`*`n matrix에 시계방향으로 배치하고 해당 매트릭스를 리턴하는 함수를 말한다. 
 
+#### code 
+
 ```python
 for row in spiralNumbers(2):
     print(row)
 ```
+
+#### code result
+
 ```
 [1, 2]
 [4, 3]
 ```
 
+#### code 
+
 ```python
 for row in spiralNumbers(4):
     print(row)
 ```
+#### code result 
+
 ```
 [1, 2, 3, 4]
 [12, 13, 14, 5]

@@ -1,4 +1,9 @@
-# singlePointOfFailure(connections)
+---
+title: singlePointOfFailure(connections)
+category: algorithm
+tags: python graph algorithm networkx codefight
+
+---
 
 ## Problem 
 

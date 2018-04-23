@@ -1,5 +1,9 @@
+---
+title: github 라이센스를 골라봅시다. 
+category: others
+tags: github license beerware
 
-# 라이센스를 골라봅시다. 
+---
 
 ## intro
 

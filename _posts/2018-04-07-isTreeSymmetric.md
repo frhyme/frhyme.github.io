@@ -1,4 +1,9 @@
-# isTreeSymmetric(t)
+---
+title: isTreeSymmetric(t)
+category: algorithm
+tags: python binary-tree algorithm codefight 
+
+---
 
 ## Problem 
 

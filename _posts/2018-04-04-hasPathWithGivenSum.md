@@ -1,4 +1,9 @@
-# hasPathWithGivenSum(t, s)
+---
+title: hasPathWithGivenSum(t, s)
+category: algorithm
+tags: python binary-tree algorithm code-fight
+
+---
 
 ## Problem
 

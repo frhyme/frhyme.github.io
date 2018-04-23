@@ -1,10 +1,16 @@
-# arrayMaxConsecutiveSum(inputArray, k))
+---
+title: arrayMaxConsecutiveSum(inputArray, k))
+category: algorithm
+tags: python algorithm list iterator codefight
+
+---
 
 ## Problem
 - size `l`의 배열이 있을 때, 해당 배열로부터는 크기 `k`의 연속된 배열을 `l-k+1`개 만들 수 있다. 
 - 만들 수 있는 배열 중에서 가장 큰 합은 무엇인가? 
 
 ## solution
+
 ### slower, but pythonic way
 
 - 사실 아래 방법이 보통 파이썬을 쓰는 사람들이 많이 하는 방법이긴 합니다만, 
@@ -19,7 +25,7 @@ def arrayMaxConsecutiveSum1(inputArray, k):
 
 ### little better, with generator
 
-- list로 만들어 주지 않고, generator를 사용해서 k 크기의 배열을 필요할 때마다 생성해서 가져오는 식으로 처리했습니다. 
+- list로 만들어 주지 않고, generator를 사용해서 `k` 크기의 배열을 필요할 때마다 생성해서 가져오는 식으로 처리했습니다. 
 - 속도 자체도 위의 코드에 비해서 4배 정도(크기 10000의 리스트에 대해) 빨라지고, memory usage도 훨씬 줄어듭니다. 
 - 하지만, 생각해보면, 연속된 배열을 만들 때마다, 이전에 만든 배열과 새로 만들어진 배열은 대부분의 원소가 같을텐데, 매번 새로운 배열을 만들어줄 필요가 있나? 하는 생각이 듭니다. 
 - 따라서, 다른 방식을 취해볼게요. 
@@ -33,6 +39,7 @@ def arrayMaxConsecutiveSum2(inputArray, k):
         m = m if m>t else t
     return m
 ```
+
 ### intelligent way
 
 - 연속된 수열이기 때문에, 새로 만들어지는 수열(`new_xs`)은 기존 수열(xs)에서 xs[1:]에 새로운 원소를 하나 추가하는 형태를 가집니다. 

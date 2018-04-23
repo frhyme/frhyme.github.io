@@ -1,4 +1,9 @@
-# regularExpressionMatching(s, p)
+---
+title: regularExpressionMatching(s, p)
+category: algorithm
+tags: python algorithm dynamic-programming codefight regular-expression
+
+---
 
 ## Problem
 

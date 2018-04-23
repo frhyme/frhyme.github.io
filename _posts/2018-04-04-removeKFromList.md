@@ -1,4 +1,9 @@
-# removeKFromList(l, k)
+---
+title: removeKFromList(l, k)
+category: algorithm
+tags: python linked-list code-fight
+
+---
 
 ## Problem 
 

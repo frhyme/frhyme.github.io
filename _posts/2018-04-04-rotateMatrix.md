@@ -1,4 +1,9 @@
-# rotateMatrix
+---
+title: rotateMatrix
+category: algorithm
+tags: python algorithm codefight rotation matrix 
+
+---
 
 ## Problem
 

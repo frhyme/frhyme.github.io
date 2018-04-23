@@ -1,4 +1,9 @@
-# longestPath(fileSystem)
+---
+title: longestPath(fileSystem)
+category: algorithm
+tags: python codefight algorithm tree 
+
+---
 
 ## Problem
 

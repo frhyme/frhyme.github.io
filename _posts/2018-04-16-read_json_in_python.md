@@ -1,4 +1,11 @@
-# read json file in python
+---
+title: read json file in python
+category: python-lib
+tags: python python-lib json 
+
+---
+
+## intro
 
 - 간단하게 파이썬에서 json 파일을 읽는 방법을 설명합니당
 - json 파일은 파이썬에서 딕셔너리처럼 key-value pair로 구성되어 있어서, 간단하게 변환할 수 있을 것 같은데, 간단하게 변환해주지는 않습니당. 

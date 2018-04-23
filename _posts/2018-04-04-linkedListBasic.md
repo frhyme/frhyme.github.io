@@ -1,5 +1,9 @@
+---
+title: Linked list in Python(basic)
+category: python-basic
+tags: python linked-list python-basic
 
-# Linked list in Python(basic)
+---
 
 ## intro
 

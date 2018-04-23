@@ -1,8 +1,13 @@
+---
+title: python with iterators - itertools, functools
+category: python-basic 
+tags: python-basic python python-lib iterator itertools functools
 
-# python with iterators - itertools, functools
-by frhyme💩
+---
+
 
 ## remind
+
 - 대략 1년전에 만들었던 자료를 다시 올립니다. 과거에는 `itertools`가 좋은 라이브러리라고 생각했었는데, 이제는 그냥 필요할때, generator로 직접 정의해서 쓰는 게 더 편해서, 거의 쓰지 않습니다. 
     - 다만, `chain.from_iterable`이나, `combinations`의 경우는 빨라서 쓰는 경우가 좀 있습니다. 
     
@@ -50,6 +55,7 @@ print(iter(iter_lst))
 print(iter(iter_lst)[0]) # iteragor를 integer position으로 접근하면 error occur
 ```
 
+```
     ['a', 'b']
     <list_iterator object at 0x00000158531F0C18>
 
@@ -66,7 +72,7 @@ print(iter(iter_lst)[0]) # iteragor를 integer position으로 접근하면 error
 
 
     TypeError: 'list_iterator' object is not subscriptable
-
+```
 
 - 앞서 말한 것처럼, `iterator`의 각 요소는 `next`로 접근할 수 있으며, 값이 더 이상 없을 경우에는, 'raise StopIteration'
 
@@ -77,6 +83,7 @@ while True:
     print(next(a))
 ```
 
+```
     1
     2
     3
@@ -94,7 +101,7 @@ while True:
 
 
     StopIteration:
-
+```
 
 - 아니면 iterator를 list로 바꾸어서 subcriptable하게 만든 다음, integer position으로 접근해도 됨
      - subscriptable: It basically means that the object implements the __getitem__() method. In other words, it describes objects that are "containers", meaning they contain other objects. This includes lists, tuples, and dictionaries.
@@ -105,8 +112,9 @@ a = iter([1,2,3])
 print(list(a)[1])
 ```
 
+```
     2
-
+```
 
 ### iterator를 지원하는 자료형(iter()가 가능한 자료형)
 
@@ -133,8 +141,9 @@ temp = f.readlines()
 print(type(temp), temp)
 ```
 
+```
     <class 'list'> ['0번째 줄입니다\n', '1번째 줄입니다\n', '2번째 줄입니다\n']
-
+```
 
 - f 자체가 `iterator`이며 `next`를 이용해서 라인 바이 라인으로 부를 수 있음.
 
@@ -151,12 +160,13 @@ while True :
 f.close()
 ```
 
+```
     0번째 줄입니다
 
     1번째 줄입니다
 
     2번째 줄입니다
-
+```
 
 
 ### Generator
@@ -177,12 +187,13 @@ for i in range(0, 5):
     print(next(a))
 ```
 
+```
     999
     998
     997
     996
     995
-
+```
 
 ### Generator expressions and list comprehensions
 
@@ -204,12 +215,13 @@ while True:
         break
 ```
 
+```
     <generator object <genexpr> at 0x000001585326DDB0> <class 'generator'>
     ['a', 'b', 'c'] <class 'list'>
     a
     b
     c
-
+```
 
 - 이건 그냥 심심해서 해보는 비교임
 - 존나 긴 등차수열에서 맨 앞 다섯 개의 수만 불러내는 (쓸데없는) 짓을 할때, 시간측면에서 무엇이 가장 합리적인가
@@ -231,13 +243,14 @@ t_range = time.time() - t_range
 print(t_range)
 ```
 
+```
     10
     9
     8
     7
     6
     0.0005004405975341797
-
+```
 
 
 ```python
@@ -250,13 +263,14 @@ t_lst = time.time() - t_lst
 print(t_lst)
 ```
 
+```
     10
     9
     8
     7
     6
     8.14093542098999
-
+```
 
 
 ```python
@@ -269,13 +283,14 @@ t_iter_lst = time.time() - t_iter_lst
 print(t_iter_lst)
 ```
 
+```
     10
     9
     8
     7
     6
     11.865921974182129
-
+```
 
 
 ```python
@@ -288,13 +303,14 @@ t_iter_range = time.time() - t_iter_range
 print(t_iter_range)
 ```
 
+```
     10
     9
     8
     7
     6
     1.8047053813934326
-
+```
 
 
 ```python
@@ -312,13 +328,14 @@ t_gen = time.time() - t_gen
 print(t_gen)
 ```
 
+```
     10
     9
     8
     7
     6
     0.0004999637603759766
-
+```
 
 - generator가 짱 먹음.
 - generator <<<<<<<<< iter(range) = range < list < iter(list)
@@ -344,10 +361,12 @@ iter_lst = (i for i in range(0, 10))
 print(3 in iter_lst)
 ```
 
+```
     min: 0
     max: 9
     False
     True
+```
 
 
 - 조금 복잡하게 해봅시다.
@@ -371,11 +390,12 @@ while True:
         break
 ```
 
+```
     <class 'map'> <map object at 0x0000015853298828>
     A
     B
     C
-
+```
 
 여기서는 binary operator
 
@@ -394,11 +414,12 @@ while True:
         break
 ```
 
+```
     <class 'map'> <map object at 0x0000015853298CC0>
     8
     32
     72
-
+```
 
 - 분명히 lazy evaluation이 더 좋다고 했으니까, iterator를 return 하는 map을 써서 하면 존나 빠르겠지??
 - 리스트의 원소마다 lower 함수를 7번 먹이는 (쓸데없는) 짓을 하는데, 하나는 map을 써서 하고, 다른 하나는 일일이 하나씩 바꿔준다.
@@ -452,6 +473,7 @@ plt.savefig("lst_iter_comparison.svg")
 plt.savefig("lst_iter_comparison.png")
 ```
 
+```
            iter_t      lst_t
     0    0.015510   0.014509
     1    0.000000   0.001001
@@ -473,7 +495,7 @@ plt.savefig("lst_iter_comparison.png")
     17  25.116780  25.245859
     18  50.883569  49.693537
     19  99.768218  97.382560
-
+```
 
 
 
@@ -482,8 +504,8 @@ plt.savefig("lst_iter_comparison.png")
 - 두 가지 정도의 간단한 가설을 세울 수 있음.<br>
 1) list가 활용될 때, 이미 lazy evaluation이 지원됨.<br>
 2) python에서 지원하는 lazy evalution에 문제가 있음.<br>
-3) 내가 사용한 data의 사이즈(2\** 25) 가 충분히 scalable하지 않음
-  - 그런데, 2\**25면 1000조 사이즈임
+3) 내가 사용한 data의 사이즈(2\*\* 25) 가 충분히 scalable하지 않음
+  - 그런데, 2 \*\* 25면 1000조 사이즈임
 4) functional programming을 제대로 쓰려면, 분산형 컴퓨팅 부분을 처리해줘야 하는데, 여기서는 그 부분이 고려되지 못함
 
 - 좀 더 자세하게 본다면, 좋겠지만, 귀찮고, 앞으로 큰 문제가 없는 한 그냥 list를 쓰겠음.
@@ -528,11 +550,12 @@ print(next(a))
 print(next(a))
 ```
 
+```
     <filter object at 0x000001580722F0F0>
     0
     2
     4
-
+```
 
 - `enumerate`: iterable한 자료구조에 대해서 순서를 포함한 원소를 가지는 iterator를 return
 
@@ -545,10 +568,11 @@ print(next(a))
 print(next(a))
 ```
 
+```
     (0, 10)
     (1, 11)
     (2, 12)
-
+```
 
 - 사실 굳이 iterator를 쓰지 않고, list로 처리하는게 더 편할 때도 있음.
 - 그럴때는 그냥 list를 붙여준다.
@@ -560,9 +584,10 @@ print(a)
 print(list(a))
 ```
 
+```
     <map object at 0x00000158071F8A20>
     [2, 3, 4, 5, 6, 7, 8, 9, 10]
-
+```
 
 ## itertools
 
@@ -589,6 +614,7 @@ for i in range(0, 5): # 만약 여기서 range를 정하지 않는다면, 무한
     print( next(count_iter) )
 ```
 
+```
     using itertools
     count(10, 3)
     10
@@ -596,7 +622,7 @@ for i in range(0, 5): # 만약 여기서 range를 정하지 않는다면, 무한
     16
     19
     22
-
+```
 
 - 사실 itertools를 굳이 쓸 필요 없기는 함...쭈글쭈글....안 써도 큰 차이 없음...
 
@@ -609,14 +635,14 @@ end = s+5*step
 for i in range(s, end, step):
     print(i)
 ```
-
+```
     not using itertools
     10
     13
     16
     19
     22
-
+```
 
 #### itertools.cycle()
 
@@ -631,7 +657,7 @@ print(b)
 for i in range(0, 5):
     print(next(b))
 ```
-
+```
     using itertools
     <itertools.cycle object at 0x000001580722C988>
     a
@@ -639,7 +665,7 @@ for i in range(0, 5):
     c
     a
     b
-
+```
 
 - 사실 그냥 내가 원하는 만큼 곱해서 처리하는게 나을 수도 있음...쭈글쭈글...
 
@@ -650,14 +676,14 @@ a=a*3
 for i in range(0, 5):
     print(a[i])
 ```
-
+```
     not using itertools
     a
     b
     c
     a
     b
-
+```
 
 #### itertools.accumulate()
 
@@ -676,12 +702,13 @@ b = ["a","b","c"]
 print( list(ittls.accumulate(b)) )
 ```
 
+```
     using itertools
     [1, 2, 3, 4, 5]
     [1, 3, 6, 10, 15]
     [1, 2, 6, 24, 120]
     ['a', 'ab', 'abc']
-
+```
 
 - 다른 경우들과 유사하게, itertools를 쓰지 않더라도 비슷하게 처리할 수 있기는 함.
 
@@ -695,13 +722,13 @@ def temp_def(lst):
 print( [ temp_def(a[:i+1]) for i in range(0, len(a))] )
 print( [ "".join(b[:i+1]) for i in range(0, len(b))] )
 ```
-
+```
     not using itertools
     [1, 2, 3, 4, 5]
     [1, 3, 6, 10, 15]
     [1, 2, 6, 24, 120]
     ['a', 'ab', 'abc']
-
+```
 
 #### itertools.chain.from_iterable
 
@@ -715,11 +742,11 @@ print(x)
 print("using itertools")
 print(list(ittls.chain.from_iterable(x)))
 ```
-
+```
     [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, 10, 11], [12, 13, 14]]
     using itertools
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
-
+```
 
 - 사실 itertools을 쓰지 않아도 대략 비슷한 걸 할 수 있음.
 
@@ -734,10 +761,11 @@ print(k)
 print(k==list(ittls.chain.from_iterable(x)))
 ```
 
+```
     not using itertools
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
     True
-
+```
 
 - 원래는 이러한 함수를 python2에서는 reduce가 지원했으나, 지금은 사라짐
     - python만든 사람이 좆같다고 없애버림
@@ -752,11 +780,12 @@ print( functools.reduce(lambda a, b: a+b, x) )
 print( functools.reduce(lambda a, b: a+b, x)==k ==list(ittls.chain.from_iterable(x)))
 ```
 
+```
     using functools
     [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, 10, 11], [12, 13, 14]]
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
     True
-
+```
 
 #### itertools.combination()
 
@@ -772,13 +801,13 @@ print("using itertools")
 for i in range(1, len(a)+1):
     print( list(ittls.combinations(a, i)) )
 ```
-
+```
     using itertools
     [('a',), ('a',), ('b',), ('c',)]
     [('a', 'a'), ('a', 'b'), ('a', 'c'), ('a', 'b'), ('a', 'c'), ('b', 'c')]
     [('a', 'a', 'b'), ('a', 'a', 'c'), ('a', 'b', 'c'), ('a', 'b', 'c')]
     [('a', 'a', 'b', 'c')]
-
+```
 
 #### itertools.combinations_with_replacement()
 
@@ -792,11 +821,12 @@ for i in range(1, len(a)+1):
     print( list(ittls.combinations_with_replacement(a, i)) )
 ```
 
+```
     using itertools
     [('a',), ('b',), ('c',)]
     [('a', 'a'), ('a', 'b'), ('a', 'c'), ('b', 'b'), ('b', 'c'), ('c', 'c')]
     [('a', 'a', 'a'), ('a', 'a', 'b'), ('a', 'a', 'c'), ('a', 'b', 'b'), ('a', 'b', 'c'), ('a', 'c', 'c'), ('b', 'b', 'b'), ('b', 'b', 'c'), ('b', 'c', 'c'), ('c', 'c', 'c')]
-
+```
 
 #### itertools.product()
 
@@ -813,9 +843,11 @@ print(len(k))
 print(k)
 ```
 
+```
     using itertools
     64
     [('a', 'A', 1), ('a', 'A', 2), ('a', 'A', 3), ('a', 'A', 4), ('a', 'B', 1), ('a', 'B', 2), ('a', 'B', 3), ('a', 'B', 4), ('a', 'C', 1), ('a', 'C', 2), ('a', 'C', 3), ('a', 'C', 4), ('a', 'D', 1), ('a', 'D', 2), ('a', 'D', 3), ('a', 'D', 4), ('b', 'A', 1), ('b', 'A', 2), ('b', 'A', 3), ('b', 'A', 4), ('b', 'B', 1), ('b', 'B', 2), ('b', 'B', 3), ('b', 'B', 4), ('b', 'C', 1), ('b', 'C', 2), ('b', 'C', 3), ('b', 'C', 4), ('b', 'D', 1), ('b', 'D', 2), ('b', 'D', 3), ('b', 'D', 4), ('c', 'A', 1), ('c', 'A', 2), ('c', 'A', 3), ('c', 'A', 4), ('c', 'B', 1), ('c', 'B', 2), ('c', 'B', 3), ('c', 'B', 4), ('c', 'C', 1), ('c', 'C', 2), ('c', 'C', 3), ('c', 'C', 4), ('c', 'D', 1), ('c', 'D', 2), ('c', 'D', 3), ('c', 'D', 4), ('d', 'A', 1), ('d', 'A', 2), ('d', 'A', 3), ('d', 'A', 4), ('d', 'B', 1), ('d', 'B', 2), ('d', 'B', 3), ('d', 'B', 4), ('d', 'C', 1), ('d', 'C', 2), ('d', 'C', 3), ('d', 'C', 4), ('d', 'D', 1), ('d', 'D', 2), ('d', 'D', 3), ('d', 'D', 4)]
+```
 
 
 #### itertools.permutations()
@@ -830,7 +862,7 @@ for i in range(1, len(a)+1):
     print("comb:", list(ittls.combinations(a, i)))
     print("perm:", list(ittls.permutations(a, i)))
 ```
-
+```
     using itertools
     comb: [('a',), ('b',), ('c',)]
     perm: [('a',), ('b',), ('c',)]
@@ -838,6 +870,7 @@ for i in range(1, len(a)+1):
     perm: [('a', 'b'), ('a', 'c'), ('b', 'a'), ('b', 'c'), ('c', 'a'), ('c', 'b')]
     comb: [('a', 'b', 'c')]
     perm: [('a', 'b', 'c'), ('a', 'c', 'b'), ('b', 'a', 'c'), ('b', 'c', 'a'), ('c', 'a', 'b'), ('c', 'b', 'a')]
+```
 
 ### 결론
 

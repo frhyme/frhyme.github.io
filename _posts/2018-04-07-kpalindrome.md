@@ -1,4 +1,9 @@
-# kpalindrome
+---
+title: kpalindrome
+category: algorithm
+tags: python algorithm codefight dynamic-programming palindrome 
+
+---
 
 ## Problem
 
@@ -25,6 +30,7 @@ def isPalindrome(s):
             return s[:len(s)//2]==s[len(s)//2:][::-1]
         else:
             return s[:len(s)//2]==s[len(s)//2+1:][::-1]
+            
 def kpalindrome(s, k):
     if len(s)<k:
         return True

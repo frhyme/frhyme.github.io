@@ -1,5 +1,9 @@
+---
+title: Decorator in python
+category: python-basic
+tags: python python-basic decorator functools
 
-## Decorator in python
+--- 
 
 ### intro
 

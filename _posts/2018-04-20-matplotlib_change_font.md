@@ -1,5 +1,9 @@
+---
+title: matplotlib 폰트 변경하기 
+category: python-lib
+tags: python python-lib matplotlib 
 
-# matplotlib 폰트 변경하기 
+---
 
 ## intro. 
 

@@ -1,4 +1,9 @@
-# longestIncreasingSubsequence(sequence)
+---
+title: longestIncreasingSubsequence(sequence)
+category: algorithm
+tags: python dynamic-programming algorithm codefight
+
+---
 
 ## Problem 
 

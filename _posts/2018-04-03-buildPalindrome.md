@@ -1,11 +1,9 @@
 ---
-title: 
-category: 
-tags: python
+title: buildPalindrome
+category: algorithm 
+tags: python algorithm palindrome string codefight
 
 ---
-
-# buildPalindrome
 
 ## Problem
 - 문자열 s 로부터 만들 수 있는 가장 짧은 Palindrome을 만들어주는 함수입니다. 

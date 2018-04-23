@@ -1,6 +1,9 @@
+---
+title: python - data structure
+category: python-basic
+tags: python python-basic collections data-structure python-basic
 
-# python - data structure
-
+---
 
 ## intro
 

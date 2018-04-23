@@ -1,5 +1,10 @@
+---
+title: python - numpy
+category: python-lib
+tags: python python-lib numpy 
 
-## python - numpy
+---
+
 
 - 아주 간단한 numpy 활용법을 정리했습니다. 
 

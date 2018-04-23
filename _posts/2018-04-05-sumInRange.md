@@ -1,4 +1,9 @@
-# sumInRange(nums, queries)
+---
+title: sumInRange(nums, queries)
+category: algorithm
+tags: python algorithm codefight summation
+
+---
 
 ## Problem
 

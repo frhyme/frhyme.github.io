@@ -1,5 +1,9 @@
+---
+title: nltk - wordnet 사용하기 
+category: python-lib
+tags: python nltk python-lib wordnet ontology
 
-# nltk - wordnet 사용하기 
+---
 
 ## intro
 

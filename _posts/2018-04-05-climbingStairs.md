@@ -1,4 +1,9 @@
-# dynamic programming - basic
+---
+title: dynamic programming - basic
+category: algorithm 
+tags: python algorithm dynamic-programming codefight recursion
+
+---
 
 ## intro
 
@@ -10,9 +15,9 @@
 
 - 아무튼, 아주 간단한 문제를 풀어봅시당. 
 
-# climbingStair(n)
+## climbingStair(n)
 
-## Problem
+### Problem
 
 - n 개의 계단이 있을 때, 사람은 1칸 씩 오르거나, 2칸씩 오를 수 있다. 계단을 올라갈 수 있는 방법의 수는 몇 가지인가? 라는 문제를 풀어보자. 
 	- 예를 들어서, 3개의 계단이 있을 경우, (1,1,1), (2,1), (1,2) 라는 세 가지 조합이 나올 수 있습니다. 따라서 3을 리턴하면 됩니다.
@@ -32,7 +37,7 @@
 		
 - 그래서 iterative한 형태로 바꿔줍니다. 
 
-### climbingStairs - recursive
+#### climbingStairs - recursive
 
 ```python
 def climbingStairs_recursive(n):
@@ -44,7 +49,7 @@ def climbingStairs_recursive(n):
         return climbingStairs_recursive(n-1)+climbingStairs_recursive(n-2)
 ```
 
-### climbingStairs - iterative
+#### climbingStairs - iterative
 
 ```python
 def climbingStairs_iterative(n):

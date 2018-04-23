@@ -1,5 +1,9 @@
+---
+title: python3 - functools
+category: python-lib
+tags: python python-lib functools functional-programming iterator
 
-# python3 - functools
+---
 
 ## intro 
 
@@ -30,10 +34,11 @@ print(sorted(test_lst, key=lambda x: x[0]))
 print(sorted(test_lst, key=lambda x: x[1]))
 ```
 
+```
     [(5, 'd'), (5, 'n'), (7, 'h'), (1, 'd'), (8, 's')]
     [(1, 'd'), (5, 'd'), (5, 'n'), (7, 'h'), (8, 's')]
     [(5, 'd'), (1, 'd'), (7, 'h'), (5, 'n'), (8, 's')]
-
+```
 
 ### binary comparator를 정의하는 경우 
 
@@ -62,6 +67,7 @@ def cmp_func(a, b):
 sorted(test_lst, key=cmp_to_key(cmp_func))# first one decreasing, second one increasing
 ```
 
+```
     [(3, 'd'), (3, 'b'), (3, 'c'), (1, 'c'), (2, 'c')]
 
 
@@ -69,7 +75,7 @@ sorted(test_lst, key=cmp_to_key(cmp_func))# first one decreasing, second one inc
 
 
     [(3, 'b'), (3, 'c'), (3, 'd'), (2, 'c'), (1, 'c')]
-
+```
 
 
 ### functools.reduce
@@ -87,10 +93,11 @@ print( reduce(lambda x, y: x+y, test_lst_lst) )
 print( reduce(list.__add__, test_lst_lst) )# same but more robust code
 ```
 
+```
     [[4, 7, 5], [1, 4, 5], [7, 1, 1], [9, 2, 3], [7, 3, 1]]
     [4, 7, 5, 1, 4, 5, 7, 1, 1, 9, 2, 3, 7, 3, 1]
     [4, 7, 5, 1, 4, 5, 7, 1, 1, 9, 2, 3, 7, 3, 1]
-
+```
 
 ### functools.partial
 
@@ -108,8 +115,9 @@ cube = partial(power, exponent=3)
 print(power(7, 2), square(7))
 ```
 
+```
     49 49
-
+```
 
 - 다른 방법으로 `closure`를 이용해서 정의할 수 도 있다. 
     - `closure`: 함수 안에 nested-함수를 정의하고, 이 nested-함수를 함수 내에서 리턴하면, 해당 nested-함수는 함수 외부에서도 잘 작동하게 된다. 이러한 것을 `closure`라고 한다. 
@@ -125,8 +133,9 @@ cube = power_func(3)
 print( square(7))
 ```
 
+```
     49
-
+```
 
 ### comparator completion 
 
@@ -149,7 +158,7 @@ b = student("222")
 print(a >= b) # not work 
 ```
 
-
+```
     ---------------------------------------------------------------------------
 
     TypeError                                 Traceback (most recent call last)
@@ -161,7 +170,7 @@ print(a >= b) # not work
     
 
     TypeError: unorderable types: student() >= student()
-
+```
 
 - 물론 아래처럼 `__ge__`를 정의하는 것도 방법
 
@@ -181,8 +190,9 @@ b = student("222")
 print(a >= b) # not work 
 ```
 
+```
     False
-
+```
 
 - 여기서는 `@total_ordering`를 첨부하여 손쉽게 해결함
 
@@ -202,5 +212,6 @@ b = student("222")
 print( a >= b )
 ```
 
+```
     False
-
+```

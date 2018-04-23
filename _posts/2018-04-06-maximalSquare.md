@@ -1,4 +1,9 @@
-# maximalSquare(matrix)
+---
+title: maximalSquare(matrix)
+category: algorithm
+tags: python algorithm codefight dynamic-programming
+
+---
 
 ## Problem
 

@@ -1,4 +1,9 @@
-# reverseNodesInKGroups(head, k)
+---
+title: reverseNodesInKGroups(head, k)
+category: algorithm
+tags: python linked-list algorithm reversing code-fight
+
+---
 
 ## Problem
 

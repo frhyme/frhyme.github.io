@@ -1,4 +1,9 @@
-# fillingBlocks(n)
+---
+title: fillingBlocks(n)
+category: algorithm
+tags: python algorithm dynamic-programming codefight recursion
+
+---
 
 ## Problem
 

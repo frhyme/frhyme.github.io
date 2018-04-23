@@ -1,4 +1,9 @@
-# sudoku(grid)
+---
+title: sudoku(grid)
+category: algorithm 
+tags: python algorithm sudoku matrix
+
+---
 
 ## Problem
 

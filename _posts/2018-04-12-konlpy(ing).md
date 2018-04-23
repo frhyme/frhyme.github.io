@@ -1,7 +1,11 @@
+---
+title: MacOS에서 `konlpy` 설치하고 사용하기(실패기)
+category: python-lib
+tags: python python-lib konlpy macOS jpype not-yet
 
-# MacOS에서 `konlpy` 설치하고 사용하기(실패기) - 180315 
+---
 
-frhyme
+## intro
 
 - 더 진행하기 전에, 현재로서는 실패한 상황입니다.
 - 'programmer.co.kr'에서 다른 분께서 해결했다는 것 같아서, 이를 다시 해보기 위해서 시도했지만, 여전히 실패했습니다. 
@@ -169,9 +173,8 @@ from konlpy.tag import Kkma
         - 이 때, jpype는 또 java에 대한 디펜던시가 있기 때문에 경우에 따라서 java도 다시 설치해줘야 하는 일들이 발생하고는 함.
     - setup.py로부터 설치를 했으나 잘 되지 않아서, pip로 다시 설치했으나 다음과 같은 에러메시지가 발생함
         - Command "python setup.py egg_info" failed with error code 1 in /private/tmp/pip-build-_pssfaui/JPype1-py3/
-    - 그냥 `conda install -c conda-forge jpype1`로 설치를 했음. 
+    - 그냥 `conda install -c conda-forge jpype1` 로 설치를 했음. 
         - http://jpype.readthedocs.io/en/latest/install.html
-
 - 그러니까 이제 jpype 는 import 하는데 문제가 없음. 
 
 

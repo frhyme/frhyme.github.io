@@ -1,10 +1,17 @@
-# digitsProduct(product)
+---
+title: digitsProduct(product)
+category: algorithm 
+tags: python algorithm codefight dictionary list
+
+---
 
 ## Problem
+
 - 특정한 수 `product`가 들어왔을 때, `product`의 인수 들을 조합해 만들 수 있는 가장 작은 수를 찾는 함수입니다. 
 - 이 문제는 약간 이해가 어려울 수 있어서, 예를 중심으로 설명합니다. 
 
 ### examples
+
 1. digitsProduct(2) ==> 2
 	- 2의 경우, 한자리수로 표현할 수 있기 때문에 그대로 2로 표현
 2. digitsProduct(16) ==> 28
@@ -23,6 +30,7 @@
 - `ExistPlus_Non1` 함수의 경우는 딕셔너리에 대해서 defaultdict의 역할을 비슷하게 한다. 
 		- 키 값이 이미 존재하면 +1, 없으면 1을 세팅해야 하는 경우가 아주 많은데, 파이썬에서는 이 부분이 종종 불편함.
 		- 또한, 파이썬으로 코딩할 때는 함수에서 리턴하는 경우가 많은데, dictionary, list는 다른 함수에서 argument로 읽어들일 때, `call by reference`로 진행된다. 따라서 해당 함수에서 굳이 리턴할 필요 없음. 
+
 ```python
 def ExistPlus_Non1(input_d, k):
     if k in input_d.keys():
@@ -49,6 +57,7 @@ def DestructNum(n):
 - DictToList의 경우 만들어진 딕셔너리를 리스트로 변환해주는 함수다. 
 	- {1:2, 3:2} 를 [1,1,3,3]으로 변환해준다. 
 - 또한 `IsPrimeAndOver10`의 경우 두자리가 넘는 소수가 있는지를 체크해주는 함수 
+
 ```python
 def DictToList(input_d):
     r = []

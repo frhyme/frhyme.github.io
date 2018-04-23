@@ -1,4 +1,9 @@
-# paintHouse(cost)
+---
+title: paintHouse(cost)
+category: algorithm
+tags: python algorithm codefight dynamic-programming
+
+---
 
 ## Problem
 
