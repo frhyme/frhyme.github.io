@@ -49,7 +49,7 @@ plt.show()
 
 
 
-![png](/img/matplotlib_change_font_output_1_0.png)
+![png](/assets/images/markdown_img/matplotlib_change_font_output_1_0.png)
 
 
 ## 어떻게 font를 변경할 수 있나요? 
@@ -136,11 +136,11 @@ plt.show()
 ```
 
 
-![png](http://frhyme.github.io/img/matplotlib_change_font_output_8_0.png)
+![png](/assets/images/markdown_img/matplotlib_change_font_output_8_0.png)
 
 
 
-![png](http://frhyme.github.io/img/matplotlib_change_font_output_8_1.png)
+![png](/assets/images/markdown_img/matplotlib_change_font_output_8_1.png)
 
 
 ### 2) font - default setting을 변경
@@ -161,7 +161,7 @@ plt.show()
 ```
 
 
-![png](http://frhyme.github.io/img/matplotlib_change_font_output_10_0.png)
+![png](/assets/images/markdown_img/matplotlib_change_font_output_10_0.png)
 
 
 - 아래를 보시면 뭐가 굉장히 많고 복잡한데, 귀찮은데, 다 무시하시고, `font.family`에 ['sans-serif']가 적용되어 있는 것만 보시면 됩니다. 
@@ -221,7 +221,7 @@ plt.show()
 ```
 
 
-![png](http://frhyme.github.io/img/matplotlib_change_font_output_15_0.png)
+![png](/assets/images/markdown_img/matplotlib_change_font_output_15_0.png)
 
 
 - 그런데 보면 minus sign이 깨지는 것을 알 수 있습니다. 
@@ -245,7 +245,7 @@ plt.show()
 ```
 
 
-![png](http://frhyme.github.io/img/matplotlib_change_font_output_18_0.png)
+![png](/assets/images/markdown_img/matplotlib_change_font_output_18_0.png)
 
 
 - 처음에는 rcParams를 변경해주면 minus sign이 제대로 되는 것을 모르고, 아래처럼 다른 방식으로 해결했습니다. 
@@ -274,7 +274,7 @@ plt.show()
 
 
 
-![png](http://frhyme.github.io/img/matplotlib_change_font_output_20_1.png)
+![png](/assets/images/markdown_img/matplotlib_change_font_output_20_1.png)
 
 
 ## 마무리
