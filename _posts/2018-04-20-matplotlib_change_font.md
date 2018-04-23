@@ -45,7 +45,7 @@ plt.show()
 ```
 
 
-![png](/img/matplotlib_change_font_output_1_0.png)
+![png](/_posts/img/matplotlib_change_font_output_1_0.png)
 
 
 
