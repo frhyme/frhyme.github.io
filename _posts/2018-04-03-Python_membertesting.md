@@ -1,12 +1,5 @@
 # member testing in python
 
----
-title: member testing in python
-category: python
-tags: python basic
-
----
-
 ## intro 
 
 - 코딩할 때 습관적으로 하는 것이 해당 자료 구조에 특정한 값이 있는지 없는지인데, 이를 member testing이라 한다. 

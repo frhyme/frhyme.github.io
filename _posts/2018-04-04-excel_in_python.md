@@ -3,7 +3,7 @@
 ## Intro
 
 - `Markdown`을 알기 전에는 공부하다가 공유하면 좋을 것이라고 생각되는 자료들을 ppt로 만드는 일이 많았습니다. 그래서 slideshare를 이용하곤 했는데, 그때 올리던 자료 중에서 유독, 조회수가 높은 자료가 있었는데 ***파이썬에서 엑셀 파일을 어떻게 읽을 수 있느냐***에 대한 내용이었습니다. 
-	- ![Python+excel in slideshare](https://www.slideshare.net/frhyme/python-excel)
+	- [Python+excel in slideshare](https://www.slideshare.net/frhyme/python-excel)
 - 이제는 깃헙블로그에 내용을 올리기로 했기 때문에, 해당 내용을 여기로 옮기고 보완해서 정리해보기로 했습니다.
 
 ## python vs. vba
