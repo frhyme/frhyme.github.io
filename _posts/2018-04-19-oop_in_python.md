@@ -1,7 +1,7 @@
 ---
 title: Object Oriented Programming in Python
 category: python-basic
-tags: python python-basic OOP, object-oriented-programming
+tags: python python-basic OOP object-oriented-programming
 
 ---
 
