@@ -22,12 +22,17 @@
   }
 }
 
+
 .archive__subtitle {
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
   font-size: $type-size-5;
   color: $muted-text-color;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 5px solid #111111;
+  color: $primary-color;
+  /*
+  아래 부분을 추가함
+  */
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -40,7 +45,6 @@
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
-
   a + a {
     opacity: 0.5;
   }

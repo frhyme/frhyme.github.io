@@ -5,12 +5,12 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "frhyme" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko"
-title                    : "frhyme_code"
-title_separator          : "-"
+title                    : "frhyme.code"
+title_separator          : ":"
 name                     : "Seunghoon Lee"
 description              : "study, code, fail and epic-fail"
 url                      : "https://frhyme.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -55,7 +55,7 @@ search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 
 # SEO Related
-google_site_verification :
+google_site_verification : 
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -87,7 +87,7 @@ author:
   name             : "frhyme"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "always doing another thing"
-  location         : "home sweet home"
+  location         : "south korea"
   email            : "freerhein@gmail.com"
   uri              :
   home             : "#" # null (default), "absolute or relative url to link to author home"
@@ -106,7 +106,7 @@ author:
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  stackoverflow    : "6773046/frhyme" # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
   twitter          :
@@ -249,11 +249,11 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true # true
       share: true
       related: true
       # category: undefined
       toc: true
-      toc_label: "My Table of Contents"
+      toc_label: "Contents"
       toc_icon: "bars"

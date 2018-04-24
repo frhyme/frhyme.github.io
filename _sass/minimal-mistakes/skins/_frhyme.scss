@@ -1,0 +1,42 @@
+/* ==========================================================================
+   frhyme skin
+   ========================================================================== */
+
+/* Colors */
+$background-color: #05442a !default;
+$text-color: #eaeaea !default;
+$primary-color: #000000 !default;
+$secondary-color: #999999 !default;
+$border-color: mix(#999999, $background-color, 20%) !default;
+$code-background-color: mix(#000, $background-color, 15%) !default;
+$code-background-color-dark: mix(#000, $background-color, 20%) !default;
+$form-background-color: mix(#000, $background-color, 15%) !default;
+$footer-background-color: mix(#000, $background-color, 30%) !default;
+$link-color: mix($primary-color, $text-color, 40%) !default;
+$link-color-hover: mix(#fff, $link-color, 25%) !default;
+$link-color-visited: mix(#000, $link-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+
+/* dark syntax highlighting (base16) */
+$base00: #231e18 !default;
+$base01: #302b25 !default;
+$base02: #48413a !default;
+$base03: #9d8b70 !default;
+$base04: #b4a490 !default;
+$base05: #cabcb1 !default;
+$base06: #d7c8bc !default;
+$base07: #e4d4c8 !default;
+$base08: #d35c5c !default;
+$base09: #ca7f32 !default;
+$base0a: #e0ac16 !default;
+$base0b: #b7ba53 !default;
+$base0c: #6eb958 !default;
+$base0d: #88a4d3 !default;
+$base0e: #bb90e2 !default;
+$base0f: #b49368 !default;
+
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
