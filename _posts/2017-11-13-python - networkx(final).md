@@ -57,7 +57,7 @@ import pandas as pd
 
 # matplotlib의 경우 networkx에서 그림을 그릴 때 필요하기 때문에 일단 넣어줌 
 
-head_url = "../../assets/images/markdown_img/"
+head_url = "/assets/images/markdown_img/"
 
 def draw_graph(input_G, layout="shell"):
     if layout=="shell":
@@ -91,7 +91,7 @@ G.add_edges_from([(1,2), (2,3), (1,3)])
 draw_graph(G)
 plt.savefig(head_url+"networkx_graph1.png")
 ```
-![pic]("../../assets/images/markdown_img/networkx_graph1.png")
+![pic]("/assets/images/markdown_img/networkx_graph1.png")
 
 
 
@@ -103,7 +103,7 @@ plt.savefig(head_url+"networkx_graph2.png")
 ```
 
 
-![pic]("../../assets/images/markdown_img/networkx_graph2.png")
+![pic]("/assets/images/markdown_img/networkx_graph2.png")
 
 
 
@@ -115,7 +115,7 @@ draw_graph(MG)
 plt.savefig(head_url+"networkx_graph3.png")
 ```
 
-![pic]("../../assets/images/markdown_img/networkx_graph3.png")
+![pic]("/assets/images/markdown_img/networkx_graph3.png")
 
 
 ```python
@@ -127,7 +127,7 @@ plt.savefig(head_url+"networkx_graph4.png")
 ```
 
 
-![pic]("../../assets/images/markdown_img/networkx_graph4.png")
+![pic]("/assets/images/markdown_img/networkx_graph4.png")
 
 
 ### node and edges 
@@ -166,12 +166,12 @@ G.remove_edges_from([(5,2), (8, 5)])
 draw_graph(G)
 plt.savefig(head_url+"networkx_node_and_edges6.png")
 ```
-![pic]("../../assets/images/markdown_img/networkx_node_and_edges1.png")
-![pic]("../../assets/images/markdown_img/networkx_node_and_edges2.png")
-![pic]("../../assets/images/markdown_img/networkx_node_and_edges3.png")
-![pic]("../../assets/images/markdown_img/networkx_node_and_edges4.png")
-![pic]("../../assets/images/markdown_img/networkx_node_and_edges5.png")
-![pic]("../../assets/images/markdown_img/networkx_node_and_edges6.png")
+![pic]("/assets/images/markdown_img/networkx_node_and_edges1.png")
+![pic]("/assets/images/markdown_img/networkx_node_and_edges2.png")
+![pic]("/assets/images/markdown_img/networkx_node_and_edges3.png")
+![pic]("/assets/images/markdown_img/networkx_node_and_edges4.png")
+![pic]("/assets/images/markdown_img/networkx_node_and_edges5.png")
+![pic]("/assets/images/markdown_img/networkx_node_and_edges6.png")
 
 ```python
 print(G.nodes())
@@ -209,7 +209,7 @@ draw_graph(G)
 plt.savefig(head_url+"networkx_anythingcanbedone1.png")
 ```
 
-![pic]("../../assets/images/markdown_img/networkx_anythingcanbedone1.png")
+![pic]("/assets/images/markdown_img/networkx_anythingcanbedone1.png")
 
 
 
@@ -251,7 +251,7 @@ G.add_node( (4,5,6) )
 draw_graph(G)
 plt.savefig(head_url+"networkx_anythingcanbedone2.png")
 ```
-![pic]("../../assets/images/markdown_img/networkx_anythingcanbedone2.png")
+![pic]("/assets/images/markdown_img/networkx_anythingcanbedone2.png")
 
 
 ```python
@@ -276,7 +276,7 @@ draw_graph(dfG)
 plt.savefig(head_url+"networkx_anythingcanbedone3.png")
 ```
 
-![pic]("../../assets/images/markdown_img/networkx_anythingcanbedone3.png")
+![pic]("/assets/images/markdown_img/networkx_anythingcanbedone3.png")
 
 
 ```python
@@ -293,7 +293,7 @@ draw_graph(libG)
 plt.savefig(head_url+"networkx_anythingcanbedone4.png")
 ```
 
-![pic]("../../assets/images/markdown_img/networkx_anythingcanbedone4.png")
+![pic]("/assets/images/markdown_img/networkx_anythingcanbedone4.png")
 
 
 ```python
@@ -312,7 +312,7 @@ draw_graph(funcG)
 plt.savefig(head_url+"networkx_anythingcanbedone5.png")
 ```
 
-![pic]("../../assets/images/markdown_img/networkx_anythingcanbedone5.png")
+![pic]("/assets/images/markdown_img/networkx_anythingcanbedone5.png")
 
 
 ```python
@@ -326,7 +326,7 @@ plt.savefig(head_url+"networkx_anythingcanbedone6.png")
 ```
 
 
-![pic]("../../assets/images/markdown_img/networkx_anythingcanbedone6.png")
+![pic]("/assets/images/markdown_img/networkx_anythingcanbedone6.png")
 
 ### node and edge attribute dictionary
 
@@ -375,8 +375,8 @@ plt.savefig(head_url+"networkx_attribute2.png")
     [(1, 2), (2, 3)]
     [(1, 2, {'weight': 3, 'color': 'red'}), (2, 3, {'weight': 10, 'color': 'blue'})]
 
-![pic]("../../assets/images/markdown_img/networkx_attribute1.png")
-![pic]("../../assets/images/markdown_img/networkx_attribute2.png")
+![pic]("/assets/images/markdown_img/networkx_attribute1.png")
+![pic]("/assets/images/markdown_img/networkx_attribute2.png")
 
 
 ### graph generation 
@@ -398,10 +398,10 @@ draw_graph( nx.lollipop_graph(4, 5), 'spring')
 plt.savefig(head_url+"networkx_graph_generation4.png")
 ```
 
-![pic]("../../assets/images/markdown_img/networkx_graph_generation1.png")
-![pic]("../../assets/images/markdown_img/networkx_graph_generation2.png")
-![pic]("../../assets/images/markdown_img/networkx_graph_generation3.png")
-![pic]("../../assets/images/markdown_img/networkx_graph_generation4.png")
+![pic]("/assets/images/markdown_img/networkx_graph_generation1.png")
+![pic]("/assets/images/markdown_img/networkx_graph_generation2.png")
+![pic]("/assets/images/markdown_img/networkx_graph_generation3.png")
+![pic]("/assets/images/markdown_img/networkx_graph_generation4.png")
 
 ```python
 draw_graph( nx.erdos_renyi_graph(8, 0.3) ) 
@@ -414,9 +414,9 @@ draw_graph( nx.barabasi_albert_graph(10, 1) )
 plt.savefig(head_url+"networkx_graph_generation7.png")
 ```
 
-![pic]("../../assets/images/markdown_img/networkx_graph_generation5.png")
-![pic]("../../assets/images/markdown_img/networkx_graph_generation6.png")
-![pic]("../../assets/images/markdown_img/networkx_graph_generation7.png")
+![pic]("/assets/images/markdown_img/networkx_graph_generation5.png")
+![pic]("/assets/images/markdown_img/networkx_graph_generation6.png")
+![pic]("/assets/images/markdown_img/networkx_graph_generation7.png")
 
 ### analyzing graph 
 
@@ -435,7 +435,7 @@ plt.savefig(head_url+"networkx_analyzing_graph.png")
 ```
 
 
-![pic]("../../assets/images/markdown_img/networkx_analyzing_graph.png")
+![pic]("/assets/images/markdown_img/networkx_analyzing_graph.png")
 
 ```python
 print(G.edges(data=True))
@@ -593,7 +593,7 @@ plt.savefig(head_url+"networkx_link_prediction.png")
     [(0, 4, 0.5), (3, 5, 0.5), (0, 2, 0.3333333333333333), (0, 7, 0.3333333333333333), (2, 7, 0.3333333333333333)]
 
 
-![pic]("../../assets/images/markdown_img/networkx_link_prediction.png")
+![pic]("/assets/images/markdown_img/networkx_link_prediction.png")
 
 ### 마무리
 
