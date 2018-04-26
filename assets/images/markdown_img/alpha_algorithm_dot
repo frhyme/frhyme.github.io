@@ -1,0 +1,31 @@
+// this petri net is derived from alpha algorithm
+digraph {
+	rankdir=LR
+	a [shape=rectangle style=filled]
+	b [shape=rectangle style=filled]
+	e [shape=rectangle style=filled]
+	f [shape=rectangle style=filled]
+	c [shape=rectangle style=filled]
+	d [shape=rectangle style=filled]
+	source [color=red shape=doublecircle]
+	P1 [shape=circle]
+	P2 [shape=circle]
+	P3 [shape=circle]
+	P4 [shape=circle]
+	P5 [shape=circle]
+	sink [color=blue shape=doublecircle]
+	a -> P1
+	a -> P5
+	b -> P2
+	e -> P3
+	f -> sink
+	c -> P4
+	d -> P5
+	source -> a
+	P1 -> e
+	P2 -> f
+	P2 -> c
+	P3 -> f
+	P4 -> d
+	P5 -> b
+}

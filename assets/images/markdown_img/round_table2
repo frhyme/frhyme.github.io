@@ -1,0 +1,10 @@
+// The Round Table
+digraph {
+	A
+	B
+	C
+	A -> B
+	A -> C
+	A -> B
+	A -> C
+}
