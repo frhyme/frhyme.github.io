@@ -76,6 +76,11 @@
     padding: 5px 5px 5px 5px;
     color: #999999;
   }
+  /* ul li 부분의 폰트를 조정하기로 했다. */
+  ul li{
+    font-size: 0.9em;
+  }
+
 
   p,
   li,
@@ -83,7 +88,7 @@
     /*
     1.0 에서 0.9로 변경함
     */
-    font-size: 0.9em;
+    font-size: 1.0em;
   }
 
   /* paragraph indents */

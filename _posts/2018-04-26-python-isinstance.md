@@ -2,6 +2,7 @@
 title: python에서 객체 `isinstance` 체크하기 
 category: python-basic
 tags: python python-basic object-oriented-programming type-checking
+
 ---
 
 ## intro 
@@ -27,11 +28,13 @@ print("Is bb is subclass of aa?: {}".format(issubclass(bb, aa)))
 
 - **code result**
 
+```
     Is A instance of aa?: True
     Is B instance of aa?: True
     Is A instance of bb?: False
     Is aa is subclass of bb?: False
     Is bb is subclass of aa?: True
+```
 
 
 
