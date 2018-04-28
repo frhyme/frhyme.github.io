@@ -71,4 +71,4 @@ tags: 천안 수제맥주 craft-beer pub
     - 아산에 소재한 국내 소재 양조장입니다. 예전에는 양조장 투어도 진행하고 했던 것 같은데 지금은 하지 않는 것 같아요. 
     - 영업시간: 토요일 10:00 ~ 17:00
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.196393381009!2d127.0604384156213!3d36.837772279940715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b276a6132945b%3A0xf499142c1afc399b!2z67iM66Oo7Ja066asMzA0IOyImOygnOunpeyjvA!5e0!3m2!1sen!2skr!4v1524898852445" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.196393381009!2d127.0604384156213!3d36.837772279940715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b276a6132945b%3A0xf499142c1afc399b!2z67iM66Oo7Ja066asMzA0IOyImOygnOunpeyjvA!5e0!3m2!1sen!2skr!4v1524898852445" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
