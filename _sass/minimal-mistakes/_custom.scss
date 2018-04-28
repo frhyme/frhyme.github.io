@@ -78,4 +78,25 @@ section.page__content a{
     text-align: center;
 }
 
-/* 글자 폰트 조정*/
+/* _base.scss에 있던 내용을 _custom.scss로 옮김 */
+ul.posts li a:hover{
+    text-decoration: underline;
+  }
+
+/* 여기서 그냥 바꿨다. 이게 훨씬 예쁨.*/
+section.page__content{
+    a{
+        color: $link-color;   
+    }
+    a:hover{
+        color:$link-color-hover;
+    }
+    /*
+    a:visited{
+        color:$link-color-visited;
+    }
+    */
+}
+nav.pagination a.pagination--pager{
+    color:mix($link-color, #111111, 90%);
+}

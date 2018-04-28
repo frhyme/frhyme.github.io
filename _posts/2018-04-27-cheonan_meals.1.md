@@ -9,17 +9,17 @@ tags: 천안
 영업시간: 
 사이트 주소: 
 
-### 밥을 먹읍시다. 
+## 밥을 먹읍시다. 
 
 천안 시골집
 천안 공주집
 
-### 커피를 먹읍시다. 
+## 커피를 먹읍시다. 
 
 1. Cafe D331
 2. 문화동96
 
-### 맥주를 먹읍시다.
+## 맥주를 먹읍시다.
 
 1. 다운언더(Downunder): 천안 신부동 소재 craft beer pub, [insta](https://www.instagram.com/pub_downunder/)
 
@@ -65,9 +65,10 @@ tags: 천안
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.736094708067!2d127.10478401562047!3d36.80087737994841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ad80c80f7e719%3A0x70df15fcf376c7!2z7YGs656Y7ZSE7Yq47Z6Q!5e0!3m2!1sen!2skr!4v1524819391577" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-3. 아날로그
-
-5. 오키나와 키친 [인스타](https://www.instagram.com/okinawakitchen306/)
+3. 아날로그(천안 두정동에 있는 craft beer pub), 
+    - 사진만으로 보면 괜찮은 곳인것 같은데 여기는 아직 안 다녀와서 다녀온 다음에 다시 정리하겠습니다. 
+    - 
+4. 오키나와 키친 [인스타](https://www.instagram.com/okinawakitchen306/)
     - 영업시간: 18:00 ~ 01:00
     - Draft beer
         - 그롤쉬 
@@ -80,7 +81,7 @@ tags: 천안
 6. Brewery 304
 - 아산에 소재한 
 
-### 소주를 먹읍시다. 
+## 소주를 먹읍시다. 
 
 1. 다닥다닥: 천안 신부동 위치 심야식당 느낌의 술집 [인스타](http://instagram.com/dadac_dadac)
     - 다찌만 있는 술집입니다, 그리 넓지 않아서 최대 16명 앉을 수 있습니다. 조개탕이 아주 맛있고, 한라산 소주를 팔아서 좋습니다.

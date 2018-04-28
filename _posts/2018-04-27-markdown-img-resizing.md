@@ -8,9 +8,11 @@ tags: markdown blog image
 ## intro
 
 - 간단하게 이미지를 업로드하는 방법은 다음과 같습니다. 
+
 ```markdown
 ![google](https://goo.gl/qwGmse)
 ```
+
 ![google](https://goo.gl/qwGmse)
 
 - 픽셀 사이즈를 조절하려면 뒤에 딕셔너리 같은걸 붙여주면 되요. 
