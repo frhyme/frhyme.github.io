@@ -1,5 +1,5 @@
 ---
-title: jupyter notebook에서  import ipynb
+title: jupyter notebook에서 import ipynb
 category: other
 tags: jupyter-notebook python not-yet
 
