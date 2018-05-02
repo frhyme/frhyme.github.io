@@ -46,13 +46,31 @@ $$
 - 그래서 이제 됩니다. 아직은 페이지 로딩에 큰 차이가 없는 것 같네요.
 - dollar sign 사이에 내용을 넣어주시면 됩니다. 
 - 더 자세한 활용법은 [여기](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)를 참고하세용
+- 
+```
+$$
+\sqrt{3x-1}+(1+x)^2
+$$
+```
+$$
+\sqrt{3x-1}+(1+x)^2
+$$
 
-```
-$$
-\sqrt{3x-1}+(1+x)^2
-$$
-```
-$$
-\sqrt{3x-1}+(1+x)^2
-$$
+## problem 
+
+- 그런데 이렇게 하고 났더니, `tag` page 에서도 레이텍이 렌더링되는 문제가 발생했다. 
+    - archieve, category 모두 괜찮은데 tag에서만 이러함.
+- ![latex error screenshot](assets/images/markdown_images/latex_achieve.png)
+- 내부 소스를 보자!
+
+### 어디가 문제인가? 
+
+- backtick 으로 제목에서 표현된 부분이 code block으로 표현되는 것이 아니라, latex로 표현되는 것을 알 수 있당. 
+
+### 해결법
+
+- 제목에 backtick을 쓰지 않는다.
+- 
+
+
 

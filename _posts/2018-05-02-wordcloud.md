@@ -5,9 +5,10 @@ tags: python python-lib PIL wordcloud
 
 ---
 
-## wordcloud??
+## wordcloud가 뭘까여
 
 - 보통 이런걸 워드클라우드라고들 하지요. 
+    
     ![python_wordcloud](http://sebastianraschka.com/images/blog/2014/twitter-wordcloud/my_twitter_wordcloud_2_small.jpg)
 - 파이썬에서 워드클라우드를 만들수 있다고 해서 정리해보았습니다.
 - 일단 해당 라이브러리를 `conda install -c conda-forge wordcloud` 일단 설치를 합시다.
