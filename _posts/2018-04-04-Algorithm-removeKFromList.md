@@ -1,7 +1,7 @@
 ---
 title: Algorithm - removeKFromList(l, k)
 category: algorithm
-tags: python linked-list code-fight
+tags: python linked-list codefight
 
 ---
 

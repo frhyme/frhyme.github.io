@@ -1,7 +1,7 @@
 ---
 title: Algorithm - isListPalindrome(l)
 category: algorithm
-tags: python algorithm palindrome linked-list code-fight
+tags: python algorithm palindrome linked-list codefight
 
 ---
 

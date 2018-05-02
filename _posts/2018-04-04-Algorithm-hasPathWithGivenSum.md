@@ -1,7 +1,7 @@
 ---
 title: Algorithm - `hasPathWithGivenSum(t, s)` 
 category: algorithm
-tags: python binary-tree algorithm code-fight
+tags: python binary-tree algorithm codefight
 
 ---
 

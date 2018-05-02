@@ -1,7 +1,7 @@
 ---
 title: Algorithm - spiralNumbers(n)
 category: algorithm
-tags: python algorithm matrix matrix-traversal code-fight
+tags: python algorithm matrix matrix-traversal codefight
 
 ---
 
