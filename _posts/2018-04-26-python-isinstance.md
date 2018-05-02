@@ -1,5 +1,5 @@
 ---
-title: python에서 객체 `isinstance` 체크하기 
+title: python에서 객체 isinstance 체크하기 
 category: python-basic
 tags: python python-basic object-oriented-programming type-checking
 

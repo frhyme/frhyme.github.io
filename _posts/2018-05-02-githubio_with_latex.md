@@ -60,7 +60,7 @@ $$
 
 - 그런데 이렇게 하고 났더니, `tag` page 에서도 레이텍이 렌더링되는 문제가 발생했다. 
     - archieve, category 모두 괜찮은데 tag에서만 이러함.
-- ![latex error screenshot](assets/images/markdown_images/latex_achieve.png)
+- ![latex error screenshot](/assets/images/markdown_images/latex_achieve.png)
 - 내부 소스를 보자!
 
 ### 어디가 문제인가? 
@@ -69,8 +69,7 @@ $$
 
 ### 해결법
 
-- 제목에 backtick을 쓰지 않는다.
-- 
+- 제목에 backtick을 쓰지 않는다......ㅠㅠ현재로서는 다른 방법을 못찾겠음...ㅠㅠ
 
 
 

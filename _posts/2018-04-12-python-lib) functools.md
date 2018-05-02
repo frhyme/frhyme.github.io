@@ -1,5 +1,5 @@
 ---
-title: python-lib) `functools` 
+title: python-lib) functools
 category: python-lib
 tags: python python-lib functools functional-programming iterator
 

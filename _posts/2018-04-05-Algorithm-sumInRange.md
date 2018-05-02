@@ -1,5 +1,5 @@
 ---
-title: Algorithm - `sumInRange(nums, queries)`
+title: Algorithm - sumInRange(nums, queries)
 category: algorithm
 tags: python algorithm codefight summation
 

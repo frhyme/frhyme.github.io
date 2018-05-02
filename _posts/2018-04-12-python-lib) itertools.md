@@ -1,5 +1,5 @@
 ---
-title: python lib) python with iterators - `itertools`, `functools`
+title: python lib) python with iterators - itertools, functools
 category: python-basic 
 tags: python-basic python python-lib iterator itertools functools
 

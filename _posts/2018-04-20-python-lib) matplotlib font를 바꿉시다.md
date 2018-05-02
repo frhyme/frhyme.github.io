@@ -1,5 +1,5 @@
 ---
-title: python-lib) `matplotlib` 폰트 변경하기 
+title: python-lib) matplotlib 폰트 변경하기 
 category: python-lib
 tags: python python-lib matplotlib 
 

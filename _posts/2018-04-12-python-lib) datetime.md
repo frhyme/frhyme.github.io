@@ -1,5 +1,5 @@
 ---
-title: python-lib) python - `datetime`
+title: python-lib) python - datetime
 category: python-lib
 tags: python python-lib datetime
 

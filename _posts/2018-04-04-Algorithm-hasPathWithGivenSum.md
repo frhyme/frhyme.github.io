@@ -1,5 +1,5 @@
 ---
-title: Algorithm - `hasPathWithGivenSum(t, s)` 
+title: Algorithm - hasPathWithGivenSum(t, s)
 category: algorithm
 tags: python binary-tree algorithm codefight
 

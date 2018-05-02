@@ -1,5 +1,5 @@
 ---
-title: Algorithm - `arrayMaxConsecutiveSum(inputArray, k))`
+title: Algorithm - arrayMaxConsecutiveSum(inputArray, k))
 category: algorithm
 tags: python algorithm list iterator codefight
 

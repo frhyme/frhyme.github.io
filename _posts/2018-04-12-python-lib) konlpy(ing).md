@@ -1,5 +1,5 @@
 ---
-title: python-lib) MacOS에서 `konlpy` 설치하고 사용하기(실패기)
+title: python-lib) MacOS에서 konlpy 설치하고 사용하기(실패기)
 category: python-lib
 tags: python python-lib konlpy macOS jpype not-yet
 
