@@ -36,6 +36,7 @@ tags: python-lib python power-point python-pptx not-yet  not-yet
 ## 역시 잘됩니다. 
 
 - 한글을 넣어도 잘 됩니다. 저는 (`title`, `body`(본문), `img_file_name`)이 개별 element이 리스트를 입력받아서 각 슬라이드를 만들어주는 프로그램읆 만들려고 합니다. 간단하게 다음처럼 만들었습니다. 
+
 ```python
 from pptx import Presentation
 from pptx.util import Inches
