@@ -26,7 +26,7 @@ removed_edges = filter(lambda e: True if e[2]['weight'] > 20 else False, G.edges
 G.remove_edges_from(list(map(lambda e: (e[0], e[1]), removed_edges)))
 ```
 
-## draw it. 
+## draw just one network 
 
 - node, edge, label(node label)을 모두 각각 그려주는 것이 좋다. 눈으로 봤을 때 무엇을 그리는 지 각각 구분되기도 하고. 
 - layout을 고정하고 이후에 계속 같은 layout을 넘겨주는데, 키워드 분석에서는 circular가 괜찮은 것 같다. 무엇보다 키워드 이름이 겹치지 않아서 깔끔하게 보임. 
@@ -65,6 +65,41 @@ def draw_whole_graph(inputG, outPicFile):
 
 draw_whole_graph(G, 'draw_better_1805101529.svg')
 ```
+
+## draw sequential network 
+
+- 키워드 분석 시에는 연도별로 키워드 네트워크를 구분해서 보는 것이 필요할 때가 있다. 이럴 때를 위해서, `graph list`를 input으로 받아서, 연속으로 그림을 그리는 코드를 만들었다. 
+- 여기서 문제라면, `figsize()`를 고정해두었다는 것인데, 그려야 하는 그래프의 수가 적을 때(대략 6개 이하)에서는 문제가 안되지만, 많아지면 그림이 예쁘게 안 그려질 수 있다. 그런데 이걸 하나하나 바꾸는 건 약간 무의미한 짓인 것 같고, 필요할때 바꾸는게 더 좋을 것 같음. 
+
+![](/assets/images/markdown_img/draw_better_1805101611.svg))
+
+```python
+import matplotlib.pyplot as plt
+import networkx as nx
+
+def draw_G_lst(G_lst, outPicName):# 4개라고 생각하자 우선 
+    plt.close('all')
+    plt.figure(figsize=(25, 5))
+    """
+    make node position 
+    """
+    pos = nx.circular(nx.compose_all(G_lst))# 이렇게 하면 모든 그래프를 하나로 합칠 수 있음
+    for i in range(0, len(G_lst)):
+        this_subp = plt.subplot("{}{}{}".format(1, len(G_lst), i))
+        this_subp.margins(x=0.1, y=0.1)
+        nx.draw_networkx_nodes(G_lst[i], pos, node_color='Red', node_shape='h', node_size=2000)
+        nx.draw_networkx_edges(G_lst[i], pos, width=10, 
+                                edge_color=[e[2]['weight'] for e in G_lst[i].edges(data=True)],
+                                edge_cmap=plt.cm.Greys, style='dashed')
+        nx.draw_networkx_labels(G_lst[i], pos, 
+                                font_family='sans-serif', font_color='black', font_size=12, font_weight='normal')
+        plt.axis('off')
+    #plt.savefig('../../assets/images/markdown_img/'+outPicName)
+    plt.show()
+g_lst = [new_complete_g(4) for i in range(0, 5)]
+draw_G_lst(g_lst, 'test_draw_graph_lst_1805101611.svg')
+```
+
 
 ## reference
 
