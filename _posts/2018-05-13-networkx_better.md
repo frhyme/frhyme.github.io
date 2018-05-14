@@ -52,3 +52,14 @@ is bipartite: True
 3  1   0  0
 ```
 
+
+### find clique
+
+- 일반적으로는 component도 많이 쓰지만, `clique`도 군집화된 정도를 보기 위해서 많이 사용하는 편이다. 
+- 아래 코드는 간단하게, size가 3이 넘는 clique를 찾는 코드. 2짜리는(edge) 많고, 3짜리가 적음. 
+
+```python
+for cliq in nx.find_cliques(biG):
+    if len(cliq)>=3:
+        print(cliq)
+```
