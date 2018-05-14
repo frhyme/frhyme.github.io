@@ -200,9 +200,118 @@ top 10 closest pair: jaccard space::
 
 - 뭐 일단 시작한 김에 bipartite graph를 대상으로도 한번 수행해볼게요. 
 - 'Author Keywords'의 경우는 저자가 직접 입력하는 것이기 때문에, 해당 논문을 가장 잘 설명하는 키워드라고도 할 수 있지만, '주관적'일 수 있다는 한계를 가집니다. 'index keywords'의 경우는 말 그대로 색인, 검색을 하기 위한 키워드기 때문에 일관적인 분류체계에 따라서 해당 콘텐츠를 분류하기 위해 사용하는 키워드라고 할 수 있습니다. 즉, 좀 더 일관적입니다. 
-- 그렇다면 'Author Keywords' ==> 'Index Keywords'인 bipartite graph를 만들고 해당 네트워크에 대해서 similarity를 계산하면 
+- 그렇다면 'Author Keywords' ==> 'Index Keywords'인 bipartite graph를 만들고 해당 네트워크에 대해서 similarity를 계산하면 좀 더 잘 되지 않을까요? 라고 생각했다고 합니다. 그러나 망했죠. 
+
+```python
+def make_bigraph_from_series(iS, jS):
+    if len(iS)!=len(jS):
+        print("different length of Series")
+        return None
+    rG = nx.Graph()
+    edges = []
+    def make_edges_from_bipartite_sets(setA, setB):
+        if setA==[] or setB==[]:
+            return []
+        else:
+            return [(n1, n2+"(i)") for n1 in setA for n2 in setB]
+    for i in range(0, len(iS)):
+        edges+=make_edges_from_bipartite_sets(iS.iloc()[i], jS.iloc()[i])
+    print(len(edges))
+    rG.add_edges_from([(e[0][0], e[0][1], {'weight':e[1]}) for e in Counter(edges).most_common()])
+    print('is bipartite: {}'.format(nx.is_bipartite(rG)))
+    print('is connected: {}'.format(nx.is_connected(rG)))
+    return rG
+
+temp_auth = basic_filter_Series(rawDF['Author Keywords'])
+temp_auth = transform_by_dict(temp_auth, syntactical_simialrity_dict(temp_auth, 6, 0.9))
+temp_auth = drop_lower_n(temp_auth, 10)
+
+temp_ind = basic_filter_Series(rawDF['Index Keywords'])
+temp_ind = transform_by_dict(temp_ind, syntactical_simialrity_dict(temp_ind, 6, 0.9))
+temp_ind = drop_lower_n(temp_ind, 10)
+
+biG = make_bigraph_from_series(temp_auth, temp_ind)
+row_order = nx.bipartite.sets(biG)[0]
+col_order = nx.bipartite.sets(biG)[1]
+bi_df = pd.DataFrame(
+    nx.bipartite.biadjacency_matrix(biG, row_order=row_order).toarray(),
+    index = row_order, columns = col_order
+)
+print(bi_df.shape)
+
+"""
+print closest pairs 
+"""
+from scipy.spatial.distance import euclidean, jaccard
+def make_close_pair_lst(adj_df, dist_func):
+    r_lst = []
+    for i in range(0, len(adj_df)-1):
+        for j in range(i+1, len(adj_df)):
+            r_lst.append(
+                (adj_df.index[i], adj_df.index[j], dist_func(adj_df.iloc()[i], adj_df.iloc()[j]))
+            )
+    return sorted(r_lst, key=lambda x: x[2])
+        
+print("top 10 closest pair: euclidean space::")
+"""euclidean distance의 경우는 표준화가 필요함. 
+"""
+for p in make_close_pair_lst(bi_df.apply(lambda col: (col)/(col.max())).fillna(0), euclidean)[:20]:
+    print(p)
+print("top 10 closest pair: jaccard space::")
+for p in make_close_pair_lst(bi_df, jaccard)[:20]:
+    print(p)
+```
+
+- 아래는 bipartite graph 에서 구조적 등위성이 가까운 키워드 페어를 뽑은 것들입니다. 
+- 음, 다시 생각해보니, 지금까지는 '데이터 필터링을 위해 구조적 등위성'을 사용했습니다. 구조적으로 비슷하면, 의미가 같아야 한다라고 가정한 것이죠. 음, 그러나, 이를 다르게 해석할 수도 있을 것 같습니다. **'구조적으로 등위적인 관계에 있는 키워드들은 함께 연구 수행되는 일이 많다'** 라고 해석해도 되지 않을까? 하는 생각이 드네요. 
+
+```
+top 10 closest pair: euclidean space::
+('turkey', 'technological capability', 0.0)
+('ipo', 'ambidexterity', 0.05857335354377807)
+('turkey', 'ipo', 0.06330489210339914)
+('ipo', 'technological capability', 0.06330489210339914)
+('turkey', 'ambidexterity', 0.07471216944245575)
+('technological capability', 'ambidexterity', 0.07471216944245575)
+('ifrs for smes', 'ipo', 0.11898236645222844)
+('ifrs for smes', 'ambidexterity', 0.12558563723121297)
+('turkey', 'ifrs for smes', 0.12788143157459586)
+('ifrs for smes', 'technological capability', 0.12788143157459586)
+('management control', 'ipo', 0.1373770824684607)
+('management control', 'ambidexterity', 0.14313424307182296)
+('turkey', 'management control', 0.14515274645194254)
+('management control', 'technological capability', 0.14515274645194254)
+('ipo', 'asymmetric information', 0.14818941342657097)
+('asymmetric information', 'ambidexterity', 0.15355874331293629)
+('turkey', 'asymmetric information', 0.15542509213993358)
+('technological capability', 'asymmetric information', 0.15542509213993358)
+('france', 'ambidexterity', 0.15600418748894868)
+('guanxi', 'ipo', 0.15622362679412727)
+
+top 10 closest pair: jaccard space::
+('turkey', 'technological capability', 0.0)
+('foreign direct investment', 'japan', 0.33333333333333331)
+('exploitation', 'exploration', 0.42105263157894735)
+('rbv', 'emerging market', 0.47999999999999998)
+('customer orientation', 'turkey', 0.5714285714285714)
+('customer orientation', 'technological capability', 0.5714285714285714)
+('new zealand', 'institutional theory', 0.59999999999999998)
+('internationalization process', 'international entrepreneurship', 0.63636363636363635)
+('customer satisfaction', 'performance management', 0.66666666666666663)
+('united kingdom', 'performance management', 0.69230769230769229)
+('financial constraint', 'ownership structure', 0.69999999999999996)
+('guanxi', 'rbv', 0.70588235294117652)
+('iran', 'scm', 0.7142857142857143)
+('information', 'process', 0.71666666666666667)
+('crowdfunding', 'bank loan', 0.72222222222222221)
+('industrial symbiosis', 'circular economy', 0.72413793103448276)
+('firm size', 'perception', 0.72549019607843135)
+('crowdfunding', 'relationship lending', 0.72727272727272729)
+('bank loan', 'relationship lending', 0.72727272727272729)
+('ac loss', 'high temperature superconductor', 0.73076923076923073)
+```
 
 
-
+## by clustering 
 
 - 그렇다면, 단순히 단편적인 구조만 보는 것이 아니라 `hierarchical clustering`과 같은 방법으로 해주는 것은 어떨까요? 분명히 우리가 원하는 'small medium sized enterprise' 이외의 분야들도 현재 포함되어 있기 때문에, 클러스터링을 통해서 이외에 속하는 부분을 싹 지워줄 수 있지 않을까, 라고 생각합니다.
