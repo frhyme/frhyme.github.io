@@ -110,8 +110,15 @@ def drop_low_weighted_edge(inputG, above_weight=3):
     rG.add_nodes_from(inputG.nodes(data=True))
     edges = filter(lambda e: True if e[2]['weight']>=above_weight else False, inputG.edges(data=True))
     rG.add_edges_from(edges)
+    """
+    neighbor가 없는 isolated node를 모두 지운다. 
+    """
+    for n in inputG.nodes():
+        if len(list(nx.all_neighbors(rG, n)))==0:
+            rG.remove_node(n)
+        #print(n, list(nx.all_neighbors(rG, n)))
     return rG
-
+    
 plt.figure(figsize=(10,5))
 pos = nx.spring_layout(testG)
 nx.draw_networkx(testG, pos)

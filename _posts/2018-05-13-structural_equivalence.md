@@ -37,6 +37,7 @@ plt.savefig('../../assets/images/markdown_img/structural_equi-201805111758.png')
 
 - 물론 여기서 중요한 것은 **어떻게 노드 간의 거리를 측정할 것인가?** 가 되겠죠. 유클리디안 이 적합하냐 자카드가 적합하냐, 코사인이 적합하냐 hamming이 적합하냐 등등등, 가장 좋은 방법은 그냥 일단 다 해보는 것인데, 표준화를 먼저 한 다음에 하는 게 좋을 것 같습니다.
 - 이제 슬슬 numpy, sklearn, scipy에 있는 scaling 기법들을 사용해주면 좋을 것 같습니다.
+- 공부하다가 다시 보니, 이 부분은 아래 처럼 복잡하게 할 필요 없이, `nx.adjacency_matrix`로 처리가 되네요. 자동으로 `weight`부분을 처리해줍니다. 
 
 ```python
 import pandas as pd
