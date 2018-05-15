@@ -121,11 +121,35 @@ print( make_tfidf_df(sent_lst) )
 
 - 모르겠고, 코드로 해봅시다. 결과를 보면서 역으로 생각하는 게 저한테는 더 잘 맞는 것 같아용. 
 - 간단하게 코드를 짜서 넘기면 문제가 생길 때가 있습니다. 보통 이 때 오류는 `RuntimeError: you must first build vocabulary before training the model`인데, gensim의 word2vec는 최소한 5개 이상 되는 워드 들에 대해서만 vocab를 구성합니다. 따라서 너무 작은 sample로만 넘기면 학습이 안되요. 
-```
-```
 
+- sample 수를 늘려가면서, 정말 비슷한 의미를 가지는 워드들이 모이는지 확인해봅니다.
+- 굉장히 단순한 데이터를 넘겼습니다. 저 문장들로만 보면, 'boy'와 'girl', 'dog'는 반드시 가깝게 모여야 하는데, 실제로 해보면 점점 가까워 지는 것을 알 수 있습니다. 유의미하다는 생각을 합니다. 
 
-## some useful method 
+![](/assets/images/markdown_img/word_embedding_subplot_20180515.svg)
+
+```python
+from gensim.models.word2vec import Word2Vec
+import matplotlib.pyplot as plt
+
+f, axes = plt.subplots(2, 2, sharex=False, sharey=False)
+f.set_size_inches((16, 6)) 
+for i in range(0, 2):
+    for j in range(0, 2):
+        sample_n = [1, 1000, 2000, 6000][i*2+j]
+        sent_lst = ["I am a boy", "I am a girl", "I am a dog"]*sample_n
+        sent_split_lst = map(lambda s: list(s.lower().split(" ")), sent_lst)
+
+        model = Word2Vec(list(sent_split_lst), size=2, window = 3, min_count=1)
+        model.init_sims(replace=True)# 학습 완료 후, 필요없는 메모리 삭제 
+
+        for x, y, t in ((model.wv.get_vector(w)[0], model.wv.get_vector(w)[0], w) for w in model.wv.index2entity):
+            axes[i][j].scatter(x, y, cmap=plt.cm.rainbow)
+            axes[i][j].text(x+0.01, y, t, fontsize=12)
+            axes[i][j].set_title("sample size = {}".format(sample_n))
+f.tight_layout()# 그냥 이걸로 다 해결되었다.
+plt.savefig('../../assets/images/markdown_img/word_embedding_subplot_20180515.svg')
+plt.show()
+```
 
 
 ## reference
