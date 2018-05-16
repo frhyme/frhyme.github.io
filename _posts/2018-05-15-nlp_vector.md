@@ -86,7 +86,7 @@ def make_tfidf_df(sent_lst):
     TFIDFmodel = TfidfVectorizer(
         ngram_range=(1,1), # 앞 뒤 window를 고려하여 확장된 형태로 제시해줌. phrase를 뽑아낼 수 있는 강점이 있기는 할듯. 
         min_df = 1, # document freqeuency 가 1 이상은 되는 키워드만으로 vocabulary를 구성
-        max_df = 10, # document frequency가 2 이하인 키워드만으로 vocabulary를 구성 
+        max_df = 10,# document frequency가 10 이하인 키워드만으로 vocabulary를 구성 
         binary = False # binary이면 있다 없다 구조로 변경됨
     )
     TFIDFmodel.fit(sent_lst)
