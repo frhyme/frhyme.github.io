@@ -1,5 +1,5 @@
 ---
-title: 투수의 지표들을 알아봅시다.
+title: 야구) 투수의 지표들을 알아봅시다.
 category: baseball 
 tags: baseball sabermetrics pitcher
 

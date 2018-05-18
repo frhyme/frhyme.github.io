@@ -1,5 +1,5 @@
 ---
-title: 야구의 약어를 정리합니돵
+title: 야구) 야구의 약어를 정리합니돵
 category: baseball
 tags: baseball sabermetrics 
 ---

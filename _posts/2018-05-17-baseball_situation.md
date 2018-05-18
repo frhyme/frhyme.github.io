@@ -1,5 +1,5 @@
 ---
-title: 야구 이야기 - intro, 상황별 단위
+title: 야구) 인트로+상황별 단위
 category: baseball 
 tags: baseball sabermetrics metric
 

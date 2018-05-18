@@ -1,5 +1,5 @@
 ---
-title: 야구의 수비기록을 정리합니다. 
+title: 야구) 야구의 수비기록을 정리합니다. 
 category: baseball 
 tags: baseball defence sabermetrics
 
