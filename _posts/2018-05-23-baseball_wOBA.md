@@ -1,7 +1,7 @@
 ---
 title: 야구) 타자의 공격력을 계산하려고 합니다. 
 category: baseball
-tags: baseball sabermetrics ops park-factor
+tags: baseball sabermetrics OPS park-factor wOBA OPS+ GPA RE RV
 
 ---
 
@@ -77,12 +77,16 @@ $
 
 ### wOBA(weighted On Base Average)
 
-- 다시 정리하자면, 타자가 득점 기대값의 상승에 얼마나 기대했는지를 평가하기 위해 개별 이벤트(1루타, 볼넷, 홈런 등)가 득점 기대값 상승에 얼마나 기여하는지를 계산하고, 이를 weight로 활용하여 wOBA를 계산한다. 
-- 위의 결과로 나온 계산식은 다음과 같다. 
+- 다시 정리하자면, 타자가 득점 기대값의 상승에 얼마나 기대했는지를 평가하기 위해 개별 이벤트(1루타, 볼넷, 홈런 등)가 득점 기대값 상승에 얼마나 기여하는지를 계산하고, 이를 weight로 활용하여 wOBA를 계산한다. 이 결과로 나온 계산식은 다음과 같다. 
 
 $
 wOBA = { (0.72 * NIBB) + (0.75 * HBP) + (0.90 * 1B) + (0.92 * RBOE) + (1.24 * 2B) + (1.56 * 3B) + ( 1.95 * HR ) } \over PA(Plate Appeareance)
 $
+
+- NIBB = Non-intentional bases on balls
+- HBP = Hit by pitch
+- RBOE = Reached base on error
+
 
 
 
