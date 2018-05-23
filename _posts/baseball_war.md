@@ -5,7 +5,7 @@ tags: baseball sabermetrics war
 
 ---
 
-## WAR이 도대체 뭔가요. 
+## WAR이 도대체 뭔가요.
 
 > WAR(Wins Above Replacement): 해당 선수가 대체선수 대비 승리에 기여하는 정도
 
