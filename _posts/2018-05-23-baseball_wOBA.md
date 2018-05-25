@@ -5,10 +5,11 @@ tags: baseball sabermetrics OPS park-factor wOBA OPS+ GPA RE RV
 
 ---
 
+- 이 포스트의 내용은 모두 [이 포스트](http://birdsnest.tistory.com/73)의 내용을 읽고 이해하면서 작성된 포스트임을 먼저 밝힙니다. 
+ 
 ## 처음에는 WAR을 알아보려고 했습니다만, 
 
 - 이 아이를 계산하려면 알아야 하는 것들이 많더군요. 그래서 하나씩 파보려고 합니다. 
-- 이 포스트의 내용은 모두 [이 포스트](http://birdsnest.tistory.com/73)의 내용을 읽고 이해하면서 작성된 포스트임을 먼저 밝힙니다. 
 
 ## OPS 
 
