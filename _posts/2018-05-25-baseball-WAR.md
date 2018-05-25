@@ -1,5 +1,5 @@
 ---
-title: 이제 WAR을 계산해봅시다. 
+title: 야구) 이제 WAR을 계산해봅시다. 
 category: baseball
 tags: baseball WAR sabermetrics wOBA wRAA UZR RAR
 ---
