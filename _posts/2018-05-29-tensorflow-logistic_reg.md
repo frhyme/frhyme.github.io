@@ -55,7 +55,7 @@ hypothesis = tf.sigmoid(tf.matmul(X, W) + b)
     2) 못한 것을 평가하여 minimize
 - hypothesis 는 무조건 0과 1사이의 값만을 가지며 따라서, log(hypothesis)는 (-inf, 0)의 값을 가집니다. 
     - hypothesis가 클수록 log(hypothesis)는 작은 음수값, (0, 1) => (-inf, 0)
-    - hypothesis가 클수록, 적은 penalty(음수)를 가지도록 Y=1, Y=0 각각에 대해서 항을 정의하고 그 총합을 minimizegka 
+    - hypothesis가 클수록, 적은 penalty(음수)를 가지도록 Y=1, Y=0 각각에 대해서 항을 정의하고 그 총합을 minimize합니다. 
 """
 cost = -tf.reduce_mean(Y * tf.log(hypothesis) + (1 - Y) * tf.log(1 - hypothesis))
 train = tf.train.GradientDescentOptimizer(learning_rate=0.01).minimize(cost)
