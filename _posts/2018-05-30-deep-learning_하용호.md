@@ -1,5 +1,5 @@
 ---
-title: slideshare) 자습해도 모르겠던 딥러닝, 머리속에 인스톨 시켜드립니다.
+title: slideshare) 딥러닝 큰 그림 그리기
 category: machine-learning
 tags: deep-learning machine-learning slideshare
 
