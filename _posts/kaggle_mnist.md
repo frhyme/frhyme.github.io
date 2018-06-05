@@ -283,9 +283,62 @@ train, loss and metric: [0.0098527891978821055, 0.99702380952380953]
 test, loss and metric: [0.044221350852222667, 0.98761904784611299]
 ```
 
-## 더 잘 예측하려면!
+### 레이어를 하나 더 쌓아봅시다. 
 
-- 무엇을 해야 할까요? CNN을 더 복잡하게 만들어서 쌓아볼까요? 
+- 무엇을 해야 할까요? CNN을 더 복잡하게 만들어서 쌓아볼까요? 128 짜리를 두 개 추가해봤습니다. 
+- 단순히, 이렇게만 추가했는데, 0.98742의 score를 획득했습니다. 이전에 비해서 train, test 모두 score가 증가한 것을 알 수 있구요. 따라서, 아직은 overfitting은 아닌 것 같습니다. 굳이 dropout을 추가할 필요는 없을 것 같네요. 
+
+```python
+model = Sequential([
+    Conv2D(filters = 32, kernel_size = (5,5),padding = 'Same', activation ='relu', input_shape = (28,28,1)),
+    Conv2D(filters = 32, kernel_size = (5,5),padding = 'Same', activation ='relu'),
+    MaxPooling2D(pool_size=(2,2)),
+    #Dropout(0.25),
+    
+    Conv2D(filters = 64, kernel_size = (3,3),padding = 'Same', activation ='relu'),
+    Conv2D(filters = 64, kernel_size = (3,3),padding = 'Same', activation ='relu'),
+    MaxPooling2D(pool_size=(2,2), strides=(2,2)),
+    #Dropout(0.25),
+    
+    Conv2D(filters = 128, kernel_size = (2,2),padding = 'Same', activation ='relu'),
+    Conv2D(filters = 128, kernel_size = (2,2),padding = 'Same', activation ='relu'),
+    MaxPooling2D(pool_size=(2,2), strides=(2,2)),
+    
+    Flatten(),
+    Dense(256, activation = "relu"),
+    #Dropout(0.5),
+    Dense(10, activation = "softmax")
+])
+```
+
+```
+Epoch 1/10
+33600/33600 [==============================] - 504s - loss: 0.5980 - categorical_accuracy: 0.8100   
+Epoch 2/10
+33600/33600 [==============================] - 481s - loss: 0.0938 - categorical_accuracy: 0.9699   
+Epoch 3/10
+33600/33600 [==============================] - 462s - loss: 0.0650 - categorical_accuracy: 0.9795   
+Epoch 4/10
+33600/33600 [==============================] - 478s - loss: 0.0479 - categorical_accuracy: 0.9854   
+Epoch 5/10
+33600/33600 [==============================] - 462s - loss: 0.0354 - categorical_accuracy: 0.9884   
+Epoch 6/10
+33600/33600 [==============================] - 438s - loss: 0.0271 - categorical_accuracy: 0.9913   
+Epoch 7/10
+33600/33600 [==============================] - 416s - loss: 0.0263 - categorical_accuracy: 0.9912   
+Epoch 8/10
+33600/33600 [==============================] - 442s - loss: 0.0209 - categorical_accuracy: 0.9929   
+Epoch 9/10
+33600/33600 [==============================] - 474s - loss: 0.0223 - categorical_accuracy: 0.9922   
+Epoch 10/10
+33600/33600 [==============================] - 521s - loss: 0.0130 - categorical_accuracy: 0.9958   
+train, loss and metric: [0.010848363778620427, 0.99648809523809523]
+test, loss and metric: [0.042763131727420148, 0.98869047630400886]
+```
+
+### epoch 증가하기(10 ==> 20)
+
+
 
 
 ## reference

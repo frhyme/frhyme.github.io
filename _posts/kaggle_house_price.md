@@ -12,7 +12,9 @@ tags: kaggle machine-learning python python-lib sklearn
 - 이번에는 하나씩, 칼럼을 하나씩 늘려가면서, 잘 맞추는지를 보려고 합니다. 제가 성격이 급해서 그걸 잘할 수 있을지 잘 모르겠지만 아무튼!
 
 
-## 후...
+## feature engineering...
+
+- SalePrice를 예측해야 하는데, 이 값의 분포를 보면, 
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: seaborn - basic
 category: python-lib
-tags: python python-lib seaborn matplotlib
+tags: python python-lib seaborn matplotlib heatmap
 
 ---
 
@@ -108,6 +108,60 @@ plt.show()
 ```
 
 ![](/assets/images/markdown_img/180604_pairplot_with_hue.svg)
+
+### sns.heatmap
+
+- `pd.DataFrame`에서, column간의 correlation을 뽑아낸 다음, 이를 수치가 아니라, 색깔의 차이를 통해서 보고싶다면, `sns.heatmap`을 사용하는 것이 적합합니다. 
+
+```python
+import numpy as np 
+import matplotlib.pyplot as plt
+import seaborn as sns 
+
+heatmap_df = pd.DataFrame(np.random.normal(0, 1, 100).reshape(10, 10), 
+                          columns=['col_{}'.format(i) for i in range(0, 10)],
+                          index=['col_{}'.format(i) for i in range(0, 10)]
+                         )
+
+"""
+- True인 경우, 표시되지 않고, False인 경우만 표시됨
+- mask는 df의 형태로 넘길 수 있음. 
+"""
+mask = heatmap_df.applymap(lambda x: True if abs(x)<1.0 else False)
+print(mask)
+
+plt.figure(figsize=(12, 10))
+sns.heatmap(heatmap_df, annot=True, 
+            fmt=".1f", 
+            #cmap=plt.cm.Blues, 
+            mask=mask,
+            cbar=True,
+            linewidths=3)
+
+plt.tick_params(labelsize=13)
+plt.gca().xaxis.tick_top() 
+plt.xticks(rotation=45)
+plt.yticks(rotation=0)
+
+plt.savefig('../../assets/images/markdown_img/180605_heatmap_sns.svg')
+plt.show()
+```
+
+```
+       col_0  col_1  col_2  col_3  col_4  col_5  col_6  col_7  col_8  col_9
+col_0   True  False   True  False   True   True  False   True  False   True
+col_1   True   True   True   True   True  False   True   True   True   True
+col_2   True  False  False   True  False  False   True  False   True   True
+col_3   True   True   True   True   True  False   True   True   True   True
+col_4   True   True   True   True  False   True   True   True  False   True
+col_5   True   True  False  False   True   True  False  False   True   True
+col_6   True   True  False  False  False   True   True   True   True   True
+col_7   True   True   True   True   True   True   True   True  False   True
+col_8   True  False  False   True  False  False   True   True   True   True
+col_9   True   True   True   True   True   True   True   True   True  False
+```
+
+![](/assets/images/markdown_img/180605_heatmap_sns.svg)
 
 ## wrap-up
 
