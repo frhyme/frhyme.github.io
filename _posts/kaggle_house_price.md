@@ -16,9 +16,17 @@ tags: kaggle machine-learning python python-lib sklearn
 
 - SalePrice를 예측해야 하는데, 이 값의 분포를 보면, 
 
+- 일단 numeric column과 non numeric column으로 나누고, 값으로 saleprice를 추정할 수 있는지를 보고, 
+- categorical value 별로 그룹 한 결과가, 개별 그룹당 샘플사이즈가 유의미하고, 그룹별 평균간의 차이가 크면 이를 pd.get_dummies로 넣음. 
+
+
+categorical feature가 target 변수의 차이에 얼마나 관여하는가 를 어떻게 측정할 수 있을까? 
+
 
 
 ## refernce
 
 - <https://www.kaggle.com/c/house-prices-advanced-regression-techniques>
 - <https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python>
+- <https://www.kaggle.com/dansbecker/your-first-scikit-learn-model>
+- <https://www.kaggle.com/serigne/stacked-regressions-top-4-on-leaderboard>

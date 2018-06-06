@@ -440,9 +440,143 @@ test, loss and metric: [0.043590596066787841, 0.98916666689373201]
 ### increase epoch and add dropout
 
 - dropout을 0.25의 비율로 각 레이어들 사이에 넣었습니다.
-- Fully connected layer도 증가하면 좋을 것 같은데, 아직은 적용하지 않았어요. 
-- 만약 생각만큼 잘 되지 않는다면, epoch을 늘려보는 것도 방법이 될 수 있을 것 같긴 한데, 굳이 dropout을 넣어서 node별로 차이를 생성했는데, epoch을 늘리면, 다시 node별 차이를 없애는 것이 아닐까요? 
-    - 일단 epoch을 그대로 두니까, 0.98842로 이전과 같아서, epoch을 늘리는 것이 하나의 방법일 것 같음. 
+- epoch 또한 30으로 증가했습니다. 
+- 그 결과, 0.99를 넘겼습니다. 0.99185. 
+
+```python
+X = train_df[train_df.columns[1:]]
+Y = pd.get_dummies(train_df['label'])
+
+X_values = (X.values.astype(np.float64)/256.0).reshape(len(X_values), 28, 28, 1)
+Y_values = Y.values.astype(np.float32)
+
+x_train, x_test, y_train, y_test = train_test_split(X_values, Y_values, 
+                                                    test_size = 0.2, random_state=42)
+
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation, Conv2D, Flatten, MaxPooling2D
+from keras.optimizers import SGD
+from keras import metrics
+import numpy as np
+
+model = Sequential([
+    Conv2D(filters = 32, kernel_size = (5,5),padding = 'Same', activation ='relu', input_shape = (28,28,1)),
+    Conv2D(filters = 32, kernel_size = (5,5),padding = 'Same', activation ='relu'),
+    MaxPooling2D(pool_size=(2,2)),
+    Dropout(0.25),
+    
+    Conv2D(filters = 64, kernel_size = (3,3),padding = 'Same', activation ='relu'),
+    Conv2D(filters = 64, kernel_size = (3,3),padding = 'Same', activation ='relu'),
+    MaxPooling2D(pool_size=(2,2), strides=(2,2)),
+    Dropout(0.25),
+    
+    Conv2D(filters = 128, kernel_size = (2,2),padding = 'Same', activation ='relu'),
+    Conv2D(filters = 128, kernel_size = (2,2),padding = 'Same', activation ='relu'),
+    MaxPooling2D(pool_size=(2,2), strides=(2,2)),
+    Dropout(0.25),
+    
+    Conv2D(filters = 256, kernel_size = (2,2),padding = 'Same', activation ='relu'),
+    Conv2D(filters = 256, kernel_size = (2,2),padding = 'Same', activation ='relu'),
+    MaxPooling2D(pool_size=(2,2), strides=(2,2)),
+    Dropout(0.25),
+    
+    Flatten(),
+    Dense(256, activation = "relu"),
+    #Dropout(0.5),
+    Dense(10, activation = "softmax")
+])
+
+model.compile(loss='categorical_crossentropy', 
+              optimizer=Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-8), 
+              metrics=[metrics.categorical_accuracy])
+
+train_history = model.fit(x_train, y_train, epochs=30, batch_size=500, verbose=1)
+train_history = train_history.history
+
+loss_and_metric = model.evaluate(x_train, y_train, batch_size=128, verbose=0)
+print("train, loss and metric: {}".format(loss_and_metric))
+loss_and_metric = model.evaluate(x_test, y_test, batch_size=128, verbose=0)
+print("test, loss and metric: {}".format(loss_and_metric))
+
+# 테스트 셋에 적용함. 
+test_X_values = (test_df.values.astype(np.float64)/256.0).reshape(len(test_df), 28, 28, 1)
+test_y_pred = model.predict_classes(test_X_values)
+
+submit_df = pd.DataFrame({"ImageId":range(1, 1+len(test_y_pred)), "Label":test_y_pred})
+submit_df.to_csv('test_mnist.csv', index=False)
+```
+
+- 단지, `Dropout`을 추가하고, epoch을 늘렸더니, train, test set에 대해서 모두 0.99를 넘긴 것을 알 수 있음. 
+- 다음에 이 상태 그대로 epoch만 늘려서 계산하면, 0.99를 더 넘길 수 있을까? 
+
+```
+Epoch 1/30
+33600/33600 [==============================] - 600s - loss: 1.2807 - categorical_accuracy: 0.5363   
+Epoch 2/30
+33600/33600 [==============================] - 642s - loss: 0.1953 - categorical_accuracy: 0.9403   
+Epoch 3/30
+33600/33600 [==============================] - 530s - loss: 0.1280 - categorical_accuracy: 0.9613   
+Epoch 4/30
+33600/33600 [==============================] - 516s - loss: 0.0981 - categorical_accuracy: 0.9710   
+Epoch 5/30
+33600/33600 [==============================] - 545s - loss: 0.0818 - categorical_accuracy: 0.9754   
+Epoch 6/30
+33600/33600 [==============================] - 596s - loss: 0.0693 - categorical_accuracy: 0.9790   
+Epoch 7/30
+33600/33600 [==============================] - 488s - loss: 0.0646 - categorical_accuracy: 0.9806   
+Epoch 8/30
+33600/33600 [==============================] - 601s - loss: 0.0586 - categorical_accuracy: 0.9825   
+Epoch 9/30
+33600/33600 [==============================] - 500s - loss: 0.0588 - categorical_accuracy: 0.9827   
+Epoch 10/30
+33600/33600 [==============================] - 490s - loss: 0.0475 - categorical_accuracy: 0.9861   
+Epoch 11/30
+33600/33600 [==============================] - 492s - loss: 0.0439 - categorical_accuracy: 0.9869   
+Epoch 12/30
+33600/33600 [==============================] - 522s - loss: 0.0394 - categorical_accuracy: 0.9875   
+Epoch 13/30
+33600/33600 [==============================] - 488s - loss: 0.0397 - categorical_accuracy: 0.9879   
+Epoch 14/30
+33600/33600 [==============================] - 499s - loss: 0.0370 - categorical_accuracy: 0.9890   
+Epoch 15/30
+33600/33600 [==============================] - 551s - loss: 0.0316 - categorical_accuracy: 0.9907   
+Epoch 16/30
+33600/33600 [==============================] - 499s - loss: 0.0317 - categorical_accuracy: 0.9901   
+Epoch 17/30
+33600/33600 [==============================] - 494s - loss: 0.0311 - categorical_accuracy: 0.9903   
+Epoch 18/30
+33600/33600 [==============================] - 557s - loss: 0.0339 - categorical_accuracy: 0.9893   
+Epoch 19/30
+33600/33600 [==============================] - 520s - loss: 0.0313 - categorical_accuracy: 0.9901   
+Epoch 20/30
+33600/33600 [==============================] - 551s - loss: 0.0281 - categorical_accuracy: 0.9913   
+Epoch 21/30
+33600/33600 [==============================] - 569s - loss: 0.0231 - categorical_accuracy: 0.9929   
+Epoch 22/30
+33600/33600 [==============================] - 533s - loss: 0.0252 - categorical_accuracy: 0.9920   
+Epoch 23/30
+33600/33600 [==============================] - 574s - loss: 0.0222 - categorical_accuracy: 0.9927   
+Epoch 24/30
+33600/33600 [==============================] - 522s - loss: 0.0206 - categorical_accuracy: 0.9933   
+Epoch 25/30
+33600/33600 [==============================] - 478s - loss: 0.0334 - categorical_accuracy: 0.9899   
+Epoch 26/30
+33600/33600 [==============================] - 508s - loss: 0.0263 - categorical_accuracy: 0.9917   
+Epoch 27/30
+33600/33600 [==============================] - 584s - loss: 0.0223 - categorical_accuracy: 0.9936   
+Epoch 28/30
+33600/33600 [==============================] - 539s - loss: 0.0178 - categorical_accuracy: 0.9946   
+Epoch 29/30
+33600/33600 [==============================] - 502s - loss: 0.0169 - categorical_accuracy: 0.9951   
+Epoch 30/30
+33600/33600 [==============================] - 648s - loss: 0.0177 - categorical_accuracy: 0.9945   
+train, loss and metric: [0.0060941704176920687, 0.99824404761904761]
+test, loss and metric: [0.028339080603438475, 0.99226190476190479]
+```
+
+### keep it, and more epoch. 
+
+- 위 코드를 그대로 하되, epoch만 더 늘려보자. 
 
 
 
