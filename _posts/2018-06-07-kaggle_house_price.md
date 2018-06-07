@@ -167,7 +167,7 @@ def preprocessingX(input_df):
     
     r = pd.DataFrame(MinMaxScaler().fit_transform(r), columns = r.columns)
     r = pd.DataFrame(RobustScaler().fit_transform(r), columns = r.columns)
-    return scaler.fit_transform(r)
+    return r
 
 x_train = preprocessingX(train_df)
 x_test = preprocessingX(test_df)
@@ -496,7 +496,7 @@ def preprocessingX(input_df):
     
     r = pd.DataFrame(MinMaxScaler().fit_transform(r), columns = r.columns)
     r = pd.DataFrame(RobustScaler().fit_transform(r), columns = r.columns)
-    return scaler.fit_transform(r)
+    return r
 
 x_train = preprocessingX(train_df)
 x_test = preprocessingX(test_df)
