@@ -100,9 +100,111 @@ complete
 
 - 이 경우는 좀 나아집니다. score가 0.89까지 올릴 수 있습니다. 하지만, 가능하면 0.9는 넘기면 좋겠습니다. 
 - 이 competition의 목적이, `sklearn`을 주로 사용하는 것이라서, 가능하면 저도, `sklearn`만으로 score를 올리면 좋겠습니다.
+- `hidden_layer_sizes`와 `tol`를 변경시켜가면서, 조절했으나, 0.89가 현재로서는 맥스인것 같습니다. 
+- 복잡하게 뉴럴넷을 만들어봤지만, 여전히 0.89정도로 멈춰 있는 것을 알 수 있습니다. 
+- 나중에 좀 더 다양하게 돌려보겠씁니다. 
 
 ```python
+"""
+- MLPclasffieir로 한번 해보면 좋을 것 같다. 
+- 
+"""
 
+import pandas as pd
+import numpy as np 
+from sklearn.neural_network import MLPClassifier
+from sklearn.model_selection import cross_val_score, train_test_split
+
+x_train = pd.read_csv(x_train_url, header=None)
+y_train = pd.read_csv(y_train_url, header=None)
+x_test = pd.read_csv(x_test_url, header=None)
+
+x_train_v = x_train.values
+
+x_train_train, x_train_test, y_train_train, y_train_test = train_test_split(x_train_v, y_train, 
+                                                                            train_size=0.6, 
+                                                                            test_size=0.4, 
+                                                                            random_state=42
+                                                                           )
+
+models = [
+    MLPClassifier(hidden_layer_sizes=[64, 32, 4], max_iter=5000, random_state=42), 
+    MLPClassifier(hidden_layer_sizes=[2048, 512, 128], max_iter=5000, random_state=42), 
+    MLPClassifier(hidden_layer_sizes=[8192, 2048, 128], max_iter=5000, random_state=42), 
+    MLPClassifier(hidden_layer_sizes=[4092, 512, 64], max_iter=5000, random_state=42, verbose=False), 
+    MLPClassifier(hidden_layer_sizes=[2048, 512, 128, 32, 16], max_iter=5000, random_state=42, verbose=False, tol=0.000001), 
+    MLPClassifier(hidden_layer_sizes=[8192, 4096, 2048, 512, 128, 32, 16], max_iter=5000, random_state=42, verbose=True, tol=0.000001), 
+    #MLPClassifier(hidden_layer_sizes=[4092*2, 512*2, 64*2], max_iter=5000, random_state=42, verbose=True), 
+    #MLPClassifier(hidden_layer_sizes=[64, 32, 4], max_iter=5000, alpha=0.05), 
+    #MLPClassifier(hidden_layer_sizes=[64, 32, 4], max_iter=5000, alpha=0.5), 
+    #MLPClassifier(hidden_layer_sizes=[2048, 128, 4], max_iter=5000, alpha=0.05),
+]
+
+for m in models:
+    # y 가 2차원 어레이일 때 문제가 생겨서, ravel로 수정해줌
+    print(m.__class__)
+    m.fit(x_train_train, y_train_train.values.ravel())
+    print("train: {}".format(m.score(x_train_train, y_train_train.values.ravel())))
+    print("test: {}".format(m.score(x_train_test, y_train_test.values.ravel())))
+    #print(cross_val_score(m, x_train_train, y_train_train.values.ravel(),cv=10,scoring='accuracy'))
+    print("----")
+
+best_model = sorted(models, key=lambda m: m.score(x_train_test, y_train_test.values.ravel()), reverse=True)[0]
+
+submit_df = pd.DataFrame({'Id':range(1,1+len(x_test)), 
+              'Solution':best_model.predict(x_test.values)
+             })
+submit_df.to_csv('180607_ds_london.csv', index=False)    
+print("complete")
+```
+
+- 복잡하게 뉴럴넷을 만들어봤지만, 여전히 0.89정도로 멈춰 있는 것을 알 수 있습니다. 
+
+```
+<class 'sklearn.neural_network.multilayer_perceptron.MLPClassifier'>
+train: 0.9983333333333333
+test: 0.87
+----
+<class 'sklearn.neural_network.multilayer_perceptron.MLPClassifier'>
+train: 1.0
+test: 0.8925
+----
+<class 'sklearn.neural_network.multilayer_perceptron.MLPClassifier'>
+train: 1.0
+test: 0.885
+----
+<class 'sklearn.neural_network.multilayer_perceptron.MLPClassifier'>
+train: 1.0
+test: 0.885
+----
+<class 'sklearn.neural_network.multilayer_perceptron.MLPClassifier'>
+train: 1.0
+test: 0.89
+----
+<class 'sklearn.neural_network.multilayer_perceptron.MLPClassifier'>
+Iteration 1, loss = 0.63504406
+Iteration 2, loss = 1.02627232
+Iteration 3, loss = 0.58636568
+Iteration 4, loss = 0.39818701
+Iteration 5, loss = 0.36976756
+Iteration 6, loss = 0.29988947
+Iteration 7, loss = 0.25247464
+Iteration 8, loss = 0.21701859
+Iteration 9, loss = 0.16716805
+Iteration 10, loss = 0.12269334
+Iteration 11, loss = 0.08120724
+Iteration 12, loss = 0.05184766
+Iteration 13, loss = 0.03686217
+Iteration 14, loss = 0.02119144
+Iteration 15, loss = 0.01396260
+Iteration 16, loss = 0.02903801
+Iteration 17, loss = 0.04954998
+Iteration 18, loss = 0.06622163
+Training loss did not improve more than tol=0.000001 for two consecutive epochs. Stopping.
+train: 0.9983333333333333
+test: 0.8625
+----
+complete
 ```
 
 ### using keras
