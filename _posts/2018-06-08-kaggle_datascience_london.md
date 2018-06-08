@@ -1,7 +1,7 @@
 ---
 title: kaggle) simple binary classification 
 category: machin-learning
-tags: python python-lib sklearn classification 
+tags: python python-lib sklearn classification keras 
 ---
 
 ## 간단한, classification을 풉니다. 
@@ -210,10 +210,95 @@ complete
 ### using keras
 
 - overfitting 문제를 해결하기 위해서, dropout을 사용해야 할 것 같습니다. 이를 위해서는 keras를 이용해야 할 것 같네요. 
+- keras로 dropout을 사용하면서 하면, 0.9는 쉽게 넘기지 않을까? 생각했는데, 마음처럼 되지 않습니다. 역시, Generalization은 매우 어렵다는 것을 깨닫습니다. 
+- dropout을 많이 넣었다고 해도, 적절한 epoch의 시점을 찾는 것이 어렵습니다. 너무 많이 넣으면, 다시 과적합이 되고, 너무 적게 넣으면, 문제가 발생하니까요. 
+- 흠, keras에서 모델을 fitting할때, train_score, 와 test_score를 함께 고려해서 진행할수는 없을까요?
+    - 찾아보니, 내부에 `validation_split`를 함께 넘길 수 있습니다. 이 값을 넘겨주면, 알아서 잘라서, train, validation score를 계산해줍니다. 
+
+```python
+import pandas as pd
+import numpy as np 
+import matplotlib.pyplot as plt
+
+from sklearn.model_selection import cross_val_score, train_test_split
+from sklearn.metrics import accuracy_score
+
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation, Conv2D, Flatten, MaxPooling2D
+from keras.optimizers import SGD, Adam
+from keras import metrics
+
+x_train = pd.read_csv(x_train_url, header=None)
+y_train = pd.read_csv(y_train_url, header=None)
+x_test = pd.read_csv(x_test_url, header=None)
+
+x_train_v = x_train.values
+x_train_train, x_train_test, y_train_train, y_train_test = train_test_split(x_train_v, y_train, 
+                                                                            train_size=0.6, 
+                                                                            test_size=0.4, 
+                                                                            random_state=42
+                                                                           )
+
+model = Sequential([
+    Dense(256, kernel_initializer='normal', activation = "relu", input_shape=(40, )), 
+    Dropout(0.5), 
+    Dense(1024, kernel_initializer='normal', activation = "relu"),
+    Dropout(0.5), 
+    Dense(2048, kernel_initializer='normal', activation = "relu"),
+    Dropout(0.5), 
+    Dense(512, kernel_initializer='normal', activation = "relu"),
+    Dropout(0.5), 
+    Dense(256, kernel_initializer='normal', activation = "relu"),
+    Dropout(0.5),
+    Dense(64, kernel_initializer='normal', activation = "relu"),
+    Dropout(0.5),
+    Dense(16, kernel_initializer='normal', activation = "relu"),
+    Dense(1, kernel_initializer='normal', activation = "sigmoid"), 
+])
+
+model.compile(loss='binary_crossentropy', 
+              optimizer=Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-8), 
+              metrics=[metrics.binary_accuracy, metrics.binary_crossentropy])
+
+train_history = model.fit(x_train_v, y_train.values, epochs=30, 
+                          batch_size=200, verbose=0, validation_split=0.2)
+
+y_train_train_pred = (model.predict(x_train_train) > 0.5).astype('int64')
+y_train_test_pred = (model.predict(x_train_test) > 0.5).astype('int64')
+
+print("train: {}, test: {}".format(
+    accuracy_score( y_train_train.values, y_train_train_pred.astype("int64")), 
+    accuracy_score( y_train_test.values, y_train_test_pred.astype("int64"))
+))
+
+submit_df = pd.DataFrame({'Id':range(1,1+len(x_test)), 
+              'Solution':(model.predict(x_test.values) > 0.5).astype('int64').ravel()
+             })
+submit_df.to_csv('180607_ds_london.csv', index=False)    
+print("complete")
+
+train_history.history.keys()
+
+x = range(0, len(train_history.history['val_loss']))
+train_binary_accuracy_lst = train_history.history['binary_accuracy']
+val_binary_accuracy_lst = train_history.history['val_binary_accuracy']
+
+plt.figure(figsize=(12, 4))
+plt.plot(x, train_binary_accuracy_lst, label='train_score')
+plt.plot(val_binary_accuracy_lst, label='val_score')
+plt.legend()
+plt.savefig("../../assets/images/markdown_img/180608_1224_keras_train_val_score_plot.svg")
+plt.show()
+```
+
+- dropout 덕분에 overfitting이 발생하지 않는 것을 알 수 있습니다. 
+
+![](/assets/images/markdown_img/180608_1224_keras_train_val_score_plot.svg)
 
 ## wrap-up
 
-- `sklearn`에 워낙 괜찮은 classifier들이 많아서, 그냥 그대로 사용하면 될 거라고 생각했는데, 
+- `sklearn`에 워낙 괜찮은 classifier들이 많아서, 그냥 그대로 사용하면 될 거라고 생각했는데, 쉽지 않습니다. 
+- 결국 0.9(0.89865가 최종 스코어) 근처까지는 갔지만, 0.9는 넘기지 못하고 일단 멈추겠습니다. 
 
 ## reference 
 
