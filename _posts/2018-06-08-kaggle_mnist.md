@@ -574,11 +574,216 @@ train, loss and metric: [0.0060941704176920687, 0.99824404761904761]
 test, loss and metric: [0.028339080603438475, 0.99226190476190479]
 ```
 
-### keep it, and more epoch. 
+### more dropout, more epoch, more fully connecte layer 
 
-- 위 코드를 그대로 하되, epoch만 더 늘려보자. 
+- dropout을 추가하고, epoch도 추가하고, fully connected layer도 추가했다. 
+- 그 결과로 0.99271 까지 올렸음. 지금까지 최고 기록. 
+- epoch을 한 더 올려서 한번만 더 해보면 좋을 것 같다.
+- epoch에 따른 score의 변화 정도를 보면, epoch을 좀 더 올려도 괜찮을 것 같은데, 흠.
 
 
+```python
+import pandas as pd
+import numpy as np
+import keras
+import tensorflow as tf 
+
+from sklearn.model_selection import train_test_split
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import accuracy_score
+
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation, Conv2D, Flatten, MaxPooling2D
+from keras.optimizers import SGD
+from keras import metrics
+
+
+X = train_df[train_df.columns[1:]]
+Y = pd.get_dummies(train_df['label'])
+
+X_values = (X.values.astype(np.float64)/256.0).reshape(len(X), 28, 28, 1)
+Y_values = Y.values.astype(np.float32)
+
+x_train, x_test, y_train, y_test = train_test_split(X_values, Y_values, 
+                                                    test_size = 0.2, random_state=42)
+
+
+model = Sequential([
+    Conv2D(filters = 32, kernel_size = (5,5),padding = 'Same', activation ='relu', input_shape = (28,28,1)),
+    Conv2D(filters = 32, kernel_size = (5,5),padding = 'Same', activation ='relu'),
+    MaxPooling2D(pool_size=(2,2)),
+    Dropout(0.25),
+    
+    Conv2D(filters = 64, kernel_size = (3,3),padding = 'Same', activation ='relu'),
+    Conv2D(filters = 64, kernel_size = (3,3),padding = 'Same', activation ='relu'),
+    MaxPooling2D(pool_size=(2,2), strides=(2,2)),
+    Dropout(0.25),
+    
+    Conv2D(filters = 128, kernel_size = (2,2),padding = 'Same', activation ='relu'),
+    Conv2D(filters = 128, kernel_size = (2,2),padding = 'Same', activation ='relu'),
+    MaxPooling2D(pool_size=(2,2), strides=(2,2)),
+    Dropout(0.25),
+    
+    Conv2D(filters = 256, kernel_size = (2,2),padding = 'Same', activation ='relu'),
+    Conv2D(filters = 256, kernel_size = (2,2),padding = 'Same', activation ='relu'),
+    MaxPooling2D(pool_size=(2,2), strides=(2,2)),
+    Dropout(0.25),
+    
+    Flatten(),
+    Dense(1024, activation = "relu"),
+    Dropout(0.5),
+    Dense(512, activation = "relu"),
+    Dropout(0.5),
+    Dense(256, activation = "relu"),
+    Dropout(0.5),
+    Dense(128, activation = "relu"),
+    Dropout(0.5),
+    Dense(32, activation = "relu"),
+    Dense(10, activation = "softmax")
+])
+
+model.compile(loss='categorical_crossentropy', 
+              optimizer=Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-8), 
+              metrics=[metrics.categorical_accuracy])
+
+train_history = model.fit(x_train, y_train, epochs=60, batch_size=500, verbose=1)
+train_history = train_history.history
+
+loss_and_metric = model.evaluate(x_train, y_train, batch_size=128, verbose=0)
+print("train, loss and metric: {}".format(loss_and_metric))
+loss_and_metric = model.evaluate(x_test, y_test, batch_size=128, verbose=0)
+print("test, loss and metric: {}".format(loss_and_metric))
+```
+
+```
+Epoch 1/60
+33600/33600 [==============================] - 463s - loss: 2.2920 - categorical_accuracy: 0.1304   
+Epoch 2/60
+33600/33600 [==============================] - 446s - loss: 1.8574 - categorical_accuracy: 0.2776   
+Epoch 3/60
+33600/33600 [==============================] - 446s - loss: 0.7728 - categorical_accuracy: 0.7252   
+Epoch 4/60
+33600/33600 [==============================] - 431s - loss: 0.3059 - categorical_accuracy: 0.9269   
+Epoch 5/60
+33600/33600 [==============================] - 439s - loss: 0.2131 - categorical_accuracy: 0.9551   
+Epoch 6/60
+33600/33600 [==============================] - 433s - loss: 0.1614 - categorical_accuracy: 0.9657   
+Epoch 7/60
+33600/33600 [==============================] - 438s - loss: 0.1254 - categorical_accuracy: 0.9727   
+Epoch 8/60
+33600/33600 [==============================] - 440s - loss: 0.1074 - categorical_accuracy: 0.9790   
+Epoch 9/60
+33600/33600 [==============================] - 431s - loss: 0.1039 - categorical_accuracy: 0.9772   
+Epoch 10/60
+33600/33600 [==============================] - 428s - loss: 0.0926 - categorical_accuracy: 0.9812   
+Epoch 11/60
+33600/33600 [==============================] - 430s - loss: 0.0786 - categorical_accuracy: 0.9831   
+Epoch 12/60
+33600/33600 [==============================] - 428s - loss: 0.0829 - categorical_accuracy: 0.9827   
+Epoch 13/60
+33600/33600 [==============================] - 432s - loss: 0.0811 - categorical_accuracy: 0.9840   
+Epoch 14/60
+33600/33600 [==============================] - 429s - loss: 0.0647 - categorical_accuracy: 0.9871   
+Epoch 15/60
+33600/33600 [==============================] - 433s - loss: 0.0676 - categorical_accuracy: 0.9864   
+Epoch 16/60
+33600/33600 [==============================] - 444s - loss: 0.0622 - categorical_accuracy: 0.9869   
+Epoch 17/60
+33600/33600 [==============================] - 433s - loss: 0.0713 - categorical_accuracy: 0.9851   
+Epoch 18/60
+33600/33600 [==============================] - 433s - loss: 0.0545 - categorical_accuracy: 0.9885   
+Epoch 19/60
+33600/33600 [==============================] - 431s - loss: 0.0476 - categorical_accuracy: 0.9902   
+Epoch 20/60
+33600/33600 [==============================] - 432s - loss: 0.0478 - categorical_accuracy: 0.9903   
+Epoch 21/60
+33600/33600 [==============================] - 430s - loss: 0.0506 - categorical_accuracy: 0.9894   
+Epoch 22/60
+33600/33600 [==============================] - 431s - loss: 0.0474 - categorical_accuracy: 0.9907   
+Epoch 23/60
+33600/33600 [==============================] - 433s - loss: 0.0449 - categorical_accuracy: 0.9907   
+Epoch 24/60
+33600/33600 [==============================] - 435s - loss: 0.0483 - categorical_accuracy: 0.9896   
+Epoch 25/60
+33600/33600 [==============================] - 444s - loss: 0.0360 - categorical_accuracy: 0.9924   
+Epoch 26/60
+33600/33600 [==============================] - 442s - loss: 0.0473 - categorical_accuracy: 0.9901   
+Epoch 27/60
+33600/33600 [==============================] - 447s - loss: 0.0421 - categorical_accuracy: 0.9910   
+Epoch 28/60
+33600/33600 [==============================] - 445s - loss: 0.0382 - categorical_accuracy: 0.9916   
+Epoch 29/60
+33600/33600 [==============================] - 460s - loss: 0.0444 - categorical_accuracy: 0.9905   
+Epoch 30/60
+33600/33600 [==============================] - 429s - loss: 0.0385 - categorical_accuracy: 0.9914   
+Epoch 31/60
+33600/33600 [==============================] - 431s - loss: 0.0334 - categorical_accuracy: 0.9922   
+Epoch 32/60
+33600/33600 [==============================] - 432s - loss: 0.0356 - categorical_accuracy: 0.9925   
+Epoch 33/60
+33600/33600 [==============================] - 432s - loss: 0.0344 - categorical_accuracy: 0.9921   
+Epoch 34/60
+33600/33600 [==============================] - 432s - loss: 0.0511 - categorical_accuracy: 0.9890   
+Epoch 35/60
+33600/33600 [==============================] - 428s - loss: 0.0332 - categorical_accuracy: 0.9928   
+Epoch 36/60
+33600/33600 [==============================] - 431s - loss: 0.0367 - categorical_accuracy: 0.9925   
+Epoch 37/60
+33600/33600 [==============================] - 428s - loss: 0.0384 - categorical_accuracy: 0.9922   
+Epoch 38/60
+33600/33600 [==============================] - 433s - loss: 0.0316 - categorical_accuracy: 0.9936   
+Epoch 39/60
+33600/33600 [==============================] - 428s - loss: 0.0324 - categorical_accuracy: 0.9932   
+Epoch 40/60
+33600/33600 [==============================] - 432s - loss: 0.0333 - categorical_accuracy: 0.9933   
+Epoch 41/60
+33600/33600 [==============================] - 430s - loss: 0.0287 - categorical_accuracy: 0.9940   
+Epoch 42/60
+33600/33600 [==============================] - 428s - loss: 0.0326 - categorical_accuracy: 0.9936   
+Epoch 43/60
+33600/33600 [==============================] - 430s - loss: 0.0283 - categorical_accuracy: 0.9941   
+Epoch 44/60
+33600/33600 [==============================] - 428s - loss: 0.0285 - categorical_accuracy: 0.9943   
+Epoch 45/60
+33600/33600 [==============================] - 429s - loss: 0.0256 - categorical_accuracy: 0.9946   
+Epoch 46/60
+33600/33600 [==============================] - 434s - loss: 0.0249 - categorical_accuracy: 0.9950   
+Epoch 47/60
+33600/33600 [==============================] - 433s - loss: 0.0314 - categorical_accuracy: 0.9936   
+Epoch 48/60
+33600/33600 [==============================] - 429s - loss: 0.0278 - categorical_accuracy: 0.9943   
+Epoch 49/60
+33600/33600 [==============================] - 433s - loss: 0.0278 - categorical_accuracy: 0.9941   
+Epoch 50/60
+33600/33600 [==============================] - 428s - loss: 0.0258 - categorical_accuracy: 0.9949   
+Epoch 51/60
+33600/33600 [==============================] - 428s - loss: 0.0316 - categorical_accuracy: 0.9938   
+Epoch 52/60
+33600/33600 [==============================] - 428s - loss: 0.0282 - categorical_accuracy: 0.9944   
+Epoch 53/60
+33600/33600 [==============================] - 431s - loss: 0.0366 - categorical_accuracy: 0.9930   
+Epoch 54/60
+33600/33600 [==============================] - 432s - loss: 0.0360 - categorical_accuracy: 0.9928   
+Epoch 55/60
+33600/33600 [==============================] - 433s - loss: 0.0372 - categorical_accuracy: 0.9923   
+Epoch 56/60
+33600/33600 [==============================] - 436s - loss: 0.0336 - categorical_accuracy: 0.9929   
+Epoch 57/60
+33600/33600 [==============================] - 434s - loss: 0.0366 - categorical_accuracy: 0.9930   
+Epoch 58/60
+33600/33600 [==============================] - 435s - loss: 0.0302 - categorical_accuracy: 0.9938   
+Epoch 59/60
+33600/33600 [==============================] - 433s - loss: 0.0234 - categorical_accuracy: 0.9950   
+Epoch 60/60
+33600/33600 [==============================] - 432s - loss: 0.0282 - categorical_accuracy: 0.9941   
+train, loss and metric: [0.005773499012014305, 0.99863095238095234]
+test, loss and metric: [0.036450345025153923, 0.99321428594135108]
+```
+
+
+## more epoch
+
+- epoch을 좀 더 올리고, 그만큼 dropout도 더 올려보자. 
 
 ## reference
 
