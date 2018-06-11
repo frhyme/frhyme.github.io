@@ -76,3 +76,4 @@ plt.show()
 ## reference
 
 - <http://scikit-learn.org/stable/modules/generated/sklearn.metrics.make_scorer.html>
+- <https://www.kaggle.com/c/bike-sharing-demand/leaderboard>
