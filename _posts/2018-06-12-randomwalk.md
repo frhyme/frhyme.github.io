@@ -1,7 +1,7 @@
 ---
 title: random walk를 정리해봅시다. 
 category: python
-tags: python python-lib random-walk matplotlib
+tags: python python-lib random-walk matplotlib numpy pandas sklearn 
 ---
 
 ## random walk
@@ -96,9 +96,88 @@ plt.savefig('../../assets/images/markdown_img/180612_1322_autocorrelation_plot.s
 plt.show()
 ```
 
+## predicting time series data 
+
+- 그렇다면, 만약 일정 주기로 sin곡선과 비슷한 값을 가지는 어떤 time series 데이터가 있다면 이 데이터를 예측할 수 있을까요? 한번 해봅시다. 
+- 너무도 당연하게, 잘되네요. 해보니까 왜 했나 싶기도 한데...아무튼 뭐 그렇습니다. 
+
+```python
+import numpy as np 
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+cycle = 10 # 몇 개의 cycle
+point_per_cycle = 30 # cycle 별로 몇 개의 데이터? 
+df = pd.DataFrame({'x':np.sin(np.linspace(0, 3.14*cycle*2, cycle*point_per_cycle))},
+                  index = pd.date_range('2018-01-01', periods=cycle*point_per_cycle)
+                 )
+df['x'] = np.arange(0, len(df))/len(df)*3 + df['x'] + np.random.normal(0, 0.3, cycle*point_per_cycle)
+df['d'] = np.arange(0, len(df))
+
+## time shifting data generation 
+for shift_v in [30, 60, 120]:
+    df['shift_{}'.format(shift_v)] = df['x'].shift(shift_v)
+ind_columns = list(set(df.columns) - set(['x']))
+df_dropna = df.dropna()
+## data modeling and fitting
+reg = LinearRegression()
+reg.fit(df_dropna[ind_columns][:100], df_dropna['x'][:100])
+## plotting
+plt.figure(figsize=(12, 4))
+plt.plot(df.index, df['x'], marker='o', alpha=0.5, label='y_true')
+plt.plot(df_dropna.index, reg.predict(df_dropna[ind_columns]), 
+         linestyle='--', linewidth=3, label='y_pred', color='red')
+plt.legend()
+plt.savefig('../../assets/images/markdown_img/180612_1454_timeseries-plotting_reg.svg')
+plt.show()
+```
+
+![](/assets/images/markdown_img/180612_1454_timeseries-plotting_reg.svg)
 
 
+## prediction random walk
 
+- 막상 해보니까, 당연하게도 엉망으로 예측되는데, 사실 당연합니다...이거 왜했지...
+
+```python
+import numpy as np 
+import matplotlib.pyplot as plt
+import pandas as pd 
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
+
+sample_size = 1000
+df_rw = pd.DataFrame({'x': np.cumsum(np.random.normal(0, 1, sample_size))}, 
+                     index =  pd.date_range('2018-01-01', periods=sample_size)
+                 )
+for shift_v in [30, 50, 100, 200]:
+    df_rw['shift_{}'.format(shift_v)] = df_rw['x'].shift(shift_v)
+
+ind_columns = list(set(df_rw.columns) - set(['x']))
+df_rw_dropna = df_rw.dropna()
+## data modeling and fitting
+reg_lin = LinearRegression()
+reg_rf = RandomForestRegressor()
+
+reg_rf.fit(df_rw_dropna[ind_columns][:len(df_rw_dropna)//2], df_rw_dropna['x'][:len(df_rw_dropna)//2])
+reg_lin.fit(df_rw_dropna[ind_columns][:len(df_rw_dropna)//2], df_rw_dropna['x'][:len(df_rw_dropna)//2])
+
+plt.figure(figsize=(12, 6))
+plt.plot(df_rw['x'], label='y_true')
+plt.plot(df_rw_dropna.index, reg_rf.predict(df_rw_dropna[ind_columns]), label='random forest', linestyle='--')
+plt.plot(df_rw_dropna.index, reg_lin.predict(df_rw_dropna[ind_columns]), label='lin reg', linestyle=':')
+plt.legend()
+plt.savefig("../../assets/images/markdown_img/180612_1511_random_walk_fitting.svg")
+plt.show()
+```
+
+![](/assets/images/markdown_img/180612_1511_random_walk_fitting.svg)
+
+## wrap-up
+
+- random walk에서 시작해서, time series로 빠져버린 느낌이 있는데, 뭐 어쩔수 없죠 하하핫
+- 다음에는 rnn을 이용해보겠숩니다 
 
 
 ## reference 
