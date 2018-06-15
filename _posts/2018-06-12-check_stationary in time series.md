@@ -1,7 +1,7 @@
 ---
 title: time series의 stationarity를 체크해봅시다. 
 category: python-lib
-tags: python python-lib time-series stationarity
+tags: python python-lib time-series stationarity statsmodels pandas numpy matplotlib
 
 ---
 

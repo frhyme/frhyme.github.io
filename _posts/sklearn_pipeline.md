@@ -16,6 +16,5 @@ tags: python python-lib sklearn pipeline
 - 뭘 좀 해보려는데, 생각보다 오류가 아주 많이 발생합니다. component 별로 input, output이 다를 수 있고, 등등 문제가 있기 때문에 그냥 필요하다면, pipeline을 쓰지 않고, 직접 function을 만들어서 하는 게 더 효율적인 것 같습니다. 필요없어요. 
 
 ## reference
-
 - 
 
