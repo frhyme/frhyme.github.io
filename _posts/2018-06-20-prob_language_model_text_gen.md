@@ -4,7 +4,7 @@ category: python-lib
 tags: python python-lib nltk numpy counter movie_reviews
 ---
 
-## 그럴법한 문장을 만들어봅시다 
+## 확률모형을 이용하여 그럴법한 문장을 만들어봅시다 
 
 - [이 포스트](https://datascienceschool.net/view-notebook/a0c848e1e2d343d685e6077c35c4203b/)를 참고하여 코드와 내용을 아주 조금 수정하였습니다. 
 - 저는 보통 말을 할때, 전체 문장을 다 만든 다음에 말을 하지 않아요. 약간 말을 하면서 뱉어진 단어가, 새로운 단어를 끌고 온다는 느낌으로 말을 하게 될때가 많습니다. 사실 대부분의 사람이 그렇지 않을까? 싶기도 하구요. 
