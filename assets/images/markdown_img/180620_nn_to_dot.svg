@@ -1,0 +1,12 @@
+digraph G {
+rankdir=TB;
+concentrate=True;
+node [shape=record];
+121202197336 [label="name1_input: InputLayer\n|{input:|output:}|{{(None, 3, 1)}|{(None, 3, 1)}}"];
+121202163384 [label="name1: SimpleRNN\n|{input:|output:}|{{(None, 3, 1)}|{(None, 1)}}"];
+121202196552 [label="name2: Dense\n|{input:|output:}|{{(None, 1)}|{(None, 10)}}"];
+121202196888 [label="dense_130: Dense\n|{input:|output:}|{{(None, 10)}|{(None, 1)}}"];
+121202197336 -> 121202163384;
+121202163384 -> 121202196552;
+121202196552 -> 121202196888;
+}
