@@ -35,7 +35,7 @@ model_dot.write('../../assets/images/markdown_img/180620_nn_to_dot.svg', prog=No
 SVG(model_to_dot(model1, show_shapes=True).create(prog='dot', format='svg'))
 ```
 
-![](180620_nn_to_dot.svg)
+![](/assets/images/markdown_img/180620_nn_to_dot.svg)
 
 
 ## wrap-up 
