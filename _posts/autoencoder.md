@@ -1,7 +1,7 @@
 ---
-title: 
-category:
-tags:
+title: auto-encoding, decoding
+category: machine-learning
+tags: python python-lib machine-learning keras 
 
 ---
 
@@ -12,4 +12,6 @@ tags:
 
 ## reference
 
-- https://blog.keras.io/building-autoencoders-in-keras.html
+- <https://blog.keras.io/building-autoencoders-in-keras.html>
+- <https://www.datacamp.com/community/tutorials/autoencoder-keras-tutorial>
+- <https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798>
