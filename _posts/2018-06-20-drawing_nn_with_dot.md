@@ -28,7 +28,6 @@ model1 = Sequential([
     Dense(10, activation='linear', name='name2'), 
     Dense(1, activation='linear'), 
     ])
-model_dot = model_to_dot(model1, show_shapes=True)
 # 파일로 저장하기 
 from keras.utils import plot_model
 plot_model(model1, to_file='../../assets/images/markdown_img/180620_nn_to_dot.svg')

@@ -15,7 +15,7 @@ tags: python python-lib machine-learning keras
 ## issue??
 
 - what is encoding?
-- auto-encoding, auto-decoding
+ auto-encoding, auto-decoding
 - gan과의 차이점. 
 
 ## reference
