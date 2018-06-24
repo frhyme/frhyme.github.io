@@ -30,7 +30,8 @@ model1 = Sequential([
     ])
 model_dot = model_to_dot(model1, show_shapes=True)
 # 파일로 저장하기 
-model_dot.write('../../assets/images/markdown_img/180620_nn_to_dot.svg', prog=None, format='raw', encoding=None)
+from keras.utils import plot_model
+plot_model(model1, to_file='../../assets/images/markdown_img/180620_nn_to_dot.svg')
 # jupyter notebook에서 보기 위함
 SVG(model_to_dot(model1, show_shapes=True).create(prog='dot', format='svg'))
 ```
