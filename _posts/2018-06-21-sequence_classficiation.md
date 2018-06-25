@@ -143,6 +143,8 @@ Accuracy: 82.55
 - <http://adventuresinmachinelearning.com/keras-lstm-tutorial/>
 - <https://machinelearningmastery.com/sequence-classification-lstm-recurrent-neural-networks-python-keras/>
 
+---
+
 ## raw code
 
 ```python
