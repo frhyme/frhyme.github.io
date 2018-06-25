@@ -23,6 +23,7 @@ tags:
 ## 잘 이해했나 모르겠지만 일단은......
 
 - 아무튼 간에, 과거에는 Bayesian 네트워크를 공부하는 사람들이 많았고, `sklearn`같은데에도 아직 naive bayesian 을 이용해서 classfication할 수 있긴 합니다(저는 그냥 random forest 사용합니다)
+- bayesian network를 써보면, 뭔가 더 재밌는것을 할 수 있지 않을까? 싶어요. 
 
 ## reference
 
