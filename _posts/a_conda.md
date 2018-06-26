@@ -14,4 +14,5 @@ tags: python conda
 
 ## reference 
 
+- <https://stackoverflow.com/questions/42182706/how-to-uninstall-anaconda-completely-from-macos>
 
