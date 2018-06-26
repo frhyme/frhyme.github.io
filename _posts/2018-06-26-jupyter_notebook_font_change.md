@@ -1,7 +1,7 @@
 ---
 title: jupyter notebook 커스토마이징하기. 
 category: python-lib
-tags: python python-lib css jupyter-notebook customizing conda
+tags: python python-lib css jupyter-notebook customizing conda font-family
 ---
 
 ## 나는 갑자기 왜 jupyter notebook 설정을 바꾸었나 
@@ -25,25 +25,18 @@ jupyter notebook --generate-config
 - `~/.jupyter/` 아래에, `custom`이라는 폴더를 새로 만들고, 그 아래에 `custom.css`라는 파일을 만들어줍니다.
 - `custom.css` 파일 내에 아래 설정을 넣어주면 됩니다. 
     - 적용된 건지, 안된건지 헷갈리니까 그냥 막 `font-size`를 34 뭐 이런식으로 세팅해서 보시는게 편합니다. 
-
-```css
-.CodeMirror pre {font-family: Consolas; font-size: 14pt; line-height: 140%;}
-
-```
-
-## issue
-
-
-- 그래서 만들고 나면 사용자 폴더(home director) 아래에 `.jupyter` 폴더가 생긴 것을 알 수 있습니다(`/Users/frhyme/.jupyter`).
-- `/Users/frhyme/.jupyter` 아래에, `custom`이라는 폴더를 새로 만들고, 그 아래에 `custom.css`라는 파일을 만들어줍니다.
-- `custom.css` 파일 내에 아래 설정을 넣어주면 됩니다. 
-    - 적용된 건지, 안된건지 헷갈리니까 그냥 막 `font-size`를 34 뭐 이런식으로 세팅해서 보시는게 편합니다. 
     - 저는 쥬피터 노트북 가로폭을 넓게 보기 위해서 다음처럼 바꾸었습니다. 
     - 의미는 몰라요. 저는 css를 잘 모릅니다. 일단 필요한거만 세팅하고 나머지는 안 건드릴래요ㅎㅎㅎㅎㅎㅎㅎㅎ
+        - [여기](https://gist.github.com/pmlandwehr/6bd26d0aabab5963a34dcaba1d6a18d4) 보면 jupyter notebook에서 사용하는 class들이 있는지, 왠지 이거인가? 싶은것을 보면서 고쳤습니다.
+- 왠지 네이버 d2 폰트가 더 좋지 않을까? 싶어서 봤는데, 제가 설정한 `Consolas`도 충분히 좋습니다. 안 하기로 했어요 헤헤헤
 
 ```css
-.CodeMirror pre {font-family: Consolas; font-size: 14pt; line-height: 140%;}
+.CodeMirror pre {font-family: Consolas; font-size: 12pt; line-height: 140%;}
 .container { width:100% !important; }
+div.output pre{
+    font-family: Consolas;
+    font-size: 12pt;
+}
 ```
 
 ## 테마 바꾸기. 
@@ -54,13 +47,13 @@ jupyter notebook --generate-config
 
 ### 라이브러리 설치 
 
-```
+```bash
 pip install jupyterthemes
 ```
 
 ### 적용할 수 있는 테마 리스트업
 
-```
+```bash
 jt -l 
 ```
 
@@ -68,7 +61,7 @@ jt -l
 
 - 테마 적용(`themename`)내에 원하는 테마 이름을 넣어서 사용하시면 됩니다(위의 `jt -l`을 치면 테마 이름이 죽 나와요. 
 
-```
+```bash
 jt -t themename
 ```
 
