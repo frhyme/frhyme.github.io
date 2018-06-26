@@ -12,6 +12,7 @@ tags: python conda
 - 화가 나서 기존에 있던 파이썬과 콘다를 다 날려버리고, 콘다를 다시 설치하기로 했씁니다. 이게 제일 깔끔해요. 
 - 하는 김에, 저는 같은 실수를 반복하는 종류의 인간이기 때문에, 콘다에서 사용할 수 있는 커맨드들을 좀 정리해보기로 했습니다.
 
+
 ## reference 
 
 - <https://stackoverflow.com/questions/42182706/how-to-uninstall-anaconda-completely-from-macos>

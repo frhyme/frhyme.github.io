@@ -10,3 +10,6 @@ tags: shell bash bash_profile
 
 
 
+
+
+ㅓupyter notebook --generate-config
