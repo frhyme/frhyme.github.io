@@ -13,3 +13,8 @@ tags: python python-lib image
     - 그래서 이걸 gif로 고치거나, video로 고치거나 해야 할것 같은데, 이것도 잘안되요(비디오 코덱문제) 
 - 그 과정에서, 제가 이미지나 비디오 등 처리에 대해서 너무 모르는 것이 아닌가? 싶어서 일단 이미지 처리부터 다시 정리해두기로 했습니다. 
 
+
+![](../../assets/images/markdown_img/180628_1935_google_rgb.svg)
+
+## reference
+
