@@ -11,10 +11,13 @@ tags: python python-lib image
     - 그런데 쥬피터 노트북에 embeded로 상황을 렌더링하는 것이 안되요. 
     - 쥬피터 노트북 밖에서 화면이 뜨는데, 여기서 오류가 많이 발생해요. 
     - 그래서 이걸 gif로 고치거나, video로 고치거나 해야 할것 같은데, 이것도 잘안되요(비디오 코덱문제) 
-- 그 과정에서, 제가 이미지나 비디오 등 처리에 대해서 너무 모르는 것이 아닌가? 싶어서 일단 이미지 처리부터 다시 정리해두기로 했습니다. 
+- 그 과정에서, 제가 이미지나 비디오 등 처리에 대해서 너무 모르는 것이 아닌가? 싶어서 일단 이미지 처리부터 다시 정리해보기로 했습니다. 
 
 
 ![](../../assets/images/markdown_img/180628_1935_google_rgb.svg)
 
 ## reference
+
+
+- <https://matplotlib.org/gallery/misc/agg_buffer_to_array.html>
 
