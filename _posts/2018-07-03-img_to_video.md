@@ -1,7 +1,7 @@
 ---
 title: python에서 이미지 비디오로 변환하기. 
 category: python-lib
-tags: python python-lib jupyter-notebook 
+tags: python python-lib jupyter-notebook HTML video image matplotlib
 
 ---
 
@@ -85,6 +85,10 @@ video_url = '../../assets/images/markdown_img/180702_cat_blending.mp4'
 make_video(video_url)
 show_video_in_jupyter_nb(200, 300, video_url)
 ```
+
+## wrap-up
+
+- `ani.save`에서의 `dpi`는 가급적 256정도로 그대로 유지하고, 만약 비디오의 화질을 올리고 싶다면 넘기는 `np.array`의 화질을 올리는 것이 합당함. 
 
 ## reference
 
