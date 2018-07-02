@@ -5,6 +5,31 @@ tags: python python-lib jupyter-notebook
 
 ---
 
+## 파이썬에서 이미지들을 비디오로 변환하기 
+
+- 파이썬으로 그림을 그리다보면, gif 같은 걸 만들고 싶을때가 있습니다. 
+- 예를 들면, scatter 그림을 여러 개 찍어서 일종의 애니메이션처럼 만들고 싶을 때도 있고, 데이터가 추가되면서, optimum이 어디로 변해가는지도, 애니메이션으로 보여주면 좋겠다, 라는 생각들을 하게 되죠.
+- 그래서, 다 좋은데 그걸 어떻게 해야 하는가? 를 이 포스트에서 다루어 보려고 합니다. 
+
+## 우선, jupyter notebook에 비디오 표시하기 
+
+- `from IPython.display import HTML`를 사용합니다. 
+
+```python
+from IPython.display import HTML
+
+HTML("""
+<video width="320" height="240" controls>
+  <source src="path/to/your.mp4" type="video/mp4">
+</video>
+""")
+```
+
+## reference
+
+- <https://stackoverflow.com/questions/44947505/how-to-make-a-movie-out-of-images-in-python>
+---
+
 ## jupyter notebook에서 HTML등 보여주기 
 
 - 최근에 강화학습을 공부하고 있습니다. 강화학습은 사실 게임 AI를 만드는 것과 비슷합니다. 즉 계속 화면에 게임 화면처럼 계속 바뀌는, 애니메이션을 그려주는 것이 필요하죠. 제가 계속 확인하면서 하면 좋으니까요. 
