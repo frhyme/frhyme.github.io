@@ -27,7 +27,7 @@ for i, r in enumerate(blend_rates):
     axes[i].imshow(blended_img), axes[i].axis('off')
     axes[i].set_xticks([]), axes[i].set_yticks([]), 
     axes[i].set_title("img_a: {}, img_b: {}".format(1-r, r), fontsize=8)
-plt.savefig('../../assets/images/markdown_img/180630_1850_cat_blended.svg')
+plt.savefig('../../assets/images/markdown_img/180630_1850_cat_blended.svg', pad_inches=0)
 plt.show()
 ```
 
