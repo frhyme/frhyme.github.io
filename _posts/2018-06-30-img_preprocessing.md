@@ -69,6 +69,7 @@ plt.show()
 ## figure to np.array
 
 - 아래 함수를 쓰시면, 간단하게 현재 `plt.figure()`를 `np.array`로 변환할 수 있습니다. 
+
 ```python
 import numpy as np 
 import matplotlib.pyplot as plt 
