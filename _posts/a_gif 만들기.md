@@ -1,17 +1,54 @@
 ---
-title: matplotlib에서 gif를 만들어보겠습니다(실패)
+title: 마크다운에 animated gif를 넣어보기 
 category: others
-tags: python matplotlib python-lib 
+tags: gif 
+---
+
+## 우선 gif란 무엇인가? 
+
+- Graphical Interchange Format(GIF)의 약자입니다. 초기에는 단순히 이미지 포맷에 가까웠지만, 지금은 '움짤'이 인기를 끌면서, 다시 부흥하고 있다고 하죠. 
+- 여담이지만, 밞음이 "지프"인지, "기프"인지는 탕수육 부먹/찍먹 논란만큼 말이 많다고 합니다. GIF개발자가 "지프"가 맞다 라고 했지만, 여전히 변화는 없다고 하네요.
+- 뭐, 어떻게 부르던 무슨 상관인가 싶지만, indentation에 대해서도 민감한 개발자들이 이런 요소에 민감하지 않을 리 없죠. 
+
+
+## 
+
+## 왜 갑자기 gif를 만들어보려고 하나요? 
+
+- 마크다운으로 작업 중에, 움직이는 것들 좀 넣어보려고 하는데, 잘 되는지 모르겠어요. 한번 해보려고요 
+
+### 웹 소스로부터 가져오는 경우 
+
+- [giphy](https://giphy.com)라는 gif 리포지토리에서 가져왔습니다. 
+
+```markdown
+![](https://media.giphy.com/media/MWdOAxxPDEhNKyzXVK/giphy.gif){: width="50%" height="50%"}{: .center}
+```
+
+![](https://media.giphy.com/media/MWdOAxxPDEhNKyzXVK/giphy.gif){: width="50%" height="50%"}{: .center}
+
+```html
+<iframe src="https://giphy.com/embed/MWdOAxxPDEhNKyzXVK" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ionedigital-yellow-quotes-MWdOAxxPDEhNKyzXVK">via GIPHY</a></p>
+```
+
+<iframe src="https://giphy.com/embed/MWdOAxxPDEhNKyzXVK" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ionedigital-yellow-quotes-MWdOAxxPDEhNKyzXVK">via GIPHY</a></p>
+
+
+- HTML5 video 
+
+
 ---
 
 ## 움직이는 이미지 두둠칫 두둠칫
+
+- 파이썬에서 matplotlib
 
 - 다음처럼 파이썬에서 움직이는 gif를 만들어보려고 했씁니다만, 장대하게 실패하여, 파이썬을 콘다로 아예 다시 설치했습니다. 
 - 지금도 약간 빡치지만, 그래도 이후에 이걸 다시 볼 일이 있지 않을까? 싶어서, 일단 잘 정리해두려고 합니다. 
 - 화가 나지만, 잘 정리해둬야, 지금 제가 빡치는 종류의 일이 다시 발생하지 않거든요. 
 
 
-![](https://www.educloud.co.kr/wp-content/uploads/2016/08/다운로드000.gif)
+
 
 
 ## issue
