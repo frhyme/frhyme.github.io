@@ -42,7 +42,7 @@ b
 - 그래서, 단순히 `a.decode('ascii')`로 실행하면 깔끔하게 잘 나옵니다. 
 - 만약 원래대로 돌리고 싶으면, `encode`로 원래대로 돌리면 됩니다. 
 
-```
+```python
 decoded_a = a.decode('ascii')
 print(decoded_a)
 print('--'*10)

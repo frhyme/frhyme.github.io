@@ -1,7 +1,7 @@
 ---
 title: python에서 이미지 비디오로 변환하기. 
 category: python-lib
-tags: python python-lib jupyter-notebook HTML video image matplotlib
+tags: python python-lib jupyter-notebook HTML video image matplotlib np.array
 
 ---
 
