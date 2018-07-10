@@ -78,7 +78,7 @@ section.page__content a{
     text-align: center;
 }
 
-/* _base.scss에 있던 내용을 _custom.scss로 옮김 */
+/* _base.scss에 있던 내용을 .scss로 옮김 */
 ul.posts li a:hover{
     text-decoration: underline;
   }
@@ -99,4 +99,9 @@ section.page__content{
 }
 nav.pagination a.pagination--pager{
     color:mix($link-color, #111111, 90%);
+}
+
+
+body {
+    font-family: Georgia, 'Nanum Gothic Coding', serif;
 }
