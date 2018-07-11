@@ -42,13 +42,21 @@ div {
 ## 안전하지 않은 콘텐츠
 
 - localhost에서 확인할 때는 잘 되는데, 직접 사이트에 들어가보면 폰트가 제대로 적용되어 있지 않은 것을 알 수 있어요. 
+- 원인을 찾다보니 [여기서](https://rsec.kr/?p=137) 폰트를 http로 가져왔을 경우 안전하지 않은 콘텐츠로 포함되어서 적용되지 않는 일이 있는것 같아요
+- 간단하게 `https`로 변경해줬더니 잘 되는 것 같습니다. 
+
+```scss
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);//google web font added
+```
 
 
 ## wrap-up
 
+- 블로그를 볼때마다 좀 손볼게 많을것 같은데, 일단 나중에....헤헤
 
 
 ## reference
 
 - <http://hesu.github.io/programming/jekyll/2016/04/08/jekyllblog-adding-fonts.html>
 - <https://github.com/mmistakes/minimal-mistakes/issues/1352>
+- <https://rsec.kr/?p=137>
