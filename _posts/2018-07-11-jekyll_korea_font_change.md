@@ -22,13 +22,35 @@ tags: jekyll font korean blog
     - 스타일을 변경할 때는 가능하면 `_custom.scss`에 추가해야 이후에도 관리가 편합니다. 
 
 ```scss
+/* 글 본문 폰트 적용*/
 body {
     font-family: 'Nanum Gothic Coding', serif;
 }
+
+/* 블로그 들어갔을때 글 제목 폰트 변경*/
 div {
     article{
         h2{
             a{
+                font-family: 'Nanum Gothic Coding', serif;
+            }
+        }
+    }
+}
+/* 글 내의 타이틀 변경*/
+article{
+    div{
+        header{
+            h1{
+                font-family: 'Nanum Gothic Coding', serif;
+            }
+        }
+    }
+}
+article{
+    div{
+        section{
+            h2{
                 font-family: 'Nanum Gothic Coding', serif;
             }
         }
