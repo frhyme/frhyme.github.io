@@ -103,6 +103,15 @@ nav.pagination a.pagination--pager{
 
 
 body {
-    font-family: Georgia, 'Nanum Gothic Coding', serif;
+    font-family: 'Nanum Gothic Coding', serif;
 }
 
+div {
+    article{
+        h2{
+            a{
+                font-family: 'Nanum Gothic Coding', serif;
+            }
+        }
+    }
+}
