@@ -1,5 +1,5 @@
 ---
-title: Flask로 html 상속, css 적용하기
+title: Flask로 html 상속 그리고 css 적용하기
 category: python-lib
 tags: html python python-lib Flask css 
 ---
@@ -26,13 +26,13 @@ tags: html python python-lib Flask css
 <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 ```
 
-#### block content, end block 
+#### inheritance
 
 - 또 html 문서에서는 좀 낯설게 보이는 부분이 있습니다. 
 - `layout.html`은 일종의 abstract class라고 생각하셔도 됩니다. 다른 html 문서들, `about.html`, `home.html`의 뼈대가 되죠. 
 - 아래 부분의 경우는 다른 html 문서들이 `layout.html`을 상속받고, 저 부분만 변경하여 새로운 html문서를 만들어주게 됩니다. 
 
-```html
+```
 {% block content %}
 {% endblock %}
 ```
