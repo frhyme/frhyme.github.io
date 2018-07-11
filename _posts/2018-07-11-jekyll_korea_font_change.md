@@ -56,6 +56,15 @@ article{
         }
     }
 }
+div{
+    article{
+        div{
+            a{
+                font-family: 'Nanum Gothic Coding', serif;
+            }
+        }
+    }
+}
 ```
 
 - 일단 이렇게 하면 포스트에서의 폰트는 바뀌었고, 이제 블로그 들어갔을때 보이는 제목만 바꿔주면 될듯
