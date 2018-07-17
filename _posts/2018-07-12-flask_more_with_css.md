@@ -23,7 +23,9 @@ tags: html python python-lib Flask css
 - `url_for`를 이용하면 해당 폴더의 url을 자동으로 세팅해주는 것 같아요. 
 
 ```html
+{% raw %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endraw %}
 ```
 
 #### inheritance
@@ -33,13 +35,16 @@ tags: html python python-lib Flask css
 - 아래 부분의 경우는 다른 html 문서들이 `layout.html`을 상속받고, 저 부분만 변경하여 새로운 html문서를 만들어주게 됩니다. 
 
 ```
+{% raw %}
 {% block content %}
 {% endblock %}
+{% endraw %}
 ```
 
 #### layout.html 코드
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -69,25 +74,29 @@ tags: html python python-lib Flask css
      
   </body>
 </html>
+{% endraw %}
 ```
 
 ### about.html 
 
-- 따라서, 다른 html 파일에서는 `{% extends "layout.html" %}`를 사용해서 그대로 상속받고, 
-- `{% block content %}`와 `{% endblock %}` 사이에만 html 부분을 넣어주면 됩니다. 
+- 따라서, 다른 html 파일에서는 {% raw %}{% extends "layout.html" %}{% raw %}를 사용해서 그대로 상속받고, 
+- {% raw %}{% block content %}{% endraw %}와 {% raw %}{% endblock %}{% endraw %} 사이에만 html 부분을 넣어주면 됩니다. 
 
 ```html
+{% raw %}
 {% extends "layout.html" %}
   
 {% block content %}
   <h2>About</h2>
   <p>This is an About page for the Intro to Flask article. Don't I look good? Oh stop, you're making me blush.</p>
 {% endblock %}
+{% endraw %}
 ```
 
 ### home.html 
 
 ```html
+{% raw %}
 {% extends "layout.html" %}
 {% block content %}
   <div class="jumbo">
@@ -95,6 +104,7 @@ tags: html python python-lib Flask css
     <h3>This is the home page for the Flask app<h3>
   </div>
 {% endblock %}
+{% endraw %}
 ```
 
 ## main.css

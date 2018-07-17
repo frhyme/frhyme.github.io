@@ -114,20 +114,23 @@ def hello(name=None):
 - 이를 가능하게 하기 위해서는 우리가 만든 `hello.py`가 있는 폴더에 `templates`라는 폴더를 만들고, 그 폴더 내에 `hello.html`이라는 파일을 만들어 두어야 합니다. 
 
 - `hello.html`이라는 파일은 다음으로 구성됩니다. 이것도 매우 간단하기는 한데, 
-- 파이썬의 코드인것 같긴 한데 조금 다릅니다. `{%%}`를 이용해서 표시되고, 우리가 넘겨받은 name은 `{{}}`로 감싸져 있죠. 
+- 파이썬의 코드인것 같긴 한데 조금 다릅니다. {% raw %} {{%%}} {% endraw %} 를 이용해서 표시되고, 우리가 넘겨받은 name은 {% raw %} {{}}{% endraw %} 로 감싸져 있죠. 
     - 대략 무슨 의미인지는 쉽게아실 것 같아서 넘어갑니다. 
-- 아무튼 이렇게 세팅되어 있ekaus `/hello`로 들어갔을때 우리가 이미 정의한 `html` 템플릿에 맞춰서 웹페이지가 뜨는 것을 알 수 있습니다. 
+- 아무튼 이렇게 세팅되어 있어야 `/hello`로 들어갔을때 우리가 이미 정의한 `html` 템플릿에 맞춰서 웹페이지가 뜨는 것을 알 수 있습니다. 
 
 ```html
+{% raw %}
 <!doctype html>
-<title>Hello from Flask</title>
+<title> Hello from Flask </title>
 
-{% if name %}
-  <h1>Hello <br>{{ name }}!</h1>
-{% else %}
-  <h1>Hello, World!</h1>
-{% endif %}
+{% if name%}
+  <h1> Hello <br> {{name}}! </h1>
+{% else%}
+  <h1> Hello, World! </h1>
+{% endif%}
+{% endraw %}
 ```
+
 
 ## wrap-up
 
