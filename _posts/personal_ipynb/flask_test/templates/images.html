@@ -1,8 +1,9 @@
 <html>
   <head>
-    <title>{{ title }} - image</title>
+    <title> image - {{mean}}, {{var}} </title>
   </head>
   <body>
-    <img src="{{ url_for('fig', img1 = title) }}" alt="Image Placeholder" height="500">
+      <h2>This is random normal sampling</h2>
+      <img src="{{ url_for('fig', mean=mean, var=var) }}" alt="Image Placeholder" width='800' height="500">
   </body>
 </html>
