@@ -6,7 +6,13 @@
     <h2>This is random normal image</h2>
     <h3>this is h3 </h3>
     <p>this is the paragraph</p>
-      <img src="{{ url_for('fig', mean=mean, var=var) }}" alt="Image Placeholder" 
+      <img src="{{ url_for('fig', mean=5, var=3) }}" alt="Image Placeholder" 
+      width={{width}}, height={{height}}>
+    <p>this is the paragraph</p>
+      <img src="{{ url_for('fig', mean=100, var=5) }}" alt="Image Placeholder" 
+      width={{width}}, height={{height}}>
+    <p>this is the paragraph</p>
+      <img src="{{ url_for('fig', mean=100, var=5) }}" alt="Image Placeholder" 
       width={{width}}, height={{height}}>
   </body>
 </html>

@@ -1,6 +1,6 @@
 from flask import Flask, send_file, render_template, make_response
 
-from io import BytesIO, StringIO
+from io import BytesIO
 import numpy as np 
 
 ## macOS의 경우 아래 순서에 따라서 library를 import해줘야 에러없이 잘 됩니다. 
@@ -25,14 +25,14 @@ def nocache(view):
   return update_wrapper(no_cache, view)
 ###############
 
-app = Flask(__name__, static_url_path='/static')
+app = Flask(__name__, static_url_path='/static', )
 
 @app.route('/normal/<m_v>')
 @nocache
 def normal(m_v):
   m, v = m_v.split("_")
   m, v = int(m), int(v)
-  return render_template("random_gen.html", mean=m, var=v, width=800, height=600)
+  return render_template("random_gen.html", mean=m, var=v, width=400, height=300)
 
 
 @app.route('/fig/<int:mean>_<int:var>')
@@ -52,5 +52,7 @@ def fig(mean, var):
   # plt.savefig(img, format='svg')
   # return send_file(img, mimetype='image/svg')
 
+#################
 if __name__ == '__main__':
-  app.run(debug=True)
+    # threaded=True 로 넘기면 multiple plot이 가능해짐
+  app.run(debug=True, threaded=True)

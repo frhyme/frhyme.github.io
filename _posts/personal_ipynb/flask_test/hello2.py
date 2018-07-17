@@ -1,5 +1,3 @@
-
-
 from flask import Flask, render_template, make_response, send_file
 
 from functools import wraps, update_wrapper
@@ -53,6 +51,7 @@ def images(img1):
   return render_template("images.html", title="img_{}".format(img1), 
   width=800, height=200)
 
+## 그림 url 
 @app.route('/fig/<img1>')
 @nocache
 def fig(img1):
@@ -64,7 +63,7 @@ def fig(img1):
   img = BytesIO()
   plt.savefig(img, dpi=200)
   img.seek(0)
-  
+  plt.close()
   return send_file(img, mimetype='image/png')
 
 @app.route('/normal/<m_v>')
