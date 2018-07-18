@@ -59,7 +59,8 @@ def fig(mean, var):
 
 ```python
 if __name__ == '__main__':
-    # threaded=True 로 넘기면 multiple plot이 가능해짐
+    ## threaded=True 로 넘기면 multiple plot이 가능해짐
+    ## host='0.0.0.0', port=5000 을 함께 넘기면 서버 내부의 0.0.0.0의 주소에 5000포트에서 프로그램이 실행됨
   app.run(debug=True, threaded=True)
 ```
 
@@ -136,6 +137,7 @@ if __name__ == '__main__':
 ### random_gen.html 
 
 ```html
+{% raw %}
 <html>
   <head>
     <title>random normal - {{mean}}, {{var}} </title>
@@ -154,4 +156,5 @@ if __name__ == '__main__':
       width={{width}}, height={{height}}>
   </body>
 </html>
+{% endraw %}
 ```
