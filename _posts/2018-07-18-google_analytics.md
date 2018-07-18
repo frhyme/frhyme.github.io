@@ -29,7 +29,6 @@ tags: analytics google DNS
 - 즉, Google에서 검색하여 들어온 경우 모두 키워드에 (not provided) 로 표시되는 것이라고 할 수 있습니다. 
 - 네이버에서 유입된 키워드는 잘 표시됩니다 하하하. 
 
-
 ### (not set)
 
 - 이는 일단 organic search(검색 엔진을 통해 유입된 경우)를 제외하고 direct/referal로 들어온 경우를 말합니다. 키워드로 검색해서 들어온 것이 아니므로 keyword 자체가 없고 따라서 (not set) 이 됩니다. 
@@ -44,7 +43,7 @@ tags: analytics google DNS
 
 - 자 이제 network domain이 문제입니다. network domain은 약 60% 이상이 unknown.unknown으로 구성되고, 3%가 (not set)으로 되어 있습니다. 그 외에는 ac.kr, samsung.co.kr 등 일반적인 네트워크 도메인들이 표시되어 있구요. 
 
-## DNS(Domain Name System)
+### DNS(Domain Name System)
 
 - 사실 주소창에 ip를 쳐도 문제없이 개별 사이트에 들어갈 수 있습니다. 하지만 ip를 외우는 것이 매우 어려우니까 해당 ip에 할당된 domain name이 존재하고, domain name을 주소창에 치면 해당 ip로 연결되는 시스템을 가지고 있죠. 이러한 것을 Domain Name System이라고 부릅니다. 
 - foward zone(domain name ==> ip), reverse zone(ip ==> domain name)이 각각 존재합니다. 이를 통해 변환해주는 것이죠. 
