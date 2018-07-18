@@ -11,3 +11,4 @@ tags:
 ## reference
 
 - <http://doorbw.tistory.com/46?category=679147>
+- <https://medium.com/wasd/웹-페이지-client-에서-정보-보내기-bf3aff952d3d>
