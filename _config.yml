@@ -52,7 +52,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true # true, false (default)
-search_full_content      : # true, false (default)
+search_full_content      : true # true, false (default) 원래 false였는데 20180719에 바꿔봄 
 
 # SEO Related
 google_site_verification : 
@@ -87,7 +87,7 @@ author:
   name             : "frhyme"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "always doing another thing"
-  location         : "south korea"
+  location         : "pohang, south korea"
   email            : "freerhein@gmail.com"
   uri              :
   home             : "#" # null (default), "absolute or relative url to link to author home"
@@ -181,7 +181,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 7 # amount of posts to show
+paginate: 5 # amount of posts to show 원래 7인데, 화면에 너무 많이 담기는 것 같아서 줄여봄
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -252,7 +252,7 @@ defaults:
       read_time: false
       comments: true # true
       share: true
-      related: true
+      related: true ## 여기서 related 를 만들어주는 것 같은데, 이걸 좀 더 잘 만들어줄 수는 없나? 
       # category: undefined
       toc: true
       toc_label: "Contents"
