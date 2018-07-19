@@ -181,7 +181,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show 원래 7인데, 화면에 너무 많이 담기는 것 같아서 줄여봄
+paginate: 7 # amount of posts to show 원래 7인데, 화면에 너무 많이 담기는 것 같아서 줄여봄
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
