@@ -136,6 +136,7 @@ Auto-regeneration: enabled for '/Users/frhyme/frhyme.github.io'
 
 - 다만, 이 세팅을 하고 났더니 웹페이지가 조금 늦게 열리는 것 같은 기분이 있어요. 나중에 체크해봐야할 것 같아요. 아니 확실히 늦게 열리네요. 지금 설치한 부분을 오히려 삭제하는 편이 더 좋을 수도 있을 것 같아요.
 
+
 ## reference
 
 - <https://www.classifier-reborn.com>
