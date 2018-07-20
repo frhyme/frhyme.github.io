@@ -52,7 +52,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true # true, false (default)
-search_full_content      : false # true, false (default) 원래 false였는데 20180719에 바꿔봄 
+search_full_content      : true # true, false (default) 원래 false였는데 20180719에 바꿔봄 
 
 # SEO Related
 google_site_verification : 
@@ -128,6 +128,7 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
+  - assets/ # assets 밑에 있는 것을 다 제외해봄
   - assets/js/plugins
   - assets/js/_main.js
   - assets/js/vendor
@@ -252,7 +253,7 @@ defaults:
       read_time: false
       comments: true # true
       share: false ## 원래 true
-      related: false ## 여기서 related 를 만들어주는 것 같은데, 이걸 좀 더 잘 만들어줄 수는 없나? 속도 문제로 없앰
+      related: true ## 여기서 related 를 만들어주는 것 같은데, 이걸 좀 더 잘 만들어줄 수는 없나? 속도 문제로 없앰
       # category: undefined
       toc: true
       toc_label: "Contents"
