@@ -1,7 +1,7 @@
 ---
 title: 파이썬에서 시뮬레이션을 해봅시다.
 category: python-lib
-tags: python python-lib simulation simpy 
+tags: python python-lib simulation simpy generator 
 ---
 
 
