@@ -1,12 +1,14 @@
 ---
-title: 예제를 통해 simpy 더 잘 이해하기.
+title: 예제를 통해 simpy 더 잘 이해하기(conditional event)
 category: python-lib
-tags: python python-lib simpy numpy simulation 
+tags: python python-lib simpy numpy simulation condition
 ---
 
 ## example을 풀어봅시다.
 
 - 정확히는 푸는 것은 아니고, [simpy - example](http://simpy.readthedocs.io/en/latest/examples/index.html)를 보면 다양한 예제가 있습니다. documentation을 읽어보는 것도 좋지만, 제 기준으로는 예제를 몇 번 풀어보면 더 잘 이해할 수 있을 것 같아요. 또 시뮬레이션 스킬도 조금 늘 거라는 생각도 조금 해봅니다. 
+
+- 여기서는 `simpy.Resource`를 사용하고, 어떤 event가 발생했느냐에 따라서 다른 동작을 하도록 만드는 것을 배웁니다. 
 
 ## bank example - basic 
 
