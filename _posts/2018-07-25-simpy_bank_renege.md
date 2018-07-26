@@ -1,7 +1,7 @@
 ---
-title: 예제를 통해 simpy 더 잘 이해하기(conditional event)
+title: simpy conditional event 사용하기 - 은행 모델링 하기 
 category: python-lib
-tags: python python-lib simpy numpy simulation condition
+tags: python python-lib simpy numpy simulation generator
 ---
 
 ## example을 풀어봅시다.

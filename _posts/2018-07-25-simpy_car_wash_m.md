@@ -1,7 +1,7 @@
 ---
-title: simpy를 이용하여 세차 프로세스를 시뮬레이션합니다. 
+title: simpy - 세차 프로세스 시뮬레이션
 category: python-lib 
-tags: python-lib simpy simulation python numpy class
+tags: python-lib simpy simulation python numpy class generator
 ---
 
 ## 간단한거긴 한데..

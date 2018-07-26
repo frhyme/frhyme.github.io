@@ -1,5 +1,5 @@
 ---
-title: simpy.PreemptiveResource 사용하기
+title: simpy.PreemptiveResource로 우선순위 이용하기 - 머신 샵 모델링
 category: python-lib
 tags: python-lib python simpy numpy class
 ---
