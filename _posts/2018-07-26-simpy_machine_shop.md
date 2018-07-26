@@ -1,7 +1,7 @@
 ---
 title: simpy.PreemptiveResource로 우선순위 이용하기 - 머신 샵 모델링
 category: python-lib
-tags: python-lib python simpy numpy class
+tags: python-lib python simpy numpy class generator
 ---
 
 ## 우선순위에 따라 업무 처리하기 

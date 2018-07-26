@@ -1,7 +1,7 @@
 ---
 title: simpy로 event 이용하기 - 영화관 모델링하기 
 category: python-lib
-tags: python python-lib simpy numpy simulation event example
+tags: python python-lib simpy numpy simulation event example class generator
 ---
 
 ## intro 

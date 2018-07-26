@@ -1,7 +1,7 @@
 ---
 title: simpy Container 사용하기 - gas fueling 모델링하기 
 category: python-lib
-tags: python python-lib simuation simpy numpy generator
+tags: python python-lib simuation simpy numpy generator class
 ---
 
 ## covers
