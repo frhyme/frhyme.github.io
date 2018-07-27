@@ -1,7 +1,7 @@
 ---
 title: python에서 string format 조절하기
 category: python-basic
-tags: python python-basic
+tags: python python-basic format string 
 
 ---
 
