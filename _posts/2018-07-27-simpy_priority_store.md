@@ -21,7 +21,10 @@ PStore.put(new_item)
 
 ## do it
 
-- 간단하게 다음의 형태로 표현합니다. 
+- 간단하게 코딩합니다. 
+
+- 만들어지는 제품(`PriorityItem`)에 `env.now`를 `priority`로 줍니다. 이렇게 하면 가장 먼저 만들어진 물건이 제일 먼저 나가게 됩니다. 
+- 그리고 exponential time에 따라서 n명의 사람이 도착합니다. 
 
 ```python
 import simpy 
@@ -119,8 +122,11 @@ env.run(until=20)
 - 어떻게 하면 좀 더 깔끔하게 만들 수 있을지 고민이 필요할 것 같습니다. 
 
 ```python
-i=0
-while True:
-    ...
-    i+=1
+def while_gen():
+    i=0
+    while True:
+        ...
+        i+=1
 ```
+
+
