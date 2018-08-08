@@ -59,9 +59,8 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name('/Users/frhyme/Do
 ```python
 ## authorize
 import gspread
-gc = gspread.authorize(credentials)
+gc = gspread.authorize(credentials).open("!individual_meet_report")
 ## sheet file 이름을 넘겨주고 읽습니다. 
-wks = gc.open("!individual_meet_report").sheet1
 ```
 
 ## using gspread
@@ -70,7 +69,10 @@ wks = gc.open("!individual_meet_report").sheet1
 - row, column은 다음의 방식으로 읽습니다. 이것만 알면 되죠 뭐. 만약 시트의 값을 바꾸거나 하고싶으시면 [gspread](https://github.com/burnash/gspread) 여기의 내용을 참고하시면 좋습니다. 
 
 ```python
-wks = gc.open("!individual_meet_report").get_worksheet(0)
+wks = gc.get_worksheet(0)
+
+gc.get_worksheet(-1)## integer position으로 접근 
+gc.worksheet('text') ## sheet name으로 접근 
 
 ## get row values 
 ## 0 이 아니라 1부터 시작하는 것을 유의할 것 
@@ -82,6 +84,8 @@ for i in range(1, 3):
 for i in range(1, 2):
     col = wks.col_values(i)[:10]
     print(col)
+## 각 row를 리스트로 다시 이를 리스트로 만들어서 리턴 
+wks.get_all_values()
 ```
 
 ## reference

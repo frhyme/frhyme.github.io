@@ -1,0 +1,7 @@
+test.py:2:1: F401 'pandas as pd' imported but unused
+test.py:3:1: F401 'numpy as np' imported but unused
+test.py:6:7: N801 class name 'aaa' should use CapWords convention
+test.py:9:1: W293 blank line contains whitespace
+test.py:10:1: W293 blank line contains whitespace
+test.py:11:7: N801 class name 'bbb' should use CapWords convention
+test.py:20:52: W292 no newline at end of file
