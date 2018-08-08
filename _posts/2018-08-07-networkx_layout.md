@@ -58,7 +58,7 @@ plt.savefig('../../assets/images/markdown_img/180807_qna.svg')
 plt.show()
 ``` 
 
-![](assets/images/markdown_img/180807_qna.svg)
+![](/assets/images/markdown_img/180807_qna.svg)
 
 
 
@@ -123,7 +123,7 @@ plt.show()
 
 - 결과는 다음과 같습니다. 그냥 앞으로는 `spring_layout`이나, `kamada_kawai_layout`만 쓰면 될 것 같습니다. 
 
-![](assets/images/markdown_img/180807_nx_layout_comp.svg)
+![](/assets/images/markdown_img/180807_nx_layout_comp.svg)
 
 
 ## wrap-up
