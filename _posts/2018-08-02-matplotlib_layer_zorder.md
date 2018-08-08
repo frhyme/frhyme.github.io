@@ -33,4 +33,4 @@ plt.savefig('../../assets/images/markdown_img/180802_plt_zorder.svg')
 plt.show()
 ```
 
-![](assets/images/markdown_img/180802_plt_zorder.svg)
+![](/assets/images/markdown_img/180802_plt_zorder.svg)
