@@ -71,7 +71,7 @@ draw_whole_graph(G, 'draw_better_1805101529.svg')
 - 키워드 분석 시에는 연도별로 키워드 네트워크를 구분해서 보는 것이 필요할 때가 있다. 이럴 때를 위해서, `graph list`를 input으로 받아서, 연속으로 그림을 그리는 코드를 만들었다. 
 - 여기서 문제라면, `figsize()`를 고정해두었다는 것인데, 그려야 하는 그래프의 수가 적을 때(대략 6개 이하)에서는 문제가 안되지만, 많아지면 그림이 예쁘게 안 그려질 수 있다. 그런데 이걸 하나하나 바꾸는 건 약간 무의미한 짓인 것 같고, 필요할때 바꾸는게 더 좋을 것 같음. 
 
-![](/assets/images/markdown_img/draw_better_1805101611.svg))
+![](/assets/images/markdown_img/draw_better_1805101611.svg)
 
 ```python
 import matplotlib.pyplot as plt
