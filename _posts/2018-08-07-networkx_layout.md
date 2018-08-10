@@ -153,7 +153,7 @@ f.set_size_inches((12, 18))
 layouts = {'spring': nx.spring_layout(G), 
            'spectral':nx.spectral_layout(G), 
            'shell':nx.shell_layout(G), 
-           'circular':nx.circular_layout(G),
+           'fruchterman_reingold':nx.layout.fruchterman_reingold_layout(G), 
            'kamada_kawai':nx.kamada_kawai_layout(G), 
            'random':nx.random_layout(G)
           }
@@ -166,5 +166,6 @@ for i, kv in enumerate(layouts.items()):
 plt.tight_layout()
 plt.savefig('../../assets/images/markdown_img/180807_nx_layout_comp.svg')
 plt.show()
-
 ```
+
+- 찾아보니 몇 개 layout이 더있네요. 
