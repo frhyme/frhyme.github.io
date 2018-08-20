@@ -1,0 +1,17 @@
+// business process
+digraph {
+	graph [rankdir=LR]
+	Source [color=red shape=doublecircle]
+	A00 [shape=rectangle]
+	A01 [shape=rectangle]
+	A02 [shape=rectangle]
+	A03 [shape=rectangle]
+	A04 [shape=rectangle]
+	Sink [color=blue shape=doublecircle]
+	Source -> A00
+	A00 -> A01
+	A01 -> A02
+	A02 -> A03
+	A03 -> A04
+	A04 -> Sink
+}

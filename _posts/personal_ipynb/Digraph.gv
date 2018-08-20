@@ -1,0 +1,8 @@
+// business process
+digraph {
+	Act00
+	Act01
+	Act02
+	Act00 -> Act01
+	Act01 -> Act02
+}

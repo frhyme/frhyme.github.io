@@ -7,6 +7,7 @@ tags: python-lib python matplotlib numpy networkx data-science pandas itertools 
 ## 인간관계를 분석합니다. 
 
 - 이번에 파이콘 한국 2018에서 발표하게 되어 발표자료를 준비하고 있습니다. 일단 여기에는 그림은 들어가지 않을 예정이고, 코드만 정리해서 보여줄 예정입니다. 
+- 발표자료는 [여기서](https://www.slideshare.net/frhyme/pyconkr2018-quantify-myself-self-110612139) 보실 수 있습니다. 
 - 아무래도 필요한 부분들을 만들려고 빠르게 진행한 부분들이 있다보니, 코드들도 정리가 전혀 되어 있지 않아서 포스트를 쓰면서 한번에 싹 정리하려고 합니다. 
 
 ## 사용한 라이브러리와 폰트 정리 
