@@ -1,8 +1,6 @@
-// business process
+// The Round Table
 digraph {
-	Act00
-	Act01
-	Act02
-	Act00 -> Act01
-	Act01 -> Act02
+	A
+	B
+	C
 }
