@@ -35,8 +35,6 @@ AssertionError                            Traceback (most recent call last)
 AssertionError: function problem
 ```
 
-
-
 ## wrap-up
 
 - 슬슬 작성해야 하는 코드의 양이 늘어나고 있고, 그러함에도 저는 코딩을 너무 대충 하는 경향성이 있는 것 같아요. 
