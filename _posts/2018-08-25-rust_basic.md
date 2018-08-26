@@ -76,3 +76,56 @@ cargo build ## project compile, 프로젝트 폴더 내에서 실행
 cargo run ## project compile and run , 프로젝트 폴더 내에서 실행
 cargo run --release
 ```
+
+- 또한 필요한 라이브러리들이 있을 경우에는 cargo project내의 `.toml` 파일 내에 dependencies 에 작성해줍니다. 이렇게 하면 이후에 `cargo build`를 하면 알아서 가져와서 합쳐줍니다 하하 편하군요. 
+- 어떤 라이브러리들이 있는지는 [crates.io](https://crates.io/)에서 보시면 좋습니다. 사실 `pip install <lib_name>`하는 것처럼 `cargo install <lib_name>`을 해도 될 것 같아요. 그런데 rust에서는 처음부터 프로젝트를 만들고 `.toml`에 dependencies를 작성하는 식으로 코딩해라, 라고 약간 가이드를 준 것 같아서, 가능하면 프로젝트별로 따로 구성하고 디펜던시도 거기에 맞춰서 configure하여 진행해보려고 합니다. 
+
+```toml
+[package]
+name = "guessing_game"
+version = "0.1.0"
+authors = ["frhyme <freerhein@gmail.com>"]
+
+[dependencies]
+rand = "0.3.14"
+```
+
+
+## summary 
+
+- 간단하게 코딩해보면서 좀 보고 있는데, 대략 다음과 같은 특이점? 들이 있는 것 같아요. 
+
+1. default variables are immutable
+    - 변수를 선언할 때, 기본적으로 immutable로 지정됩니다. immutable은 functional programming 쪽에서 오류를 줄이기 위해서 많이 사용하는 방법이기도 하고, 이를 통해 concurrency도 보장이 되기는 한다는데, 아무튼 그냥 `let x = 10` 이렇게 하고 이후 코드에서 `x = 11` 이렇게 하면 오류가 발생합니다. 
+
+2. cargo
+    - `pip`와 매우 유사하기는 합니다만, 처음부터 project를 만들고 내부에 `.toml`파일에서 디펜던시를 처리하면서 관리하도록 약간은 강제? 한다는 것이 매우 바람직한 것 같아요. 사실 python의 경우는 이 부분이 너무 중요하게 다루어지지 않는 부분이 있긴 하죠. 
+
+3. type 
+    - 기본적으로 변수, 함수 모두 type이 선언되는 것이 약간 선호됩니다. 특히 함수의 경우는 다음과 같이 선언이 되어야 하죠. 원래 c, c++ 모두 이런 식으로 해주기는 했는데, 매번 python으로 코딩해서 오랜만에 보니까 좀 낯설군요. 
+
+    ```rust 
+    fn plus_one(x: i32) -> i32 {
+        return x + 1;
+    }
+    ```
+
+4. ownership 
+    - 자세한 내용은 [여기에서](https://doc.rust-lang.org/book/2018-edition/ch04-01-what-is-ownership.html) 볼 수 있기는 합니다. 
+    - 보통 프로그래밍 언어에서 메모리를 관리하는 방법은 두 가지로 나뉩니다. 1) 프로그램이 돌아갈 때 garbage collection이 계속 사용되지 않는 메모리를 찾아서 삭제해주는 방식 2) 프로그래머가 직접 메모리를 할당, 제거 해주는 방식 
+    - rust의 경우는 약간 특이하게 처리합니다. 간단하게 말하면, `shallow copy`를 허용하지 않는다 라고 할 수 있어요(rust에서는 `shallow copy`를 `move`라고 표현합니다. 
+    - 예를 들어서 아래와 같은 코드가 있다고 합시다. `s2=s1`이라는 코드는 s1의 값을 s2로 이동했다는 의미고, 통상적으로 다른 언어에서는 s1, s2 모두 같은 메모리를 공유하게 됩니다. 따라서 아래 코드에서 문제가 없어야 하는데, rust에서는 문제가 발생합니다. s1을 삭제해버리거든요. 하나의 메모리에 대해서 1개 초과의 name을 허용하지 않습니다. 즉 s1의 값이 s2로 움직인 상황에서 s1은 삭제되는거죠(물론 deep copy를 하면 되기는 합니다).
+
+    ```rust
+    let s1 = String::from("hello");
+    let s2 = s1;
+
+    println!("{}, world!", s1);
+    ```
+    - 사실 습관적으로 shallow copy를 남발해서 메모리 문제를 발생시키는 습관이 있는데, 컴파일 레벨에서 이러한 문제를 다 잡아주면 좋을 것 같기는 합니다. 
+
+
+## wrap-up
+
+- 나쁘지 않은데, 문법이 좀 낯설어서 쓰기 귀찮네요 허허. 이미 파이썬으로 꽤 충분하기도 하고, 뭐 굳이 더 해야 하나...싶기도 하구요. 
+- [speed up your python using Rust](https://developers.redhat.com/blog/2017/11/16/speed-python-using-rust/)를 보고 좀 더 공부해보려고 합니다 하핫. 
