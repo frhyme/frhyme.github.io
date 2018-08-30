@@ -1,7 +1,7 @@
 ---
 title: python에서 python 코드 바꿔서 다시 읽기
 category: python-lib
-tags: python python-lib import importlib
+tags: python python-lib import importlib 
 ---
 
 ## self-modifying code
@@ -109,6 +109,7 @@ hi
 
 ## wrap-up
 
+- 사실 이름은 self-modifying code라고 해놓고, 스트링을 그냥 실행했는데, 스트링을 변경하면 코드를 변경해서 실행할 수 있습니다. 
 - 이게 의미가 있는 짓인지는 사실 잘 모르겠습니다만, 경우에 따라서 파이썬 함수 자체를 변경해야할 필요성이 있습니다. 그때 상황에 맞춰서 새로운 펑션을 정의하고 이 펑션을 넘겨주는 것이 의미가 있지 않을까? 라는 생각은 합니다. 
 
 
