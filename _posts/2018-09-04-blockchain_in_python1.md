@@ -1,5 +1,5 @@
 ---
-title: python으로 블록체인 만들기 
+title: python으로 블록체인 만들기 - 1편
 category: python-lib
 tags: python python-lib hashlib blockchain 
 ---
