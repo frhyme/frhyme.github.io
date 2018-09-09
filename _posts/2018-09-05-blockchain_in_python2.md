@@ -93,10 +93,13 @@ def next_block(last_block):
 }
 ```
 
-- 흠...보다보니 오히려 [이 포스트]가 좀 괜찮은 것처럼 보이기도 합니다. (https://medium.com/caulink/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-part-1-4386dbc735e)가 더 상세하게 설명되어 있는 것 같기도 합니다. 
-
+- 흠...보다보니 오히려 [이 포스트]가 좀 괜찮은 것처럼 보이기도 합니다. (https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)가 더 상세하게 설명되어 있는 것 같기도 합니다. 
 
 ## wrap-up
+
+- 갑작스럽게 멈추었습니다. 
+- 앞서 작성한 바와 같이 [이 포스트](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)가 훨씬 잘 작성되어 있습니다. 제가 본 글에서 참고한 글에서는 블록체인이 분산화되어 있을때 어떻게 작동하는지에 대한 부분이 약간 부족하게 설명되어 있는 반면, 여기서는 그 부분을 좀 명쾌하게 설명하고 있는 것 같아요. 
+- 반복한다고 생각하고, 새로 해당 포스트 내용을 기본으로 다시 작성해보도록 하겠습니다. 
 
 ## reference 
 

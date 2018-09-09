@@ -77,6 +77,9 @@ If there were more issues or feedback to reflect it, Please let me know.
 ```
 
 - 흐음...그런데, 이번에는 github 상에서 빨간 x 표시가 뜨면서 뭐가 잘 안되었다는 내용이 있습니다. build에서 뭔가 문제가 있는 것 같은데....몰라서 그냥 두었습니다....
+    - 체크해보니, 괄호를 하나 안 넣었습니다...
+    
+- 고치고 다시 날립니다. [여기서](https://github.com/networkx/networkx/pull/3146) 볼 수 있어요. 
 
 ### trivia 
 
@@ -84,8 +87,6 @@ If there were more issues or feedback to reflect it, Please let me know.
 - 저한테 코멘트를 달아주신 분은 [Dan schult](http://www.colgate.edu/facultysearch/facultydirectory/dschult)라는 분입니다. 1984년에 대학교를 졸업하신 분인데(제가 태어나기도 전에 대학교를 졸업하시고, 아직까지도 직접 오픈소스 프로젝트에 참여하고 있다니 매우 신기한 부분이군요), 특히 우리나라는 나이가 많아질수록 오픈소스 프로젝트에 직접 참여하는 경향성이 줄어든다는 것을 고려해보면 매우 신기한 것이 아닌가 싶어요. 그리고 프린스턴 경제학 석사, 노스웨스턴 응용수학 박사입니다 쩐다앙. 
 - 최근에 제출한 논문들은 대부분 복잡계+물리학 쪽인 것 같아요
 - 그분이 계신 학교는 [colgate university ](https://en.wikipedia.org/wiki/Colgate_University)입니다. 잘 모르던 학교인데, 미국 동북부에서는 매우 유명한 사립 학교로군요. 
-
-
 
 
 ## wrap-up 
