@@ -1,5 +1,5 @@
 ---
-title: Betweenness centrality as an indicator of the interdisciplinarity of scientific journals
+title: [paper-summary] Betweenness centrality as an indicator of the interdisciplinarity of scientific journals
 category: paper-summary
 tags: betweeness-centrality sna
 ---
