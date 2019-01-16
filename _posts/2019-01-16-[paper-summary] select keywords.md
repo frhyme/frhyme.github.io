@@ -1,5 +1,5 @@
 ---
-title: [paper-summary] Selecting publication keywords for domain analysis in bibliometrics - A comparison of three methods
+title: <paper-summary> Selecting publication keywords for domain analysis in bibliometrics - A comparison of three methods
 category: paper-summary
 tags: paper-summary keywords
 ---

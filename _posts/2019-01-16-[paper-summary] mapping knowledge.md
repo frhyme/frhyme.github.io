@@ -1,5 +1,5 @@
 ---
-title: [paper-summary] Mapping knowledge structure by keyword co-occurrence - a first look at journal papers in Technology Foresight
+title: <paper-summary> Mapping knowledge structure by keyword co-occurrence - a first look at journal papers in Technology Foresight
 category: paper-summary
 tags: paper-summary sna keyword-network
 ---

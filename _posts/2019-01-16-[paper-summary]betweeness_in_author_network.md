@@ -1,5 +1,5 @@
 ---
-title: [paper-summary] Betweenness centrality as a driver of preferential attachment in the evolution of research collaboration networks
+title: <paper-summary> Betweenness centrality as a driver of preferential attachment in the evolution of research collaboration networks
 category: paper-summary
 tags: betweenness-centrality sna network-analysis 
 ---
