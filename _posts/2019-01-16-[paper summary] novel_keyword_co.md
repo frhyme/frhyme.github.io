@@ -1,5 +1,5 @@
 ---
-title: <paper-summary> Novel keyword co-occurrence network-based methods to foster systematic reviews of scientific literature
+title: paper-summary - Novel keyword co-occurrence network-based methods to foster systematic reviews of scientific literature
 category: paper-summary
 tags: paper-summary
 ---

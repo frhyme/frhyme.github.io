@@ -1,5 +1,5 @@
 ---
-title: <paper-summary> A domain keyword analysis approach extending Term Frequency-Keyword Active Index with Google Word2Vec model
+title: paper-summary - A domain keyword analysis approach extending Term Frequency-Keyword Active Index with Google Word2Vec model
 category: paper-summary
 tags: bibliometric keyword
 ---
