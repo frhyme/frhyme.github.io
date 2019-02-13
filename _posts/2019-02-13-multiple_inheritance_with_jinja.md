@@ -17,8 +17,8 @@ tags: python python-libs flask template inheritance
 ## do it. 
 
 - 우선 `grandfather.html`을 만들어줍니다. 아주 간단하죠. 
-- 단 중간에 `{% block content1 %}{% endblock %}`라는 부분이 있습니다. 즉, `grandfather.html`을 상속받는 `father.html`에서는 해당 부분을 작성해줘야겠죠. 
-- 제가 처음에 연속상속이 안되지 않을까? 라고 생각했던 이유중 하나는 `content1`과 같은 부분이 마음대로 적용될 수 있는 것인지 몰랐기 떄문입니다. jinja template engine에서 기본적으로 그냥 `{% block content %}`로 정의되고 있는줄 알았는데 그게 아니라 마음대로 변수를 정의해도 되더군요. 
+- 단 중간에 `{% raw %}{% block content1 %}{% endblock %}{% endraw %}`라는 부분이 있습니다. 즉, `grandfather.html`을 상속받는 `father.html`에서는 해당 부분을 작성해줘야겠죠. 
+- 제가 처음에 연속상속이 안되지 않을까? 라고 생각했던 이유중 하나는 `content1`과 같은 부분이 마음대로 적용될 수 있는 것인지 몰랐기 떄문입니다. jinja template engine에서 기본적으로 그냥 `{% raw %}{% block content %}{% endraw %}`로 정의되고 있는줄 알았는데 그게 아니라 마음대로 변수를 정의해도 되더군요. 
 
 ```html
 <!DOCTYPE HTML>
@@ -28,34 +28,38 @@ tags: python python-libs flask template inheritance
     <body>
         <h1>This is grand father html</h1>
         <div>
-            {% block content1 %}{% endblock %}
+            {% raw %}{% block content1 %}{% endblock %}{% endraw %}
         </div>
     </body>
  </html>
 ```
 
 - `father.html`을 만들어줍니다. 
-- 비슷하지만, 맨 위에 `{% extends 'grandfather.html %}` 이라는 문서가 작성해주면, 해당 html을 상속받습니다. 
-    - 그 다음 `{% block content1 %} ~~ {% endblock%}` 부분에 필요한 부분을 작성해주고
-    - 이 아이가 또 다른 아이로부터 상속될 필요가 있기 때문에, 다시 새로운 block `{% block content2 %} {% endblock %}`를 만들어줍니다.
+- 비슷하지만, 맨 위에 `{% raw %}{% extends 'grandfather.html %}{% endraw %}` 이라는 문서가 작성해주면, 해당 html을 상속받습니다. 
+    - 그 다음 `{% raw %}{% block content1 %} ~~ {% endblock %}{% endraw %}` 부분에 필요한 부분을 작성해주고
+    - 이 아이가 또 다른 아이로부터 상속될 필요가 있기 때문에, 다시 새로운 block `{% raw %}{% block content2 %} {% endblock %}{% endraw %}`를 만들어줍니다.
 
 ```html
+{% raw %}
 {% extends 'grandfather.html' %}
 {% block content1 %}
     <p>This is father html!!</p>
     {% block content2 %}
     {% endblock%}
 {% endblock %}
+{% endraw %}
 ```
 
 - 이제 `son.html`을 만들어줍니다. 
     - 아래처럼, 작성해주면 됩니다. 
 
 ```html
+{% raw %}
 {% extends 'father.html' %}
 {% block content2 %}
     <p>This is son html!!</p>
 {% endblock %}
+{% endraw %}
 ```
 
 - 그리고 flask에서 아래처럼 실행해주면 됩니다. 
