@@ -17,6 +17,13 @@ tags: python flask boostrap python-libs
 - boostrap을 잘 쓰기 위해서는 css보다, html문서를 효과적으로 만들었는지, 체계적으로 개체들을 구조화하였는지가 더 중요한 것처럼 생각됩니다. 
 
 
+## class만 잘 찾아서 정리해주자. 
+
+- 앞서 말한 것과 같이, bootstrap의 모든 구조 혹은 객체들을 모두 이해하고 시작하려면 시간이 매우 많이 걸릴 뿐더러, 오히려 배우는 것이 느려질 수 있습니다. 
+- bootstrap도 이걸 알고 있기 때문에, 다양한 예제 중심으로 자료를 정리해두었구요. [여기에 많은 예제](https://getbootstrap.com/docs/4.3/examples/)가 있습니다. 여기에 들어가서 소스를 확인해보고, 변형해가면서 페이지를 열다보면, 아, 대략 무슨 말이구나, 라고 쉽게 이해할 수 있을 것 같습니다. 
+- 뿐만 아니라, [Documentation](https://getbootstrap.com/docs/4.3/getting-started/introduction/)에 들어가서, content, component들을 쭉 읽어보시면, 아, 일단 이 요소들을 하나씩 변형하면서, 진행하면 되겠구나, 라는 생각이 되실거에요. 
+
+
 ## wrap-up
 
 - 쓰다보니까, 이 부분은 제가 나중에 더 정리해서 써야될것 같아서 일단 킵해둡니다.
