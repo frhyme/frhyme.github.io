@@ -28,10 +28,12 @@ if __name__ == '__main__':
 - 결론부터 말씀드리면, jinja는 아래처럼 되어 있는 문서를 받아서, 해당 문서의 필요한 부분들, `content2`와 같은 부분을 변경해주고, 웹브라우저가 인식할 수 있는 html로 변환해주는 기능을 수행합니다. 참 쉽죠? 하하핫
 
 ```html
+{% raw %}
 {% extends 'father.html' %}
 {% block content2 %}
     <p>This is son html!!</p>
 {% endblock %}
+{% endraw %}
 ```
 
 ## what is jinja2?
@@ -60,6 +62,7 @@ if __name__ == '__main__':
     - 그리고, `navigation`, `a_variable`는 따로 값이 정의되지 않고, 바로 쓰이는 것을 보니까, templete을 rendering할때 값을 넘겨주어야 하는 것이 아닐까? 싶습니다. 
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,6 +81,7 @@ if __name__ == '__main__':
     {# a comment #}
 </body>
 </html>
+{% endraw %}
 ```
 
 - 그래서, 값을 함께 넘겨보도록 하겠습니다. 아래처럼 만들고 `/test_template`로 접속합니다. 
