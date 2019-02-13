@@ -57,7 +57,7 @@ if __name__ == '__main__':
 - 즉, 일단 jinja의 template을 만드는 문법만 배우고, flask의 `render_template`을 이용해서 data를 넘겨줘서 html로 만들어줄 것입니다. 
 - jinja template을 만들기 위한 기본적인 syntax, semantic은 [여기에서](http://jinja.pocoo.org/docs/2.10/templates/) 볼 수 있습니다. 
 - 일단 예제를 보겠습니다. 대략 template은 다음처럼 구성됩니다. html비슷한데, 조금씩 다른 부분들이 보이죠. 
-    - 예를 들어서, `for`구문이 있는데, `{% 퍼센트 퍼센트 %}`로 묶여 있고, 또 끝에는 `endfor`로 처리되어 있고요. 
+    - 예를 들어서, `for`구문이 있는데, `퍼센트 퍼센트 }`로 묶여 있고, 또 끝에는 `endfor`로 처리되어 있고요. 
     - statement는 `{퍼센트 퍼센트 }`로 표현되는 것 같고, 그냥 variable은 `{{}}`로 표현되는 것 같네요. 
     - 그리고, `navigation`, `a_variable`는 따로 값이 정의되지 않고, 바로 쓰이는 것을 보니까, templete을 rendering할때 값을 넘겨주어야 하는 것이 아닐까? 싶습니다. 
 
