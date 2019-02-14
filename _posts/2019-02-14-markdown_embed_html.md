@@ -13,6 +13,8 @@ tags: markdown html
 <h2>This is h2!!</h2>
 
 <p> This is paragraph</p>
+<script>
+</script>
 ```
 
 <h2>This is h2!!</h2>
