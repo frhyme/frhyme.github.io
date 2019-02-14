@@ -280,10 +280,29 @@ def bokeh_with_json():
 </html>
 ```
 
-- 다음처럼 html 페이지를 렌더링하면 앞서, html 페이지의 
+- 다음처럼 html 페이지를 렌더링하면 앞서, html 페이지의 변수부분이 아래처럼 바뀌어서 수행됩니다.
+- 이처럼 script, div 부분을 비워둔 다음, 이 부분만 넘겨주면 되는 것 아닐까요? 
 
 ```python
 @app.route('/plot_template')
 def plot_template():
     return render_template('plot_template.html', plot1_div="aaaaa", plot1_script='bbbbb')
+```
+
+- 다음처럼 해봅니다. 그러나, 생각처럼 되지 않습니다. 
+- script, div가 template에 담기기는 했는데, `\n`과 같은 문자들도 함께 담기고 해서, 문제가 있는 것 같습니다. 이 부분을 해결해주면 잘 들어갈 것 같은데 말이죠. 
+
+```python
+@app.route('/plot_template')
+def plot_template():
+    from bokeh.plotting import figure
+    from bokeh.embed import components
+
+    plot = figure()
+    plot.circle([1,2], [3,4])
+
+    script, div = components(plot)
+    #script = json.dumps(script, ensure_ascii=False, indent='\t')
+    #div = json.dumps(div, ensure_ascii=False, indent='\t')
+    return render_template('plot_template.html', plot1_script=script, plot1_div=div)
 ```
