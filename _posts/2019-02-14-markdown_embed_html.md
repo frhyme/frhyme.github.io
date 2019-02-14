@@ -13,6 +13,9 @@ tags: markdown html
 <h2>This is h2!!</h2>
 
 <p> This is paragraph</p>
+<link href="http://cdn.pydata.org/bokeh/dev/bokeh-0.13.0.min.css" rel="stylesheet" type="text/css">
+<script src="http://cdn.pydata.org/bokeh/dev/bokeh-0.13.0.min.js"></script>
+
 <script>
 </script>
 <div></div>
@@ -21,6 +24,14 @@ tags: markdown html
 <h2>This is h2!!</h2>
 
 <p> This is paragraph</p>
+
+<link
+    href="http://cdn.pydata.org/bokeh/dev/bokeh-0.13.0.min.css"
+    rel="stylesheet" type="text/css"
+>
+<script 
+    src="http://cdn.pydata.org/bokeh/dev/bokeh-0.13.0.min.js"
+></script>
 
 <script type="text/javascript">
   (function() {
