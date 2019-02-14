@@ -15,6 +15,7 @@ tags: markdown html
 <p> This is paragraph</p>
 <script>
 </script>
+<div></div>
 ```
 
 <h2>This is h2!!</h2>
@@ -56,3 +57,4 @@ tags: markdown html
     else document.addEventListener("DOMContentLoaded", fn);
   })();
 </script>
+<div class="bk-root" id="2b7594c5-076f-4dd7-a00e-9765a6591b58"></div>
