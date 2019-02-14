@@ -290,7 +290,7 @@ def plot_template():
 ```
 
 - 다음처럼 해봅니다. 그러나, 생각처럼 되지 않습니다. 
-- script, div가 template에 담기기는 했는데, `\n`과 같은 문자들도 함께 담기고 해서, 문제가 있는 것 같습니다. 이 부분을 해결해주면 잘 들어갈 것 같은데 말이죠. 
+    - 페이지 소스를 보면 약간 문자들이 약간 깨져 있는 것을 알 수 있어요. 예를 들어 `&#39`와 같은 문자들이 잔뜩 있죠. 
 
 ```python
 @app.route('/plot_template')
@@ -302,7 +302,29 @@ def plot_template():
     plot.circle([1,2], [3,4])
 
     script, div = components(plot)
-    #script = json.dumps(script, ensure_ascii=False, indent='\t')
-    #div = json.dumps(div, ensure_ascii=False, indent='\t')
     return render_template('plot_template.html', plot1_script=script, plot1_div=div)
 ```
+
+- 이걸 해결하기 위해서, `Markup`형태로 변형해줍니다. 아래처럼, scrip, div를 `Markup`으로 변환해서 넘겨주면 아무 문제없이 잘 되는 것을 알 수 있습니다. 
+
+```python
+@app.route('/plot_template')
+def plot_template():
+    from bokeh.plotting import figure
+    from bokeh.embed import components
+    from flask import Markup
+
+    plot = figure()
+    plot.circle([1,2], [3,4])
+
+    script, div = components(plot)
+    script = Markup(script)
+    div = Markup(div)
+    return render_template('plot_template.html', plot1_script=script, plot1_div=div)
+```
+
+
+
+## wrap-up
+
+- 이제 bokeh를 이용해서 그림을 그리는 것은 물론 그린 그림을 html의 형태로 웹페이지에 embed하여 처리하는 것도 가능해졌습니다. 이제 그리고 싶은 그림을 필요에 따라서, 그리고 넘겨주는 식으로 처리하면 될것 같습니다. 하하핫.
