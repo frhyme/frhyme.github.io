@@ -1,7 +1,7 @@
 ---
 title: Flask template에서 연속 상속하기. 
 category: python-libs
-tags: python python-libs flask template inheritance
+tags: python python-libs flask template inheritance successive-inheritance
 ---
 
 ## 왜 연속상속을 해야 하는가. 
