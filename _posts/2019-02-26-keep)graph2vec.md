@@ -28,10 +28,10 @@ tags: graph2vec graph machine-learning
     - graph2vec을 통해서 향후 graph classification, clustering 등의 supervised learning에도 유용하게 사용될 수 있다. 
     - 실제 data들에 대해서 수행을 해 봤고, 의미있었다.
 - 즉, 어떤 길이의 graph들이든 상관없이 representation learning을 수행할 수 있도록 했다는 것이 해당 연구가 가지는 가장 큰 학문적 공헌인 것으로 보이네요.
-    - 이미지라고 생각하는 것이 편하니까
+    - 이미지라고 생각하는 것이 편하니까, 일단은 이미지라고 생각해봅시다. 이미지의 경우 아주 다양한 크기의 이미지가 있습니다. 너무 당연한 것이기는 한데, 이 때는 남는 부분을 임의의값을 채워서 확장하거나, 해서 해당 데이터를 fixed length의 데이터로 변환하면 되지 않을까 싶습니다. 
+    - 그렇다면 그래프도 그냥 남는 공간을 남는 데이터로 채워서 처리해도 되지 않을까? 하는 생각이 드는데요 흠. 
 
+## wrap-up
 
+- 읽다보니까 graph2vec보다 우선 node2vec을 먼저 이해해야 할것 같다는 생각이 듭니다. node2vec을 이해한 다음에 다시 올게요.
 
-## curious thing
-
-- 
