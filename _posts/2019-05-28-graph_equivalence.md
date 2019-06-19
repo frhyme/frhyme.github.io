@@ -1,7 +1,7 @@
 ---
-title:
-category:
-tags:
+title: 네트워크의 isomorphism, equivalence의 차이
+category: python-libs
+tags: python python-libs network networkx
 ---
 
 ## network equivalence, isomorphism.
