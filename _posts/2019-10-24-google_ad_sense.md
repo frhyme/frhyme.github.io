@@ -12,6 +12,11 @@ tags: google ad-sense
 ## progress
 
 - 디폴트.html에 중간에 집어넣었습니다.
+- 그리고 신청을 했죠. 
+
+## add adsense.txt
+
+- 
 
 ## reference
 
