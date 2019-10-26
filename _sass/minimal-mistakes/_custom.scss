@@ -101,14 +101,18 @@ nav.pagination a.pagination--pager{
     color:mix($link-color, #111111, 90%);
 }
 
-/* 글 본문 폰트 적용*/
+
+/*
+
+191026 한글 폰트 원래대로. 
+
+// 글 본문 폰트 적용
 body {
     font-family: 'Nanum Gothic Coding', serif;
 }
-/**/
 
 
-/* 블로그 들어갔을때 글 제목 폰트 변경*/
+// 블로그 들어갔을때 글 제목 폰트 변경*
 div {
     article{
         h2{
@@ -118,7 +122,7 @@ div {
         }
     }
 }
-/* 글 내의 타이틀 변경*/
+// 글 내의 타이틀 변경
 article{
     div{
         header{
@@ -137,7 +141,7 @@ article{
         }
     }
 }
-/*아카이브에서 글 폰트 변경*/
+// 아카이브에서 글 폰트 변경
 div{
     article{
         div{
@@ -147,3 +151,5 @@ div{
         }
     }
 }
+
+*/
