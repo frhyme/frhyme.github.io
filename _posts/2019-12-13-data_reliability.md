@@ -1,5 +1,5 @@
 ---
-title: what is 'aggregate store'
+title: data reliability
 category: others
 tags: graphdb database nosql 
 ---

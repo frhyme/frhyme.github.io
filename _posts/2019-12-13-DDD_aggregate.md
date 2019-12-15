@@ -1,5 +1,5 @@
 ---
-title: what is 'aggregate store'
+title: aggregate store in Domain_Driven_Development
 category: others
 tags: graphdb database nosql 
 ---

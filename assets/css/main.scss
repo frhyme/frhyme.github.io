@@ -6,4 +6,5 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-@import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);//google web font added
+//191215 font deactivate
+//@import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);//google web font added

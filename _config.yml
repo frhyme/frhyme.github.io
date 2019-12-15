@@ -87,7 +87,7 @@ author:
   name             : "frhyme"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "always doing another thing"
-  location         : "pohang, south korea"
+  location         : "Cheonan, south korea"
   email            : "freerhein@gmail.com"
   uri              :
   home             : "#" # null (default), "absolute or relative url to link to author home"
@@ -192,7 +192,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
+  #- jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -200,7 +200,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
+  #- jemoji
 
 
 # Archives
