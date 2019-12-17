@@ -1,5 +1,5 @@
 ---
-title: neo4j_part3
+title: neo4j - desktop 을 사용해봅니다
 category: others
 tags: database nosql sql graphdb
 ---
