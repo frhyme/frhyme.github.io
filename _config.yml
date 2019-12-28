@@ -251,7 +251,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false
+      read_time: true
       comments: true # true
       share: true ## 원래 true
       related: false ## 여기서 related 를 만들어주는 것 같은데, 이걸 좀 더 잘 만들어줄 수는 없나? 속도 문제로 없앰

@@ -2,7 +2,6 @@
 title: python-basic) Linked list(basic)
 category: python-basic
 tags: python linked-list python-basic
-
 ---
 
 ## intro
@@ -41,7 +40,7 @@ print(cr.next.value)
 
 ## some useful functions
 
-#### ListToLinkedList(lst)
+### ListToLinkedList(lst)
 
 - 보통 파이썬에서는 list를 많이 쓰고(생성하기 편하기도 하고), 테스트하려고 linkedlist를 만들어주는 것이 조금 성가셔서, list를 linked list로 변환해주는 간단한 함수를 만들었습니다. 
 
@@ -56,7 +55,7 @@ def ListToLinkedList(lst):
     return first
 ```
 
-#### PrintLinkedList(l)
+### PrintLinkedList(l)
 
 - linked list의 모든 원소를 출력해주는 함수
 	- 만들고 보니, 해당 함수는 앞서 정의한 ListNode의 내부 method로 정의해도 괜찮았을 것 같네요. 
@@ -68,7 +67,7 @@ def PrintLinkedList(l):
         l=l.next
 ```
 
-#### Return_nth(l, n)
+### Return_nth(l, n)
 
 - linked list의 n번째 원소를 출력해주는 함수 
 
@@ -80,7 +79,7 @@ def Return_nth(l, n):
     return cur
 ```
 
-#### length(l)
+### length(l)
 
 - linked list의 길이를 출력해주는 함수 
 

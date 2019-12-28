@@ -2,7 +2,6 @@
 title: python-basic) member testing in python
 category: python-basic
 tags: python python-basic member-testing list set
-
 ---
 
 ## intro 
