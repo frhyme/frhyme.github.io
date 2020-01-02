@@ -259,4 +259,5 @@ defaults:
       toc: true
       toc_label: "Contents"
       toc_icon: "bars"
+      toc_ads: true
       toc_sticky: true
