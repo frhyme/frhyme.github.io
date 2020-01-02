@@ -70,31 +70,36 @@ tags: google ad-sense
 - 원래는 해당 요소의 코드는 다음과 같이, 작성되어 있습니다만, 
 
 ```html 
+{% raw %}
 {% if page.toc %}
 <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
     <nav class="toc">
-    <header>
-        <h4 class="nav__title">
-        <i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4>
-    </header>
+        <header>
+            <h4 class="nav__title">
+                <i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" 
+            </h4>
+        </header>
     {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
     </nav>
 </aside>
 {% endif %}
+{% endraw %}
 ```
 
 - 이런 형태로 바뀌게 되죠. 의미를 대충 보면, toc 혹은 toc_ads가 트루이면, `GoogleAdSenseSidbar.html`로부터 html 코드를 가져와서 붙인다는 말입니다. 
 
 ```html
+{% raw %}
 {% if page.toc or page.toc_ads %}
     <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
         <nav class="toc">
-        {% if page.toc %}
-        <header>
-            <h4 class="nav__title">
-            <i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4>
-        </header>
-        {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %} {% endif %}
+            {% if page.toc %}
+            <header>
+                <h4 class="nav__title">
+                    <i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}
+                </h4>
+            </header>
+            {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %} {%  endif %}
         </nav>
         <!-- devinlife comment : right-sidebar ads -->
         <nav class="toc-custom">
@@ -102,6 +107,7 @@ tags: google ad-sense
         </nav>
     </aside>
 {% endif %}
+{% endraw %}
 ```
 
 - 그리고 `_config.yml`부분의 코드도 변경해줍니다. 여기서는 두 가지 변수를 변경해주는데, 아래와 같이 `toc`에 대한 부분이 작성된 곳에 나머지를 붙여주면 됩니다. 
