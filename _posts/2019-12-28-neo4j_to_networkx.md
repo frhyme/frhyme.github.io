@@ -16,7 +16,7 @@ tags: database nosql sql graphdb cypher networkx python-libs
 
 - 기본 얼개는 cypher로 쿼리하여 neo4j에서 데이터를 가져옵니다. 쿼리문은 다음의 형식이 되겠죠. 
 
-```cypher
+```
 input_query = """
 MATCH (n1)-[e]->(n2)
 RETURN n1, e, n2
