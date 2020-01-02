@@ -61,6 +61,10 @@ tags: google ad-sense
 </script>
 ```
 
+### add ad-sence(side-bar)
+
+- 이제 같은 방식으로 사이드바에 광고를 설치해줍니다.
+
 
 ## reference
 
