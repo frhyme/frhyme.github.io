@@ -2,7 +2,6 @@
 title: 슬랙에 학생식당 메뉴 알려주는 봇 만들기 
 category: project
 tags: python slack bot
-
 ---
 
 ## intro

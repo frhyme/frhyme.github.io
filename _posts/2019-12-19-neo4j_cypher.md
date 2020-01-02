@@ -79,7 +79,7 @@ H   H EEEEE LLLLL LLLLL  OOO  ,,    W W   OOO  R   R LLLLL DDDD  !!
 - 그리고, 추가로 생각해보자면, '라벨이 여러개가 될 수 있다는 것'이 경우에 따라서 너무 자유분방해질 수 있습니다. 라벨을 일관적인 어떤 기준에 따라서 설정하지 않는다면, 이는 이후 그래프 자체의 정확도를 현저하게 떨어뜨리는 원인이 될 수 있습니다. 비슷한 예로는 인스타그램 태그 같은 것을 말할 수 있을 것 같아요. 만약 인스타그램 태그가 모든 글에 아주 정확하게 달려 있다면, 해당 글들을 아주 효과적으로 필터링할 수 있죠. 하지만, 이미 아시겠지만 인스타그램의 글들에 달려 있는 태그들은 아주 천차만별입니다. 어떤 글에는 몇 개 안 달려 있고 어떤 글에는 수십개가 달려있죠. 똑같이, 태그만으로 글들을 프로세싱한다면, 꽤 정확하지 않은 결과가 나올 수 있죠. 
 - 따라서, label들이 지금 어떤 기준으로 작성되어 있고, 이것이 이후에 어떤 문제가 될 수 있다 라는 것을 방지할 수 있는 어떤 기능과 같은 것이 Neo4j에 존재하는지 혹은 DB에서 Constraint와 같은 방식으로 label의 관계를 제한할 수 이는지 궁금하네요.
 
-```cypher
+```
 ()
 (variable)
 (:Label)
@@ -91,7 +91,7 @@ H   H EEEEE LLLLL LLLLL  OOO  ,,    W W   OOO  R   R LLLLL DDDD  !!
 > Notice that a node must have the parentheses. The labels and the variable for a node are optional. Here are examples of specifying nodes in Cypher:
 - 노드는 반드시 `()`를 가져야 한다. 그리고, `label`, `variable`은 모두 선택사항이며, 아래의 예는 노드를 정의하기 위한 Cypher의 예시다. 
 
-```cypher
+```
 ()                  // anonymous node not be referenced later in the query
 (p)                 // variable p, a reference to a node used later
 (:Person)           // anonymous node of type Person
@@ -125,12 +125,12 @@ A node can have multiple labels. For example a node can be created with a label 
 - 즉, `MATCH`를 통해 적합한 데이터를 선택하고, 그 결과를 `RETRUN`으로 확인한다는 말이 되죠. SQL로 비교하자면, MATCH ==> WHERE, RETURN ==> SELECT 가 된다고 보면 되겠네요.
 - 아래의 형태가 간단한 형태의 Cypher 구문입니다.
 
-```cypher
+```
 MATCH (variable)
 RETURN variable
 ```
 
-```cypher
+```
 MATCH (variable:Label)
 RETURN variable
 ```
@@ -139,12 +139,12 @@ RETURN variable
 - `MATCH`, `RETURN` 모두 영어 대문자로 작성해야 한다. 이 coding convention은 Cypher Style Guide에 기술되어 있다. MATCH 구문에 label을 명시함으로써, 해당 label에 속하는 노드만 추출하는 것도 가능하다. 여기서 variable이 명시되는 것이 필수적이고, 그렇지 않으면, 아무것도 리턴하지 않게 된다. 간단한 예는 다음과 같다.
 - 물론, SQL과 동일하게, 소문자로 해도 굴러가기는 합니다만, 가독성 측면이나 여러 이유로 대문자 쓰는 것을 추천하고 있는 것이죠. 그리고, 여기에서, n과 p 모두 변수인데, 그냥 제가 만들어주는 변수입니다. 그냥 `xxxxxx`라고 해도 상관없죠.
 
-```cypher
+```
 MATCH (n)           // returns all nodes in the graph
 RETURN n
 ```
 
-```cypher
+```
 MATCH (p:Person)    // returns all Person nodes in the graph
 RETURN p
 ```
@@ -174,26 +174,26 @@ Properties can be used to filter queries so that a subset of the graph is retrie
 - 노드를 검색할 때, 특정 label에 속하는 노드만 뽑아낼 수 있는 것처럼, 특정 property를 가진 노드만 솎아낼 수도 있다. 대략 간단하게는 다음과 같이 수행하면 된다.
 - 아래 코드를 보면, 대략 알 수 있는데, `변수명:라벨명:{프로퍼티들}`로 쿼리가 구성된다. property는 파이썬의 딕셔너리처럼 넘겨준다고 생각하면 훨씬 편하다. 
 
-```Cypher
+```
 MATCH (variable {propertyKey: propertyValue})
 RETURN variable
 ```
-```Cypher
+```
 MATCH (variable:Label {propertyKey: propertyValue})
 RETURN variable
 ```
-```Cypher
+```
 MATCH (variable {propertyKey1: propertyValue1, propertyKey2: propertyValue2})
 RETURN variable
 ```
-```Cypher
+```
 MATCH (variable:Label {propertyKey: propertyValue, propertyKey2: propertyValue2})
 RETURN variable
 ```
 
 - 다음의 형태로 테스트를 해봣는데, 프로퍼티딕셔너리와 라벨의 사이에 스페이스가 없어도 괜찮은 것 같습니다.
 
-```Cypher
+```
 MATCH (p:Person{born:1970}) RETURN p
 ```
 
@@ -201,12 +201,12 @@ MATCH (p:Person{born:1970}) RETURN p
 
 - 또한, 지금까지는 노드를 모두 한번에 리턴했는데(즉, 노드의 모든 property를 가져옴), 노드의 특정 프로퍼티만 가져올 수도 있습니다. 이 부분은 `RETURN` 부분에 명시되죠. 간단한 구조는 다음과 같습니다.
 
-```Cypher
+```
 MATCH (variable:Label {prop1: value, prop2: value})
 RETURN variable.prop3
 ```
 
-```Cypher
+```
 MATCH (p:Person {born: 1970})
 RETURN p.name
 ```
@@ -215,14 +215,14 @@ RETURN p.name
 
 - 그리고 출력되는 결과물에 대해서 다름 이름을 정해줄 수도 있습니다.
 
-```Cypher
+```
 MATCH (variable:Label {propertyKey1: propertyValue1})
 RETURN variable.propertyKey2 AS alias2
 ```
 
 - 아래와 같이, 이름과 연도를 각각 원하는 칼럼명으로 출력하도록 할 수도 있죠.
 
-```Cypher
+```
 MATCH (p:Person {born:1970}) RETURN p.name AS name, p.born AS born_year
 ```
 
@@ -239,7 +239,7 @@ MATCH (p:Person {born:1970}) RETURN p.name AS name, p.born AS born_year
 > Thus far, you have learned how to specify a node in a MATCH clause. You can specify nodes and their relationships to traverse the graph and quickly find the data of interest. Here is how Cypher uses ASCII art to specify path used for a query:
 - 지금까지는 `MATCH`를 사용해서, 어떻게 노드를 구체적으로 표현하는지에 대해서 배워왔다. 그런데 그래프를 순회하고 필요한 데이터를 빠르게 찾는 과정에서는 관계 들에 대해서 구체화하는 것도 필요하다. 아래는 ASCII 아트를 사용해서 쿼리를 하는 방법을 설명하고 있다.
 
-```cypher
+```
 ()          // a node
 ()--()      // 2 nodes have some type of relationship
 ()-->()     // the first node has a relationship to the second node
@@ -252,21 +252,21 @@ MATCH (p:Person {born:1970}) RETURN p.name AS name, p.born AS born_year
 - `MATCH`에서 필요한 관계들을 다음과 같이 정의할 수 있습니다. 
 - 앞서 말한 것과 같이, edge를 아스키 아트처럼 넣어주면 됩니다. 다만, `|`의 경우는 OR를 의미합니다. 즉, 두 릴레이션 중에서 어떤 릴레이션도 모두 허용된다는 것이죠.
 
-```Cypher
+```
 MATCH (node1)-[:REL_TYPE]->(node2) RETURN node1, node2
 MATCH (node1)-[:REL_TYPEA | :REL_TYPEB]->(node2) RETURN node1, node2
 ```
 
 - 아래와 같이, Person 노드가 ACTED_IN 관계로 title property가 "The MATRIX"인 노드와 연결된 그래프를 추출하고, 이후, 거기서 p, rel, m을 뽑습니다.
 
-```Cypher
+```
 MATCH (p:Person)-[rel:ACTED_IN]->(m:Movie {title: 'The Matrix'})
 RETURN p, rel, m
 ```
 
 - 여러 관계를 동시에 고려하고 싶다면 다음과 같이 해도 되겠죠. 동시에, 저 엣지의 라벨에 대한 부분을 비워두면, 그냥 익명 엣지로 고려되어서, 존재하는 모든 엣지를 찾게 됩니다.
 
-```Cypher
+```
 MATCH (p:Person {name: 'Tom Hanks'})-[:ACTED_IN|:DIRECTED]->(m:Movie)
 RETURN p.name, m.title
 ```
@@ -276,11 +276,11 @@ RETURN p.name, m.title
 - 특정하지 않고, 우선 모든 관계를 다 뽑아낸 다음에, 하나씩 필터링하면서 보는 것이 더 효율적일 것 같아요. 물론 그 전에 미리 `CALL db.schema()`를 통해 일단 현재 데이토 모델의 상태를 확인하고 진행하는 것이 맞을 수도 있지만, 저는 이 편이 훨씬 효율적으로 느껴집니다.
 - 아래를 보면, edge는 정의되어 있지만 `[]`의 형태로 해당 엣지가 어떤 라벨을 가져야 하는지, 정확히는 어떤 `type`인지에 대해서는 명확하게 작성되어 있지 않죠. 하지만, 각각 실행을 해보면, 문제없이 쿼리가 되집니다. 모든, 관계가 다 도출되는 것이죠. 
 
-```Cypher
+```
 MATCH (p:Person)--(m:Movie {title: 'The Matrix'})
 RETURN p, m
 ```
-```Cypher
+```
 MATCH (m:Movie)<--(p:Person {name: 'Keanu Reeves'})
 RETURN p, m
 ```
@@ -297,7 +297,7 @@ RETURN p.name, type(rel)
 
 - 이 `type` 함수는 관계에 대해서만 사용될 수 있습니다. 혹시나 해서, 노드에 대해서도 가능한가 싶어서 사용해봤는데, 다음과 같은 에러가 뜨네요. 
 
-```cypher
+```
 MATCH (p) RETURN type(p)
 ```
 
@@ -352,7 +352,7 @@ RETURN p, e
 > Thus far, you have learned how to specify nodes, properties, and relationships in your Cypher queries. Since relationships are directional, it is important to understand how patterns are used in graph traversal during query execution. How a graph is traversed for a query depends on what directions are defined for relationships and how the pattern is specified in the MATCH clause. Here is an example of where the FOLLOWS relationship is used in the Movie graph. Notice that this relationship is directional.
 - 지금까지, 노드, 프로퍼티, 관계 등을 사이퍼 쿼리문에서 정의하는 방법을 배웠다. 이 관계에는 방향성이 있을 수 있고, 이 때는 방향성을 고려해서, 쿼리를 작성하는 것이 필요하다. 아래와 같이, 아스키 아트와 같이 명령문이 작성되며 방향성이 있는 경우 없는 경우를 모두 고려해서 탐색할 수 있다.
 
-```cypher
+```
 MATCH  (p:Person)-[:FOLLOWS]->(:Person {name:'Angela Scope'}) RETURN p
 MATCH  (p:Person)<-[:FOLLOWS]-(:Person {name:'Angela Scope'}) RETURN p
 MATCH  (p1:Person)-[:FOLLOWS]-(p2:Person {name:'Angela Scope'}) RETURN p1, p2
@@ -361,7 +361,7 @@ MATCH  (p1:Person)-[:FOLLOWS]-(p2:Person {name:'Angela Scope'}) RETURN p1, p2
 - 그리고, 지금까지의 모든 명령문은 node -edge - node의 형태로만 정리되었었는데요 그렇지 않고 여러 복합 관계를 고려해서 표현할 수도 있습니다. 
 - 아래를 보시면 node - edge - node - edge - node의 형태로 정리되어 있죠. 즉, 해석을 하자면, 제시카 톰슨의 팔로워의 팔로워를 모두 찾아서 보여준다는 것이죠. 즉, 이러한 방식으로 그래프를 쿼리하고, 결과를 뽑아내는 것도 가능합니다. 
 
-```cypher
+```
 MATCH  (p:Person)-[:FOLLOWS]->(:Person)-[:FOLLOWS]->(:Person {name:'Jessica Thompson'})
 RETURN p
 ```
