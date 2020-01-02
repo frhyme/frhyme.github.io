@@ -12,7 +12,6 @@ tags: database nosql sql graphdb cypher
 
 ### About this module
 
-> Cypher is the query language you use to retrieve data from the Neo4j Database, as well as create and update the data.
 - Cypher는 Neo4j DB로부터 데이터를 검색/작성/업데이트 등을 하기 위해 사용되는 질의어(Query Language)입니다. 흠, 왜 delete는 안 써있을까요. 물론 사소한 일이기는 합니다만. 
 - 그리고, Cypher에 대한 보다 자세한 documentation은 [이 링크](https://neo4j.com/docs/cypher-manual/current/)에 있습니다. 따라서, 이 글에서는 비교적 간단하게만 정리되어 있습니다.
 - 또 여담이지만, 'Cypher'는 힙합 문화에서 서로 돌아가며 프리스타일 랩을 하는 것을 의미합니다. 
@@ -20,13 +19,11 @@ tags: database nosql sql graphdb cypher
 
 ### What is Cypher?
 
-> Cypher is a declarative query language that allows for expressive and efficient querying and updating of graph data. Cypher is a relatively simple and very powerful language. Complex database queries can easily be expressed through Cypher, allowing you to focus on your domain instead of getting lost in the syntax of database access.
 - Cypher는 선언적인 질의 언어(declarative query language)이며 그래프 데이터에 대하여 표현력이 풍부하고, 효율적인 질의를 가능하도록 한다. Cypher를 사용하면, 복잡한 디비 쿼리도 쉽게 표현되어지며, 일반적인 DB언어들은 문법을 고려하다가 길을 잃는데, Cypher는 단순하고, 효과적이기 때문에, 해야 할 일에만 집중할 수 있다. 
 - 여기서, 'declarative'는 procedural에 반대되는 말입니다. 쉽게 말하자면, C, C++과 같은 procedural 한 언어들로 작성된 코드를 보면 '어떤 일을 달성하기 위해서 어떻게 해야 하는지'에 대해서 자세하게 작성되어 있습니다. 하지만, '선언형'의 경우는 '어떻게 해야 하는 것보다, 무엇을 해야 하는지에 대해서' 좀 더 정확하게 서술되어 있습니다. 즉, SQL과 여기서 말하는 Cypher와 같은 언어들은 가령, 디비의 테이블에서 어떻게 루프 문을 짜고, 이런 세부적인 동작에 집중하는 것이 아니라, '무엇'을 해야 하는지 그 목적을 선명하게 드러내도록 작성이 된다는 것이죠. 어찌 보면, 일종의 고도의 캡슐화 등으로 세부적인 동작과 같은 것들은 뒤에서, 다 돌아가고, 앞에서는 선언적으로 '어떻게 하면 된다'만 결정해주면 알아서 해석해서 진행된다, 라는 것으로 생각하시면 될 것 같네요.
 
 #### Cypher is ASCII art
 
-> Optimized for being read by humans, Cypher’s construct uses English prose and iconography (called ASCII Art) to make queries more self-explanatory.
 - 사람들에게 읽혀지는 것에 맞춰서 최적화하기 위해서, Cypher의 구조는 질의어를 그 자체로 의미가 그대로 드러나도록, 자명하도록(self-explanatory) 만들기 위해, 영어의 산문체(prose)와 도상학(iconography)을 사용하였다. 
 - 어렵게 되어있지만, 그냥 최대한 자연어에 가깝게 가령, 주어-동사-목적어 의 형태가 될 수 있도록 설계하였으며, 그 모양 또한 그래프 틱 하게 나타나도록 하였다, 라고 해석하면 될 것 같네요. 여기서 말하는 ascii art는 아래 그림과 같은 것을 말합니다. 
 
@@ -46,34 +43,28 @@ H   H EEEEE LLLLL LLLLL  OOO  ,,    W W   OOO  R   R LLLLL DDDD  !!
 (A)<-[:LIKES]-(B)-[:LIKES]->(C)
 ```
 
-> This is in contrast to imperative, programmatic APIs for database access. This approach makes query optimization an implementation detail instead of a burden on the developer, removing the requirement to update all traversals just because the physical database structure has changed.
 - Cypher는 데이터베이스를 명령적이고(imperative), 프로그래밍적인 관점에서 접근하는 다른 API 들과는 다르다. 이러한 접근은 physical database 구조가 변경되었기 때문에, 모든 순회(traversal)를 업데이트할 필요가 없어지므로, 개발자들에게 부담을 주는 대신, 쿼리 최적화나 구현을 세부적으로 할 수 있도록 하게 할 것입니다.
 - 그러니까, 기존의 procedural language들의 경우(특히 RDBMS)는 데이터베이스의 기존 스키마가 달라지거나 할 경우 다른 모든 관련된 명령어들, 특히 그래프를 순회하기 위해 만들어놓은 많은 프로시져를 고쳐야 하는데, 여기서 제시하는 Cypher의 경우는 선언적이며, 무엇을 어떻게 해야 하는지를 중심으로 작성되어 있기 때문에, 유지 보수 측면에서 훨씬 안정적이라는 것이겠죠.
 
-> Cypher is inspired by a number of different approaches and builds upon established practices for expressive querying. Many of the Cypher keywords like WHERE and ORDER BY are inspired by SQL. The pattern matching functionality of Cypher borrows concepts from SPARQL. And some of the collection semantics have been borrowed from languages such as Haskell and Python.
 - Cypher는 수많은(a number of) 다른 접근법들로부터 영감을 받았으며, 표현력 높은 질의어(expressive querying)를 위해 잘 설립된 실행예제(established practices)들로부터 만들어졌다. 
 - WHERE, ORDER BY와 같은 Cypher의 단어들은 SQL로부터 전해졌다. 그리고, Cypher의 패턴 매칭 기능은 SPARQL로부터 컨셉을 가져왔고, 다른 collections semantics 들은 haskell이나 python으로부터 가져왔다. 
 - collections semantics이라는 말이 조금 낯설게 느껴질 수 있는데, 그냥 list/dictionary/enumerate/array 아무튼 뭐 그런 종류의 합해서 처리하는 일종의 컨테이너 같은 것이라고 할 수 있습니다.
 
-> The Cypher language has been made available to anyone to implement and use via openCypher (opencypher.org), allowing any database vendor, researcher or other interested party to reap the benefits of our years of effort and experience in developing a first class graph query language.
 - Cypher 언어는 GQL(Graph Query Language)를 first-class로 개발하는 측면에서, 수년간의 노력과 경험의 이득을 어떤 데이터베이스 공급자, 연구자, 다른 파티티들이 획득할 수 있도록(reap) openCypher를 통해 많은 사람들이 사용하고 구현할 수 있도록 가용되어 왔다.
 - openCypher를 통해 구현되고 사용될 수 있으며, 어떤 데이터베이스 벤더나, 연구자, 다른 관심있는 사람들에게 모두 열려 있다. 
 - [opencypher-projects](https://www.opencypher.org/projects)에 들어가보면, cypher를 폭넓게 사용하기 위해서 만들어진 많은 프로젝트들이 있습니다. 가령, RDBMS에 대해서 GRAPH적인 접근과 테이블적인 접근을 동시에 가능하도록 하기 위한 프로젝트라거나 아무튼 다양한 것들이 있습니다.
 
 #### Nodes
 
-> Cypher uses a pair of parentheses like (), (n) to represent a node, much like a circle on a whiteboard. Recall that a node typically represents an entity in your domain. An anonymous node, (), represents one or more nodes during a query processing where there are no restrictions of the type of node or the properties of the node. When you specify (n) for a node, you are telling the query processor that for this query, use the variable n to represent nodes that will be processed later in the query for further query processing or for returning values from the query.
 - Cypher는 노드를 표현하기 위하여, 괄호(parentheses)인 `()`나 `(n)`사용합니다. 다시 말하지만, Node는 우리 영역에서 대상 개체(entity)를 의미합니다. 쿼리 프로세싱(query processing) 중에 특별한 제한(restriction)들이 없다면, 익명 노드 또한, `()`의 형식으로 존재할 수 있습니다. 이 부분의 경우 해석을 해보자면, 필요에 따라서 익명 노드가 필요할 수도 있을 것 같습니다. 물론, 진짜 필요한 use-case를 제가 아직 찾지는 못했구요. 쿼리 프로세싱 과정에서, 특히, 기존 DB에서 Constraint와 같은 방식으로 제한하는 것이 없다면, 여기서도 익명 노드를 만들 수 있다, 이런 말인 것 같네요.
 - 그리고, 다른 방식으로 `(n)`의 형태로 노드를 정의하면, 쿼리 프로세서에게 이 쿼리는 `n`이라는 값을 이름으로 노드를 만든다는 것을 말하죠. 
 
 #### Labels
 
-> Nodes in a graph are typically labeled. Labels are used to group nodes and filter queries against the graph. That is, labels can be used to optimize queries. In the Movie database you will be working with, the nodes in this graph are labeled Movie or Person to represent two types of nodes.
 - 그래프에서 노드는 labeled되어 있는데, label은 노드를 그룹화하거나, 그래프에 대해서 쿼리를 graph에 대해서 query를 filtering하는데 사용된다. 즉, label은 쿼리를 최적화하기 위해서 사용되는데, 만약 영화 DB가 구축되어 있다면, 이 영화 그래프에서 노드는 영화(Movie)나 사람(Person)과 같은 두 가지 유형의 노드를 표현하기 위해서 사용된다.
 - 데이터 분석을 위해서 키워드를 구축할 때는 보통, 하나의 라벨만 존재하게 하는 경우가 많습니다. 가령, 제가 자주 연구하는 키워드 네트워크의 경우에는 제가 구축한 네트워크의 모든 노드의 label은 '키워드'일 뿐이죠. 물론, 더 정확하게 모델링하려면, '논문', '키워드', '저자'와 같이 많은 개체(entity)를 함께 네트워크로 표현할 수 있습니다. 즉, 이런 클래스명 과 같은 것이 모두 label이죠. 
 - 그런데, 이러한 다양한 개체가 함께 존재한다고 보면, 여기서부터 다양한 sub-network를 뽑아낼 수 있습니다. 즉, 키워드 네트워크만 뽑거나, 저자 네트워크만 뽑는 식으로 처리하는 것이 가능하죠. 여기서 말한, 'label'을 사용해서 쿼리를 최적화한다는 것은, 결국 필요에 따라 맞는 라벨을 가진 노드만 구분하여 그래프에 대한 쿼리를 빠르게 처리하게 할 수 있다는 것이죠.
 
-> You can filter the types of nodes that you are querying, by specifying a label for a node. A node can have zero or more labels. Here are simplified syntax examples for specifying a node:
 - 따라서, 내가 쿼리하는 노드의 유형별로 필터링을 할 수 있고, 동시에 node는 0개 혹은 여러 개의 라벨을 동시에 가질 수도 있습니다. 아래는 노드의 라벨에 대한 간단한 문법을 말하죠. 
 - 아래 문법을 보면, 이름도 없고 label도 없는 것도 가능하고, 이름만 있거나, 라벨만 있는 것도 가능하고, 라벨이 여러 개 있는 것도 가능합니다. 다만 이름이 여러 개인 경우는 안되는 것이죠(물론 이건 너무 당연한 것이기는 하죠). 
 - 그리고, 추가로 생각해보자면, '라벨이 여러개가 될 수 있다는 것'이 경우에 따라서 너무 자유분방해질 수 있습니다. 라벨을 일관적인 어떤 기준에 따라서 설정하지 않는다면, 이는 이후 그래프 자체의 정확도를 현저하게 떨어뜨리는 원인이 될 수 있습니다. 비슷한 예로는 인스타그램 태그 같은 것을 말할 수 있을 것 같아요. 만약 인스타그램 태그가 모든 글에 아주 정확하게 달려 있다면, 해당 글들을 아주 효과적으로 필터링할 수 있죠. 하지만, 이미 아시겠지만 인스타그램의 글들에 달려 있는 태그들은 아주 천차만별입니다. 어떤 글에는 몇 개 안 달려 있고 어떤 글에는 수십개가 달려있죠. 똑같이, 태그만으로 글들을 프로세싱한다면, 꽤 정확하지 않은 결과가 나올 수 있죠. 
@@ -88,7 +79,6 @@ H   H EEEEE LLLLL LLLLL  OOO  ,,    W W   OOO  R   R LLLLL DDDD  !!
 (variable:Label1:Label2)
 ```
 
-> Notice that a node must have the parentheses. The labels and the variable for a node are optional. Here are examples of specifying nodes in Cypher:
 - 노드는 반드시 `()`를 가져야 한다. 그리고, `label`, `variable`은 모두 선택사항이며, 아래의 예는 노드를 정의하기 위한 Cypher의 예시다. 
 
 ```
@@ -103,24 +93,20 @@ A node can have multiple labels. For example a node can be created with a label 
 
 #### Comments in Cypher
 
-> In Cypher, you can place a comment (starts with //) anywhere in your Cypher to specify that the rest of the line is interpreted as a comment.
 - Cypher에서는 comment를 `//`를 사용해서 표현한다. 
 
 
 ### Examining the data model
 
-> When you are first learning about the data (nodes, labels, etc.) in a graph, it is helpful to examine the data model of the graph. You do so by executing CALL db.schema, which calls the Neo4j procedure that returns information about the nodes, labels, and relationships in the graph.
 - 만약, 그래프에서의 데이터를 처음 배운다면, 그래프의 데이터 모델을 검사하는 것이 도움이 된다. 이 것은 `CALL db.schema`를 실행함으로써, 도움이 되는데, 이는 현재 노드, label, relationship에 대한 정보를 리턴해준다. 
 - 원래 링크에는 그림도 포함되어 있는데, 노드, 라벨, 관계등을 시각화해서 보여줌으로써, 현재 데이터 모델이 어떤 형태로 구성되어 있는지를 보여줍니다.
 
-> For example, when we run this procedure in our training environment, we see the following in the result pane. Here we see that the graph has 2 labels defined for nodes, Person and Movie. Each type of nodes is displayed in a different color. The relationships between nodes are also displayed, which you will learn about later in this module.
 
 ### Using MATCH to retrieve nodes
 
 > In this video, you will be introduced to using the MATCH statement to retrieve nodes from the graph in Neo4j Browser.
 - 비디오에서는 그래프에서 노드를 검색하기 위해서 `MATCH`를 사용하는 것을 소개한다.
 
-> The most widely used Cypher clause is MATCH. The MATCH clause performs a pattern match against the data in the graph. During the query processing, the graph engine traverses the graph to find all nodes that match the graph pattern. As part of query, you can return nodes or data from the nodes using the RETURN clause. The RETURN clause must be the last clause of a query to the graph. Later in this training, you will learn how to use MATCH to select nodes and data for updating the graph. First, you will learn how to simply return nodes.
 - Cypher에서 가장 범용적으로 사용되는 구문은 `MATCH`이며, `MATCH`는 그래프의 데이터를 대상으로 pattern match를 수행한다. 쿼리 프로세싱 중에, 그래프 엔진은 그래프 패턴에 맞는 모든 노드를 찾기 위해서 그래프를 순회(traverse)한다. 그리고, `MATCH`를 통해 찾아진 데이터는, `RETURN`을 통해서 그 결과를 확인할 수 있다. 
 - 즉, `MATCH`를 통해 적합한 데이터를 선택하고, 그 결과를 `RETRUN`으로 확인한다는 말이 되죠. SQL로 비교하자면, MATCH ==> WHERE, RETURN ==> SELECT 가 된다고 보면 되겠네요.
 - 아래의 형태가 간단한 형태의 Cypher 구문입니다.
@@ -135,7 +121,6 @@ MATCH (variable:Label)
 RETURN variable
 ```
 
-> Notice that the Cypher keywords MATCH and RETURN are upper-case. This coding convention is described in the Cypher Style Guide and will be used in this training. This MATCH clause returns all nodes in the graph, where the optional Label is used to return a subgraph if the graph contains nodes of different types. The variable must be specified here, otherwise the query will have nothing to return. Here are example queries to the Movie database:
 - `MATCH`, `RETURN` 모두 영어 대문자로 작성해야 한다. 이 coding convention은 Cypher Style Guide에 기술되어 있다. MATCH 구문에 label을 명시함으로써, 해당 label에 속하는 노드만 추출하는 것도 가능하다. 여기서 variable이 명시되는 것이 필수적이고, 그렇지 않으면, 아무것도 리턴하지 않게 된다. 간단한 예는 다음과 같다.
 - 물론, SQL과 동일하게, 소문자로 해도 굴러가기는 합니다만, 가독성 측면이나 여러 이유로 대문자 쓰는 것을 추천하고 있는 것이죠. 그리고, 여기에서, n과 p 모두 변수인데, 그냥 제가 만들어주는 변수입니다. 그냥 `xxxxxx`라고 해도 상관없죠.
 
@@ -154,7 +139,6 @@ RETURN p
 
 #### Properties
 
-> In Neo4j, a node (and a relationship, which you will learn about later) can have properties that are used for further define a node. A property is identified by its property key. Recall that nodes are used to represent the entities of your business model. A property is defined for a node and not for a type of node. All nodes of the same type need not have the same properties.
 - Neo4j에서 Node(relationship도 마찬가지지만)는 해당 노드의 특성이 정의된 property를 가질 수 있습니다. 중요한 것은, 같은 타입의 노드라고 해도, 같은 property들을 가질 필요는 없다는 것이죠. 
 - 가령, 노드가 'Moive'를 표현하기 위해서 정의되었다고 해도, 어떤 노드에는 name, year가 정의되어 있을 수 있고, 또 다른 노드에는 name/year/관객수 등 다른 정보가 더 포함되어 있을 수 있다는 것이죠. 다만, 저는 이 부분이 조금 낯설게 느껴지기는 합니다. 아마도 이후에 CONSTRAINT 등을 통해서 이를 가능 혹은 불가능하도록 관리하는 방법이 있겠죠.
 
@@ -165,12 +149,10 @@ Properties can be used to filter queries so that a subset of the graph is retrie
 
 #### Examining property keys
 
-> As you prepare to create Cypher queries that use property values to filter a query, you can view the values for property keys of a graph by simply clicking the Database icon in Neo4j Browser. Alternatively, you can execute CALL db.propertyKeys, which calls the Neo4j library method that returns the property keys for the graph.
 - 쿼리를 작성하기 전에, 현재 property key가 어떤 것들이 있는지 확인하는 것이 필요한데, 이는 명령창에서 `CALL db.propetyKeys`를 통해 쉽게 알 수 있다. 다만, 어떤 노드에 어떤 프로퍼티가 있는지 나오는 것이 아니라, 그냥 모든 프로퍼티가 다 나온다.
 
 #### Retrieving nodes filtered by a property value
 
-> You have learned previously that you can filter node retrieval by specifying a label. Another way you can filter a retrieval is to specify a value for a property. Any node that matches the value will be retrieved.
 - 노드를 검색할 때, 특정 label에 속하는 노드만 뽑아낼 수 있는 것처럼, 특정 property를 가진 노드만 솎아낼 수도 있다. 대략 간단하게는 다음과 같이 수행하면 된다.
 - 아래 코드를 보면, 대략 알 수 있는데, `변수명:라벨명:{프로퍼티들}`로 쿼리가 구성된다. property는 파이썬의 딕셔너리처럼 넘겨준다고 생각하면 훨씬 편하다. 
 
