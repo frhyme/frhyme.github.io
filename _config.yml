@@ -51,7 +51,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : false # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : false # true, false (default) 원래 false였는데 20180719에 바꿔봄 
 
 # SEO Related
