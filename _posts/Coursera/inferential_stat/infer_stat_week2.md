@@ -91,6 +91,12 @@ Confidence interval upp: 0.8721311093178471
 - 
 - 하지만, 여기서는, 서로 다른 표본 집단의 비율에 대해서 이 차이를 랜덤변수로 두고, 이 값의 분포가 어떻게 구성되며, 이에 대한 신뢰 구간을 어떻게 예측할 수 있는지에 대해서 정리하였다.
 
+
+Lastly, the standard error for difference of population proportions and means is:
+
+$$Standard\ Error\ for\ Difference\ of\ Two\ Population\ Proportions\ Or\ Means = \sqrt{SE_{Proportion\ 1}^2 + SE_{Proportion\ 2} ^2}$$
+
+
 We will use the 2015-2016 wave of the NHANES data for our analysis.
 
 *Note: We have provided a notebook that includes more analysis, with examples of confidence intervals for one population proportions and means, in addition to the analysis I will show you in this tutorial.  I highly recommend checking it out!
