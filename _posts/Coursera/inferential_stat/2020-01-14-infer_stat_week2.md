@@ -1,7 +1,7 @@
 ---
 title: Inferential Statistical Analysis with Python - WEEK 2
 category: python-libs
-tags: python python-libs coursera
+tags: python python-libs coursera statsmodel statistics
 ---
 
 ## Statistical Inference with Confidence Intervals
@@ -86,23 +86,52 @@ Confidence interval upp: 0.8721311093178471
 
 - 이제, 서로 다른 표본 집단 둘에서 가져온 `p1`과 `p2`간의 차이가, 어떤 구간에 존재하는지를 파악해봅시다. 즉, `p1 - p2`라는 랜덤 변수가 어떤 구간에 위치하는지를 본다는 이야기죠. 
 - 우선, 두 비율 모두 `N1`, `N2`가 매우 크다고 가정합니다(즉 degree of freedom이 매우 크다는 말죠). 따라서 거의 normal distribution과 유사한 형태를 가지게 되죠. 따라서, 95%의 confidence interval을 파악한다면, 양쪽에 1.96을 곱해주면 되는 것이죠. 그리고, 각각의 랜덤변수는  `norm(p, sqrt(p1 * (1-p1) / N1))`을 따릅니다. 
-- 그리고, 새로운 랜덤변수인 `p1-p2`는 norm()
-- 우선, `p1`은 
-- 
-- 하지만, 여기서는, 서로 다른 표본 집단의 비율에 대해서 이 차이를 랜덤변수로 두고, 이 값의 분포가 어떻게 구성되며, 이에 대한 신뢰 구간을 어떻게 예측할 수 있는지에 대해서 정리하였다.
+- 그리고, 새로운 랜덤변수인 `p1-p2`는 평균은 `mean(p1) - mean(p2)`이며, 표준편차는 `sqrt(std(p1)**2 + std(p2)**2)`가 됩니다. 이건, 아주 기본적인 수식이므로 더 설명하지 않아도 될것 같습니다.
+- 따라서, 이를 계산해보면 다음과 같죠. 
 
 
-Lastly, the standard error for difference of population proportions and means is:
+```python
+import numpy as np 
+print("=="*20)
+# 집단1의 랜덤변수, p1, N1, 
+p1 = .304845
+N1 = 2972
+std_error1 = np.sqrt(p1 * (1 - p1)/N1)
+print(f"std_error1: {std_error1}")
 
-$$Standard\ Error\ for\ Difference\ of\ Two\ Population\ Proportions\ Or\ Means = \sqrt{SE_{Proportion\ 1}^2 + SE_{Proportion\ 2} ^2}$$
+# 집단2의 랜덤변수, p2, N2, std_error2
+p2 = .513258
+N2 = 2753
+std_error2 = np.sqrt(p2 * (1 - p2)/ N2)
+print(f"std_error2: {std_error2}")
+print("=="*20)
 
+# p_diff 라는 새로운 랜덤변수는 다음과 같은 평균과 분산을 가지며 
+# N이 충분히 많으므로 normal distribution을 따른다고 할 수 있다.
+p_diff_average = p1 - p2
+diff_std_error = np.sqrt(std_error1**2 + std_error2**2)
+print(f"p_diff_average: {p_diff_average}")
+print(f"diff_std_error: {diff_std_error}")
+lcb = p_diff_average - 1.96 * diff_std_error
+ucb = p_diff_average + 1.96 * diff_std_error
+print(f"lcb: {lcb}")
+print(f"ucb: {ucb}")
+print("=="*20)
+```
 
-We will use the 2015-2016 wave of the NHANES data for our analysis.
+```
+========================================
+std_error1: 0.00844415041930423
+std_error2: 0.009526078787008965
+========================================
+p_diff_average: -0.20841300000000001
+diff_std_error: 0.012729880335656654
+lcb: -0.23336356545788706
+ucb: -0.18346243454211297
+========================================
+```
 
-*Note: We have provided a notebook that includes more analysis, with examples of confidence intervals for one population proportions and means, in addition to the analysis I will show you in this tutorial.  I highly recommend checking it out!
+## wrap-up
 
-For our population proportions, we will analyze the difference of proportion between female and male smokers.  The column that specifies smoker and non-smoker is "SMQ020" in our dataset.
-
-For our population means, we will analyze the difference of mean of body mass index within our female and male populations.  The column that includes the body mass index value is "BMXBMI".
-
-Additionally, the gender is specified in the column "RIAGENDR".
+- 내용은 좀 더 많았지만, python을 활용해서 confidence interval을 계산하는 방법을 중심으로 정리하였습니다. 분명히 모두 학부때 배운 내용들이고(심지어 몇몇은 고등학교 때 배운 내용임에도 헷갈리는 부분들이 있더군요).
+- 결국 중요한 것은 샘플링한 값들도 결국 특정한 분포를 따르는 랜덤 변수인 것이고, 이 랜덤 변수들을 더한 '평균'과 같은 값도 결국은 랜덤 변수인 것이죠. 따라서, 모집단이 정규 분포를 따르고, 이로부터 N개의 샘플링을 통해 꺼낸 평균도 특정한 분포(스튜어트 t 분포)를 따르게 되죠. 이 분포에 따라서, 만약 99%의 가능성으로 본다면 어느 정도 구간에 존재한다고 할 수 있는지, 이를 말하는 것이 신뢰구간이라는 것입니다. 즉, 최소한 이 구간에는 99%의 가능성으로, 같은 작업을 반복하더라도 여기에 존재할 것이다, 라는 것이죠.
