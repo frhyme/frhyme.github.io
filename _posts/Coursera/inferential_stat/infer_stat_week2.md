@@ -76,7 +76,19 @@ Confidence interval upp: 0.8721311093178471
 
 ## Confidence Intervals for Differences between Population Parameters
 
-- 이전에는 하나의 population에 대해서 추정한 proportion의 신뢰구간을 추정했다. 
+### 복습. 
+
+- 이전에는 하나의 population에 대해서 추정한 proportion의 신뢰구간을 추정했습니다. 
+- 모집단의 분포를 가진 N개의 표본 집단을 뽑아서, 표본집단의 평균이라는 랜덤 변수를 만들었죠. 그리고 이 랜덤 변수는 normali dist에 기반한 스튜어트 t 분포를 가집니다(이 아이는 노멀 분포의 평균/분산과 degree of freedom을 통해 정의되죠). 
+- 그리고, 이 분포에 대해서, 평균이 일정 신뢰 구간(confidence interval)에 속하는지를 그 구간을 도출합니다. 
+
+### 돌아와서.
+
+- 이제, 서로 다른 표본 집단 둘에서 가져온 `p1`과 `p2`간의 차이가, 어떤 구간에 존재하는지를 파악해봅시다. 즉, `p1 - p2`라는 랜덤 변수가 어떤 구간에 위치하는지를 본다는 이야기죠. 
+- 우선, 두 비율 모두 `N1`, `N2`가 매우 크다고 가정합니다(즉 degree of freedom이 매우 크다는 말죠). 따라서 거의 normal distribution과 유사한 형태를 가지게 되죠. 따라서, 95%의 confidence interval을 파악한다면, 양쪽에 1.96을 곱해주면 되는 것이죠. 그리고, 각각의 랜덤변수는  `norm(p, sqrt(p1 * (1-p1) / N1))`을 따릅니다. 
+- 그리고, 새로운 랜덤변수인 `p1-p2`는 norm()
+- 우선, `p1`은 
+- 
 - 하지만, 여기서는, 서로 다른 표본 집단의 비율에 대해서 이 차이를 랜덤변수로 두고, 이 값의 분포가 어떻게 구성되며, 이에 대한 신뢰 구간을 어떻게 예측할 수 있는지에 대해서 정리하였다.
 
 We will use the 2015-2016 wave of the NHANES data for our analysis.
