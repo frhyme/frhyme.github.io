@@ -95,9 +95,6 @@ print("--"*20)
 ```
 
 
-
-
-
 ## wrap-up
 
 - WEEK 2에서는 confidence interval을 배웠고, WEEK 3에서는 hypothesis testing을 배웠습니다. 

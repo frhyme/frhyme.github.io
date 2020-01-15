@@ -4,7 +4,7 @@ category: python-libs
 tags: python python-libs coursera statsmodel statistics
 ---
 
-## Statistical Inference with Confidence Intervals
+## WEEK 3 - Statistical Inference with Confidence Intervals
 
 - 2주차에서는 주로 Confidence interval을 배웠으며, 어떻게 계산하고 해석하는지, 그리고 Confidence라는 것이 의미하는 것은 무엇인지 등에 대해서 배우게 됩니다. 
 - 이를 위해서는 우선 '모집단'과 '표본집단'에 대한 이해가 필수적입니다. 가령, '한국의 남성들의 키 평균'을 알고 싶다고 한다면, 여기서, '한국의 남성'이 모집단이 되죠. 돈이 충분하다면 우리가 전수조사를 할 수 있지만, 우리는 늘 그렇지 않습니다. 따라서, 우리는 필요한 표본들, N이라는 값을 가져와서 '평균'이라는 parameter를 예측하게 되죠. 
