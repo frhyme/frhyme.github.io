@@ -1,5 +1,5 @@
 ---
-title: Fitting Statistical Models to Data with Python - WEEK 1
+title: Fitting Statistical Models to Data with Python - WEEK 1 - Part 1
 category: python-libs
 tags: python python-libs coursera statsmodel statistics
 ---
@@ -160,48 +160,210 @@ RIAGENDRx[T.Male]     0.8851      0.058     15.227      0.000       0.771       
 == GLM complete
 ```
 
-### Generalized Estimated Equations(GEE)
+### Generalized Estimated Equations(GEE), 보완 필요!
 
-- GLM은 오류(error)들이 독립적이라는 것에서 출발합니다. 하지만, 우리가 실제로 관측한 많은 데이터들은 이 error들이 독립적이라고 보기 어렵습니다. 하나의 예로, 만약 사람 A의 혈당량과 같은 데이터를 N1 번 관측했다고 해봅시다. 그리고 사람 B의 혈당량과 같은 데이터를 N2 번 관측했다고 해보죠. 이 때 우리가 가진 데이터는 A의 혈당량 N1번, B의 혈당량 N2번이 됩니다. 그리고 이 데이터들은 각각 A라는 사람과 B라는 사람에게 깊게 의존하기 때문에, 독립적이라고 보기 어렵습니다. 즉, 앞서 말한 바와 같이, 개개인의 차이가 제어되지 않은 상태인 것이죠. 
-- 이처럼 outcome이 독립적이지 않을 때, GLMM(Generalized Linear Mixed Model)을 사용해서 피험자별로 random effect를 다르게 적용하여, 해결할 수도 있습니다. 즉, 그 error를 분리하여, 피험자에게 다른 분포가 적용될 수 있음을 통해서 outcome의 의존성을 해결해주는 것이죠. 
-- 
+#### Background
 
-- GEE는 panel, cluster 혹은 반복 측정된 데이터를 대상으로 GLM을 예측하는 것을 말하는데, 특히, cluster 내에서는 밀접하게 관련되어 있는 반면, cluster 외부에서는 연관성이 떨어질 때 사용한다. 라고 적혀 있는데, 아무래도 내용이 좀 혼란스러워서, [위키피디아](https://en.wikipedia.org/wiki/Generalized_estimating_equation)를 참고하여 좀 더 작성해보았습니다. 
-- 통계에서 GEE는 GLM의 parameter를 예측하기 위해 사용되지만, outcome(종속 변수/응답 변수)간에 파악할 수 없는 상관관계(correlation)이 있을 때, 사용합니다. 가령, 우리가 가지고 있는 데이터들이 '남성'과 '여성'이라는 두 집단이 
-- 공분산 구조(covariance structure)가 명시되어 있지 않을때(명확히 정의되어 있지 않을 때), GEE의 parameter를 찾는 것은 일관적입니다. 
-- 다만, GEE의 목적은, 
+- Limitation of GLM) GLM은 오류(error)들이 독립적이라는 것에서 출발합니다. 하지만, 우리가 실제로 관측한 많은 데이터들은 이 error들이 독립적이라고 보기 어렵습니다. 하나의 예로, 만약 사람 A의 혈당량과 같은 데이터를 N1 번 관측했다고 해봅시다. 그리고 사람 B의 혈당량과 같은 데이터를 N2 번 관측했다고 해보죠. 이 때 우리가 가진 데이터는 A의 혈당량 N1번, B의 혈당량 N2번이 됩니다. 그리고 이 데이터들은 각각 A라는 사람과 B라는 사람에게 깊게 의존하기 때문에, 독립적이라고 보기 어렵습니다. 즉, 앞서 말한 바와 같이, 개개인의 차이가 제어되지 않은 상태인 것이죠. 
+- GLMM) 이처럼 outcome이 독립적이지 않을 때, GLMM(Generalized Linear Mixed Model)을 사용해서 피험자별로 random effect를 다르게 적용하여, 해결할 수도 있습니다. 즉, 그 error를 분리하여, 피험자에게 다른 분포가 적용될 수 있음을 통해서 outcome의 의존성을 해결해주는 것이죠. 따라서, covariance structure를 추정함으로써 variance의 변화를 반영한다는 점에서 이 방법은 모수적 방법(parameteric method)가 됩니다. 
+- Limit of GLMM) GLMM의 경우, 추정된 covariance structure에 따라서 모델을 fitting하게 되는데요, 이 때 상대적으로 covariance에 민감하게 반응하게 됩니다. 또한, 데이터 세트에 내재되어 있는 측정되지 않는, 다른 의존성들을 처리할 수는 없다는 한계를 가지고 있기도 하죠. 
+- GEE) GEE 또한, panel, cluster 등 반복 측정된 데이터들에 대해서, Heteroscedasticity가 내재되어 있는 경우에, 이를 해결하기 위해서 사용됩니다. covariance structure를 기반으로 진행하는 GLMM과 달리, GEE의 parameter tuning은 상대적으로 일관적입니다. 
+- 까지 알겠고, 아직 명확하지 않은 부분들이 있어서, 넘어갑니다. 
 
-- GEE에서 모수 추정(parameter estimate)는 공분산 구조(coavariance structure)가 알려지지 않았을 때에도, mild regularity 조건에 의해서 일관적이다. GEE의 관심은 "population-averaged" effect 아래에서 평균적인 response를 예측하기 위한 것에 있으며, 
-보다, 주어진 개인의 공분산의 변화에 따른 영향을 예측하는 regression parameter들 보다는, 각 인구 집단에서 평균적으로 변화하는 response를 예측하는 것에 있다.
-즉 GEE는 보통 Huber-white standard error 예측("robust standard error", "sandwich variance")과 비슷하다. 
+#### GEE) do it. 
 
-실제로 효과가 있는 독립변수로 세워진 선형 모델이 있다고 할때, 이는 보통 "heteroscedasticity consistent standard error" estimators라고 알려진다.
+- 아무튼, 본 코스에서는 이전과 동일하게 `statsmodels`를 이용하여, GEE를 설계합니다.
+- 다만 이전에 나온 다른 model의 summary와 다른 점은 `Y ~ X`의 형태로 formula를 넘기지 않고, 마치, `group`이라는 변수를 넘기는 것입니다. 다르게 보면, 이는 각 'group에 대해서 이를 가장 잘 설명할 수 있는 분포의 형태를 찾는 것이다'처럼 보이기도 합니다.
+- 이렇게 쓰고 보니, 그냥 '클러스터링'처럼 보이기도 하네요 흠. 
 
-실제로 GEE는 일반적/통합적 프레임워크 속에서 이러한 표준 오차(standard error)를 예측하기 위한 독립적인 공식들을 통합하였다.
+```python
+GEE = True
+if GEE == True:
+    print("== GEE Summary")
+    nhanes_df["group"] = 10*nhanes_df.SDMVSTRA + nhanes_df.SDMVPSU
+    #print(nhanes_df["group"].head(20))
+    model = sm.GEE.from_formula(
+        formula="BPXSY1 ~ 1", 
+        groups="group", 
+        cov_struct=sm.cov_struct.Exchangeable(), 
+        data=nhanes_df
+    )
+    res = model.fit()
+    print(res.cov_struct.summary())
+    print(res.summary())
+```
 
-GEE는 그들이 첫번째 2가지의 moment를 명확하게 하는 것에 의존하므로, semi-모수적인 리그레션 기술 종류에 속하게 된다. 
+- `No. clusters`가 있는 것이 조금 특이하게 보입니다.
 
-이들은 또한 결과(outcome) 사이의 측정되지 않은 다양한 종류의 의존성을 조절할 수 있기 때문에, variance structure에 민감하게 반응하는 likelihood 기반의 GLMM(Generalized linear mixed model: large epidemiological study, multi-site cohort study)에 대한 인기있는 대안이기도 하다.
+```
+== GEE Summary
+The correlation between two observations in the same cluster is 0.030
+                               GEE Regression Results
+===================================================================================
+Dep. Variable:                      BPXSY1   No. Observations:                 5102
+Model:                                 GEE   No. clusters:                       30
+Method:                        Generalized   Min. cluster size:                 106
+                      Estimating Equations   Max. cluster size:                 226
+Family:                           Gaussian   Mean cluster size:               170.1
+Dependence structure:         Exchangeable   Num. iterations:                     6
+Date:                     Thu, 16 Jan 2020   Scale:                         341.838
+Covariance type:                    robust   Time:                         16:02:34
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept    125.3352      0.615    203.894      0.000     124.130     126.540
+==============================================================================
+Skew:                          0.9922   Kurtosis:                       1.7588
+Centered skew:                 0.9683   Centered kurtosis:              1.6972
+==============================================================================
+```
 
 
 
+### Multilevel Models
 
-- 특히, 기본적으로는 uncertainty regarding correlation 
-GEE는 marginal linear model이나 intraclass correlation에 대해서 
-
-- non parametric assumption: 비모수적 방법이라, 그렇다면 이 아이는 선형 방ㅈ
-### 
+- Multilevel Model은 GEE와 유사하게, 수집된 데이터 내에 그룹이 존재한다고 할 때, 그럴때 사용합니다. 다만, GEE와의 차이점에 대해서는 따로 언급되어 있지 않습니다.
 
 
+```python
+MM = True
+if MM==True:
+    print("== GEE Summary")
+    nhanes_df["group"] = 10*nhanes_df.SDMVSTRA + nhanes_df.SDMVPSU
+    nhanes_df["smq"] = nhanes_df.SMQ020.replace({2: 0, 7: np.nan, 9: np.nan})
+    for v in ["BPXSY1", "RIDAGEYR", "BMXBMI", "smq", "SDMVSTRA"]:
+        print(f"=== {v}")
+        model = sm.GEE.from_formula(
+            formula=v + " ~ 1", 
+            groups="group",
+            cov_struct=sm.cov_struct.Exchangeable(), 
+            data=nhanes_df
+        )
+        result = model.fit()
+        print(v, result.cov_struct.summary())
+```
 
+- 구축된 covariance structure를 보면, 같은 cluster내에 서로 다른 관칙 치 간에 발생하는 correlation이 어떤지 파악할 수 있습니다.
+
+```
+== GEE Summary
+=== BPXSY1
+BPXSY1 The correlation between two observations in the same cluster is 0.030
+=== RIDAGEYR
+RIDAGEYR The correlation between two observations in the same cluster is 0.035
+=== BMXBMI
+BMXBMI The correlation between two observations in the same cluster is 0.039
+=== smq
+smq The correlation between two observations in the same cluster is 0.026
+=== SDMVSTRA
+SDMVSTRA The correlation between two observations in the same cluster is 0.959
+```
 
 
 
 
 ## wrap-up
 
+- 사실 하나의 jupyter notebook에 너무 많은 내용들이 있어서, 따라가기 좀 벅찼는데요, 죽 읽어보니, OLS, GLM의 경우는 week2 에서 배우고, GEE, MIXEDLM의 경우는 week3 에서 배운다고 합니다. 후. 다행이네요. 
+    - [OLS](https://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.OLS.html)
+    - [GLM](https://www.statsmodels.org/stable/glm.html)
+    - [GEE](https://www.statsmodels.org/stable/gee.html)
+    - [MIXEDLM](https://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.OLS.html)
+- 따라서, 일단은 넘어가고, 이후에 다시 정리해서 한번 공부해도록 업로드하도록 하겠습니다.
 
 ## reference
 
+- <https://elecs.tistory.com/348>
+
 
 ## raw code 
+
+```python 
+import statsmodels.api as sm
+import numpy as np
+import pandas as pd 
+
+# Read and Process data
+
+# file link  
+# https://github.com/kshedden/statswpy-nhanes/blob/master/merged/nhanes_2015_2016.csv
+nhanes_df = pd.read_csv("nhanes_2015_2016.csv")
+print(nhanes_df.columns)
+# Drop unused columns, drop rows with any missing values.
+# 필요없는 칼럼들을 누락시키고, 
+vars = ["BPXSY1", "RIDAGEYR", "RIAGENDR", "RIDRETH1", "DMDEDUC2", "BMXBMI",
+        "SMQ020", "SDMVSTRA", "SDMVPSU"]
+nhanes_df = nhanes_df[vars].dropna()
+# text로 되어 있는 값들을 0, 1로 변경하고,
+nhanes_df["RIAGENDRx"] = nhanes_df.RIAGENDR.replace({1: "Male", 2: "Female"})
+print("== file processing done")
+
+df_DESC = False
+if df_DESC==True:
+    print("== describe")
+    print(nhanes_df.describe())
+    print("=="*20)
+
+
+OLS = False
+if OLS:
+    #################################
+    # OLS: 
+    #################################
+    # X: RIAGENDRx, RIAGENDRx
+    # Y: BPXSY1
+    # 다음과 같이, Y ~ X1 + X2 의 형태로 formula로 넘길 수도 있죠. 
+    # sklearn의 경우에는 이처럼 formula의 형태로 넘기는 것이 없었던 것 같아요. 
+    model = sm.OLS.from_formula(
+        formula="BPXSY1 ~ RIDAGEYR + RIAGENDRx", 
+        data=nhanes_df
+    )
+    res = model.fit()
+    print("== Summary")
+    print(res.summary())
+    print("== OLS complete")
+    
+GLM = False
+if GLM==True: 
+    nhanes_df["smq"] = nhanes_df.SMQ020.replace({2: 0, 7: np.nan, 9: np.nan})
+    model = sm.GLM.from_formula(
+        formula="smq ~ RIAGENDRx", 
+        family=sm.families.Binomial(), 
+        data=nhanes_df
+    )
+    res = model.fit()
+    print("== Summary")
+    print(res.summary())
+    print("== GLM complete")
+
+GEE = False
+if GEE == True:
+    print("== GEE Summary")
+    nhanes_df["group"] = 10*nhanes_df.SDMVSTRA + nhanes_df.SDMVPSU
+    #print(nhanes_df["group"].head(20))
+    model = sm.GEE.from_formula(
+        formula="BPXSY1 ~ 1", 
+        groups="group", 
+        cov_struct=sm.cov_struct.Exchangeable(), 
+        data=nhanes_df
+    )
+    res = model.fit()
+    print(res.cov_struct.summary())
+    print(res.summary())
+
+MM = True
+if MM==True:
+    print("== GEE Summary")
+    nhanes_df["group"] = 10*nhanes_df.SDMVSTRA + nhanes_df.SDMVPSU
+    nhanes_df["smq"] = nhanes_df.SMQ020.replace({2: 0, 7: np.nan, 9: np.nan})
+    for v in ["BPXSY1", "RIDAGEYR", "BMXBMI", "smq", "SDMVSTRA"]:
+        print(f"=== {v}")
+        model = sm.GEE.from_formula(
+            formula=v + " ~ 1", 
+            groups="group",
+            cov_struct=sm.cov_struct.Exchangeable(), 
+            data=nhanes_df
+        )
+        result = model.fit()
+        print(v, result.cov_struct.summary())
+```
