@@ -10,9 +10,6 @@ tags: python-basic python python-libs database neo4j graphdb networkx
 python을 GraphDB인 neo4j와 연결하여 처리하는 방법을 정리합니다.
 - 참고로 저는 neo4j의 유료모델을 사용하지 않고, 며칠동안만 쓸 수 있는 sandbox를 사용하고 있습니다. 
 
-
-
-
 ## Background
 
 ### install neo4j 
