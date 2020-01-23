@@ -2,7 +2,6 @@
 title: vs-code에서 탐색기 폰트를 변경합니다. 
 category: others
 tags: vs-code font
-
 ---
 
 ## intro
