@@ -29,11 +29,41 @@ tags: blog jekyll github
 ## how to solve it? 
 
 - 이건 어쩌면, 블로그를 오래하게 되면 자연스럽게 발생하는, 문제점이라고 생각됩니다. 결과적으로, 파일 이름만 다르면 되는 것이라면, 그냥 앞과 뒤에 모두 날짜를 적어주면, 서로 다른 `permalink`를 만들어줄 것이므로 문제가 해결될 것 같기는 합니다만, 별로 똑똑한 방법은 아니죠.
+- 저는 일단, `_posts` 폴더 내에 있는 모든 파일의 이름들을 recursive하게 읽어서, 리스트로 가져온 다음, 중복되는 링크가 있는지를 체크해봅니다. 
+- 아래 python 코드는 해당 폴더 내의 모든 파일의 이름을 가져오는 함수죠. 
+
+```python
+import os
+
+def return_all_file_names(input_p:str):
+    """
+    DEF: 경로(input_p) 내에 있는 모든 file을 list로 만들어 리턴함.
+    p: path string
+    해당 경로 내에 있는 모든 file을 리스트로 합쳐서 리턴함.
+    """
+    print(f"== recursion start:::: {input_p} ")
+    return_file_name_lst = [] # 이 리스트에 모두 담음.
+    for path_or_file in os.listdir(os.chdir(input_p)):
+        # path가 file일 경우
+        if os.path.isfile(f"{input_p}/{path_or_file}"):# file
+            return_file_name_lst.append(path_or_file)
+        # path가 directory일 경우
+        else:
+            if os.path.isdir(f"{input_p}/{path_or_file}"):
+                new_path = f"{input_p}/{path_or_file}"
+                return_file_name_lst += return_all_file_names(new_path)
+    print(f"== recursion end:::: {input_p} ")
+    return return_file_name_lst
+#===============================================================
+
+p_str = "/Users/frhyme/frhyme.github.io/_posts/"
+all_original_file_name_lst = return_all_file_names(p_str)
+```
 
 
 ## wrap-up
 
-- 어쨌거나, 여전히 무었대문에 앞서 말한, 아래의 오류가 발생했는지는 모르겠네요.
+- 어쨌거나, 여전히 무엇대문에 앞서 말한, 아래의 오류가 발생했는지는 모르겠네요. 그냥 잊어버리기로 합니다 호호호
 
 > Some checks haven’t completed yet 
 > 1 in progress and 1 pending checks
