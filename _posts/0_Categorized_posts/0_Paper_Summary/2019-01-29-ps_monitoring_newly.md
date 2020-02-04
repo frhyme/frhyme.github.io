@@ -1,5 +1,5 @@
 ---
-title: ps, Monitoring Newly Adopted Technologies Using Keyword Based Analysis of Cited Patents
+title: paper-summary, Monitoring Newly Adopted Technologies Using Keyword Based Analysis of Cited Patents
 category: paper-summary
 tags: paper-summary patent 
 ---
