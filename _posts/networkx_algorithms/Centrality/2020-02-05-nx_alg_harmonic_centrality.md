@@ -6,7 +6,7 @@ tags: python python-libs networkx centrality harmonic-centrality
 
 ## centrality - harmonic centrality.
 
-- [harmonic centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.harmonic_centrality.html#networkx.algorithms.centrality.harmonic_centrality)는 해당 노드 u부터 다른 모든 노드들인 v들로 향하는 "최단 거리의 길이(shortest path length)의 역수"를 모두 더한 값을 말합니다. 
+- [harmonic centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.harmonic_centrality.html#networkx.algorithms.centrality.harmonic_centrality)는 다른 모든 노드들인 v들로부터, 해당 노드인 u까지 향하는 "최단 거리의 길이(shortest path length)의 역수"를 모두 더한 값을 말합니다. 즉, **계산하려는 노드로 들어오는 거리를 고려하죠**
 - 이렇게 쓰고 보면, 마치 closeness centrality와 유사해보이지만, 다음과 같이 달라요. 
     - closeness centrality: (최단거리들의 길이 합)의 역수 
     - hormonic centrality: (최단거리의 역수)의 합
@@ -51,9 +51,9 @@ def custom_harmonic_centrality(G):
     for n1 in G:
         for n2 in G:
             if n1!=n2:
-                n1_n2_l = nx.shortest_path_length(G, n1, n2)
+                n2_n1_l = nx.shortest_path_length(G, n2, n1)
                 #print(n1, n2, n1_n2_l)
-                r_dict[n1]+=1/n1_n2_l
+                r_dict[n1]+=1/n2_n1_l
     return r_dict
 ########################
 
