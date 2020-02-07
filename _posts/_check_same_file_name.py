@@ -56,5 +56,6 @@ for permalink in just_permalink_lst:
     if just_permalink_lst.count(permalink)>1:
         print(permalink)
 print("== complete")
+print(f"== {len(just_permalink_lst)} written")
 # check its duplicate 
 
