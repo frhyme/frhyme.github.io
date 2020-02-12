@@ -4,6 +4,11 @@ category: python-libs
 tags: python python-libs networkx centrality HITS
 ---
 
+## line summary 
+
+- HITS는 webpage들은 hub(포탈 사이트), authoriy(파워블로그)로 구분할 수 있다는 가정하에서, 각 페이지별로, 이 값을 계산하면서 상호 재귀 방식(mutual recursion)으로 값을 계산한다. 
+- 모든 페이지에 대해서 rank를 측정하는 pagerank와 달리, "authority가 보장"되어야 하므로, "선별된 서브그래프(focused sub graph)"를 대상으로 수행한다. 
+
 
 ## What is HITS(Hyperlink-Induced Topic Search)
 
