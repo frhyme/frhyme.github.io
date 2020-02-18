@@ -8,9 +8,9 @@ tags: python python-libs networkx community community-detection
 
 - "label propagation"은 내 이웃들이 많이 속한 label이, 내 label이다, 라는 접근으로, 직관적인 개념에 기반하여 community을 만들어 나감. 
 
-## Label Propagation
+## async Label Propagation
 
-- [Label propagation](https://en.wikipedia.org/wiki/Label_propagation_algorithm)은 "클래스가 식별되지 않은(unlabeled) 데이터 포인트에 클래스를 지정해주는 semi-supervised ML 알고리즘"을 말합니다. 특히, 아주 적은 수의 data들(혹은 Node)들만이 label을 가지고 있다고 한다면, 이 알고리즘을 통해, class를 증폭시켜줄 수 있죠. 아래 그림을 통해 보면 더 명확할 수 있는데, "내 커뮤니티는 내 이웃이 가장 많이 속한 컴뮤니티와 같다"는 개념으로, 커뮤니티를 찾아나가는 방식이라고 보시면 됩니다.
+- [Label propagation](https://en.wikipedia.org/wiki/Label_propagation_algorithm)은 "클래스가 식별되지 않은(unlabeled) 데이터 포인트에 클래스를 지정해주는 semi-supervised ML 알고리즘"을 말합니다. 특히, 아주 적은 수의 data들(혹은 Node)들만이 label을 가지고 있다고 한다면, 이 알고리즘을 통해, class를 증폭시켜줄 수 있죠. 아래 그림을 통해 보면 더 명확할 수 있는데, "내 커뮤니티는 내 이웃이 가장 많이 속한 커뮤니티와 같다"는 개념으로, 커뮤니티를 찾아나가는 방식이라고 보시면 됩니다.
 
 ![Label_propagation_iteration_img](https://pbs.twimg.com/media/D3bnOvgXsAAd0Fs.png)
 
@@ -31,7 +31,7 @@ import networkx
 nx.algorithms.community.asyn_lpa_communities(G, seed=0)
 ```
 
-## Implement LPA by myself. 
+## Implement async LPA by myself. 
 
 - 따라서, graph `G`로부터, label propagation을 통해서 비동기적으로 community를 뽑아내는, 함수를 다음과 같이 구현하였습니다. 
 
