@@ -1,3 +1,0 @@
-
-
-equivalent random network

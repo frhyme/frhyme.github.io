@@ -4,7 +4,7 @@ category: python-libs
 tags: python python-libs numpy random
 ---
 
-## line-summary 
+## 2-line summary 
 
 - 일반적으로 numpy를 이용해서 random number(난수)를 생성하는 방법은, `np.random.random()`임. 
 - 하지만, `np.random.RandomState(seed)`를 이용해서 관련 method가 정의된 객체를 선언 및 정의하여 사용할 수도 있음. 
