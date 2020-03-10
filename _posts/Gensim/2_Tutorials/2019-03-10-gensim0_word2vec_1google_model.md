@@ -1,5 +1,5 @@
 ---
-title: gensim - tutorial - word2vec - basic
+title: gensim - tutorial - word2vec - GoogleNews
 category: python-libs
 tags: python python-libs gensim similairty word2vec nlp 
 ---
