@@ -4,7 +4,6 @@ category: python-basic
 tags: python python-basic utf-8 string file 
 ---
 
-
 ## 1-line summary 
 
 - `open(file_name, "r", encoding='utf-8-sig')`을 쓰면 해결 됩니다.
