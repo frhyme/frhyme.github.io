@@ -4,6 +4,11 @@ category: python-libs
 tags: python python-libs gensim similairty word2vec nlp doc2vec fastText
 ---
 
+## 
+
+
+
+
 ## 2-line summary 
 
 - word2vec의 경우, 존재하지 않는 word(vocab에 등록되지 않은 word)에 대해서는 vector로 표현해주지 못합니다.
