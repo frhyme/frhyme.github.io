@@ -6,6 +6,8 @@ tags: python python-libs gensim similairty word2vec nlp doc2vec fastText
 
 ## 
 
+나의 목적은 결국 "composite word"를 이해할 수 있도록 학습을 시키는 것을 말함. 
+여기서는, 그렇다면 fastText를 학습시킬때, 
 
 
 

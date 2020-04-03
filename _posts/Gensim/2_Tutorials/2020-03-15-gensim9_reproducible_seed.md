@@ -1,5 +1,5 @@
 ---
-title: gensim - reproducible traing - fix seed
+title: gensim - reproducible training - fix seed
 category: python-libs
 tags: python python-libs gensim word2vec random seed hash
 ---

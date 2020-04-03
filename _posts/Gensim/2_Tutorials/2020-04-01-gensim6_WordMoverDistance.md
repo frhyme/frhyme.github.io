@@ -1,7 +1,7 @@
 ---
 title: gensim - Tutorial - Word Mover Distance(WMD)
 category: python-libs
-tags: python python-libs gensim pyemd 
+tags: python python-libs gensim pyemd gensim word2vec
 ---
 
 ## Intro. 
