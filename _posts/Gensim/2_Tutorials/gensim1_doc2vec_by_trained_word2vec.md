@@ -9,11 +9,27 @@ tags: python python-libs gensim similairty word2vec nlp doc2vec
 ## intro 
 
 - 지금까지 저는 word2vec도 공부했고, doc2vec도 공부했습니다. 그리고, doc2vec은 word2vec과 연결되어 있죠. 
+- 우선 간단하게 지금까지 공부한 것들을 복습해보겠습니다.
 
-### word2vec 
+### AGAIN: word2vec 
 
-- word2vec은 각 문장내에 존재하는 word들을 vector로 변환해주는 것을 말합니다. 
-- 복합어, 가령 "Research and development"는 어떻게 처리해주는 것이 좋은가? 
-    - by word2vec: "research and develop"를 하나의 word로 생각하고, 각 단어가 sentence 내에 포함되어 있을 경우 해당 단어를 잘 tokenize하여 준다. 하지만, 이럴 경우, 이 단어는 research, and, development라는 3가지 단어의 벡터와 전혀 영향을 주고 받지 않게 된다는 한계가 있다.
-    - by doc2vec: doc2vec은 word2vec을 학습하며 동시에 해당 단어들이 하나의 document 라는 것도 함께 넘겨주게 된다. 즉, 우리는 "reserach and develop"라는 단어를 하나의 document로 인식하고 처리한다는 것을 말한다. 따라서, abstract 내 문장을 구분하여, 처리하고, 이를 통해 
-    - by fastext: fasttext는 word2vec에 비해서 "존재하지 않는 키워드들"에 대해서도 처리해준다는 강점이 있음. 이는 결국 subword를 가지고 처리해준다는 말. 다만, 이 아이가 복합어들에 대해서도 잘 처리를 해주는 건가? 
+- word2vec은 각 문장내에 존재하는 word들을 vector로 변환해주는 것을 말합니다. 하나의 document혹은 sentence 내에 존재하는 각각의 word를 모두 vector로 표현하고, skip-gram, CBOW 등으로 처리하죠. 
+- 다만, 이 아이는 우선, Out-of-Vocabulary에 대해서 처리해주지 못합니다. 따라서, 여러 단어들로 구성된 복합어들이 이미 vocabulary에 존재하지 않는다면, 해당 단어를 vector로 표현할 수 없죠. 
+- 뿐만 아니라, 형태적으로 유사한 것들에 대해서 정확하게 파악해주지 못한다는 한계를 가지고 있습니다. 가령 'universities'와 'university'라는 단어가 있다고 할때, 우리는 두 단어가 "형태적으로 유사하다는 것"을 딱 보면 알기 때문에, "매우 높은 확률로 비슷할 것이다"라고 추측할 수 있지만, 이 아이는 그걸 하지 못해요. 초기 가정에서 "형태가 다른 word는 모두 다르다"라는 가정을 가지고 진행하기 때문이죠.
+
+### AGAIN: fasttext 
+
+- fasttext는 기존 word2vec이 가진 한계인 "형태적으로 유사한 것들"을 이해할 수 있습니다. 즉, out-of-vocabulary에 대해서도, 기존의 비슷한 단어들이 있었다면 vector를 유사하게 유추해내죠. 이는 character의 n-gram에 대해서 학습을 진행하기 때문입니다. 
+- 따라서, 비교적 적은 학습에 대해서, 특히 단수/복수 형태와 같은 아이들에 대해서 꽤 잘학습을 해주죠.
+- 하지만, 이 아이도 "복합어"를 처리할 때는 한계를 가집니다. 이유는 모르겠으나, 복합어를 넘겼을 때는, 좀 문제가 있는 결과들이 꽤 나오더군요. 
+
+
+### AGAIN: doc2vec. 
+
+- Doc2vec는 각 Document를 vector로 표현하는 모델입니다. word2vec과 유사하나, 여기에 output에 대해서 각 document에 대한 ID를 넣음으로써, 같은 ID를 가진 word들은 비슷한 차원에 위치하게 되죠. 
+- 따라서, document를 넣었을때, 해당 document를 가장 잘 표현하는 vector를 찾아줍니다. 그리고 그 과정에서 word2vec의 경우도 자연스럽게 학습이 되죠.
+
+
+## Doc2Vec with pre-trained word2vec.
+
+- 제가 오늘 하려는 것은 "이미 학습된 word2vec"모델을 가져와서 doc2vec의 word2vec 모델을 초기화시키고, 그 다음 doc2vec 모델을 학습시켜줌으로써, 빠르게 document를 학습해주려고 합니다.

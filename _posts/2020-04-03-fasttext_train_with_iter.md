@@ -62,9 +62,9 @@ print(list(test_generator))
 
 ```python
 def RETURN_docs_generator():
-    # 새로운 generator를 생성해서 넘겨준다.
+    # 새로운 generator를 생성해서 RETURN해준다.
     docs = ["i am a boy", "you are a girl"]
-    docs = map(lambda s: s.lower().split(" "), docs)
+    docs = ( s.lower().split(" ") for s in docs )
     return docs
 
 FTmodel = FastText(min_count=1, size=10)
@@ -74,5 +74,26 @@ for epoch in range(0, 10):
     # epochs를 1로 설정해서 새롭게 매번 넘겨준다고 생각하고 접근해야함.
     FTmodel.train(sentences=RETURN_docs_generator(), total_examples=FTmodel.corpus_count, epochs=1)
     print(f"-- EPOCH: {epoch}")
+print("== complete")
+```
+
+- 혹은 generator를 반복하는 `itertools.repeat`과 `itertools.chain.from_iterable`를 사용해서 한번에 더 많은 자료를 넘겨서 학습시킬 수도 있습니다.
+- 즉, corpus 자체를 
+
+```python
+def RETURN_docs_generator():
+    # 새로운 generator를 생성해서 RETURN해준다.
+    docs = ["i am a boy", "you are a girl"]
+    docs = ( s.lower().split(" ") for s in docs )
+    return docs
+
+FTmodel = FastText(min_count=1, size=10)
+FTmodel.build_vocab(RETURN_docs_generator())
+print("buile vocab done")
+FTmodel.train(
+    sentences=itertools.chain.from_iterable(itertools.repeat(RETURN_docs_generator(), 3)), 
+    total_examples=FTmodel.corpus_count, 
+    epochs=1)
+print(f"-- EPOCH: {epoch}")
 print("== complete")
 ```
