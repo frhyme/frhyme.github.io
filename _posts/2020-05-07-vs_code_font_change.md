@@ -1,5 +1,5 @@
 ---
-title: VS-code의 font 를 변경합니다.
+title: VS-code의 editor 내 font 를 변경합니다.
 category: vs-code
 tags: vs-code font
 ---
