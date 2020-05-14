@@ -15,5 +15,5 @@ tags: vs-code font
 
 ```json
 "markdown.preview.fontFamily": "Menlo, Monaco, 'Courier New', monospace, NanumGothicCoding",
-"markdown.preview.fontSize": 12, 
+"markdown.preview.fontSize": 12
 ```

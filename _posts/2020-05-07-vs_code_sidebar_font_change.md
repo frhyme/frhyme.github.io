@@ -1,5 +1,5 @@
 ---
-title: VS-code의 sidebar의 font 를 변경합니다.
+title: VS-code의 sidebar의 font 를 변경합니다(실패기)
 category: vs-code
 tags: vs-code font
 ---
