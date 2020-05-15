@@ -1,10 +1,12 @@
 ---
 title: Macbook_air 2020년형을 샀습니다.
 category: macbook
-tags: macbook macbook_air 
+tags: macbook macbook_air vscode macOS python
 ---
 
 ## Intro
+
+- 맥북을 새로 샀습니다. 설정들을 하나씩 해주는데, 아무래도 귀찮으니까 하는 김에 다 정리해두려고 합니다.
 
 ### First macbook byebye
 
@@ -36,7 +38,23 @@ tags: macbook macbook_air
 - 그리고 '화면보호기'에는 [제 블로그 주소인 frhyme.github.io](http://frhyme.github.io)를 써둡니다. 네, 조금이라도 방문자를 늘리기 위해서죠 호호.
 - 그리고, 화면보호기가 시작되고 5초 이후면 자동 잠금이 되도록 설정해줍니다. 이는, `'보안 및 개인 정보보호' - '일반' - '잠자기 및 화면 보호기 시작'`에 들어가서, `'즉시'` 혹은 `'5초 후'`를 설정해주면 됩니다. 저는 '5초'로 설정해줬습니다.
 
-## 필요한 프로그램들을 설치합니다
+### 항상 backtick 입력되도록 변환
+
+- 맥북에서 영어인 상태에서는 backtick이, 한글인 상태에서는 원화 표시(won sign)가 작성됩니다. 같은 키임에도 불구하구요. 이 또한, 코드를 작성할 때 매우 빡치는 일 중 하나죠.
+- 이를 변경하는 작업은 [이 링크](https://ani2life.com/wp/?p=1753)에 자세하게 담겨 있는데요. 정리하면 다음과 같습니다.
+  1) `~/Library` 폴더로 이동해서 `KeyBindings` 폴더를 추가한다.
+  2) `~/Library/KeyBindings` 폴더에 `DefaultkeyBinding.dict` 파일을 만든다.
+  3) `DefaultkeyBinding.dict` 파일에 아래의 코드를 추가한다.
+  
+  ```dict
+  {
+      "₩" = ("insertText:", "`");
+  }
+  ```
+  
+- 이렇게 변경하고 맥북을 재시동하고 나면, 앞으로 어떤 어플리케이션에서도 원화표시 대신에 backtick이 입력됩니다.
+
+## 필요한 Application들을 설치합니다
 
 - 이제 평소에 사용하는 기본적인 프로그램들을 설치합니다.
 - 우선, 카카오톡을 설치합니다. 솔직히 카카오톡 별로 안 좋아하지만, 그래도 한국 사람에게는 반드시 필요하긴 하니까요.
@@ -44,19 +62,22 @@ tags: macbook macbook_air
   - 그리고 `git clone`을 사용해서 제가 사용하는 주요 프로젝트들을 가져옵니다. 다만, 이 과정에서 비밀번호를 여러번 틀려서 새롭게 설정했습니다 후.
 - 마이크로소프트 오피스를 설치합니다. 저는 아직 학교에 소속되어 있기 때문에, 학교 계정의 오피스365를 사용해서 설치했습니다.
 - 크롬을 설치합니다. 사파리도 좋지만, 저는 아무래도 크롬이 더 좋아서 크롬을 주로 씁니다.
-- dropbox를 설치합니다. 
+- dropbox를 설치합니다.
 - 파이어폭스 설치합니다. 사실 파이어폭스 거의 안 쓰는데 한번 설치해봤습니다. 그냥 궁금해서요. 다른 웹브라우저들도 이참에 한번 사용해봤는데, 사실 별로 안 쓸 것 같아요.
 - 한글2014을 설치합니다.
 
 ### Karabiner: 한영 변환 인식률 높이기
 
-- 맥북은 기본적으로 `Caps lock`을 사용해서 한영변화를 합니다. `ctrl + space`도 있기는 합니다만 안 쓰죠.
-- 아무튼, 자세한 내용은 [이 블로그](https://blog.roto.codes/fix_capslock_delay/)에 자세하게 나와 있기는 합니다만, 
-- 키보드 변환, 한영변환시 발생하는 문제점을 해결합니다. 좀 귀찮기는 하지만, 이걸 해주면 다음부터는 한영전환이 훨씬 깔끔하게 진행됩니다.
-- 프로세스를 설명하자면 대략. ~~~~ 이렇습니다.
-  - https://blog.roto.codes/fix_capslock_delay/
+- 맥북은 기본적으로 `Caps lock`을 사용해서 한영변화를 합니다. `ctrl + space`도 있기는 합니다만 안 쓰죠. 아무튼, `caps lock`을 사용해서 한영변화를 하면 편하기는 하나, 약간의 문제가 있습니다. 한영변환의 정확도가 약간 떨어져요. 대강 약 80%의 확률로 안됩니다. 어찌 보면 별거 아닌데, 가령 대부분의 한국 프로그래머들은 comment는 한글로, code는 영어로 쓰게 되므로, 한영변환을 한 문장 내에서도 몇 번 해야 하죠. 이럴 때, 한영 변환이 정확하게 딱딱 되지 않으면 매우 번거롭게 됩니다.
+- 따라서, 이를 변환해줍니다. 자세한 내용은 [이 블로그](https://blog.roto.codes/fix_capslock_delay/)에서 참고했습니다.
+- 프로세스를 설명하자면 대략 다음과 같습니다.
+  1) [Karabiner-elements](https://karabiner-elements.pqrs.org/)를 다운받습니다.
+  2) 그리고, 세팅에서 `Caps lock`키를 `F18`로 변환해줍니다. `F18`인 이유는 맥북에 없는 임의의 key이기 때문이죠.
+  3) 그리고, `시스템 환경 설정 - 키보드 - 단축키`로 이동하여, `입력 소스`부분 `입력 메뉴에서 다음 소스 선택`의 키에 대해서 `Caps Lock`을 눌러줍니다.
+- 즉, `Caps lock`키를 `F18`이라는 임의의 키로 변경하고, 이 아이를 사용해서 입력 소스를 변경해주는 겁니다. 즉, `Caps Lock`은 이제 키보드에 없는 셈인 거죠. 그런데, 사실 냉정히 말하면 `Caps lock`은 필요없으니까요. 필요하면 `shift`를 눌러서 해결하면 되죠.
+- 아무튼, 이제 이전에 비해서 훨씬 한영변환이 잘 진행됩니다.
 
-## vs-code and its plug-in
+## vs-code 및 plug-in들 설치하기
 
 - [vscode](https://code.visualstudio.com/docs/?dv=osx)를 다운받습니다. 그리고, 이 프로그램을 맥북 내에서 '응용프로그램(Application)'으로 옮겨주는 작업이 필요합니다. 다운받은 파일을 그대로 사용해도 되는데, 그렇게 하는 것보다는 해당 파일을 '응용프로그램'에 포함시켜주는 것이 더 좋겠죠. 어렵지 않고요. **그냥 탐색기 내에서 해당 파일을 '응용 프로그램'으로 그대로 드래그해서 옮겨주면 됩니다.**
 - 이렇게 하고 나면 spotlight(`command + shift`)에 "`code`"를 쳐서 바로 vs code를 실행할 수도 있죠.
@@ -91,26 +112,26 @@ Menlo, Monaco, 'Courier New', monospace, NanumGothicCoding
 "markdown.preview.fontSize": 12
 ```
 
+### plug-in들을 설치합니다
 
+- 대략 다음의 플러그인들을 설치했습니다. 사실, 이전의 맥북은 진짜 느려터져서, 플러그인도 굉장히 조금만 설치했었는데, 이제는 설치하고 싶은 걸 막 설치할 수 있습니다. 휴, 진짜 그동안 그 맥북을 도대체 어떻게 쓴 걸까요?
+  - Markdown All in One: 뭔지 기억 안나는데, 마크다운 쓸때 필요했던 것 같아서 설치합니다.
+  - markdownlint: 마크다운을 정확하게 쓰기 위한 시어머니죠. 설치합니다.
+  - Material Icon Theme: 파일 디렉토리(왼쪽 사이드바)에서 파일 아이콘들을 예쁘게 만들기 위한 아이콘들을 다운 받습니다.
+  - Python: 기본 python extension을 설치합니다. 이 아이를 설치하게 되면 vs-code에서 실행하는 python 코드들은 이 익스텐션에 의해서 실행됩니다.
+  - Rainbow CSV: csv의 각 열을 색깔별로 다르게 볼 수 있게 해줘서 편합니다.
+- 그외에도 뭐 필요한 게 있을 수 있지만, 앞으로 차근차근 하도록 하겠습니다.
 
-## python and others
+## python 설치
 
-- python을 설치해야 합니다. 다만, 우선 저는 [Anaconde(아나콘다)](https://www.anaconda.com/products/individual) 설치하기로 합니다. 
-- 다만 이렇게 설치한 다음 `python`을 치면 안타깝게도 python2가 실행됩니다. 그리고 메세지는 다음과 같죠. 
+- 물론 vs-code에서 익스텐션으로 python을 설치하기는 했지만, 저는 외부에서 따로 Anaconda를 설치해주기로 합니다. 좀더 안정적이라고 할까요. python을 설치해야 합니다. 다만, 우선 저는 [Anaconde(아나콘다)](https://www.anaconda.com/products/individual)를 설치하기로 합니다.
+- 그 외로 설치해야 하는 아주 많은 것들이 있지만, 이 아이들은 나중에 설치하기로 합니다.
 
-```
-WARNING: Python 2.7 is not recommended. 
-This version is included in macOS for compatibility with legacy software. 
-Future versions of macOS will not include Python 2.7. 
-Instead, it is recommended that you transition to using 'python3' from within Terminal.
+## Terminal 설정
 
-Python 2.7.16 (default, Jan 10 2020, 23:38:00) 
-[GCC 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.32.4) (-macos10.15-objc-s on darwin
-Type "help", "copyright", "credits" or "license" for more information.
-```
+- 뭐 몇 가지 설정해주려고 했는데 아무래도 귀찮아져서 그만둡니다. 그냥 존재하는 프로파일중에서 적당한거 써주면 될것 같아요.
 
-- 다만, 흥미로운 것은 vs-code 내에서 python을 실행하면 알아서 Python3가 실행되는 반면, iTerminal에서 실행하면 python2가 실행된다는 것이죠. 우선, 이게 왜 그런지도 궁금하네요.
+## wrap-up
 
-
-
-## iterminal 설정
+- 일단은 대충 정리를 한 것 같습니다. 아직 완벽하게 모든 게 세팅된 것 같지는 않지만, 대략은 정리한것 같아요.
+- 오늘은 여기에서 마무리하도록 하겠습니다.
