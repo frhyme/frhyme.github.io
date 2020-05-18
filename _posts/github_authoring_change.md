@@ -25,11 +25,29 @@ After doing this, you may fix the identity used for this commit with:
 ```
 
 - 번역하자면, "니 이름과 email은 너의 username과 hostname에 의해서 자동으로 설정되었다. 걔네가 정확한지, 확인해라. 니 identity를 수정하고 싶으면 아래 부분을 진행해라"라는 말이죠. 흠. 귀찮아지는군요.
-- 
 
-- 일단 제 이메일을 gloabl로 세팅해줍니다.
+
+
+
+- 일단 제 이메일을 gloabl로 세팅해줍니다. 이렇게 하고 나면, 이후의 제 컴퓨터에서 발생하는 모든 commit은 제 이메일로 진행되게 되죠.
 
 ```bash
-$ git config --global user.email "email@example.com"
+git config --global user.email "email@example.com"
 ```
 
+- 다만, 이렇게 한다고 해서 이전 commit의 author들이 바뀌는 것은 아닙니다. 심지어 저는 commit을 했을 뿐만 아니라, push까지 했기 때문에, 좀 난감해진 상황이죠. 다행히 관련 내용을 올려두신 분이 있습니다.
+- [git commit author 변경 (커밋 작성자 이름 변경하기)](https://madplay.github.io/post/change-git-author-name)을 참고하여 아래의 내용들을 진행하였습니다.
+
+- 우선 `git log`를 통해 이전 commit의 로그들을 확인합니다. 확인해보면 몇몇 commit의 경우 아래와 같이, Author가 다르게 적용되어 있는 것을 알 수 있죠.
+
+```
+Author: seunghoon Lee <seunghoonlee@seunghoonui-MacBookAir.local>
+```
+
+
+```
+git log
+```
+
+
+나머지는 이후에 진행하자!!
