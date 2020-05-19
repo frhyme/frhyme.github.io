@@ -1,13 +1,13 @@
 ---
-title: Github - author 변경 
+title: Github - 이전 commit에서 잘못 작성된 author 변경하기.
 category: git
 tags: git github 
 ---
 
-## Intro
+## Intro - 왜 commit log에 author가 잘못 작성되었는가
 
-- 새 맥북을 샀습니다. 맥북을 새로 사서 하나하나 세팅해주는거 매우 성가시죠. 거의 다 끝냈다고 생각했는데, 오늘 보니, github에 문제가 하나 있더군요. 그냥 이전에 쓰던 repository를 `git clone`으로 가져오고, ID/PW를 세팅하고 commit을 날렸는데, commit 기록에 author의 이름이 제 ID가 아닌 제 이름이 남겨져 있습니다.
-- 꼼꼼히 보니, commit을 남기면 다음과 같은 기록이 뜨더군요.
+- 얼마전 새 맥북을 샀습니다. 계속 말하는 것 같기는 하지만, 이전 맥북은 2015년(early)년형 맥북에어였고, 지금 쓰는 맥북은 2020년 형 맥북에어입니다. 일단 레티나 디스플레이라는 점에서 아주 큰 감동이 밀려오죠.
+- 아무튼, 중요한 건 맥북을 사고 대략 세팅을 끝내고 나서 주요 github repository를 `git clone`으로 간단하게 가져온 다음에 `git commit`을 몇 개 날렸습니다. 그런데, 자세히 살펴보니 `git commit`을 남길 때마다, 다음과 같은 메세지가 터미널에서 뜨는 것이죠.
 
 ```code
 Your name and email address were configured automatically based
@@ -24,12 +24,11 @@ After doing this, you may fix the identity used for this commit with:
 
 ```
 
-- 번역하자면, "니 이름과 email은 너의 username과 hostname에 의해서 자동으로 설정되었다. 걔네가 정확한지, 확인해라. 니 identity를 수정하고 싶으면 아래 부분을 진행해라"라는 말이죠. 흠. 귀찮아지는군요.
+- 번역하자면, **"니 이름과 email은 너의 username과 hostname에 의해서 자동으로 설정되었다. 걔네가 정확한지, 확인해라. 니 identity를 수정하고 싶으면 수정해라"**라는 말이죠. 흠. 일단 몹시 귀찮아지는군요.
 
+### Set global e-mail
 
-
-
-- 일단 제 이메일을 gloabl로 세팅해줍니다. 이렇게 하고 나면, 이후의 제 컴퓨터에서 발생하는 모든 commit은 제 이메일로 진행되게 되죠.
+- 일단 현재의 맥북에서 제 이메일을 gloabl로 세팅해줍니다. 이렇게 하고 나면, 이후의 제 컴퓨터에서 발생하는 모든 commit은 제 이메일로 진행되게 되죠.
 
 ```bash
 git config --global user.email "email@example.com"
@@ -51,3 +50,12 @@ git log
 
 
 나머지는 이후에 진행하자!!
+
+다 진행했음. 아래의 방법대로 하면 다 되는데, 이제 왜 되는건지에 대해서만 정리하면 됨. 
+
+https://madplay.github.io/post/change-git-author-name
+
+
+## wrap-up
+
+- 다만, 지금 commit이 좀 꼬여있기는 함. 문제가 좀 있는데 그 원인에 대해서도 분석해서 정리하는 것이 필요함.
