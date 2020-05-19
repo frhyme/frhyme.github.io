@@ -24,11 +24,18 @@ After doing this, you may fix the identity used for this commit with:
 
 ```
 
-- 번역하자면, **"니 이름과 email은 너의 username과 hostname에 의해서 자동으로 설정되었다. 걔네가 정확한지, 확인해라. 니 identity를 수정하고 싶으면 수정해라"**라는 말이죠. 흠. 일단 몹시 귀찮아지는군요.
+- 번역하자면, **"니 이름과 email은 너의 username과 hostname에 의해서 자동으로 설정되었다. 걔네가 정확한지, 확인해라. 니 identity를 수정하고 싶으면 수정해라"**라는 말이죠.
+- 만약, 저 메세지가 떴다면 아직 회생의 여지가 있습니다. commit은 했으나 아직 원격 저장소에 보내진 상황은 아니고(즉, local에 있는 상황이고), 따라서 local내에서 수정한 다음 보내면 되죠. local에서 수정하는 방법은 다음과 같습니다.
 
-### Set global e-mail
+```bash
+git commit --maned --reset-author
+```
 
-- 일단 현재의 맥북에서 제 이메일을 gloabl로 세팅해줍니다. 이렇게 하고 나면, 이후의 제 컴퓨터에서 발생하는 모든 commit은 제 이메일로 진행되게 되죠.
+- 그러나 매우 안타깝게도 저는 이미 별 생각없이 원격 저장소로 push한 상황입니다. 네, 존나 귀찮아진다는 이야기죠.
+
+## Set global e-mail
+
+- 뭐 일단 망한 건 망한거고 현재 맥북에서 작성되는 모든 git commit의 작성자(author)를 제 이메일로 세팅해줍니다. 이렇게 하고 나면, 이후의 제 컴퓨터에서 발생하는 모든 commit은 제 이메일로 진행되게 되죠.
 
 ```bash
 git config --global user.email "email@example.com"
