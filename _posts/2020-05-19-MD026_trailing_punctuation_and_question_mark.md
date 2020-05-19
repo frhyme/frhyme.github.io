@@ -14,7 +14,7 @@ tags: markdown lint markdown-lint
 
 - 오늘은 다른 글을 쓰다가, 제목에 `?`을 넣으니까 아래의 오류가 뜨더군요. 해석하자면 "MD026: 구두문자 중 하나인 물음표(?)가 맨 끝에 오면 안되는 규칙을 위반했어."라는 이야기죠. punctuation은 "구두문자"를 의미하고요, header에는 원래 짧은 1개의 문장만을 넣는 것을 권유합니다. 따라서, 물음표와 같이 문장의 종결을 의미하는 문자가 오면 안된다는 이야기죠.
 
-```bash
+```plaintext
 MD026/no-trailing-punctuation:
 Trailing punctuation in heading [Punctuation: '?'] markdownlint(MD026)
 ```
