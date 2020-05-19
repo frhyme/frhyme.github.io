@@ -13,7 +13,7 @@ tags: vs-code font
 
 - 이미 [stackoverflow에 올라와 있는 질문](https://elementaryos.stackexchange.com/questions/10246/how-can-i-change-vscode-sidebar-font)에 의하면, 다음 두 가지를 알 수 있습니다.
 
-```quote
+```plaintext
 VS Code is an Electron app (built using web technologies), as opposed to a native app (using GTK). I don't believe you have any control over the fonts beyond whatever settings Microsoft have exposed in the config; and it doesn't look like there is an option to change the sidebar font.
 
 There is a GitHub issue here requesting added support for changing the sidebar font, so keep an eye on that.
@@ -21,7 +21,7 @@ There is a GitHub issue here requesting added support for changing the sidebar f
 
 - 첫번째 답변은, VScode는 Electron app(web-technology로 만들어진 것)이며, 이 아이는 OS에서 제어할 수 있는 것이 아닌, 프로그램 자체에 환경 변수(config)이 내재되어 있는 것이다. 따라서, 변경할 수 있는 설정이 있지 않다면 못 바꿀껄? 이라는 말이고.
 
-```quote
+```plaintext
 /usr/share/vscode/resources/app/out/vs/workbench/workbench.main.css
 
 Just edit font-family CSS to get different font in sidebar
@@ -45,7 +45,7 @@ Just edit font-family CSS to get different font in sidebar
 
 - 저렇게 하면 바꿀 수 있을 것이라고 생각했는데, 너무 안이한 생각이었죠. 또한 아래 경로가 달라진 것인지, 저 파일과 동일한 파일이 존재하지 않는 것 같습니다.
 
-```filepath
+```plaintext
 /usr/share/vscode/resources/app/out/vs/workbench/workbench.main.css
 ```
 
@@ -53,7 +53,6 @@ Just edit font-family CSS to get different font in sidebar
 - 이미 약 3년전에 이 링크에서 [github- Allow to change the font size and font of the workbench #519](https://github.com/Microsoft/vscode/issues/519) "workbench에서 font와 size를 바꾸는 것이 허용되어야 하는가?"라는 문제가 제기되었습니다만, 아직까지도 변경되지 않았죠.
 - 주로 제기되는 문제는 "위 file_name간의 위아래 간격이 좁다", "i, j, l을 구별하기 어려우니, 고정폭 글꼴로 변경해달라는 것"이고, 그 외로는 VS-code가 늦어지면서 "Atom으로 돌아가자"와 같은 싸움들이 대부분입니다.
 - 아무튼, 뭐 어떤 의미로는 맞는 이야기일 수도 있죠. 하지만, 저는 [Atom](https://atom.io/)을 별로 좋아하지 않습니다. 얘는 생각보다 좀 많이 느렸거든요(물론 VS-code도 꽤 느리긴 합니다만).
-- 
 - [해당 내용은](https://www.reddit.com/r/vscode/comments/dayl90/is_there_a_way_to_change_the_font_in_the_sidebar/)
 
 ## Only way to do it now

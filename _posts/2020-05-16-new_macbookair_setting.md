@@ -46,7 +46,7 @@ tags: macbook macbook_air vscode macOS python
   2) `~/Library/KeyBindings` 폴더에 `DefaultkeyBinding.dict` 파일을 만든다.
   3) `DefaultkeyBinding.dict` 파일에 아래의 코드를 추가한다.
   
-  ```dict
+  ```plaintext
   {
       "₩" = ("insertText:", "`");
   }
@@ -99,7 +99,7 @@ code .
 
 - 저는 다음처럼 이 끝에 한글 폰트인 `NanumGothicCoding`을 집어넣습니다. 앞의 폰트들은 모두 영어 폰트이기 때문에 순서대로 적용되고, 그 이후 한글에 대해서 한글폰트가 적용되는 것이죠.
 
-```string
+```plaintext
 Menlo, Monaco, 'Courier New', monospace, NanumGothicCoding
 ```
 

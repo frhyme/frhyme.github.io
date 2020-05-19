@@ -18,13 +18,13 @@ tags: vs-code font
 - vs-code를 실행하고, setting(설정)으로 들어갑니다. 단축키로는 `command`+`,`를 사용해도 되죠.
 - 들어가서, font를 검색하면 해당 부분으로 들어가게 되죠. 그리고 기본 값으로 다음과 같이 작성되어 있습니다. 그리고 이 아이들은 모두 영어 폰트죠.
 
-```nothing
+```plaintext
 Menlo, Monaco, 'Courier New', monospace
 ```
 
 - 저는 다음처럼 이 끝에 한글 폰트인 `NanumGothicCoding`을 집어넣습니다. 앞의 폰트들은 모두 영어 폰트이기 때문에 순서대로 적용되고, 그 이후 한글에 대해서 한글폰트가 적용되는 것이죠.
 
-```nothing
+```plaintext
 Menlo, Monaco, 'Courier New', monospace, NanumGothicCoding
 ```
 
