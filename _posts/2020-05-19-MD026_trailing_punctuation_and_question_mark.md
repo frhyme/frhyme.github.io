@@ -40,4 +40,4 @@ Trailing punctuation in heading [Punctuation: '?'] markdownlint(MD026)
 
 ## reference
 
-- [MD026 - trailing punctuation in header - allow ](https://github.com/DavidAnson/vscode-markdownlint/issues/54)
+- [MD026 - trailing punctuation in header - allow](https://github.com/DavidAnson/vscode-markdownlint/issues/54)
