@@ -37,21 +37,20 @@ for w in word_lsts:
     print(w)
 ```
 
-```
+```plaintext
 ['it', 'is', 'a', 'science']
 ['research', 'and', 'development']
 ['research', 'and', 'development']
 ['computer', 'science']
 ```
 
-### Build and Train Phrases model. 
+### Build and Train Phrases model
 
 - 그다음에는 `gensim.Phrases`에 만들어진 word_lst를 넘기면 끝납니다. parameter를 설명하자면,  
-    - `min_count`: 최소한 min_count보다 많이 등장한 token들에 대해서 만들어줌
-    - `threshold`: default는 10.0이며, 이 값이 작을수록 두 token을 붙여서 새로운 token으로 만드는 경향이 높아집니다. 즉, 값을 조절하면서, 잘 만들어지는지를 체크해야겠죠. 무조건 양수여야 하며, 웬만하면 복합어로 만들고 싶은 경우, `0.01`과 같은 값을 넘겨줍니다. 
-    - `delimiter`: token들이 합쳐져서 새로운 word가 만들어질 때, 연결점을 어떻게 표시할지를 의미합니다. 가령 `"a"`와 `"b"`를 합치고, 우리가 delimiter로 `b"_"`를 넘겨줬다면, `"a_b"`가 만들어지겠죠. 다만, string으로 넘기는 것이 아니라, byte string으로 넘겨줘야 합니다. 이로 인해 생기는 이슈는 뒤쪽에서 다루도록 할게요.
+  - `min_count`: 최소한 min_count보다 많이 등장한 token들에 대해서 만들어줌
+  - `threshold`: default는 10.0이며, 이 값이 작을수록 두 token을 붙여서 새로운 token으로 만드는 경향이 높아집니다. 즉, 값을 조절하면서, 잘 만들어지는지를 체크해야겠죠. 무조건 양수여야 하며, 웬만하면 복합어로 만들고 싶은 경우, `0.01`과 같은 값을 넘겨줍니다. 
+  - `delimiter`: token들이 합쳐져서 새로운 word가 만들어질 때, 연결점을 어떻게 표시할지를 의미합니다. 가령 `"a"`와 `"b"`를 합치고, 우리가 delimiter로 `b"_"`를 넘겨줬다면, `"a_b"`가 만들어지겠죠. 다만, string으로 넘기는 것이 아니라, byte string으로 넘겨줘야 합니다. 이로 인해 생기는 이슈는 뒤쪽에서 다루도록 할게요.
 - 그리고, 만들어진 모델 `Bigram_Model`에 대해서 `Bigram_Model[w_l]`를 통해 해당 word_lsts에서 타당한 bigram list를 생성할 수 있습니다.
-
 
 ```python
 import gensim
@@ -74,7 +73,7 @@ for w_l in word_lsts:
 
 - 다음에서 보시는 것처럼, 조금 빈번한 경우에는 두 단어가 합쳐져서 새로운 단어로 만들어지죠.
 
-```
+```plaintext
 raw    sentences: ['it', 'is', 'a', 'science']
 Bigram sentences: ['it', 'is', 'a', 'science']
 ----------------------------------------
@@ -99,7 +98,8 @@ print("== Bigram_Model.vocab.keys()")
 print(Bigram_Model.vocab.keys())
 print("--"*20)
 ```
-```
+
+```plaintext
 == Bigram_Model.vocab.keys()
 dict_keys([b'it', b'is', b'it_is', b'a', b'is_a', b'science', b'a_science', b'research', b'and', b'research_and', b'development', b'and_development', b'computer', b'computer_science'])
 ```
@@ -110,7 +110,8 @@ dict_keys([b'it', b'is', b'it_is', b'a', b'is_a', b'science', b'a_science', b're
 print("it" in Bigram_Model.vocab.keys())
 print(b"it" in Bigram_Model.vocab.keys())
 ```
-```
+
+```plaintext
 False
 True
 ```
@@ -122,7 +123,6 @@ for word, word_count in Bigram_Model.vocab.items():
     word = word.decode('utf-8')
     print(f"{word:10} : {word_count:2d}")
 ```
-
 
 ### Scoring
 
@@ -148,7 +148,8 @@ for k, v in vocab_counter.items():
     if "_" in k:
         print(k, scoring(k, vocab_counter))
 ```
-```
+
+```plaintext
 it_is 0.0
 is_a 0.0
 a_science 0.0
@@ -190,7 +191,7 @@ print("=="*20)
 - 결과를 보면, `Bigram_Model`의 vocab에는 "research"가 있지만, BiBigram에는 "research"가 없고, 대신 "research_and"가 들어가 있는 것을 알 수 있습니다. 반대로, `BiBigram_Model`에는 "research and development"가 들어가 있는 것을 알 수 있죠.
 - 즉, bigram을 선형적으로 이어 붙여서, 가까운 놈들을 반복적으로 만들어주다보면 좀 더 넓은 범위의 phrase들을 파악해낼 수 있습니다. 
 
-```
+```plaintext
 == Bigram Model vocab
 {b'computer', b'a_science', b'science', b'research', b'and_development', b'computer_science', b'development', b'is_a', b'it_is', b'and', b'is',b'it', b'research_and', b'a'}
 ----------------------------------------
@@ -209,7 +210,6 @@ print("=="*20)
 
 - 오늘 정리한 것은, 주어진 sentence에서 간단한 지표를 사용하여 빈번하게 등장하는 bigram을 만드는 방법입니다. `gensim.Phrase` 사용하며, threshold에 따라서 그 결과는 달라지게 되죠. 
 - 한번에 tri-gram을 만들 수는 없고, 우선 bigram을 만든 다음 생성된 bigram에 대해서, 다시 이 아이들을 연결할 필요가 있는지 다시 체크합니다. 만약 이번에도 threshold를 넘긴다면, 이 아이들도 다시 연결해줘야 겠죠. 
-
 
 ## reference
 

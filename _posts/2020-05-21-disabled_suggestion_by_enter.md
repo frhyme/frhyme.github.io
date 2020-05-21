@@ -8,7 +8,7 @@ tags: vs-code autto-completion intellsense
 
 - 자동완성(auto-completion)은 매우 유용한 기능입니다.
 - 특히 code-snippet과 연결하여, 특정한 `prefix`에 대해서 자동으로 매칭되도록 설정해준다면 매우 편하게 사용할 수 있죠.
-- 다만, 그 지점에서 1) `enter`를 사용하여 변경을 할 것인가 2) `tab`을 사용하여 변경할 것인가에 따른 차이를 서술하려고 합니다. 
+- 다만, 그 지점에서 1) `enter`를 사용하여 변경을 할 것인가 2) `tab`을 사용하여 변경할 것인가에 따른 차이를 서술하려고 합니다.
 
 ## tab-completion is better
 
@@ -37,8 +37,8 @@ tags: vs-code autto-completion intellsense
 ```json
 "[markdown]":{
     // 20200520: 비슷한 코드에 대해서 알아서 제안해주는 기능. 이 아이를 true로 설정해야, code-snippet이 실행됨
-    "editor.quickSuggestions": true, 
-    // 20200520: suggesion을 적용하는 것을 tab만으로 가능하도록 변경함. 원래는 둘 다 가능했지만, 
+    "editor.quickSuggestions": true,
+    // 20200520: suggesion을 적용하는 것을 tab만으로 가능하도록 변경함. 원래는 둘 다 가능했지만,
     // 가끔 엔터를 쳤는데, 다른 걸로 자동으로 바뀌는 경우가 있어서, 이를 막기 위해 엔터로 변경하는 것을 막음.
     "editor.acceptSuggestionOnEnter": "off",
     "editor.tabCompletion": "on",// default
