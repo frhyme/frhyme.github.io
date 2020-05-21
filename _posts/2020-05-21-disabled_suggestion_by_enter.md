@@ -25,7 +25,7 @@ tags: vs-code autto-completion intellsense
 - 어찌 보면 문제는 아닙니다. 하지만, 오른손으로 화살표를 누르고, 왼손으로 `tab`을 통해 자동완성을 한다면 더 효율적으로 사용할 수 있을 것 같아요.
 - 따라서, 저는 다음과 같이 설정을 변경하여 `setting.json`에 작성하였습니다.이렇게 할경우, `enter`에 대해서는 자동완성이 적용되지 않고 `tab`에 대해서만 유효하게 됩니다.
 
-```json
+```jsond
 "editor.acceptSuggestionOnEnter": "off",
 "editor.tabCompletion": "on",
 ```
