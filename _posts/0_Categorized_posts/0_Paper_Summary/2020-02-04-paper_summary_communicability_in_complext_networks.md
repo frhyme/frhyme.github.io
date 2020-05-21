@@ -1,5 +1,5 @@
 ---
-title: [PS] Communicability in complex networks
+title: paper-summary - Communicability in complex networks
 category: paper-summary
 tags: paper-summary patent communicability network complex-network
 ---

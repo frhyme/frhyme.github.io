@@ -1,5 +1,5 @@
 ---
-title: [vs-code] markdown linkt - MD009 해제하기
+title: vs-code markdown lint - MD009 해제하기
 category: vs-code
 tags: markdown vs-code markdownlint
 ---

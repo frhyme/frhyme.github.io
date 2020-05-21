@@ -1,5 +1,5 @@
 ---
-title: [vs-code] - jediEnabled?
+title: vs-code - jediEnabled?
 category: vs-code
 tags: vs-code intellisense
 ---

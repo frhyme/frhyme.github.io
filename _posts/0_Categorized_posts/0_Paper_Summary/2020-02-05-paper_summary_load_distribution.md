@@ -1,5 +1,5 @@
 ---
-title: [PS] Universal Behavior of Load Distribution in Scale-Free Networks
+title: paper-summary - Universal Behavior of Load Distribution in Scale-Free Networks
 category: paper-summary
 tags: paper-summary scale-free-network network load-centrality betweenness-centrality
 ---
