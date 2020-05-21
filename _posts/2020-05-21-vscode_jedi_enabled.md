@@ -33,7 +33,8 @@ tags: vs-code intellisense
 - [vscode-python-setting](https://code.visualstudio.com/docs/python/settings-reference)을 확인해보면 `python.jediEnabled`에 대해서 다음과 같이 작성되어 있습니다.
 
 ```plaintext
-Indicates whether to use Jedi as the IntelliSense engine (true) or the Microsoft Python Language Server (false). Note that the language server requires a platform that supports .NET Core 2.1 or newer.
+Indicates whether to use Jedi as the IntelliSense engine (true) or the Microsoft Python Language Server (false).
+Note that the language server requires a platform that supports .NET Core 2.1 or newer.
 ```
 
 - 해석하자면, `true`인 경우에는 Jedi를 IntelliSense engine로 설정하고, 그렇지 않고 `false`일 경우에는 Microsfot PYthon Language Server를 사용한다는 이야기죠. 더불어, MS language server는 ".NET Core 2.1"이상을 지원하는 플랫폼을 요구하고 있습니다.
