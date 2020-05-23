@@ -25,3 +25,4 @@ tags: classification
 - 어쩌면, **"어, 100% 로 fitting된 모델이다"**라고 생각하실 수도 있습니다만, 세상에 그렇게 똑 떨어지는 모델은 없습니다. 만약 모델의 정확도가 100%로 나온다면 뭔가 이상한 것이죠. 99%가 나온다거나 한다면 차라리 overfitting이라고 할 수 있을지 모르지만, 100%라면 더 큰 문제, 데이터 자체에서 label로 구분되어 데이터가 학습된, data separation이 존재한다고 할 수 있습니다.
 - 통계적으로 보면, 이 경우에 MLE(maximum likelihood estimate)는 제대로 동작하지 못합니다. 또한, 전체는 아니더라도, 상당한 분리 partial seperation이 있다고 해도, parameter estimate에 문제가 발생할 수 있구요. 즉, 만약 지나치게 큰 coeffcient가 모델에 포함되어 있다면, 이는 data separation이 당신의 데이터에 내재되어 있음을 말하고 있는 것일 수 있습니다.
 - 따라서, 만약 데이터에서 data separation이 있는 것으로 추정된다면, 다른 방법들도 있겠지만, 그냥 데이터를 더 수집하는 것이 필요하다, 는 것이 답이죠.
+
