@@ -4,12 +4,12 @@ category: python-libs
 tags: python python-libs fasttext itertools iterator generator
 ---
 
-## Intro.
+## Intro
 
 - 요즘 저는 FastText를 이용해서 단어의 의미를 학습시키고 있습니다. word2vec도 doc2vec도 있습니다만, fasttext의 경우는 vocabulary에 없는 단어들이라도 형태적인 유사성을 고려해서, 의미를 파악할 수 있다는 강점이 있죠. 따라서, 꽤 많은 경우 복합어에 대해서도 어느 정도 유추해준다는, 강점이 있습니다. 
 - 다만, 슬프게도 제 맥북은 램이 4GB입니다. 좋은 컴퓨터를 가지신 분들은 좋겠지만, 저는 그래서, 일정 량을 넘치는 데이터의 경우 한번에 list로 변환하여 memory에 올릴 수 없어요. 즉, 저는, 한번에 올리지 못하고 generator로 변환해서 올려야 합니다. 
 
-## Problem: couldn't train model by list, 
+## Problem: couldn't train model by list
 
 - 예를 들면 다음과 같습니다. generator를 만들어서 train시킵니다.
 
@@ -31,7 +31,6 @@ FTmodel.train(sentences=docs, total_examples=FTmodel.corpus_count, epochs=10)
 
 - 어떤가요? 잘 되는 것처럼 보이죠? 실제로 실행을 해보면, 아무 문제없이 잘 수행되는 것을 알 수 있습니다. 하지만, 실제로는 전혀 학습이 안되었죠.
 
-
 ### 왜 학습이 안되었는가? 
 
 - 이는 결국 generator의 속성과 닿아 았습니다. generator는 한번 읽고 나면 비어 있습니다. 
@@ -49,13 +48,13 @@ print(list(test_generator))
 
 - 두번째 출력할때는 아무것도 출력되지 않ㅎ습니다. 즉, 비어있는 generator에서 그냥 긁어온 것이니까요.
 
-```
+```plaintext
 [0, 1, 2]
 ----------------
 []
 ```
 
-## Solution: 매번 새로운 generator를 넘긴다.
+## Solution: 매번 새로운 generator를 넘긴다
 
 - 따라서, 매번 새로운 generator를 생성해서 넘겨주는 식으로 진행해야 합니다. 
 - 그리고 매번 새로 generator를 넘겨서 학습해준다고 생각해야 하죠.
