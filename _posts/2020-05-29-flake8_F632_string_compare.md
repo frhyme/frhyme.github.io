@@ -1,7 +1,7 @@
 ---
 title: python - F632 - string은 == 로 비교하세요!
-category: 
-tags: 
+category: python-basic
+tags: python string python-basic flake8 Interning
 ---
 
 ## 2-line summary 
