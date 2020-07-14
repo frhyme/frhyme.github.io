@@ -8,4 +8,4 @@ tags: macOS ppt powerpoint
 
 - 기본설정(`command` + `,`)
 - 편집 
-- '실행 취소 최대 회수'를 고치면 됨.
+- '실행 취소 최대 회수'를 고치면 됨
