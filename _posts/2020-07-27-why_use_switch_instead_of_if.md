@@ -1,5 +1,5 @@
 ---
-title: 왜 아직도 switch 문이 살아 있는가?
+title: Programming) 왜 아직도 switch 문이 살아 있는가?
 category: programming
 tags: programming c switch if readability
 ---
