@@ -4,7 +4,7 @@ category: others
 tags: vs-code terminal font-size
 ---
 
-## intro. 
+## intro
 
 - 저는 IDE로 vs-code를 쓰고 있습니다. 사실 딱히 큰 불편함을 느끼지는 않았는데, 요즘들어 조금씩 이것저것 적용하면서 개선해보려고 하고 있어요. 
 - 우선, 모니터의 상부와 하부를 분할하여, 위는 python code로 아래는 terminal로 쓰는 중에, terminal의 font size가 너무 크게 느껴지는 것이죠. 저는 또 맥북 프로를 쓰기 때문에 화면의 크기가 작아서, 폰트를 좀 줄이면 좋을 것 같더군요. 

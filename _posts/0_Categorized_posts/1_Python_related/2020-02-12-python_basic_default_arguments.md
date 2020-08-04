@@ -4,11 +4,11 @@ category: python-basic
 tags: python python-libs syntax error
 ---
 
-## Intro: 초기값 있는 argument는 맨 뒤로!
+## Intro: 초기값 있는 argument는 맨 뒤로
 
-- 아래 코드가 떴다는 이야기는, 함수의 argument의 순서로 볼 때, `a=10`처럼 초기 값을 정한 argument 앞에 `, b, ` 이렇게 온 경우를 말함.
+- 아래 코드가 떴다는 이야기는, 함수의 argument의 순서로 볼 때, `a=10`처럼 초기 값을 정한 argument 앞에 `, b,` 이렇게 온 경우를 말함.
 
-```
+```plaintext
 SyntaxError: non-default argument follows default argument
 ```
 
@@ -49,8 +49,6 @@ AAA(a=10, b=5) # Okay
 AAA(b=5, a=10) # Okay 
 AAA(5) # Okay b=5
 ```
-
-
 
 ## reference
 
