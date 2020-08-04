@@ -5,7 +5,7 @@ tags: python-lib python image requests PIL
 
 ---
 
-## 웹에서 이미지를 읽어봅시다. 
+## 웹에서 이미지를 읽어봅시다
 
 - 개발을 하다보면 웹에서 이미지를 가져와야 할 때가 있습니다. 저는 바보라서 그냥 `open('http://~~~', 'r')`로 해도 되지 않을까? 라는 바보같은 생각을 한 적도 있습니다ㅠㅠ당연히 안되죠. 
 - 일반 텍스트는 보통 `requests.get(url)`을 사용해서 비교적 쉽게 크롤링할 수 있었는데, 이미지는 조금 다른 것 같습니다. 
@@ -39,7 +39,7 @@ img_matrix = np.array(img)
 # img.save('aaa.png')
 ```
 
-```
+```plaintext
 binary file sample: b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x02\x80'
 ```
 

@@ -4,14 +4,14 @@ category: data-analysis
 tags: python python-lib data-science quantify-myself numpy matplotlib seaborn pandas time-series
 ---
 
-## 3개월동안 마신 커피 데이터를 분석합니다. 
+## 3개월동안 마신 커피 데이터를 분석합니다
 
 - 3월 초부터 6월 19일까지 저는 잠시 대학원을 떠나 집에서 머물고 있었습니다. 저는 집에서는 공부를 못해서 늘 집앞에서 커피를 먹으면서 공부를 했습니다. 문득 카드 사용 내역을 보는데, 이걸 활용해서 뭔가 재밌는 것을 할 수 있지 않을까? 생각했어요. 그래서 간단하게 분석을 해봤습니다. 
 - 미리 말씀드리지만, 매우 간단해요. 
 - 다만, dataframe의 index를 time series로 관리할 경우, 편한 부분들이 이 케이스를 통해서 드러난다고 할 수 있겠네요. 
-    - 예를 들어서, `resample`를 쓰면 `groupby`와 유사하게 기간별로 aggregate할 수 있다는 것
+  - 예를 들어서, `resample`를 쓰면 `groupby`와 유사하게 기간별로 aggregate할 수 있다는 것
 
-## do it. 
+## do it
 
 - 데이터는 구글 시트에 저장했습니다. 그런데, 구글 시트에서 바로 긁어오는 부분이 쉽지 않아서, 그냥 컨씨 컨브이하여 텍스트로 만들고 텍스트로부터 읽어왔습니다. raw data는 제일 아래에 저장해두었습니다. 
 
@@ -57,7 +57,7 @@ df_all_date = df_all_date[2:]# 3월부터 고려함
 print(df_all_date.head(5))
 ```
 
-```
+```plaintext
             cost  weekday                                   timestamp  \
 2018-03-01     0        3                                          []   
 2018-03-02  6000        4  [2018-03-02 18:11:00, 2018-03-02 15:13:00]   
@@ -156,15 +156,15 @@ plt.show()
 
 - 그림을 보면, 첫주에는 열심히 하다가, 점점 게을러지고, 끝즈음에는 다시 열심히 하구요. 
 
-![](/assets/images/markdown_img/180619_0531_week_grp_cost.svg)
+![figure1](/assets/images/markdown_img/180619_0531_week_grp_cost.svg)
 
 - 토요일에는 데이트를 하기 때문에, 공부를 게을리하고요... 
 
-![](/assets/images/markdown_img/180619_0531_weekday_grp_cost.svg)
+![figure2](/assets/images/markdown_img/180619_0531_weekday_grp_cost.svg)
 
 - heatmap에서도 처음에는 열심히 하다가 나중에는 매우 게으른 것을 볼 수 있습니다. 
 
-![](/assets/images/markdown_img/180619_0531_week_grp_cost_heatmap.svg)
+![figure3](/assets/images/markdown_img/180619_0531_week_grp_cost_heatmap.svg)
 
 ## wrap-up
 

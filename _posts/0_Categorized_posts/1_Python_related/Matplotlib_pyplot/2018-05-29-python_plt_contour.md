@@ -4,11 +4,11 @@ category: python-lib
 tags: python python-lib matplotlib
 ---
 
-## 등고선이란 말입니다. 
+## 등고선이란 말입니다
 
 - 그냥 contour라고 말하면 헷갈리는데, 지도에서 등고선이랑 같은 개념이라고 보시면 됩니다. 대충 아래 그림처럼, 비슷한 높이에 있는 놈들기리 묶어줍니다. 이런걸 contour라고 하죠. 
 
-![](https://i.stack.imgur.com/tjOQZ.png)
+![contour_Img_web](https://i.stack.imgur.com/tjOQZ.png)
 
 - 사실 원래는 `contour`를 정리하려고 했던 것이 아닌데, `decision boundary`를 그리다 보니, `contourf`를 사용해서 그리더라고요. 그래서 이걸 이참에 한번 정리하는게 좋을 것 같았습니다. 
 
@@ -23,7 +23,8 @@ a, b = np.meshgrid([1,2,3], [1,2])
 print(a)
 print(b)
 ```
-```
+
+```plaintext
 [[1 2 3]
  [1 2 3]]
 [[1 1 1]
@@ -31,9 +32,9 @@ print(b)
 ```
 
 - 결과적으로, x, y 좌표 리스트만 각각 가지고 있으면 아무 문제가 없는 건데, 그걸 꼭 2차원 어레이 형태로 가지고 있어야 하고, `plt.contour`에도 2차원 어레이로 넘겨줘야 하는 건가요? 흐음. 
-    - 똑같은 내용을 `reshape(-1, 1)`로 해서 넘겨주면 컨투어가 그려지지 않습니다, 뭐, 아무튼 그냥 하라는 대로 하죠 뭐. 
+  - 똑같은 내용을 `reshape(-1, 1)`로 해서 넘겨주면 컨투어가 그려지지 않습니다, 뭐, 아무튼 그냥 하라는 대로 하죠 뭐. 
 
-## contour 를 그립시다. 
+## contour 를 그립시다
 
 - 자 아래처럼 그릴 수 있습니다. 참 쉽죠?
 
@@ -56,13 +57,12 @@ plt.savefig('../../assets/images/markdown_img/draw_contour_20180529_1727.svg')
 plt.show()
 ```
 
-![](/assets/images/markdown_img/draw_contour_20180529_1727.svg)
+![contour_img](/assets/images/markdown_img/draw_contour_20180529_1727.svg)
 
 ## wrap-up
 
 - contour 플롯을 그려본 이유는, decision boundary를 그려 보기 위함입니다. 이후에 decision boundary를 그리는 포스트에서 contour를 이용하겠습니다. 
 
-
 ## reference 
 
-- <https://www.python-course.eu/matplotlib_contour_plot.php>
+- [Matplotlib Tutorial: Contour Plots](https://www.python-course.eu/matplotlib_contour_plot.php)

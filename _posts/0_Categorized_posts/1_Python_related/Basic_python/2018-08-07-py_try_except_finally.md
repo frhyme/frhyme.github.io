@@ -13,20 +13,20 @@ tags: python python-basic try except exception-handling
 ```python
 try: 
     f = open("aaaa", 'r')
-    ## python에서는 자동으로 raise error를 해줌 
+    # python에서는 자동으로 raise error를 해줌 
 except FileNotFoundError as e:
     print(e)
 
 ```
 
 - `FileNotFoundError`발생하는 에러이름은 실행한 뒤에 에러코드를 보면 알 수 있습니다. 
-    - 아래를 보시면, 에러코드에 에러 코드명이 써있는데, 이 이름을 그대로 `except <errorcode> as e`와 같은 형태로 작성해주면 됩니다. 
+  - 아래를 보시면, 에러코드에 에러 코드명이 써있는데, 이 이름을 그대로 `except <errorcode> as e`와 같은 형태로 작성해주면 됩니다. 
 
 ```python
 open("ddd", 'r') ## raise FileNotFoundError
 ```
 
-```
+```plaintext
 ---------------------------------------------------------------------------
 FileNotFoundError                         Traceback (most recent call last)
 <ipython-input-46-bdbf46e9e441> in <module>()
@@ -38,7 +38,6 @@ FileNotFoundError: [Errno 2] No such file or directory: 'ddd'
 ## finally
 
 - try, except는 알겠는데, finally는 무엇인가요?. 이는 try, except 구문이 종료되고 나면 항상 실행되는 구문을 말합니다. 
-
 - 다음 두 코드는 서로 같습니다. 그래도, `finally`로 구분을 해주면, 코드를 읽기 전에, 직관적으로 "아 얘는 무조건 실행되는 부분이네" 라고 바로 알 수 있는 것 같아요. 그래서 약간의 가독성을 높여줍니다. 
 
 ```python
@@ -65,9 +64,7 @@ print("="*30)
 ```
 
 - 아무튼, 그래서 다음처럼 exception handling을 할 수 있습니다. 
-
-- 여러 가지의 exception을 구분해서 처리해주고, 
-- `try/except`와 관계없이 항상 수행되는 `finally`구문도 표시해줍니다. 
+- 여러 가지의 exception을 구분해서 처리해주고, `try/except`와 관계없이 항상 수행되는 `finally`구문도 표시해줍니다. 
 
 ```python
 import numpy as np 
@@ -88,7 +85,7 @@ for i in range(0, 5):
         print("="*30)
 ```
 
-```
+```plaintext
 error: <[Errno 2] No such file or directory: 'ddd'> 발생했고, except 문 실행됨
 try, except구문 시행후 무조건 시행됨 
 ==============================

@@ -8,11 +8,9 @@ tags: python slack bot
 
 - 과거에 매일 학생 식당 메뉴를 확인하는 것이 귀찮아서 슬랙에 봇을 만들었던 적이 있습니다. 그 내용을 정리해서 업로드합니다. 
 
-
-
 ## motivation
 
-- 주로 학생식당이나 교직원식당에 밥 먹으러 가는데, 메뉴가 뭐 나오는지 매번 찾는 것이 귀찮았음
+- 주로 학생식당이나 교직원식당에 밥 먹으러 가는데, 메뉴가 뭐 나오는지 매번 찾는 것이 귀찮았습니다.
 - 그래서 생각해보니, 식당 메뉴는 사이트에서 제공되고, 내용을 긁어와서 처리하고 slack api를 이용하면, 비교적 쉽게 만들 수 있지 않을까? 라는 생각이 들어서 무작정 시작함(주말동안 이거함)😭
 
 ## program spec(very simple)
@@ -22,7 +20,7 @@ tags: python slack bot
 
 ## code
 
-#### required module
+### required module
 
 ```python
 import pandas as pd # read_html 함수 이용
@@ -32,25 +30,25 @@ import time # 프로그램이 계속 돌아가면 문제가 있으므로, sleep�
 from slacker import Slacker
 ```
 
-#### function defintion
+### function defintion
 
 - url을 parameter로 전달받아서, 해당 url의 식단 table(html로 저장되어 있음)을 `pd.DataFrame`로 변환하여 리턴해주는 함수를 정의함
 
 ```python
 def read_table_as_dataframe_from_url(url):
-    r = requests.get(url)
-    r.encoding = "utf-8"
-    start_str="<!--  목록 시작 -->"
-    end_str="</td></tr></table>"
-    text = r.text[r.text.find(start_str)+len(start_str)+1:r.text.find(end_str)+len(end_str)]
+  r = requests.get(url)
+  r.encoding = "utf-8"
+  start_str="<!--  목록 시작 -->"
+  end_str="</td></tr></table>"
+  text = r.text[r.text.find(start_str)+len(start_str)+1:r.text.find(end_str)+len(end_str)]
 
-    raw_data = pd.read_html(text)
-    raw_data = raw_data[1]
-    # 여러 table이 있을 경우 DataFrame list로 값이 넘어옴
-    return raw_data
+  raw_data = pd.read_html(text)
+  raw_data = raw_data[1]
+  # 여러 table이 있을 경우 DataFrame list로 값이 넘어옴
+  return raw_data
 ```
 
-##### 1) 학생식당 메뉴
+#### 1) 학생식당 메뉴
 
 - `read_student_meal_from_df()`의 결과값을 parameter로 받아서, 전처리하여, 내가 원하는 데이터만 남긴 깔끔한 `pd.DataFrame`을 리턴하는 함수를 정의함
   - index = `datetime.date`
@@ -60,34 +58,34 @@ def read_table_as_dataframe_from_url(url):
 
 ```python
 def read_student_meal_from_df(raw_data):
-    raw_data = raw_data[raw_data.index %3==0] # drop useless row
-    raw_data = raw_data[1:] # drop useless row
+  raw_data = raw_data[raw_data.index %3==0] # drop useless row
+  raw_data = raw_data[1:] # drop useless row
 
-    raw_data= raw_data.drop(5, axis=1) # drop useless column
-    raw_data = raw_data.drop(6, axis=1) # drop useless column
+  raw_data= raw_data.drop(5, axis=1) # drop useless column
+  raw_data = raw_data.drop(6, axis=1) # drop useless column
 
-    date_str_lst = [ x[:len(x)-4] for x in raw_data[0]]# delete weekdays
-    date_lst = [dt.datetime.strptime(str(dt.date.today().year)+date_str, "%Y%m-%d") for date_str in date_str_lst]
-    date_lst = [x.date() for x in date_lst]
-    raw_data.index = date_lst
-    raw_data = raw_data.drop(0, axis=1)
+  date_str_lst = [ x[:len(x)-4] for x in raw_data[0]]# delete weekdays
+  date_lst = [dt.datetime.strptime(str(dt.date.today().year)+date_str, "%Y%m-%d") for date_str in date_str_lst]
+  date_lst = [x.date() for x in date_lst]
+  raw_data.index = date_lst
+  raw_data = raw_data.drop(0, axis=1)
 
-    raw_data.columns = ["breakfast", "breakfast_special", "lunch", "dinner"]
+  raw_data.columns = ["breakfast", "breakfast_special", "lunch", "dinner"]
 
-    for i in raw_data.index:
-        for j in raw_data.columns:
-            for k in range(0, len(raw_data[j][i])):
-                if ord(raw_data[j][i][k]) in range(1, ord("~")):
-                    #non-korean delete
-                    raw_data[j][i]=raw_data[j][i].replace(raw_data[j][i][k], " ")
-            while "  " in raw_data[j][i]:
-                # delete whitespace
-                raw_data[j][i]=raw_data[j][i].replace("  ", " ").strip()
-            raw_data[j][i]=raw_data[j][i].replace(" ", ", ")
-    return raw_data
+  for i in raw_data.index:
+      for j in raw_data.columns:
+          for k in range(0, len(raw_data[j][i])):
+              if ord(raw_data[j][i][k]) in range(1, ord("~")):
+                  #non-korean delete
+                  raw_data[j][i]=raw_data[j][i].replace(raw_data[j][i][k], " ")
+          while "  " in raw_data[j][i]:
+              # delete whitespace
+              raw_data[j][i]=raw_data[j][i].replace("  ", " ").strip()
+          raw_data[j][i]=raw_data[j][i].replace(" ", ", ")
+  return raw_data
 ```
 
-##### 2) 교직원식당 메뉴
+#### 2) 교직원식당 메뉴
 
 - `read_faculty_meal_from_df()`의 결과값을 parameter로 받아서, 전처리하여, DataFrame로 리턴함
   - index = `datetime.date`
@@ -98,31 +96,30 @@ def read_student_meal_from_df(raw_data):
 
 ```python
 def read_faculty_meal_from_df(raw_data):
-    raw_data = raw_data[raw_data.index%3==2]
-    date_str_lst = [ x[:len(x)-4] for x in raw_data[0]]
-    date_lst = [dt.datetime.strptime(str(dt.date.today().year)+date_str, "%Y%m-%d") for date_str in date_str_lst]
-    date_lst = [x.date() for x in date_lst]
-    raw_data.index = date_lst
-    raw_data = raw_data.drop(0, axis=1)
-    raw_data.columns = ["lunch"]
+  raw_data = raw_data[raw_data.index%3==2]
+  date_str_lst = [ x[:len(x)-4] for x in raw_data[0]]
+  date_lst = [dt.datetime.strptime(str(dt.date.today().year)+date_str, "%Y%m-%d") for date_str in date_str_lst]
+  date_lst = [x.date() for x in date_lst]
+  raw_data.index = date_lst
+  raw_data = raw_data.drop(0, axis=1)
+  raw_data.columns = ["lunch"]
 
-    for i in raw_data.index:
-        for j in raw_data.columns:
-            for k in range(0, len(raw_data[j][i])):
-                if ord(raw_data[j][i][k]) in range(1, ord("~")):
-                    #non-korean delete
-                    raw_data[j][i]=raw_data[j][i].replace(raw_data[j][i][k], " ")
-            while "  " in raw_data[j][i]:
-                # delete whitespace
-                raw_data[j][i]=raw_data[j][i].replace("  ", " ").strip()
-            raw_data[j][i]=raw_data[j][i].replace(" ", ", ")
-    return raw_data
+  for i in raw_data.index:
+      for j in raw_data.columns:
+          for k in range(0, len(raw_data[j][i])):
+              if ord(raw_data[j][i][k]) in range(1, ord("~")):
+                  #non-korean delete
+                  raw_data[j][i]=raw_data[j][i].replace(raw_data[j][i][k], " ")
+          while "  " in raw_data[j][i]:
+              # delete whitespace
+              raw_data[j][i]=raw_data[j][i].replace("  ", " ").strip()
+          raw_data[j][i]=raw_data[j][i].replace(" ", ", ")
+  return raw_data
 ```
-
 
 ## main code
 
-#### complete meal DataFrame
+### complete meal DataFrame
 
 ```python
 student_meal_url="http://fd.postech.ac.kr/bbs/board_menu.php?bo_table=weekly"
@@ -137,7 +134,7 @@ faculty_meal_df = read_faculty_meal_from_df( read_table_as_dataframe_from_url(fa
 - [Slacker](https://github.com/os/slacker)(full-featured python interface for the Slack API)를 이용하여, python에서 slack api와 communication
   - 사실 나는 간단하게 post만 할 수 있으면 되긴 함.
 
-##### far far legacy way...
+#### far far legacy way
 
 - token은 해당 slack과 통신하기 위해서 전달받은 일종의 보안키 라고 이해하면 됨
   - 사실 지금처럼 돌리는 방식은 옛날 방식임, 하지만, 나는 간단히 post만 할 수 있으면 되므로 큰 문제없음

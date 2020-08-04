@@ -4,7 +4,7 @@ category: python-lib
 tags: python python-lib monte-carlo-simulation
 ---
 
-## 왜 몬테카를로는 늘 잊어버리는 걸까요. 
+## Intro - 왜 몬테카를로는 쉽게 잊어버리는 걸까요
 
 - 네, 사실 저도 알고 있습니다. 한 번 배울 때, 제대로 배우지 않고, 주먹구구식으로 배우니까, 이모양인 것이죠...그래서 이번에는 제 블로그에 꼭 써놓고 다음에 읽어보도록 하겠습니돠.
 
@@ -12,8 +12,9 @@ tags: python python-lib monte-carlo-simulation
 
 - 'random number'를 활용해 값을 추정한다, 가 가장 정확한 정의인 것 같습니다만, 이걸로 좀 애매한 부분이 있는 것 같습니다. 
 
-
 ## 적용 문제
+
+- 오히려, Monte-carlo simulation은 하나의 문제와 함게 외울 때 더 정확하게 외울 수 있는 것 같습니다.
 
 ### 원의 넓이 추정
 
@@ -51,4 +52,4 @@ plt.show()
 
 ## reference 
 
-- <http://codingdojang.com/scode/507>
+- [간단한 몬테카를로 기법 예시](http://codingdojang.com/scode/507)
