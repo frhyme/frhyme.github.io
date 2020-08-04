@@ -103,7 +103,6 @@ k: A, v: 1
 k: B, v: 3
 ```
 
-
 ## wrap-up
 
 - swift에서 사용하는 array, set, dictionary에 대해서 간략하게 정리하였습니다. 뭐 python과 유사해서 별로 공부할 것은 없었던 것 같네요.
