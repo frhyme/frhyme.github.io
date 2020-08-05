@@ -4,10 +4,9 @@ category: python-libs
 tags: python python-lib number float int rounding numpy decimal 
 ---
 
-## python에서 숫자를 정확하게 다룹시다. 
+## python에서 숫자를 정확하게 다룹시다
 
 - pyconkr2017에서 발표되었던 [보다 정확한 숫자 계산](http://slides.com/hosunglee-1/deck-10#/)이라는 발표의 내용을 정리해 봤습니다. 특히 해당 발표의 발표자분은 [8퍼센트](https://8percent.kr/)의 CTO이십니다. 숫자를 잘 다루어야 하는, 특히 소수점 단위까지 매우 정확하게 다루어야 하는, 금융업무를 하시는 분이 이 발표를 하셨던 것은 어쩌면 너무 당연한 이야기겠죠. 
-- 
 
 ## half rounding in python(default)
 
