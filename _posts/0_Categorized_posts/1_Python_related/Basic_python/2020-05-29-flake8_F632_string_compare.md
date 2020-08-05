@@ -6,10 +6,10 @@ tags: python string python-basic flake8 Interning
 
 ## 2-line summary 
 
-- python은 string에 대해서 object interning의 방식으로 관리를 한다. 이는, 메모리의 효율적인 관리를 위해 같은 문자열을 중복으로 메모리 공간에 확보하지 않으려는 기법이다. 
+- python은 string에 대해서 object interning의 방식으로 관리를 한다. 이는, 메모리의 효율적인 관리를 위해 같은 문자열을 중복으로 메모리 공간에 확보하지 않으려는 기법이다.
 - `is`는 identity testing이며, 두 변수의 메모리 공간이 같은지를 확인하는 방법이고, `==`는 값이 같은지를 확인하는 equality testing이다.
 - 스트링을 비교할 때, `==`을 사용해도, `is`를 사용해도 모두 잘 되는 것처럼 보이는 것은, python이 object interning을 통해서, 같은 문자열을 단 하나의 공간에만 확보해두기 때문에 그런 것이다.
-- 따라서, `"".join(['a', 'b', 'c']) is "abc`와 같은 경우에는 `False`가 나오는 등의 문제가 발생하 ㄹ수 ㅣㅇㅆ다.
+- 따라서, `"".join(['a', 'b', 'c']) is "abc`와 같은 경우에는 `False`가 나오는 등의 문제가 발생할 수 있다.
 - 따라서, 값을 체크할 때는 반드시 `==`을 사용하도록 한다.
 
 ---

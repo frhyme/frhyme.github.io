@@ -1,7 +1,7 @@
 ---
 title: 영화 Boyhood에 관한 사소한 사실들(trivia)
-category: english_study
-tags: english movie boyhood movie_script
+category: english_study_by_movie_script
+tags: english movie boyhood movie_script english_study_by_movie_script
 ---
 
 ## Intro - Boyhood
