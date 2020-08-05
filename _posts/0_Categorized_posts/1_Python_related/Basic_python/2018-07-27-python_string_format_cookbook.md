@@ -21,9 +21,9 @@ print("%s, %s" % ('lee', 'seunghoon'))
 
 - `{}`로 변수의 자리를 만들어두고 
 - `:`를 기준으로 오른쪽에 
-    - 왼쪽정렬: `<`
-    - 오른쪽 정렬: `>`
-    - decimal point: `8.2`
+  - 왼쪽정렬: `<`
+  - 오른쪽 정렬: `>`
+  - decimal point: `8.2`
 - 등을 작성하여 넘깁니다. 
 
 ```python
@@ -50,7 +50,7 @@ print("{:|>30s}".format(s))
 print("{:|<30s}".format(s))
 ```
 
-```
+```plaintext
 22.521519975341967
 num: 22.521519975341967
 num:    22.52
@@ -73,7 +73,7 @@ formated_s = "{name}, {age:3.2f}".format(name='lee', age=25)
 print(formated_s)
 ```
 
-```
+```plaintext
 lee, 25.00
 ```
 
@@ -85,10 +85,10 @@ dict1 = {'name':'lee', 'age':25}
 print("{name}, {age:3.2f}".format(**dict1))
 ```
 
-```
+```plaintext
 lee, 25.00
 ```
 
 ## reference 
 
-- <https://mkaz.blog/code/python-string-format-cookbook/>
+- [python string format cookbook](https://mkaz.blog/code/python-string-format-cookbook/)

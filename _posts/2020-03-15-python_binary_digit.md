@@ -1,5 +1,5 @@
 ---
-title: 음수와 양수를 binary로 어떻게 표현되는가? 
+title: 음수와 양수는 binary로 각각 어떻게 표현되는가? 
 category: python-basic
 tags: python python-basic binary numpy 
 ---
