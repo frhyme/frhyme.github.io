@@ -4,7 +4,7 @@ category: python-basic
 tags: python python-basic string format PEP timeit 
 ---
 
-## f-string
+## f-string in python
 
 - python3.6에서 [PEP498](https://www.python.org/dev/peps/pep-0498/)이 추가되었습니다. 간단히 말하면 스트링 포매팅에 새로운 방법이 하나 추가되었습니다. 
 - 기존의 방식은 원래 다음과 같았죠. 저는 첫번째 방식보다는 두번째 방식을 주로 썼습니다. 첫번째가 old way라고 했던 것 같아요. 
@@ -14,7 +14,7 @@ print('%s' %"string1") #string formating1
 print("{:^>20s}".format("string2"))#string format2
 ```
 
-```
+```plaintext
 string1
 ^^^^^^^^^^^^^string2
 ```
