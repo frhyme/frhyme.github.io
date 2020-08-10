@@ -1,7 +1,7 @@
 ---
 title: 영화 Trainspotting 에 관한 사소한 사실들(trivia) - 2편
 category: english_study_by_movie_script
-tags: english movie movie_script english_study_by_movie_script
+tags: english movie movie_script english_study_by_movie_script trainspotting
 ---
 
 ## 영화 Trainspotting 에 관한 사소한 사실들(trivia) - 2편
