@@ -12,90 +12,50 @@ tags: english movie boyhood movie_script english_study_by_movie_script BeforeSun
 
 ## Scene - Celine, Jessie and Books
 
-> The Eurail rolls along. Inside, passengers sleep, read, and stare out the windows. A few walk up and down the aisles.
+> The Eurail **rolls along**. Inside, passengers sleep, read, and stare out the windows. A few walk up and down the aisles.
 
 - 유레일(Eurail)이 굴러가고 있습니다. 안에서, 승객들은 자거나, 읽거나, 창 밖을 바라고 있습니다. 몇은 복도를 이리저리 왔다 갔다 하고 있습니다.
+- `roll along`: '굴러가다, 잘 진행되다'를 의미합니다. 실제로, 우리도 어떤 일이 잘 진행될 때, '적당히 굴러가고 있어'라는 식으로 표현할 때가 있죠.
+  - ex) Does your project roll along well? 
+- `up and down`: '이리저리, 기복이 있는'을 의미합니다. 사실, 우리나라 말로 '이리저리'라면, 'here and there'가 더 적합할 텐데, 영어에서는 이것을 'up and down'으로 표현하더군요. 조금 이상하죠. 
+- `walk up and down`: '이리저리 걸어 다니다'를 의미합니다. 
+  - ex) Why are you walking up and down now? What's wrong with you?
+  - ex) His mood is usually up and down. 
 
-> CELINE, a young woman in her mid-twenties, is curled up in her seat reading Georges Bataill’s Story of the Eye.
+> CELINE, a young woman in her mid-twenties, is **curled up** in her seat reading Georges Bataill’s Story of the Eye.
 
 - 셀린느(Celine), 20대 중반의 젊은 여성은 그녀의 좌석에 웅크려진 채로, 조지 바탈리(Georges Bataill)의 눈의 이야기(Story of the Eye)를 읽고 있습니다.
+- `curl up`: '웅크리다'를 의미합니다. 본문에서는 '침대 시트에서 웅크려진 채로'라고 표현하기 위해 사용되었죠.
+  - ex) People tends to curl up their bodies in the cold place.
 
-> Strikingly attractive, she plays it down by wearing no makeup, a loose-fitting vintage dress, and flat shoes. 
+> **Strikingly** attractive, she plays it down by wearing no makeup, a loose-fitting vintage dress, and flat shoes. 
 
 - 충격적으로 매력적이지만, 그녀는 화장도 하지 않고, 넉넉한 빈티지 드레스를 입고, 단화를 신고 있습니다.
+- `strikingly`: '놀랍도록, 충격적으로, 두드러지게'의 의미를 가지죠.
+  - ex) There are lots of strinkingly smart student in that univesity.
+- `play it down`: 'it을 낮게 보다/폄하하다'는 의미를 가집니다. 'look down on'과 유사한 의미죠. 본문에서는 앞서 "충격적이게 매력적이다"라는 말이 나왔기 때문에, "그녀의 외모를 play down"한다고 표현한 것이죠. 
+  - ex) Don't play yourself down. You should love yourself. Be proud of yourself.
 
-> She continues reading while taking an occasional bite of a chocolate bar. 
+> She continues reading while taking an **occasional** bite of a chocolate bar. 
 
 - 그녀는 간간히 초코바를 깨물면서 책을 계속 읽고 있었습니다.
+- `occasional`: '때때로, 가끔'을 의미합니다. 'rare, infrequent'를 의미합니다. 다른 단어들을 부사로서 많이 사용되는데, 이 단어는 다른 명사들 앞에 붙어서 'occasional smoker', 'occasional chair' 등으로 쓰이곤 합니다. 본문에서도, 'occasional bite'라고 쓰인 것과 비슷합니다.
+  - ex) He is an occasional smoker. He just smoke when he drinks with his friends.
 
-> Sitting four rows back and on the other side of the aisle, JESSE, also mid-twenties, is engrossed in Klaus Kinski’s memoir, All I Need Is Love. 
+> Sitting four rows back and on the other side of the aisle, JESSE, also mid-twenties, **is engrossed in** Klaus Kinski’s **memoir**, All I Need Is Love.
 
 - 네 줄 뒤, 반대쪽 편 복도에는, 역시 이십 대 주말의 제시(JESSE)가 있으며, 클라우스 킨스키(Klaus Kinski)의 자서전인 `<All I need is love>`를 읽고 있었습니다.
+- `is engrossed in`: '~에 몰두되다'를 의미합니다. 
+  - He was so engrossed in the movie that he didn't notice anything
+- `absorb`: '~를 몰두하게 하다, ~의 관심을 빼앗다'를 의미합니다. 
+  - ex) Florida Project, which is the movie I watched yeserday, absorbed all my attention for two hours. 
+- `immerse in`: '몰두하다'를 의미합니다. 앞의 단어들이, 비교적 수동적으로 '몰두되다'의 의미를 가진다면, 이 단어의 경우는 '(자발적으로) 몰두하다'에 가깝습니다. 물론, 결과적으로는 비슷할지라도요. 따라서, immerse는 '자발적으로 몰두하려고 애쓰는, 시험, 대회'등과 함께 쓰이는 일들이 많습니다. 
+  - ex) I couldn't immerse myself in my work because there a lot of thing that I should handle until tonight.
+- `memoir`: '자서전/회고록'을 의미합니다. 
+  - ex) These days, I'm thinking about writing a memoir about life of my mother. Her life could represent the general korean woman. 
 
-> Casually good looking but a little scruffy, he dresses in the jeans and T-shirt mode.
+> Casually good looking but a little **scruffy**, he dresses in the jeans and T-shirt mode.
 
-호감형으로 생겼지만, 좀 지저분한 느낌이 있고, 청바지와 티셔츠를 입고 있습니다.
-
-- roll along: '굴러가다, 잘 진행되다'를 의미합니다. 실제로, 우리도 어떤 일이 잘 진행될 때, '적당히 굴러가고 있어'라는 식으로 표현할 때가 있죠.
-
-> Does your project roll along well? 
-
-
-
-- up and down: '이리저리, 기복이 있는'을 의미합니다. 사실, 우리나라 말로 '이리저리'라면, 'here and there'가 더 적합할 텐데, 영어에서는 이것을 'up and down'으로 표현하더군요. 조금 이상하죠. 
-
-- walk up and down: '이리저리 걸어 다니다'를 의미합니다. 
-
-> Why are you walking up and down now? What's wrong with you?
-
-> His mood is usually up and down. 
-
-
-
-- curl up: '웅크리다'를 의미합니다. 본문에서는 '침대 시트에서 웅크려진 채로'라고 표현하기 위해 사용되었죠.
-
-> People tends to curl up their bodies in the cold place.
-
-
-
-- strikingly: '놀랍도록, 충격적으로, 두드러지게'의 의미를 가지죠.
-
-> There are lots of strinkingly smart student in that univesity.
-
-
-
-- play it down: 'it을 낮게 보다/폄하하다'는 의미를 가집니다. 'look down on'과 유사한 의미죠. 
-
-> Don't play yourself down. You should love yourself. Be proud of yourself.
-
-
-
-- occasional: '때때로, 가끔'을 의미합니다. 'rare, infrequent'를 의미합니다. 다른 단어들을 부사로서 많이 사용되는데, 이 단어는 다른 명사들 앞에 붙어서 'occasional smoker', 'occasional chair' 등으로 쓰이곤 합니다. 본문에서도, 'occasional bite'라고 쓰인 것과 비슷합니다.
-
-> He is an occasional smoker. He just smoke when he drinks with his friends.
-
-
-
-- is engrossed in: '~에 몰두되다'를 의미합니다. 
-
-> He was so engrossed in the movie that he didn't notice anything
-
-- absorb: '~를 몰두하게 하다, ~의 관심을 빼앗다'를 의미합니다. 
-
-> Florida Project, which is the movie I watched yeserday, absorbed all my attention for two hours. 
-
-- immerse in: '몰두하다'를 의미합니다. 앞의 단어들이, 비교적 수동적으로 '몰두되다'의 의미를 가진다면, 이 단어의 경우는 '(자발적으로) 몰두하다'에 가깝습니다. 물론, 결과적으로는 비슷할지라도요. 따라서, immerse는 '자발적으로 몰두하려고 애쓰는, 시험, 대회'등과 함께 쓰이는 일들이 많습니다. 
-
-> I couldn't immerse myself in my work because there a lot of thing that I should handle until tonight.
-
-
-
-- memoir: '자서전/회고록'을 의미합니다. 
-
-> These days, I'm thinking about writing a memoir about life of my mother. Her life could represent the general korean woman. 
-
-
-
-- scruffy: '꾀죄죄한'을 의미합니다. 
-
-> Although students who has enginneering as their major may look scruffy, it does not mean the lack of their ability. They are rather more skilled than usual students.
+- 호감형으로 생겼지만, 좀 지저분한 느낌이 있고, 청바지와 티셔츠를 입고 있습니다.
+- `scruffy`: '꾀죄죄한'을 의미합니다. 
+  - ex) Although students who has enginneering as their major may look scruffy, it does not mean the lack of their ability. They are rather more skilled than usual students.
