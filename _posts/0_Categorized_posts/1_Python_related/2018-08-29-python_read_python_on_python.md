@@ -34,7 +34,7 @@ func = test_lib.test_func
 print(func(10))
 ```
 
-```
+```plaintext
 function imported at 2018-08-29 17:58:42.474089
 13
 ```
@@ -61,7 +61,7 @@ func = test_lib.test_func
 print(func(10))
 ```
 
-```
+```plaintext
 function imported at 2018-08-29 18:00:09.729242
 1000
 ```
@@ -77,7 +77,7 @@ print("ddd")
 """)
 ```
 
-```
+```plaintext
 12345
 ddd
 ```
@@ -102,7 +102,7 @@ exec(context_dict['context_b'])
 func_a()
 ```
 
-```
+```plaintext
 hello
 hi
 ```
@@ -112,7 +112,6 @@ hi
 - 사실 이름은 self-modifying code라고 해놓고, 스트링을 그냥 실행했는데, 스트링을 변경하면 코드를 변경해서 실행할 수 있습니다. 
 - 이게 의미가 있는 짓인지는 사실 잘 모르겠습니다만, 경우에 따라서 파이썬 함수 자체를 변경해야할 필요성이 있습니다. 그때 상황에 맞춰서 새로운 펑션을 정의하고 이 펑션을 넘겨주는 것이 의미가 있지 않을까? 라는 생각은 합니다. 
 
-
 ## reference
 
-- <https://stackoverflow.com/questions/14191900/pythonimport-module-from-memory>
+- [Stackoverflow - python - import module from memory](https://stackoverflow.com/questions/14191900/pythonimport-module-from-memory)

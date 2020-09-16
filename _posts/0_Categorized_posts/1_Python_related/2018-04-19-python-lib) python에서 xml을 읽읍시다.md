@@ -47,7 +47,6 @@ f.write(test_xml)
 f.close()
 ```
 
-
 ## xml to dictionary 
 
 - 파일을 보니, 왠지, python에서의 dictionary와 유사하게 생기지 않았는지에 대한 생각이 들죠? 굉장히 간단하게는 markup language를 dictionary라고 생각하셔도 일단은 상관없을 것 같아요. 

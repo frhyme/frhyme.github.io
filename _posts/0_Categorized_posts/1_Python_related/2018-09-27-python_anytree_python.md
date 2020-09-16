@@ -60,7 +60,7 @@ print(f"ancestors: {target_node.ancestors}")
 print("=="*20)
 ```
 
-```
+```plaintext
 ========================================
 root, data: 3
 ├── child_0, data: 0
@@ -77,18 +77,17 @@ ancestors: (Node('/root', data=3), Node('/root/child_0', data=0))
 ========================================
 ```
 
-## with mixin 
+## with Mixin 
 
 - class 를 설계할 때 mixin이라는 개념이 있습니다. 아래 그림을 보시면 이해가 훨씬 빠르실 것 같은데요. 
 - 아래 그림에서처럼 서로 다른 두가지 클래스를 섞어서 새로운 클래스를 만들 때, 쓰는 개념이 Mixin입니다. 
 
-![](https://stonzeteam.github.io/assets/img/160611_interface.png)
+![Class - Mixin](https://stonzeteam.github.io/assets/img/160611_interface.png)
 
 - `anytree`에서 mixin이라는 디자인패턴을 지원하고, 이를 사용해서 그냥 Node가 아니라, 제가 만든 새로운 클래스에 집어넣을 수 있습니다. 
 
 ```python
 ## with node mixin
-
 from anytree import NodeMixin, RenderTree
 class MyBaseClass(object):
     pass
@@ -116,7 +115,7 @@ print(f"me.ancestors: {me.ancestors}")
 print(f"mother.children: {mother.children}")
 ```
 
-```
+```plaintext
 root
 └── mother
     ├── brother
@@ -130,4 +129,3 @@ mother.children: (brother, me)
 
 - `networkx`에 비해서 편한 부분들이 꽤 있습니다. 
 - 새로운 class를 만들어서 mixin하고, 이를 `networkx`의 graph에 node로 집어넣어서, 양쪽 메소드를 동시에 사용하면서 쓸 수 있도록 해주면 더 강력해지지 않을까? 라는 생각을 해봅니다. 
-
