@@ -88,7 +88,7 @@ tags: furniture bed
 
 #### 삼분의일 매트리스 체험결과
 
-- 쇼룸 위치
+- []()
 
 ## wrap-up
 

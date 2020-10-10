@@ -27,28 +27,6 @@ tags: english movie movie_script english_study_by_movie_script StarWars
   - ex) Disney shows him the film. 
   - ex) He was shown the film by Disney.
 
-## Trivia - Mark Hamill
-
-> Mark Hamill claimed George Lucas **nonchalantly** told him over lunch a new Star Wars trilogy was going to be made by Disney, and if he did not want to be involved, Luke Skywalker would simply be written out of the script. 
-
-- 마크 해밀은 조지 루카스가 그와 점심을 먹을 때, '디즈니에 의해 스타워즈 새로운 트릴로지'가 만들어진지고, 그리고, 만약 그가 이 프로젝트에 출연하지 않을 것이라면 루크 스카이워커는 간단히, 대본에서 사라질 뿐이라고 말했다고 주장했다.
-- `nonchalantly`: '무심하게, 태연하게, 무관심하게'를 의미합니다.
-  - ex) Even though everyone knows that he have been in the painful time, he pretends to keep a nonchalant attitude in front of us.
-
-> However, Hamill immediately agreed to **reprise** the role. 
-
-- 하지만, 해밀은 그의 역할을 바로 다시 맡았다.
-- `reprise the role`: '~의 역할을 맡다'는 의미로 사용됩니다. 단, 단독으로 reprise가 사용되면, '반복하다'등의 의미를 가지기도 해요. 
-  - ex) I don't want to reprise that kind of role again, Even though it gave me a huge fame, it also limits my opportunity as an actor by enforcing me to that kind of role repetitively. 
-
-> Hamill admitted, however, that he **pretended** to also be **nonchalant** about it, so it didn't **seem like** he was excited for the role. 
-
-- 해밀은 그러나, 그 또한, 이 프로젝트에 대해서 흥분한 것처럼 보여지고 싶지 않아서, 무심한 척하려 했다는 것을 인정했다. 
-
-> He also said within five seconds Carrie **exclaimed** she'd do it, and asked if there was a part for her daughter.
-
-- 그는 또한 캐리 또한 참여할 것이라고 외치며 5초 안에, 거기에 그녀의 딸을 위한 자리도 있는지 물었다.
-
 ## Trivia - Loose Lips Sink Starships
 
 > Kevin Smith and Benedict Cumberbatch visited the set. 

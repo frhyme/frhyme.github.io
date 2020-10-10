@@ -9,7 +9,7 @@ tags: python-basic python python-lib iterator itertools functools
 - 대략 1년전에 만들었던 자료를 다시 올립니다. 과거에는 `itertools`가 좋은 라이브러리라고 생각했었는데, 이제는 그냥 필요할때, generator로 직접 정의해서 쓰는 게 더 편해서, 거의 쓰지 않습니다. 
 - 다만, `chain.from_iterable`이나, `combinations`의 경우는 빨라서 쓰는 경우가 좀 있습니다. 
     
-## 원래 계획: =="iterator를 쓰면 이렇게 빨라진다 몰랐지 이 펑알못들아"==
+## 원래 계획: =="iterator를 쓰면 이렇게 빨라진다 몰랐지 이 펑알못들아"
 
 #### 현실:
 
