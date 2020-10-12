@@ -10,5 +10,5 @@ tags: java String Int
 
 ```java
 String s = "123";
-System.out.println(Integer.parseInt(s));
+Integer.parseInt(s); // 123
 ```
