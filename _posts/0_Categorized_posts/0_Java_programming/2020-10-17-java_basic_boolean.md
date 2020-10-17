@@ -1,7 +1,7 @@
 ---
-title: 
-category: 
-tags: 
+title: Java - Boolean 값과 int는 다르다.
+category: java
+tags: java programming boolean int
 ---
 
 ## Java - Boolean이과 int는 다르다
@@ -24,3 +24,8 @@ if ( true ){
     System.out.println("dd");
 }
 ```
+
+## Wrap-up
+
+- 쓰고 나니 별거 없지만, 이 구분은 매우 중요합니다. 논리값(logical value)와 정수 값은 아예 다른 개념입니다. 접근 법 자체가 다르죠.
+- C에서 아쉬운 점이 이 점인데, 이 둘의 구분이 미묘해서, 잘못하면 `if(1)`와 같은 형태로 프로그래밍을 하게 되죠. "에이 누가 이런 실수를 하냐?"싶지만, 그런 작은 실수조차 허용되지 않도록 하는 것이, 좋습니다. 생각보다 빡빡하게 프로그래밍 하도록 강제할수록 프로그래머는 좋은 코딩 습관을 가지게 되니까요.
