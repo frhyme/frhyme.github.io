@@ -39,5 +39,6 @@ Object obj1 = Integer.valueOf(3);
 System.out.println(obj1.getClass()); // class java.lang.Integer
 ```
 
-- human-readable representation: `toString`;
-  - 현재 객체를 `String`으로 변환하여 리턴합니다. 
+- human-readable representation: `toString`
+  - 현재 객체를 `String`으로 변환하여 리턴합니다. 다만, 얘는 그대로 쓰지 않고 보통 Override해서 사용하죠.
+
