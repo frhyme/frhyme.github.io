@@ -48,7 +48,9 @@ java Main.class
 javap -c Main.class
 ```
 
-- 읽어보면 다음과 같이 나옵니다.
+- 읽어보면 다음과 같이 나옵니다. 뜯어봐도 되기는 한데, 일단 저는 필요하지는 않아서 더 뜯어보지는 않겠습니다.
+- Java ByteCode에 대한 자세한 내용은 [여기에서](https://dzone.com/articles/introduction-to-java-bytecode) 자세하게 알 수 있습니다.
+- 그냥 지금 stack memory에 뭐가 올라갔고, 뭐가 로드되었고, 어떤 메소드를 실행했는지 등에 대해서 가 나와 있는거죠.
 
 ```plaintext
 Compiled from "test.java"
@@ -67,3 +69,8 @@ class com.company.Main {
        8: return
 }
 ```
+
+## Wrap-up
+
+- 이전에는 Java Code, Java ByteCode가 조금씩 헷갈렸는데, 이제는 그정도 레벨에서의 구분은 헷갈리지 않을 것 같네요. 그리고, Java ByteCode를 어떻게 뜯어볼 수 있는지도 알게 되었죠.
+- 만약 제가 Java Code를 짠 다음에 제 코드가 어떻게 돌아가는지에 대해서 정확하게 알고 싶다면, 혹은 제가 알수없는 다른 오류가 나온다면 ByteCode로 변환한 다음 해석해보면 더 잘 알 수 있지 않을까 싶네요.
