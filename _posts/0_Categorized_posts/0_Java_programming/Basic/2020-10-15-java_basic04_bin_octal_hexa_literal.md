@@ -13,11 +13,11 @@ class Main {
     public static void main(String[] args) {
         // java에서는 0으로 시작하는 정수형을 집어넣을 경우 8진법으로 이해함
         int binNum = 0b10; // binary number
-        int octalNum = 010; // octal number
+        int Num = 010; //  number
         int hexaNum = 0x11; // hexadecimal number
 
         System.out.println("binNum: " + binNum);
-        System.out.println("octalNum: " + octalNum);
+        System.out.println("Num: " + Num);
         System.out.println("hexaNum: " + hexaNum);
         // End of the code
     }
@@ -28,6 +28,6 @@ class Main {
 
 ```python
 binNum   = 0b10
-octalNum = 0o10
+Num = 0o10
 hexaNum  = 0x11
 ```
