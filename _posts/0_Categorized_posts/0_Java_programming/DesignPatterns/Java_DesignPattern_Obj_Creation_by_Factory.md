@@ -23,4 +23,6 @@ BaseClass obj2 = ObjectFactory("DerivedClass2");
 
 ## Wrap-up
 
-- 좀 더 괜찮은 예제를 찾을 수 있을 것 같은데, 다음에 시간이 나면 추가로 보완해보도록 하겠습니다.
+- Factory pattern은 개념적인 패턴이고 구현하기 쉬워서 굳이 Implementation을 만들지 않았습니다. 
+- 다만, 그 방식에 있어서 method를 Static하게 만들 수 있고 Insance method로 만들 수도 있죠.
+- factory pattern을 씀으로 인한 이점이 보이는 괜찮은 예제를 찾을 수 있을 것 같은데, 다음에 시간이 나면 추가로 보완해보도록 하겠습니다.
