@@ -27,10 +27,10 @@ justPrintFunc("PRINT_LIKE_THIS");
 
 ```java
 @FunctionalInterface
-    interface Func<INPUT, OUTPUT> {
-        // Single Abstract Method(SAM)
-        OUTPUT apply(INPUT x);
-    }
+interface Func<INPUT, OUTPUT> {
+    // Single Abstract Method(SAM)
+    OUTPUT apply(INPUT x);
+}
 ```
 
 - 다음 코드에서는 앞서 구현한 `FunctionalInterface`를 3가지 방법으로 구현하여, 사용해봅니다.
