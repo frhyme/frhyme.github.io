@@ -1,7 +1,7 @@
 ---
 title: Java - Stream - limit, skip, takeWhile, dropWhile
 category: java
-tags: java programming primitive stream 
+tags: java programming stream 
 ---
 
 ## Java - Stream - limit, skip, takeWhile, dropWhile
