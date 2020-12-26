@@ -2,7 +2,6 @@
 title: read xml in python
 category: python-lib
 tags: python xml python-basic python-lib xmltodict OrderedDict
-
 ---
 
 ## intro

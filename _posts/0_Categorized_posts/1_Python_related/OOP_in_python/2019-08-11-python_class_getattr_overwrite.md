@@ -25,9 +25,9 @@ print(getattr(pro1, "_id"))
 print(getattr(pro1, "aaa")) #error because attribute name 'aaa' doesn't exist in the object
 ```
 
-- 하지만 실행 결과를 보시면 제일 아래 쪽에 존재하지 않는 이름을 넣었을때 문제가 발생하는 것을 알 수 있습니다. 사실 존재하지 않는 것을 넣는 것 자체가 문제일 수도 있지만, 이 경우 발생하는 에러 코드를 다른 식으로 구동할 수 있습니다. 어떻게 하냐면, 내부에 `gettattr`메소드를 만들어 주는 것이죠.
+- 하지만 실행 결과를 보시면 제일 아래 쪽에 존재하지 않는 이름을 넣었을때 문제가 발생하는 것을 알 수 있습니다. 
 
-```
+```plaintext
 shlee
 frhyme
 frhyme
@@ -41,7 +41,7 @@ AttributeError                            Traceback (most recent call last)
 AttributeError: 'JustProperty' object has no attribute 'aaa'
 ```
 
-
+- 사실 존재하지 않는 것을 넣는 것 자체가 문제일 수도 있지만, 이 경우 발생하는 에러 코드를 다른 식으로 구동할 수 있습니다. 어떻게 하냐면, 내부에 `gettattr`메소드를 만들어 주는 것이죠.
 
 ## define getattr method
 
@@ -66,7 +66,7 @@ print(getattr(pro1, "_id"))
 print(getattr(pro1, "aaa")) #error because attribute name 'aaa' doesn't exist in the object
 ```
 
-```
+```plaintext
 shlee
 frhyme
 frhyme
