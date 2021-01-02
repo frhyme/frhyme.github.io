@@ -1,7 +1,7 @@
 ---
 title: Java - Generic Programming vs Object
-category: 
-tags: 
+category: java
+tags: java programming GenericProgramming
 ---
 
 ## Java - Generic Programming vs Object
@@ -43,7 +43,7 @@ class Main {
 
 ## Class with Object
 
-- 이번에는 그냥 Object Reference Type을 통해서 Generic Programming을 구현합니다. Java의 모든 Class를 Object Class를 상속받습니다. 그리고, 상위 Class Reference Variable은 하위 Class의 Object를 가리킬 수 있죠. 따라서, 지금처럼 내부에 Object Reference Variable을 만들어 두면, Java의 모든 Object들을 가리키게 할 수 있죠.
+- 이번에는 그냥 Object Reference Type을 통해서 Generic Programming을 구현합니다. Java의 모든 Class는 Object Class를 상속받습니다. 그리고, 상위 Class Reference Variable은 하위 Class의 Object를 가리킬 수 있죠. 따라서, 지금처럼 내부에 Object Reference Variable을 만들어 두면, Java의 모든 Object들을 가리키게 할 수 있죠.
 
 ```java
 public class ClassWithObject {
