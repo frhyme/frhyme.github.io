@@ -9,6 +9,8 @@ tags: java programming string regex
 - 정규표현식은 "특정한 패턴을 사용해서 문자를 검색하는 방식"이죠. 
 - Java에는 String에서 정규표현식(Regular Expression)을 기본적으로 지원합니다.
 - 다음과 같이 아주 간단하게 pattern을 찾는 방법을 정리하였습니다.
+  - `.`: 공백을 포함한 character
+  - `<char>?`: `char`가 있거나 없거나
 
 ```java
 class Main {
