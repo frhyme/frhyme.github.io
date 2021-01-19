@@ -1,10 +1,10 @@
 ---
-title: `G.has_edge(u, v)`는 `v in G[u]`보다 빠른가? 
+title: G.has_edge는 v in G\[u\]보다 빠른가? 
 category: python-libs
 tags: python python-libs networkx 
 ---
 
-## 2-line summary. 
+## 2-line summary
 
 - graph `G`의 node간 연결성을 체크하는 방법중에서 `G.has_edge(u, v)`가 `v in G[u]`보다 2배 이상 빠름. 
 - 물론, `b in G._adj[a]` 를 사용하면, 더 빨라지지만, 위험성이 있으므로 가급적 하지 않는 것을 추천.
@@ -13,7 +13,7 @@ tags: python python-libs networkx
 
 - 저는 보통 node들의 연결성(edge의 존재유무)을 체크할 때, `v in G[u]`를 사용합니다. 즉, "`u`의 이웃에 `v`가 포함되어있는가"를 체크하는 것이죠. 
 
-```
+```plaintext
 v in G[u]
 ```
 
@@ -25,7 +25,7 @@ G.has_edge(u, v)
 
 - 별 차이가 없을 것 같기는 한데, 그냥 궁금해서 한번 시간을 비교해봤습니다. 
 
-### performance check. 
+### performance check
 
 - 적당한 크기의 `scale_free_graph`를 만들고, 여러번 edge를 체크하면서 걸린 시간을 총 합하여 처리하였습니다.
 
@@ -70,7 +70,7 @@ print("--"*20)
 
 - 결과를 보시면, `G.has_edg`가 약 60%정도의 시간을 절약하는 것을 알 수 있습니다.
 
-```
+```plaintext
 ----------------------------------------
 == start
 method1(has_edge) time: 0.00222
@@ -84,7 +84,7 @@ method2(neighbor) time: 0.00553
 
 - `G.has_edge`의 코드는 다음과 같습니다. `self._adj` 딕셔너리로부터 값을 참고하여, 바로 가져오죠.
 
-```
+```plaintext
 try:
     return v in self._adj[u]
 except KeyError:
@@ -102,13 +102,13 @@ except KeyError:
 
 - 이 아이는 G의 내부 메소드인 `__getitem__`을 확인해봐야 합니다. 다음과 같이 되어 있군요.
 
-```
+```plaintext
 return self.adj[n]
 ```
 
 - `self.adj`를 확인해보면 다음과 같습니다
 
-```
+```plaintext
 return AdjacencyView(self._adj)
 ```
 
@@ -119,7 +119,6 @@ return AdjacencyView(self._adj)
 
 - 따라서, 굳이 method를 쓸 필요 없이, `b in G._adj[a]`로 자료구조에 바로 접근하면 훨씬 빠릅니다. 
 - 앞서 사용한 `G.has_edge(u, v)`보다 2배 이상 빠릅니다. 
-
 
 ## wrap-up
 

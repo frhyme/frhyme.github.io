@@ -2,7 +2,6 @@
 title: Algorithm - sudoku(grid)
 category: algorithm 
 tags: python algorithm sudoku matrix
-
 ---
 
 ## Problem

@@ -7,7 +7,7 @@ tags: java programming class HashMap
 ## Java - Double Brace Initialization
 
 - Java에는 Double Brace Initialization이라는 것이 있습니다. 가령 HashMap을 만들고 그 즉시 값도 집어넣고 싶을 때, Double Brace Initialization을 사용할 수 있죠. 
-- 아래 코드에서 보시면 `new HashMap<>(){{ ... }}` 사이에서 `put()` 메소드를 사용해서 `(key, value)`를 모두 넘겨줬죠. 이를 통해 선언하면서 바로 내부 요소들까지 집어넣어줄 수 있습니다.
+- 아래 코드에서 보시면 `new HashMap<>(){% raw %}{{ ... }}{% endraw %}` 사이에서 `put()` 메소드를 사용해서 `(key, value)`를 모두 넘겨줬죠. 이를 통해 선언하면서 바로 내부 요소들까지 집어넣어줄 수 있습니다.
 
 ```java
 import java.util.*;
@@ -15,9 +15,11 @@ import java.util.*;
 class Main {
     public static void main(String[] args) throws Exception {
         // Double Brace Initialization
+        {% raw %}
         HashMap<String, String> hashMap2 = new HashMap<>() {{
             put("A", "1"); put("B", "2");
         }};
+        {% endraw %}
         System.out.println(hashMap1);
         // {A=1, B=2}
     }
@@ -38,9 +40,11 @@ class Main {
         hashMap1.put("B", "2");
 
         // hashMap2은 Double Brace Initialization을 통해 처리합니다.
+        {% raw %}
         HashMap<String, String> hashMap2 = new HashMap<>() {{
             put("A", "1"); put("B", "2");
         }};
+        {% endraw %}
 
         // 들어온 값은 동일하지만, 
         System.out.println(hashMap1); // {A=1, B=2}

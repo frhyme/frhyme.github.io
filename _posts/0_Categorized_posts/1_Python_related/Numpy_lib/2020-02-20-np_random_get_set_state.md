@@ -1,10 +1,10 @@
 ---
-title: `np.random.seed()`는 정확히 무엇을 의미하는가? 
+title: np.random.seed()는 정확히 무엇을 의미하는가? 
 category: python-libs
 tags: python python-libs numpy random seed
 ---
 
-## 2-line summary. 
+## 2-line summary
 
 - `np.random.seed(seed=3)`를 사용해서 난수(random number)가 발생하는 동작을 제어하지만, 난수를 생성하게 되는 624개의 모수 세트의 첫번째 값을 변경해줄 뿐임. 
 - 좀더 세밀하게 random성을 제어하고 싶을 경우, `np.random.get_state()`로 특정한 상황의 random성을 저장하고, `np.random.set_state()`로 특정한 상황의 state를 지정해준다.
@@ -29,7 +29,7 @@ np.random.seed(0)
 print(np.random.random(3))
 ```
 
-```
+```plaintext
 [0.5488135  0.71518937 0.60276338]
 [0.4359949  0.02592623 0.54966248]
 [0.5488135  0.71518937 0.60276338]
@@ -51,7 +51,7 @@ print(np.random.random(3))
 
 - 정말 그런지, 아래의 코드를 통해 확인해봅니다. 
 - `np.random.get_state()`는 현재 random의 상황을 더 정확하게 파악해보는 함수를 말합니다. 즉 위에서 언급한 메르센-트위스터 알고리즘의 '모수'가 무엇인지 확인해볼 수 있죠. 
-    - 이 함수를 실행하면 5개의 값이 리턴되지만, 저는 그냥 2번째 값만 확인하겠습니다. 
+  - 이 함수를 실행하면 5개의 값이 리턴되지만, 저는 그냥 2번째 값만 확인하겠습니다. 
 - 결과를 보시면, 624개의 모수 세트에서 첫번째 값이 바뀌는 것을 알 수 있습니다. 624개의 모수는 첫번재 값으로부터 이후의 값을 일종의 점화식을 통해서 만듭니다. 따라서, 첫번째 값이 바뀌면 다 바뀌게 되는 것이죠.
 
 ```python
@@ -79,7 +79,7 @@ print_current_random_state()
 
 ```
 
-```
+```plaintext
 ------------------------------------------------------------
 == seed doesn't changed
 1st element: MT19937
@@ -101,9 +101,7 @@ print_current_random_state()
 ### np.random.set_state()
 
 - 이를 확장하여, 단지, `np.random.seed()`뿐만 아니라, 더 세부적으로 random성을 조절할 수 있습니다. 즉, 만약 624개의 모수로부터 난수가 결정된다면, 난수 624개를 넘겨버린다면 좀 더 세부적인 제어가 가능하게 되는 것이죠.
-- 즉, 일반적으로는 `np.random.seed(seed=3)`으로 랜덤성을 조절하지만, 가령, 
-> "<1000개의 random number>를 뽑은 다음의 상태를 저장하고, 이 때 생성되는 난수 패턴을 계속 이용하고 싶다"
-- 와 같은 변태적인 마음이 있다면, 이 부분을 `np.random.set_state()`를 통해 해결할 수 있습니다. 
+- 즉, 일반적으로는 `np.random.seed(seed=3)`으로 랜덤성을 조절하지만, 가령, "<1000개의 random number>를 뽑은 다음의 상태를 저장하고, 이 때 생성되는 난수 패턴을 계속 이용하고 싶다" 와 같은 변태적인 마음이 있다면, 이 부분을 `np.random.set_state()`를 통해 해결할 수 있습니다. 
 
 ```python
 import numpy as np
@@ -131,7 +129,7 @@ print(np.random.random(size=5))
 print("--" * 30)
 ```
 
-```
+```plaintext
 ------------------------------------------------------------
 == Extact 1000 random number(integer)
 == Save current state to `State1`
@@ -140,7 +138,6 @@ print("--" * 30)
 [0.41059295 0.92839617 0.21698743 0.08751889 0.33477266]
 ------------------------------------------------------------
 ```
-
 
 ## wrap-up
 

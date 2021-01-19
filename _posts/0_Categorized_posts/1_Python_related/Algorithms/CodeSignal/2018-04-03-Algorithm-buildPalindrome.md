@@ -2,12 +2,13 @@
 title: Algorithm - buildPalindrome
 category: algorithm 
 tags: python algorithm palindrome string codefight
-
 ---
 
 ## Problem
+
 - 문자열 s 로부터 만들 수 있는 가장 짧은 Palindrome을 만들어주는 함수입니다. 
 - s가 이미 Palindrome라면, 해당 문자열을 그대로 리턴하면 되고, 아닐 경우에는 해당 문자열을 이용해 새로 만들어줘야겠죠.
+
 
 ## solution 
 
