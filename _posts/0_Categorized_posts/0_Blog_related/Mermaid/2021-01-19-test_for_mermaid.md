@@ -12,7 +12,6 @@ tags: mermaid
   - Markdown Preview Mermaid Support
   - Mermaid Markdown Syntax Highlighting
 
-
 ```mermaid
 graph TD;
     A-->B;
@@ -20,8 +19,6 @@ graph TD;
     B-->D;
     C-->D;
 ```
-
-
 
 
 

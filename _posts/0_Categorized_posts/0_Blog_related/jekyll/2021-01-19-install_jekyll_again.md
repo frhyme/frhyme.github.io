@@ -1,6 +1,6 @@
 ---
 title: jekyll을 설치하고 로컬에 블로그를 뛰우려고 합니다.
-category: 
+category: blog
 tags: blog jekyll ruby gem
 ---
 
