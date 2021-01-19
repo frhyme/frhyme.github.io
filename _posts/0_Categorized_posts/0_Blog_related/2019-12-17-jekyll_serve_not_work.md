@@ -19,16 +19,16 @@ tags: jekyll server blog
 ```plaintext 
 Leeseunghoonui-MacBook-Air:frhyme.github.io frhyme$ jekyll serve
 Traceback (most recent call last):
-	10: from /usr/local/bin/jekyll:23:in `<main>'
-	 9: from /usr/local/bin/jekyll:23:in `load'
-	 8: from /Library/Ruby/Gems/2.6.0/gems/jekyll-4.0.0/exe/jekyll:11:in `<top (required)>'
-	 7: from /Library/Ruby/Gems/2.6.0/gems/jekyll-4.0.0/lib/jekyll/plugin_manager.rb:52:in `require_from_bundler'
-	 6: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler.rb:107:in `setup'
-	 5: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:26:in `setup'
-	 4: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:26:in `map'
-	 3: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler/spec_set.rb:148:in `each'
-	 2: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler/spec_set.rb:148:in `each'
-	 1: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:31:in `block in setup'
+    10: from /usr/local/bin/jekyll:23:in `<main>'
+     9: from /usr/local/bin/jekyll:23:in `load'
+     8: from /Library/Ruby/Gems/2.6.0/gems/jekyll-4.0.0/exe/jekyll:11:in `<top (required)>'
+     7: from /Library/Ruby/Gems/2.6.0/gems/jekyll-4.0.0/lib/jekyll/plugin_manager.rb:52:in `require_from_bundler'
+     6: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler.rb:107:in `setup'
+     5: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:26:in `setup'
+     4: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:26:in `map'
+     3: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler/spec_set.rb:148:in `each'
+     2: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler/spec_set.rb:148:in `each'
+     1: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:31:in `block in setup'
 /Library/Ruby/Gems/2.6.0/gems/bundler-2.0.2/lib/bundler/runtime.rb:319:in `check_for_activated_spec!': You have already activated i18n 1.7.0, but your Gemfile requires i18n 0.9.5. Prepending `bundle exec` to your command may solve this. (Gem::LoadError)
 ```
 
@@ -55,25 +55,25 @@ gem "minimal-mistakes-jekyll"
 
 ```plaintext
 jekyll (3.8.6)
-	addressable (~> 2.4)
-	colorator (~> 1.0)
-	em-websocket (~> 0.5)
-	i18n (~> 0.7)
-	jekyll-sass-converter (~> 1.0)
-	jekyll-watch (~> 2.0)
-	kramdown (~> 1.14)
-	liquid (~> 4.0)
-	mercenary (~> 0.3.3)
-	pathutil (~> 0.9)
-	rouge (>= 1.7, < 4)
-	safe_yaml (~> 1.0)
+    addressable (~> 2.4)
+    colorator (~> 1.0)
+    em-websocket (~> 0.5)
+    i18n (~> 0.7)
+    jekyll-sass-converter (~> 1.0)
+    jekyll-watch (~> 2.0)
+    kramdown (~> 1.14)
+    liquid (~> 4.0)
+    mercenary (~> 0.3.3)
+    pathutil (~> 0.9)
+    rouge (>= 1.7, < 4)
+    safe_yaml (~> 1.0)
 ```
 
 - 위 `jekyll`을 실행하기 위해서 정리된 규격 중에서 `i18n`이라는 라이브러리가 눈에 띕니다. 앞서 나온 에러메세지가 여기서 출발했고, 실제로 `Gemfile.lock`의 다른 코드를 보면 다음과 같이 작성되어 있습니다. 즉, 현재 Gemfile.lock에 i18n (0.9.5)가 정의되어 있기 때문에, 이 버전이 실행되어야 하는데, 저는 i18n 1.7.0이 이미 활성화되어 있다는 것이죠. 
 
 ```plaintext
 i18n (0.9.5)
-	concurrent-ruby (~> 1.0)
+    concurrent-ruby (~> 1.0)
 ```
 
 - 그렇다면, i18n을 그냥 지워버리면 되는 것 아닐까요? 
@@ -134,16 +134,16 @@ jekyll serve
 
 ```plaintext
 Traceback (most recent call last):
-	10: from /usr/local/bin/jekyll:23:in `<main>'
-	 9: from /usr/local/bin/jekyll:23:in `load'
-	 8: from /Library/Ruby/Gems/2.6.0/gems/jekyll-4.0.0/exe/jekyll:11:in `<top (required)>'
-	 7: from /Library/Ruby/Gems/2.6.0/gems/jekyll-4.0.0/lib/jekyll/plugin_manager.rb:52:in `require_from_bundler'
-	 6: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler.rb:149:in `setup'
-	 5: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler/runtime.rb:26:in `setup'
-	 4: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler/runtime.rb:26:in `map'
-	 3: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler/spec_set.rb:147:in `each'
-	 2: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler/spec_set.rb:147:in `each'
-	 1: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler/runtime.rb:31:in `block in setup'
+    10: from /usr/local/bin/jekyll:23:in `<main>'
+     9: from /usr/local/bin/jekyll:23:in `load'
+     8: from /Library/Ruby/Gems/2.6.0/gems/jekyll-4.0.0/exe/jekyll:11:in `<top (required)>'
+     7: from /Library/Ruby/Gems/2.6.0/gems/jekyll-4.0.0/lib/jekyll/plugin_manager.rb:52:in `require_from_bundler'
+     6: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler.rb:149:in `setup'
+     5: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler/runtime.rb:26:in `setup'
+     4: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler/runtime.rb:26:in `map'
+     3: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler/spec_set.rb:147:in `each'
+     2: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler/spec_set.rb:147:in `each'
+     1: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler/runtime.rb:31:in `block in setup'
 /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.0/lib/bundler/runtime.rb:312:in `check_for_activated_spec!': You have already activated jekyll-sass-converter 2.0.1, but your Gemfile requires jekyll-sass-converter 1.5.2. Prepending `bundle exec` to your command may solve this. (Gem::LoadError)
 ```
 

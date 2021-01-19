@@ -45,8 +45,8 @@ tags: jekyll blog html plugin
 ```
 
 - 다음 두 가지로 구분되어 있습니다.
-   - `site.related_posts`가 있는 경우
-   - `site.related_posts`가 없는 경우 
+  - `site.related_posts`가 있는 경우
+  - `site.related_posts`가 없는 경우 
 
 - 즉, `site.related_posts`를 만들어 주면 알아서 잘 찾아서 보여준다 라고 해석할 수 있겠네요. 그래서 이걸 검색해보았습니다.
 
@@ -73,14 +73,14 @@ tags: jekyll blog html plugin
 
 - `Gemfile`을 열어서 아래 부분을 넣어주고
 
-```
+```plaintext
 gem 'classifier-reborn'
 ```
 
 - 터미널에서 다음을 순서대로 수행합니다. 저는 다음만 수행했는데도 문제없이 되었습니다만, 만약 문제가 있다면 해당 링크로 들어가서 확인해보시면 좋을 것 같아요.
 
 ```bash
-$ bundle install
+bundle install
 ```
 
 ## build
@@ -102,13 +102,13 @@ gem install rb-gsl
 
 - pm 20:57분에 다시 시작해보는데, 정말 빨라지는지 모르겠군요 흠.
 
-```
+```bash
 jekyll build --lsi
 ```
 
 - 이전에는 정말 3시간이 걸려도 안 끝났는데, 이제는 2시간 조금 넘으니까 끝났습니다. 크...
 
-```
+```plaintext
 Leeseunghoonui-MacBook-Air:frhyme.github.io frhyme$ jekyll serve --lsi
 Configuration file: /Users/frhyme/frhyme.github.io/_config.yml
            Source: /Users/frhyme/frhyme.github.io
@@ -123,8 +123,7 @@ Auto-regeneration: enabled for '/Users/frhyme/frhyme.github.io'
  Server running... press ctrl-c to stop.
 ```
 
-
-## 그러나....
+## 그러나, 블로그 속도가 엄청 느려집니다
 
 - 블로그 속도가 현저하게 느려지고, 깃헙페이지에서는 이러한 related-post가 적용되지 않는 다는 것을 깨달았습니다...
 
@@ -136,13 +135,10 @@ Auto-regeneration: enabled for '/Users/frhyme/frhyme.github.io'
 
 - 다만, 이 세팅을 하고 났더니 웹페이지가 조금 늦게 열리는 것 같은 기분이 있어요. 나중에 체크해봐야할 것 같아요. 아니 확실히 늦게 열리네요. 지금 설치한 부분을 오히려 삭제하는 편이 더 좋을 수도 있을 것 같아요.
 
-
 ## reference
 
-- <https://www.classifier-reborn.com>
-- <https://jekyllrb-ko.github.io/docs/plugins/>
-- <https://jekyllrb.com/docs/configuration/>
-- <https://blog.webjeda.com/jekyll-related-posts/>
-- <https://github.com/alfanick/jekyll-related-posts>
-- <https://jekyllrb.com/docs/variables/>
-
+- [jekyll - plugins](https://jekyllrb-ko.github.io/docs/plugins/)
+- [jekyll - configuration](https://jekyllrb.com/docs/configuration/)
+- [Making Jekyll related posts really related!](https://blog.webjeda.com/jekyll-related-posts/)
+- [jekyll-related-posts](https://github.com/alfanick/jekyll-related-posts)
+- [jekyll - variables](https://jekyllrb.com/docs/variables/)

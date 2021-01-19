@@ -11,7 +11,7 @@ tags: blog jekyll markdown latex
 - 마크다운에서도 latex 을 쓸 수 있는 것으로 알고 있는데, 예전에 쓴 [marp](https://yhatt.github.io/marp/)의 경우는 latex으로 표현된 부분을 잘 렌더링해줬거든요.
 - 아래처럼 latex의 수식으로 표현하면 알아서 잘 해줬는데, Jekyll에서는 잘 안되는 것 같습니다. 아마도 제가 따로 뭐 설정을 해줘야 하는것 같네요.
 
-```
+```plaintext
 $$
 \sqrt{3x-1}+(1+x)^2
 $$

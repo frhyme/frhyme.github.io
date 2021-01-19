@@ -18,8 +18,8 @@ tags: jekyll font korean blog
 ```
 
 - `_custom.scss`에서 폰트를 설정해줍니다. 
-    - 이렇게하면 본문과 첫 페이지의 타이틀도 변경됩니다. 
-    - 스타일을 변경할 때는 가능하면 `_custom.scss`에 추가해야 이후에도 관리가 편합니다. 
+  - 이렇게하면 본문과 첫 페이지의 타이틀도 변경됩니다. 
+  - 스타일을 변경할 때는 가능하면 `_custom.scss`에 추가해야 이후에도 관리가 편합니다. 
 
 ```scss
 /* 글 본문 폰트 적용*/
@@ -80,14 +80,12 @@ div{
 @import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);//google web font added
 ```
 
-
 ## wrap-up
 
 - 블로그를 볼때마다 좀 손볼게 많을것 같은데, 일단 나중에....헤헤
 
-
 ## reference
 
-- <http://hesu.github.io/programming/jekyll/2016/04/08/jekyllblog-adding-fonts.html>
-- <https://github.com/mmistakes/minimal-mistakes/issues/1352>
-- <https://rsec.kr/?p=137>
+- [jekyll 블로그 폰트 바꾸기](http://hesu.github.io/programming/jekyll/2016/04/08/jekyllblog-adding-fonts.html)
+- [github - Can I set the font and font size](https://github.com/mmistakes/minimal-mistakes/issues/1352)
+- [HTTP, HTTPs (SSL) 로 혼합컨텐츠 (Mixed Content) 가 되었을 때 HTTPs 동작상태 확인](https://rsec.kr/?p=137)
