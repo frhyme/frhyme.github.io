@@ -21,7 +21,6 @@ tags: markdown gif
 
 - 이미지랑 같은 방식으로 표현하면 됩니다. 
 
-
 ### local에서 가져오는 경우 
 
 - 제가 임의로 만든 gif 파일입니다. 로컬에서도 똑같이 읽으면 되는데, 제가 지금 animated gif를 loop없이 만들었어요(어떻게 loop있는 상태로 만들어야 하는지 모르겠어요....)
@@ -69,8 +68,7 @@ print('complete')
 
 - 아무튼, 이전에 같은 경로에 있는 `mp4`파일의 경우는 마크다운에 담는게 잘 안되었는데, gif는 문제없이 되는군요. 앞으로 가능하면, gif파일로부터 만들어서 처리하면 될것 같아요. 
 
-![](/assets/images/markdown_img/180703_sample_gif.gif)
-
+![180703_sample_git](/assets/images/markdown_img/180703_sample_gif.gif)
 
 ### 웹 소스로부터 가져오는 경우 
 
@@ -81,16 +79,16 @@ print('complete')
 ![](https://media.giphy.com/media/MWdOAxxPDEhNKyzXVK/giphy.gif){: width="50%" height="50%"}{: .center}
 ```
 
-![](https://media.giphy.com/media/MWdOAxxPDEhNKyzXVK/giphy.gif){: width="50%" height="50%"}{: .center}
+![gif_from_web](https://media.giphy.com/media/MWdOAxxPDEhNKyzXVK/giphy.gif){: width="50%" height="50%"}{: .center}
 
 ```html
 <iframe src="https://giphy.com/embed/MWdOAxxPDEhNKyzXVK" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ionedigital-yellow-quotes-MWdOAxxPDEhNKyzXVK">via GIPHY</a></p>
 ```
 
-<iframe src="https://giphy.com/embed/MWdOAxxPDEhNKyzXVK" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ionedigital-yellow-quotes-MWdOAxxPDEhNKyzXVK">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/MWdOAxxPDEhNKyzXVK" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen>
+</iframe>
+<p><a href="https://giphy.com/gifs/ionedigital-yellow-quotes-MWdOAxxPDEhNKyzXVK">via GIPHY</a></p>
 
 ## wrap-up
 
 - gif를 루프있는 상태로 만드는 걸 정리해야할 것 같아요.
-
-
