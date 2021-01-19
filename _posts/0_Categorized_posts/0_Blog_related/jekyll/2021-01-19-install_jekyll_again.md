@@ -16,7 +16,7 @@ tags: blog jekyll ruby gem
 - 저의 경우 현재 ruby는 설치되어 있는 상황입니다. 
 
 ```bash
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % ruby -v
+$ ruby -v
 ruby 2.6.3p62 (2019-04-16 revision 67580) [universal.x86_64-darwin19]
 ```
 
@@ -25,7 +25,7 @@ ruby 2.6.3p62 (2019-04-16 revision 67580) [universal.x86_64-darwin19]
 - 이제 jekyll을 설치해보겠습니다. `gem install bundler jekyll`을 사용해서 설치해 보는데... `Gem::FilePermissionError`가 발생하는군요.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir ~ %  gem install bundler jekyll
+$ gem install bundler jekyll
 ERROR:  While executing gem ... (Gem::FilePermissionError)
     You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory.
 ```
@@ -37,7 +37,7 @@ ERROR:  While executing gem ... (Gem::FilePermissionError)
 - 따라서, `xcode-select --install`를 실행하는데...그래도 되지 않네요. 일단 소프트웨어부터 다시 업데이트하라는 말이네요 흠..
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % xcode-select --install
+$ xcode-select --install
 xcode-select: error: command line tools are already installed, use "Software Update" to install updates
 ```
 
@@ -49,9 +49,10 @@ xcode-select: error: command line tools are already installed, use "Software Upd
 - 그러나 2번 커맨드를 실행할 때 문제가 발생합니다. 저에게 해당 디렉토리를 변경할 권한이 없다는 이야기죠. 
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % brew update
+$ brew update
 Updated 2 taps (homebrew/core and homebrew/cask).
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % brew install rbenv ruby-build
+
+$ brew install rbenv ruby-build
 Updating Homebrew...
 Error: The following directories are not writable by your user:
 /usr/local/lib/pkgconfig
@@ -70,11 +71,11 @@ And make sure that your user has write permission.
 - 그리고, `brew install rbenv ruby-build`를 다시 실행해주면 잘 진행되는 것을 알 수 있죠.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir ~ %  sudo chown -R $(whoami) /usr/local/lib/pkgconfig /usr/local/share/info /usr/local/share/man/man3 /usr/local/share/man/man5
+$ sudo chown -R $(whoami) /usr/local/lib/pkgconfig /usr/local/share/info /usr/local/share/man/man3 /usr/local/share/man/man5
 ...
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % brew install rbenv ruby-build
+$ brew install rbenv ruby-build
 ... 
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % rbenv -v 
+$ rbenv -v 
 rbenv 1.1.2
 ```
 
@@ -82,7 +83,7 @@ rbenv 1.1.2
 - 그리고, 최신 버전인 3.0.0을 설치하기로 해줍니다.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % rbenv install -l
+$ rbenv install -l
 2.5.8
 2.6.6
 2.7.2
@@ -93,7 +94,7 @@ rbx-5.0
 truffleruby-20.3.0
 truffleruby+graalvm-20.3.0
 
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % rbenv install 3.0.0 
+$ rbenv install 3.0.0 
 ...
 Installed ruby-3.0.0 to /Users/seunghoonlee/.rbenv/versions/3.0.0
 ```
@@ -101,7 +102,7 @@ Installed ruby-3.0.0 to /Users/seunghoonlee/.rbenv/versions/3.0.0
 - 그다음 `rbenv versions`를 통해 현재 설치된 버전을 확인해보면, 두 버전이 존재하는 것을 알 수 있습니다.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % rbenv versions
+$ rbenv versions
 * system (set by /Users/seunghoonlee/.rbenv/version)
   3.0.0
 ```
@@ -109,8 +110,8 @@ Installed ruby-3.0.0 to /Users/seunghoonlee/.rbenv/versions/3.0.0
 - 3.0.0 버전을 global로 변경해줍니다.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % rbenv global 3.0.0
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % rbenv versions    
+$ rbenv global 3.0.0
+$ rbenv versions    
   system
 * 3.0.0 (set by /Users/seunghoonlee/.rbenv/version)
 ```
@@ -129,15 +130,15 @@ Installed ruby-3.0.0 to /Users/seunghoonlee/.rbenv/versions/3.0.0
 - 그 다음 ruby의 버전을 확인해보면 설치한 버전으로 변경된 것을 알 수 있죠.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % source ~/.zshrc
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % ruby -v   
+$ source ~/.zshrc
+$ ruby -v   
 ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-darwin19]
 ```
 
 - 이제 다시 `gem install bundler`를 실행하면 잘 설치되는 것을 알 수 있습니다.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % gem install bundler
+$ gem install bundler
 Fetching bundler-2.2.5.gem
 Successfully installed bundler-2.2.5
 Parsing documentation for bundler-2.2.5
@@ -149,13 +150,13 @@ Done installing documentation for bundler after 3 seconds
 - 그리고 다시 `gem install jekyll`를 실행합니다. 그럼 설치가 잘 되는데, 
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir ~ % gem install jekyll
+gem install jekyll
 ```
 
 - 그리고 `jekyll serve`를 실행해봤지만, `Bundler::GemNotFound`와 함께 더 진행이 되지 않습니다.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir frhyme.github.io % jekyll serve            
+$ jekyll serve            
 /Users/seunghoonlee/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/bundler-2.2.5/lib/bundler/resolver.rb:314:in `block in verify_gemfile_dependencies_are_found!': Could not find gem 'jekyll (~> 3.5)' in any of the gem sources listed in your Gemfile. (Bundler::GemNotFound)
 ```
 
@@ -164,7 +165,7 @@ Done installing documentation for bundler after 3 seconds
 - `bundle exec jekyll server`를 실행해보니, `Gemfile`에 `jekyll`에 대한 버전이 등록되어 있지 않다는 메세지가 나옵니다.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir frhyme.github.io % bundle exec jekyll serve
+$ bundle exec jekyll serve
 Could not find gem 'jekyll (~> 3.5)' in any of the gem sources listed in your Gemfile.
 Run `bundle install` to install missing gems.
 ```
@@ -172,7 +173,7 @@ Run `bundle install` to install missing gems.
 - 이번에는 `bundle install`을 실행해봅니다. 의존성을 해결하기 위해서 다른 gem들이 설치되었습니다.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir frhyme.github.io % bundle install
+$ bundle install
 Fetching gem metadata from https://rubygems.org/..........
 Fetching gem metadata from https://rubygems.org/.
 Resolving dependencies...
@@ -184,7 +185,7 @@ Bundle complete! 2 Gemfile dependencies, 38 gems now installed.
 - 오류를 잘 보면, 현재 제 로컬에서 활성화되어 있는 버전은 `i18n 1.8.7`인데, 저의 Gemfile에는 `i18n 0.9.5`가 설치되어 있다는 말이죠. 이걸 다 뜯어고치기는 어려우니까, 그냥 `bundle exec`를 앞에 붙여서 사용하면 될 거라, 라는 정도의 이야기를 하는 거죠.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir frhyme.github.io % jekyll serve
+$ jekyll serve
 /Users/seunghoonlee/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/bundler-2.2.5/lib/bundler/runtime.rb:302:in `check_for_activated_spec!': You have already activated i18n 1.8.7, but your Gemfile requires i18n 0.9.5. Prepending `bundle exec` to your command may solve this. (Gem::LoadError)
 ...
 ```
@@ -221,7 +222,7 @@ bundle install
 - 오류를 자세히 보면, `webrick`을 로드하는데 문제라는 것같네요. 
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir frhyme.github.io % bundle exec jekyll serve
+$ bundle exec jekyll serve
 Configuration file: /Users/seunghoonlee/frhyme.github.io/_config.yml
             Source: /Users/seunghoonlee/frhyme.github.io
        Destination: /Users/seunghoonlee/frhyme.github.io/_site
@@ -239,13 +240,13 @@ bundler: failed to load command: jekyll (/Users/seunghoonlee/.rbenv/versions/3.0
 - 실행한 다음 `Gemfile`을 확인해보면, `gem "webrick", "~> 1.7"`이 추가되어 있는 것을 알 수 있죠.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir frhyme.github.io % bundle add webrick
+bundle add webrick
 ```
 
 - 그리고 다시 서버를 띄우고, `localhost:4000`으로 접속해보면 잘 되는 것을 알 수 있습니다.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir frhyme.github.io % bundle exec jekyll serve --incremental
+$ bundle exec jekyll serve --incremental
 Configuration file: /Users/seunghoonlee/frhyme.github.io/_config.yml
             Source: /Users/seunghoonlee/frhyme.github.io
        Destination: /Users/seunghoonlee/frhyme.github.io/_site
