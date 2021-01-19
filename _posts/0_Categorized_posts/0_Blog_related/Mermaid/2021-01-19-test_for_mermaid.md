@@ -25,10 +25,29 @@ graph TD;
 ## Rendering Mermaid in jekyll
 
 - 저는 jekyll을 사용하고 있기 때문에, jekyll에서 mermaid를 렌더링해야 합니다.
+- jekyll에서 Mermaid를 사용하는 방법은 다음 두 가지가 있습니다.
+  - [jekyll-mermaid](https://github.com/jasonbellamy/jekyll-mermaid)
+  - [jekyll-spaceship](https://github.com/jeffreytse/jekyll-spaceship)
+- 이미 위 두 가지의 방식을 적용해봤지만, 적용되지 않는 것을 발견했습니다. 이는 제가 Github Page를 사용하고 있기 때문이며, [Github plugins - set of whitelisted plugins](https://pages.github.com/versions/)에 두 plugin이 존재하지 않기 때문입니다. 즉, github page에서는 이 두 plugin에 대해서 허용해주지 않는다는 이야기죠.
+- 따라서, plugin을 통해서는 안되고, 우회해서 진행해야 합니다.
 
-### jekyll-mermaid
+### Embedding Mermaid 
 
-- [jekyll-mermaid](https://github.com/jasonbellamy/jekyll-mermaid)는 다음과 같은 방식으로 mermaid를 작성합니다.
+- [Mermaid-js](https://mermaid-js.github.io/mermaid/#/)에 들어가보면 해당 js file의 CDN이 존재합니다.
+- 각 html 문서 앞에 아래 항목을 공통적으로 집어넣고,
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+```
+
+- html 문서 내에서 mermaid를 사용하는 경우는 다음처럼 표현해주면 될것 같습니다. 그렇게 처리한다면, 될 것 같아요. 
+
+```html
+<div class="mermaid"> 
+  graph TD; A-->B; A-->C; B-->D; C-->D; 
+</div>
+```
 
 ```plaintext
 {% raw %}{% mermaid %}
