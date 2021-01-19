@@ -1,7 +1,7 @@
 ---
-title: Mermaid Test
+title: github page에서 Mermaid를 사용하여 diagram 그리기
 category: mermaid
-tags: mermaid
+tags: mermaid jekyll github diagram javascript
 ---
 
 ## What is mermaid? 
@@ -34,14 +34,14 @@ graph TD;
 ### Embedding Mermaid 
 
 - [Mermaid-js](https://mermaid-js.github.io/mermaid/#/)에 들어가보면 해당 js file의 CDN이 존재합니다.
-- 각 html 문서 앞에 아래 항목을 공통적으로 집어넣고,
+- 각 html 문서 앞에 아래 항목을 공통적으로 집어넣습니다. 저는 `_includes\head\custom.html`에 집어넣었습니다. 그냥 `html` 문서에 공통으로 들어가는 부분에 추가해주면 되는 것이죠.
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 ```
 
-- html 문서 내에서 mermaid를 사용하는 경우는 다음처럼 표현해주면 될것 같습니다. 그렇게 처리한다면, 될 것 같아요. 
+- 그리고 html 문서 내에서 mermaid를 사용하는 경우는 다음처럼 표현해주면 됩니다.
 
 ```html
 <div class="mermaid"> 
@@ -49,12 +49,17 @@ graph TD;
 </div>
 ```
 
-
 <div class="mermaid"> 
   graph TD; A-->B; A-->C; B-->D; C-->D; 
 </div>
 
+## Wrap-up
+
+- 렌더링하는데 시간이 조금 소요되지만, 잘 되는 것으로 보입니다.
+- 조금더 빠르게 하려면, CDN에서 가져오도록 하는 것이 아니라, local에서 가져오도록 한다거나, javascript minify를 통해 처리한다거나 하면 되겠네요.
+- 다만, 좀 아쉬운 것은 항상 html 요소를 사용해서 처리해줘야 한다는 것이죠. 
 
 ## Reference
 
 - [jekyll-spaceship](https://github.com/jeffreytse/jekyll-spaceship)
+- [Mermaid-js](https://mermaid-js.github.io/mermaid/#/)
