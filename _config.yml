@@ -195,7 +195,7 @@ plugins:
   #- jemoji
   - jekyll-include-cache
   # 20210119: ADD jekyll-spaceship
-  - jekyll-spaceship
+  # - jekyll-spaceship
 
 # mimic GitHub Pages with --safe
 whitelist:

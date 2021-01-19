@@ -7,4 +7,3 @@ gem "kramdown-parser-gfm"
 gem "webrick", "~> 1.7"
 
 
-gem "jekyll-spaceship", "~> 0.9.8"
