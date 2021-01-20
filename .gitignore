@@ -1,4 +1,6 @@
-### custom 190220###
+### custom by frhyme###
+# 20210120: ADD *.pdf
+*.pdf
 
 ### Jekyll ###
 _site

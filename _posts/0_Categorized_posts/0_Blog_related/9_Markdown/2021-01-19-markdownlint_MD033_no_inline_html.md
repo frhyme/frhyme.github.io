@@ -22,6 +22,7 @@ tags: markdown markdownlint tab
 
 - 사실 그냥 Warning 정도의 메세지와 노란 색 줄이 그어져 있는 것이 좀 보기 귀찮은 것이지, 무시해도 되기는 합니다.
 - 그러나, 영 거슬린다면, `setting.json`에 다음 내용을 작성해서 집어넣으면 됩니다. 아래 code는 `<b>`에 대해서 MD033을 허용하지 않겠다는 이야기죠.
+- 아쉽게도, `class`, `id`로 허용하지는 못하고, element로만 제외할 수 있습니다. 가령 `<div class="mermaid">` 태그만을 허용하고 싶어도, `div`를 모두 허용해주는 방법밖에 없다는 것이죠.
 
 ```json
 "markdownlint.config": {

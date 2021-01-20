@@ -1,5 +1,5 @@
 ---
-title: VScode) File Explorer의 font size를 줄여 봅시다.
+title: VScode - File Explorer의 font size를 줄여 봅시다.
 category: VScode
 tags: VScode FontSize
 ---
