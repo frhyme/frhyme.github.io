@@ -17,9 +17,6 @@ The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) repr
 You can also enter decimals to adjust the zoom level with a finer granularity.
 ```
 
-```json
-```
-
 - 그러나, 이렇게 Window Zoom Level을 낮추고 나면 Explorer 뿐만 아니라 모든 윈도우의 크기가 작아지게 되죠. 앞서 말한 것처럼 저는 윈도우의 크기를 줄이고 싶지는 않거든요.
 - 따라서, font size를 좀 키워보겠습니다. 저는 13으로 세팅했습니다.
 
