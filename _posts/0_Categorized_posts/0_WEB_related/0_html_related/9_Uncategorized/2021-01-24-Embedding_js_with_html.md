@@ -6,7 +6,7 @@ tags: html javascript
 
 ## JavaScript 코드 html에 연결하기
 
-## 1 - html 내에 javascript 코드 그대로 넣기
+### 1 - html 내에 javascript 코드 그대로 넣기
 
 - 다음처럼 html 파일 내에 javascript 소스를 그대로 집어넣을 수도 있구요.
 
@@ -30,7 +30,7 @@ tags: html javascript
 </html>
 ```
 
-## 2 - html 내에 javascript 파일 경로 넣기
+### 2 - html 내에 javascript 파일 경로 넣기
 
 - 아래처럼 `test.js` 파일에는 다음을 작성하고
 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test html for a form and input</title>
+    </head>
+    <body>
+        <!--
+            method: GET or POST
+            - GET: 주소창에 data를 함께 넘기는 방법
+            - POST: data를 html body에 함께 넣어 넘기는 방법
+            action: data가 도달되어야 하는 주소를 말합니다.
+        -->
+        <form action="result.html" method="GET">
+            <!--
+                type: 값을 어떤 변수 타입으로 보낼 것인지 정의
+                name: 변수의 이름을 무엇으로 해서 보낼 것인지 정의
+            -->
+            <p>First  Input:</p><input type="text" name="firstValue"></input>
+            <p>Second Input:</p><input type="text" name="secondValue"></input>
+            <!--
+                type="password"로 정의하면,
+                값을 입력할 때 값이 숨겨집니다.
+            -->
+            <p>Password:</p><input type="password" name="password">
+
+            <!-- Radio Button -->
+            <h3> RadioButton </h3>
+            <input type="radio" name="gender" value="male"> male </input>
+            <input type="radio" name="gender" value="female"> female </input>
+            <!-- Check Box -->
+            <h3> CheckBox </h3>
+            <label><input type="checkbox" name="language" value="python">python</label>
+            <label><input type="checkbox" name="language" value="java"> Java</label>
+            <label></label><input type="checkbox" name="language" value="R"> R</label>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
