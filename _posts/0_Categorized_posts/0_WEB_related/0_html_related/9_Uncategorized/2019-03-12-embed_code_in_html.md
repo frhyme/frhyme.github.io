@@ -30,6 +30,7 @@ def temp_func():
     return ""
 </code>
 ```
+
 - 아래에서 보는 것처럼, `pre`태그는 기존의 줄바꿈, 들여쓰기등을 모두 인식하는 반면, `code`태그에서는 이 부분이 반영되어 있지 않습니다. 
 
 <pre>
@@ -44,7 +45,6 @@ import networkx as nx
 def temp_func():
     return ""
 </code>
-
 
 ## wrap-up
 
