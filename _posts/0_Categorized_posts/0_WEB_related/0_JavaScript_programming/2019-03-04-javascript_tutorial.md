@@ -7,10 +7,10 @@ tags: javascript html css
 ## why javascript suddenly
 
 - 사실 javascript까지 해야 하나 싶기는 한데, 이유는 다음과 같아요. 
-    - 웹 프로그램을 하나 만드는 중이다. 
-    - 데이터를 긁어와서 시뮬레이션을 수행하고 시뮬레이션되는 상황을 웹에 그대로 보여주고 싶다. 
-    - python의 라이브러리를 가지고 사용해봤는데 적당히 되지만, 너무 지나치게 느리다. 
-    - 그래서 d3.js를 사용해보려고 하는데, 일단 기본적인 javascript는 사용할줄 알아야 할 것 같다. 
+  - 웹 프로그램을 하나 만드는 중이다. 
+  - 데이터를 긁어와서 시뮬레이션을 수행하고 시뮬레이션되는 상황을 웹에 그대로 보여주고 싶다. 
+  - python의 라이브러리를 가지고 사용해봤는데 적당히 되지만, 너무 지나치게 느리다. 
+  - 그래서 d3.js를 사용해보려고 하는데, 일단 기본적인 javascript는 사용할줄 알아야 할 것 같다. 
 - 따라서, javascript를 좀 사용해보려고 합니다. 
 
 ## what is javascript
@@ -82,8 +82,8 @@ tags: javascript html css
 - 다만, string format에서 좀 불편함이 있는 것 같네요. 물론 아마 다른 라이브러리를 추가로 가져오면 문제가 없다는 것.
 - type을 명확하게 지정하지 않고, var을 사용해서 선언해주지만, 굳이 쓰지 않아도 알아서 먹힌다는 점에서는 Python과 유사하고. 
 - 변수에 익명함수를 넘겨서 처리할 수 있다는 장점. 함수를 argument로 받아서 처리할 수 있다는 것. 
-    - 또한 callback 함수라고 부르는 부분의 경우 higher-order function과 의미적으로 동일함. 
+  - 또한 callback 함수라고 부르는 부분의 경우 higher-order function과 의미적으로 동일함. 
 - string도 list 혹은 array로 인식됨.
 - javascript에서 객체는 python에서의 dictionary와 동일
-    - 또한 method로 사용하려면 key의 value에 익명함수를 넘겨주면 됨. 
-    - 하지만 이 경우 매번 객체의 생성자가 따로 없게 되는데, 여기서 function으로 클래스를 정의하고 내부에 생성자를 만들어서 수행하면 됨. 
+  - 또한 method로 사용하려면 key의 value에 익명함수를 넘겨주면 됨. 
+  - 하지만 이 경우 매번 객체의 생성자가 따로 없게 되는데, 여기서 function으로 클래스를 정의하고 내부에 생성자를 만들어서 수행하면 됨. 
