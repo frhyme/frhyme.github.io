@@ -1,8 +1,12 @@
 ---
-title: 
-category: 
-tags: 
+title: javascript - function
+category: javascript
+tags: javascript function
 ---
+
+## javascript - function
+
+- javascript에서 function을 정의하는 방법을 정리합니다.
 
 ```javascript
 function multiply(a, b) {

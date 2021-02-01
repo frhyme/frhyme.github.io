@@ -1,8 +1,12 @@
 ---
-title: 
-category: 
-tags: 
+title: javascript - for loop
+category: javascript
+tags: javascript for 
 ---
+
+## javascript - for loop
+
+- javascript의 for loop를 사용하는 방법을 정리하였습니다 
 
 ```javascript
 lst = ['A', 'B', 'C']

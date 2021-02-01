@@ -1,3 +1,14 @@
+---
+title: Javascript - class List
+category: javascript
+tags: javascript programming selector DOM class
+---
+
+## Javascript - class List
+
+- html 특정 요소에게 속한 class들을 수정하는 방법을 정리하였습니다.
+
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,3 +41,4 @@
         </script>
     </body>
 </html>
+```
