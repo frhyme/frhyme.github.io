@@ -86,4 +86,4 @@ tags: javascript html css
 - string도 list 혹은 array로 인식됨.
 - javascript에서 객체는 python에서의 dictionary와 동일
   - 또한 method로 사용하려면 key의 value에 익명함수를 넘겨주면 됨. 
-  - 하지만 이 경우 매번 객체의 생성자가 따로 없게 되는데, 여기서 function으로 클래스를 정의하고 내부에 생성자를 만들어서 수행하면 됨. 
+  - 하지만 이 경우 매번 객체의 생성자가 따로 없게 되는데, 여기서 function으로 클래스를 정의하고 내부에 생성자를 만들어서 수행하면 됨.
