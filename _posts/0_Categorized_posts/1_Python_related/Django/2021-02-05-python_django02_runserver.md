@@ -23,15 +23,15 @@ tags: python programming django web backend MVC server
     - Controller(Views.py)에서 View로 parameter를 전달할 수 있습니다.
     이 때, parameter는 dictionary로 넘어오는데 그 때 'param1'을 key로 쓰는 애를 가져옵니다.
     -->
-    <h2> param1 {{param1}} </h2>
+    <h2> param1 {%raw%}{{param1}}{%endraw%} </h2>
     <p>index.html DjangoProj1 > App1 > templates > App1</p>
     <ul>
     <!--
     - for 문은 다음처럼 쓸 수 있습니다.
     -->
-    {% for x in paramLst %}
+    {%raw%}{% for x in paramLst %}{%endraw%}
         <li>x: {{ x }}</li>
-    {% endfor %}
+    {%raw%}{% endfor %}{%endraw%}
     </ul>
 </body>
 ```
