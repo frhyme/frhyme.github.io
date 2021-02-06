@@ -28,7 +28,7 @@ tags: python programming django web template tag
 </table>
 ```
 
-- 이 때는 아래 처럼 `{% include html_file_path %}`를 사용해서 넣어주면 됩니다.
+- 이 때는 아래 처럼 `{% raw %}{% include html_file_path %}{% endraw %}`를 사용해서 넣어주면 됩니다.
 
 ```html
 <!DOCTYPE html>

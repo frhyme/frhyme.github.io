@@ -32,6 +32,7 @@ tags: python programming django web template tag
 ```
 
 - `child.html`은 다음처럼 정의됩니다. `base.html`을 extends하고, 앞서 정의한 `block1`, `block2`를 대체해 줍니다.
+- `block.super`를 사용하면, block에 원래 정의되어 있는 default 를 가져옵니다.
 
 ```html
 {% raw %}{% extends "./base.html" %}{% endraw %}
@@ -41,6 +42,7 @@ This ic Child html
 {% endblock %}{% endraw %}
 
 {% raw %}{% block block1 %}
+{{block.super}}
 This is Block11111
 {% endblock %}{% endraw %}
 ```
