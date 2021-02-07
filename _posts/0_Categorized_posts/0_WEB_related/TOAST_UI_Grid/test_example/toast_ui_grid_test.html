@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- ADD Toast Grid -->
+        <link rel="stylesheet" href="https://uicdn.toast.com/grid/latest/tui-grid.css" />
+        <script src="https://uicdn.toast.com/grid/latest/tui-grid.js"></script>
+        <script>
+            setTimeout(
+                function drawGrid() {
+                    var Grid = tui.Grid;
+                    const grid = new Grid({
+                        el: document.getElementById('grid'),
+                        /* 
+                        column을 정의해줍니다.
+                        - header: 테이블에 표시될 칼럼 명
+                        - name: data에서 넘어올 ID
+                        */
+                        columns: [
+                            {
+                                header: 'colA_name', name: 'colA_ID'
+                            },
+                            {
+                                header: 'colB_name', name: 'colB_ID'
+                            }, 
+                            {
+                                header: 'colC_name', name: 'colC_ID'
+                            }
+                        ], 
+                        data: []
+                    });
+                    /*
+                    */
+                    data = [
+                        {
+                            colA_ID: 'colA_val1',
+                            colB_ID: 'colB_val1', 
+                            colC_ID: 'colC_val1'
+                        },
+                        {
+                            colA_ID: 'colA_val2',
+                            colB_ID: 'colB_val2', 
+                            colC_ID: 'colC_val2'
+                        }
+                    ];
+                    grid.resetData(data);
+                    Grid.applyTheme('striped'); 
+                }, 
+                1000
+            );
+        </script>
+        
+        
+    </head>    
+    <body>
+        <h3> Test Table </h3>
+        <div id="grid"></div>
+        <p> Table End </p>
+    </body>
+</html>
