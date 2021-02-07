@@ -14,7 +14,7 @@ tags: python programming django web backend server css
 <!-- static 경로에 있는 파일들을 가져온다. -->
 {% raw %}{% load static %}{% endraw %}
 <!-- static 경로 아래의 css/base.css 파일을 가져온다. -->
-<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" href="{% raw %}{% static 'css/base.css' %}{% endraw %}">
 ```
 
 - 그리고 `base.css` 파일을 만들어 줍니다. 저는 `DjangoProj1 > staticFolderName > css > base.css`에 만들어 줍니다.
