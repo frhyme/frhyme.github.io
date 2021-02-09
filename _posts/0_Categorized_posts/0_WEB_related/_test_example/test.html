@@ -2,27 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <script>
-            function functionA() {
-                console.log("TrueTrueTrue");
-            }
-            function functionB() {
-                console.log("FalseFalseFalse");
-            }
-            let promise = new Promise(
-                function(resolve, reject) {
-                    if (myFriendHasApprovedMyPosition) {
-                        resolve("Hooray! Now I'm a true programmer!");
-                        console.log("TrueTrueTrue");
-                    } else {
-                        reject(new Error("Whoops! Have to study more =("));
-                        console.log("FalseFalseFalse")
-                    }
-                }
-            );
-            const myFriendHasApprovedMyPosition = true;
-        </script>
+        <div class="hoverVisible">
+            hover visible
+        </div>
     </body>
 </html>

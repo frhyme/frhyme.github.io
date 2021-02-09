@@ -1,12 +1,12 @@
-div {
-    width:400px;
-    height:200px;
-    background-color: red;
-    font-size: 20px;
-}
-p {
-    width:75%;
-    height:150%;
-    font-size: 2em; /* 200%와 같음*/;
+.hoverVisible {
+    width: 200px;
+    height: 200px;
+    color: white;
     background-color: blue;
+    font-size: 20px;
+    visibility: visible;
+}
+
+.hoverVisible:hover {
+    visibility: hidden;
 }
