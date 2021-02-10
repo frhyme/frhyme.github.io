@@ -1,7 +1,7 @@
 ---
 title: jQuery - Traversal - Filter
 category: jQuery
-tags: jQuery javascript html web css html
+tags: jQuery javascript html web css html DOM
 ---
 
 ## jQuery - Traversal - Filter

@@ -67,7 +67,7 @@ gradlew build
 - 아래와 같이 우리가 설정한 것에 맞춰서 Build되죠.
 
 ```plaintext
-(base) seunghoonlee@seunghoonui-MacBookAir demo % ./gradlew build
+$ ./gradlew build
 Downloading https://services.gradle.org/distributions/gradle-6.6.1-bin.zip
 .........10%..........20%..........30%..........40%.........50%..........60%..........70%..........80%..........90%.........100%
 
