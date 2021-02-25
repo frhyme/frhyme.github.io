@@ -2,11 +2,34 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="hoverVisible">
-            hover visible
-        </div>
+        <script>
+            console.log("== script Start")
+            
+            
+            function resolve_func() {
+                console.log("== resolve_func")
+            }
+            function reject_func() {
+                console.log("== reject_func")
+            }
+            
+            var promise = new Promise(function(resolve_func, reject_func) {
+                console.log("==== promise start ")
+                if (trueOrFalse) {
+                    console.log("aaa")
+                    resolve_func()
+                } else {
+                    console.log("bb")
+                    reject_func()
+                }
+                console.log("==== promise end ")
+            })
+            var trueOrFalse = true;
+            promise.catch()
+            //promise.then();
+            console.log("== script end == ")
+        </script>
     </body>
 </html>
