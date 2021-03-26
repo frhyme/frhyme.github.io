@@ -1,6 +1,6 @@
 ---
 title: mongoDB - Install mongoDB on macOS
-category: others
+category: mongoDB
 tags: database sql nosql mongodb macOS brew 
 ---
 
