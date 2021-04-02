@@ -1,7 +1,7 @@
 ---
 title: Google Apps Script - Intro
 category: google
-tags: google javascript google_sheet macro
+tags: google javascript google_sheet macro GoogleAppsScript
 ---
 
 ## Google Apps Script - Intro
