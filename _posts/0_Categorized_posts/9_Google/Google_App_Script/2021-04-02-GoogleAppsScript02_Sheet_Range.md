@@ -1,7 +1,7 @@
 ---
 title: Google Apps Script - Range
 category: google
-tags: google javascript google_sheet macro
+tags: google javascript google_sheet macro GoogleAppsScript
 ---
 
 ## Google Apps Script - Range

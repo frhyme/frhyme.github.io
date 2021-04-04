@@ -1,10 +1,10 @@
 ---
 title: Google Apps Script - Get spreadsheed, set sheet Name
 category: google
-tags: google javascript google_sheet macro
+tags: google javascript google_sheet macro GoogleAppsScript
 ---
 
-## Google Apps Script - Sheet
+## Google Apps Script - Get spreadsheed, set sheet Name
 
 ### Get spreadsheet by its ID
 
@@ -34,7 +34,7 @@ function myFunction() {
 - 이렇게 하는 것도 좋은데, 저는 `.getActive()`와 같은 방식으로 시트 파일을 가리키도록 하는 것이 좀 불안해요. 만약 실수로라도 다른 파일을 편집하게 되면 안되니까요.
 - 구글 시트 파일의 URL을 보면 보통 다음과 같이 구성되어 있습니다.
 
-```url
+```plaintext
 https://docs.google.com/spreadsheets/d/<SheetFileID>/edit#gid=<SheetID>
 ```
 
