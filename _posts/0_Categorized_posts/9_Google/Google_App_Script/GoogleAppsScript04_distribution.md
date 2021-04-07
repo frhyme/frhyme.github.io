@@ -1,44 +1,70 @@
 ---
-title: Google Apps Script - 배포하기
+title: Google Apps Script - Google Sheet의 데이터를 python으로 보내기
 category: google
 tags: google javascript google_sheet macro GoogleAppsScript
 ---
 
-## Google Apps Script - 배포하기
+## Google Apps Script - Google Sheet의 데이터를 python으로 보내기
 
-- Google Apps Script로 만든 함수를 외부에 배포할 수 있습니다.
-- 제가 주로 쓰는 언어는 python이고, python code 상에서 구글 시트에 저장된 정보를 가져와서 사용하려면 번거롭습니다.
-- 오늘 해보려는 것은 구글 시트 내에 있는 데이터를 읽고, 이를 외부에서 사용가능하도록 json등의 형태로 보내줄 수 있도록 하려고 해요.
-  1. 구글 시트에서 Google Apps Script를 사용해서 내부의 시트 데이터를 읽고 json의 형태로 전송해주는 API를 만듬
-  2. python 코드에서 해당 API에 접속해서 json 데이터를 가져옴.
-  3. 분석 다다다 
-- 해보자.
+- Google Apps Script를 사용하여 google sheet의 데이터를 python에서 손쉽게 받아볼 수 있도록 해주려고 합니다.
+- 제가 주로 쓰는 언어는 python이고, python code 상에서 구글 시트에 저장된 정보를 가져오는 것은 꽤 번거롭습니다.
+- [gspread](https://gspread.readthedocs.io/en/latest/)를 사용해도 되는데, 제 기억에는 별로 코드가 깔끔해지지 않았어요.
+- 따라서, 오늘 해보려는 것은 구글 시트 내에 있는 데이터를 읽고, 이를 외부에서 사용가능하도록 json등의 형태로 보내줄 수 있도록 하려고 해요.
 
+### doGet, doPost 함수 정의
+
+- python과 Google Apps Script는 서로 http를 통해 연결됩니다.
+- 이를 위해 Google Apps Script 내에 `doGet()` 함수와 `doPost()` 함수를 만듭니다.
 
 ```javascript
 function doGet(e) {
   // Get방식에 대해서 대응하는 함수
-  Logger.log(e)
+  // e: 전달받은 데이터.
   var spreadsheet = SpreadsheetApp.getActive()
   var sheet = spreadsheet.getSheetByName("시트1")
 
-  var returnArr = [1, 25, 3]
-  Logger.log(returnArr)
-  Logger.log(JSON.stringify(returnArr))
-  // 
+  // 일단은 그냥 [1, 2, 3]과 같은 간단한 데이터를 보낸다고 할게요.
+  var returnArr = [1, 2, 3]
+
+  // HtmlService.createHtmlOutput()를 사용해서 보내려는 데이터를 감싸줍니다.
   return HtmlService.createHtmlOutput(JSON.stringify(returnArr))
   //
 }
 
 function doPost(e) {
   // post 방식에 대해서 대응하는 방식
+  // 일단은 따로 만들지 않았습니다.
 }
 ```
 
-- python에서 해당 web app에 접속해서 json된 자료를 가져오려면 어떻게 해야하나.
-- `requests`라는 라이브러리르 쓰면 될것 같은데 흠.
+- 그 다음, 배포 > 새 배포 > '웹 앱'을 선택하고 '배포' 버튼을 꾹 눌러 줍니다.
+- 그럼 다음과 같은 형태의 URL이 만들어지죠. 권한이 구글 계정에 종속되어 있기 때문에, 다른 사람이 해당 URL에 접속한다고 해서 뭘 할수는 없습니다.
 
-## 배포 유형 
+```plaintext
+https://script.google.com/macros/s/.......
+```
+
+- 그냥 만들어진 URL을 웹 브라우저 주소창에 쳐도 뭐 됩니다. 그럼 일단 제대로 만들어졌는지 확인할 수는 있죠.
+
+### python code 
+
+- 저는 python에서 `requests` 라이브러리를 사용하여, 해당 URL에 접속해서 데이터를 가져와 보겠습니다. 
+
+```python
+code...
+```
+
+- code 자체는 잘못된 게 없는데, 데이터가 긁어와지지 않습니다.
+- 웹 브라우저에서는 되는데, python에서는 안되는 것은 python에서 접속할 때, 얘에게 접근 권한이 없기 때문이죠. 웹 브라우저에서는 이미 Google에 로그인된 상태이기 때문에, 아무 문제없이 해당 URL에 접속할 수 있지만, python에서는 그 부분이 해결되지 않은 것이죠.
+- 과거에는 "익명"도 접근할 수 있도록 해준 것 같은데, 현재는 반드시 구글 ID가 있는 사람에게만 허용해주는 것 같아요.
+
+## Issue
+
+- 데이터는 구글 시트에 저장하고, 분석은 python에서 함. 구글 시트의 파일을 다운받아서 그 파일을 분석해도 되기는 하는데, 그보다는 구글 시트를 서버처럼 굴리면서 바로 데이터를 전송해주는 형태로 해주고 싶음. 그게 좀 더 seamless함.
+- 그냥 크롬 브라우저를 사용하면 될 줄 알았는데 그렇지 않음.
+
+
+## 배포 유형 이제
 
 - 배포는 다음과 같은 4가지 유형으로 나뉜다. 우선 이 4가지의 차이를 알아야 하고. 
   - 웹 앱
