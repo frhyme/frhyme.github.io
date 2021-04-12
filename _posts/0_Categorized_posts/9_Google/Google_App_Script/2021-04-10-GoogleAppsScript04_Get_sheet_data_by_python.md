@@ -1,10 +1,10 @@
 ---
-title: Google Apps Script - Google Apps Script API 사용하기
+title: Google Apps Script - Google Apps Script API 사용하기(Again)
 category: google
 tags: google javascript google_sheet macro GoogleAppsScript GCP 
 ---
 
-## Google Apps Script - Google Apps Script API 사용하기
+## Google Apps Script - Google Apps Script API 사용하기(Again)
 
 - python에서 Google Apps Script에 정의된 함수에 접근하여 사용하는 방법을 정리합니다.
 - 좀더 풀어서 말하면 Google Cloud Platform에서 Google Apps Script API를 사용할 수 있도록 정의하고, python에서 이미 Google Apps Script 정의된 함수에 접근하는 것을 해봅니다.

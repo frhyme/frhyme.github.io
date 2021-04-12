@@ -4,6 +4,13 @@ category: google
 tags: google javascript google_sheet macro GoogleAppsScript
 ---
 
+## Issue
+
+- Google Apps Script에서 "배포"를 사용해서 처리해줘도 될것 같은데, 이 부분이 잘 해결되지 않아서 일단 넘어갔다.
+- Google Apps Script에서 "배포"를 통해 URL에 접근하는 것은 브라우저를 통한 정상적인 접근만이 가능한 것으로 보임. 브라우저를 통해 본인이 해당 URL에 접근 가능하다는 것을 인증해야 하기 때문으로 보임. 
+
+- 나중에 언젠가 풀어보자 호호.
+
 ## Google Apps Script - Google Sheet의 데이터를 python으로 보내기
 
 - Google Apps Script를 사용하여 google sheet의 데이터를 python에서 손쉽게 받아볼 수 있도록 해주려고 합니다.
