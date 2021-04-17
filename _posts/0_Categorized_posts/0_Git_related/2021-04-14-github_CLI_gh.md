@@ -47,15 +47,44 @@ zsh completions have been installed to:
 ```
 
 - 이제 repo를 clone하려고 했는데, 로그인을 하라고 합니다.
+- `gh auth login`: 로그인을 합니다.
+  - 처음에는 SSH protocol을 사용했는데, 에러가 발생해서 재고르인하여 HTTPS protocol을 사용하는 것으로 변경하였더니 잘 되었습니다.
+- `gh repo clone repo_name`: repo를 가져옵니다. 잘 가져와집니다. 호호.
 
-```
-$ gh repo clone e9t/nsmc                                                               ✔  ⚙  1245  19:10:18
+```bash
+$ gh repo clone e9t/nsmc
 Welcome to GitHub CLI!
 
 To authenticate, please run `gh auth login`.
 
+$ gh auth login
+? What account do you want to log into? GitHub.com
+? You're already logged into github.com. Do you want to re-authenticate? Yes
+? What is your preferred protocol for Git operations? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
 
+! First copy your one-time code: ####-####
+- Press Enter to open github.com in your browser... 
+✓ Authentication complete. Press Enter to continue...
+
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as user_name
+
+$ gh repo clone ...
+Cloning into '...'...
+remote: Enumerating objects: 14763, done.
+remote: Total 14763 (delta 0), reused 0 (delta 0), pack-reused 14763
+Receiving objects: 100% (14763/14763), 56.19 MiB | 22.30 MiB/s, done.
+Resolving deltas: 100% (1749/1749), done.
+Updating files: 100% (14737/14737), done.
 ```
+
+## Wrap-up
+
+- github에서만 제공되던 기능들인 pull request, issue들을 CLI에서도 처리할 수 있도록 해준 기능이기는 한데, 저는 아직까지는 이게 반드시 필요한지 잘 모르겠네요.
+- 사실 저는 맨날 혼자 프로그래밍을 하기 때문에, 혼자 `git`을 사용하고....따라서 conflict가 발생하는 일이 없고...issue도 없고...pull request도 당연히 없고....그래서 필요가 없지만, 앞으로는 `clone repo`를 위해서 gh를 사용해야 하기 때문에 다음과 같이 정리해봤습니다 하하.
 
 ## Reference
 
