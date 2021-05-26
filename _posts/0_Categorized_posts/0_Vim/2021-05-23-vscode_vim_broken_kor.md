@@ -14,7 +14,6 @@ tags: vscode vim markdown
 
 - 처음에는, [vscode에서 vim 플러그인 사용시 한글 입력 문제](https://www.clien.net/service/board/lecture/15827635)에서도 비슷한 경우가 있는 것으로 보여서, vs code vim plugin 문제인 것으로 보였습니다. 그런데, 흥미롭게도, 확장자명이 `.md`인 파일에서만 이런 일이 발생합니다. 다른 파일에서는 이런 일이 발생하지 않죠.
 - `setting.json`에서는 특별한 문제를 발견하지 못하여서, 혹시나 싶어, extension인 markdown all in one을 해제했더니, 해당 이슈가 발생하지 않습니다.
-- 또한, 저는 markdown preview로는 
 
 ## markdown env setting
 
