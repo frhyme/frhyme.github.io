@@ -1,7 +1,7 @@
 ---
 title: C에서 enum 사용하는 이유
-category: 
-tags: 
+category: C_programming
+tags: C programming macOS C_programming
 ---
 
 ## Why Enum?

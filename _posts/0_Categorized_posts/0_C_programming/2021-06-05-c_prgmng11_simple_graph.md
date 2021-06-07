@@ -1,3 +1,15 @@
+---
+title: C - Data Structure - Graph 
+category: C_programming 
+tags: C_programming c DataStructure Graph C
+---
+
+## C - Data Structure - Graph 
+
+- 간단하게, c로 Graph를 구현해봤습니다. Adjancency Matrix를 사용해서 구현하였습니다.
+- 다만, adjancency matrix의 특성상 node size가 커질수록 낭비되는 메모리의 양이 많다는 것이 문제죠. 이걸 해결하려면, linked list로 처리해주면 됩니다만, 그렇게 처리할 경우에는, edge 존재하는지 파악하기 어려워진다는 단점이 있긴 하죠.
+
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -156,3 +168,4 @@ int main(void) {
 
     return 0;
 }
+```
