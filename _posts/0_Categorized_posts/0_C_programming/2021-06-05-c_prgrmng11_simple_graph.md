@@ -1,7 +1,7 @@
 ---
-title: C - Data Structure - Graph 
-category: C_programming 
-tags: C_programming c DataStructure Graph C
+title: c - data structure - graph 
+category: c_programming 
+tags: c_programming c datastructure graph c
 ---
 
 ## C - Data Structure - Graph 

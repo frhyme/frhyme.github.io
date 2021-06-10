@@ -65,7 +65,7 @@ void merge_sort(int* arr, int l, int r) {
     int size = r - l + 1;
     if (size > 2) {
         /*
-        - 
+        - 왼쪽 정렬 > 오른쪽 정렬 > 합체 의 순으로 진행되어야 함.
         */
         int p = (r + l) / 2;
         merge_sort(arr, l, p);
