@@ -4,7 +4,7 @@ category: python-libs
 tags: python python-libs selenium data-crawling networkx centrality
 ---
 
-## 한국 힙합씬 피쳐링 네트워크 분석. 
+## 한국 힙합씬 피쳐링 네트워크 분석 
 
 - 저는 대상/현상을 네트워크로 모델링하고 네트워크 적인 분석 법을 사용하여 대상 네트워크를 분석하는 일을 주로 수행합니다. 그리고, 그러다보니, 세상의 많은 현상들을 결국 "네트워크"적으로 바라보게 되죠. 
 - 동시에 저는, 한국 힙합의 오랜 팬이기도 합니다. 힙합음악의 흥미로운 점은, 여러 뮤지션들이 다른 뮤지션들의 음악에 협업의 이름으로 참가하는 일이 매우 활발하다는 것이죠. 
@@ -20,7 +20,7 @@ tags: python python-libs selenium data-crawling networkx centrality
 ## 보다 자세한 분석 과정
 
 - 코드를 포함한 보다 자세한 분석 과정은 다음의 세 편의 글들로 나누어 정리하였습니다. 
-    - 1) [한국 힙합씬 피쳐링 네트워크 분석 - 1편 - Data Collection](https://frhyme.github.io/python-libs/0_data_collection/)
-    - 2) [한국 힙합씬 피쳐링 네트워크 분석 - 2편 - Data Collection Wisely](https://frhyme.github.io/python-libs/1_data_collection_wisely/)
-    - 3) [한국 힙합씬 피쳐링 네트워크 분석 - 3편 - Data Analysis](https://frhyme.github.io/python-libs/2_data_analysis/)
+  - 1) [한국 힙합씬 피쳐링 네트워크 분석 - 1편 - Data Collection](https://frhyme.github.io/python-libs/0_data_collection/)
+  - 2) [한국 힙합씬 피쳐링 네트워크 분석 - 2편 - Data Collection Wisely](https://frhyme.github.io/python-libs/Korean_hiphop_colab_network_anaysis_1_data_collection_wisely/)
+  - 3) [한국 힙합씬 피쳐링 네트워크 분석 - 3편 - Data Analysis](https://frhyme.github.io/python-libs/Korean_hiphop_colab_network_anaysis_2_data_analysis/)
 - 혹시 글들을 읽으시고 궁금하실 경우에는 제 개인 메일로 메일을 주시면 감사하겠습니다.

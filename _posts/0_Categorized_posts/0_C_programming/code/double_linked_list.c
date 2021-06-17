@@ -33,6 +33,7 @@ DoubleLinkedList* init_dll() {
 }
 
 void add_dll(DoubleLinkedList* dll, int node_id, int value) {
+    // 
     NODE* prev_tail = dll->empty_tail->prev;
     NODE* temp_node = new_node(node_id, value);
     prev_tail->next = temp_node;
@@ -128,7 +129,3 @@ int main(void) {
     swap_node(dll, 0, 4);
     print_dll_from_head(dll);
 }
-
-
-
-
