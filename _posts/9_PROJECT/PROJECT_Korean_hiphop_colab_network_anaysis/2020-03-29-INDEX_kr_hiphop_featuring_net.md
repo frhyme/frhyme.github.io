@@ -20,7 +20,7 @@ tags: python python-libs selenium data-crawling networkx centrality
 ## 보다 자세한 분석 과정
 
 - 코드를 포함한 보다 자세한 분석 과정은 다음의 세 편의 글들로 나누어 정리하였습니다. 
-  - 1) [한국 힙합씬 피쳐링 네트워크 분석 - 1편 - Data Collection](https://frhyme.github.io/python-libs/0_data_collection/)
+  - 1) [한국 힙합씬 피쳐링 네트워크 분석 - 1편 - Data Collection](https://frhyme.github.io/python-libs/Korean_hiphop_colab_network_anaysis_0_data_collection/)
   - 2) [한국 힙합씬 피쳐링 네트워크 분석 - 2편 - Data Collection Wisely](https://frhyme.github.io/python-libs/Korean_hiphop_colab_network_anaysis_1_data_collection_wisely/)
   - 3) [한국 힙합씬 피쳐링 네트워크 분석 - 3편 - Data Analysis](https://frhyme.github.io/python-libs/Korean_hiphop_colab_network_anaysis_2_data_analysis/)
 - 혹시 글들을 읽으시고 궁금하실 경우에는 제 개인 메일로 메일을 주시면 감사하겠습니다.
