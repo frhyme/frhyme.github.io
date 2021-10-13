@@ -10,13 +10,7 @@ tags: google javascript GoogleSlides macro GoogleAppsScript
 - 따라서, 오늘은 간단한 bar chart의 형태를 하나하나 모양을 추가하면서 만드는 코드를 정리하였습니다.
 
 ```js
-function myFunction() {
-  // presentation을 엽니다.
-  var slideId = '';
-  var presentation = SlidesApp.openById(slideId)
-  var targetSlide = presentation.getSlides()[2]
-
-  var leftStart = 10;
+function myFunction() { // presentation을 엽니다.  var slideId = ''; var presentation = SlidesApp.openById(slideId) var targetSlide = presentation.getSlides()[2] var leftStart = 10;
   var topStart = 100;
   var eachShapeWidth = 6;
   var betweenShapeWidth = 2;
