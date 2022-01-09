@@ -1,16 +1,23 @@
 ---
-title: vim 13 - Install YouCompleteME
+title: vim 13 - Install YouCompleteME - 실패기
 category: vim
-tags: vi vim python jedi plugin vundle
+tags: vi vim python jedi plugin vundle YCM YouCompleteMe
 ---
 
-- .vimrc 파일 내에 Vundle에 YouCompleteMe를 등록해준다.
+## vim 13 - Install YouCompleteME - 실패기
+
+- Vim에서 프로그래밍을 하기 위해, AutoComplete Plugin 인 [github - YouCompleteme - Installation](https://github.com/ycm-core/YouCompleteMe#installation)를 설치하려고 하였으나, 결국은 되지 않아서 그 실패기를 정리합니다.
+- macOS Monterey(12.1)에 설치를 시도했으며, 결국은 되지 않았습니다. 해당 이슈는 맥북에서만 빈번하게 등장하는 이슈인 것으로 보이기는 하는데요.
+
+### Install YouCompleteMe - Try
+
+- Vundle을 이용해서 설치하기 위해 `.vimrc` 파일 내에 아래와 같이 YouCompleteMe를 등록해줍니다.
 
 ```bash
 Plugin 'Valloric/YouCompleteMe'
 ```
 
-- PluginInstall 을 사용하여 설치가 완료되면 다음과 같이 YouCompleteMe를 Compile해줘야 한다는 메세지가 뜹니다. 지금은 안하고 나중에 할거에요.
+- 그리고, `:PluginInstall`을 사용하여 설칙를 완료하면, 다음과 같이 YouCompleteMe를 Compile해줘야 한다는 메세지가 뜹니다. 지금은 안하고, 나중에 할거에요.
 
 ```bash
 The ycmd server SHUT DOWN (restart with ':YcmRestartServer'). YCM core library not detected; you need to compile YCM before using it. Follow the instructions in the documentation.
@@ -24,7 +31,6 @@ $ brew install nodejs
 ```
 
 - 둘다 설치 완료했구요.
-
 - mono라고 하는, .NET Framework 도 설치하라는데...얘는 맥 인텔 칩이냐, M1 칩이냐 에 따라서 조금 다른 것 같기는 합니다. 아무튼, 뭐 얘도 설치해보겠습니다.
 
 ```bash
@@ -65,15 +71,7 @@ $ vi .ycm_extra_conf.py
 # The ycmd server SHUT DOWN (restart with ':YcmRestartServer'). Unexpected exit code -6. Type ':YcmToggleLogs ycmd_63006_stderr_hdwr32nn.log' to check the logs.
 ```
 
-- 파일을 열 때마다 아래 메세지가 뜨는데 흠 
-
-```
-The ycmd server SHUT DOWN (restart with ':YcmRestartServer'). Unexpected exit code -6. Type ':YcmToggleLogs ycmd_63090_stderr_cp3kz28g.log' to check the logs.
-```
-
-
-- 이런 경우 버전의 문제가 있을 수도 있어서, 재설치해주는 게 좋다는 의견이 있어 재설치를 하기로 한다.
-
+- 이런 경우 버전의 문제가 있을 수도 있어서, 재설치해주는 게 좋다는 의견이 있어 재설치를 하기로 합니다.
 
 ```bash
 $ cd ~/.vim/bundle/YouCompleteMe
@@ -95,13 +93,16 @@ Already up to date.
 $ ./install.py
 ```
 
+- PluginClean을 해보기도 하였지만, 잘 안됩니다.
 
+```vim
 :PluginClean
+```
 
+### YMCD Start Manually - Failed
 
-- 그래도 계속 안되어서 아래 링크에 있는 내용을 참조하여 진행하기로 했다.
-https://github.com/ycm-core/YouCompleteMe/wiki/Troubleshooting-steps-for-ycmd-server-SHUT-DOWN
-
+- 그래도 계속 안되어서 [github - YouCompleteMe - Wiki - Troubleshooting steps for ycmd server shut down](https://github.com/ycm-core/YouCompleteMe/wiki/Troubleshooting-steps-for-ycmd-server-SHUT-DOWN)을 참고해서 진행해 봅니다.
+- ycmd 서버를 직접 구동해보려고 하는 것인데요, 아래의 오류와 함께 진행되지 않습니다. `PyMUTEX_LOCK`에서 오류가 발생하였는데요.
 
 ```bash
 $ cd /path/to/YouCompleteMe/third_party/ycmd/
@@ -116,43 +117,29 @@ Fatal Python error: PyMUTEX_LOCK(_PyRuntime.ceval.gil.mutex) failed
 [1]    73254 abort      python3 ycmd --options_file=default_settings.json
 ```
 
-- 직접 ymcd를 띄워보려고 하는데요, 띄워지지 않았음. 위 에러인 `PyMUTEX_LOCK` 문제는, macOS에서 Conda가 실행될 때만 발생하는 문제점이라고 알려져 있씁니다
+- 직접 ymcd를 띄워보려고 하는데요, 띄워지지 않았습니다. 위 에러인 `PyMUTEX_LOCK` 문제는, macOS에서 Conda가 실행될 때만 발생하는 문제점이라고 알려져 있씁니다.
+- 발생한 곳은 다르지만, [[BUG] Fatal Python error: PyMUTEX_LOCK(gil->mutex) failed #3081](https://github.com/pybind/pybind11/issues/3081)를 참고해보면, 다음과 같이, macOS에서 conde python으로 돌릴 때 발생하는 문제, 라는 말이 있죠.
+- conda에서 사용하는 clang은 버전10인데 반해, 설치된 python의 경우 clang11을 사용하여 발생한다는 말인 것 같습니다.
 
-
-- 발생한 곳은 다르지만, [[BUG] Fatal Python error: PyMUTEX_LOCK(gil->mutex) failed #3081](https://github.com/pybind/pybind11/issues/3081)를 참고해보면, 다음과 같은 내용이 있습니다.
-
-```
+```plaintext
 This only seems to appear when using conda's python on Mac OS. I haven't reproduced it elsewhere. Suspect that python is built with clang 10 from conda, while the python package in question is built with clang11, and some incompatibility arises.
 ```
 
-## 정리
+- MUTEX는 MUTually EXclusive의 약자로, 병렬 처리시 발생하는 문제를 막기 위해서 두 쓰레드(혹은 프로세스)가 동시에 접근하지 못하도록 처리하는 메커니즘이라고 보시면 됩니다. Python의 경우는 하나의 프로세스 내에서 단 1개의 Thread에서만 Interpreter를 사용할 수 있습니다. 이걸 GIL(Global Interpreter Lock)이라고 하며, Python에서 사용하는 MUTEX 메커니즘인 것으로 파악되네요.
+- 모든 python implementation(구현체)에서 GIL이 존재하는 것은 아니고, CPython에서만 GIL이 존재하는 것으로 알고 있습니다.
+- guswo 
 
-- 현재 제가 사용하고 있는 python의 버전은 3.7.6이고, Clang은 4.0.1 이라고 나옵니다.
-- clang은 맥에서 기본으로 사용하고 있는 compiler임. 그리고, Clang은 LLVL의 메인 프론트엔드를 담당하며, 소스 코드(c, c++, python 등)을 LLVM IR(Intermediate Representaion)으로 변환해준다. 즉, 컴파일러라고 생각하면 된다.
-- 뮤텍스(MutEx)는 "한 쓰레드에 여러 개의 CPU 연산을 행하다가 내부 데이터가 오염되지 않도록 방지하는 GIL"을 의미하는 것으로 보인다.
+### Python, Clang Version 
 
-## 20220104 
+- clang은 맥에서 기본으로 사용하고 있는 compiler이며, LLVM의 메인 프론트엔드를 담당합니다. 소스 코드(c, c++, python 등)을 LLVM IR(Intermediate Representaion)으로 변환해 주죠. 
+- Anaconda를 사용하여 설치한, python에서 사용하는 clang은 4.0.1인데, Apple에 설치되어 있는 clang의 버전은 13.0.0이라고 나옵니다. 어쩌면, 이 둘간의 차이로 인해 발생하는 문제가 아닐까 싶습니다.
 
-- Anaconda를 업데이트해보자. 현재 버전은 다음과 같고.
-
-```
-$ conda --version                                                                                     
-conda 4.8.3
-$ python --version                                                                                   
-Python 3.7.6
-$ python3 --version                                                                                  
-Python 3.7.6
-$ python2 --version                                                                                   
-Python 2.7.18
-```
-
-- python에서 사용하는 clang은 4.0.1인데, Apple에 설치되어 있는 clang의 버전은 13.0.0이라고 나옵니다. 흠.
-
-```
+```bash 
 $ python
 Python 3.7.6 (default, Jan  8 2020, 13:42:34) 
 [Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
 Type "help", "copyright", "credits" or "license" for more information.
+
 $ clang --version
 Apple clang version 13.0.0 (clang-1300.0.29.30)
 Target: x86_64-apple-darwin21.2.0
@@ -160,28 +147,18 @@ Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 ```
 
+- Anaconda를 직접 업데이트하면 Clang의 버전이 올라가면서 문제가 해결될까? 라는 생각을 하였는데, 아래 명령어로는 업데이트가 되지 않는 것 같아서, 여기서 홀드하였습니다.
 
-- 흠 잘 모르겠지만 일단 python 버전부터 올려보겠습니다. 아나콘다 버전을 올릴거에요. 다만, 생각을 해보니 conda는 자체 명령어라서 아나콘다를 의미하는 것 같지는 않아요.
-
-```
-$ conda --version 
-conda 4.8.3
-$ conda update conda
-```
-
-- 따라서, 아나콘다를 [Anaconda](https://www.anaconda.com/products/individual)에서 직접 다시 다운받아서 설치해보기로 합니다.
-- 설치를 하다보니, 이미 설치되어 있다고 아래 커맨드를 사용하라고 하네요.
-- 다만 설치에 시간이 꽤 걸립니다. 너무 오래 걸려서....일단 넘어갑니다.
-
-```
+```bash
 $ conda update anaconda
 ```
 
-- install.py 를 실행해 줍니다. 그래도 안되네요. 
+### Install by python
 
-https://johngrib.github.io/wiki/vim-auto-completion/#youcompleteme
+- [Vim 자동 완성 사용하기](https://johngrib.github.io/wiki/vim/auto-completion/)를 참조하여, 이번에는 `install.py`를 직접 설치해보기로 합니다.
 
 ```bash
+$ cd ~/.vim/bundle/YouCompleteMe
 # 언어 옵션들을 확인해 봅니다.
 $ python install.py --help    
 usage: build.py [-h] [--clang-completer] [--clangd-completer] [--cs-completer]
@@ -236,27 +213,46 @@ optional arguments:
                         is unable to find cmake.
   --force-sudo          Compiling with sudo causes problems. If you know what
                         you are doing, proceed.
-$ python install.py --clang-completer 
+$ python install.py --clang-complete --go-completer                    
 Generating ycmd build configuration...OK
 Compiling ycmd target: ycm_core...OK
 Building regex module...OK
 Building watchdog module...OK
 ```
 
-- 이렇게 해도, c를 실행해서 확인해 보면 안되는데 흠....
-[github - vim auto completion - YouCompleteMe](https://johngrib.github.io/wiki/vim-auto-completion/#youcompleteme)를 참조하여, .vimrc 파일에 아래 내용을 작성해 줘야 한다는 말이 있어서, 해당 내용을 추가해줍니다.
+- 이렇게 처리한 다음, `.vimrc` 파일 내에 python의 실행 경로를 추가해줍니다. python 실행 경로는 command line 에서 `which python3`를 통해 확인할 수 있습니다.
 
 ```bash
-let g:ycm_server_python_interpreter = '/usr/local/bin/python3'
+" YMC - YouCompleteMe
+let g:ycm_server_python_interpreter = '/Users/seunghoonlee/opt/anaconda3/bin/python3'
 ```
 
-- 문서 파일을 열었을 때 뜨는 파일이 이전과는 다르긴 합니다.
+- 이렇게 처리한 다음, vim을 사용해 문서 파일을 열어 봄변, ycmd가 여전히 안되는 것은 마찬가지입니다.
+- 혹시나 싶어, python3로 변경하여 처리해봤지만, 여전히 안되고요.
 
-```plaintext
-The ycmd server SHUT DOWN (restart with ':YcmRestartServer'). YCM core library not detected; you need to compile YCM before using it. Follow the instructions in the documentation.
+## Wrap-up
+
+- YouCompleteMe를 설치하려고 여러 방면에서 시도를 해보았으나, 잘 되지 않아서 그냥 포기하기로 했습니다. 대충 원인은 mac에서 사용하는 Clang과 anaconda를 통해 설치한 Clang의 버전이 달라지면서, 뭔가 문제가 생긴 것은 아닐까 싶지만, 일단은 이게 중요하지 않으니 넘어가기로 합니다.
+- 뭐...그래도 좋은 시도였다고 봅니다. 결국 원인은 Clang 그리고 GIL 때문인 것으로 파악되는데요, 나중에 시간이 생기면, 해당 모듈 코드를 뜯어보면서 어디가 원인인지 파악해 보면 재미있을 것 같아요.
+- [github - neoclide - coc.nvim](https://github.com/neoclide/coc.nvim)이 더 좋다고 해서, 다음에는 얘로 설치해보려고 합니다.
+
+## Uninstall Plugin
+
+- `.vimrc` 파일을 열어서, 불필요한 Plugin 부분을 지워주고, 아래를 순서대로 입력해줍니다.
+
+```bash
+:PluginInstall
+:PluginClean
 ```
 
-- 
+- `PluginClean`중에 오류가 발생하여, 확인해보니, 아래 경로의 폴더가 지워지지 않은 것 같습니다. log를 뜯어 보면 대충 "Permission Denied"가 뜨던데요, 걍 해당 경로로 가서 바로 지워버립겠습니다.
+
+```bash 
+$ cd ~/.vim/bundle/YouCompleteMe
+$ sudo rm -rf third_party
+$ cd ..
+$ rmdir YouCompleteMe
+```
 
 ## reference
 
