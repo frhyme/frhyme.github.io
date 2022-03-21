@@ -1,7 +1,7 @@
 ---
 title: Javascript - Read File, Dir
 category: javascript
-tags: javascript file nodejs
+tags: javascript file nodejs sync async
 ---
 
 ## Javascript에서 file을 읽는 방법
@@ -36,6 +36,37 @@ var app = http.createServer(function(request, response) {
   })
 });
 app.listen(3000);
+```
+
+## Javascript Read file - async
+
+- 만약 file을 순서에 맞춰서(sync)로 출렭하고 싶을 경우에는 `readFileSync` 함수를 사용하면 됩니다.
+
+```javascript
+const fs = require('fs');
+
+console.log('Code Start');
+
+// sync 없이 결과를 출력
+fs.readFile('./a.txt', 'utf8', function(err, data) {
+  console.log(`async: ${data}`);
+});
+
+// 위 아래 code의 순서를 맞춰서 결과를 출력
+var data = fs.readFileSync('./a.txt', 'utf8');
+console.log(`sync: ${data}`);
+
+console.log('Code End');
+```
+
+- 위 코드의 실행 결과는 다음과 같습니다.
+
+```plaintext
+Code Start
+sync: This is a.txt
+
+Code End
+async: This is a.txt
 ```
 
 ## Reference
