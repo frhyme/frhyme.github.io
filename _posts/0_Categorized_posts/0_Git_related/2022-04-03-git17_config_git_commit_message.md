@@ -36,8 +36,9 @@ git config commit.template ./.git/.gitmessage
 
 - 이제 `git commit`을 할때마다, 해당 template에 있는 내용이 작성되어 있는 것을 알 수 있습니다.
 
-## more thing
+## Wrap-up
 
 - 저는 모든 commit message를 `2022.04.03(Sun)`로 시작합니다.
 - 매번 날짜를 입력하는 게 꽤 귀찮은 일이기는 해서, vimscript를 사용해서 대치어를 만들어두기는 했는데요.
 - 그냥 `git commit`이 될 때마다 알아서 해당 날짜가 안에 들어가면 좋겠다, 라는 생각을 해봅니다.
+- 이걸 하려고 좀 뒤져봤는데, 아직은 뾰족한 방법을 못 찾았습니다. 다음에 찾게 되면 새로운 포스팅을 해보려고요.
