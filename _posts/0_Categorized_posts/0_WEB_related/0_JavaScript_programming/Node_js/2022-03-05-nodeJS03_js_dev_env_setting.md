@@ -2,7 +2,7 @@
 title: Vim - Javascript 개발 환경 구축
 category: javascript
 tags: vim javascript vundle eslint npm syntastic
---- 
+---
 
 ## Vim - Javascript 개발 환경 구축
 
@@ -37,7 +37,7 @@ $ npm list -g
 ├── @google/clasp@2.3.0
 ├── eslint@8.10.0
 └── npm@8.5.3
-$ npm init 
+$ npm init
 $ ls
 helloworld.js package.json
 ```
