@@ -6,9 +6,9 @@ tags: database sql postgresql relationalDB
 
 ## PostegreSQL - install it on Mac
 
-- PostregreSQL을 설치해보기로 했습니다. 
+- PostregreSQL을 설치해보기로 했습니다.
 - [PostgreSQL](https://www.enterprisedb.com/postgresql-tutorial-resources-training?cid=438)을 통해 13.1 버전을 다운받아서 설치했는데...비밀번호가 자꾸 안 맞는다고 해서, 지웠습니다.
-- brew를 사용해서 다운받으려고 했지만, 
+- brew를 사용해서 다운받으려고 했지만,
 
 ```plaintext
 brew install postgresql
@@ -45,8 +45,6 @@ build scripts full access to your system.
 ## 왜 이러는가
 
 - 분명히 예전에는 잘 되었는데 갑자기 안되는 것 같아요. 그렇다면, 왜 안되는 것인지 파악해야 저는 다음 단계로 넘어갈 수 있습니다.
-
-
 
 ## reference
 
