@@ -88,7 +88,7 @@ public class Main {
 ### String
 
 - c에서는 String을 지칭하는 타입이 따로 없고, `char[]`로 사용했던 같은데, 이게 array와 String의 구분이 좀 미묘해서 다른 사람들한테 설명해줄 때 헷갈리는 부분들이 있었던 것 같습니다.
-- 반면 Java에서는 다음처럼 편하게 String을 정의해줄 수 있다는 것이 조금 더 좋은 것 같아요.
+- 반면 Java에서는 다음처럼 편하게 [String을](https://www.scaler.com/topics/java/string-in-java/) 정의해줄 수 있다는 것이 조금 더 좋은 것 같아요.
 
 ```java
 String s1 = "abcd";
