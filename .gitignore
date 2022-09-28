@@ -1,6 +1,7 @@
 ### custom by frhyme###
 # 20210120: ADD *.pdf
 *.pdf
+*.swp
 
 ### Jekyll ###
 _site
