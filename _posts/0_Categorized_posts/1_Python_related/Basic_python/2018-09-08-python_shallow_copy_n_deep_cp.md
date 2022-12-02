@@ -208,3 +208,4 @@ print("="*21)
 
 - [programiz - python programming - shallow deep copy](https://www.programiz.com/python-programming/shallow-deep-copy)
 - [Wikipedia - value type and reference type](https://en.wikipedia.org/wiki/Value_type_and_reference_type)
+- [Scaler Topics - Understanding Objects in Python](https://www.scaler.com/topics/python/what-is-object-in-python/)
