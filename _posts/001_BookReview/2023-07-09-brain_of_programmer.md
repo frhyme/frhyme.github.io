@@ -1,5 +1,5 @@
 ---
-title: Book Review: Programmer's brain
+title: Book Review - Programmer's brain
 category: book_review
 tags: book review
 ---
