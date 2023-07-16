@@ -6,7 +6,9 @@ tags: go golang routine
 
 ## go007 - go routine with channel
 
-- go routine with channel
+- Indeed, Go provides channels as a safe means of communication and synchronization between goroutines. Channels serve as message queues, allowing the exchange of values between goroutines.
+- By utilizing channels, you can safely divide work among multiple goroutines. Values can be sent from a channel to each goroutine, allowing them to independently process the received values. This approach enables concurrent execution while ensuring data integrity and synchronization between goroutines.
+- Channels act as a conduit for passing data between goroutines, providing a reliable and coordinated way to share information. They facilitate the communication and coordination required for parallel or concurrent processing in Go.
 
 ```go
 package main
@@ -65,7 +67,7 @@ func main() {
     ch <- 9
     // channel doesn't have buffer at all
     // main routine stopped and waiting for forever
-    // So, deadlock occurred
+    // So, deadlock
     fmt.Println("== no go routine takes parameter from channel")
 }
 ```
