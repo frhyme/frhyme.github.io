@@ -1,7 +1,7 @@
 ---
 title: git17 - garbage collection
-category:
-tags:
+category: git
+tags: git pack GC
 ---
 
 ## git17 - garbage collection
