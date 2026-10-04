@@ -2,7 +2,7 @@
 title: "Java - Annotation"
 date: 2020-11-15
 category: "java"
-tags: ["java", "Annotation", "programming"]
+tags: ["java", "annotation", "programming"]
 permalink: "/java/java_annotation_depreceated/"
 ---
 

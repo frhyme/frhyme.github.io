@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - About Structural Hole vs. bewteennss centrality."
 date: 2020-03-01
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "structural-hole", "betweenness-centrality", "centrality"]
 permalink: "/paper-summary/ps_structural_hole_science_direct/"
 ---

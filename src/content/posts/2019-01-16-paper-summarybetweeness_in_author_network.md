@@ -1,7 +1,7 @@
 ---
 title: "paper-summary - Betweenness centrality as a driver of preferential attachment in the evolution of research collaboration networks"
 date: 2019-01-16
-category: "paper-summary"
+category: "machine-learning"
 tags: ["betweenness-centrality", "sna", "network-analysis"]
 permalink: "/paper-summary/paper-summary-betweeness_in_author_network/"
 ---

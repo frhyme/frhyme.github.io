@@ -1,8 +1,8 @@
 ---
 title: "PEP498 - Literal String Interpolation"
 date: 2018-08-26
-category: "python-basic"
-tags: ["python", "python-basic", "string", "format", "PEP", "timeit"]
+category: "python"
+tags: ["python", "python-basic", "string", "format", "pep", "timeit"]
 permalink: "/python-basic/python_f_string_format/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Google Apps Script - Slides - Line chart 만들기"
 date: 2021-05-01
-category: "google"
-tags: ["google", "javascript", "GoogleSlides", "macro", "GoogleAppsScript"]
+category: "dev-tools"
+tags: ["google", "javascript", "googleslides", "macro", "googleappsscript"]
 permalink: "/google/GAS_Slides03_make_line_chart/"
 ---
 

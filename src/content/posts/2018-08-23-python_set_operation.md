@@ -2,7 +2,7 @@
 title: "python의 set operation을 알아봅시다."
 date: 2018-08-23
 category: "python-libs"
-tags: ["python", "python-lib", "set"]
+tags: ["python", "python-libs", "set"]
 permalink: "/python-lib/python_set_operation/"
 ---
 

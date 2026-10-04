@@ -2,7 +2,7 @@
 title: "Java - Check class A is subClass of class B"
 date: 2021-01-02
 category: "java"
-tags: ["java", "programming", "class", "OOP", "TypeChecking"]
+tags: ["java", "programming", "class", "oop", "typechecking"]
 permalink: "/java/java_class_check_if_subClass/"
 ---
 

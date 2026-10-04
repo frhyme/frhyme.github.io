@@ -1,7 +1,7 @@
 ---
 title: "paper-summary - Betweenness centrality as an indicator of the interdisciplinarity of scientific journals"
 date: 2019-01-16
-category: "paper-summary"
+category: "machine-learning"
 tags: ["betweeness-centrality", "sna"]
 permalink: "/paper-summary/paper-summary-betweeness_interdisciplinary/"
 ---

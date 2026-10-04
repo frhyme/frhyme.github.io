@@ -1,8 +1,8 @@
 ---
 title: "pypy에서 numpy 설치 및 사용하기"
 date: 2022-02-25
-category: "pypy"
-tags: ["pypy", "compiler", "python", "programming", "RPython", "macOS"]
+category: "python"
+tags: ["pypy", "compiler", "python", "programming", "rpython", "macos"]
 permalink: "/pypy/use_numpy_in_pypy/"
 ---
 

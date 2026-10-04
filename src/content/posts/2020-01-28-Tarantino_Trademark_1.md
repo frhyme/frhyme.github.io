@@ -1,8 +1,8 @@
 ---
 title: "Tarantino - Trademark - 1편"
 date: 2020-01-28
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Tarantino"]
+category: "english"
+tags: ["english", "movie", "movie_script", "tarantino"]
 permalink: "/english_study_by_movie_script/Tarantino_Trademark_1/"
 ---
 

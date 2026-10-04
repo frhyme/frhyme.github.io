@@ -2,7 +2,7 @@
 title: "Java - Data Structure - Binary Search Tree"
 date: 2021-01-08
 category: "java"
-tags: ["java", "DataStructure", "programming", "list", "class", "Tree"]
+tags: ["java", "datastructure", "programming", "list", "class", "tree"]
 permalink: "/java/java_dataStructure_BinarySearchTree/"
 ---
 

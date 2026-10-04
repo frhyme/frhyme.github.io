@@ -1,8 +1,8 @@
 ---
 title: "Hammerspoon04 - ctrl키로 한영 전환 및 충돌 피하기"
 date: 2022-03-31
-category: "hammerspoon"
-tags: ["hammerspoon", "ctrl", "hhkb", "macOS", "lua"]
+category: "dev-tools"
+tags: ["hammerspoon", "ctrl", "hhkb", "macos", "lua"]
 permalink: "/hammerspoon/hammerspoon04_change_en_by_ctrl_better/"
 ---
 

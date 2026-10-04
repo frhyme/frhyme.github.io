@@ -1,8 +1,8 @@
 ---
 title: "R&D 지식지도를 만들어봅시다."
 date: 2018-05-06
-category: "project"
-tags: ["python-lib", "python", "networkx", "matplotlib", "scopus"]
+category: "others"
+tags: ["python-libs", "python", "networkx", "matplotlib", "scopus"]
 permalink: "/project/rnd-knowledge-map/"
 ---
 

@@ -2,7 +2,7 @@
 title: "subplot의 사이즈를 각각 다르게 조절합시다!"
 date: 2018-05-16
 category: "python-libs"
-tags: ["python", "python-lib", "matplotlib", "subplot"]
+tags: ["python", "python-libs", "matplotlib", "subplot"]
 permalink: "/python-lib/change-subplot-size/"
 ---
 

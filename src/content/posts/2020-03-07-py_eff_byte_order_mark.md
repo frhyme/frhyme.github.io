@@ -1,7 +1,7 @@
 ---
 title: "python에서 `ufeff`가 읽힐 때 해결방법."
 date: 2020-03-07
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "utf-8", "string", "file"]
 permalink: "/python-basic/py_eff_byte_order_mark/"
 ---

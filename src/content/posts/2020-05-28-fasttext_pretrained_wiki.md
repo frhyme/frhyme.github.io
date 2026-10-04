@@ -1,7 +1,7 @@
 ---
 title: "FastText, 학습된 모델과 벡터 가져와서 사용하기"
 date: 2020-05-28
-category: "NLP"
+category: "machine-learning"
 tags: ["nlp", "fasttext", "gensim", "python", "python-libs", "machine-learning"]
 permalink: "/nlp/fasttext_pretrained_wiki/"
 ---

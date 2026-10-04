@@ -1,7 +1,7 @@
 ---
 title: "html에서 range를 이용해서 input을 받고 input 변화값 보여주기."
 date: 2019-04-16
-category: "html"
+category: "web"
 tags: ["html", "javascript"]
 permalink: "/html/html_range_oninput/"
 ---

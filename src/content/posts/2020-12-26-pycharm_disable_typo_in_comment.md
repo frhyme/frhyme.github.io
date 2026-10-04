@@ -2,7 +2,7 @@
 title: "PyCharm - Disable typo in Comment"
 date: 2020-12-26
 category: "python"
-tags: ["python", "PyCharm", "IDE", "typo", "comment"]
+tags: ["python", "pycharm", "ide", "typo", "comment"]
 permalink: "/python/pycharm_disable_typo_in_comment/"
 ---
 

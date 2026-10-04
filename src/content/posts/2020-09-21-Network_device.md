@@ -1,8 +1,8 @@
 ---
 title: "네트워크의 주요 장비"
 date: 2020-09-21
-category: "NetworkStudy"
-tags: ["NetworkStudy", "Network", "Hub", "Switch"]
+category: "algorithm"
+tags: ["networkstudy", "network", "hub", "switch"]
 permalink: "/networkstudy/Network_device/"
 ---
 

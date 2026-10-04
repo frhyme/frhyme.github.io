@@ -2,7 +2,7 @@
 title: "networkx graph tree 구조 예쁘게 그리기"
 date: 2018-08-20
 category: "python-libs"
-tags: ["python", "python-lib", "networkx", "tree", "matplotlib", "layout", "graphviz"]
+tags: ["python", "python-libs", "networkx", "tree", "matplotlib", "layout", "graphviz"]
 permalink: "/python-lib/nx_layout_for_tree/"
 ---
 

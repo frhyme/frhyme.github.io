@@ -1,7 +1,7 @@
 ---
 title: "vs-code에서 탐색기 폰트를 변경합니다."
 date: 2018-04-26
-category: "others"
+category: "dev-tools"
 tags: ["vs-code", "font"]
 permalink: "/others/vscode_font_change/"
 ---

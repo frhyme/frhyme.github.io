@@ -2,7 +2,7 @@
 title: "matplotlib legend 조절하기"
 date: 2018-06-01
 category: "python-libs"
-tags: ["python", "python-lib", "matplotlib", "legend"]
+tags: ["python", "python-libs", "matplotlib", "legend"]
 permalink: "/python-lib/matplotlib_legend/"
 ---
 

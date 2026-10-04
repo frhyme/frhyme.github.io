@@ -1,7 +1,7 @@
 ---
 title: "Python - generator/iterator - Merge."
 date: 2020-04-13
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "python-libs", "itertools"]
 permalink: "/python-basic/python_merge_generator_by_itertools/"
 ---

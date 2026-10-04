@@ -2,7 +2,7 @@
 title: "networkx - Link Analysis - PageRank"
 date: 2020-02-12
 category: "python-libs"
-tags: ["python", "python-libs", "networkx", "centrality", "Pagerank"]
+tags: ["python", "python-libs", "networkx", "centrality", "pagerank"]
 permalink: "/python-libs/nx_algo_link_Ana_pagerank/"
 ---
 

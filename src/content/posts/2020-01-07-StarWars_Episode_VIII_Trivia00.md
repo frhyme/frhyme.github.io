@@ -1,8 +1,8 @@
 ---
 title: "영화 StarWars Episode 8에 관한 사실들 - 0편"
 date: 2020-01-07
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "StarWars"]
+category: "english"
+tags: ["english", "movie", "movie_script", "starwars"]
 permalink: "/english_study_by_movie_script/StarWars_Episode_VIII_Trivia00/"
 ---
 

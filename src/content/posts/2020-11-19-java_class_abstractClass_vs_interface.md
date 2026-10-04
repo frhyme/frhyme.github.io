@@ -2,7 +2,7 @@
 title: "Java - Abstract Class vs. Interface"
 date: 2020-11-19
 category: "java"
-tags: ["java", "programming", "class", "Interface", "Abstract", "OOP"]
+tags: ["java", "programming", "class", "interface", "abstract", "oop"]
 permalink: "/java/java_class_abstractClass_vs_interface/"
 ---
 

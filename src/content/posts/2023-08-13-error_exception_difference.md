@@ -2,7 +2,7 @@
 title: "Error와 Exception의 차이는 무엇일까요?"
 date: 2023-08-13
 category: "java"
-tags: ["java", "programming", "exception", "error", "errorHandling"]
+tags: ["java", "programming", "exception", "error", "errorhandling"]
 permalink: "/java/error_exception_difference/"
 ---
 

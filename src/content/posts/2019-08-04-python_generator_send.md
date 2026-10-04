@@ -1,7 +1,7 @@
 ---
 title: "generator의 send 이용하기."
 date: 2019-08-04
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "generator", "send", "yield"]
 permalink: "/python-basic/python_generator_send/"
 ---

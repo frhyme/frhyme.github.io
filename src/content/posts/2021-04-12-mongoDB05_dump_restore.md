@@ -1,8 +1,8 @@
 ---
 title: "mongoDB - dump, restore"
 date: 2021-04-12
-category: "mongoDB"
-tags: ["mongoDB", "python", "pymongo", "database", "db", "sql", "nosql", "brew"]
+category: "database"
+tags: ["mongodb", "python", "pymongo", "database", "db", "sql", "nosql", "brew"]
 permalink: "/mongodb/mongoDB05_dump_restore/"
 ---
 

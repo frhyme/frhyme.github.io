@@ -1,8 +1,8 @@
 ---
 title: "영화 Secret Life of Walter Mitty 명장면 - Stay in it"
 date: 2019-10-26
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "WalterMitty"]
+category: "english"
+tags: ["english", "movie", "movie_script", "waltermitty"]
 permalink: "/english_study_by_movie_script/walter_mitty_Scene_00_stay_in_it/"
 ---
 

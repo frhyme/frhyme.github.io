@@ -2,7 +2,7 @@
 title: "graphviz로 만든 그림을 jupyter notebook에 embed하기"
 date: 2018-08-22
 category: "python-libs"
-tags: ["python", "python-lib", "networkx", "graphviz", "jupyter-notebook", "ipython", "display"]
+tags: ["python", "python-libs", "networkx", "graphviz", "jupyter-notebook", "ipython", "display"]
 permalink: "/python-lib/jupyter_graphviz-ipython_display_svg/"
 ---
 

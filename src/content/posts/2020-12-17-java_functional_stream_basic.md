@@ -2,7 +2,7 @@
 title: "Java - Functional Stream - Basic"
 date: 2020-12-17
 category: "java"
-tags: ["java", "programming", "stream", "list", "reduce", "map", "filter", "FunctionalProgramming"]
+tags: ["java", "programming", "stream", "list", "reduce", "map", "filter", "functionalprogramming"]
 permalink: "/java/java_functional_stream_basic/"
 ---
 

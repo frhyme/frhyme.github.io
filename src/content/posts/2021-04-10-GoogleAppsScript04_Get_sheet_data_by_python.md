@@ -1,8 +1,8 @@
 ---
 title: "Google Apps Script - Google Apps Script API 사용하기(Again)"
 date: 2021-04-10
-category: "google"
-tags: ["google", "javascript", "google_sheet", "macro", "GoogleAppsScript", "GCP"]
+category: "dev-tools"
+tags: ["google", "javascript", "google_sheet", "macro", "googleappsscript", "gcp"]
 permalink: "/google/GoogleAppsScript04_Get_sheet_data_by_python/"
 ---
 

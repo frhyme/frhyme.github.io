@@ -1,7 +1,7 @@
 ---
 title: "paper-summary - Bibliometric cartography of information retrieval research by using co-word analysis"
 date: 2019-01-17
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary"]
 permalink: "/paper-summary/ps_bibliometric_study/"
 ---

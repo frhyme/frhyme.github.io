@@ -2,7 +2,7 @@
 title: "spectral clustering에 대해서 정리해보겠습니다."
 date: 2018-05-18
 category: "data-science"
-tags: ["data-science", "python", "python-lib", "clustering", "gaussian-mixture-model", "spectral-clustering", "not-yet"]
+tags: ["data-science", "python", "python-libs", "clustering", "gaussian-mixture-model", "spectral-clustering", "not-yet"]
 permalink: "/data-science/spectral_clustering/"
 ---
 

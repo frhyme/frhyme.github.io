@@ -1,8 +1,8 @@
 ---
 title: "영화 Boyhood 명장면 - 현실도 이미 환상적이야"
 date: 2019-11-19
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "Boyhood"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script"]
 permalink: "/english_study_by_movie_script/boyhood_Scene_03_magic/"
 ---
 

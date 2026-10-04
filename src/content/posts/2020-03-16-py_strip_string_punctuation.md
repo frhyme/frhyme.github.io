@@ -1,7 +1,7 @@
 ---
 title: "python - strip string better with punctuation"
 date: 2020-03-16
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "string", "punctuaion"]
 permalink: "/python-basic/py_strip_string_punctuation/"
 ---

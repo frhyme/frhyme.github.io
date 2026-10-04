@@ -1,8 +1,8 @@
 ---
 title: "영화 Love Actually 명장면 - 나탈리...너란 욕쟁이"
 date: 2019-11-05
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "LoveActually"]
+category: "english"
+tags: ["english", "movie", "movie_script", "loveactually"]
 permalink: "/english_study_by_movie_script/Love_Actually_Scene04_Natallie/"
 ---
 

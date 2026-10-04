@@ -1,7 +1,7 @@
 ---
 title: "related post 더 잘 찾도록 만들기"
 date: 2018-07-19
-category: "others"
+category: "dev-tools"
 tags: ["jekyll", "blog", "html", "plugin"]
 permalink: "/others/jekyll_related_post/"
 ---

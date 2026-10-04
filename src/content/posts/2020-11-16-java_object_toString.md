@@ -2,7 +2,7 @@
 title: "Java - Overriding toString method"
 date: 2020-11-16
 category: "java"
-tags: ["java", "programming", "overriding", "String"]
+tags: ["java", "programming", "overriding", "string"]
 permalink: "/java/java_object_toString/"
 ---
 

@@ -2,7 +2,7 @@
 title: "Java - interface - default method"
 date: 2021-01-01
 category: "java"
-tags: ["java", "programming", "class", "OOP", "default", "interface"]
+tags: ["java", "programming", "class", "oop", "default", "interface"]
 permalink: "/java/java_interface_default_method/"
 ---
 

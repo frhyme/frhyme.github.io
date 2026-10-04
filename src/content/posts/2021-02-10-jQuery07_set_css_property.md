@@ -1,8 +1,8 @@
 ---
 title: "jQuery - set css property"
 date: 2021-02-10
-category: "jQuery"
-tags: ["jQuery", "javascript", "html", "web", "css"]
+category: "web"
+tags: ["jquery", "javascript", "html", "web", "css"]
 permalink: "/jquery/jQuery07_set_css_property/"
 ---
 

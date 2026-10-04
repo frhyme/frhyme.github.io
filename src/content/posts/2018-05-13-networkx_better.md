@@ -2,7 +2,7 @@
 title: "understand networkx better."
 date: 2018-05-13
 category: "python-libs"
-tags: ["networkx", "python", "python-lib"]
+tags: ["networkx", "python", "python-libs"]
 permalink: "/python-lib/networkx_better/"
 ---
 

@@ -2,7 +2,7 @@
 title: "Java - Thread - Thread 간 데이터 불일치, volatile"
 date: 2021-01-17
 category: "java"
-tags: ["java", "thread", "programming", "parallelism", "concurrency", "MultiThreading", "volatile"]
+tags: ["java", "thread", "programming", "parallelism", "concurrency", "multithreading", "volatile"]
 permalink: "/java/java_Thread04_data_sharing/"
 ---
 

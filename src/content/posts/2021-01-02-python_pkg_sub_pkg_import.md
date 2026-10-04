@@ -1,7 +1,7 @@
 ---
 title: "python - package and import"
 date: 2021-01-02
-category: "python-basic"
+category: "python"
 tags: ["python", "import", "python-basic", "package"]
 permalink: "/python-basic/python_pkg_sub_pkg_import/"
 ---

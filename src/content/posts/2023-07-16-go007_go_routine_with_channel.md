@@ -1,7 +1,7 @@
 ---
 title: "go007 go routine with channel"
 date: 2023-07-16
-category: "golang"
+category: "go"
 tags: ["go", "golang", "routine"]
 permalink: "/golang/go007_go_routine_with_channel/"
 ---

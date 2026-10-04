@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Identifying a set of influential spreaders in complex networks"
 date: 2020-02-21
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "centrality", "voterank"]
 permalink: "/paper-summary/ps_identifying_influential_spreaders/"
 ---

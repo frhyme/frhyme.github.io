@@ -2,7 +2,7 @@
 title: "데이터분석이고 나발이고 일단 수치들을 잘 표준화하는 것이 필요하지 않을까요?"
 date: 2018-05-18
 category: "data-science"
-tags: ["data-science", "python", "python-lib", "scaling"]
+tags: ["data-science", "python", "python-libs", "scaling"]
 permalink: "/data-science/feature_scaling/"
 ---
 

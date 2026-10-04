@@ -1,7 +1,7 @@
 ---
 title: "docker - ubuntu container 구동하기"
 date: 2021-06-13
-category: "docker"
+category: "dev-tools"
 tags: ["docker", "ubuntu", "container"]
 permalink: "/docker/docker01_ubuntu_container/"
 ---

@@ -2,7 +2,7 @@
 title: "random.expovariate == np.random.exponential"
 date: 2018-07-25
 category: "python-libs"
-tags: ["python", "python-lib", "numpy", "random", "exponential", "distribution"]
+tags: ["python", "python-libs", "numpy", "random", "exponential", "distribution"]
 permalink: "/python-lib/random_expovariate/"
 ---
 

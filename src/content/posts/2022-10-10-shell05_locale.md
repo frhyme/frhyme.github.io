@@ -1,7 +1,7 @@
 ---
 title: "Shell - locale"
 date: 2022-10-10
-category: "shell"
+category: "dev-tools"
 tags: ["shell", "locale"]
 permalink: "/shell/shell05_locale/"
 ---

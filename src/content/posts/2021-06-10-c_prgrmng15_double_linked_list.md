@@ -1,7 +1,7 @@
 ---
 title: "C programming - Double Linked List(양방향 리스트)"
 date: 2021-06-10
-category: "C_programming"
+category: "c-programming"
 tags: ["c", "c_programming", "programming", "linked_list", "pointer"]
 permalink: "/c_programming/c_prgrmng15_double_linked_list/"
 ---

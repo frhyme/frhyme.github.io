@@ -1,7 +1,7 @@
 ---
 title: "파이썬은 왜 느린가?"
 date: 2019-01-09
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "computation"]
 permalink: "/python-basic/python_why_python_slow/"
 ---

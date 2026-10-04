@@ -1,7 +1,7 @@
 ---
 title: "circulator 구매기"
 date: 2020-08-04
-category: "furniture"
+category: "life"
 tags: ["circulator", "furniture"]
 permalink: "/furniture/about_circulator/"
 ---

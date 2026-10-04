@@ -1,7 +1,7 @@
 ---
 title: "Kotlin - function"
 date: 2021-02-15
-category: "kotlin"
+category: "java"
 tags: ["kotlin", "function"]
 permalink: "/kotlin/kotlin01_function/"
 ---

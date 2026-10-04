@@ -2,7 +2,7 @@
 title: "Java - String literal은 equality를 분석할 때 왼쪽에 위치해야 한다."
 date: 2020-10-22
 category: "java"
-tags: ["java", "String", "equality", "comparison", "programming"]
+tags: ["java", "string", "equality", "comparison", "programming"]
 permalink: "/java/java_bad_habit_string_literal_should_be_left_side/"
 ---
 

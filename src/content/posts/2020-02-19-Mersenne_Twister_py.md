@@ -1,7 +1,7 @@
 ---
 title: "Merssenne Twiste 난수 생성기 python으로 코딩."
 date: 2020-02-19
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "hexagonal", "random", "numpy"]
 permalink: "/python-basic/Mersenne_Twister_py/"
 ---

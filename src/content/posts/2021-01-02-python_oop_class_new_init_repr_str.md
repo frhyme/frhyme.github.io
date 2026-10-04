@@ -1,8 +1,8 @@
 ---
 title: "python - OOP - new, init, repr, str"
 date: 2021-01-02
-category: "python-basic"
-tags: ["python", "python_basic", "class", "OOP"]
+category: "python"
+tags: ["python", "python_basic", "class", "oop"]
 permalink: "/python-basic/python_oop_class_new_init_repr_str/"
 ---
 

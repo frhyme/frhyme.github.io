@@ -2,7 +2,7 @@
 title: "Java - Map Interface"
 date: 2020-12-11
 category: "java"
-tags: ["java", "programming", "interface", "collection", "Map"]
+tags: ["java", "programming", "interface", "collection", "map"]
 permalink: "/java/Java_Collection_Map_Interface/"
 ---
 

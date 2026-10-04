@@ -1,8 +1,8 @@
 ---
 title: "다른 파이썬 코드 import하기"
 date: 2018-07-10
-category: "python-basic"
-tags: ["python", "python-lib"]
+category: "python"
+tags: ["python", "python-libs"]
 permalink: "/python-basic/import_code/"
 ---
 

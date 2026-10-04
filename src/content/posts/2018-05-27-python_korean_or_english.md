@@ -1,7 +1,7 @@
 ---
 title: "한글/영어 텍스트 구분하기"
 date: 2018-05-27
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "nlp"]
 permalink: "/python-basic/python_korean_or_english/"
 ---

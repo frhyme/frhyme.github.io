@@ -2,7 +2,7 @@
 title: "python으로 마코브 체인 만들어 보기"
 date: 2018-05-27
 category: "python-libs"
-tags: ["python", "python-lib", "markov-chain", "numpy"]
+tags: ["python", "python-libs", "markov-chain", "numpy"]
 permalink: "/python-lib/markov_chain_basic/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "paper-summary - Communicability in complex networks"
 date: 2020-02-04
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "patent", "communicability", "network", "complex-network"]
 permalink: "/paper-summary/paper_summary_communicability_in_complext_networks/"
 ---

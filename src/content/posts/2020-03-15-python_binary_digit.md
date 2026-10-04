@@ -1,7 +1,7 @@
 ---
 title: "음수와 양수는 binary로 각각 어떻게 표현되는가?"
 date: 2020-03-15
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "binary", "numpy"]
 permalink: "/python-basic/python_binary_digit/"
 ---

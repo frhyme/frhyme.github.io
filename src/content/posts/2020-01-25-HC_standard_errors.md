@@ -2,7 +2,7 @@
 title: "wikipedia - Heteroscedasticity-consistent standard errors"
 date: 2020-01-25
 category: "others"
-tags: ["GLM", "GEE", "statistics", "Heteroscedasticity", "errors"]
+tags: ["glm", "gee", "statistics", "heteroscedasticity", "errors"]
 permalink: "/others/HC_standard_errors/"
 ---
 

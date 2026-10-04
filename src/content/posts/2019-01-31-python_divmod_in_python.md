@@ -1,7 +1,7 @@
 ---
 title: "divmod in python"
 date: 2019-01-31
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "divmod"]
 permalink: "/python-basic/python_divmod_in_python/"
 ---

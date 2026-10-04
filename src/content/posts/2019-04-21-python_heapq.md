@@ -1,7 +1,7 @@
 ---
 title: "heap 을 사용해봅시다."
 date: 2019-04-21
-category: "data-structure"
+category: "algorithm"
 tags: ["python", "python-libs", "data-struture", "heap"]
 permalink: "/data-structure/python_heapq/"
 ---

@@ -2,7 +2,7 @@
 title: "야구) 상황에 따른 기대 득점 분포"
 date: 2018-05-28
 category: "baseball"
-tags: ["baseball", "sabermetrics", "RE"]
+tags: ["baseball", "sabermetrics", "re"]
 permalink: "/baseball/baseball-scoring_dist/"
 ---
 

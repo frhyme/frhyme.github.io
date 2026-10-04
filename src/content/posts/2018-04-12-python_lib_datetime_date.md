@@ -2,7 +2,7 @@
 title: "python-lib) python - datetime.date"
 date: 2018-04-12
 category: "python-libs"
-tags: ["python", "python-lib", "datetime"]
+tags: ["python", "python-libs", "datetime"]
 permalink: "/python-lib/python_lib_datetime_date/"
 ---
 

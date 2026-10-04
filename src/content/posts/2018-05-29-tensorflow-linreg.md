@@ -2,7 +2,7 @@
 title: "tensorflow) 기본부터 다시 - linear regression"
 date: 2018-05-29
 category: "machine-learning"
-tags: ["tensorflow", "machine-learning", "data-science", "python", "python-lib", "sklearn", "linear-regression"]
+tags: ["tensorflow", "machine-learning", "data-science", "python", "python-libs", "sklearn", "linear-regression"]
 permalink: "/machine-learning/tensorflow-linreg/"
 ---
 

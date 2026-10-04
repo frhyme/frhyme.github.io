@@ -1,7 +1,7 @@
 ---
 title: "built-in decorator in python3"
 date: 2018-09-07
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "decorator", "oop", "class", "python-libs", "static", "inheritance"]
 permalink: "/python-basic/python_built_in_decorators_in_python/"
 ---

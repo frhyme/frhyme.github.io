@@ -1,7 +1,7 @@
 ---
 title: "오늘의 Git 실수 - Local에서 Commit을 했는데 파일 용량이 커서 push를 할 수 없다!!"
 date: 2020-03-31
-category: "others"
+category: "dev-tools"
 tags: ["git", "git-commit", "git-reset"]
 permalink: "/others/Git_today_mistake_commit_lst_with_bigger_file/"
 ---

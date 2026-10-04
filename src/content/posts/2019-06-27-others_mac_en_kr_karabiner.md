@@ -1,8 +1,8 @@
 ---
 title: "맥북 캡츠락으로 한영전환 오류 문제 해결"
 date: 2019-06-27
-category: "macOS"
-tags: ["macOS", "capslock"]
+category: "dev-tools"
+tags: ["macos", "capslock"]
 permalink: "/macos/others_mac_en_kr_karabiner/"
 ---
 

@@ -2,7 +2,7 @@
 title: "python - networkx - `G.neighbors(n1)` is slower."
 date: 2020-01-30
 category: "python-libs"
-tags: ["python", "python-libs", "networkx", "neighbors", "AtlasView"]
+tags: ["python", "python-libs", "networkx", "neighbors", "atlasview"]
 permalink: "/python-libs/nx_AtlasView_is_faster_than_neighbor/"
 ---
 

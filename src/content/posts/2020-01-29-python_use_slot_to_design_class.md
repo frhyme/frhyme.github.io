@@ -2,7 +2,7 @@
 title: "python에서 class를 설계할 때, slot을 통해 known attribute로 설정하자."
 date: 2020-01-29
 category: "python"
-tags: ["python", "python-basic", "class", "OOP"]
+tags: ["python", "python-basic", "class", "oop"]
 permalink: "/python/python_use_slot_to_design_class/"
 ---
 

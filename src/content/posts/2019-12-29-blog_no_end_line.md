@@ -2,7 +2,7 @@
 title: "No newline at end of file"
 date: 2019-12-29
 category: "others"
-tags: ["blog", "jekyl", "EOF"]
+tags: ["blog", "jekyl", "eof"]
 permalink: "/others/blog_no_end_line/"
 ---
 

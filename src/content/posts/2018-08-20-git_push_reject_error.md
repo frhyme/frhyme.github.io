@@ -1,7 +1,7 @@
 ---
 title: "git pull 을 생활화합시다."
 date: 2018-08-20
-category: "others"
+category: "dev-tools"
 tags: ["git"]
 permalink: "/others/git_push_reject_error/"
 ---

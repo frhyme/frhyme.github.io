@@ -1,7 +1,7 @@
 ---
 title: "github - Github CLI(gh)"
 date: 2021-04-14
-category: "git"
+category: "dev-tools"
 tags: ["git", "github", "cli"]
 permalink: "/git/github_CLI_gh/"
 ---

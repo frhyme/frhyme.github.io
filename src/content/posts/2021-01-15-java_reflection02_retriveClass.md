@@ -2,7 +2,7 @@
 title: "Java - Reflection - Retrieving Class"
 date: 2021-01-15
 category: "java"
-tags: ["java", "reflection", "class", "programming", "OOP"]
+tags: ["java", "reflection", "class", "programming", "oop"]
 permalink: "/java/java_reflection02_retriveClass/"
 ---
 

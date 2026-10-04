@@ -1,7 +1,7 @@
 ---
 title: "Markdown Rule - MD026 - Trailing punctuation in header"
 date: 2020-05-19
-category: "markdown"
+category: "dev-tools"
 tags: ["markdown", "lint", "markdown-lint"]
 permalink: "/markdown/MD026_trailing_punctuation_and_question_mark/"
 ---

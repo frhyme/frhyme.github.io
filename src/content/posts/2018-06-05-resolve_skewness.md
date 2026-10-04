@@ -2,7 +2,7 @@
 title: "data의 skewness를 삭제합시다."
 date: 2018-06-05
 category: "data-science"
-tags: ["python", "skewness", "python-lib", "scipy", "matplotlib", "pandas", "numpy"]
+tags: ["python", "skewness", "python-libs", "scipy", "matplotlib", "pandas", "numpy"]
 permalink: "/data-science/resolve_skewness/"
 ---
 

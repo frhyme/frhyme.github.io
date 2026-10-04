@@ -2,7 +2,7 @@
 title: "Java - Serialization"
 date: 2021-02-10
 category: "java"
-tags: ["java", "programming", "Serialization", "Serializable", "class"]
+tags: ["java", "programming", "serialization", "serializable", "class"]
 permalink: "/java/java_serialization00_basic/"
 ---
 

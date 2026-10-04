@@ -2,7 +2,7 @@
 title: "아마도 대략 프레임은 완료한 rnd knowledge map 코드입니다"
 date: 2018-05-10
 category: "python-libs"
-tags: ["python", "python-lib", "networkx", "matplotlib", "pandas", "collections", "Counter"]
+tags: ["python", "python-libs", "networkx", "matplotlib", "pandas", "collections", "counter"]
 permalink: "/python-lib/python_networkx_rnd_k_map/"
 ---
 

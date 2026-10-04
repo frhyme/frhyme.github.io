@@ -2,7 +2,7 @@
 title: "매번 까먹는, 몬테카를로 시뮬레이션을 해봅시다!!"
 date: 2018-05-28
 category: "python-libs"
-tags: ["python", "python-lib", "monte-carlo-simulation"]
+tags: ["python", "python-libs", "monte-carlo-simulation"]
 permalink: "/python-lib/monte_carlo_simulation/"
 ---
 

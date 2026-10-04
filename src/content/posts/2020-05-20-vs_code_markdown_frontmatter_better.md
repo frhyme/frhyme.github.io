@@ -1,7 +1,7 @@
 ---
 title: "Markdown Front-matter 빠르게 입력하기"
 date: 2020-05-20
-category: "markdown"
+category: "dev-tools"
 tags: ["markdown", "yaml", "code-snippet", "vs-code"]
 permalink: "/markdown/vs_code_markdown_frontmatter_better/"
 ---

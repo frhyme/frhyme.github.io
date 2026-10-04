@@ -1,7 +1,7 @@
 ---
 title: "CSS - background properties"
 date: 2021-01-31
-category: "css"
+category: "web"
 tags: ["css", "background"]
 permalink: "/css/css02_background_properties/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Scopus database - a review"
 date: 2019-01-24
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "scopus", "wos", "web-of-science"]
 permalink: "/paper-summary/ps_scopus_wos/"
 ---

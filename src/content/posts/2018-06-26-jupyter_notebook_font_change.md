@@ -2,7 +2,7 @@
 title: "jupyter notebook 커스토마이징하기."
 date: 2018-06-26
 category: "python-libs"
-tags: ["python", "python-lib", "css", "jupyter-notebook", "customizing", "conda", "font-family"]
+tags: ["python", "python-libs", "css", "jupyter-notebook", "customizing", "conda", "font-family"]
 permalink: "/python-lib/jupyter_notebook_font_change/"
 ---
 

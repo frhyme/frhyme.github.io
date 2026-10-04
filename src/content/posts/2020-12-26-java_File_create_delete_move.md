@@ -2,7 +2,7 @@
 title: "Java - File - Create, Move, Rename, Delete"
 date: 2020-12-26
 category: "java"
-tags: ["java", "programming", "File"]
+tags: ["java", "programming", "file"]
 permalink: "/java/java_File_create_delete_move/"
 ---
 

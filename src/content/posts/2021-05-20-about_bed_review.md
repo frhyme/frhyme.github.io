@@ -1,7 +1,7 @@
 ---
 title: "베스트슬립 - 골든 메달리스트 매트리스 구매기"
 date: 2021-05-20
-category: "furniture"
+category: "life"
 tags: ["furniture", "bed"]
 permalink: "/furniture/about_bed_review/"
 ---

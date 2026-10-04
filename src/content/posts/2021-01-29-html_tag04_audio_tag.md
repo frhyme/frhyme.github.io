@@ -1,7 +1,7 @@
 ---
 title: "html - audio tag"
 date: 2021-01-29
-category: "html"
+category: "web"
 tags: ["html", "audio", "tag"]
 permalink: "/html/html_tag04_audio_tag/"
 ---

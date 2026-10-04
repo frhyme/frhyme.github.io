@@ -1,8 +1,8 @@
 ---
 title: "Java - Design Pattern - Singleton"
 date: 2020-11-23
-category: "DesignPattern"
-tags: ["DesignPattern", "Singleton", "java", "programming", "class"]
+category: "java"
+tags: ["designpattern", "singleton", "java", "programming", "class"]
 permalink: "/designpattern/Java_DesignPatterns_Singleton/"
 ---
 

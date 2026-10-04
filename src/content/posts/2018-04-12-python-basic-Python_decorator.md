@@ -1,7 +1,7 @@
 ---
 title: "python-basic) Decorator in python"
 date: 2018-04-12
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "decorator", "functools"]
 permalink: "/python-basic/python-basic)-Python_decorator/"
 ---

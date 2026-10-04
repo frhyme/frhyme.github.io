@@ -1,8 +1,8 @@
 ---
 title: "python lib) python with iterators - itertools, functools"
 date: 2018-04-12
-category: "python-basic"
-tags: ["python-basic", "python", "python-lib", "iterator", "itertools", "functools"]
+category: "python"
+tags: ["python-basic", "python", "python-libs", "iterator", "itertools", "functools"]
 permalink: "/python-basic/python-lib)-itertools/"
 ---
 

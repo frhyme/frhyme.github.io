@@ -1,7 +1,7 @@
 ---
 title: "python - dictionary - setdefault"
 date: 2020-12-27
-category: "data-structure"
+category: "algorithm"
 tags: ["python", "dictionary", "python-programming", "python-basic"]
 permalink: "/data-structure/python_dict_setDefault/"
 ---

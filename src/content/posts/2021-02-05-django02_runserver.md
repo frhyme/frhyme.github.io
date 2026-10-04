@@ -2,7 +2,7 @@
 title: "python - Django - Run superbasic Server"
 date: 2021-02-05
 category: "python"
-tags: ["python", "programming", "django", "web", "backend", "MVC", "server"]
+tags: ["python", "programming", "django", "web", "backend", "mvc", "server"]
 permalink: "/python/django02_runserver/"
 ---
 

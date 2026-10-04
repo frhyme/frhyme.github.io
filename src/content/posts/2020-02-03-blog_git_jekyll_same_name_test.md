@@ -1,7 +1,7 @@
 ---
 title: "Blog - 다른 폴더 경로에 같은 이름의 마크다운 파일이 있다면?"
 date: 2020-02-03
-category: "blog"
+category: "dev-tools"
 tags: ["blog", "jekyll", "github"]
 permalink: "/blog/blog_git_jekyll_same_name_test/"
 ---

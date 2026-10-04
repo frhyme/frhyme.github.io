@@ -2,7 +2,7 @@
 title: "Vim25 - Marking and Deleting Trailing Space"
 date: 2022-03-25
 category: "vim"
-tags: ["vim", "space", "highlight", "autocmd", "BufWritePre", "vi"]
+tags: ["vim", "space", "highlight", "autocmd", "bufwritepre", "vi"]
 permalink: "/vim/vim25_remove_trailing_space/"
 ---
 

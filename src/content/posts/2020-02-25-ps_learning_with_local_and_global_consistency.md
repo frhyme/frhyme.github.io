@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Learning with local and global consistency"
 date: 2020-02-25
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "node-clasification"]
 permalink: "/paper-summary/ps_learning_with_local_and_global_consistency/"
 ---

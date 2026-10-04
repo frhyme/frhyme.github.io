@@ -2,7 +2,7 @@
 title: "optimization with constraint"
 date: 2018-06-15
 category: "python-libs"
-tags: ["python", "scipy", "python-lib", "optimization", "numpy"]
+tags: ["python", "scipy", "python-libs", "optimization", "numpy"]
 permalink: "/python-lib/optimization_with_constraint/"
 ---
 

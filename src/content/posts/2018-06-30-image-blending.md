@@ -2,7 +2,7 @@
 title: "image를 섞어서 새로운 이미지를 만듭니다."
 date: 2018-06-30
 category: "python-libs"
-tags: ["python", "python-lib", "image", "PIL", "pillow", "matplotlib", "numpy"]
+tags: ["python", "python-libs", "image", "pil", "pillow", "matplotlib", "numpy"]
 permalink: "/python-lib/image-blending/"
 ---
 

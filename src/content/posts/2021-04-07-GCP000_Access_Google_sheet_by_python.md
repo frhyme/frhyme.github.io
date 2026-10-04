@@ -1,8 +1,8 @@
 ---
 title: "GCP - Google Sheet API를 사용하여 python에서 데이터 긁어오기"
 date: 2021-04-07
-category: "GoogleCloudPlatform"
-tags: ["google", "gcp", "GoogleSheet", "sheet", "python", "GoogleDrive"]
+category: "dev-tools"
+tags: ["google", "gcp", "googlesheet", "sheet", "python", "googledrive"]
 permalink: "/googlecloudplatform/GCP000_Access_Google_sheet_by_python/"
 ---
 

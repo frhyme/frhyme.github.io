@@ -1,8 +1,8 @@
 ---
 title: "영화 Florida Project Trivia - 윌럼 데포"
 date: 2019-12-04
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "FloridaProject"]
+category: "english"
+tags: ["english", "movie", "movie_script", "floridaproject"]
 permalink: "/english_study_by_movie_script/FloridaProject_Trivia00_Willem/"
 ---
 

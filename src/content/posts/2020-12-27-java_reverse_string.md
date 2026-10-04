@@ -2,7 +2,7 @@
 title: "Java - StringBuilder를 사용하여 String Reverse"
 date: 2020-12-27
 category: "java"
-tags: ["java", "programming", "string", "StringBuilder"]
+tags: ["java", "programming", "string", "stringbuilder"]
 permalink: "/java/java_reverse_string/"
 ---
 

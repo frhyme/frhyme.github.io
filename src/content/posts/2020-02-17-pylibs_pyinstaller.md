@@ -2,7 +2,7 @@
 title: "PyInstaller - python code 실행 파일 만들기."
 date: 2020-02-17
 category: "python-libs"
-tags: ["python", "python-libs", "pyinstaller", "MacOS"]
+tags: ["python", "python-libs", "pyinstaller", "macos"]
 permalink: "/python-libs/pylibs_pyinstaller/"
 ---
 

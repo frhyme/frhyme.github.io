@@ -1,7 +1,7 @@
 ---
 title: "Git - commit 전에 staged 파일 diff"
 date: 2021-01-19
-category: "git"
+category: "dev-tools"
 tags: ["git", "commit", "stage", "diff"]
 permalink: "/git/git_diff_staged/"
 ---

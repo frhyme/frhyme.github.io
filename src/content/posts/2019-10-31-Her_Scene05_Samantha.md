@@ -1,8 +1,8 @@
 ---
 title: "영화 Her 명장면 - 제 이름은 사만다에요."
 date: 2019-10-31
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Her"]
+category: "english"
+tags: ["english", "movie", "movie_script", "her"]
 permalink: "/english_study_by_movie_script/Her_Scene05_Samantha/"
 ---
 

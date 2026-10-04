@@ -1,8 +1,8 @@
 ---
 title: "영화 'I Feel Pretty' - 내 자신감에 왜 근거가 필요하죠"
 date: 2019-11-02
-category: "MovieDiary"
-tags: ["MovieDiary", "Movie", "Film"]
+category: "life"
+tags: ["moviediary", "movie", "film"]
 permalink: "/moviediary/movie_diary_I_Feel_Pretty/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "C - merge sort"
 date: 2021-06-07
-category: "C_programming"
-tags: ["C_programming", "c", "sort", "sorting", "merge_sort", "divide_and_conquer", "algorithm"]
+category: "c-programming"
+tags: ["c_programming", "c", "sort", "sorting", "merge_sort", "divide_and_conquer", "algorithm"]
 permalink: "/c_programming/c_prgrmng13_merge_sort/"
 ---
 

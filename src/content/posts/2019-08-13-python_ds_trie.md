@@ -1,7 +1,7 @@
 ---
 title: "자료구조 - trie"
 date: 2019-08-13
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "trie", "data-structure"]
 permalink: "/python-basic/python_ds_trie/"
 ---

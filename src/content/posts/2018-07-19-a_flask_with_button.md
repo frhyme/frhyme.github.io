@@ -2,7 +2,7 @@
 title: "flask) form 형식을 통해 값을 입력받고 뭔가 출력하기"
 date: 2018-07-19
 category: "python-libs"
-tags: ["python", "python-lib", "flask", "html", "http", "form"]
+tags: ["python", "python-libs", "flask", "html", "http", "form"]
 permalink: "/python-lib/a_flask_with_button/"
 ---
 

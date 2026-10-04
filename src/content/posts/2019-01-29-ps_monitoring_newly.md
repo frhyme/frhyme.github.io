@@ -1,7 +1,7 @@
 ---
 title: "paper-summary, Monitoring Newly Adopted Technologies Using Keyword Based Analysis of Cited Patents"
 date: 2019-01-29
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "patent"]
 permalink: "/paper-summary/ps_monitoring_newly/"
 ---

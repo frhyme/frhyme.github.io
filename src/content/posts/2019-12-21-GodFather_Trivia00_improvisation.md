@@ -1,8 +1,8 @@
 ---
 title: "영화 GodFather에 대한 사소한 사실들 - 즉흥연기"
 date: 2019-12-21
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "GodFather"]
+category: "english"
+tags: ["english", "movie", "movie_script", "godfather"]
 permalink: "/english_study_by_movie_script/GodFather_Trivia00_improvisation/"
 ---
 

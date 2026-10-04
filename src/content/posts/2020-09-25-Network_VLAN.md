@@ -1,8 +1,8 @@
 ---
 title: "VLAN은 무엇인가?"
 date: 2020-09-25
-category: "NetworkStudy"
-tags: ["NetworkStudy", "Network", "LAN", "VLAN"]
+category: "algorithm"
+tags: ["networkstudy", "network", "lan", "vlan"]
 permalink: "/networkstudy/Network_VLAN/"
 ---
 

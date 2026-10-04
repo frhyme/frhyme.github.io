@@ -1,7 +1,7 @@
 ---
 title: "Scholarly Communities in Entrepreneurship Research - A Co–Citation Analysis"
 date: 2019-01-23
-category: "paper-summary"
+category: "machine-learning"
 tags: ["entrepreneurship", "bibliometric", "co-citation"]
 permalink: "/paper-summary/ps_scholarly_communities/"
 ---

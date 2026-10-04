@@ -1,8 +1,8 @@
 ---
 title: "Google Apps Script - Range"
 date: 2021-04-02
-category: "google"
-tags: ["google", "javascript", "google_sheet", "macro", "GoogleAppsScript"]
+category: "dev-tools"
+tags: ["google", "javascript", "google_sheet", "macro", "googleappsscript"]
 permalink: "/google/GoogleAppsScript02_Sheet_Range/"
 ---
 

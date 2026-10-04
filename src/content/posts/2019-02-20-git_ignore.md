@@ -1,7 +1,7 @@
 ---
 title: "git 프로젝트 폴더에 특정 파일 제외해서 push하기"
 date: 2019-02-20
-category: "others"
+category: "dev-tools"
 tags: ["git"]
 permalink: "/others/git_ignore/"
 ---

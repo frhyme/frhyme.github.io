@@ -2,7 +2,7 @@
 title: "auto-encoding, decoding"
 date: 2018-06-25
 category: "machine-learning"
-tags: ["python", "python-lib", "machine-learning", "keras", "auto-encoder", "encoder", "decoder", "dimenaionality-reduction", "mnist", "matplotlib"]
+tags: ["python", "python-libs", "machine-learning", "keras", "auto-encoder", "encoder", "decoder", "dimenaionality-reduction", "mnist", "matplotlib"]
 permalink: "/machine-learning/autoencoder/"
 ---
 

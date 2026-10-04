@@ -2,7 +2,7 @@
 title: "Java - Generic Programming - Wild Card"
 date: 2021-01-02
 category: "java"
-tags: ["java", "programming", "GenericProgramming", "WildCard"]
+tags: ["java", "programming", "genericprogramming", "wildcard"]
 permalink: "/java/java_programming_generic_with_wild_card/"
 ---
 

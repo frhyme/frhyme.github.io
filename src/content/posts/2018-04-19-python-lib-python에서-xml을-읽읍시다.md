@@ -2,7 +2,7 @@
 title: "read xml in python"
 date: 2018-04-19
 category: "python-libs"
-tags: ["python", "xml", "python-basic", "python-lib", "xmltodict", "OrderedDict"]
+tags: ["python", "xml", "python-basic", "python-libs", "xmltodict", "ordereddict"]
 permalink: "/python-lib/python-lib)-python에서-xml을-읽읍시다/"
 ---
 

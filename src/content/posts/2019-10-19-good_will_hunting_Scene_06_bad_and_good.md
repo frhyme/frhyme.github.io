@@ -1,8 +1,8 @@
 ---
 title: "영화 Good Will Hunting 명대사 - Bad and Good"
 date: 2019-10-19
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "GoodWillHunting"]
+category: "english"
+tags: ["english", "movie", "movie_script", "goodwillhunting"]
 permalink: "/english_study_by_movie_script/good_will_hunting_Scene_06_bad_and_good/"
 ---
 

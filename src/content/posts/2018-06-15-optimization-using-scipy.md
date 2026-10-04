@@ -2,7 +2,7 @@
 title: "scipy를 이용하여 최적화를 해봅시다."
 date: 2018-06-15
 category: "python-libs"
-tags: ["python", "python-lib", "optimization", "scipy", "numpy", "matplotlib"]
+tags: ["python", "python-libs", "optimization", "scipy", "numpy", "matplotlib"]
 permalink: "/python-lib/optimization-using-scipy/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "julia vs. (pure)python"
 date: 2018-08-28
-category: "others"
-tags: ["python", "python-lib", "julia", "pi"]
+category: "python"
+tags: ["python", "python-libs", "julia", "pi"]
 permalink: "/others/julia_vs_python_compute_pi/"
 ---
 

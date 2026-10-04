@@ -1,7 +1,7 @@
 ---
 title: "python string으로 컴파일하기"
 date: 2018-04-30
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "string"]
 permalink: "/python-basic/compile_string/"
 ---

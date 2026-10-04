@@ -2,7 +2,7 @@
 title: "networkx Graph에서 새로운 Graph 만들기(filtering, map 등)"
 date: 2018-05-09
 category: "python-libs"
-tags: ["networkx", "python-lib", "python"]
+tags: ["networkx", "python-libs", "python"]
 permalink: "/python-lib/networkx-graph-control/"
 ---
 

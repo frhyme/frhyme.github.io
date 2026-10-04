@@ -2,7 +2,7 @@
 title: "Java - Variable used in lambda expression should be final or effectively final"
 date: 2021-01-22
 category: "java"
-tags: ["java", "final", "variable", "lambdaExpression"]
+tags: ["java", "final", "variable", "lambdaexpression"]
 permalink: "/java/java_variable_used_in_lambda_expressiond/"
 ---
 

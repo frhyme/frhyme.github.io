@@ -1,8 +1,8 @@
 ---
 title: "C - linked list example"
 date: 2021-05-10
-category: "C_programming"
-tags: ["C", "programming", "C_programming", "malloc", "linked_list"]
+category: "c-programming"
+tags: ["c", "programming", "c_programming", "malloc", "linked_list"]
 permalink: "/c_programming/c_prgrmng01_linked_list/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "paper-summary - Optics - A bibliometric approach to detect emerging research domains and intellectual bases"
 date: 2019-01-17
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "community-detection"]
 permalink: "/paper-summary/ps_community_detect/"
 ---

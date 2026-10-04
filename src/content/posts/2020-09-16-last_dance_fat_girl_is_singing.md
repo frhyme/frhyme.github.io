@@ -1,8 +1,8 @@
 ---
 title: "Last Dance - Fat girl is singing?"
 date: 2020-09-16
-category: "english_study_by_movie_script"
-tags: ["english", "movie_script", "english_study_by_movie_script"]
+category: "english"
+tags: ["english", "movie_script"]
 permalink: "/english_study_by_movie_script/last_dance_fat_girl_is_singing/"
 ---
 

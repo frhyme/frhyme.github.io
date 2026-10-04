@@ -1,7 +1,7 @@
 ---
 title: "python에서 출력시에 format 에 따라 다르게 출력하기"
 date: 2018-07-27
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "string", "format", "print", "dictionary"]
 permalink: "/python-basic/python_string_format_cookbook/"
 ---

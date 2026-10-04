@@ -1,8 +1,8 @@
 ---
 title: "영화 Boyhood 명장면 - the Moment"
 date: 2019-10-26
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "Boyhood"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script"]
 permalink: "/english_study_by_movie_script/boyhood_Scene_01_the_moment/"
 ---
 

@@ -2,7 +2,7 @@
 title: "img file들로부터 gif로 변형하기"
 date: 2018-07-03
 category: "python-libs"
-tags: ["python", "image", "gif", "python-lib", "imageio", "matplotlib", "np.array", "numpy"]
+tags: ["python", "image", "gif", "python-libs", "imageio", "matplotlib", "np.array", "numpy"]
 permalink: "/python-lib/imgs_to_gif/"
 ---
 

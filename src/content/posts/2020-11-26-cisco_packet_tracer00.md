@@ -1,8 +1,8 @@
 ---
 title: "Cisco Packet Tracer로 네트워크를 공부해봅시다."
 date: 2020-11-26
-category: "NetworkStudy"
-tags: ["NetworkStudy", "Network", "Hub", "Switch", "cisco"]
+category: "algorithm"
+tags: ["networkstudy", "network", "hub", "switch", "cisco"]
 permalink: "/networkstudy/cisco_packet_tracer00/"
 ---
 

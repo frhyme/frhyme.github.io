@@ -2,7 +2,7 @@
 title: "Java - Method Reference"
 date: 2020-12-12
 category: "java"
-tags: ["java", "programming", "method", "class", "function", "FunctionalProgramming"]
+tags: ["java", "programming", "method", "class", "function", "functionalprogramming"]
 permalink: "/java/Java_function_method_reference/"
 ---
 

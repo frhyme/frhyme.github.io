@@ -2,7 +2,7 @@
 title: "networkx에서 MultiGraph에 대해 Centrality 계산하기."
 date: 2020-03-28
 category: "python-libs"
-tags: ["python", "python-basic", "python-libs", "centrality", "networkx", "MultiGraph"]
+tags: ["python", "python-basic", "python-libs", "centrality", "networkx", "multigraph"]
 permalink: "/python-libs/networkx_centrality_for_multigraph/"
 ---
 

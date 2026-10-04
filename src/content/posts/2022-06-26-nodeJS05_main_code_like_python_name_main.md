@@ -1,8 +1,8 @@
 ---
 title: "nodeJS - 직접 실행될 때와, library로 require되는 경우 구분하기"
 date: 2022-06-26
-category: "nodeJS"
-tags: ["nodeJS", "javascript"]
+category: "javascript"
+tags: ["nodejs", "javascript"]
 permalink: "/nodejs/nodeJS05_main_code_like_python_name_main/"
 ---
 

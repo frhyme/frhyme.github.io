@@ -2,7 +2,7 @@
 title: "Java - Thread - Sleep, Join"
 date: 2021-01-17
 category: "java"
-tags: ["java", "thread", "programming", "parallelism", "concurrency", "MultiThreading"]
+tags: ["java", "thread", "programming", "parallelism", "concurrency", "multithreading"]
 permalink: "/java/java_Thread03_sleep_join/"
 ---
 

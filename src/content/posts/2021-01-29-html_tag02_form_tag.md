@@ -1,7 +1,7 @@
 ---
 title: "html - form tag"
 date: 2021-01-29
-category: "html"
+category: "web"
 tags: ["html", "a", "tag", "form", "label", "input"]
 permalink: "/html/html_tag02_form_tag/"
 ---

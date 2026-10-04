@@ -2,7 +2,7 @@
 title: "강화학습을 공부해봅시다. 2편"
 date: 2018-06-27
 category: "machine-learning"
-tags: ["reinforcement-learning", "python", "python-lib", "gym", "matplotlib", "numpy", "sns", "heatmap", "learning-rate"]
+tags: ["reinforcement-learning", "python", "python-libs", "gym", "matplotlib", "numpy", "sns", "heatmap", "learning-rate"]
 permalink: "/machine-learning/a_reinforcement_stochastic/"
 ---
 

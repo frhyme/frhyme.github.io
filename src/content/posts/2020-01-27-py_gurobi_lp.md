@@ -2,7 +2,7 @@
 title: "python - gurobi - Linear Programming."
 date: 2020-01-27
 category: "python-libs"
-tags: ["python", "python-libs", "gurobi", "LP", "linearprogramming", "optimization"]
+tags: ["python", "python-libs", "gurobi", "lp", "linearprogramming", "optimization"]
 permalink: "/python-libs/py_gurobi_lp/"
 ---
 

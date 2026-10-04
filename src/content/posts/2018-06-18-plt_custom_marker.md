@@ -2,7 +2,7 @@
 title: "plt에서 custom marker를 사용할 수 있을까요?"
 date: 2018-06-18
 category: "python-libs"
-tags: ["python", "python-lib", "matplotlib", "marker", "numpy"]
+tags: ["python", "python-libs", "matplotlib", "marker", "numpy"]
 permalink: "/python-lib/plt_custom_marker/"
 ---
 

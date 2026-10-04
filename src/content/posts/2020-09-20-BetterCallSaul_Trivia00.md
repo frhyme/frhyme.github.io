@@ -1,8 +1,8 @@
 ---
 title: "Better Call Saul - 원래는 척과 하워드의 역할이 반대였다."
 date: 2020-09-20
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "BetterCallSaul", "BreakingBad"]
+category: "english"
+tags: ["english", "movie", "movie_script", "bettercallsaul", "breakingbad"]
 permalink: "/english_study_by_movie_script/BetterCallSaul_Trivia00/"
 ---
 

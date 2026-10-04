@@ -1,7 +1,7 @@
 ---
 title: "paper-summary - Universal Behavior of Load Distribution in Scale-Free Networks"
 date: 2020-02-05
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "scale-free-network", "network", "load-centrality", "betweenness-centrality"]
 permalink: "/paper-summary/paper_summary_load_distribution/"
 ---

@@ -1,8 +1,8 @@
 ---
 title: "C - Struct(구조체)"
 date: 2021-05-10
-category: "C_programming"
-tags: ["C", "programming", "C_programming", "vscode", "struct"]
+category: "c-programming"
+tags: ["c", "programming", "c_programming", "vscode", "struct"]
 permalink: "/c_programming/c_prgrmng03_struct_basic/"
 ---
 

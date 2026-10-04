@@ -2,7 +2,7 @@
 title: "Java - Thread - State of Thread"
 date: 2021-01-22
 category: "java"
-tags: ["java", "thread", "programming", "parallelism", "concurrency", "MultiThreading"]
+tags: ["java", "thread", "programming", "parallelism", "concurrency", "multithreading"]
 permalink: "/java/java_Thread07_thread_states/"
 ---
 

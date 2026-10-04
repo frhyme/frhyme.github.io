@@ -1,7 +1,7 @@
 ---
 title: "markdown에서 image 파일 사이즈 변경하기"
 date: 2018-04-27
-category: "others"
+category: "dev-tools"
 tags: ["markdown", "blog", "image"]
 permalink: "/other/markdown-img-resizing/"
 ---

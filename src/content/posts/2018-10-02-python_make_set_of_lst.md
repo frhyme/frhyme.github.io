@@ -1,7 +1,7 @@
 ---
 title: "list of list에서 unique한 것만 뽑기."
 date: 2018-10-02
-category: "python-basic"
+category: "python"
 tags: ["python", "list", "set", "python-basic", "tuple", "data-structure"]
 permalink: "/python-basic/python_make_set_of_lst/"
 ---

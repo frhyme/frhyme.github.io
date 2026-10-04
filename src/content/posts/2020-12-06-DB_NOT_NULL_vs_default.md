@@ -2,7 +2,7 @@
 title: "DB) NOT NULL과 DEFAULT를 동시에 쓸 필요가 있는가?"
 date: 2020-12-06
 category: "others"
-tags: ["database", "constraint", "NULL"]
+tags: ["database", "constraint", "null"]
 permalink: "/others/DB_NOT_NULL_vs_default/"
 ---
 

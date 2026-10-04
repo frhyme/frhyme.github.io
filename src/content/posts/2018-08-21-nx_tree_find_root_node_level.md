@@ -2,7 +2,7 @@
 title: "nx.graph가 tree일 때 root, level 찾기"
 date: 2018-08-21
 category: "python-libs"
-tags: ["python", "python-lib", "networkx", "tree"]
+tags: ["python", "python-libs", "networkx", "tree"]
 permalink: "/python-lib/nx_tree_find_root_node_level/"
 ---
 

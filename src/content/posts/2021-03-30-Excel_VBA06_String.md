@@ -1,8 +1,8 @@
 ---
 title: "Excel - VBA - String"
 date: 2021-03-30
-category: "MS_Office"
-tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic", "String"]
+category: "dev-tools"
+tags: ["ms_office", "excel", "vba", "macro", "macos", "basic", "string"]
 permalink: "/ms_office/Excel_VBA06_String/"
 ---
 

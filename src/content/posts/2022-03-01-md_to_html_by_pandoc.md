@@ -1,7 +1,7 @@
 ---
 title: "Pandoc를 사용하여 markdown file을 html로 변환하기"
 date: 2022-03-01
-category: "markdown"
+category: "dev-tools"
 tags: ["markdown", "pandoc", "html"]
 permalink: "/markdown/md_to_html_by_pandoc/"
 ---

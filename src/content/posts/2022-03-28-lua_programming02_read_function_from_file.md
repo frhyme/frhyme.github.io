@@ -1,7 +1,7 @@
 ---
 title: "Lua - Read function from module"
 date: 2022-03-28
-category: "lua"
+category: "dev-tools"
 tags: ["lua", "function", "module", "hammerspoon"]
 permalink: "/lua/lua_programming02_read_function_from_file/"
 ---

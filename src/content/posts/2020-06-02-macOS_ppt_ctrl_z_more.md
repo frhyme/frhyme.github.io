@@ -2,7 +2,7 @@
 title: "macOS) 파워포인트 실행취소 저장 개수 늘리기."
 date: 2020-06-02
 category: "others"
-tags: ["macOS", "ppt", "powerpoint"]
+tags: ["macos", "ppt", "powerpoint"]
 permalink: "/others/macOS_ppt_ctrl_z_more/"
 ---
 

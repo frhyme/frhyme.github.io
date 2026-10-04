@@ -2,7 +2,7 @@
 title: "kaggle) imdb movie review를 분석합니다 - 1편"
 date: 2018-06-09
 category: "machine-learning"
-tags: ["kaggle", "python", "python-lib", "word2vec", "sklearn", "random-forest", "BeautifulSoup", "numpy", "pandas", "nltk"]
+tags: ["kaggle", "python", "python-libs", "word2vec", "sklearn", "random-forest", "beautifulsoup", "numpy", "pandas", "nltk"]
 permalink: "/machine-learning/kaggle)movie_review1/"
 ---
 

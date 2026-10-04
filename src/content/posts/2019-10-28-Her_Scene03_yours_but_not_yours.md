@@ -1,8 +1,8 @@
 ---
 title: "영화 Her 명장면 - 난 너의 것이지만, 동시에 너의 것이 아니야"
 date: 2019-10-28
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Her"]
+category: "english"
+tags: ["english", "movie", "movie_script", "her"]
 permalink: "/english_study_by_movie_script/Her_Scene03_yours_but_not_yours/"
 ---
 

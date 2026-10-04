@@ -2,7 +2,7 @@
 title: "맥북에 VirtualBox를 사용해서 윈도우10을 설치했습니다."
 date: 2020-12-22
 category: "others"
-tags: ["macOS", "VirtualBox", "Window", "BootCamp"]
+tags: ["macos", "virtualbox", "window", "bootcamp"]
 permalink: "/others/macOS_install_window_by_VIrtualBox/"
 ---
 

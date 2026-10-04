@@ -1,8 +1,8 @@
 ---
 title: "R - ggplot with title"
 date: 2020-12-23
-category: "R_programming"
-tags: ["R", "R_programming", "ggplot"]
+category: "data-science"
+tags: ["r", "r_programming", "ggplot"]
 permalink: "/r_programming/R_ggplot_with_title/"
 ---
 

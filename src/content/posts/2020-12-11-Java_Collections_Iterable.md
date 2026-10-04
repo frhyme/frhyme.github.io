@@ -2,7 +2,7 @@
 title: "Java - Iterable, Iterator, ListIterator"
 date: 2020-12-11
 category: "java"
-tags: ["java", "programming", "interface", "collection", "Iterable", "Iterator"]
+tags: ["java", "programming", "interface", "collection", "iterable", "iterator"]
 permalink: "/java/Java_Collections_Iterable/"
 ---
 

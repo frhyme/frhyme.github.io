@@ -2,7 +2,7 @@
 title: "gensim - tutorial - fastText 2편"
 date: 2020-04-03
 category: "python-libs"
-tags: ["python", "python-libs", "gensim", "similairty", "word2vec", "nlp", "doc2vec", "fastText"]
+tags: ["python", "python-libs", "gensim", "similairty", "word2vec", "nlp", "doc2vec", "fasttext"]
 permalink: "/python-libs/gensim2_fasttext_better/"
 ---
 

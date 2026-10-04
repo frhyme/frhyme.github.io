@@ -2,7 +2,7 @@
 title: "Java - stream - Collectors.partitioningBy"
 date: 2020-12-27
 category: "java"
-tags: ["java", "programming", "stream", "Collectors", "partitioningBy"]
+tags: ["java", "programming", "stream", "collectors", "partitioningby"]
 permalink: "/java/java_stream_collectors_partitionby/"
 ---
 

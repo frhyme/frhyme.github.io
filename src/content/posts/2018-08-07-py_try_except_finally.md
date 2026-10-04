@@ -1,7 +1,7 @@
 ---
 title: "try, except, finally"
 date: 2018-08-07
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "try", "except", "exception-handling"]
 permalink: "/python-basic/py_try_except_finally/"
 ---

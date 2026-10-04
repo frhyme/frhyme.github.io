@@ -2,7 +2,7 @@
 title: "soynlp - extract nouns"
 date: 2021-04-18
 category: "python-libs"
-tags: ["python", "python-lib", "konlpy", "nlp", "soynlp"]
+tags: ["python", "python-libs", "konlpy", "nlp", "soynlp"]
 permalink: "/python-lib/soynlp00_extract_nouns/"
 ---
 

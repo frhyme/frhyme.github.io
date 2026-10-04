@@ -1,7 +1,7 @@
 ---
 title: "scala - Function"
 date: 2021-01-23
-category: "scala"
+category: "java"
 tags: ["scala", "programming", "function"]
 permalink: "/scala/scala02_function/"
 ---

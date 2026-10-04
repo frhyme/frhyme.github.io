@@ -1,7 +1,7 @@
 ---
 title: "github 라이센스를 골라봅시다."
 date: 2018-04-20
-category: "others"
+category: "dev-tools"
 tags: ["github", "license", "beerware"]
 permalink: "/others/github-license-만들기/"
 ---

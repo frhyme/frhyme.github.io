@@ -2,7 +2,7 @@
 title: "JVM, JRE, JDK"
 date: 2020-10-18
 category: "java"
-tags: ["java", "programming", "JVM", "JRE", "JDK"]
+tags: ["java", "programming", "jvm", "jre", "jdk"]
 permalink: "/java/java_JVM_JRE_JDK/"
 ---
 

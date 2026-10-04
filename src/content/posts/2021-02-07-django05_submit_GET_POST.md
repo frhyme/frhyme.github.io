@@ -2,7 +2,7 @@
 title: "python - Django - submit by GET, POST"
 date: 2021-02-07
 category: "python"
-tags: ["python", "programming", "django", "backend", "server", "form", "GET", "POST"]
+tags: ["python", "programming", "django", "backend", "server", "form", "get", "post"]
 permalink: "/python/django05_submit_GET_POST/"
 ---
 

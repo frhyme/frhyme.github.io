@@ -1,7 +1,7 @@
 ---
 title: "Is Small and Medium Enterprises (SMEs) an Entrepreneurship?"
 date: 2019-01-23
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "sme", "entrepreneurship"]
 permalink: "/paper-summary/ps_entrepreneurship_sme/"
 ---

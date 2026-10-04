@@ -1,8 +1,8 @@
 ---
 title: "영화 Trainspotting 에 관한 사소한 사실들(trivia) - 3편"
 date: 2020-02-03
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "trainspotting"]
+category: "english"
+tags: ["english", "movie", "movie_script", "trainspotting"]
 permalink: "/english_study_by_movie_script/Trainspotting_trivia_3/"
 ---
 

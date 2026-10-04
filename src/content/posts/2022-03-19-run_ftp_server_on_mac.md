@@ -2,7 +2,7 @@
 title: "맥에서 ftp 서버 띄우기"
 date: 2022-03-19
 category: "others"
-tags: ["ftp", "macOS"]
+tags: ["ftp", "macos"]
 permalink: "/others/run_ftp_server_on_mac/"
 ---
 

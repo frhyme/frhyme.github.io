@@ -1,7 +1,7 @@
 ---
 title: "vs code - explorer에서 enter로 이름 변경되는 것을 해제하려고 했으나.."
 date: 2021-05-19
-category: "vs-code"
+category: "dev-tools"
 tags: ["vscode", "vim", "vi"]
 permalink: "/vscode/macOS_change_file_name_not_enter/"
 ---

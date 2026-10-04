@@ -1,8 +1,8 @@
 ---
 title: "python - F632 - string은 == 로 비교하세요!"
 date: 2020-05-29
-category: "python-basic"
-tags: ["python", "string", "python-basic", "flake8", "Interning"]
+category: "python"
+tags: ["python", "string", "python-basic", "flake8", "interning"]
 permalink: "/python-basic/flake8_F632_string_compare/"
 ---
 

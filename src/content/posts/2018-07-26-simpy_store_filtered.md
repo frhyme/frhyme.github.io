@@ -2,7 +2,7 @@
 title: "simpy - Resource, Store 이용하기"
 date: 2018-07-26
 category: "python-libs"
-tags: ["python", "python-lib", "simpy", "numpy", "filter", "simulation"]
+tags: ["python", "python-libs", "simpy", "numpy", "filter", "simulation"]
 permalink: "/python-lib/simpy_store_filtered/"
 ---
 

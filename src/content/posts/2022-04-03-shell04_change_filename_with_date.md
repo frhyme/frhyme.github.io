@@ -1,7 +1,7 @@
 ---
 title: "Shell 04 - Change filename with Date"
 date: 2022-04-03
-category: "shell"
+category: "dev-tools"
 tags: ["shell", "date", "filename"]
 permalink: "/shell/shell04_change_filename_with_date/"
 ---

@@ -2,7 +2,7 @@
 title: "Java - Simple Currying and example"
 date: 2020-12-13
 category: "java"
-tags: ["java", "programming", "function", "interface", "Currying"]
+tags: ["java", "programming", "function", "interface", "currying"]
 permalink: "/java/java_simple_currying_and_example/"
 ---
 

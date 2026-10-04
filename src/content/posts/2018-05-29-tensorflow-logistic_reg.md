@@ -2,7 +2,7 @@
 title: "tensorflow) logistic regression"
 date: 2018-05-29
 category: "machine-learning"
-tags: ["python", "tensorflow", "python-lib", "logistic-regression"]
+tags: ["python", "tensorflow", "python-libs", "logistic-regression"]
 permalink: "/machine-learning/tensorflow-logistic_reg/"
 ---
 

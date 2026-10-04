@@ -1,8 +1,8 @@
 ---
 title: "영화 Pulp Fiction - 미국에서는 8백만달러가 저예산이죠"
 date: 2019-12-16
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "PulpFiction"]
+category: "english"
+tags: ["english", "movie", "movie_script", "pulpfiction"]
 permalink: "/english_study_by_movie_script/PulpFiction_Trivia01_low_budget/"
 ---
 

@@ -2,7 +2,7 @@
 title: "python basic - super()"
 date: 2020-12-28
 category: "python"
-tags: ["python", "OOP", "super", "inheritance", "MRO"]
+tags: ["python", "oop", "super", "inheritance", "mro"]
 permalink: "/python/python_basic_about_super_function/"
 ---
 

@@ -2,7 +2,7 @@
 title: "Java - Enum(열거형)"
 date: 2020-10-25
 category: "java"
-tags: ["java", "programming", "enum", "enumeration", "C"]
+tags: ["java", "programming", "enum", "enumeration", "c"]
 permalink: "/java/java_enum_diff_with_c/"
 ---
 

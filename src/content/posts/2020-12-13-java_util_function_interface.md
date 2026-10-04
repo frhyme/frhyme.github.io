@@ -2,7 +2,7 @@
 title: "Java - Functional Interface"
 date: 2020-12-13
 category: "java"
-tags: ["java", "programming", "function", "interface", "AnonymousClass", "FunctionalInterface"]
+tags: ["java", "programming", "function", "interface", "anonymousclass", "functionalinterface"]
 permalink: "/java/java_util_function_interface/"
 ---
 

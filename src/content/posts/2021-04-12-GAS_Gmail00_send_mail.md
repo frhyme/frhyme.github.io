@@ -1,8 +1,8 @@
 ---
 title: "Google Apps Script - Gmail - Send Mail"
 date: 2021-04-12
-category: "google"
-tags: ["google", "javascript", "macro", "GoogleAppsScript", "Gmail"]
+category: "dev-tools"
+tags: ["google", "javascript", "macro", "googleappsscript", "gmail"]
 permalink: "/google/GAS_Gmail00_send_mail/"
 ---
 

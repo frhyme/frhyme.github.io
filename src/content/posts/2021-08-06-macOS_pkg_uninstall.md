@@ -1,8 +1,8 @@
 ---
 title: "macOS - pkg 로 설치한 프로그램 삭제하기"
 date: 2021-08-06
-category: "macOS"
-tags: ["macOS", "pkg", "pkgutil", "dmg"]
+category: "dev-tools"
+tags: ["macos", "pkg", "pkgutil", "dmg"]
 permalink: "/macos/macOS_pkg_uninstall/"
 ---
 

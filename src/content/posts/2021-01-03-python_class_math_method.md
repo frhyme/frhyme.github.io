@@ -1,8 +1,8 @@
 ---
 title: "python - class - Math method"
 date: 2021-01-03
-category: "python-basic"
-tags: ["python", "python-basic", "OOP", "math", "method"]
+category: "python"
+tags: ["python", "python-basic", "oop", "math", "method"]
 permalink: "/python-basic/python_class_math_method/"
 ---
 

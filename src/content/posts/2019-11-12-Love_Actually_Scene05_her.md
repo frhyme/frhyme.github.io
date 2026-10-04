@@ -1,8 +1,8 @@
 ---
 title: "영화 Love Actually 명장면 - 그녀는 너에 대해서 어떻게 생각하니"
 date: 2019-11-12
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "LoveActually"]
+category: "english"
+tags: ["english", "movie", "movie_script", "loveactually"]
 permalink: "/english_study_by_movie_script/Love_Actually_Scene05_her/"
 ---
 

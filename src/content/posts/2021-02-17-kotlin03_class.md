@@ -1,7 +1,7 @@
 ---
 title: "Kotlin - class"
 date: 2021-02-17
-category: "kotlin"
+category: "java"
 tags: ["kotlin", "programming", "class"]
 permalink: "/kotlin/kotlin03_class/"
 ---

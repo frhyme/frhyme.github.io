@@ -1,8 +1,8 @@
 ---
 title: "영화 Martian 명장면 - 그거 과학도 아니잖아?"
 date: 2019-10-30
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Martian"]
+category: "english"
+tags: ["english", "movie", "movie_script", "martian"]
 permalink: "/english_study_by_movie_script/Martian_Scene00_not_a_science/"
 ---
 

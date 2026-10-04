@@ -1,8 +1,8 @@
 ---
 title: "영화 Dark Knight에 관한 사소한 사실들(trivia) - 1편"
 date: 2020-03-02
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "darkknight"]
+category: "english"
+tags: ["english", "movie", "movie_script", "darkknight"]
 permalink: "/english_study_by_movie_script/dark_knight_trivia_1/"
 ---
 

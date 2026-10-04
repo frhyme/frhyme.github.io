@@ -1,8 +1,8 @@
 ---
 title: "영화 Love Actually 명장면 - 사랑보다 큰 고통이 어디에 있는데요"
 date: 2019-11-02
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "LoveActually"]
+category: "english"
+tags: ["english", "movie", "movie_script", "loveactually"]
 permalink: "/english_study_by_movie_script/Love_Actually_Scene02_agony/"
 ---
 

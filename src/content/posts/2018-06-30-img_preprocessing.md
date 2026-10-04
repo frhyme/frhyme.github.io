@@ -2,7 +2,7 @@
 title: "파이썬에서 image를 처리합시다."
 date: 2018-06-30
 category: "python-libs"
-tags: ["python", "python-lib", "image", "pillow", "matplotlib", "numpy", "png", "jpg"]
+tags: ["python", "python-libs", "image", "pillow", "matplotlib", "numpy", "png", "jpg"]
 permalink: "/python-lib/img_preprocessing/"
 ---
 

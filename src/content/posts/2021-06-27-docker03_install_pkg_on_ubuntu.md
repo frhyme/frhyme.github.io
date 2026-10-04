@@ -1,7 +1,7 @@
 ---
 title: "docker - container 내 필요한 패키지 설치"
 date: 2021-06-27
-category: "docker"
+category: "dev-tools"
 tags: ["docker", "container", "image"]
 permalink: "/docker/docker03_install_pkg_on_ubuntu/"
 ---

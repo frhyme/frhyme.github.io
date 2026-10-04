@@ -2,7 +2,7 @@
 title: "python에서 작업한 내용을 바로 피피티로 옮기자!"
 date: 2018-05-06
 category: "python-libs"
-tags: ["python-lib", "python", "power-point", "python-pptx", "not-yet"]
+tags: ["python-libs", "python", "ppt", "not-yet"]
 permalink: "/python-lib/python_to_ppt/"
 ---
 

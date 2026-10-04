@@ -1,7 +1,7 @@
 ---
 title: "Vim Auto closing html tag"
 date: 2022-03-19
-category: "html"
+category: "web"
 tags: ["vi", "vim", "html", "tag"]
 permalink: "/html/vim_html_dev_setting/"
 ---

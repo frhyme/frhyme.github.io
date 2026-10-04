@@ -1,8 +1,8 @@
 ---
 title: "python-basic) Object Oriented Programming in Python"
 date: 2018-04-19
-category: "python-basic"
-tags: ["python", "python-basic", "OOP", "object-oriented-programming"]
+category: "python"
+tags: ["python", "python-basic", "oop", "object-oriented-programming"]
 permalink: "/python-basic/python-basic)-OOP-in-pyhon/"
 ---
 

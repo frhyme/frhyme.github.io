@@ -1,8 +1,8 @@
 ---
 title: "jQuery - Traversal - Filter"
 date: 2021-02-10
-category: "jQuery"
-tags: ["jQuery", "javascript", "html", "web", "css", "DOM"]
+category: "web"
+tags: ["jquery", "javascript", "html", "web", "css", "dom"]
 permalink: "/jquery/jQuery11_Traversal_Filter/"
 ---
 

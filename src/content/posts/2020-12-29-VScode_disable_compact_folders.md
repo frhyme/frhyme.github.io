@@ -1,8 +1,8 @@
 ---
 title: "VScode - Disable Compact Folder"
 date: 2020-12-29
-category: "vs-code"
-tags: ["VScode"]
+category: "dev-tools"
+tags: ["vscode"]
 permalink: "/vscode/VScode_disable_compact_folders/"
 ---
 

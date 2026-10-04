@@ -1,8 +1,8 @@
 ---
 title: "영화 Boyhood에 관한 사소한 사실들(trivia)"
 date: 2020-03-09
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script"]
 permalink: "/english_study_by_movie_script/boyhood_trivia/"
 ---
 

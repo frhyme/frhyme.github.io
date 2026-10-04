@@ -1,7 +1,7 @@
 ---
 title: "Kotlin - Regex"
 date: 2021-02-22
-category: "kotlin"
+category: "java"
 tags: ["kotlin", "programming", "regex"]
 permalink: "/kotlin/kotlin08_regex/"
 ---

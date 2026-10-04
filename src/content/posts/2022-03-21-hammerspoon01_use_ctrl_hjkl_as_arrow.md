@@ -1,8 +1,8 @@
 ---
 title: "macOS - hammerspoon01 - ctrl + hjkl 화살표 사용하기"
 date: 2022-03-21
-category: "hammerspoon"
-tags: ["macOS", "hammerspoon", "lua", "vi", "vim"]
+category: "dev-tools"
+tags: ["macos", "hammerspoon", "lua", "vi", "vim"]
 permalink: "/hammerspoon/hammerspoon01_use_ctrl_hjkl_as_arrow/"
 ---
 

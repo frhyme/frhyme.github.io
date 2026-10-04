@@ -2,7 +2,7 @@
 title: "matplolib) 3d plotting하기"
 date: 2018-06-12
 category: "python-libs"
-tags: ["python", "python-lib", "matplotlib", "3d-plotting"]
+tags: ["python", "python-libs", "matplotlib", "3d-plotting"]
 permalink: "/python-lib/matplotlib_3dplotting/"
 ---
 

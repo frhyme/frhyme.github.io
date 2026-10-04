@@ -1,7 +1,7 @@
 ---
 title: "VScode - 줄 번호로 이동하기(Ctrl + G)"
 date: 2020-05-27
-category: "vs-code"
+category: "dev-tools"
 tags: ["shortcut", "vscode"]
 permalink: "/vscode/vs_code_go_line_by_lineNum/"
 ---

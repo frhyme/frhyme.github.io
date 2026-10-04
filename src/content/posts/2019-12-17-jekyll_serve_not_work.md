@@ -1,7 +1,7 @@
 ---
 title: "왜 jekyll serve가 안될까?"
 date: 2019-12-17
-category: "others"
+category: "dev-tools"
 tags: ["jekyll", "server", "blog"]
 permalink: "/others/jekyll_serve_not_work/"
 ---

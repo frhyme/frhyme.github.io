@@ -2,7 +2,7 @@
 title: "python에서 수를 다루는 방식."
 date: 2018-09-04
 category: "python-libs"
-tags: ["python", "python-lib", "number", "float", "int", "rounding", "numpy", "decimal"]
+tags: ["python", "python-libs", "number", "float", "int", "rounding", "numpy", "decimal"]
 permalink: "/python-libs/python_number_in_python/"
 ---
 

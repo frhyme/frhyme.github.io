@@ -2,7 +2,7 @@
 title: "차번호판의 숫자를 사칙연산으로 0으로 만들 수 있을까요?"
 date: 2018-08-27
 category: "python-libs"
-tags: ["python", "python-lib", "numpy"]
+tags: ["python", "python-libs", "numpy"]
 permalink: "/python-lib/python_car_plate_num/"
 ---
 

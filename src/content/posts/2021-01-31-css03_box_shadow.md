@@ -1,7 +1,7 @@
 ---
 title: "CSS - Box Shadow"
 date: 2021-01-31
-category: "css"
+category: "web"
 tags: ["css", "shadow", "html"]
 permalink: "/css/css03_box_shadow/"
 ---

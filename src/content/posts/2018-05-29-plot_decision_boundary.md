@@ -2,7 +2,7 @@
 title: "decision boundary를 그려 봅시다."
 date: 2018-05-29
 category: "python-libs"
-tags: ["python", "python-lib", "matplotlib", "numpy"]
+tags: ["python", "python-libs", "matplotlib", "numpy"]
 permalink: "/python-lib/plot_decision_boundary/"
 ---
 

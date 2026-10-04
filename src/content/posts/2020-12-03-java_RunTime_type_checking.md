@@ -2,7 +2,7 @@
 title: "Java - Runtime Type Checking"
 date: 2020-12-03
 category: "java"
-tags: ["java", "programming", "class", "OOP"]
+tags: ["java", "programming", "class", "oop"]
 permalink: "/java/java_RunTime_type_checking/"
 ---
 

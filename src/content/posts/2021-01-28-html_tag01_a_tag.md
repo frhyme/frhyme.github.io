@@ -1,7 +1,7 @@
 ---
 title: "html - a tag"
 date: 2021-01-28
-category: "html"
+category: "web"
 tags: ["html", "a", "tag", "hyperlink"]
 permalink: "/html/html_tag01_a_tag/"
 ---

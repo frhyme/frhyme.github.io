@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Romantic Partnerships and the Dispersion of Social Ties - A Network Analysis of Relationship Status on Facebook"
 date: 2020-02-06
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "network", "centrality", "subgraph"]
 permalink: "/paper-summary/ps_romantic/"
 ---

@@ -1,8 +1,8 @@
 ---
 title: "VS-CODE - Terminal의 색깔 바꾸기"
 date: 2020-05-20
-category: "vs-code"
-tags: ["VSCODE", "terminal", "theme", "color-theme"]
+category: "dev-tools"
+tags: ["vscode", "terminal", "theme", "color-theme"]
 permalink: "/vs-code/vs_code_terminal_theme/"
 ---
 

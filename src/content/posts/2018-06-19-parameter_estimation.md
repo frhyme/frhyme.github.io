@@ -2,7 +2,7 @@
 title: "현재 데이터의 모수를 어떻게 추정할 수 있을까요?"
 date: 2018-06-19
 category: "python-libs"
-tags: ["python", "python-lib", "MLE", "parameter-estimation", "numpy", "matplotlib"]
+tags: ["python", "python-libs", "mle", "parameter-estimation", "numpy", "matplotlib"]
 permalink: "/python-lib/parameter_estimation/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Python으로 이해하는 Bayesian"
 date: 2020-01-02
-category: "others"
+category: "python"
 tags: ["python", "statistics", "machine-learning"]
 permalink: "/others/b_bayesian_in_python/"
 ---

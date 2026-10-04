@@ -2,7 +2,7 @@
 title: "Java - Data Structure - Ternary Tree"
 date: 2021-01-05
 category: "java"
-tags: ["java", "DataStructure", "programming", "list", "class", "Tree"]
+tags: ["java", "datastructure", "programming", "list", "class", "tree"]
 permalink: "/java/java_datastructure_TernaryTree/"
 ---
 

@@ -2,7 +2,7 @@
 title: "Java, javac, JVM"
 date: 2020-10-17
 category: "java"
-tags: ["java", "javac", "JVM"]
+tags: ["java", "javac", "jvm"]
 permalink: "/java/java_basic_write_compile_JVM/"
 ---
 

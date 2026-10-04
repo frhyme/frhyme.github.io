@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Semi-Supervised Learning Using Gaussian Fields and Harmonic Functions"
 date: 2020-02-24
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "node-clasification", "harmonic-function", "similarity"]
 permalink: "/paper-summary/ps_semi_supervicsed_harmoni_function/"
 ---

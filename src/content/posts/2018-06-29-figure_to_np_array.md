@@ -2,7 +2,7 @@
 title: "matplotlib 의 figure를 np.array로 변환합시다."
 date: 2018-06-29
 category: "python-libs"
-tags: ["python", "python-lib", "numpy", "matplotlib", "array"]
+tags: ["python", "python-libs", "numpy", "matplotlib", "array"]
 permalink: "/python-lib/figure_to_np_array/"
 ---
 

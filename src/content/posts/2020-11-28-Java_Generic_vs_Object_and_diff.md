@@ -2,7 +2,7 @@
 title: "Java - Generic Programming vs Object"
 date: 2020-11-28
 category: "java"
-tags: ["java", "programming", "GenericProgramming"]
+tags: ["java", "programming", "genericprogramming"]
 permalink: "/java/Java_Generic_vs_Object_and_diff/"
 ---
 

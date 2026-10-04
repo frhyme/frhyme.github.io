@@ -1,8 +1,8 @@
 ---
 title: "영화 Before Sunrise 명장면 - 셀리느와 제시, 그리고 책들"
 date: 2019-12-06
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "BeforeSunrise"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script", "beforesunrise"]
 permalink: "/english_study_by_movie_script/BeforeSunrise_Scene01_books/"
 ---
 

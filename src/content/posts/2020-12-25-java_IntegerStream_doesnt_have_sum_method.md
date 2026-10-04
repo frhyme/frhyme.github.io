@@ -2,7 +2,7 @@
 title: "Java - Stream - IntStream vs. IntegerStream"
 date: 2020-12-25
 category: "java"
-tags: ["java", "stream", "IntStream", "programming", "int", "Integer", "sum"]
+tags: ["java", "stream", "intstream", "programming", "int", "integer", "sum"]
 permalink: "/java/java_IntegerStream_doesnt_have_sum_method/"
 ---
 

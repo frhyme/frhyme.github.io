@@ -1,8 +1,8 @@
 ---
 title: "VScode - File Explorer의 font size를 줄여 봅시다."
 date: 2021-01-15
-category: "vs-code"
-tags: ["VScode", "FontSize"]
+category: "dev-tools"
+tags: ["vscode", "fontsize"]
 permalink: "/vscode/VScode_file_explorer_font_size_smaller/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "C programming - stack 을 사용하여 fibonacci 수열을 구현했습니다."
 date: 2021-05-29
-category: "C_programming"
-tags: ["C", "programming", "C_programming", "c", "stack", "fibonacci", "recursion"]
+category: "c-programming"
+tags: ["c", "programming", "c_programming", "stack", "fibonacci", "recursion"]
 permalink: "/c_programming/c_prgrmng08_fibonacci_by_stack/"
 ---
 

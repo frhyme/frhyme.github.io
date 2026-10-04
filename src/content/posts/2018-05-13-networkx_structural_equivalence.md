@@ -2,7 +2,7 @@
 title: "structural equivalence를 활용해 두 노드 간의 등위성을 분석해봅시다."
 date: 2018-05-13
 category: "python-libs"
-tags: ["python", "python-lib", "networkx"]
+tags: ["python", "python-libs", "networkx"]
 permalink: "/python-lib/networkx_structural_equivalence/"
 ---
 

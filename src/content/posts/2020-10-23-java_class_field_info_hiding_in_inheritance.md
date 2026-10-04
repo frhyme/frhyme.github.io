@@ -2,7 +2,7 @@
 title: "Java - Method Overridding, Field shadowing"
 date: 2020-10-23
 category: "java"
-tags: ["java", "overriding", "inheritance", "programming", "MethodOverridding"]
+tags: ["java", "overriding", "inheritance", "programming", "methodoverridding"]
 permalink: "/java/java_class_field_info_hiding_in_inheritance/"
 ---
 

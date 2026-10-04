@@ -2,7 +2,7 @@
 title: "bipartite graph를 다룰 거에요!!"
 date: 2018-05-11
 category: "python-libs"
-tags: ["python", "python-lib", "networkx"]
+tags: ["python", "python-libs", "networkx"]
 permalink: "/python-lib/networkx_bipartite/"
 ---
 

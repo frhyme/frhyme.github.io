@@ -1,8 +1,8 @@
 ---
 title: "영화 Pulp Fiction - 사무엘 잭슨은 원래 캐스팅되지 못할 뻔 했다"
 date: 2019-12-16
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "PulpFiction"]
+category: "english"
+tags: ["english", "movie", "movie_script", "pulpfiction"]
 permalink: "/english_study_by_movie_script/PulpFiction_Trivia00_samuel/"
 ---
 

@@ -2,7 +2,7 @@
 title: "microframework을 알아봅시다."
 date: 2018-07-17
 category: "others"
-tags: ["flask", "micro-framework", "framework", "REST", "RESTful"]
+tags: ["flask", "micro-framework", "framework", "rest", "restful"]
 permalink: "/others/micro_framework/"
 ---
 

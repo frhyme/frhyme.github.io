@@ -2,7 +2,7 @@
 title: "keras를 이용해서, sequence classification 해보기."
 date: 2018-06-21
 category: "machine-learning"
-tags: ["classification", "python", "python-lib", "keras", "LSTM", "word-embedding", "sequence", "numpy"]
+tags: ["classification", "python", "python-libs", "keras", "lstm", "word-embedding", "sequence", "numpy"]
 permalink: "/machin-learning/sequence_classficiation/"
 ---
 

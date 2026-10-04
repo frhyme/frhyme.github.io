@@ -2,7 +2,7 @@
 title: "Java - Collection - Queue, Deque"
 date: 2020-12-11
 category: "java"
-tags: ["java", "programming", "interface", "collection", "Queue", "Deque", "Stack"]
+tags: ["java", "programming", "interface", "collection", "queue", "deque", "stack"]
 permalink: "/java/Java_collection_queue_and_stack/"
 ---
 

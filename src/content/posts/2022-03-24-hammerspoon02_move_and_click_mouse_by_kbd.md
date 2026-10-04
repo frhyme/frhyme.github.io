@@ -1,7 +1,7 @@
 ---
 title: "Hammerspoon02 - 키보드로 마우스 움직이고 클릭하기"
 date: 2022-03-24
-category: "hammerspoon"
+category: "dev-tools"
 tags: ["hammerspoon", "mouse", "keyboard"]
 permalink: "/hammerspoon/hammerspoon02_move_and_click_mouse_by_kbd/"
 ---

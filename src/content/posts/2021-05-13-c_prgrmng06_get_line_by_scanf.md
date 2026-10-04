@@ -1,8 +1,8 @@
 ---
 title: "C - get line by scanf"
 date: 2021-05-13
-category: "C_programming"
-tags: ["C", "programming", "C_programming", "scanf"]
+category: "c-programming"
+tags: ["c", "programming", "c_programming", "scanf"]
 permalink: "/c_programming/c_prgrmng06_get_line_by_scanf/"
 ---
 

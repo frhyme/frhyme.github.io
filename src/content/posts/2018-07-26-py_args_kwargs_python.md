@@ -1,8 +1,8 @@
 ---
 title: "astericks, args, kwargs in python"
 date: 2018-07-26
-category: "python-basic"
-tags: ["python", "python-lib", "args", "kwargs", "dictionary", "tuple", "decorator"]
+category: "python"
+tags: ["python", "python-libs", "args", "kwargs", "dictionary", "tuple", "decorator"]
 permalink: "/python-basic/py_args_kwargs_python/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Kotlin - Basic"
 date: 2021-02-14
-category: "kotlin"
+category: "java"
 tags: ["kotlin", "programming"]
 permalink: "/kotlin/kotlin00_basic/"
 ---

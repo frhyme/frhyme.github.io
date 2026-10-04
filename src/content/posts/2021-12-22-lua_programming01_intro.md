@@ -1,7 +1,7 @@
 ---
 title: "Lua 01 - Install Lua"
 date: 2021-12-22
-category: "lua"
+category: "dev-tools"
 tags: ["lua", "programming"]
 permalink: "/lua/lua_programming01_intro/"
 ---

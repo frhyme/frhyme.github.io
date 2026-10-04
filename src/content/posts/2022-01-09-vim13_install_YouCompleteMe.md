@@ -2,7 +2,7 @@
 title: "vim 13 - Install YouCompleteME - 실패기"
 date: 2022-01-09
 category: "vim"
-tags: ["vi", "vim", "python", "jedi", "plugin", "vundle", "YCM", "YouCompleteMe"]
+tags: ["vi", "vim", "python", "jedi", "plugin", "vundle", "ycm", "youcompleteme"]
 permalink: "/vim/vim13_install_YouCompleteMe/"
 ---
 

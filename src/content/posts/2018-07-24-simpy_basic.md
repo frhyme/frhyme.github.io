@@ -2,7 +2,7 @@
 title: "파이썬에서 시뮬레이션을 해봅시다."
 date: 2018-07-24
 category: "python-libs"
-tags: ["python", "python-lib", "simulation", "simpy", "generator"]
+tags: ["python", "python-libs", "simulation", "simpy", "generator"]
 permalink: "/python-lib/simpy_basic/"
 ---
 

@@ -2,7 +2,7 @@
 title: "python에서 pipeline 만들기"
 date: 2018-08-28
 category: "python-libs"
-tags: ["python", "python-lib", "pipeline", "reduce", "itertools", "functools", "accumulate", "julia", "lambda"]
+tags: ["python", "python-libs", "pipeline", "reduce", "itertools", "functools", "accumulate", "julia", "lambda"]
 permalink: "/python-lib/python_pipeline/"
 ---
 

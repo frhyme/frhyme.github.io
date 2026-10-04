@@ -1,8 +1,8 @@
 ---
 title: "영화 Boyhood의 원래 제목은 12년이었다"
 date: 2019-12-19
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "Boyhood"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script"]
 permalink: "/english_study_by_movie_script/boyhood_trivia00_12years/"
 ---
 

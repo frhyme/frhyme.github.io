@@ -2,7 +2,7 @@
 title: "간단하게 folium을 이용하여 지도에 그림 그리기"
 date: 2018-07-11
 category: "python-libs"
-tags: ["python", "python-lib", "map", "open-street-map"]
+tags: ["python", "python-libs", "map", "open-street-map"]
 permalink: "/python-lib/python_folium_lib/"
 ---
 

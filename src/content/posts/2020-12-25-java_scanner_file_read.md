@@ -2,7 +2,7 @@
 title: "Java - Read File by Scanner"
 date: 2020-12-25
 category: "java"
-tags: ["java", "programming", "File", "Scanner"]
+tags: ["java", "programming", "file", "scanner"]
 permalink: "/java/java_scanner_file_read/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "영화 Florida Project - Trivia - 무지개"
 date: 2019-12-05
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "FloridaProject"]
+category: "english"
+tags: ["english", "movie", "movie_script", "floridaproject"]
 permalink: "/english_study_by_movie_script/FloridaProject_Trivia01_Rainbow/"
 ---
 

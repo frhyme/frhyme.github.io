@@ -2,7 +2,7 @@
 title: "handling missing value"
 date: 2018-06-05
 category: "data-science"
-tags: ["python-lib", "python", "pandas", "missing-value", "matplotlib", "sklearn", "numpy"]
+tags: ["python-libs", "python", "pandas", "missing-value", "matplotlib", "sklearn", "numpy"]
 permalink: "/data-science/pd_handling_missing_values/"
 ---
 

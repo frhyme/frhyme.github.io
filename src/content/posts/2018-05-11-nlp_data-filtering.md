@@ -1,8 +1,8 @@
 ---
 title: "데이터를 필터링합시다."
 date: 2018-05-11
-category: "project"
-tags: ["python", "difflib", "nltk", "networkx", "keyword-network", "python-lib", "not-yet"]
+category: "others"
+tags: ["python", "difflib", "nltk", "networkx", "keyword-network", "python-libs", "not-yet"]
 permalink: "/project/nlp_data-filtering/"
 ---
 

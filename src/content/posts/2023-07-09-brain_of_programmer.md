@@ -1,7 +1,7 @@
 ---
 title: "Book Review - Programmer's brain"
 date: 2023-07-09
-category: "book_review"
+category: "life"
 tags: ["book", "review"]
 permalink: "/book_review/brain_of_programmer/"
 ---

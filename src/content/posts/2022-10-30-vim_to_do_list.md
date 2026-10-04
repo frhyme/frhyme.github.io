@@ -1,7 +1,7 @@
 ---
 title: "Vim To Do List"
 date: 2022-10-30
-category: "others"
+category: "vim"
 tags: ["vim"]
 permalink: "/others/vim_to_do_list/"
 ---

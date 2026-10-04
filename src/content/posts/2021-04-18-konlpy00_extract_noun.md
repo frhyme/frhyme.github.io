@@ -2,7 +2,7 @@
 title: "konlpy - extract nouns"
 date: 2021-04-18
 category: "python-libs"
-tags: ["python", "python-lib", "konlpy", "nlp"]
+tags: ["python", "python-libs", "konlpy", "nlp"]
 permalink: "/python-lib/konlpy00_extract_noun/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "jQuery - Traversal - Descendant"
 date: 2021-02-10
-category: "jQuery"
-tags: ["jQuery", "javascript", "html", "web", "css", "DOM"]
+category: "web"
+tags: ["jquery", "javascript", "html", "web", "css", "dom"]
 permalink: "/jquery/jQuery09_Traversal_Descendant/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "postgresql 000 - Install postgresql"
 date: 2022-04-05
-category: "postgresql"
+category: "database"
 tags: ["db", "database", "posgresql", "sql"]
 permalink: "/postgresql/postgresql000_install/"
 ---

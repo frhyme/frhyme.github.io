@@ -2,7 +2,7 @@
 title: "random walk를 정리해봅시다."
 date: 2018-06-12
 category: "python"
-tags: ["python", "python-lib", "random-walk", "matplotlib", "numpy", "pandas", "sklearn"]
+tags: ["python", "python-libs", "random-walk", "matplotlib", "numpy", "pandas", "sklearn"]
 permalink: "/python/randomwalk/"
 ---
 

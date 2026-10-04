@@ -2,7 +2,7 @@
 title: "matplotlib에서 layer 순서 정하기"
 date: 2018-08-02
 category: "python-libs"
-tags: ["python", "python-lib", "matplotlib", "zorder", "layer"]
+tags: ["python", "python-libs", "matplotlib", "zorder", "layer"]
 permalink: "/python-lib/matplotlib_layer_zorder/"
 ---
 

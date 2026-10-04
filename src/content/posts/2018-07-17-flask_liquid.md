@@ -2,7 +2,7 @@
 title: "지킬로 만든 블로그에서 {%%} 표시하기"
 date: 2018-07-17
 category: "others"
-tags: ["flask", "liquid", "jekyll", "blog", "python-lib", "python"]
+tags: ["flask", "liquid", "jekyll", "blog", "python-libs", "python"]
 permalink: "/others/flask_liquid/"
 ---
 

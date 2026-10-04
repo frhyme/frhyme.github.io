@@ -1,8 +1,8 @@
 ---
 title: "python - OOP - ABC(Abstract Base Class)"
 date: 2021-01-02
-category: "python-basic"
-tags: ["python", "python_basic", "class", "OOP", "ABC", "inheritance"]
+category: "python"
+tags: ["python", "python_basic", "class", "oop", "abc", "inheritance"]
 permalink: "/python-basic/python_oop_abstract_class_abc/"
 ---
 

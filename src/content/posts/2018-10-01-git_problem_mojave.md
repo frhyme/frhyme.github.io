@@ -1,8 +1,8 @@
 ---
 title: "맥의 새 OS mojave를 설치했더니, git은 인식하지 못합니다."
 date: 2018-10-01
-category: "others"
-tags: ["macOS", "mojave", "git"]
+category: "dev-tools"
+tags: ["macos", "mojave", "git"]
 permalink: "/others/git_problem_mojave/"
 ---
 

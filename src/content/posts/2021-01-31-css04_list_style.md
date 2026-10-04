@@ -1,7 +1,7 @@
 ---
 title: "CSS - List Style"
 date: 2021-01-31
-category: "css"
+category: "web"
 tags: ["css", "unit", "width", "height"]
 permalink: "/css/css04_list_style/"
 ---

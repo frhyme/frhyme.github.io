@@ -2,7 +2,7 @@
 title: "keras의 model을 파봅시다."
 date: 2018-06-24
 category: "machine-learning"
-tags: ["python", "python-lib", "keras"]
+tags: ["python", "python-libs", "keras"]
 permalink: "/machine-learning/a_model_in_keras/"
 ---
 

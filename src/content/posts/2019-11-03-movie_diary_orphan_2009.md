@@ -1,8 +1,8 @@
 ---
 title: "영화 '오펀, 천사의 비밀' - 정말 영화는 영화일뿐인가요?"
 date: 2019-11-03
-category: "MovieDiary"
-tags: ["MovieDiary", "Movie", "Film"]
+category: "life"
+tags: ["moviediary", "movie", "film"]
 permalink: "/moviediary/movie_diary_orphan_2009/"
 ---
 

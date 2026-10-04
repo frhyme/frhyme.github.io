@@ -1,7 +1,7 @@
 ---
 title: "python - pycache"
 date: 2023-08-06
-category: "others"
+category: "python"
 tags: ["python"]
 permalink: "/python_pycache/"
 ---

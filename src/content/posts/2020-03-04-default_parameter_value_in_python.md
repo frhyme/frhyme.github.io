@@ -1,7 +1,7 @@
 ---
 title: "python의 default parameter는 가변적(mutable)이다."
 date: 2020-03-04
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "default-parameter"]
 permalink: "/python-basic/default_parameter_value_in_python/"
 ---

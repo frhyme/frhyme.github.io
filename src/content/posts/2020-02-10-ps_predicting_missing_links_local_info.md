@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Predicting Missing Links via Local Information"
 date: 2020-02-10
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "network", "link", "prediction", "local-structure"]
 permalink: "/paper-summary/ps_predicting_missing_links_local_info/"
 ---

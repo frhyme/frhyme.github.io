@@ -1,8 +1,8 @@
 ---
 title: "Google Apps Script - Slides - Bar chart 만들기"
 date: 2021-04-20
-category: "google"
-tags: ["google", "javascript", "GoogleSlides", "macro", "GoogleAppsScript"]
+category: "dev-tools"
+tags: ["google", "javascript", "googleslides", "macro", "googleappsscript"]
 permalink: "/google/GAS_Slides02_make_bar_chart/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "기술 블로그를 만들고 배운 것들"
 date: 2019-10-16
-category: "essay"
+category: "life"
 tags: ["essay", "blog"]
 permalink: "/essay/After_building_Tech_Blog/"
 ---

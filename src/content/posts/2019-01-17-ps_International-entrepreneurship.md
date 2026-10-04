@@ -1,7 +1,7 @@
 ---
 title: "International entrepreneurship - a bibliometric overview"
 date: 2019-01-17
-category: "paper-summary"
+category: "machine-learning"
 tags: ["entrepreneurship", "paper-summary", "bibliometric"]
 permalink: "/paper-summary/ps_International-entrepreneurship/"
 ---

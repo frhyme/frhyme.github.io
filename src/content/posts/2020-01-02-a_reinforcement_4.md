@@ -2,7 +2,7 @@
 title: "강화학습을 공부해봅시다. 4편"
 date: 2020-01-02
 category: "machine-learning"
-tags: ["reinforcement-learning", "python", "python-lib", "gym", "matplotlib", "tensorflow", "q-network"]
+tags: ["reinforcement-learning", "python", "python-libs", "gym", "matplotlib", "tensorflow", "q-network"]
 permalink: "/machine-learning/a_reinforcement_4/"
 ---
 

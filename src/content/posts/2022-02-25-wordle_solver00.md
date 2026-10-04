@@ -1,7 +1,7 @@
 ---
 title: "wordle solver 만들어보기 - basic"
 date: 2022-02-25
-category: "project"
+category: "others"
 tags: ["wordle", "python", "pypy"]
 permalink: "/projet/wordle_solver00/"
 ---

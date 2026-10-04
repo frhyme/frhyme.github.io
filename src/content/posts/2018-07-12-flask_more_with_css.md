@@ -2,7 +2,7 @@
 title: "Flask로 html 상속 그리고 css 적용하기"
 date: 2018-07-12
 category: "python-libs"
-tags: ["html", "python", "python-lib", "Flask", "css"]
+tags: ["html", "python", "python-libs", "flask", "css"]
 permalink: "/python-lib/flask_more_with_css/"
 ---
 

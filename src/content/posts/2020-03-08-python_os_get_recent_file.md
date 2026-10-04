@@ -1,7 +1,7 @@
 ---
 title: "python에서 특정 폴더 내에 가장 최근에 생성된 파일을 리턴하는 방법"
 date: 2020-03-08
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "python-libs", "os"]
 permalink: "/python-basic/python_os_get_recent_file/"
 ---

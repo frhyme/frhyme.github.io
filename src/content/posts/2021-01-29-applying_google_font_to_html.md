@@ -1,7 +1,7 @@
 ---
 title: "html - Google Font 연결하기"
 date: 2021-01-29
-category: "html"
+category: "web"
 tags: ["html", "font", "css"]
 permalink: "/html/applying_google_font_to_html/"
 ---

@@ -1,8 +1,8 @@
 ---
 title: "영화 BlacKKKlansMan 에 관한 사소한 사실들(trivia)"
 date: 2020-03-05
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "BlacKKKlansMan"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script", "blackkklansman"]
 permalink: "/english_study_by_movie_script/BlacKKKlansman_Trivia03/"
 ---
 

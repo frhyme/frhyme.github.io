@@ -2,7 +2,7 @@
 title: "gensim - tutorial - Doc2Vec - TaggedDocuments"
 date: 2020-03-15
 category: "python-libs"
-tags: ["python", "python-libs", "gensim", "similairty", "word2vec", "nlp", "doc2vec", "fastText", "TaggedDocument"]
+tags: ["python", "python-libs", "gensim", "similairty", "word2vec", "nlp", "doc2vec", "fasttext", "taggeddocument"]
 permalink: "/python-libs/gensim1_doc2vec_tagged_document/"
 ---
 

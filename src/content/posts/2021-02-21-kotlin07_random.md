@@ -1,7 +1,7 @@
 ---
 title: "Kotlin - Random"
 date: 2021-02-21
-category: "kotlin"
+category: "java"
 tags: ["kotlin", "programming", "random"]
 permalink: "/kotlin/kotlin07_random/"
 ---

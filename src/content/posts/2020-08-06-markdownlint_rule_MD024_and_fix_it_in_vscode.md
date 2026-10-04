@@ -1,7 +1,7 @@
 ---
 title: "MarkdownLint - MD024 - Multiple headings with the same content"
 date: 2020-08-06
-category: "MarkdownLint"
+category: "dev-tools"
 tags: ["markdown", "markdownlint"]
 permalink: "/markdownlint/markdownlint_rule_MD024_and_fix_it_in_vscode/"
 ---

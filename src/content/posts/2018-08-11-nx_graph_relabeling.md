@@ -2,7 +2,7 @@
 title: "networkx에서 graph를 만들고 relabeling하기"
 date: 2018-08-11
 category: "python-libs"
-tags: ["python", "python-lib", "networkx", "graph", "relabel", "bipartite", "matplotlib"]
+tags: ["python", "python-libs", "networkx", "graph", "relabel", "bipartite", "matplotlib"]
 permalink: "/python-lib/nx_graph_relabeling/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "python에서, 2, 8, 16진법을 표현하는 prefix."
 date: 2020-02-19
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "hexagonal", "number", "integer"]
 permalink: "/python-basic/why_0x_means_hex/"
 ---

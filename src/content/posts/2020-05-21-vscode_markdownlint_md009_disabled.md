@@ -1,7 +1,7 @@
 ---
 title: "vs-code markdown lint - MD009 해제하기"
 date: 2020-05-21
-category: "vs-code"
+category: "dev-tools"
 tags: ["markdown", "vs-code", "markdownlint"]
 permalink: "/vs-code/vscode_markdownlint_md009_disabled/"
 ---

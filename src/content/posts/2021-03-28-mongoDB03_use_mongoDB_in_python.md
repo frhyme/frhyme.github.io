@@ -1,8 +1,8 @@
 ---
 title: "mongoDB - python으로 mongoDB 사용하기"
 date: 2021-03-28
-category: "mongoDB"
-tags: ["mongoDB", "python", "pymongo", "database", "db", "sql", "nosql"]
+category: "database"
+tags: ["mongodb", "python", "pymongo", "database", "db", "sql", "nosql"]
 permalink: "/mongodb/mongoDB03_use_mongoDB_in_python/"
 ---
 

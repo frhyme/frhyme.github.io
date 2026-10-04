@@ -1,8 +1,8 @@
 ---
 title: "Python - Object Interning"
 date: 2020-05-29
-category: "python-basic"
-tags: ["python", "python-basic", "Interning"]
+category: "python"
+tags: ["python", "python-basic", "interning"]
 permalink: "/python-basic/python_object_interning/"
 ---
 

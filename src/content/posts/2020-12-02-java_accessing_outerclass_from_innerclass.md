@@ -2,7 +2,7 @@
 title: "Java - Inner Class에서 Outer Class 접근하기"
 date: 2020-12-02
 category: "java"
-tags: ["java", "programming", "class", "shadowing", "InnerClass"]
+tags: ["java", "programming", "class", "shadowing", "innerclass"]
 permalink: "/java/java_accessing_outerclass_from_innerclass/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "영화 쇼생크탈출 명장면 - 당신의 와이프를 믿나요"
 date: 2019-11-06
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "ShawshankRedemption"]
+category: "english"
+tags: ["english", "movie", "movie_script", "shawshankredemption"]
 permalink: "/english_study_by_movie_script/Shawshank_Redemption_Scene_00_trust_your_wift/"
 ---
 

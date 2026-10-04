@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Community Detection via Semi-Synchronous Label Propagation Algorithms"
 date: 2020-02-13
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "network", "community-detection", "label-propagation"]
 permalink: "/paper-summary/ps_label_propagation_semi_sync/"
 ---

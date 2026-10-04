@@ -1,7 +1,7 @@
 ---
 title: "markdown에 html 소스를 넣으려고 합니다."
 date: 2019-02-14
-category: "others"
+category: "dev-tools"
 tags: ["markdown", "html", "script"]
 permalink: "/others/markdown_embed_html/"
 ---

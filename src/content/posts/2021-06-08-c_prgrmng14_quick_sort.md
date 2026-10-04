@@ -1,7 +1,7 @@
 ---
 title: "C programming - quick sort"
 date: 2021-06-08
-category: "C_programming"
+category: "c-programming"
 tags: ["c", "c_programming", "programming", "quick_sort", "sorting", "divide_and_conquer"]
 permalink: "/c_programming/c_prgrmng14_quick_sort/"
 ---

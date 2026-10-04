@@ -2,7 +2,7 @@
 title: "PyCharm - Install PyCharm"
 date: 2020-12-26
 category: "python"
-tags: ["python", "PyCharm", "IDE"]
+tags: ["python", "pycharm", "ide"]
 permalink: "/python/PyCharm_Install_it_and_Great/"
 ---
 

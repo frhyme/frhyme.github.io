@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - The Ubiquity of Small-World Networks"
 date: 2020-02-20
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "small-world", "network", "latticization", "graph-theory"]
 permalink: "/paper-summary/ps_ubiquity_of_small_world_net/"
 ---

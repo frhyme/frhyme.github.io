@@ -1,7 +1,7 @@
 ---
 title: "MarkdownLint - MD033 - no inline html"
 date: 2021-01-19
-category: "MarkdownLint"
+category: "dev-tools"
 tags: ["markdown", "markdownlint", "tab"]
 permalink: "/markdownlint/markdownlint_MD033_no_inline_html/"
 ---

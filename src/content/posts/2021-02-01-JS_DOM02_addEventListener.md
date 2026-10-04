@@ -2,7 +2,7 @@
 title: "Javascript - addEventListener method"
 date: 2021-02-01
 category: "javascript"
-tags: ["javascript", "programming", "selector", "DOM", "event"]
+tags: ["javascript", "programming", "selector", "dom", "event"]
 permalink: "/javascript/JS_DOM02_addEventListener/"
 ---
 

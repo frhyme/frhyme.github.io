@@ -1,8 +1,8 @@
 ---
 title: "문득, 제주도 - 4일차"
 date: 2019-10-25
-category: "Trip_Log"
-tags: ["Trip", "Trip_Log"]
+category: "life"
+tags: ["trip", "trip_log"]
 permalink: "/trip_log/Sudden_jeju_Alone_Day4/"
 ---
 

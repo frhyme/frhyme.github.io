@@ -1,8 +1,8 @@
 ---
 title: "영화 About Time에 대한 사소한 사실들 - 0편"
 date: 2020-01-02
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "About_Time"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script", "about_time"]
 permalink: "/english_study_by_movie_script/About_Time_Trivia00/"
 ---
 

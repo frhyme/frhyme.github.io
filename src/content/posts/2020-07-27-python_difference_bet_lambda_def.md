@@ -1,7 +1,7 @@
 ---
 title: "python - lambda 함수와 def 함수의 차이"
 date: 2020-07-27
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "lambda", "def", "function"]
 permalink: "/python-basic/python_difference_bet_lambda_def/"
 ---

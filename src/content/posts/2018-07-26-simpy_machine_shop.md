@@ -2,7 +2,7 @@
 title: "simpy.PreemptiveResource로 우선순위 이용하기 - 머신 샵 모델링"
 date: 2018-07-26
 category: "python-libs"
-tags: ["python-lib", "python", "simpy", "numpy", "class", "generator"]
+tags: ["python-libs", "python", "simpy", "numpy", "class", "generator"]
 permalink: "/python-lib/simpy_machine_shop/"
 ---
 

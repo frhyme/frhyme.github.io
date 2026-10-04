@@ -2,7 +2,7 @@
 title: "kaggle) mnist 이미지 인식하기"
 date: 2018-06-08
 category: "machine-learning"
-tags: ["kaggle", "python", "machine-learning", "mnist", "neural-network", "CNN", "keras", "sklearn"]
+tags: ["kaggle", "python", "machine-learning", "mnist", "neural-network", "cnn", "keras", "sklearn"]
 permalink: "/machine-learning/kaggle_mnist/"
 ---
 

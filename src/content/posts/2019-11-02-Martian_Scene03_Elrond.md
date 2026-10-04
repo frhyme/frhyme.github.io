@@ -1,8 +1,8 @@
 ---
 title: "영화 Martian 명장면 - Elrond 프로젝트가 도대체 뭐야?"
 date: 2019-11-02
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Martian"]
+category: "english"
+tags: ["english", "movie", "movie_script", "martian"]
 permalink: "/english_study_by_movie_script/Martian_Scene03_Elrond/"
 ---
 

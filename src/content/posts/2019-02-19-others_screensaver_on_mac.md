@@ -2,7 +2,7 @@
 title: "macOS에서 스크린세이버 사용하기"
 date: 2019-02-19
 category: "others"
-tags: ["macOS", "screensaver"]
+tags: ["macos", "screensaver"]
 permalink: "/others/others_screensaver_on_mac/"
 ---
 

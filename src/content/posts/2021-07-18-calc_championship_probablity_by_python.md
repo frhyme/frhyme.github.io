@@ -1,7 +1,7 @@
 ---
 title: "7전 4선승전에서 첫번째 경기는 얼마나 중요한가?"
 date: 2021-07-18
-category: "project"
+category: "others"
 tags: ["python", "project", "numpy", "probablity"]
 permalink: "/project/calc_championship_probablity_by_python/"
 ---

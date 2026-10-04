@@ -2,7 +2,7 @@
 title: "nodeJS - 간단한 프로젝트 완성"
 date: 2022-04-24
 category: "javascript"
-tags: ["nodeJS", "javascript", "web"]
+tags: ["nodejs", "javascript", "web"]
 permalink: "/javascript/nodeJS04_simple_project_done/"
 ---
 

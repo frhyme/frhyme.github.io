@@ -2,7 +2,7 @@
 title: "cURL을 알아봅시다."
 date: 2018-09-05
 category: "others"
-tags: ["python", "command", "bash", "http", "protocol", "curl", "python-lib", "subprocess", "requests"]
+tags: ["python", "command", "bash", "http", "protocol", "curl", "python-libs", "subprocess", "requests"]
 permalink: "/others/others_curl/"
 ---
 

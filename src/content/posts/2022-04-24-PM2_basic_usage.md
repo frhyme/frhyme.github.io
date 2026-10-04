@@ -1,8 +1,8 @@
 ---
 title: "nodeJS - PM2 - Basic usage"
 date: 2022-04-24
-category: "nodeJS"
-tags: ["nodeJS", "javascript", "PM2"]
+category: "javascript"
+tags: ["nodejs", "javascript", "pm2"]
 permalink: "/nodejs/PM2_basic_usage/"
 ---
 

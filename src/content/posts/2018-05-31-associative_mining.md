@@ -2,7 +2,7 @@
 title: "python으로 association rule mining하기"
 date: 2018-05-31
 category: "others"
-tags: ["python", "association-rule", "pandas", "itertools", "python-lib", "data-mining"]
+tags: ["python", "association-rule", "pandas", "itertools", "python-libs", "data-mining"]
 permalink: "/associative_mining/"
 ---
 

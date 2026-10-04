@@ -1,8 +1,8 @@
 ---
 title: "git17 - garbage collection"
 date: 2023-08-13
-category: "git"
-tags: ["git", "pack", "GC"]
+category: "dev-tools"
+tags: ["git", "pack", "gc"]
 permalink: "/git/git18_garbage_collection/"
 ---
 

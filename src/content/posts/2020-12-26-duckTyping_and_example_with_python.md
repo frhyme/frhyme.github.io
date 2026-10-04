@@ -2,7 +2,7 @@
 title: "DuckTyping - Example with python"
 date: 2020-12-26
 category: "python"
-tags: ["python", "OOP", "DuckTyping", "programming", "java", "Interface"]
+tags: ["python", "oop", "ducktyping", "programming", "java", "interface"]
 permalink: "/python/duckTyping_and_example_with_python/"
 ---
 

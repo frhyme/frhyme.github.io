@@ -1,8 +1,8 @@
 ---
 title: "영화 Iron Man 1 에 관한 사소한 사실들(trivia) - 2편"
 date: 2020-02-24
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "ironman", "marvel", "marvelcomics"]
+category: "english"
+tags: ["english", "movie", "movie_script", "ironman", "marvel", "marvelcomics"]
 permalink: "/english_study_by_movie_script/Iron_man_trivia_2/"
 ---
 

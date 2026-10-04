@@ -2,7 +2,7 @@
 title: "macOS 핫코너 사용하기"
 date: 2019-02-19
 category: "others"
-tags: ["macOS", "hot-corner"]
+tags: ["macos", "hot-corner"]
 permalink: "/others/others_mac_os_hot_corner/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Mermaid - Flow Chart를 그려보자."
 date: 2021-01-20
-category: "mermaid"
+category: "dev-tools"
 tags: ["mermaid", "jekyll", "github", "diagram", "javascript"]
 permalink: "/mermaid/mermaid_basic00/"
 ---

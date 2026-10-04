@@ -1,7 +1,7 @@
 ---
 title: "AttributeError - 'NoneType' object has no attribute"
 date: 2019-12-28
-category: "python-basic"
+category: "python"
 tags: ["python-basic", "python"]
 permalink: "/python-basic/NonetypeObject/"
 ---

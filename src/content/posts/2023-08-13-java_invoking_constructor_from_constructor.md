@@ -2,7 +2,7 @@
 title: "Java - Invoking base constructor from derived class"
 date: 2023-08-13
 category: "java"
-tags: ["java", "programming", "constructor", "inheritance"]
+tags: ["java", "programming", "function Object() { [native code] }", "inheritance"]
 permalink: "/java/java_invoking_constructor_from_constructor/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "C - Heap"
 date: 2021-05-12
-category: "C_programming"
-tags: ["C", "programming", "C_programming", "heap"]
+category: "c-programming"
+tags: ["c", "programming", "c_programming", "heap"]
 permalink: "/c_programming/c_prgrmng05_heap/"
 ---
 

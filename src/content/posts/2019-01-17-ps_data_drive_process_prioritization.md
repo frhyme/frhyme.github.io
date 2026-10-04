@@ -1,7 +1,7 @@
 ---
 title: "paper-summary - Data-driven Process Prioritization in Process Networks"
 date: 2019-01-17
-category: "paper-summary"
+category: "machine-learning"
 tags: ["process", "bpm", "paper-summary"]
 permalink: "/paper-summary/ps_data_drive_process_prioritization/"
 ---

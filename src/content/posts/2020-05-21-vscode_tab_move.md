@@ -1,8 +1,8 @@
 ---
 title: "VS-code에서 tab 전환하기"
 date: 2020-05-21
-category: "vs-code"
-tags: ["vs-code", "macOS"]
+category: "dev-tools"
+tags: ["vs-code", "macos"]
 permalink: "/vs-code/vscode_tab_move/"
 ---
 

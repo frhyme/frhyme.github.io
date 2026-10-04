@@ -1,7 +1,7 @@
 ---
 title: "교토-오사카 여행기(2018.07.12 ~ 2018.07.16)"
 date: 2020-01-02
-category: "trip"
+category: "life"
 tags: ["여행", "오사카", "일본", "교토"]
 permalink: "/trip/a_osaka_kyoto_trip/"
 ---

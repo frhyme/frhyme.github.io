@@ -1,8 +1,8 @@
 ---
 title: "CSS - transform"
 date: 2021-02-09
-category: "css"
-tags: ["css", "Transform", "html"]
+category: "web"
+tags: ["css", "transform", "html"]
 permalink: "/css/css10_transform/"
 ---
 

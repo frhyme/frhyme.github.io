@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Axioms for Centrality"
 date: 2020-02-05
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "network", "centrality"]
 permalink: "/paper-summary/ps_Axioms-for-Centrality/"
 ---

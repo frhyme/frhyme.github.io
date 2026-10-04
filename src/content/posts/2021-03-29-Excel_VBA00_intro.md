@@ -1,8 +1,8 @@
 ---
 title: "MS Office - Visual Basic for Application(VBA) - Intro"
 date: 2021-03-29
-category: "MS_Office"
-tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic"]
+category: "dev-tools"
+tags: ["ms_office", "excel", "vba", "macro", "macos", "basic"]
 permalink: "/ms_office/Excel_VBA00_intro/"
 ---
 

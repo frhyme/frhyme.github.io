@@ -2,7 +2,7 @@
 title: "Neo4j - Introduction to Neo4j index."
 date: 2020-01-06
 category: "others"
-tags: ["neo4j", "database", "SQL", "GQL", "graph", "python", "networkx"]
+tags: ["neo4j", "database", "sql", "gql", "graph", "python", "networkx"]
 permalink: "/others/index_for_neo4j/"
 ---
 

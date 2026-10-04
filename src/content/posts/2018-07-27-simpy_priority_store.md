@@ -2,7 +2,7 @@
 title: "simpy - PriorityStore"
 date: 2018-07-27
 category: "python-libs"
-tags: ["python", "python-lib", "simpy", "numpy", "simulation", "generator"]
+tags: ["python", "python-libs", "simpy", "numpy", "simulation", "generator"]
 permalink: "/python-lib/simpy_priority_store/"
 ---
 

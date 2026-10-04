@@ -2,7 +2,7 @@
 title: "5년동안 수집한 개인 인간관계 데이터를 분석합니다."
 date: 2018-08-18
 category: "python-libs"
-tags: ["python-lib", "python", "matplotlib", "numpy", "networkx", "data-science", "pandas", "itertools", "functools", "counter"]
+tags: ["python-libs", "python", "matplotlib", "numpy", "networkx", "data-science", "pandas", "itertools", "functools", "counter"]
 permalink: "/python-lib/pycon_quantify_myself/"
 ---
 

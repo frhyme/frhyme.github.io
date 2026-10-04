@@ -1,7 +1,7 @@
 ---
 title: "python - dictioanry `==` operator recursive check?"
 date: 2020-02-26
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "operator", "dictionary"]
 permalink: "/python-basic/python_dict_deep_equaility_check/"
 ---

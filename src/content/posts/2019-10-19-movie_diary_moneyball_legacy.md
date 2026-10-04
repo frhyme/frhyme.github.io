@@ -1,8 +1,8 @@
 ---
 title: "영화 - 머니볼- 과거와 미래를 향한 상호 존중이 필요해"
 date: 2019-10-19
-category: "MovieDiary"
-tags: ["MovieDiary", "Movie", "Film"]
+category: "life"
+tags: ["moviediary", "movie", "film"]
 permalink: "/moviediary/movie_diary_moneyball_legacy/"
 ---
 

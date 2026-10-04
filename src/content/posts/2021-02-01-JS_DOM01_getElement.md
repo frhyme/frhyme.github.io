@@ -2,7 +2,7 @@
 title: "Javascript - DOM methods - querySelector, getElementById"
 date: 2021-02-01
 category: "javascript"
-tags: ["javascript", "programming", "selector", "DOM"]
+tags: ["javascript", "programming", "selector", "dom"]
 permalink: "/javascript/JS_DOM01_getElement/"
 ---
 

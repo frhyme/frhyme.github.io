@@ -1,7 +1,7 @@
 ---
 title: "python에서 assert 사용하기"
 date: 2018-08-26
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "exception"]
 permalink: "/python-basic/python_assert_error/"
 ---

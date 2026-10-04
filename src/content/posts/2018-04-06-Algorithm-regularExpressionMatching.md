@@ -2,7 +2,7 @@
 title: "Algorithm - regularExpressionMatching(s, p)"
 date: 2018-04-06
 category: "algorithm"
-tags: ["python", "algorithm", "dynamic-programming", "codefight", "regular-expression"]
+tags: ["python", "algorithm", "dynamic-programming", "codefight", "regex"]
 permalink: "/algorithm/Algorithm-regularExpressionMatching/"
 ---
 

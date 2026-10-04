@@ -1,7 +1,7 @@
 ---
 title: "VS-code의 sidebar의 font 를 변경합니다(실패기)"
 date: 2020-05-07
-category: "vs-code"
+category: "dev-tools"
 tags: ["vs-code", "font"]
 permalink: "/vs-code/vs_code_sidebar_font_change/"
 ---

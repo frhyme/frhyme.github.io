@@ -1,8 +1,8 @@
 ---
 title: "Hammerspoon05 - cmd + q 두 번 눌러야 실행되도록 변경"
 date: 2022-04-03
-category: "hammerspoon"
-tags: ["hammerspoon", "macOS", "cmd"]
+category: "dev-tools"
+tags: ["hammerspoon", "macos", "cmd"]
 permalink: "/hammerspoon/hammerspoon05_cmd_q_twice/"
 ---
 

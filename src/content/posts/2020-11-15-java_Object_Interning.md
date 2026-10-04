@@ -2,7 +2,7 @@
 title: "Java - Object Interning"
 date: 2020-11-15
 category: "java"
-tags: ["java", "Object", "Class", "programming"]
+tags: ["java", "object", "class", "programming"]
 permalink: "/java/java_Object_Interning/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Multi-scale structure and topological anomaly detection via a new network statistic - The onion decomposition"
 date: 2020-02-22
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "k-shell", "decomposition", "anomaly-detection", "networks-statistic"]
 permalink: "/paper-summary/ps_onion_decomposition/"
 ---

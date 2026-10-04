@@ -1,8 +1,8 @@
 ---
 title: "Chrome - Dark Mode Enable"
 date: 2020-12-26
-category: "chrome"
-tags: ["chrome", "DarkMode", "extension"]
+category: "dev-tools"
+tags: ["chrome", "darkmode", "extension"]
 permalink: "/chrome/chrome_darkmode_darkreader/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "mongoDB - find - sort, limit, skip"
 date: 2021-04-11
-category: "mongoDB"
-tags: ["mongoDB", "python", "pymongo", "database", "db", "sql", "nosql"]
+category: "database"
+tags: ["mongodb", "python", "pymongo", "database", "db", "sql", "nosql"]
 permalink: "/mongodb/mongoDB04_sort_limit_skip/"
 ---
 

@@ -2,7 +2,7 @@
 title: "Java - Standard Functional Interface"
 date: 2020-12-13
 category: "java"
-tags: ["java", "programming", "function", "interface", "FunctionalInterface"]
+tags: ["java", "programming", "function", "interface", "functionalinterface"]
 permalink: "/java/Java_standard_functional_interfaces/"
 ---
 

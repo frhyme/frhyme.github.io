@@ -2,7 +2,7 @@
 title: "networkx - Link Analysis - HITS(Hyperlink-Induced Topic Search)"
 date: 2020-02-12
 category: "python-libs"
-tags: ["python", "python-libs", "networkx", "centrality", "HITS"]
+tags: ["python", "python-libs", "networkx", "centrality", "hits"]
 permalink: "/python-libs/nx_algo_link_A_HITS/"
 ---
 

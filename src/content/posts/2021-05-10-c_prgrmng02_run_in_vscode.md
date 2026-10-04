@@ -1,8 +1,8 @@
 ---
 title: "vscode에서 바로 c 코드 실행하기"
 date: 2021-05-10
-category: "C_programming"
-tags: ["C", "programming", "macOS", "C_programming", "vscode"]
+category: "c-programming"
+tags: ["c", "programming", "macos", "c_programming", "vscode"]
 permalink: "/c_programming/c_prgrmng02_run_in_vscode/"
 ---
 

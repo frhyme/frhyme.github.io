@@ -1,7 +1,7 @@
 ---
 title: "Shell01 - Make Symbolic Link (ln)"
 date: 2022-02-02
-category: "shell"
+category: "dev-tools"
 tags: ["shell", "link"]
 permalink: "/shell/shell_01_make_soft_hard_link/"
 ---

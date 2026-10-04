@@ -1,7 +1,7 @@
 ---
 title: "tab-completion or enter-completion 설정 및 해제"
 date: 2020-05-21
-category: "vs-code"
+category: "dev-tools"
 tags: ["vs-code", "autto-completion", "intellsense"]
 permalink: "/vs-code/disabled_suggestion_by_enter/"
 ---

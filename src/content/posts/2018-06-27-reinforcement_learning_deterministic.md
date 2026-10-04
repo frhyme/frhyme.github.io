@@ -2,7 +2,7 @@
 title: "강화학습을 공부해봅시다. 1편"
 date: 2018-06-27
 category: "machine-learning"
-tags: ["reinforcement-learning", "python", "python-lib", "gym", "matplotlib", "deterministic", "numpy"]
+tags: ["reinforcement-learning", "python", "python-libs", "gym", "matplotlib", "deterministic", "numpy"]
 permalink: "/machine-learning/reinforcement_learning_deterministic/"
 ---
 

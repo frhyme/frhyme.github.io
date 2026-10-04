@@ -1,8 +1,8 @@
 ---
 title: "92회 아카데미, 봉준호 수상 소감 번역 및 주요 표현 정리"
 date: 2020-02-26
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script"]
+category: "english"
+tags: ["english", "movie", "movie_script"]
 permalink: "/english_study_by_movie_script/academy_bong_comment/"
 ---
 

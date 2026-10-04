@@ -2,7 +2,7 @@
 title: "Java - Regex - Replacing Patterns"
 date: 2021-01-11
 category: "java"
-tags: ["java", "regex", "programming", "String", "pattren"]
+tags: ["java", "regex", "programming", "string", "pattren"]
 permalink: "/java/java_regex07_replacing_pattern/"
 ---
 

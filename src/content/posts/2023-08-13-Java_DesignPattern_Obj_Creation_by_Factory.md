@@ -1,8 +1,8 @@
 ---
 title: "Java - Design Pattern - Factory Pattern"
 date: 2023-08-13
-category: "DesignPattern"
-tags: ["DesignPattern", "Factory", "java", "programming", "class"]
+category: "java"
+tags: ["designpattern", "factory", "java", "programming", "class"]
 permalink: "/designpattern/Java_DesignPattern_Obj_Creation_by_Factory/"
 ---
 

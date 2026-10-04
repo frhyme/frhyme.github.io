@@ -2,7 +2,7 @@
 title: "Java - stream - Collectors.groupingBy"
 date: 2020-12-27
 category: "java"
-tags: ["java", "programming", "stream", "Collectors", "groupingBy"]
+tags: ["java", "programming", "stream", "collectors", "groupingby"]
 permalink: "/java/java_stream_collectors_groupinbBy/"
 ---
 

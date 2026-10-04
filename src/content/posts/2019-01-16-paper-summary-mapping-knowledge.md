@@ -1,7 +1,7 @@
 ---
 title: "paper-summary - Mapping knowledge structure by keyword co-occurrence - a first look at journal papers in Technology Foresight"
 date: 2019-01-16
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "sna", "keyword-network"]
 permalink: "/paper-summary/paper-summary-mapping-knowledge/"
 ---

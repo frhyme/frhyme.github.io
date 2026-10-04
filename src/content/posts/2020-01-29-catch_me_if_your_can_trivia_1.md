@@ -1,8 +1,8 @@
 ---
 title: "영화 Catch Me If You Can 에 관한 사소한 사실들(trivia)"
 date: 2020-01-29
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script"]
+category: "english"
+tags: ["english", "movie", "movie_script"]
 permalink: "/english_study_by_movie_script/catch_me_if_your_can_trivia_1/"
 ---
 

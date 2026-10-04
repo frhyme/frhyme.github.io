@@ -1,7 +1,7 @@
 ---
 title: "integer를 분할해봅시다."
 date: 2018-08-12
-category: "python-basic"
+category: "python"
 tags: ["integer", "partition", "python"]
 permalink: "/python-basic/py_integer_partition/"
 ---

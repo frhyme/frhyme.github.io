@@ -2,7 +2,7 @@
 title: "nx의 layout을 rescaling합니다."
 date: 2018-08-21
 category: "python-libs"
-tags: ["networkx", "python", "python-lib", "layout", "rescaling", "github", "issue"]
+tags: ["networkx", "python", "python-libs", "layout", "rescaling", "github", "issue"]
 permalink: "/python-lib/nx_layout_rescaled/"
 ---
 

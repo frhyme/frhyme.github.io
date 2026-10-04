@@ -1,7 +1,7 @@
 ---
 title: "html - table 만들기"
 date: 2021-01-27
-category: "html"
+category: "web"
 tags: ["html", "table"]
 permalink: "/html/html_table_example/"
 ---

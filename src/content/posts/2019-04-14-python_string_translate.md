@@ -1,7 +1,7 @@
 ---
 title: "string) transalte vs. replace"
 date: 2019-04-14
-category: "python-basic"
+category: "python"
 tags: ["python", "string", "python-libs", "python-basic"]
 permalink: "/python-basic/python_string_translate/"
 ---

@@ -2,7 +2,7 @@
 title: "데이터의 분포를 검정해봅시다."
 date: 2018-06-19
 category: "python-libs"
-tags: ["python", "python-lib", "data-sceienc", "hypothesis-test", "scipy"]
+tags: ["python", "python-libs", "data-sceienc", "hypothesis-test", "scipy"]
 permalink: "/python-lib/hypothesis_test/"
 ---
 

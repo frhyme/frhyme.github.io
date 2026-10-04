@@ -1,8 +1,8 @@
 ---
 title: "영화 '스위치' - 왜 이 남자에게 행복한 가정을 줘야 하죠"
 date: 2019-11-04
-category: "MovieDiary"
-tags: ["MovieDiary", "Movie", "Film"]
+category: "life"
+tags: ["moviediary", "movie", "film"]
 permalink: "/moviediary/movie_diary_switch/"
 ---
 

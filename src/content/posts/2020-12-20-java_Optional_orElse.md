@@ -2,7 +2,7 @@
 title: "Java - Optional.orElse"
 date: 2020-12-20
 category: "java"
-tags: ["java", "programming", "optional", "NPE"]
+tags: ["java", "programming", "optional", "npe"]
 permalink: "/java/java_Optional_orElse/"
 ---
 

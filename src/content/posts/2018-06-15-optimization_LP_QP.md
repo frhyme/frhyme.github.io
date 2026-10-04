@@ -1,8 +1,8 @@
 ---
 title: "LP and QP 풀기"
 date: 2018-06-15
-category: "optimization"
-tags: ["python", "optimization", "python-lib", "scipy", "LP", "QP"]
+category: "data-science"
+tags: ["python", "optimization", "python-libs", "scipy", "lp", "qp"]
 permalink: "/optimization/optimization_LP_QP/"
 ---
 
