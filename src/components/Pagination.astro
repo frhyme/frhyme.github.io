@@ -17,6 +17,7 @@ const nextUrl = currentPage < lastPage ? `${basePath}${currentPage + 1}/` : null
     {prevUrl ? (
       <a
         href={prevUrl}
+        rel="prev"
         class="inline-flex items-center px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
       >
         &larr; Previous
@@ -36,6 +37,7 @@ const nextUrl = currentPage < lastPage ? `${basePath}${currentPage + 1}/` : null
     {nextUrl ? (
       <a
         href={nextUrl}
+        rel="next"
         class="inline-flex items-center px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
       >
         Next &rarr;
