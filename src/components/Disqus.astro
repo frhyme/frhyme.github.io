@@ -1,0 +1,30 @@
+---
+interface Props {
+  url: string;
+  identifier: string;
+  title: string;
+}
+
+const { url, identifier, title } = Astro.props;
+---
+
+<div class="disqus-container mt-12 pt-8 border-t border-zinc-200 dark:border-zinc-800">
+  <div id="disqus_thread"></div>
+  <script is:inline define:vars={{ url, identifier, title }}>
+    var disqus_config = function () {
+      this.page.url = url;
+      this.page.identifier = identifier;
+      this.page.title = title;
+    };
+    (function () {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-frhyme-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>
+    Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+</div>

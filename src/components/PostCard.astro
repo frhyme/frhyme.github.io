@@ -1,0 +1,45 @@
+---
+interface Props {
+  title: string;
+  date: Date;
+  category: string;
+  tags?: string[];
+  url: string;
+}
+
+const { title, date, category, tags = [], url } = Astro.props;
+
+const formattedDate = date ? new Date(date).toISOString().split('T')[0] : '';
+---
+
+<article class="group py-6 border-b border-zinc-100 dark:border-zinc-800/60 last:border-b-0 transition-all">
+  <div class="flex items-center space-x-3 text-xs text-zinc-500 dark:text-zinc-400 mb-2">
+    <time datetime={formattedDate}>{formattedDate}</time>
+    <span>&bull;</span>
+    <a
+      href={`/categories/${category.toLowerCase()}/`}
+      class="font-medium text-blue-600 dark:text-blue-400 hover:underline uppercase tracking-wider text-[11px]"
+    >
+      {category}
+    </a>
+  </div>
+
+  <h2 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+    <a href={url} class="block">
+      {title}
+    </a>
+  </h2>
+
+  {tags.length > 0 && (
+    <div class="flex flex-wrap gap-1.5 mt-3">
+      {tags.slice(0, 5).map((t) => (
+        <a
+          href={`/tags/${t.toLowerCase()}/`}
+          class="text-xs px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
+        >
+          #{t}
+        </a>
+      ))}
+    </div>
+  )}
+</article>

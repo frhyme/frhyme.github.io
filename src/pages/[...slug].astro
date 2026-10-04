@@ -1,0 +1,46 @@
+---
+import { getCollection, render } from 'astro:content';
+import PostLayout from '../layouts/PostLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+
+  return posts.map((post) => {
+    // Determine route slug from permalink or filename
+    let routeSlug: string;
+    if (post.data.permalink) {
+      routeSlug = post.data.permalink.replace(/^\/+|\/+$/g, '');
+    } else {
+      const filename = post.id.replace(/\.md$/, '');
+      const slugMatch = filename.match(/^(\d{4}-\d{2}-\d{2})-(.*)$/);
+      const postSlug = slugMatch ? slugMatch[2] : filename;
+      const cat = (post.data.category || 'others').toLowerCase().replace(/\s+/g, '-');
+      routeSlug = `${cat}/${postSlug}`;
+    }
+
+    const segments = routeSlug.split('/');
+    const identifier = segments[segments.length - 1];
+
+    return {
+      params: {
+        slug: routeSlug,
+      },
+      props: { post, identifier },
+    };
+  });
+}
+
+const { post, identifier } = Astro.props;
+const { Content, headings } = await render(post);
+---
+
+<PostLayout
+  title={post.data.title}
+  date={post.data.date}
+  category={post.data.category}
+  tags={post.data.tags}
+  headings={headings}
+  slug={identifier}
+>
+  <Content />
+</PostLayout>

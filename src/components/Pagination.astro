@@ -1,0 +1,48 @@
+---
+interface Props {
+  currentPage: number;
+  lastPage: number;
+  basePath?: string;
+}
+
+const { currentPage, lastPage, basePath = '/page/' } = Astro.props;
+
+const prevUrl = currentPage > 2 ? `${basePath}${currentPage - 1}/` : currentPage === 2 ? '/' : null;
+const nextUrl = currentPage < lastPage ? `${basePath}${currentPage + 1}/` : null;
+---
+
+<nav class="flex items-center justify-between py-10 border-t border-zinc-200 dark:border-zinc-800 text-sm font-medium">
+  <div>
+    {prevUrl ? (
+      <a
+        href={prevUrl}
+        class="inline-flex items-center px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
+      >
+        &larr; Previous
+      </a>
+    ) : (
+      <span class="inline-flex items-center px-4 py-2 rounded-lg border border-zinc-100 dark:border-zinc-800 text-zinc-300 dark:text-zinc-600 cursor-not-allowed">
+        &larr; Previous
+      </span>
+    )}
+  </div>
+
+  <span class="text-xs text-zinc-500">
+    Page {currentPage} of {lastPage}
+  </span>
+
+  <div>
+    {nextUrl ? (
+      <a
+        href={nextUrl}
+        class="inline-flex items-center px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
+      >
+        Next &rarr;
+      </a>
+    ) : (
+      <span class="inline-flex items-center px-4 py-2 rounded-lg border border-zinc-100 dark:border-zinc-800 text-zinc-300 dark:text-zinc-600 cursor-not-allowed">
+        Next &rarr;
+      </span>
+    )}
+  </div>
+</nav>

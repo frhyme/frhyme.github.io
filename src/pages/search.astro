@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Search">
+  <div class="mb-8 pb-4 border-b border-zinc-200 dark:border-zinc-800">
+    <h1 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100">
+      Search
+    </h1>
+    <p class="text-sm text-zinc-500 mt-1">
+      1,400여 개 포스트의 제목과 본문 내용을 실시간으로 검색합니다.
+    </p>
+  </div>
+
+  <div id="search" class="min-h-[400px]"></div>
+
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', () => {
+      new PagefindUI({
+        element: '#search',
+        showImages: false,
+        resetFilters: false,
+        showSubResults: true,
+      });
+    });
+  </script>
+</BaseLayout>
+
+<style is:global>
+  /* Custom Pagefind theme integration */
+  :root {
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: #2563eb;
+    --pagefind-ui-text: #18181b;
+    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-border: #e4e4e7;
+    --pagefind-ui-border-radius: 0.75rem;
+  }
+
+  html.dark {
+    --pagefind-ui-primary: #60a5fa;
+    --pagefind-ui-text: #f4f4f5;
+    --pagefind-ui-background: #09090b;
+    --pagefind-ui-border: #27272a;
+  }
+
+  .pagefind-ui .pagefind-ui__search-input {
+    font-weight: 500;
+  }
+</style>

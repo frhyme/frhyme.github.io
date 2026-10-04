@@ -1,0 +1,58 @@
+---
+import type { GetStaticPathsOptions, Page } from 'astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import Pagination from '../../components/Pagination.astro';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const posts = await getCollection('posts');
+  const sortedPosts = posts.sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+  );
+
+  return paginate(sortedPosts, { pageSize: 15 });
+}
+
+interface Props {
+  page: Page<CollectionEntry<'posts'>>;
+}
+
+const { page } = Astro.props;
+---
+
+<BaseLayout title={`All Posts - Page ${page.currentPage}`}>
+  <div class="mb-8 pb-4 border-b border-zinc-200 dark:border-zinc-800">
+    <h1 class="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+      All Posts
+    </h1>
+    <p class="text-xs text-zinc-500 mt-1">
+      총 {page.total}개의 글 중 {page.start + 1} - {page.end + 1}번째 글
+    </p>
+  </div>
+
+  <div class="divide-y divide-zinc-100 dark:divide-zinc-800">
+    {page.data.map((post) => {
+      let url = post.data.permalink;
+      if (!url) {
+        const filename = post.id.replace(/\.md$/, '');
+        const slugMatch = filename.match(/^(\d{4}-\d{2}-\d{2})-(.*)$/);
+        const postSlug = slugMatch ? slugMatch[2] : filename;
+        const category = (post.data.category || 'others').toLowerCase().replace(/\s+/g, '-');
+        url = `/${category}/${postSlug}/`;
+      }
+
+      return (
+        <PostCard
+          title={post.data.title}
+          date={post.data.date}
+          category={post.data.category}
+          tags={post.data.tags}
+          url={url}
+        />
+      );
+    })}
+  </div>
+
+  <Pagination currentPage={page.currentPage} lastPage={page.lastPage} />
+</BaseLayout>

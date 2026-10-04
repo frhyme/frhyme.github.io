@@ -1,0 +1,91 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import AdSense from '../components/AdSense.astro';
+import Disqus from '../components/Disqus.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  title: string;
+  date: Date;
+  category: string;
+  tags?: string[];
+  headings: Heading[];
+  slug: string;
+}
+
+const { title, date, category, tags = [], headings = [], slug } = Astro.props;
+
+const formattedDate = date ? new Date(date).toISOString().split('T')[0] : '';
+const currentUrl = new URL(Astro.url.pathname, Astro.site).toString();
+---
+
+<BaseLayout title={title} articleDate={formattedDate}>
+  <div class="lg:grid lg:grid-cols-12 lg:gap-10">
+    <!-- Main Article Content -->
+    <article class="lg:col-span-8 min-w-0" data-pagefind-body>
+      <!-- Post Meta Header -->
+      <header class="mb-8 pb-6 border-b border-zinc-200 dark:border-zinc-800">
+        <div class="flex items-center space-x-2 text-xs text-zinc-500 dark:text-zinc-400 mb-3">
+          <time datetime={formattedDate}>{formattedDate}</time>
+          <span>&bull;</span>
+          <a
+            href={`/categories/${category.toLowerCase()}/`}
+            class="font-semibold text-blue-600 dark:text-blue-400 hover:underline uppercase tracking-wider"
+          >
+            {category}
+          </a>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 leading-tight">
+          {title}
+        </h1>
+
+        {tags.length > 0 && (
+          <div class="flex flex-wrap gap-2 mt-4">
+            {tags.map((t) => (
+              <a
+                href={`/tags/${t.toLowerCase()}/`}
+                class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:bg-zinc-700 transition-colors"
+              >
+                #{t}
+              </a>
+            ))}
+          </div>
+        )}
+      </header>
+
+      <!-- Post Top Ad -->
+      <AdSense slot="8429315249" className="mb-8" />
+
+      <!-- Markdown Prose Content -->
+      <div class="prose dark:prose-invert">
+        <slot />
+      </div>
+
+      <!-- Post Bottom Ad -->
+      <AdSense slot="1181380610" className="mt-12" />
+
+      <!-- Disqus Comments -->
+      <Disqus url={currentUrl} identifier={slug} title={title} />
+    </article>
+
+    <!-- Sidebar (Desktop TOC & Ad) -->
+    <aside class="hidden lg:block lg:col-span-4 space-y-6">
+      <div class="sticky top-24 space-y-6">
+        <!-- Table of Contents -->
+        <TableOfContents headings={headings} />
+
+        <!-- Sidebar AdSense Slot -->
+        <div class="p-2 rounded-xl bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200/60 dark:border-zinc-800/60">
+          <AdSense slot="8429315249" />
+        </div>
+      </div>
+    </aside>
+  </div>
+</BaseLayout>

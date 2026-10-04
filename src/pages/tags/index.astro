@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const allPosts = await getCollection('posts');
+
+const tagMap: Record<string, number> = {};
+for (const post of allPosts) {
+  const tags = post.data.tags || [];
+  for (const t of tags) {
+    const cleanTag = t.toLowerCase().trim();
+    if (cleanTag) {
+      tagMap[cleanTag] = (tagMap[cleanTag] || 0) + 1;
+    }
+  }
+}
+
+const tags = Object.entries(tagMap).sort((a, b) => b[1] - a[1]);
+---
+
+<BaseLayout title="Tags">
+  <div class="mb-8 pb-4 border-b border-zinc-200 dark:border-zinc-800">
+    <h1 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100">
+      Tags
+    </h1>
+    <p class="text-sm text-zinc-500 mt-1">
+      총 {tags.length}개의 키워드 태그가 등록되어 있습니다.
+    </p>
+  </div>
+
+  <div class="flex flex-wrap gap-2.5">
+    {tags.map(([tag, count]) => (
+      <a
+        href={`/tags/${tag}/`}
+        class="inline-flex items-center px-3 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-xs text-zinc-700 dark:text-zinc-300 hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-colors"
+      >
+        <span>#{tag}</span>
+        <span class="ml-1.5 px-1.5 py-0.2 rounded-md bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-400 font-semibold">
+          {count}
+        </span>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

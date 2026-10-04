@@ -1,0 +1,36 @@
+{
+  "name": "frhyme.github.io",
+  "version": "1.0.0",
+  "description": "- jekyll을 사용하여 만든 개인 블로그입니다.  - 주로 python으로 개발하면서 알게된 것들 만든 것들을 올립니다.  - 블로그를 만들고 나니까 더 잘하게 되요. 여러분 블로그 만드세요.",
+  "main": "banner.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frhyme/frhyme.github.io.git"
+  },
+  "keywords": [],
+  "author": "frhyme",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/frhyme/frhyme.github.io/issues"
+  },
+  "homepage": "https://github.com/frhyme/frhyme.github.io#readme",
+  "dependencies": {
+    "@astrojs/markdown-remark": "^7.3.1",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.5",
+    "katex": "^0.19.0",
+    "pagefind": "^1.5.2",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
+    "tailwindcss": "^4.3.3"
+  }
+}

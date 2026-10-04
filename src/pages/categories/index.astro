@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const allPosts = await getCollection('posts');
+
+const categoryMap: Record<string, number> = {};
+for (const post of allPosts) {
+  const cat = (post.data.category || 'others').toLowerCase();
+  categoryMap[cat] = (categoryMap[cat] || 0) + 1;
+}
+
+const categories = Object.entries(categoryMap).sort((a, b) => b[1] - a[1]);
+---
+
+<BaseLayout title="Categories">
+  <div class="mb-8 pb-4 border-b border-zinc-200 dark:border-zinc-800">
+    <h1 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100">
+      Categories
+    </h1>
+    <p class="text-sm text-zinc-500 mt-1">
+      총 {categories.length}개의 카테고리로 정리되어 있습니다.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {categories.map(([category, count]) => (
+      <a
+        href={`/categories/${category}/`}
+        class="group p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-md transition-all flex items-center justify-between"
+      >
+        <span class="font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 capitalize">
+          {category}
+        </span>
+        <span class="text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 font-semibold">
+          {count}
+        </span>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

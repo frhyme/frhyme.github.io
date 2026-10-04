@@ -1,0 +1,78 @@
+---
+import type { GetStaticPathsOptions, Page } from 'astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PostCard from '../../../components/PostCard.astro';
+import Pagination from '../../../components/Pagination.astro';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const posts = await getCollection('posts');
+
+  const categories = new Set(
+    posts.map((p) => (p.data.category || 'others').toLowerCase())
+  );
+
+  return Array.from(categories).flatMap((category) => {
+    const filteredPosts = posts
+      .filter((p) => (p.data.category || 'others').toLowerCase() === category)
+      .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+    return paginate(filteredPosts, {
+      params: { category },
+      pageSize: 15,
+    });
+  });
+}
+
+interface Props {
+  page: Page<CollectionEntry<'posts'>>;
+}
+
+const { page } = Astro.props;
+const { category } = Astro.params;
+---
+
+<BaseLayout title={`Category: ${category} (Page ${page.currentPage})`}>
+  <div class="mb-8 pb-4 border-b border-zinc-200 dark:border-zinc-800">
+    <div class="flex items-center space-x-2 text-xs text-zinc-400 mb-1">
+      <a href="/categories/" class="hover:underline">Categories</a>
+      <span>&gt;</span>
+      <span class="capitalize">{category}</span>
+    </div>
+    <h1 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100 capitalize">
+      {category}
+    </h1>
+    <p class="text-xs text-zinc-500 mt-1">
+      총 {page.total}개의 포스트
+    </p>
+  </div>
+
+  <div class="divide-y divide-zinc-100 dark:divide-zinc-800">
+    {page.data.map((post) => {
+      let url = post.data.permalink;
+      if (!url) {
+        const filename = post.id.replace(/\.md$/, '');
+        const slugMatch = filename.match(/^(\d{4}-\d{2}-\d{2})-(.*)$/);
+        const postSlug = slugMatch ? slugMatch[2] : filename;
+        const cat = (post.data.category || 'others').toLowerCase().replace(/\s+/g, '-');
+        url = `/${cat}/${postSlug}/`;
+      }
+
+      return (
+        <PostCard
+          title={post.data.title}
+          date={post.data.date}
+          category={post.data.category}
+          tags={post.data.tags}
+          url={url}
+        />
+      );
+    })}
+  </div>
+
+  <Pagination
+    currentPage={page.currentPage}
+    lastPage={page.lastPage}
+    basePath={`/categories/${category}/`}
+  />
+</BaseLayout>
