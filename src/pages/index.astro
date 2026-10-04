@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
-import AdSense from '../components/AdSense.astro';
 
 const allPosts = await getCollection('posts');
 
@@ -54,9 +53,6 @@ const topCategories = Object.entries(categoryCounts)
       ))}
     </div>
   </section>
-
-  <!-- Top AdSense Banner -->
-  <AdSense slot="8429315249" className="my-6" />
 
   <!-- Post List -->
   <section class="mt-8">
