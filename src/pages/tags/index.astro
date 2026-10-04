@@ -5,12 +5,22 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const allPosts = await getCollection('posts');
 
 const tagMap: Record<string, number> = {};
+const coOccurrence = new Map<string, number>();
+
 for (const post of allPosts) {
-  const tags = post.data.tags || [];
-  for (const t of tags) {
-    const cleanTag = t.toLowerCase().trim();
-    if (cleanTag) {
-      tagMap[cleanTag] = (tagMap[cleanTag] || 0) + 1;
+  const rawTags = post.data.tags || [];
+  const cleanTags = Array.from(
+    new Set(rawTags.map((t: string) => t.toLowerCase().trim()).filter(Boolean))
+  ).sort();
+
+  for (const t of cleanTags) {
+    tagMap[t] = (tagMap[t] || 0) + 1;
+  }
+
+  for (let i = 0; i < cleanTags.length; i++) {
+    for (let j = i + 1; j < cleanTags.length; j++) {
+      const pair = `${cleanTags[i]}|||${cleanTags[j]}`;
+      coOccurrence.set(pair, (coOccurrence.get(pair) || 0) + 1);
     }
   }
 }
@@ -131,186 +141,404 @@ for (const [tag, count] of allTags) {
 }
 
 const domainOrder = ['languages', 'data', 'algorithm', 'devtools', 'life', 'others'];
+
+// Build Network Graph Data (Top 75 tags with frequency >= 12)
+const domainColors: Record<string, string> = {
+  languages: '#3b82f6', // Blue
+  data: '#8b5cf6',      // Purple
+  algorithm: '#f59e0b', // Amber
+  devtools: '#10b981',  // Emerald
+  life: '#f43f5e',      // Rose
+  others: '#64748b',    // Slate
+};
+
+const graphNodesList = allTags.filter(([_, count]) => count >= 12).slice(0, 75);
+const graphNodeSet = new Set(graphNodesList.map(([t]) => t));
+
+const graphNodes = graphNodesList.map(([tag, count]) => {
+  const domain = classifyTag(tag);
+  return {
+    id: tag,
+    name: tag,
+    count,
+    domain,
+    color: domainColors[domain] || domainColors.others,
+    radius: Math.min(26, Math.max(8, Math.round(Math.sqrt(count) * 2.1))),
+  };
+});
+
+const graphLinks: Array<{ source: string; target: string; weight: number }> = [];
+for (const [pair, weight] of coOccurrence.entries()) {
+  if (weight >= 2) {
+    const [u, v] = pair.split('|||');
+    if (graphNodeSet.has(u) && graphNodeSet.has(v)) {
+      graphLinks.push({ source: u, target: v, weight });
+    }
+  }
+}
+
+const graphDataJson = JSON.stringify({ nodes: graphNodes, links: graphLinks });
 ---
 
 <BaseLayout
   title="Tags & Engineering Topics"
-  description="1,427편의 기술 블로그에 축적된 1,200여 개의 키워드 태그를 도메인별로 분류하고 탐색할 수 있는 엔지니어링 토픽 디렉토리입니다."
+  description="1,427편의 기술 블로그에 축적된 1,200여 개의 키워드 태그를 도메인별 디렉토리 및 인터랙티브 동시 출현 지식 그래프로 탐색할 수 있습니다."
 >
-  <div class="space-y-12">
-    <!-- Header -->
-    <header class="pb-6 border-b border-zinc-200/80 dark:border-zinc-800/80">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/5 text-blue-600 dark:text-blue-400 text-xs font-mono font-medium mb-4">
-        <span>TOPIC DIRECTORY</span>
+  <div class="space-y-8">
+    <!-- Header with View Toggle -->
+    <header class="pb-6 border-b border-zinc-200/80 dark:border-zinc-800/80 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/5 text-blue-600 dark:text-blue-400 text-xs font-mono font-medium mb-3">
+          <span>TOPIC DIRECTORY & KNOWLEDGE GRAPH</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
+          태그 및 엔지니어링 토픽 디렉토리
+        </h1>
+        <p class="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 mt-2 max-w-2xl leading-relaxed">
+          누적 1,427편의 포스트에서 정제된 <strong>{allTags.length.toLocaleString()}개의 키워드 태그</strong>입니다. 도메인별 분류 디렉토리와 태그 간 동시 출현 지식 그래프를 전환하며 탐색할 수 있습니다.
+        </p>
       </div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
-        태그 및 엔지니어링 토픽 디렉토리
-      </h1>
-      <p class="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 mt-2 max-w-2xl leading-relaxed">
-        누적 1,427편의 포스트에서 정제된 <strong>{allTags.length.toLocaleString()}개의 키워드 태그</strong>입니다. 상위 핵심 기술 스택과 도메인별 분류를 통해 원하는 기술 주제를 탐색할 수 있습니다.
-      </p>
+
+      <!-- View Switcher Tabs -->
+      <div class="inline-flex p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 shrink-0 self-start sm:self-auto font-mono text-xs shadow-2xs">
+        <button
+          id="btn-view-directory"
+          type="button"
+          class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 font-semibold shadow-xs transition-all cursor-pointer"
+        >
+          <span>📋</span>
+          <span>디렉토리 뷰</span>
+        </button>
+        <button
+          id="btn-view-graph"
+          type="button"
+          class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 font-medium transition-all cursor-pointer"
+        >
+          <span>🕸</span>
+          <span>네트워크 그래프 뷰</span>
+        </button>
+      </div>
     </header>
 
-    <!-- Top 6 Core Stacks Spotlight -->
-    <section>
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-xs uppercase tracking-wider font-bold text-zinc-400 dark:text-zinc-500 font-mono flex items-center gap-1.5">
-          <span class="text-blue-500">🏆</span>
-          <span>CORE TECH SPOTLIGHT · 주요 기술 스택</span>
-        </h2>
-      </div>
+    <!-- VIEW 1: Directory View -->
+    <div id="directory-view" class="space-y-12">
+      <!-- Top 6 Core Stacks Spotlight -->
+      <section>
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xs uppercase tracking-wider font-bold text-zinc-400 dark:text-zinc-500 font-mono flex items-center gap-1.5">
+            <span class="text-blue-500">🏆</span>
+            <span>CORE TECH SPOTLIGHT · 주요 기술 스택</span>
+          </h2>
+        </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {topSpotlights.map((item) => (
-          <a
-            href={`/tags/${item.tag}/`}
-            class="group p-5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/40 hover:border-blue-500/60 dark:hover:border-blue-500/60 hover:bg-white dark:hover:bg-zinc-900 hover:shadow-md transition-all flex flex-col justify-between"
-          >
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-2xl p-2 rounded-xl bg-zinc-100 dark:bg-zinc-800">
-                  {item.icon}
-                </span>
-                <span class="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
-                  {item.count.toLocaleString()} posts
-                </span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {topSpotlights.map((item) => (
+            <a
+              href={`/tags/${item.tag}/`}
+              class="group p-5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/40 hover:border-blue-500/60 dark:hover:border-blue-500/60 hover:bg-white dark:hover:bg-zinc-900 hover:shadow-md transition-all flex flex-col justify-between"
+            >
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-2xl p-2 rounded-xl bg-zinc-100 dark:bg-zinc-800">
+                    {item.icon}
+                  </span>
+                  <span class="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+                    {item.count.toLocaleString()} posts
+                  </span>
+                </div>
+                <h3 class="font-bold text-base text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  #{item.name}
+                </h3>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
-              <h3 class="font-bold text-base text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                #{item.name}
-              </h3>
-              <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">
-                {item.desc}
-              </p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/60 flex items-center text-xs font-semibold text-blue-600 dark:text-blue-400">
-              <span>관련 글 둘러보기</span>
-              <span class="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
-            </div>
-          </a>
-        ))}
-      </div>
-    </section>
+              <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/60 flex items-center text-xs font-semibold text-blue-600 dark:text-blue-400">
+                <span>관련 글 둘러보기</span>
+                <span class="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
 
-    <!-- Search & Filter Controls (Linear Style) -->
-    <section class="sticky top-20 z-20 p-4 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md shadow-xs space-y-3">
-      <!-- Search Input -->
-      <div class="relative flex items-center">
-        <svg
-          class="w-4 h-4 text-zinc-400 absolute left-3.5 pointer-events-none"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
-        <input
-          id="tag-search-input"
-          type="text"
-          placeholder="태그 실시간 검색 (예: networkx, numpy, git, vim, java)..."
-          class="w-full px-4 py-2 pl-10 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 text-xs sm:text-sm focus:outline-hidden focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 transition-all font-mono"
-        />
-        <button
-          id="tag-search-clear"
-          type="button"
-          class="hidden absolute right-3 p-1 rounded text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 text-xs cursor-pointer"
-          title="검색어 지우기"
-        >
-          ✕
-        </button>
+      <!-- Search & Filter Controls (Linear Style) -->
+      <section class="sticky top-20 z-20 p-4 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md shadow-xs space-y-3">
+        <!-- Search Input -->
+        <div class="relative flex items-center">
+          <svg
+            class="w-4 h-4 text-zinc-400 absolute left-3.5 pointer-events-none"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <input
+            id="tag-search-input"
+            type="text"
+            placeholder="태그 실시간 검색 (예: networkx, numpy, git, vim, java)..."
+            class="w-full px-4 py-2 pl-10 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 text-xs sm:text-sm focus:outline-hidden focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 transition-all font-mono"
+          />
+          <button
+            id="tag-search-clear"
+            type="button"
+            class="hidden absolute right-3 p-1 rounded text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 text-xs cursor-pointer"
+            title="검색어 지우기"
+          >
+            ✕
+          </button>
+        </div>
+
+        <!-- Domain Filter Tabs -->
+        <div class="flex flex-wrap items-center gap-1.5 pt-1 overflow-x-auto text-xs">
+          <button
+            type="button"
+            data-domain="all"
+            class="tag-filter-tab active px-3 py-1.5 rounded-lg border border-blue-500/30 bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold cursor-pointer transition-all"
+          >
+            전체 ({allTags.length.toLocaleString()})
+          </button>
+          {domainOrder.map((key) => {
+            const meta = domainMeta[key];
+            const count = domainGroups[key].length;
+            return (
+              <button
+                type="button"
+                data-domain={key}
+                class="tag-filter-tab px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-700 font-medium cursor-pointer transition-all"
+              >
+                <span>{meta.icon}</span>
+                <span class="ml-1">{meta.title.split(' ')[0]}</span>
+                <span class="text-[11px] text-zinc-400 font-mono ml-1">({count})</span>
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
+      <!-- No Search Results Fallback -->
+      <div id="tag-no-results" class="hidden py-16 text-center">
+        <p class="text-base font-semibold text-zinc-700 dark:text-zinc-300">
+          일치하는 태그가 없습니다.
+        </p>
+        <p class="text-xs text-zinc-400 mt-1">
+          다른 검색어를 입력하시거나 상단 탭을 전환해 보세요.
+        </p>
       </div>
 
-      <!-- Domain Filter Tabs -->
-      <div class="flex flex-wrap items-center gap-1.5 pt-1 overflow-x-auto text-xs">
-        <button
-          type="button"
-          data-domain="all"
-          class="tag-filter-tab active px-3 py-1.5 rounded-lg border border-blue-500/30 bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold cursor-pointer transition-all"
-        >
-          전체 ({allTags.length.toLocaleString()})
-        </button>
+      <!-- Domain Clustered Tag Sections -->
+      <div class="space-y-12">
         {domainOrder.map((key) => {
           const meta = domainMeta[key];
-          const count = domainGroups[key].length;
+          const tags = domainGroups[key];
+          if (tags.length === 0) return null;
+
+          const totalDomainPosts = tags.reduce((acc, [, c]) => acc + c, 0);
+
           return (
-            <button
-              type="button"
+            <section
               data-domain={key}
-              class="tag-filter-tab px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-700 font-medium cursor-pointer transition-all"
+              class="domain-tag-section scroll-mt-28"
             >
-              <span>{meta.icon}</span>
-              <span class="ml-1">{meta.title.split(' ')[0]}</span>
-              <span class="text-[11px] text-zinc-400 font-mono ml-1">({count})</span>
-            </button>
+              <!-- Domain Section Header -->
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-3 mb-5 border-b border-zinc-200/80 dark:border-zinc-800/80 gap-2">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-xl">{meta.icon}</span>
+                    <h2 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+                      {meta.title}
+                    </h2>
+                    <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 font-mono">
+                      {tags.length} tags · {totalDomainPosts.toLocaleString()} posts
+                    </span>
+                  </div>
+                  <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
+                    {meta.desc}
+                  </p>
+                </div>
+              </div>
+
+              <!-- Uniform Tag Pills Grid -->
+              <div class="flex flex-wrap gap-2">
+                {tags.map(([tag, count]) => (
+                  <a
+                    href={`/tags/${tag}/`}
+                    data-tag={tag}
+                    class="tag-pill-item group inline-flex items-center px-3 py-1.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-xs text-zinc-700 dark:text-zinc-300 hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-all shadow-2xs font-mono"
+                  >
+                    <span class="group-hover:translate-x-0.5 transition-transform">#{tag}</span>
+                    <span class="ml-2 px-1.5 py-0.2 rounded-md bg-zinc-100 dark:bg-zinc-800 group-hover:bg-blue-50 dark:group-hover:bg-blue-950/50 text-[10px] text-zinc-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 font-semibold transition-colors">
+                      {count}
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </section>
           );
         })}
       </div>
-    </section>
-
-    <!-- No Search Results Fallback -->
-    <div id="tag-no-results" class="hidden py-16 text-center">
-      <p class="text-base font-semibold text-zinc-700 dark:text-zinc-300">
-        일치하는 태그가 없습니다.
-      </p>
-      <p class="text-xs text-zinc-400 mt-1">
-        다른 검색어를 입력하시거나 상단 탭을 전환해 보세요.
-      </p>
     </div>
 
-    <!-- Domain Clustered Tag Sections -->
-    <div class="space-y-12">
-      {domainOrder.map((key) => {
-        const meta = domainMeta[key];
-        const tags = domainGroups[key];
-        if (tags.length === 0) return null;
+    <!-- VIEW 2: Network Graph View -->
+    <div id="network-view" class="hidden space-y-6">
+      <div class="p-6 rounded-3xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white/70 dark:bg-zinc-900/40 shadow-xs space-y-4">
+        <!-- Graph Title & Stats -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-zinc-200/80 dark:border-zinc-800/80">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xl">🕸</span>
+              <h2 class="text-lg sm:text-xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
+                태그 동시 출현 지식 네트워크 (Tag Co-occurrence Graph)
+              </h2>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 font-mono font-semibold">
+                {graphNodes.length} Nodes · {graphLinks.length} Connections
+              </span>
+            </div>
+            <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">
+              같은 포스트에 함께 태그된 연관성을 바탕으로 구성된 물리 시뮬레이션 그래프입니다. 노드를 드래그하거나 확대/축소하여 클러스터를 탐색해 보세요.
+            </p>
+          </div>
 
-        const totalDomainPosts = tags.reduce((acc, [, c]) => acc + c, 0);
+          <!-- Quick Canvas Controls -->
+          <div class="flex items-center gap-1.5 shrink-0">
+            <button
+              id="graph-zoom-in"
+              type="button"
+              class="px-2.5 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs text-zinc-700 dark:text-zinc-300 transition-colors cursor-pointer"
+              title="확대 (Zoom In)"
+            >
+              ➕ 확대
+            </button>
+            <button
+              id="graph-zoom-out"
+              type="button"
+              class="px-2.5 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs text-zinc-700 dark:text-zinc-300 transition-colors cursor-pointer"
+              title="축소 (Zoom Out)"
+            >
+              ➖ 축소
+            </button>
+            <button
+              id="graph-reset"
+              type="button"
+              class="px-2.5 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs text-zinc-700 dark:text-zinc-300 font-medium transition-colors cursor-pointer"
+              title="위치 초기화"
+            >
+              ↺ 초기화
+            </button>
+          </div>
+        </div>
 
-        return (
-          <section
-            data-domain={key}
-            class="domain-tag-section scroll-mt-28"
+        <!-- Legend Pills -->
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-mono">
+          <span class="text-zinc-400 text-[11px]">도메인 색상:</span>
+          <span class="inline-flex items-center gap-1.5 text-zinc-600 dark:text-zinc-400">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+            <span>Languages</span>
+          </span>
+          <span class="inline-flex items-center gap-1.5 text-zinc-600 dark:text-zinc-400">
+            <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+            <span>Graph & Data</span>
+          </span>
+          <span class="inline-flex items-center gap-1.5 text-zinc-600 dark:text-zinc-400">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+            <span>Algorithms</span>
+          </span>
+          <span class="inline-flex items-center gap-1.5 text-zinc-600 dark:text-zinc-400">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            <span>DevTools</span>
+          </span>
+          <span class="inline-flex items-center gap-1.5 text-zinc-600 dark:text-zinc-400">
+            <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+            <span>Life & English</span>
+          </span>
+        </div>
+
+        <!-- Canvas Container -->
+        <div class="relative w-full h-[650px] rounded-2xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-950/60 shadow-inner">
+          <canvas id="tag-graph-canvas" class="w-full h-full block cursor-grab active:cursor-grabbing"></canvas>
+
+          <!-- Floating Info Card on Canvas -->
+          <div
+            id="graph-info-card"
+            class="absolute bottom-4 left-4 right-4 sm:right-auto sm:max-w-md p-4 rounded-2xl bg-white/95 dark:bg-zinc-900/95 border border-zinc-200/90 dark:border-zinc-700/90 shadow-xl backdrop-blur-md transition-all duration-200 opacity-0 pointer-events-none"
           >
-            <!-- Domain Section Header -->
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-3 mb-5 border-b border-zinc-200/80 dark:border-zinc-800/80 gap-2">
-              <div>
-                <div class="flex items-center gap-2">
-                  <span class="text-xl">{meta.icon}</span>
-                  <h2 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-                    {meta.title}
-                  </h2>
-                  <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 font-mono">
-                    {tags.length} tags · {totalDomainPosts.toLocaleString()} posts
-                  </span>
-                </div>
-                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-                  {meta.desc}
-                </p>
-              </div>
+            <div class="flex items-center justify-between gap-2 mb-1.5">
+              <span id="info-tag-name" class="font-bold text-sm text-zinc-900 dark:text-zinc-100 font-mono">
+                #tag
+              </span>
+              <span id="info-tag-count" class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400">
+                0 posts
+              </span>
             </div>
+            <div id="info-neighbors" class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-3">
+              연결된 연관 태그들...
+            </div>
+            <a
+              id="info-tag-link"
+              href="#"
+              class="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              <span>해당 태그 포스트 목록 보기</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
 
-            <!-- Uniform Tag Pills Grid -->
-            <div class="flex flex-wrap gap-2">
-              {tags.map(([tag, count]) => (
-                <a
-                  href={`/tags/${tag}/`}
-                  data-tag={tag}
-                  class="tag-pill-item group inline-flex items-center px-3 py-1.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-xs text-zinc-700 dark:text-zinc-300 hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-all shadow-2xs font-mono"
-                >
-                  <span class="group-hover:translate-x-0.5 transition-transform">#{tag}</span>
-                  <span class="ml-2 px-1.5 py-0.2 rounded-md bg-zinc-100 dark:bg-zinc-800 group-hover:bg-blue-50 dark:group-hover:bg-blue-950/50 text-[10px] text-zinc-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 font-semibold transition-colors">
-                    {count}
-                  </span>
-                </a>
-              ))}
-            </div>
-          </section>
-        );
-      })}
+          <!-- Bottom Right Hint -->
+          <div class="absolute bottom-3 right-4 text-[11px] text-zinc-400 dark:text-zinc-500 font-mono pointer-events-none select-none hidden sm:block">
+            드래그: 이동 · 휠: 줌 · 노드 클릭: 포스트 탐색
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
+  <!-- Raw Graph Data for Client Simulation -->
+  <script is:inline id="graph-data" type="application/json" set:html={graphDataJson} />
+
   <script is:inline>
     (() => {
+      // 1. View Switcher (Directory vs Graph)
+      const btnViewDirectory = document.getElementById('btn-view-directory');
+      const btnViewGraph = document.getElementById('btn-view-graph');
+      const directoryView = document.getElementById('directory-view');
+      const networkView = document.getElementById('network-view');
+
+      let isGraphInitialized = false;
+
+      function switchView(view) {
+        if (view === 'graph') {
+          directoryView.classList.add('hidden');
+          networkView.classList.remove('hidden');
+
+          btnViewGraph.classList.add('bg-white', 'dark:bg-zinc-800', 'text-zinc-900', 'dark:text-zinc-100', 'font-semibold', 'shadow-xs');
+          btnViewGraph.classList.remove('text-zinc-500', 'dark:text-zinc-400', 'font-medium');
+
+          btnViewDirectory.classList.remove('bg-white', 'dark:bg-zinc-800', 'text-zinc-900', 'dark:text-zinc-100', 'font-semibold', 'shadow-xs');
+          btnViewDirectory.classList.add('text-zinc-500', 'dark:text-zinc-400', 'font-medium');
+
+          if (!isGraphInitialized) {
+            initGraphSimulation();
+            isGraphInitialized = true;
+          } else if (window.resumeGraphAnimation) {
+            window.resumeGraphAnimation();
+          }
+        } else {
+          networkView.classList.add('hidden');
+          directoryView.classList.remove('hidden');
+
+          btnViewDirectory.classList.add('bg-white', 'dark:bg-zinc-800', 'text-zinc-900', 'dark:text-zinc-100', 'font-semibold', 'shadow-xs');
+          btnViewDirectory.classList.remove('text-zinc-500', 'dark:text-zinc-400', 'font-medium');
+
+          btnViewGraph.classList.remove('bg-white', 'dark:bg-zinc-800', 'text-zinc-900', 'dark:text-zinc-100', 'font-semibold', 'shadow-xs');
+          btnViewGraph.classList.add('text-zinc-500', 'dark:text-zinc-400', 'font-medium');
+        }
+      }
+
+      btnViewDirectory?.addEventListener('click', () => switchView('directory'));
+      btnViewGraph?.addEventListener('click', () => switchView('graph'));
+
+      // 2. Directory View Filter Logic
       const searchInput = document.getElementById('tag-search-input');
       const clearBtn = document.getElementById('tag-search-clear');
       const filterTabs = document.querySelectorAll('.tag-filter-tab');
@@ -361,7 +589,6 @@ const domainOrder = ['languages', 'data', 'algorithm', 'devtools', 'life', 'othe
         }
       }
 
-      // Tab clicks
       filterTabs.forEach((tab) => {
         tab.addEventListener('click', () => {
           filterTabs.forEach((t) => {
@@ -377,10 +604,7 @@ const domainOrder = ['languages', 'data', 'algorithm', 'devtools', 'life', 'othe
         });
       });
 
-      // Search input input listener
       searchInput?.addEventListener('input', applyFilter);
-
-      // Clear button click listener
       clearBtn?.addEventListener('click', () => {
         if (searchInput) {
           searchInput.value = '';
@@ -388,6 +612,432 @@ const domainOrder = ['languages', 'data', 'algorithm', 'devtools', 'life', 'othe
           applyFilter();
         }
       });
+
+      // 3. Interactive Force-Directed Canvas Simulation
+      function initGraphSimulation() {
+        const rawDataEl = document.getElementById('graph-data');
+        if (!rawDataEl) return;
+        const graphData = JSON.parse(rawDataEl.textContent || '{}');
+
+        const canvas = document.getElementById('tag-graph-canvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+
+        const infoCard = document.getElementById('graph-info-card');
+        const infoTagName = document.getElementById('info-tag-name');
+        const infoTagCount = document.getElementById('info-tag-count');
+        const infoNeighbors = document.getElementById('info-neighbors');
+        const infoTagLink = document.getElementById('info-tag-link');
+
+        const zoomInBtn = document.getElementById('graph-zoom-in');
+        const zoomOutBtn = document.getElementById('graph-zoom-out');
+        const resetBtn = document.getElementById('graph-reset');
+
+        let width = canvas.parentElement?.clientWidth || 800;
+        let height = canvas.parentElement?.clientHeight || 650;
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+        function resizeCanvas() {
+          width = canvas.parentElement?.clientWidth || 800;
+          height = canvas.parentElement?.clientHeight || 650;
+          canvas.width = width * dpr;
+          canvas.height = height * dpr;
+          ctx.setTransform(1, 0, 0, 1, 0, 0);
+          ctx.scale(dpr, dpr);
+        }
+        resizeCanvas();
+
+        // Node indexing & adjacency
+        const nodes = graphData.nodes.map((n, i) => {
+          const angle = (i / graphData.nodes.length) * Math.PI * 2;
+          const dist = 120 + (i % 3) * 60;
+          return {
+            ...n,
+            x: width / 2 + Math.cos(angle) * dist + (Math.random() - 0.5) * 40,
+            y: height / 2 + Math.sin(angle) * dist + (Math.random() - 0.5) * 40,
+            vx: 0,
+            vy: 0,
+            isDragging: false,
+          };
+        });
+
+        const nodeById = new Map();
+        nodes.forEach((n) => nodeById.set(n.id, n));
+
+        // Neighbor adjacency for fast hover highlights
+        const neighborMap = new Map();
+        graphData.links.forEach((l) => {
+          if (!neighborMap.has(l.source)) neighborMap.set(l.source, new Map());
+          if (!neighborMap.has(l.target)) neighborMap.set(l.target, new Map());
+          neighborMap.get(l.source).set(l.target, l.weight);
+          neighborMap.get(l.target).set(l.source, l.weight);
+        });
+
+        // Viewport Transform (Pan & Zoom)
+        let transform = {
+          x: 0,
+          y: 0,
+          scale: 1,
+        };
+
+        let hoveredNode = null;
+        let draggedNode = null;
+        let isPanning = false;
+        let startPan = { x: 0, y: 0 };
+        let mousePos = { x: 0, y: 0 };
+        let isRunning = true;
+        let animationFrameId = null;
+
+        // Force parameters
+        const kRepel = 90;
+        const kSpring = 0.032;
+        const kCenter = 0.007;
+        const damping = 0.86;
+
+        function simulateStep() {
+          // 1. Node repulsion
+          for (let i = 0; i < nodes.length; i++) {
+            const a = nodes[i];
+            for (let j = i + 1; j < nodes.length; j++) {
+              const b = nodes[j];
+              const dx = b.x - a.x;
+              const dy = b.y - a.y;
+              const distSq = dx * dx + dy * dy + 80;
+              const dist = Math.sqrt(distSq);
+              const force = (kRepel * (a.radius + b.radius)) / distSq;
+              const fx = (dx / dist) * force;
+              const fy = (dy / dist) * force;
+              a.vx -= fx;
+              a.vy -= fy;
+              b.vx += fx;
+              b.vy += fy;
+            }
+          }
+
+          // 2. Link spring forces
+          for (let i = 0; i < graphData.links.length; i++) {
+            const l = graphData.links[i];
+            const a = nodeById.get(l.source);
+            const b = nodeById.get(l.target);
+            if (!a || !b) continue;
+
+            const dx = b.x - a.x;
+            const dy = b.y - a.y;
+            const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+            const targetDist = Math.max(45, 140 - Math.min(l.weight, 50) * 1.8);
+            const force = (dist - targetDist) * kSpring;
+            const fx = (dx / dist) * force;
+            const fy = (dy / dist) * force;
+            a.vx += fx;
+            a.vy += fy;
+            b.vx -= fx;
+            b.vy -= fy;
+          }
+
+          // 3. Center gravity & velocity integration
+          const cx = width / 2;
+          const cy = height / 2;
+          let totalVelocity = 0;
+
+          for (let i = 0; i < nodes.length; i++) {
+            const n = nodes[i];
+            n.vx += (cx - n.x) * kCenter;
+            n.vy += (cy - n.y) * kCenter;
+
+            if (!n.isDragging) {
+              n.vx *= damping;
+              n.vy *= damping;
+              n.x += n.vx;
+              n.y += n.vy;
+              totalVelocity += Math.abs(n.vx) + Math.abs(n.vy);
+            }
+          }
+
+          return totalVelocity;
+        }
+
+        function draw() {
+          ctx.save();
+          ctx.clearRect(0, 0, width, height);
+
+          // Apply Pan & Zoom
+          ctx.translate(transform.x, transform.y);
+          ctx.scale(transform.scale, transform.scale);
+
+          const isDark = document.documentElement.classList.contains('dark');
+          const defaultEdgeColor = isDark ? 'rgba(255, 255, 255, 0.07)' : 'rgba(0, 0, 0, 0.08)';
+          const hoveredEdgeColor = isDark ? 'rgba(96, 165, 250, 0.75)' : 'rgba(37, 99, 235, 0.75)';
+
+          // Draw Edges
+          for (let i = 0; i < graphData.links.length; i++) {
+            const l = graphData.links[i];
+            const a = nodeById.get(l.source);
+            const b = nodeById.get(l.target);
+            if (!a || !b) continue;
+
+            const isConnected =
+              hoveredNode && (hoveredNode.id === a.id || hoveredNode.id === b.id);
+
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+
+            if (hoveredNode) {
+              if (isConnected) {
+                ctx.strokeStyle = hoveredEdgeColor;
+                ctx.lineWidth = Math.min(3.5, Math.max(1.5, l.weight / 12));
+              } else {
+                ctx.strokeStyle = isDark ? 'rgba(255, 255, 255, 0.02)' : 'rgba(0, 0, 0, 0.03)';
+                ctx.lineWidth = 0.5;
+              }
+            } else {
+              ctx.strokeStyle = defaultEdgeColor;
+              ctx.lineWidth = Math.min(2.5, Math.max(0.6, Math.sqrt(l.weight) * 0.5));
+            }
+            ctx.stroke();
+          }
+
+          // Draw Nodes
+          for (let i = 0; i < nodes.length; i++) {
+            const n = nodes[i];
+            const isHovered = hoveredNode && hoveredNode.id === n.id;
+            const isNeighbor =
+              hoveredNode && neighborMap.get(hoveredNode.id)?.has(n.id);
+
+            let alpha = 1;
+            if (hoveredNode && !isHovered && !isNeighbor) {
+              alpha = 0.18;
+            }
+
+            ctx.save();
+            ctx.globalAlpha = alpha;
+
+            // Aura glow for hovered node
+            if (isHovered) {
+              ctx.beginPath();
+              ctx.arc(n.x, n.y, n.radius + 6, 0, Math.PI * 2);
+              ctx.fillStyle = n.color + '44';
+              ctx.fill();
+            }
+
+            // Node Circle
+            ctx.beginPath();
+            ctx.arc(n.x, n.y, n.radius, 0, Math.PI * 2);
+            ctx.fillStyle = n.color;
+            ctx.fill();
+            ctx.strokeStyle = isDark ? 'rgba(255, 255, 255, 0.3)' : 'rgba(0, 0, 0, 0.15)';
+            ctx.lineWidth = isHovered ? 2.5 : 1;
+            ctx.stroke();
+
+            // Node Label Text
+            const showLabel = n.radius >= 13 || isHovered || isNeighbor;
+            if (showLabel) {
+              ctx.font = `${isHovered ? 'bold 12px' : '500 10.5px'} monospace`;
+              ctx.textAlign = 'center';
+              ctx.textBaseline = 'middle';
+
+              const labelY = n.y + n.radius + 9;
+              const text = `#${n.name}`;
+              const textMetrics = ctx.measureText(text);
+
+              // Background pill behind text for legibility
+              ctx.fillStyle = isDark ? 'rgba(9, 9, 11, 0.75)' : 'rgba(255, 255, 255, 0.85)';
+              ctx.fillRect(
+                n.x - textMetrics.width / 2 - 3,
+                labelY - 6,
+                textMetrics.width + 6,
+                12
+              );
+
+              ctx.fillStyle = isDark ? (isHovered ? '#60a5fa' : '#f4f4f5') : (isHovered ? '#2563eb' : '#18181b');
+              ctx.fillText(text, n.x, labelY);
+            }
+
+            ctx.restore();
+          }
+
+          ctx.restore();
+        }
+
+        function loop() {
+          if (!isRunning) return;
+          const energy = simulateStep();
+          draw();
+
+          // Stop loop when energy is low and not dragging/hovering
+          if (energy < 0.08 && !draggedNode && !hoveredNode) {
+            isRunning = false;
+          } else {
+            animationFrameId = requestAnimationFrame(loop);
+          }
+        }
+
+        window.resumeGraphAnimation = function () {
+          if (!isRunning) {
+            isRunning = true;
+            loop();
+          }
+        };
+
+        // Screen to Graph coordinates converter
+        function getGraphPos(clientX, clientY) {
+          const rect = canvas.getBoundingClientRect();
+          const screenX = clientX - rect.left;
+          const screenY = clientY - rect.top;
+          return {
+            x: (screenX - transform.x) / transform.scale,
+            y: (screenY - transform.y) / transform.scale,
+          };
+        }
+
+        function findNodeAt(clientX, clientY) {
+          const { x, y } = getGraphPos(clientX, clientY);
+          for (let i = nodes.length - 1; i >= 0; i--) {
+            const n = nodes[i];
+            const dx = x - n.x;
+            const dy = y - n.y;
+            if (dx * dx + dy * dy <= (n.radius + 4) * (n.radius + 4)) {
+              return n;
+            }
+          }
+          return null;
+        }
+
+        function updateInfoCard(node) {
+          if (!infoCard || !infoTagName || !infoTagCount || !infoNeighbors || !infoTagLink) return;
+
+          if (!node) {
+            infoCard.classList.remove('opacity-100');
+            infoCard.classList.add('opacity-0', 'pointer-events-none');
+            return;
+          }
+
+          infoTagName.textContent = `#${node.name}`;
+          infoTagCount.textContent = `${node.count.toLocaleString()} posts`;
+
+          const neighbors = neighborMap.get(node.id);
+          if (neighbors && neighbors.size > 0) {
+            const sortedNeighbors = Array.from(neighbors.entries())
+              .sort((a, b) => b[1] - a[1])
+              .slice(0, 4)
+              .map(([id, weight]) => `${id}(${weight}회)`)
+              .join(', ');
+            infoNeighbors.innerHTML = `<span class="font-medium text-zinc-700 dark:text-zinc-300">연관 태그:</span> ${sortedNeighbors}`;
+          } else {
+            infoNeighbors.textContent = '단독 주제로 주로 작성된 태그입니다.';
+          }
+
+          infoTagLink.href = `/tags/${node.id}/`;
+          infoCard.classList.remove('opacity-0', 'pointer-events-none');
+          infoCard.classList.add('opacity-100');
+        }
+
+        // Pointer Events (Mouse & Touch)
+        canvas.addEventListener('mousedown', (e) => {
+          const node = findNodeAt(e.clientX, e.clientY);
+          if (node) {
+            draggedNode = node;
+            node.isDragging = true;
+            window.resumeGraphAnimation();
+          } else {
+            isPanning = true;
+            startPan = { x: e.clientX - transform.x, y: e.clientY - transform.y };
+          }
+        });
+
+        window.addEventListener('mousemove', (e) => {
+          const rect = canvas.getBoundingClientRect();
+          const isInside =
+            e.clientX >= rect.left &&
+            e.clientX <= rect.right &&
+            e.clientY >= rect.top &&
+            e.clientY <= rect.bottom;
+
+          if (draggedNode) {
+            const { x, y } = getGraphPos(e.clientX, e.clientY);
+            draggedNode.x = x;
+            draggedNode.y = y;
+            draggedNode.vx = 0;
+            draggedNode.vy = 0;
+            window.resumeGraphAnimation();
+          } else if (isPanning) {
+            transform.x = e.clientX - startPan.x;
+            transform.y = e.clientY - startPan.y;
+            draw();
+          } else if (isInside) {
+            const node = findNodeAt(e.clientX, e.clientY);
+            if (node !== hoveredNode) {
+              hoveredNode = node;
+              updateInfoCard(node);
+              draw();
+              canvas.style.cursor = node ? 'pointer' : 'grab';
+            }
+          }
+        });
+
+        window.addEventListener('mouseup', () => {
+          if (draggedNode) {
+            draggedNode.isDragging = false;
+            draggedNode = null;
+          }
+          isPanning = false;
+        });
+
+        // Click on node opens tag page
+        canvas.addEventListener('click', (e) => {
+          const node = findNodeAt(e.clientX, e.clientY);
+          if (node) {
+            window.location.href = `/tags/${node.id}/`;
+          }
+        });
+
+        // Mouse Wheel Zoom
+        canvas.addEventListener(
+          'wheel',
+          (e) => {
+            e.preventDefault();
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+
+            const zoomFactor = e.deltaY < 0 ? 1.12 : 0.88;
+            const newScale = Math.min(3.0, Math.max(0.4, transform.scale * zoomFactor));
+
+            // Zoom centered on mouse position
+            transform.x = mouseX - (mouseX - transform.x) * (newScale / transform.scale);
+            transform.y = mouseY - (mouseY - transform.y) * (newScale / transform.scale);
+            transform.scale = newScale;
+
+            draw();
+          },
+          { passive: false }
+        );
+
+        // Control Buttons
+        zoomInBtn?.addEventListener('click', () => {
+          transform.scale = Math.min(3.0, transform.scale * 1.25);
+          draw();
+        });
+
+        zoomOutBtn?.addEventListener('click', () => {
+          transform.scale = Math.max(0.4, transform.scale / 1.25);
+          draw();
+        });
+
+        resetBtn?.addEventListener('click', () => {
+          transform = { x: 0, y: 0, scale: 1 };
+          draw();
+        });
+
+        window.addEventListener('resize', () => {
+          resizeCanvas();
+          draw();
+        });
+
+        // Start animation
+        loop();
+      }
     })();
   </script>
 </BaseLayout>
