@@ -14,7 +14,7 @@ const sortedPosts = allPosts.sort(
 
 // Featured post (latest post)
 const featuredPost = sortedPosts[0];
-const recentPosts = sortedPosts.slice(1, 13);
+const recentPosts = sortedPosts.slice(1, 16);
 
 // Major category counts
 const techCount = allPosts.filter((p) => getMajorCategory(p.data.category) === 'tech').length;
@@ -226,7 +226,7 @@ const featuredDate = featuredPost.data.date
       </a>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div id="posts-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {recentPosts.map((post) => {
         const url = getPostUrl(post);
         const description = post.data.description || cleanExcerpt(post.body);
@@ -246,8 +246,37 @@ const featuredDate = featuredPost.data.date
       })}
     </div>
 
-    <!-- More Posts Button -->
-    <div class="text-center mt-12 pt-8 border-t border-zinc-200/80 dark:border-zinc-800/80">
+    <!-- Infinite Scroll Sentinel Element -->
+    <div id="infinite-scroll-sentinel" class="w-full h-8 -mt-4 pointer-events-none" aria-hidden="true"></div>
+
+    <!-- Loading Indicator -->
+    <div id="posts-loading-indicator" class="hidden my-8 flex items-center justify-center gap-2.5 text-xs text-zinc-500 dark:text-zinc-400">
+      <svg class="animate-spin h-4 w-4 text-blue-500" viewBox="0 0 24 24" fill="none">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+      </svg>
+      <span>다음 글 불러오는 중...</span>
+    </div>
+
+    <!-- Manual "Load More" Button Container (Shown after autoLoadLimit reached) -->
+    <div id="load-more-container" class="hidden text-center mt-10 mb-4">
+      <button
+        id="load-more-btn"
+        type="button"
+        class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/60 backdrop-blur-xs text-sm font-semibold text-zinc-800 dark:text-zinc-200 hover:border-blue-500/60 dark:hover:border-blue-500/60 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-pointer"
+      >
+        <span>더 많은 글 불러오기</span>
+        <span class="text-xs text-zinc-400">&darr;</span>
+      </button>
+    </div>
+
+    <!-- End of Archive Indicator -->
+    <div id="end-of-posts" class="hidden text-center py-8 text-xs text-zinc-400 font-medium border-t border-zinc-200/60 dark:border-zinc-800/60 mt-10">
+      🎉 모든 아카이브 글({allPosts.length.toLocaleString()}편)을 확인하셨습니다.
+    </div>
+
+    <!-- Fallback Pagination (for no-JS or Web Crawlers) -->
+    <div id="fallback-pagination" class="text-center mt-12 pt-8 border-t border-zinc-200/80 dark:border-zinc-800/80">
       <a
         href="/page/2/"
         class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm font-semibold text-zinc-800 dark:text-zinc-200 hover:border-zinc-400 dark:hover:border-zinc-500 hover:shadow-md transition-all"
@@ -257,4 +286,110 @@ const featuredDate = featuredPost.data.date
       </a>
     </div>
   </section>
+
+  <script is:inline>
+    (() => {
+      let currentPage = 1;
+      const maxAutoLoads = 2; // Auto-load page 2 and page 3 (up to ~48 posts)
+      let autoLoadCount = 0;
+      let isLoading = false;
+      let hasMore = true;
+
+      const postsGrid = document.getElementById('posts-grid');
+      const sentinel = document.getElementById('infinite-scroll-sentinel');
+      const loadingIndicator = document.getElementById('posts-loading-indicator');
+      const loadMoreContainer = document.getElementById('load-more-container');
+      const loadMoreBtn = document.getElementById('load-more-btn');
+      const endIndicator = document.getElementById('end-of-posts');
+      const fallbackPagination = document.getElementById('fallback-pagination');
+
+      if (!postsGrid || !sentinel) return;
+
+      // Hide fallback pagination when JS is active
+      if (fallbackPagination) fallbackPagination.style.display = 'none';
+
+      async function loadNextPage() {
+        if (isLoading || !hasMore) return;
+        isLoading = true;
+        const nextPage = currentPage + 1;
+
+        if (loadingIndicator) loadingIndicator.classList.remove('hidden');
+        if (loadMoreContainer) loadMoreContainer.classList.add('hidden');
+
+        try {
+          const response = await fetch(`/page/${nextPage}/`);
+          if (!response.ok) {
+            hasMore = false;
+            if (endIndicator) endIndicator.classList.remove('hidden');
+            observer.disconnect();
+            return;
+          }
+
+          const html = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+          const newGrid = doc.getElementById('posts-grid');
+
+          if (!newGrid || newGrid.children.length === 0) {
+            hasMore = false;
+            if (endIndicator) endIndicator.classList.remove('hidden');
+            observer.disconnect();
+            return;
+          }
+
+          const cards = Array.from(newGrid.children);
+          cards.forEach((card) => {
+            card.classList.add('animate-fadeIn');
+            postsGrid.appendChild(card);
+          });
+
+          currentPage = nextPage;
+          autoLoadCount++;
+
+          // Check if there is another page beyond nextPage
+          const nextLink =
+            doc.querySelector('a[rel="next"]') ||
+            doc.querySelector(`a[href*="/page/${nextPage + 1}/"]`);
+          if (!nextLink) {
+            hasMore = false;
+            if (endIndicator) endIndicator.classList.remove('hidden');
+            observer.disconnect();
+            return;
+          }
+
+          // If autoLoadCount reaches limit, display the Load More button
+          if (autoLoadCount >= maxAutoLoads) {
+            if (loadMoreContainer) loadMoreContainer.classList.remove('hidden');
+          }
+        } catch (err) {
+          console.error('Failed to load next posts:', err);
+          hasMore = false;
+        } finally {
+          isLoading = false;
+          if (loadingIndicator) loadingIndicator.classList.add('hidden');
+        }
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const entry = entries[0];
+          if (entry.isIntersecting && !isLoading && hasMore) {
+            if (autoLoadCount < maxAutoLoads) {
+              loadNextPage();
+            }
+          }
+        },
+        { rootMargin: '300px' }
+      );
+
+      observer.observe(sentinel);
+
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+          autoLoadCount = 0;
+          loadNextPage();
+        });
+      }
+    })();
+  </script>
 </BaseLayout>

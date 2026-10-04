@@ -37,7 +37,7 @@ const { page } = Astro.props;
     </span>
   </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+  <div id="posts-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
     {page.data.map((post) => {
       let url = post.data.permalink;
       if (!url) {
