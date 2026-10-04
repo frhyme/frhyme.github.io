@@ -15,30 +15,379 @@ for (const post of allPosts) {
   }
 }
 
-const tags = Object.entries(tagMap).sort((a, b) => b[1] - a[1]);
+const allTags = Object.entries(tagMap).sort((a, b) => b[1] - a[1]);
+
+// Top 6 Spotlight Technologies
+const topSpotlights = [
+  { name: 'Python', tag: 'python', count: tagMap['python'] || 621, icon: '🐍', desc: '코어 문법, CPython 내부 동작, 최적화 및 동시성' },
+  { name: 'NetworkX', tag: 'networkx', count: tagMap['networkx'] || 141, icon: '🕸', desc: '복잡계 네트워크 분석, 중심성 지표, 이분 그래프' },
+  { name: 'Java', tag: 'java', count: tagMap['java'] || 139, icon: '☕', desc: '객체지향 설계(SOLID), JVM 메모리, 디자인 패턴' },
+  { name: 'Matplotlib', tag: 'matplotlib', count: tagMap['matplotlib'] || 78, icon: '📊', desc: '출판 품질의 2D 데이터 시각화 및 커스텀 플롯' },
+  { name: 'Vim & macOS', tag: 'vim', count: tagMap['vim'] || 54, icon: '🛠', desc: '키보드 중심 개발 워크플로우, 생산성 자동화' },
+  { name: 'Database & SQL', tag: 'database', count: tagMap['database'] || 51, icon: '🗄', desc: '관계형 데이터 모델링, SQL 쿼리 최적화, NoSQL' },
+];
+
+// Domain classification rules
+const domainRules = {
+  languages: {
+    exact: new Set([
+      'python', 'java', 'javascript', 'js', 'html', 'css', 'c', 'cpp', 'go', 'swift', 'sql', 'r', 'web', 'oop',
+      'class', 'python-basic', 'python-libs', 'programming', 'json', 'xml', 'regex', 'regular-expression',
+      'markdown', 'flask', 'django', 'spring', 'node', 'nodejs', 'typescript', 'frontend', 'backend', 'method',
+      'function', 'variable', 'syntax', 'string', 'array', 'dict', 'list'
+    ]),
+    substr: ['python', 'java', 'script', 'django', 'spring', 'syntax', 'function', 'variable', 'frontend', 'backend', 'type'],
+  },
+  data: {
+    exact: new Set([
+      'networkx', 'matplotlib', 'numpy', 'pandas', 'centrality', 'graph', 'graphdb', 'neo4j', 'clustering',
+      'machine-learning', 'nlp', 'sklearn', 'cnn', 'scipy', 'seaborn', 'wordcloud', 'embedding', 'word2vec',
+      'keras', 'pytorch', 'bipartite', 'structural-equivalence', 'paper-summary', 'deep-learning', 'data',
+      'data-analysis', 'visualization', 'mining', 'tsne', 'pca'
+    ]),
+    substr: ['network', 'graph', 'centrality', 'matrix', 'data', 'plot', 'mining', 'neural', 'learning', 'embedding', 'vector'],
+  },
+  algorithm: {
+    exact: new Set([
+      'algorithm', 'database', 'sql', 'relational-database', 'mysql', 'postgresql', 'mongodb', 'nosql', 'tree',
+      'linkedlist', 'linked-list', 'stack', 'queue', 'heap', 'sorting', 'binary-search', 'dp', 'dynamic-programming',
+      'dfs', 'bfs', 'recursion', 'math', 'complexity', 'codefight', 'hash', 'hashmap', 'greedy', 'backtracking'
+    ]),
+    substr: ['algo', 'tree', 'sort', 'search', 'query', 'problem', 'structure', 'leetcode', 'hackerrank', 'graph-theory'],
+  },
+  devtools: {
+    exact: new Set([
+      'vim', 'vi', 'neovim', 'macos', 'mac', 'git', 'github', 'vscode', 'docker', 'shell', 'bash', 'terminal',
+      'zsh', 'linux', 'ubuntu', 'tmux', 'cli', 'macro', 'blog', 'jekyll', 'astro', 'google', 'ide', 'editor',
+      'automation', 'keyboard', 'iterm'
+    ]),
+    substr: ['vim', 'git', 'terminal', 'shell', 'docker', 'editor', 'keyboard'],
+  },
+  life: {
+    exact: new Set([
+      'movie', 'movie_script', 'english', 'boyhood', 'baseball', 'cinema', 'book', 'review', 'travel', 'trip',
+      'essay', 'thought', 'daily', 'game', 'sabermetrics'
+    ]),
+    substr: ['movie', 'english', 'script', 'baseball', 'trip', 'travel'],
+  },
+};
+
+function classifyTag(tag: string): string {
+  const t = tag.toLowerCase();
+  for (const [key, rule] of Object.entries(domainRules)) {
+    if (rule.exact.has(t)) return key;
+  }
+  for (const [key, rule] of Object.entries(domainRules)) {
+    if (rule.substr.some((s) => t.includes(s))) return key;
+  }
+  return 'others';
+}
+
+const domainMeta: Record<string, { title: string; icon: string; desc: string }> = {
+  languages: {
+    title: 'Languages & Web Development',
+    icon: '💻',
+    desc: 'Python, Java, JavaScript, Web 및 프로그래밍 언어 문법 아카이브',
+  },
+  data: {
+    title: 'Graph & Data Science',
+    icon: '🕸',
+    desc: 'NetworkX 복잡계 분석, 데이터 전처리, Matplotlib 시각화 및 머신러닝',
+  },
+  algorithm: {
+    title: 'Computer Science & Algorithms',
+    icon: '⚡',
+    desc: '자료구조, 알고리즘 문제 해결 패턴, 시간복잡도 및 데이터베이스',
+  },
+  devtools: {
+    title: 'Developer Tools & Environment',
+    icon: '🛠',
+    desc: 'Vim, macOS 생산성 자동화, Git, Docker 및 개발 환경 설정',
+  },
+  life: {
+    title: 'Life, English & Hobby',
+    icon: '☕',
+    desc: '영화 대본으로 학습한 영어 표현, 야구(세이버메트릭스), 도서 및 일상 기록',
+  },
+  others: {
+    title: 'Specialized Keywords & Others',
+    icon: '🏷',
+    desc: '특화 기술 용어, 세부 라이브러리 및 다양한 키워드 아카이브',
+  },
+};
+
+const domainGroups: Record<string, [string, number][]> = {
+  languages: [],
+  data: [],
+  algorithm: [],
+  devtools: [],
+  life: [],
+  others: [],
+};
+
+for (const [tag, count] of allTags) {
+  const domain = classifyTag(tag);
+  domainGroups[domain].push([tag, count]);
+}
+
+const domainOrder = ['languages', 'data', 'algorithm', 'devtools', 'life', 'others'];
 ---
 
-<BaseLayout title="Tags">
-  <div class="mb-8 pb-4 border-b border-zinc-200 dark:border-zinc-800">
-    <h1 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100">
-      Tags
-    </h1>
-    <p class="text-sm text-zinc-500 mt-1">
-      총 {tags.length}개의 키워드 태그가 등록되어 있습니다.
-    </p>
+<BaseLayout
+  title="Tags & Engineering Topics"
+  description="1,427편의 기술 블로그에 축적된 1,200여 개의 키워드 태그를 도메인별로 분류하고 탐색할 수 있는 엔지니어링 토픽 디렉토리입니다."
+>
+  <div class="space-y-12">
+    <!-- Header -->
+    <header class="pb-6 border-b border-zinc-200/80 dark:border-zinc-800/80">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/5 text-blue-600 dark:text-blue-400 text-xs font-mono font-medium mb-4">
+        <span>TOPIC DIRECTORY</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
+        태그 및 엔지니어링 토픽 디렉토리
+      </h1>
+      <p class="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 mt-2 max-w-2xl leading-relaxed">
+        누적 1,427편의 포스트에서 정제된 <strong>{allTags.length.toLocaleString()}개의 키워드 태그</strong>입니다. 상위 핵심 기술 스택과 도메인별 분류를 통해 원하는 기술 주제를 탐색할 수 있습니다.
+      </p>
+    </header>
+
+    <!-- Top 6 Core Stacks Spotlight -->
+    <section>
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xs uppercase tracking-wider font-bold text-zinc-400 dark:text-zinc-500 font-mono flex items-center gap-1.5">
+          <span class="text-blue-500">🏆</span>
+          <span>CORE TECH SPOTLIGHT · 주요 기술 스택</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {topSpotlights.map((item) => (
+          <a
+            href={`/tags/${item.tag}/`}
+            class="group p-5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/40 hover:border-blue-500/60 dark:hover:border-blue-500/60 hover:bg-white dark:hover:bg-zinc-900 hover:shadow-md transition-all flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-2xl p-2 rounded-xl bg-zinc-100 dark:bg-zinc-800">
+                  {item.icon}
+                </span>
+                <span class="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+                  {item.count.toLocaleString()} posts
+                </span>
+              </div>
+              <h3 class="font-bold text-base text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                #{item.name}
+              </h3>
+              <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">
+                {item.desc}
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/60 flex items-center text-xs font-semibold text-blue-600 dark:text-blue-400">
+              <span>관련 글 둘러보기</span>
+              <span class="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls (Linear Style) -->
+    <section class="sticky top-20 z-20 p-4 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md shadow-xs space-y-3">
+      <!-- Search Input -->
+      <div class="relative flex items-center">
+        <svg
+          class="w-4 h-4 text-zinc-400 absolute left-3.5 pointer-events-none"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input
+          id="tag-search-input"
+          type="text"
+          placeholder="태그 실시간 검색 (예: networkx, numpy, git, vim, java)..."
+          class="w-full px-4 py-2 pl-10 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 text-xs sm:text-sm focus:outline-hidden focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 transition-all font-mono"
+        />
+        <button
+          id="tag-search-clear"
+          type="button"
+          class="hidden absolute right-3 p-1 rounded text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 text-xs cursor-pointer"
+          title="검색어 지우기"
+        >
+          ✕
+        </button>
+      </div>
+
+      <!-- Domain Filter Tabs -->
+      <div class="flex flex-wrap items-center gap-1.5 pt-1 overflow-x-auto text-xs">
+        <button
+          type="button"
+          data-domain="all"
+          class="tag-filter-tab active px-3 py-1.5 rounded-lg border border-blue-500/30 bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold cursor-pointer transition-all"
+        >
+          전체 ({allTags.length.toLocaleString()})
+        </button>
+        {domainOrder.map((key) => {
+          const meta = domainMeta[key];
+          const count = domainGroups[key].length;
+          return (
+            <button
+              type="button"
+              data-domain={key}
+              class="tag-filter-tab px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-700 font-medium cursor-pointer transition-all"
+            >
+              <span>{meta.icon}</span>
+              <span class="ml-1">{meta.title.split(' ')[0]}</span>
+              <span class="text-[11px] text-zinc-400 font-mono ml-1">({count})</span>
+            </button>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- No Search Results Fallback -->
+    <div id="tag-no-results" class="hidden py-16 text-center">
+      <p class="text-base font-semibold text-zinc-700 dark:text-zinc-300">
+        일치하는 태그가 없습니다.
+      </p>
+      <p class="text-xs text-zinc-400 mt-1">
+        다른 검색어를 입력하시거나 상단 탭을 전환해 보세요.
+      </p>
+    </div>
+
+    <!-- Domain Clustered Tag Sections -->
+    <div class="space-y-12">
+      {domainOrder.map((key) => {
+        const meta = domainMeta[key];
+        const tags = domainGroups[key];
+        if (tags.length === 0) return null;
+
+        const totalDomainPosts = tags.reduce((acc, [, c]) => acc + c, 0);
+
+        return (
+          <section
+            data-domain={key}
+            class="domain-tag-section scroll-mt-28"
+          >
+            <!-- Domain Section Header -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-3 mb-5 border-b border-zinc-200/80 dark:border-zinc-800/80 gap-2">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xl">{meta.icon}</span>
+                  <h2 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+                    {meta.title}
+                  </h2>
+                  <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 font-mono">
+                    {tags.length} tags · {totalDomainPosts.toLocaleString()} posts
+                  </span>
+                </div>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
+                  {meta.desc}
+                </p>
+              </div>
+            </div>
+
+            <!-- Uniform Tag Pills Grid -->
+            <div class="flex flex-wrap gap-2">
+              {tags.map(([tag, count]) => (
+                <a
+                  href={`/tags/${tag}/`}
+                  data-tag={tag}
+                  class="tag-pill-item group inline-flex items-center px-3 py-1.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-xs text-zinc-700 dark:text-zinc-300 hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-all shadow-2xs font-mono"
+                >
+                  <span class="group-hover:translate-x-0.5 transition-transform">#{tag}</span>
+                  <span class="ml-2 px-1.5 py-0.2 rounded-md bg-zinc-100 dark:bg-zinc-800 group-hover:bg-blue-50 dark:group-hover:bg-blue-950/50 text-[10px] text-zinc-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 font-semibold transition-colors">
+                    {count}
+                  </span>
+                </a>
+              ))}
+            </div>
+          </section>
+        );
+      })}
+    </div>
   </div>
 
-  <div class="flex flex-wrap gap-2.5">
-    {tags.map(([tag, count]) => (
-      <a
-        href={`/tags/${tag}/`}
-        class="inline-flex items-center px-3 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-xs text-zinc-700 dark:text-zinc-300 hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-colors"
-      >
-        <span>#{tag}</span>
-        <span class="ml-1.5 px-1.5 py-0.2 rounded-md bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-400 font-semibold">
-          {count}
-        </span>
-      </a>
-    ))}
-  </div>
+  <script is:inline>
+    (() => {
+      const searchInput = document.getElementById('tag-search-input');
+      const clearBtn = document.getElementById('tag-search-clear');
+      const filterTabs = document.querySelectorAll('.tag-filter-tab');
+      const domainSections = document.querySelectorAll('.domain-tag-section');
+      const noResultsEl = document.getElementById('tag-no-results');
+
+      let currentDomain = 'all';
+
+      function applyFilter() {
+        const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+        if (clearBtn) {
+          clearBtn.classList.toggle('hidden', query.length === 0);
+        }
+
+        let totalVisible = 0;
+
+        domainSections.forEach((section) => {
+          const sectionDomain = section.dataset.domain;
+          const domainMatches = currentDomain === 'all' || currentDomain === sectionDomain;
+
+          if (!domainMatches) {
+            section.style.display = 'none';
+            return;
+          }
+
+          let sectionVisibleCount = 0;
+          const pills = section.querySelectorAll('.tag-pill-item');
+
+          pills.forEach((pill) => {
+            const tagName = pill.dataset.tag || '';
+            const matchesSearch = !query || tagName.includes(query);
+
+            if (matchesSearch) {
+              pill.style.display = 'inline-flex';
+              sectionVisibleCount++;
+              totalVisible++;
+            } else {
+              pill.style.display = 'none';
+            }
+          });
+
+          section.style.display = sectionVisibleCount > 0 ? 'block' : 'none';
+        });
+
+        if (noResultsEl) {
+          noResultsEl.style.display = totalVisible === 0 ? 'block' : 'none';
+        }
+      }
+
+      // Tab clicks
+      filterTabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          filterTabs.forEach((t) => {
+            t.classList.remove('active', 'border-blue-500/30', 'bg-blue-500/10', 'text-blue-600', 'dark:text-blue-400', 'font-semibold');
+            t.classList.add('border-zinc-200', 'dark:border-zinc-800', 'bg-white', 'dark:bg-zinc-900', 'text-zinc-600', 'dark:text-zinc-400', 'font-medium');
+          });
+
+          tab.classList.add('active', 'border-blue-500/30', 'bg-blue-500/10', 'text-blue-600', 'dark:text-blue-400', 'font-semibold');
+          tab.classList.remove('border-zinc-200', 'dark:border-zinc-800', 'bg-white', 'dark:bg-zinc-900', 'text-zinc-600', 'dark:text-zinc-400', 'font-medium');
+
+          currentDomain = tab.dataset.domain || 'all';
+          applyFilter();
+        });
+      });
+
+      // Search input input listener
+      searchInput?.addEventListener('input', applyFilter);
+
+      // Clear button click listener
+      clearBtn?.addEventListener('click', () => {
+        if (searchInput) {
+          searchInput.value = '';
+          searchInput.focus();
+          applyFilter();
+        }
+      });
+    })();
+  </script>
 </BaseLayout>
