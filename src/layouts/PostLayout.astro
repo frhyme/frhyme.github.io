@@ -24,6 +24,12 @@ interface Props {
   slug: string;
   prevPost?: PostNav | null;
   nextPost?: PostNav | null;
+  relatedPosts?: Array<{
+    title: string;
+    url: string;
+    category: string;
+    date: string;
+  }>;
   readingTime?: number;
   description?: string;
 }
@@ -37,6 +43,7 @@ const {
   slug,
   prevPost,
   nextPost,
+  relatedPosts = [],
   readingTime,
   description,
 } = Astro.props;
@@ -47,6 +54,13 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
 ---
 
 <BaseLayout title={title} description={description} articleDate={formattedDate}>
+  <!-- Top Reading Progress Bar -->
+  <div
+    id="reading-progress"
+    class="fixed top-0 left-0 w-0 h-0.5 bg-blue-600 dark:bg-blue-400 z-50 transition-[width] duration-75 ease-out pointer-events-none"
+    style="width: 0%;"
+  ></div>
+
   <div class="lg:grid lg:grid-cols-12 lg:gap-10">
     <!-- Main Article Content -->
     <article class="lg:col-span-8 min-w-0" data-pagefind-body>
@@ -119,9 +133,47 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
         <slot />
       </div>
 
+      <!-- Related Posts Section -->
+      {relatedPosts && relatedPosts.length > 0 && (
+        <section class="mt-12 pt-8 border-t border-zinc-200/80 dark:border-zinc-800/80">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xs uppercase tracking-wider font-bold text-zinc-400 dark:text-zinc-500 flex items-center gap-1.5 font-mono">
+              <span class="text-blue-500">💡</span>
+              <span>RELATED ARTICLES · 함께 읽으면 좋은 연관 포스트</span>
+            </h3>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {relatedPosts.map((item) => (
+              <a
+                href={item.url}
+                class="group p-4 rounded-2xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/40 hover:border-blue-500/60 dark:hover:border-blue-500/60 hover:bg-white dark:hover:bg-zinc-900 hover:shadow-md transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex items-center justify-between text-[11px] mb-2 font-mono">
+                    <span class="px-2 py-0.5 rounded-md font-semibold uppercase tracking-wider bg-blue-500/10 text-blue-600 dark:text-blue-400">
+                      {item.category}
+                    </span>
+                    <time datetime={item.date} class="text-zinc-400">
+                      {item.date}
+                    </time>
+                  </div>
+                  <h4 class="font-bold text-xs sm:text-sm text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2 leading-snug">
+                    {item.title}
+                  </h4>
+                </div>
+                <div class="mt-3 flex items-center text-[11px] font-semibold text-blue-600 dark:text-blue-400">
+                  <span>읽어보기</span>
+                  <span class="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
       <!-- Prev / Next Post Navigation -->
       {(prevPost || nextPost) && (
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12 pt-8 border-t border-zinc-200 dark:border-zinc-800 text-sm">
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-6 border-t border-zinc-200 dark:border-zinc-800 text-sm">
           {prevPost ? (
             <a
               href={prevPost.url}
@@ -249,6 +301,27 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
           window.scrollTo({ top: 0, behavior: 'smooth' });
         });
       }
+
+      // 3. Reading progress bar
+      const progressEl = document.getElementById('reading-progress');
+      if (progressEl) {
+        window.addEventListener('scroll', () => {
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          if (docHeight > 0) {
+            const progress = Math.min(100, Math.max(0, (window.scrollY / docHeight) * 100));
+            progressEl.style.width = `${progress}%`;
+          }
+        }, { passive: true });
+      }
+
+      // 4. External links target="_blank"
+      const proseLinks = document.querySelectorAll('.prose a');
+      proseLinks.forEach((link) => {
+        if (link.hostname && link.hostname !== window.location.hostname) {
+          link.setAttribute('target', '_blank');
+          link.setAttribute('rel', 'noopener noreferrer');
+        }
+      });
     })();
   </script>
 </BaseLayout>
