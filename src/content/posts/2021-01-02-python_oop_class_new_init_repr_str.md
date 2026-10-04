@@ -6,8 +6,6 @@ tags: ["python", "python_basic", "class", "OOP"]
 permalink: "/python-basic/python_oop_class_new_init_repr_str/"
 ---
 
-## python - OOP - new, init, repr, str
-
 - python class 정의시 다음 4가지 method를 설명합니다.
   - `__new__`: 보통 `__init__`을 생성자라고 알고 있지만, 사실 메모리를 확보해주는 진짜 생성자는 `__new__`입니다. 아래 코드에서는 이 부분에서 생성될 수 있는 Object의 개수를 제한하고, 추가로 생성해야 할 경우 `None`을 리턴하도록 하였습니다.
   - `__init__`: 보통 `__new__`의 경우 암묵적으로 실행되기 때문에, 이후 생성된 변수들에 대해서 값을 초기화해줍니다.

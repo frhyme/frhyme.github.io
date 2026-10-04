@@ -6,8 +6,6 @@ tags: ["javascript", "programming", "array"]
 permalink: "/javascript/javascript02_array/"
 ---
 
-## Javascript - Array
-
 - Javascrip의 Array를 간단히 정리하였습니다.
 
 ```javascript

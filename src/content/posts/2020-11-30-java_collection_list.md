@@ -6,8 +6,6 @@ tags: ["java", "programming", "interface", "collection", "list"]
 permalink: "/java/java_collection_list/"
 ---
 
-## Java - Collection - List Interface
-
 - List Interface 밑에는 `ArrayList`와 `LinkedList`가 있습니다. 이 둘에 대한 설명은 굳이 하지 않겠습니다. 이 둘은 기본적으로 mutable입니다.
 - 그리고 `List.of()`를 사용해서 List를 생성하는 경우 immutableList가 생성됩니다.
 

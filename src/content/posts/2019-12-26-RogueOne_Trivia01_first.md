@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Rog
 permalink: "/english_study_by_movie_script/RogueOne_Trivia01_first/"
 ---
 
-## 영화 Rogue One이 만든 스타워즈 역사의 첫번째 기록
-
 - 저는 영화 `<로그 원>`을 사랑합니다. 그동안의 스타워즈는 항상 '스카이워커'를 중심으로 한 서사로 진행되어 왔지만, 이 영화는 스카이워커가 아닌, 민초들의 노력이 스타워즈를 어떻게 이끌어 왔는지를 보여주는 첫 번째, 그리고 유일한 영화이거든요. 그리고 다스베이더의 제대로 된 광선검 전투가 나오는 것도 처음이고요. 
 - 그 외로도, 영화 `<로그 원>`은 많은 첫 번째 기록을 가지고 있습니다. 그 기록들을 다음에 정리하였습니다.
 

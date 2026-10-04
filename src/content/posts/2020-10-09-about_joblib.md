@@ -2,11 +2,9 @@
 title: "joblib"
 date: 2020-10-09
 category: "others"
-tags: []
+tags: ["tech"]
 permalink: "/others/about_joblib/"
 ---
-
-## joblib
 
 
 

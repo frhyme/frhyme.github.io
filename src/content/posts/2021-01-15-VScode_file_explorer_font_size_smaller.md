@@ -1,12 +1,10 @@
 ---
 title: "VScode - File Explorer의 font size를 줄여 봅시다."
 date: 2021-01-15
-category: "VScode"
+category: "vs-code"
 tags: ["VScode", "FontSize"]
 permalink: "/vscode/VScode_file_explorer_font_size_smaller/"
 ---
-
-## VScode) File Explorer의 font size를 줄여 봅시다
 
 - VScode로 문서를 편집할 때, Side에 있는 Explorer의 font가 너무 크다고 느껴질 때가 있습니다. 이 부분만 font 크기를 줄여보겠습니다.전체를 줄이지 않고, 
 - 그러나, 아주 슬프게도, VScode는 File Explorer 부분의 폰트 크기만 별도로 줄일 수는 없습니다. 따라서, 약간 특이한 방법을 사용해야 하는데요.

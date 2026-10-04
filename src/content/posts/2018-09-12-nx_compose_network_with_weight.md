@@ -1,7 +1,7 @@
 ---
 title: "여러 network를 weight를 고려해서 합칩시다."
 date: 2018-09-12
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "compose", "network", "networkx", "weight"]
 permalink: "/python-lib/nx_compose_network_with_weight/"
 ---

@@ -6,8 +6,6 @@ tags: ["sort", "java", "programming", "sorting", "algorithm"]
 permalink: "/java/java_algorithm_countingSort/"
 ---
 
-## Java - Counting Sort
-
 - CountingSort는 현재 array 내에 존재하는 원소의 빈도를 활용하여 sorting하는 방식을 말합니다. '빈도'를 고려하는 것처럼, 원소들이 중복되어 있을 수록 효율적이죠.
 - 보통의 알고리즘들은 모든 원소들간의 값을 비교하여 정렬하는 반면, CountingSort의 경우는 값 자체가 제한적인 범위에 있다고 가정하고, 최소값, 최대값 사이의 모든 원소들에 대해서 빈도를 센 다음 순서대로 죽 정렬하는 형태를 가집니다.
 - stable하게 만들 수도 있고, unstable하게 만들 수도 있는데, 당연히 stable이 더 구현하기 쉽겠죠. 아래에서 두 가지를 모두 구현하였습니다.

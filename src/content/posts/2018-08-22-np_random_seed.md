@@ -1,7 +1,7 @@
 ---
 title: "np.random.seed in jupyter notebook"
 date: 2018-08-22
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "numpy", "jupyter-notebook", "random"]
 permalink: "/python-lib/np_random_seed/"
 ---

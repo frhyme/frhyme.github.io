@@ -6,8 +6,6 @@ tags: ["java", "programming", "File", "Stream"]
 permalink: "/java/java_Read_and_Write_File_with_Stream/"
 ---
 
-## Java - Read and Write File
-
 - java에서 File을 읽거나 혹은 쓰는 방법을 정리합니다.
 
 ## java.io.File

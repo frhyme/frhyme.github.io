@@ -6,8 +6,6 @@ tags: ["C", "programming", "C_programming", "vscode", "struct"]
 permalink: "/c_programming/c_prgrmng03_struct_basic/"
 ---
 
-## C - Struct(구조체)
-
 - 간만에 C 언어의 struct를 복습해봤습니다.
 - struct는 다음과 같이 정의합니다. 아래는 `book1`이라는 변수를 만들어줬는데, 얘는 하위 변수로 `id`, `title`을 가지고 있다는 것을 의미하죠.
 

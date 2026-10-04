@@ -2,7 +2,7 @@
 title: "Graph Edit Distance"
 date: 2020-08-24
 category: "others"
-tags: []
+tags: ["graph"]
 permalink: "/others/graph_edit_distance/"
 ---
 

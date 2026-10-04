@@ -6,8 +6,6 @@ tags: ["java", "object", "class", "programming"]
 permalink: "/java/java_object_class/"
 ---
 
-## Java - Object
-
 - Java에는 `Object`라고 하는 모든 Class의 BaseClass가 되는 Class가 존재합니다. 그냥 다음처럼 새로운 Class를 정의히면 자연스럽게 `Object`라는 클래스를 상속받게 되죠.
 
 ```java

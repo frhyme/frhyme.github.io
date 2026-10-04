@@ -1,7 +1,7 @@
 ---
 title: "quiver plot을 사용해봅시다."
 date: 2018-06-15
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "matplotlib", "sympy", "numpy"]
 permalink: "/python-lib/plt_quiver_plot/"
 ---

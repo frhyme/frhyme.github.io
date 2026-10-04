@@ -1,7 +1,7 @@
 ---
 title: "VScode - Disable Yellow bulb"
 date: 2020-12-26
-category: "VScode"
+category: "vs-code"
 tags: ["VScode"]
 permalink: "/vscode/VScode_disable_yellowBulb/"
 ---

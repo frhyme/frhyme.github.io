@@ -6,8 +6,6 @@ tags: ["database", "sql"]
 permalink: "/database/sqld_study/"
 ---
 
-## SQLD study
-
 - SQL D를 공부하고 있습니다. 공부하면서 배운 것들을 짧게 정리합니다.
 
 ## Lesson Learned

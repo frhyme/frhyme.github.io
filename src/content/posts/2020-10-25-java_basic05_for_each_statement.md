@@ -6,8 +6,6 @@ tags: ["java", "programming", "loop"]
 permalink: "/java/java_basic05_for_each_statement/"
 ---
 
-## java - for each 
-
 - java에서도 for each 문을 사용할 수 있습니다.
 
 ```java

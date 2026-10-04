@@ -1,7 +1,7 @@
 ---
 title: "Java - Scanner를 이용해서 기본적인 값 입력받기."
 date: 2020-10-09
-category: "Java"
+category: "java"
 tags: ["java", "programming", "IntelliJ", "scanner"]
 permalink: "/java/java_basic00_input_scanner/"
 ---

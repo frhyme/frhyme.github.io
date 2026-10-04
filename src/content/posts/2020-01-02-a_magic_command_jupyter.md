@@ -1,7 +1,7 @@
 ---
 title: "jupyter notebook에서 유용한 몇가지 magic command"
 date: 2020-01-02
-category: "python-lib"
+category: "python-libs"
 tags: ["magic-commmand", "jupyter-notebook", "python", "python-lib"]
 permalink: "/python-lib/a_magic_command_jupyter/"
 ---

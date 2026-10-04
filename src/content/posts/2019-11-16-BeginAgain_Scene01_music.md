@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/BeginAgain_Scene01_music/"
 ---
 
-## 영화 Begin Again 명장면 - 그게 내가 음악을 좋아하는 이유지
-
 - 저는 요즘 집에서 [Hawaian Guitar](https://www.youtube.com/watch?v=ezyakfMRJMc&t=8680s)를 틀어놓고 일을 합니다. 그냥 집에서 혼자 일을 하면 좀 지루하고 따분한데, 음악을 잘 틀어두면 기분이 좋아져요. 그리고 일의 능률도 달라지곤 합니다.
 - 비슷하게, 제주도에서 자전거 여행을 할 때, 처음에는 '나는 힙-합 소년, 힙-합 남자니까 힙-합을 들으면서 자전거를 탈 테야'라고 생각했습니다만, 와, 자전거 탈 때 힙합처럼 힘 빠지는 것이 없습니다. 특히 붐뱁이라서 더 그랬겠지만요. 그래서 시스타와 아이유로 도배를 하고 결국 제주도를 완주했죠 호호호.
 즉, 음악을 잘 선택하면 지루한 일상이 즐겁게 바뀌곤 합니다. 그렇게 생각하면 DJ라는 직업은 참 위대하군요. 사람들의 분위기를 쥐고 흔드는 일이니까요. 영화 `<비긴 어게인>`에도 이를 표현하는 대사가 나오죠. 

@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Sta
 permalink: "/english_study_by_movie_script/StarWars_Episode_VII_Trivia02/"
 ---
 
-## 영화 StarWars Episode 7에 관한 사소한 사실들 - 2편
-
 - `<스타워즈: 깨어난 포스>`에서 캐스팅과 관계된 뒷 이야기들을 정리하였습니다.
 
 ## Trivia - Mark Hamill

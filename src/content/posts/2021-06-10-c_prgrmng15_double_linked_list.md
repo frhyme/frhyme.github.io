@@ -1,12 +1,10 @@
 ---
 title: "C programming - Double Linked List(양방향 리스트)"
 date: 2021-06-10
-category: "c_programming"
+category: "C_programming"
 tags: ["c", "c_programming", "programming", "linked_list", "pointer"]
 permalink: "/c_programming/c_prgrmng15_double_linked_list/"
 ---
-
-## C programming - Double Linked List(양방향 리스트)
 
 - 간단하게 Double Linked List를 구현해 봤습니다.
 - linked list 를 구현할 때, 사람에 따라서 head 혹은 tail에 값을 넣는 경우가 있고 그냥 비어져 있는 노드를 위치하는 경우가 있습니다. 저는 처음부터 비워져 있는 empty_node를 넣는 편인데, 그렇게 해야 linked list operation 코드가 좀더 간결해지는 느낌이 있어요.

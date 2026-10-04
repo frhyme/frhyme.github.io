@@ -1,7 +1,7 @@
 ---
 title: "julia에서 python을 가져와봅시다."
 date: 2018-08-28
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "julia"]
 permalink: "/python-lib/python_interface_to_julia/"
 ---

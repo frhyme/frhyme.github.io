@@ -1,7 +1,7 @@
 ---
 title: "binary string을 string으로 바꾸기"
 date: 2018-07-03
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "binary", "string", "subprocess", "bash", "ascii", "utf-8"]
 permalink: "/python-lib/binary_str_to_str/"
 ---

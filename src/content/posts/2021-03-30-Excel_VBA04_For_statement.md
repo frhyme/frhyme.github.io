@@ -6,8 +6,6 @@ tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic", "for"]
 permalink: "/ms_office/Excel_VBA04_For_statement/"
 ---
 
-## Excel - VBA - For Statement
-
 - excel에서 For 문은 다음처럼 정의해서 사용합니다.
 - 코드 자체는 별 의미가 없습니다. 그냥 `Exit For`를 사용하려고 의미없는 If 문을 넣어주었어요.
 

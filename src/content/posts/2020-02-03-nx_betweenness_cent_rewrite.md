@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "networkx", "centrality", "between-centrality"]
 permalink: "/python-libs/nx_betweenness_cent_rewrite/"
 ---
 
-## Centrality - Betweenness Centrality
-
 - `Betweeness Centrality`는 "G의 모든 node pair의 최단 거리에, node V가 얼마나 많이 포함되는지를 비율로 표현하여, node V가 전체 그래프의 흐름에 얼마나 영향을 미치는지"를 측정하는 지표입니다. 즉, 계산 방법은 다음처럼 간단하죠 
     1) 모든 node pair의 shortest path를 구하고, 
     2) 각 노드별로 얼마나 많이 포함되는지를 비율로 정리한다. 

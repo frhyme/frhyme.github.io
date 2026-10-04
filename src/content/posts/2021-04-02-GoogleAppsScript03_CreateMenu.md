@@ -6,8 +6,6 @@ tags: ["google", "javascript", "google_sheet", "macro", "GoogleAppsScript"]
 permalink: "/google/GoogleAppsScript03_CreateMenu/"
 ---
 
-## Google Apps Script - Create Menu
-
 - Excel VBA에서는 매크로를 실행하는 버튼을 눌러야하는데, Google Sheet에서는 메뉴를 만듭니다.
 - 다음의 코드로 메뉴를 만듭니다. "New Menu"라는 이름의 메뉴를 만들고, 그 밑에 "New Item"이라는 아이템을 만들어서, "myFunction"이라는 함수를 매핑해줍니다.
 

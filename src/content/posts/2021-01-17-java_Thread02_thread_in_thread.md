@@ -6,8 +6,6 @@ tags: ["java", "thread", "programming", "parallelism", "concurrency", "MultiThre
 permalink: "/java/java_Thread02_thread_in_thread/"
 ---
 
-## Java - MultiThreading - Thread in Thread
-
 - Thread 안에 Thread가 있는 경우를 한번 만들어보도록 하겠습니다.
 
 ```java

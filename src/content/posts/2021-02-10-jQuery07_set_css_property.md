@@ -6,8 +6,6 @@ tags: ["jQuery", "javascript", "html", "web", "css"]
 permalink: "/jquery/jQuery07_set_css_property/"
 ---
 
-## jQuery - set css property
-
 - jQuery를 사용해서 특정 요소의 css property를 수정하는 방법을 정리하였습니다.
 
 ```html

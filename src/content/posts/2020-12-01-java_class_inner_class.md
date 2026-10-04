@@ -6,8 +6,6 @@ tags: ["java", "programming", "class"]
 permalink: "/java/java_class_inner_class/"
 ---
 
-## Java - Inner Class
-
 - Inner Class(내부 클래스)는 클래스 안에 클래스가 또 있는 겁니다. 클래스 안에 Object(Class Instance)가 있는게 아니라, Class 안에서 새로운 Class를 정의하는 것을 말합니다. 대략 다음과 같은 형태로 정의하는 것을 말하죠.
 
 ```java

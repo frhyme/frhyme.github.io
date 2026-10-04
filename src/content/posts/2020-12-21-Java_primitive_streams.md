@@ -6,8 +6,6 @@ tags: ["java", "programming", "primitive", "stream"]
 permalink: "/java/Java_primitive_streams/"
 ---
 
-## Java - Primitive Stream
-
 - 보통 `Stream<T>`는 `Integer`, `Double`, `String`과 같은 reference type등을 담습니다. 가끔 int, double 등을 사용해서 프로그램을 짜다가, `Stream<T>`으로 변경하고 싶은 경우에는 각각 Integer, Double으로 변형해서 처리해줘도 됩니다만, 아무래도 좀 비효율적이죠. 
 - 따라서, Java에는 이미 `int`, `double`, `long` 3가지 primitive type에 대해서 Stream으로 처리해주는 `IntStream`, `LongStream`, `DoubleStream`이 있습니다. int를 Integer로 변형해주는 Boxing 필요없이 처리할 수 있습니다.
 

@@ -6,8 +6,6 @@ tags: ["jQuery", "javascript", "html", "web"]
 permalink: "/jquery/jQuery02_get_text_html_val/"
 ---
 
-## jQuery - Get text, val, attribute
-
 - html 요소로부터 text, html, attribute 등을 가져오는 방법을 정리합니다.
   - `$("#p1").text()`: id가 "p1"인 요소로부터 text를 가져옵니다.
   - `$("#p1").html()`: id가 "p1"인 요소로부터 html을 가져옵니다.

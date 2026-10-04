@@ -6,8 +6,6 @@ tags: ["markdown", "python", "table"]
 permalink: "/markdown/markdown_generate_table/"
 ---
 
-## Markdown - Generate table by python
-
 - markdown에서는 table을 다음과 같이 표현합니다.
 
 ```plaintext

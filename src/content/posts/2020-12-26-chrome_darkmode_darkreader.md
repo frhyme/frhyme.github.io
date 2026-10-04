@@ -6,8 +6,6 @@ tags: ["chrome", "DarkMode", "extension"]
 permalink: "/chrome/chrome_darkmode_darkreader/"
 ---
 
-## Chrome - Dark Mode Enable
-
 - 요새 눈이 좀 피곤해져서 대부분 문서를 다크모드로 설정해서 보려고 하는데요, 크롬에도 동일하게 적용하려 합니다.
 - [Chrome - Extension - Just Black](https://chrome.google.com/webstore/detail/just-black/aghfnjkcakhmadgdomlmlhhaocbkloab)을 설치합니다. 브라우저의 Frame이 검은색으로 바뀝니다.
 - 그 다음 `chrome://flags/`로 들어갑니다. 그 다음 검색 창에 "Dark"를 치면 `"Force Dark Mode for Web Contents"`가 뜨죠. 얘를 Enabled로 바꾸고 웹브라우저를 재시동해줍니다. 

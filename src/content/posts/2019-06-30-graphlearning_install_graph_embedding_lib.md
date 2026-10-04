@@ -17,7 +17,7 @@ permalink: "/python-libs/graphlearning_install_graph_embedding_lib/"
 
 - 우선 clone 해옵니다.
 
-```
+```bash
 git clone <repositor_url>
 ```
 

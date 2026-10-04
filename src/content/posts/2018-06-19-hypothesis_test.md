@@ -1,12 +1,10 @@
 ---
 title: "데이터의 분포를 검정해봅시다."
 date: 2018-06-19
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "data-sceienc", "hypothesis-test", "scipy"]
 permalink: "/python-lib/hypothesis_test/"
 ---
-
-## 데이터의 분포를 검정해봅시다. 
 
 - 데이터를 분석하기 전에 개별 데이터 칼럼들에 대해서 데이터 정리를 해줍니다. skewness가 있는지, qqplot상 normality를 가지는지를 체크해보죠. 
 - 그런데, 이건 어느 정도 그냥 그림으로 때려 보는 거고, 엄밀하게 'normality'를 가진다, 가지지 않는다 를 명확하게 검정해주는 방법이 있을 것 같아요. 그래서 찾아보니, 방법이 당연히 있습니다. 

@@ -6,8 +6,6 @@ tags: ["vim", "markdown", "syntastic", "markdownlint"]
 permalink: "/vim/vim_md02_markdownlint_by_syntastic/"
 ---
 
-## Syntastic을 이용하여 markdown lint
-
 - 현재는 coc nvim을 이용해서 markdownlint를 사용하는데, 이거 말고 syntastic을 이용해서 markdownlint를 적용하는 것이 일관성 측면에서 더 좋지 않을까? 하는 생각이 들었습니다.
 - 이유는 두 가지 정도인데요, 하나는 python, javascript 등 기존의lint를 모두 syntastic을 이용해서 해왔기 때문에, markdown에 대해서도 syntastic에 대해서 적용해줄 수 있다면 일관적으로 관리될 수 있겠다, 라는 것이 하나구요.
 - 기존에 쓰고 있던 coc-markdownlint의 경우는 Error Msg가 아래 log창에 뜨는 형태가 아니고 해당 line에 cursor가 위치했을 때 표시되는 형태라서 조금 가독성이 떨어지는 느낌이 있었습니다.

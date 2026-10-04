@@ -6,8 +6,6 @@ tags: ["vim", "moust", "vi"]
 permalink: "/vim/vim18_set_mouse_a/"
 ---
 
-## Vim 18 - set mouse a
-
 - 저는 IDE로는 Vim을, python auto completion으로는 coc-nvim, coc-jedi를 사용하고 있습니다.
 - 이 때, 각 메소드를 선택할 때, popup 창이 뜨는데요, 팝업 창 옆으로 스크롤이 뜨는데, 이 스크롤을 움직일 수가 없더군요.
 - 알고보니, 이 스크롤은 키보드로 움직일 수 있도록 하는 것이 아니고, 마우스로 움직이는 것으로 보입니다. 그리고 vim 설정에 아래 커맨드를 추가해 줘야 하죠. 즉, `.vimrc`파일 내에 아래 를 추가해주면 됩니다.

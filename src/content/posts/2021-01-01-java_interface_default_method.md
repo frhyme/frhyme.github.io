@@ -6,8 +6,6 @@ tags: ["java", "programming", "class", "OOP", "default", "interface"]
 permalink: "/java/java_interface_default_method/"
 ---
 
-## Java - interface - default method
-
 - interface에서는 method를 선언만 할 수 있고 정의할 수는 없지만, `default`를 사용하면 정의할 수도 있습니다.
 
 ```java

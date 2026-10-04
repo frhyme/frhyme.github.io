@@ -1,12 +1,10 @@
 ---
 title: "sklearn.mlpregressor는 쓸만한가요?"
 date: 2018-06-07
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "sklearn", "regression", "neural-network", "matplotlib"]
 permalink: "/python-lib/is_mlp_regressor_good/"
 ---
-
-## sklearn.mlpregressor는 쓸만한가요? 
 
 - classification시에 neural network이 좋다는 것은 너무 당연하고도 명백한 사실인데, neural network는 쓸만한건지 사실 잘 모르겠습니다. 
 - regression을 할때, 한번씩 `sklearn.mlpregressor`를 사용하는데, 이게 정확도가 지나치게 떨어지는 것을 볼 수 있습니다. 

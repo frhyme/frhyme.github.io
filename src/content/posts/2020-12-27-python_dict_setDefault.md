@@ -6,8 +6,6 @@ tags: ["python", "dictionary", "python-programming", "python-basic"]
 permalink: "/data-structure/python_dict_setDefault/"
 ---
 
-## python - dictionary - setdefault
-
 - python에서 dictionary는 매우 유용한 자료구조이기는 한데, `key`가 dictionary에 존재하지 않는 경우를 고려해야 해서 꽤 귀찮죠.
 - 가령, `list`에 있는 원소들의 빈도를 센다고 하면 다음과 같이 코딩해야 합니다. 별것 아닌데 꽤 귀찮죠.
 

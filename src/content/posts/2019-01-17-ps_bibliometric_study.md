@@ -6,8 +6,6 @@ tags: ["paper-summary"]
 permalink: "/paper-summary/ps_bibliometric_study/"
 ---
 
-## Bibliometric cartography of information retrieval research by using co-word analysis
-
 - 2001년에 Information Processing and Management journal에 게재된 논문
 - [link](https://www.sciencedirect.com/science/article/pii/S0306457300000510)
 

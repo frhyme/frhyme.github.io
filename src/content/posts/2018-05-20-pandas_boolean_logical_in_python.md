@@ -1,7 +1,7 @@
 ---
 title: "boolean을 잘 다뤄야 pandas도 잘 쓸 수 있숩니돠"
 date: 2018-05-20
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "pandas", "boolean", "logic"]
 permalink: "/python-lib/pandas_boolean_logical_in_python/"
 ---

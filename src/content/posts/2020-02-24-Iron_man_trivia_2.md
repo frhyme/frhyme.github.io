@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "iro
 permalink: "/english_study_by_movie_script/Iron_man_trivia_2/"
 ---
 
-## 영화 Iron Man1 에 관한 사소한 사실들(trivia) - 2편
-
 - 영화 <아이언맨 1>에 관한 사소한 사실들을 IMDB에서 가져와서 번역하여 정리하였습니다. 
 
 ## Trivia - 1

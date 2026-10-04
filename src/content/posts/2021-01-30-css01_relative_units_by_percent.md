@@ -6,8 +6,6 @@ tags: ["css", "unit", "width", "height"]
 permalink: "/css/css01_relative_units_by_percent/"
 ---
 
-## CSS - Relative Unit
-
 - `%`를 사용해서 요소를 해당 요소의 outer의 설정 값에 비례해서 선택하도록 할 수 있습니다.
 - `vw`, `vh`를 사용하면 현재 브라우저의 width, height에 따라서 해당 요소의 크기가 변하게 되죠.
 - `vmin`, `vmax`는 각각 "width, hegith 중에서 작은 값의 1%, 큰 값의 1%"를 의미합니다. 이 값에 비례해서 상대적인 값을 결정할 수 있죠.

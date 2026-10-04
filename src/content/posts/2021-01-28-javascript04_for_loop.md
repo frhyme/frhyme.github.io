@@ -6,8 +6,6 @@ tags: ["javascript", "for", "loop"]
 permalink: "/javascript/javascript04_for_loop/"
 ---
 
-## javascript - for loop
-
 - javascript의 for loop를 사용하는 방법을 정리하였습니다
 
 ```javascript

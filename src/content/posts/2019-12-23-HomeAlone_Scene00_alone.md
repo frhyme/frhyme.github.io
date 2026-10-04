@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Hom
 permalink: "/english_study_by_movie_script/HomeAlone_Scene00_alone/"
 ---
 
-## 영화 Home Alone - 너 여기 혼자서 온거니?
-
 - 영화 속에서 케빈(맥컬리 컬킨)이 마트에 장을 보러 갔을 때 나누는 대사를 정리하였습니다. 
 - 또한, 가족들은 시종일관 케빈을 무시하다가, 케빈이 혼자서 장을 보기도 했다는 사실을 듣고는 조금 놀라기도 하죠. 그리고, 이 장면은 케빈의 능청스러움과 재치가 돋보이는 장면이기도 합니다.
 

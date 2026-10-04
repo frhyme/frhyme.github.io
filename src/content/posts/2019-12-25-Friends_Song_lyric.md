@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Fri
 permalink: "/english_study_by_movie_script/Friends_Song_lyric/"
 ---
 
-## 미드 Friends 주제곡 가사 번역
-
 - 저는 미드 `<프렌즈>`를 좋아합니다. 1994년부터 방영을 시작했고, 2004년에 시즌 10이 끝난 아주 옛날 드라마지만, 지금 봐도 웃긴 그러니까 아주 보편적인 유머 코드를 기반으로 돌아갑니다. 영어도 상대적으로 쉬운 편이라서, 그냥 슥슥 보면 되니까요. 
 - 시즌이 10개고, 에피소드는 총 230개 정도 되는데, 각 에피소드가 20분 정도니까 다 합치면, 77시간 정도 되고요. 제가 이걸 3-4번 봤으니까, 대충 300시간은 본 셈이군요. 이렇게 생각하니까 뭔가 좀 슬프네요. 
 - 이 노래의 주제가는 [The Rembrandts의 I'll Be There for You](https://www.youtube.com/watch?v=q-9kPks0IfE) 이고, 가사를 아래에 정리하였습니다.

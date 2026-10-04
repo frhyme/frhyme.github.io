@@ -6,8 +6,6 @@ tags: ["vim", "function", "vi"]
 permalink: "/vim/vim31_first_char_of_function_name_should_be_upper/"
 ---
 
-## vim31 - first char of function name should be upper
-
 - vim에서 function을 정의할 때, function name의 첫번째 글자는 대문자(Upper letter)가 되어야 합니다.
 
 ```vim

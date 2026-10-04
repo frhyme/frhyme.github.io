@@ -47,7 +47,7 @@ def very_simple_rand():
 print([very_simple_rand() for i in range(0, 8)])
 ```
 
-```
+```json
 [797, 168, 344, 625, 547, 883, 166, 285]
 ```
 

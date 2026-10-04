@@ -12,7 +12,6 @@ permalink: "/others/text_align_bootstrap/"
 - 다음처럼 간단한 코드인데 계속 안되서, 왜 안되는지를 찾아봤더니, 
 
 ```html
-{% raw %}
 <thead class="thead-dark">
     <tr>
         {% for col_name in simulated_log%}
@@ -20,7 +19,6 @@ permalink: "/others/text_align_bootstrap/"
         {% endfor %}
     </tr>
 </thead>
-{% endraw %}
 ```
 
 - [여기서](https://stackoverflow.com/questions/42682942/th-aligncenter-not-working-on-a-bootstrap-table-what-might-be-the-reason) 해답을 찾았습니다. 
@@ -32,7 +30,6 @@ permalink: "/others/text_align_bootstrap/"
 - 따라서, 다음처럼 사용하면 됩니다.
 
 ```html
-{% raw %}
 <thead class="thead-dark">
     <tr>
         {% for col_name in simulated_log%}
@@ -40,5 +37,4 @@ permalink: "/others/text_align_bootstrap/"
         {% endfor %}
     </tr>
 </thead>
-{% endraw %}
 ```

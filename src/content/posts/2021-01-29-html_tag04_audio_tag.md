@@ -6,8 +6,6 @@ tags: ["html", "audio", "tag"]
 permalink: "/html/html_tag04_audio_tag/"
 ---
 
-## html - audio tag
-
 - html 문서 내에 audio tag를 넣는 방법을 정리하였습니다.
 
 ```html

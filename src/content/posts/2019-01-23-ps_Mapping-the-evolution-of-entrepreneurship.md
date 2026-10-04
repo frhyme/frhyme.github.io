@@ -6,8 +6,6 @@ tags: ["entrepreneurship", "paper-summary"]
 permalink: "/paper-summary/ps_Mapping-the-evolution-of-entrepreneurship/"
 ---
 
-## Mapping the evolution of entrepreneurship as a field of research (1990–2013): A scientometric analysis
-
 - PLOS one에 2017년 5월에 게재된 논문. 
 - [link](https://journals.plos.org/plosone/article/file?type=printable&id=10.1371/journal.pone.0190228)
 

@@ -6,8 +6,6 @@ tags: ["os", "python"]
 permalink: "/python/os_makedirs/"
 ---
 
-## os - makedirs
-
 - python 에서 디렉토리 생성이 필요할 경우 다음 두 가지 방식을 사용해서 생성할 수 있습니다.
 
 ```python

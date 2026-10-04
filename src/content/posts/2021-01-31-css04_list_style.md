@@ -6,8 +6,6 @@ tags: ["css", "unit", "width", "height"]
 permalink: "/css/css04_list_style/"
 ---
 
-## CSS - List Style
-
 - html 요소인 `list`들에 대해서 스타일을 적용하는 방법을 정리하였습니다.
 - 한 줄로 표현하려면 다음과 같이 정의하면 됩니다.
 

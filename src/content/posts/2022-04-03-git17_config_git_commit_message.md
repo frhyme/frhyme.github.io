@@ -6,8 +6,6 @@ tags: ["git", "commit", "config"]
 permalink: "/git/git17_config_git_commit_message/"
 ---
 
-## git 17 - set commit message template
-
 - git commit message를 작성할 때, 항상 template이 등장하도록 하려고 합니다.
 
 ```sh

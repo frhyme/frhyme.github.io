@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/BlacKKKlansman_Trivia02/"
 ---
 
-## 영화 BlacKKKlansMan 뒷 이야기(Trivia) - 2편
-
 - 넷플릭스에서만 볼 수 있는 영화 `<블랙클랜스맨, BlacKkKlansman>`에 대한 사소한 이야기들을 정리합니다. 사실, 이 영화는 실화를 바탕으로 하고 있기 때문에, '스포일러'라고 부를 수 있는 것들이 별로 없지만, 그래도 IMDB에서는 아래의 내용들이 spoiler를 포함한 Trivia에 포함되어 있더군요. 그래서 언급합니다. 
 
 ## Trivia - David Duke

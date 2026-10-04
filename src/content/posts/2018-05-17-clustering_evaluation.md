@@ -1,7 +1,7 @@
 ---
 title: "클러스터링을 다시 공부해봅시다."
 date: 2018-05-17
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "clustering", "matplotlit", "sklearn", "tsne", "silhouette_score"]
 permalink: "/python-lib/clustering_evaluation/"
 ---

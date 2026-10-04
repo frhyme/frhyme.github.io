@@ -6,8 +6,6 @@ tags: ["vim", "vi"]
 permalink: "/vim/vim06_hardtab_to_softtab/"
 ---
 
-## vim - hardtab 을 softtab으로 수정하기 
-
 - 최근의 coding convention들을 보면, 하나같이 hardtab을 사용하지 않고 있습니다. hardtab은, 우리가 알고 있는 그 탭 `\t` 문자를 말하죠.
 - "아니, 나는 지금도 tab을 사용하고 있는데?"라고 생각하실 수 있는데요, vscode와 같은 IDE를 사용하시는 경우, hardtab을 입력해도 알아서 해당 tab을 softtab인 space들로 변경해버리죠. 가령, python file의 경우 hardtab을 4 * space로 알아서 변경해준다는 이야기입니다.
 - 그런데, vim에서는 이게 기본적으로 설정되어 있지 않아요. 이것도, 보통은 문제가 없지만, vim에서 text를 복사해서 vscode등으로 가져오는 경우에는, vim에서 작성할 때 입력된 hardtab이 그대로 남아 있어서 waring이 발생하게 되죠. 뭐 큰 문제는 되지 않지만, 노란 색 줄이 죽죽 그어져 있는 거 마음에 들지 않아서 저는 이걸 고쳐야겠습니다.

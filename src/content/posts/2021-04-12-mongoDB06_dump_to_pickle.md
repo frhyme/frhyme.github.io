@@ -6,8 +6,6 @@ tags: ["mongoDB", "python", "pymongo", "database", "db", "sql", "nosql", "pickle
 permalink: "/mongodb/mongoDB06_dump_to_pickle/"
 ---
 
-## mongoDB - dump to pickle by python
-
 - 얼마 전에 mongoDB tools의 `mongodump`를 사용하여 백업하는 방법을 정리했습니다. 그런데, 이 `mongodump`를 사용한 백업이 결국 그냥 모든 document를 읽어서 json과 같은 파일로 저장해주는 것처럼 보이더라고요. 
 - 이럴 거면 그냥 내가 직접 mongoDB에 접근해서 pickle등으로 저장해주면 된는 것 아닌가 싶어서, 이를 직접 코드로 만들어 봤습니다.
 

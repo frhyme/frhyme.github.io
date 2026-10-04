@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/boyhood_Scene_00_more/"
 ---
 
-## 영화 Boyhood 명장면 - 난 뭐가 더 있을줄 알았다
-
 ### 영화 Boyhood - 리처드 링클레이터의 역작
 
 - 영화 `<Boyhood>`는 2014년에 나온 영화로, `<비포 선라이즈/선셋/미드나잇>`으로 유명한 리처드 링클레이터가 감독을 맡은 영화죠. 

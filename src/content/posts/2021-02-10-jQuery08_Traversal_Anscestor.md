@@ -6,8 +6,6 @@ tags: ["jQuery", "javascript", "html", "web", "css", "DOM"]
 permalink: "/jquery/jQuery08_Traversal_Anscestor/"
 ---
 
-## jQuery - Traversal - Ancestor
-
 - jQuery를 사용해서 부모 element를 탐색하는 방법을 정리하였습니다.
   - `element.parent()`: element의 바로 위 부모 element를 가리킵니다.
   - `element.parents()`: element의 바로 위, 그 위 부모등 모든 부모들을 가리킵니다.

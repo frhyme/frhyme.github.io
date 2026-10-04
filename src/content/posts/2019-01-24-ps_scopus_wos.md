@@ -6,8 +6,6 @@ tags: ["paper-summary", "scopus", "wos", "web-of-science"]
 permalink: "/paper-summary/ps_scopus_wos/"
 ---
 
-## Scopus database: a review 
-
 - Biomed digital library에 2006년에 게재된 논문입니다. 
 - [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1420322/)
 

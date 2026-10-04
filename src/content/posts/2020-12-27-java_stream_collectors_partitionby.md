@@ -6,8 +6,6 @@ tags: ["java", "programming", "stream", "Collectors", "partitioningBy"]
 permalink: "/java/java_stream_collectors_partitionby/"
 ---
 
-## Java - stream - Collectors.partitioningBy
-
 - `stream`을 `collect`할 때, `Collectors.partitioningBy(Predicate)`를 사용하여 모으면 Predicate의 결과인 `true`, `false`를 key로, 그리고 원소는 각 value에 들어가는 Map이 생성됩니다.
 
 ```java

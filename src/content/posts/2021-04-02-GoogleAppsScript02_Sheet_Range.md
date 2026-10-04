@@ -6,8 +6,6 @@ tags: ["google", "javascript", "google_sheet", "macro", "GoogleAppsScript"]
 permalink: "/google/GoogleAppsScript02_Sheet_Range/"
 ---
 
-## Google Apps Script - Range
-
 - Google Apps Script를 사용해서 Sheet의 Cell의 값을 변경하는 방법을 정리합니다.
 - 다음은 Sheet 내의 A1부터 E5까지의 Cell에 값을 입력해주는 코드입니다. 
 - 코드 자체가 복잡하지 않아서 따로 설명하지는 않겠습니다. 

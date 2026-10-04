@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Wal
 permalink: "/english_study_by_movie_script/walter_mitty_Scene_01_ghost_cat/"
 ---
 
-## 영화 Secret Life of Walter Mitty 명장면 - 정말 아름다운 것은 관심을 필요로 하지 않아
-
 - 오늘은 영화 `<월터 미티의 상상은 현실이 된다(Secret life of walter mitty)>`의 대사를 가져왔습니다. **"Beautiful things don't ask for attention", 즉 "아름다운 것들은 관심을 필요로 하지 않아"**라는 말이죠. 
 - 영화를 보신 분은 아시겠지만, 이 대사는 영화에서 '월터 미티'의 삶을 그대로 나타내기도 합니다. 더 이상 이야기하면 일종의 스포일러가 될 수도 있으니까, 더 말하지 않겠습니다. 
 

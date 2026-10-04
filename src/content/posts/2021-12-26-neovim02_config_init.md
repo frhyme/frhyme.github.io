@@ -6,8 +6,6 @@ tags: ["vim", "vi", "neovim", "nvim", "python", "jedi", "programming", "vundle"]
 permalink: "/vim/neovim02_config_init/"
 ---
 
-## NeoVim - Neovim 설정하고 jedi-vim 설치하기
-
 ### Neovim설정하기 
 
 - NeoVim은 `~/.config/nvim/init.vim`에서 설정합니다. 없을 경우 폴더를 만들어 주고요. 

@@ -1,7 +1,7 @@
 ---
 title: "Java - Char를 Int로 변환하기"
 date: 2020-10-09
-category: "Java"
+category: "java"
 tags: ["java", "programming", "IntelliJ", "Char", "Int"]
 permalink: "/java/java_basic02_char_to_int/"
 ---

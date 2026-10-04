@@ -6,8 +6,6 @@ tags: ["nodeJS", "javascript", "server", "http", "web"]
 permalink: "/nodejs/nodeJS00_install/"
 ---
 
-## Node Js - install
-
 - nodeJS는 서버 쪽(백엔드)에서 사용되는 소프트웨어 플랫폼입니다. 그냥 "javascript로 서버를 구축하려면 nodeJS를 사용하면 된다"라고 알고 있어도 문제가 없죠.
 - [nodejs.org](https://nodejs.org/ko/download/)에서 node.js를 다운받습니다. 설치하고 확인해 보면 다음과 같은 두 패키지가 설치됩니다.
 

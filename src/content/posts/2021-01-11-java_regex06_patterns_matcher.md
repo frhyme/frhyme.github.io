@@ -6,8 +6,6 @@ tags: ["java", "regex", "programming", "String"]
 permalink: "/java/java_regex06_patterns_matcher/"
 ---
 
-## Java - Regex - Pattern, Matcher
-
 - 사실 이미 java에서 `String`을 사용해서도 regex를 사용할 수 있긴합니다.
 
 ```java

@@ -1,7 +1,7 @@
 ---
 title: "python에서 c 코드 읽어오기"
 date: 2018-08-26
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "ctypes", "c"]
 permalink: "/python-lib/python_read_c_code_in_python/"
 ---

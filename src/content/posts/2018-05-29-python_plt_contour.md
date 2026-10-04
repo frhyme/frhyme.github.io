@@ -1,7 +1,7 @@
 ---
 title: "python) Contour 플롯을 그려봅시다."
 date: 2018-05-29
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "matplotlib"]
 permalink: "/python-lib/python_plt_contour/"
 ---

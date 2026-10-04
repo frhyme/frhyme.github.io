@@ -6,8 +6,6 @@ tags: ["go", "golang", "variable", "readability"]
 permalink: "/golang/go000_variable_declared_but_not_used/"
 ---
 
-## go lang - variable declared but not used
-
 - golang에서는 code 내에 선언되었으나 사용되지 않은 package나 variable이 존재할 경우, error가 raise되며 코드가 실행되지 못합니다.
 - 아래 코드를 작성한 다음 `go run main.go`를 사용해서 해당 코드를 실행해보면 `fmt` package, `a` variable들이 사용되지 않았기 때문에 에러가 발생하며 아래 코드가 정상적으로 컴파일 및 시행이 되지 못하는 것을 아실 수 있습니다.
 

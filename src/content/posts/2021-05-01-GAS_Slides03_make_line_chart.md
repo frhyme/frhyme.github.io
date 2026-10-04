@@ -6,8 +6,6 @@ tags: ["google", "javascript", "GoogleSlides", "macro", "GoogleAppsScript"]
 permalink: "/google/GAS_Slides03_make_line_chart/"
 ---
 
-## Google Apps Script - Slides - Line chart 만들기
-
 - 저는 excel, matplotlib 등을 사용해서 차트를 만드는 것보다 슬라이드에 직접 모양을 하나씩 만드는 것을 더 선호합니다.
 - Google Slides에 그림을 그리는 경우에는 마우스를 쓰지 않고, Google Apps Script를 사용해서 처리할 수도 있죠.
 - 코드는 다음과 같습니다.

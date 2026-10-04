@@ -21,7 +21,7 @@ permalink: "/python-libs/pyemd_EarthMoverDistance/"
 - 최적화 문제로 변환하는 것은 크게 어렵지 않기는 하지만, 귀찮죠. 그래서 [pypi - pyemd](https://pypi.org/project/pyemd/)에 이미 구현되어 있습니다. 
 - 일단 설치를 하구요. 
 
-```
+```bash
 pip install pyemd
 ```
 

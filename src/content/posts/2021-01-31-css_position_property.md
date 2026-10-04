@@ -6,8 +6,6 @@ tags: ["css", "position"]
 permalink: "/css/css_position_property/"
 ---
 
-## CSS - position property
-
 ### 문서 내 작성된 순서에 따라 배치되는 경우
 
 - position property의 다음 세 값은 문서 내에서 작성된 순서에 따라서 배치됩니다. 이미 현재의 요소 위에 다른 요소가 있다면, 그 요소의 아래에 그려지게 된다는 이야기죠.

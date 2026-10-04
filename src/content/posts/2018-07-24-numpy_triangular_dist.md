@@ -1,7 +1,7 @@
 ---
 title: "triangular dist.를 정리합니다."
 date: 2018-07-24
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "numpy", "distribution", "triangular", "random", "simulation"]
 permalink: "/python-lib/numpy_triangular_dist/"
 ---

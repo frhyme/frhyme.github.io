@@ -54,7 +54,7 @@ def function_for_line_profiling(n=1000):
     - 어떤 라인에서 얼마나 오래 걸리는지 정리해줍니다. 
     - 이걸, 보고 어떤 라인이 바틀넥인지를 파악하고 처리할 수 있겠죠. 
 
-```
+```python
 Timer unit: 1e-06 s
 
 Total time: 0.001703 s
@@ -85,7 +85,7 @@ N = 1000
 %lprun -f function_for_line_profiling function_for_line_profiling(N)
 ```
 
-```
+```python
 Timer unit: 1e-06 s
 
 Total time: 0.001183 s

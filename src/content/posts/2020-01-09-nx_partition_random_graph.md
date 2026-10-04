@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "networkx"]
 permalink: "/python-libs/nx_partition_random_graph/"
 ---
 
-## networkx - random partition graph
-
 - 요즘은 networkx에서 community detection에 대해서 정리하고 있습니다. 
 - 테크닉들에 대해서 테스트를 해보려면, 클러스터가 몇 개로 구성된 예제그래프가 필요합니다. 
 - 그리고, 당연히도, `networkx`에서 이러한 예제 그래프를 지원하죠.

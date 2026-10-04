@@ -1,7 +1,7 @@
 ---
 title: "CryptoCurrency - 메디블록(medibloc)"
 date: 2021-04-04
-category: "CyptoCurrency"
+category: "CryptoCurrency"
 tags: ["CyptoCurrency", "Coin", "investment"]
 permalink: "/cyptocurrency/CryptoCurrency02_medibloc/"
 ---

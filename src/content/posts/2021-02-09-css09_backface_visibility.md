@@ -6,8 +6,6 @@ tags: ["css", "visibility"]
 permalink: "/css/css09_backface_visibility/"
 ---
 
-## CSS - backface visiblity
-
 - `backface-visibility`는 "뒷면이 보이냐"라는 말이죠. 기본적인 웹 디자인에서는 사용할 일이 없지만, 2D 혹은 3D를 구현하고 이를 회전시키거나 할때 뒷면이 유효하도록 할 것인지 아닌지를 설정하는 것을 말합니다.
 - 다음과 같은 간단한 html에서 `backface_visible` class에 속한 요소는 뒷면이 보이도록 하고, `backface_hidden` class에 속한 요소는 뒷면이 보이지 않도록 한다고 해보겠습니다.
 

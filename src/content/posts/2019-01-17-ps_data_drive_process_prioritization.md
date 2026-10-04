@@ -6,8 +6,6 @@ tags: ["process", "bpm", "paper-summary"]
 permalink: "/paper-summary/ps_data_drive_process_prioritization/"
 ---
 
-## Data-driven Process Prioritization in Process Networks
-
 - Decision Support System에 2017년 8월에 게재된 논문
 - [link](https://www.sciencedirect.com/science/article/pii/S0167923617300362)
 

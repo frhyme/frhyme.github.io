@@ -6,8 +6,6 @@ tags: ["java", "boxing", "class", "unboxing"]
 permalink: "/java/java_boxing_and_unboxing/"
 ---
 
-## Java - boxing and unboxing
-
 - Java에서 primitive type(`int`, `double` 등)은 모두 해당되는 class를 가지고 있습니다. 이런 클래스들을 모두 wrapper라고 부르죠. 그리고, wrapper는 기본적으로 immutable의 성질을 가지고 있습니다.
 - 우선, primitive type은 class가 아니죠. 그냥 메모리에 value가 그대로 들어 있는 변수이고, reference type들에 비해서 속도 측면에서는 장점이 있죠. 하지만, 필요에 따라서 primitive type이 아니라 Object로 표현하는 것이 편할 때가 있죠. 대략 다음과 같은 경우들이 있습니다.
   - variable이 `null`값을 가지는 것이 필요할 때

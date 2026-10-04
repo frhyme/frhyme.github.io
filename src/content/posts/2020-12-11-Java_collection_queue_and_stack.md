@@ -6,8 +6,6 @@ tags: ["java", "programming", "interface", "collection", "Queue", "Deque", "Stac
 permalink: "/java/Java_collection_queue_and_stack/"
 ---
 
-## Java - Collection - Queue
-
 - Queue는 우리가 일상에서 흔히 보는 "대기열"이라고 생각하시면 됩니다. 줄이 있으면 보통 맨 뒤에 줄을 서고 가장 먼저 온 사람이 먼저 줄에서 나가게 되죠. 일상 생활에서 가장 많은 형태의 자료구조이며, 이런 행동 패턴을 "먼저 온 사람이 먼저 나간다"는 의미로 First-In-First-Out, FIFO라고 합니다. 즉, 먼저 온 사람에게 우선권주는 형태인 셈이죠.
 - 그리고 매우 당연히도 Java에서도 `Queue<T>` Interface가 구현되어 있습니다. `Collection<T>`을 extend하고, 다음의 method들을 새롭게 선언했죠.
   - `boolean offer(T t)`: Queue에 값을 집어넣고, 성공적으로 넣었다면 `true`를 아니라면 `false`를 리턴하죠.

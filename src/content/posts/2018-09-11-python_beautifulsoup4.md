@@ -1,7 +1,7 @@
 ---
 title: "beautifulsoup4 기본."
 date: 2018-09-11
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "html", "xml", "beautifulsoup", "http", "requests"]
 permalink: "/python-lib/python_beautifulsoup4/"
 ---

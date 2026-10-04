@@ -6,8 +6,6 @@ tags: ["google", "javascript", "google_sheet", "macro", "GoogleAppsScript", "GCP
 permalink: "/google/GCP001_use_app_script_api/"
 ---
 
-## Google Apps Script - Google Apps Script API 사용하기(Again)
-
 - python에서 Google Apps Script API를 사용하는 방법을 정리합니다. 지난번에도 쓴 글이 있는데, 공부하면서 쓴것이라고 좀 꼬여있는 것 같더라고요.
 - 그래서, 기존의 프로젝트들을 모두 지우고 처음부터 다시 설정해보려고 합니다.
 

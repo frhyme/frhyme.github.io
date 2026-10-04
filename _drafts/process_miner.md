@@ -1,7 +1,7 @@
 ---
 title: "process-mining algorithm을 간단하게 만들어 보았슴미다."
 date: 2020-01-23
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "networkx", "process-mining", "process-model-discovery"]
 permalink: "/python-lib/process_miner/"
 ---

@@ -6,8 +6,6 @@ tags: ["shell", "link"]
 permalink: "/shell/shell_01_make_soft_hard_link/"
 ---
 
-## Shell01 - Make Symbolic Link (ln)
-
 - unix terminal에서 자주 접근하는 folder path가 길어서, 빠르게 접근할 수 있는 link를 만들어주려고 합니다.
 - 이렇게 만들어주고 나면, cd를 여러번 칠 필요 없이 바로 움직일 수 있습니다.
 - `ls -l`을 사용해서 확인해 보면, link가 잘 만들어진 것을 확인할 수 있습니다.

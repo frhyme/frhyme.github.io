@@ -1,8 +1,8 @@
 ---
-title: "category:"
+title: "소프트웨어 설계와 코딩 습관에 대한 단상"
 date: 2020-01-02
 category: "others"
-tags: []
+tags: ["tech"]
 permalink: "/others/a_software-design/"
 ---
 

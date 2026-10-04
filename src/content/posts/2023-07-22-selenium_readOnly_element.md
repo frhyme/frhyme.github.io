@@ -2,11 +2,9 @@
 title: "selenium - change readOnly element"
 date: 2023-07-22
 category: "others"
-tags: []
+tags: ["tech"]
 permalink: "/selenium_readOnly_element/"
 ---
-
-## selenium - change readOnly element
 
 - When attempting to scrape a web page, you might encounter an error message like the one below:
 

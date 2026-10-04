@@ -57,7 +57,7 @@ def read_csv_and_vis():
         <svg id='chart1'>
         </svg>
         <script>
-            var chart1_data_lst = {% raw %}{{circle_data_lst|tojson}} {% endraw %};
+            var chart1_data_lst = {{circle_data_lst|tojson}} ;
             var chart1 = d3.select('#chart1').attr('width', 750).attr('height', 750);
 
             chart1.selectAll('circle').data(chart1_data_lst)

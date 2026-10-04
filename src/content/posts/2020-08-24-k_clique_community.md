@@ -2,7 +2,7 @@
 title: "K Clique Community"
 date: 2020-08-24
 category: "others"
-tags: []
+tags: ["tech"]
 permalink: "/others/k_clique_community/"
 ---
 

@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Rea
 permalink: "/english_study_by_movie_script/RealityBites_Scene00_RideMyOwnMelt/"
 ---
 
-## 영화 RealityBites 명장면 - Ride My Own Melt
-
 - 에단 호크와 위노라 라이더가 나온 `<Reality bites>`라는 영화가 있습니다. 1994년 영화이니까, 와, 이제 좀 있으면 30년이 다 되어가는군요. 아무튼 제가 사랑하는 영화 중 하나죠. 
 - 제가 과거에 애정하던 `<백수생활백서>`라는 책이 있습니다. 그저, 책과 영화를 좋아하는 사람이 주인공으로 나오는 소설인데, 그 영화에서 이 영화 `<Reality bites>`를 많이 인용했죠. 그래서 찾아서 봤고, 좋아하게 된 것으로 기억합니다. 안타깝지만, 한글 영화 명은 `<청춘 스케치>`입니다. 번역의 수준이 너무 심하죠. 
 - 아, 그리고 벤 스틸러가 이 영화의 감독입니다. 벤 스틸러는 약간, 그냥 코미디 배우인 것처럼(아마도, <메리에겐 뭔가 특별한 것이 있다> 때문이겠죠) 여겨졌지만, 연출도 그렇고 대단한 재능을 가진 예술가죠. `<월터의 상상은 현실이 된다>` 또한, 벤 스틸러가 감독을 

@@ -6,8 +6,6 @@ tags: ["html", "javascript"]
 permalink: "/html/Embedding_js_with_html/"
 ---
 
-## JavaScript 코드 html에 연결하기
-
 ### 1 - html 내에 javascript 코드 그대로 넣기
 
 - 다음처럼 html 파일 내에 javascript 소스를 그대로 집어넣을 수도 있구요.

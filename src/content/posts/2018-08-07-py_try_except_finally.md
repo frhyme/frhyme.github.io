@@ -6,8 +6,6 @@ tags: ["python", "python-basic", "try", "except", "exception-handling"]
 permalink: "/python-basic/py_try_except_finally/"
 ---
 
-## try, except, finally
-
 - 파이썬으로 코딩할 때 코딩을 깔끔하게 해주는 것은 매우 중요합니다. 단 두 줄, 세 줄을 쓴다고 하더라도 개별 두줄이 어떤 의미를 가지는지 구분해서 작성해주면 가독성이 훨씬 높아집니다. 
 - 특히, 코딩을 할때 많이 해주는 부분이 바로 `try`, `except`구문입니다. 이는, 일단 코드를 실행하고, 만약 그 내부에서 에러가 발생하면, 그 error를 던져주고, `except`문이 받아먹는 형식을 말합니다. 
 - 간단하게 말하면 다음과 같은 형식이죠. 제 기억이 맞다면, java에서는 `raise error`를 해줬어야 했던 것 같은데, 파이썬에서는 알아서 던져줍니다. 

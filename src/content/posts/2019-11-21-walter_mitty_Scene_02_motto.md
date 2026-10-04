@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Wal
 permalink: "/english_study_by_movie_script/walter_mitty_Scene_02_motto/"
 ---
 
-## 영화 Secret Life of Walter Mitty 명장면 - 우리 회사 모토가 뭔지 알아요?
-
 - 사실 회사명 말고는 관심이 없지만, 회사에는 모토라는 것이 있습니다. 인생의 좌우명처럼 회사가 지향하는 핵심 가치를 보통 모토라고 하죠. 가령, 구글은 Don't be evil, 나이키는 Just do it이 있죠. 우리나라 배달의민족의 경우 '좋은 음식을 먹고 싶은 곳에서'라고 합니다 호호. 그리고 제가 자주 쓰는 언어인 python에는 모토는 아니고, [Zen of python](https://www.python.org/dev/peps/pep-0020/) 이라는 것이 있죠.
 - 특히 구글에서는 이 모토가, 그냥 형식적인 것이 아니라, 실제로 힘을 가지고 있어요. 가령, 작년 초부터 미국 국방부에서 진행하던 Maven project는 인공지능을 활용한 국방력 향상을 목적으로 합니다. 특히, 무인 드론 등이 이미지를 정확하게 인식하도록 하는 것이 주요 목적인데, 영화에서 본 로봇 전쟁 같은 것을 떠올리면 되겠죠. 그러나, 이 프로젝트는 구글의 모토인 Don't be evil과 어울리지 않습니다. 따라서, 구글은 해당 프로젝트에서 빠지게 되죠. 
 - 아무튼, 영화 `<Secret life of Walter mitty>`에서도 '모토'에 대한 이야기가 나옵니다. 

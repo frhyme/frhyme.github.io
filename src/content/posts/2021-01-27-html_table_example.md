@@ -6,8 +6,6 @@ tags: ["html", "table"]
 permalink: "/html/html_table_example/"
 ---
 
-## html - table 만들기
-
 - 간단한 table을 만들었습니다.
   - `<table>`: 테이블 요소를 의미하는 tag
   - `<tr>`: row를 의미하는 tag

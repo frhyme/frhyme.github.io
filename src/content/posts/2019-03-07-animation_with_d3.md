@@ -22,7 +22,7 @@ permalink: "/others/animation_with_d3/"
         </svg>
         <script>
             var chart1 = d3.select('#chart1').attr('width', 750).attr('height', 750);
-            var chart1_data_lst = {% raw %}{{ circle_data_lst| tojson}}{% endraw %};
+            var chart1_data_lst = {{ circle_data_lst| tojson}};
             var i=0;
             // d3.interval를 이용해서 animation을 만들어주고, 
             var animation = d3.interval(

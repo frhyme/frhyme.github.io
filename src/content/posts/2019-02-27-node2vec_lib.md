@@ -16,7 +16,7 @@ permalink: "/machine-learning/node2vec_lib/"
 
 - 일단 설치부터 합시다. 아래를 실행하면 node2vec이 사용하는 `gensim`라이브러리도 함께 설치하게 됩니다. 
 
-```
+```bash
 pip install node2vec
 ```
 

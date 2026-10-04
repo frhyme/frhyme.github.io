@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "networkx", "centrality", "betweenness-centralit
 permalink: "/python-libs/nx_alg_percolation_centrality/"
 ---
 
-## networkx - percolation centrality
-
 - [Percolation](https://en.wikipedia.org/wiki/Percolation)은 한국말로 "여과"입니다. 커피를 만들때 필터에 커피를 투과시키는 것을 보통 여과라고 하죠. 
 - 그리고, node `u`의 Percolation centrality는 해당 노드를 지나가는 "percolated path(여과된 길)"의 비율을 말하죠. 각 node별로 percolation state는 다르며, 0.0과 1.0 사이의 값을 가지게 되죠(값이 높을수록 여과가 잘 됨 혹은 전염을 잘 시킴 이라고 이해하시면 됩니다). 
 - 따라서, percolation cnetrality는 네트워크 자체가 가지는 위상적/구조적 특성(topological, structural)은 물론, 각 노드의 percolation state를 활용하여, 각 노드의 상대적인 중요성을 측정할 수 있습니다. 만약, '전염성이 강한 노드(percolation state가 높은 노드)'들에 가까이 있다면, 이 노드들 또한 percolation centrality가 높게 나오게 되겠죠. 즉, 해당 네트워크에 전염병이 흘러들어간다면, 매우 취약한 노드ㄹ가 될 수 있다는 것을 의미합니다.

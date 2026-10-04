@@ -1,7 +1,7 @@
 ---
 title: "Java - 문자열에 변수를 넣어서 함께 출력"
 date: 2020-10-09
-category: "Java"
+category: "java"
 tags: ["java", "programming", "IntelliJ", "String"]
 permalink: "/java/java_basic01_string_with_var/"
 ---

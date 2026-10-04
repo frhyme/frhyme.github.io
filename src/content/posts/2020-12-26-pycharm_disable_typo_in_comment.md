@@ -6,8 +6,6 @@ tags: ["python", "PyCharm", "IDE", "typo", "comment"]
 permalink: "/python/pycharm_disable_typo_in_comment/"
 ---
 
-## PyCharm - Disable typo in Comment
-
 - [typo](https://en.wikipedia.org/wiki/Typographical_error) "typographical Error"의 약자로 "오탈자"를 말한다고 보시면 됩니다.
 - 많은 IDE에서 기본적으로 typo에 대해서 알림고치라고 말해주기는 하는데, Comment에 대해서도 고치라고 말합니다. 
 

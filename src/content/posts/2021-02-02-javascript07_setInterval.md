@@ -6,8 +6,6 @@ tags: ["javascript", "function", "setInterval", "setTimeout"]
 permalink: "/javascript/javascript07_setInterval/"
 ---
 
-## Javascript - setInterval
-
 - `setInterval(function, intervalTime, argument)`은 `intervalTime` milliseconds 마다 argument를 function에 넘겨서 실행합니다.
 - 아래 코드는 1000 milliseconds마다 `printThisTime`를 실행합니다. argument는 따로 넘기지 않았구요.
 

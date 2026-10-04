@@ -6,8 +6,6 @@ tags: ["java", "thread", "programming", "parallelism", "concurrency", "MultiThre
 permalink: "/java/java_Thread03_sleep_join/"
 ---
 
-## Java - Thread - Sleep
-
 - `Thread.sleep()`, `TimeUnit.SECONDS.sleep()`를 사용해서 현재 Thread를 일정 시간 정지시켜 둘 수 있습니다.
 
 ```java

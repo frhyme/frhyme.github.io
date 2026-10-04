@@ -1,12 +1,10 @@
 ---
 title: "understand networkx better."
 date: 2018-05-13
-category: "python-lib"
+category: "python-libs"
 tags: ["networkx", "python", "python-lib"]
 permalink: "/python-lib/networkx_better/"
 ---
-
-## understand networkx better. 
 
 - 일반적으로 쓰는 networkx 의 function들은 centrality, draw, add/remove node and edges 가 다인데, 이 외에도 꽤나 유용한 함수들이 많이 있습니다. 이것들을 좀 정리해두는 것이 필요하다고 생각됨. 
 

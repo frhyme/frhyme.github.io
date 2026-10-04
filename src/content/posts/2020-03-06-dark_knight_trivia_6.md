@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "dar
 permalink: "/english_study_by_movie_script/dark_knight_trivia_6/"
 ---
 
-## 영화 Dark Knight에 관한 사소한 사실들(trivia) - 6편
-
 - 영화 <다크 나이트>에 관한 사소한 사실들을 IMDB에서 가져와서 번역하고 정리하였습니다. 그 주요 내용들을 정리하자면 다음과 같습니다.
   1. 에크하트는 히스 레저와 병원 장면에서 있었던 인상 깊었던 기억을 이야기했다.
   2. 놀란 감독은 '조커' 역할로 '히스 레저'를 선택한 이유로, "그는 겁이 없었다"라고 간결하게 말했다.

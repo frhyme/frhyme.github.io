@@ -1,12 +1,10 @@
 ---
 title: "VScode - Workbench indentation more"
 date: 2020-12-29
-category: "VScode"
+category: "vs-code"
 tags: ["VScode"]
 permalink: "/vscode/VScode_workbench_indentation_more_and_coloring/"
 ---
-
-## VScode - Workbench indentation more
 
 - Explorer 부분에 여러 폴더와 파일이 존재하는데요, nested인 경우 들여쓰기 폭이 너무 작아서 구별이 되지 않아서, 얘를 늘렸습니다.
 - setting 들어가셔서 아래 부분을 손 보면 됩니다.

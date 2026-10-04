@@ -6,8 +6,6 @@ tags: ["java", "DataStructure", "programming", "list", "class", "Tree"]
 permalink: "/java/java_data_structure_tree/"
 ---
 
-## Java - Data Structure - Tree
-
 - java를 사용해서 tree를 만들어봤습니다. childNode의 개수에는 제한이 없고, 다음 method를 구현하였습니다.
   - `addChildNode`: 자식 Node를 집어넣는다.
   - `findNode`: Node가 존재하는지 찾는다.

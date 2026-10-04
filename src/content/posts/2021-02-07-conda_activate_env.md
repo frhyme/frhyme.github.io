@@ -6,8 +6,6 @@ tags: ["python", "conda", "anaconda"]
 permalink: "/others/conda_activate_env/"
 ---
 
-## conda env 변경하기
-
 - 우선 `conda env list`를 사용하여 현재 사용가능한 conda environment를 확인해봅시다.
 
 - `*` 표시가 되어 있는 env가 현재 활성화되어 있는 env입니다.

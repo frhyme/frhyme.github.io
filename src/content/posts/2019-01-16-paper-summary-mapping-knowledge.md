@@ -6,8 +6,6 @@ tags: ["paper-summary", "sna", "keyword-network"]
 permalink: "/paper-summary/paper-summary-mapping-knowledge/"
 ---
 
-## Mapping knowledge structure by keyword co-occurrence - a first look at journal papers in Technology Foresight
-
 - Scientometric(impact factor는 2.1정도)에 2010년에 게재된 논문, 
 - [논문 링크](https://link.springer.com/article/10.1007/s11192-010-0259-8)
 

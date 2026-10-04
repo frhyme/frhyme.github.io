@@ -1,7 +1,7 @@
 ---
 title: "python-basic) python에서 json을 읽어봅시다."
 date: 2018-04-16
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "json"]
 permalink: "/python-lib/python에서-json을-읽읍시다/"
 ---

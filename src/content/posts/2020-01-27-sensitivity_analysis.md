@@ -2,7 +2,7 @@
 title: "Sensitivity Analysis - 민감도 분석."
 date: 2020-01-27
 category: "others"
-tags: []
+tags: ["tech"]
 permalink: "/others/sensitivity_analysis/"
 ---
 

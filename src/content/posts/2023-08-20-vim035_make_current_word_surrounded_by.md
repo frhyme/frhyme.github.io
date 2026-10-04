@@ -6,8 +6,6 @@ tags: ["vim", "vi", "markdown"]
 permalink: "/vim/vim035_make_current_word_surrounded_by/"
 ---
 
-## vim035 - make current word surrounded by
-
 - While writing Markdown in Vim, I find the process of formatting words to appear as code, enclosed by backtick characters, to be quite cumbersome. To achieve this, I need to follow these steps:
 1. In normal mode, position the cursor at the beginning of the word.
 1. Switch to insert mode and type the opening backtick.

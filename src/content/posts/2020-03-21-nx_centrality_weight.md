@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "networkx", "centrality", "weight"]
 permalink: "/python-libs/nx_centrality_weight/"
 ---
 
-## networkx - centrality with weight
-
 - network에서 centrality를 계산할 때, 기본적으로는 edge의 weight를 모두 1로 가정합니다. 
 - 이럴 때는 상관없지만, weight 값에 따라서, centrality가 달라질 때, 그냥 아무 생각없이 weight를 그대로 넘겨주지만, 사실 이게 distance를 의미하는 건지, 아니면 중요도 를 의미하는 것인지가 centrality에 따라서 조금씩 다르게 결과가 나옵니다. 
 

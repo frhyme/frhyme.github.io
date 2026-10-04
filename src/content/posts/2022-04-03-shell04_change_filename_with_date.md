@@ -6,8 +6,6 @@ tags: ["shell", "date", "filename"]
 permalink: "/shell/shell04_change_filename_with_date/"
 ---
 
-## Shell 04 - Change filename with Date
-
 - 저는 jekyll을 이용하여 블로그에 글을 올립니다. 음 정확히 말하면 markdown file을 jekyll을 이용하여 html file로 변환해주고 link를 만들어준다, 정도로 해석하면 될 것 같아요.
 - 아무튼, 마크다운 파일이 블로그에 등록되려면 `2022-04-03-title.md`의 형태로 존재해야 합니다.
 - 보통 블로그에 글을 올리기 위한 작업 순서는 다음과 같이 진행되는데요.

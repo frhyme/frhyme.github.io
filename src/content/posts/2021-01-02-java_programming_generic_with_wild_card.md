@@ -6,8 +6,6 @@ tags: ["java", "programming", "GenericProgramming", "WildCard"]
 permalink: "/java/java_programming_generic_with_wild_card/"
 ---
 
-## Java - Generic Programming - Wild Card
-
 - Java에서 Abstract Class인 `Number`는 `Integer`에게 상속됩니다. 따라서, 아래와 같이, `Number` 변수가 `Integer`객체를 가리킬 수 있죠.
 
 ```java

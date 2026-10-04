@@ -4,6 +4,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PostCard from '../../../components/PostCard.astro';
 import Pagination from '../../../components/Pagination.astro';
+import { cleanExcerpt, getReadingTime } from '../../../utils/excerpt';
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const posts = await getCollection('posts');
@@ -19,7 +20,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 
     return paginate(filteredPosts, {
       params: { category },
-      pageSize: 15,
+      pageSize: 16,
     });
   });
 }
@@ -33,21 +34,26 @@ const { category } = Astro.params;
 ---
 
 <BaseLayout title={`Category: ${category} (Page ${page.currentPage})`}>
-  <div class="mb-8 pb-4 border-b border-zinc-200 dark:border-zinc-800">
-    <div class="flex items-center space-x-2 text-xs text-zinc-400 mb-1">
-      <a href="/categories/" class="hover:underline">Categories</a>
-      <span>&gt;</span>
-      <span class="capitalize">{category}</span>
+  <div class="mb-8 pb-5 border-b border-zinc-200/80 dark:border-zinc-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+    <div>
+      <div class="flex items-center space-x-2 text-xs text-zinc-400 mb-1">
+        <a href="/categories/" class="hover:underline">Categories</a>
+        <span>&gt;</span>
+        <span class="capitalize text-zinc-600 dark:text-zinc-300 font-medium">{category}</span>
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 capitalize">
+        {category}
+      </h1>
+      <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
+        총 {page.total.toLocaleString()}개의 아티클
+      </p>
     </div>
-    <h1 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100 capitalize">
-      {category}
-    </h1>
-    <p class="text-xs text-zinc-500 mt-1">
-      총 {page.total}개의 포스트
-    </p>
+    <span class="text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 font-mono self-start sm:self-auto">
+      Page {page.currentPage} of {page.lastPage}
+    </span>
   </div>
 
-  <div class="divide-y divide-zinc-100 dark:divide-zinc-800">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
     {page.data.map((post) => {
       let url = post.data.permalink;
       if (!url) {
@@ -58,6 +64,9 @@ const { category } = Astro.params;
         url = `/${cat}/${postSlug}/`;
       }
 
+      const description = post.data.description || cleanExcerpt(post.body);
+      const readingTime = getReadingTime(post.body);
+
       return (
         <PostCard
           title={post.data.title}
@@ -65,6 +74,8 @@ const { category } = Astro.params;
           category={post.data.category}
           tags={post.data.tags}
           url={url}
+          description={description}
+          readingTime={readingTime}
         />
       );
     })}

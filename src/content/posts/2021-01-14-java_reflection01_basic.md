@@ -6,8 +6,6 @@ tags: ["java", "reflection", "class", "programming", "OOP"]
 permalink: "/java/java_reflection01_basic/"
 ---
 
-## Java - Reflection - Basic
-
 - Java의 Relfection은 Runtime시에 객체로부터 클래스의 정보를 가져오는 것을 말합니다. 
 - 일반적으로는 다음과 같이 class instance를 만든 다음에는 내부 메소드에 직접 접근해서 변수를 처리하거나 해주죠.
 

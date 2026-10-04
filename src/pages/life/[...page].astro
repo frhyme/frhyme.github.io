@@ -1,0 +1,82 @@
+---
+import type { GetStaticPathsOptions, Page } from 'astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import Pagination from '../../components/Pagination.astro';
+import { getMajorCategory, MAJOR_CATEGORY_META } from '../../utils/categories';
+import { cleanExcerpt, getReadingTime } from '../../utils/excerpt';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const allPosts = await getCollection('posts');
+  const lifePosts = allPosts
+    .filter((p) => getMajorCategory(p.data.category) === 'life')
+    .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+  return paginate(lifePosts, { pageSize: 16 });
+}
+
+interface Props {
+  page: Page<CollectionEntry<'posts'>>;
+}
+
+const { page } = Astro.props;
+const meta = MAJOR_CATEGORY_META.life;
+---
+
+<BaseLayout
+  title={`${meta.label} - 라이프 & 취미 아카이브 (Page ${page.currentPage})`}
+  description={meta.description}
+>
+  <!-- Header Banner -->
+  <div class="mb-8 pb-6 border-b border-zinc-200/80 dark:border-zinc-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+    <div>
+      <div class="flex items-center space-x-2 text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
+        <span class="p-2 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 text-2xl">{meta.icon}</span>
+        <h1>{meta.label}</h1>
+      </div>
+      <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400 max-w-2xl leading-relaxed">
+        {meta.description}
+      </p>
+    </div>
+    <div class="text-xs px-3 py-1.5 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 font-mono self-start sm:self-auto">
+      {page.total.toLocaleString()} posts · Page {page.currentPage}/{page.lastPage}
+    </div>
+  </div>
+
+  <!-- Post Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+    {page.data.map((post) => {
+      let url = post.data.permalink;
+      if (!url) {
+        const filename = post.id.replace(/\.md$/, '');
+        const slugMatch = filename.match(/^(\d{4}-\d{2}-\d{2})-(.*)$/);
+        const postSlug = slugMatch ? slugMatch[2] : filename;
+        const category = (post.data.category || 'others').toLowerCase().replace(/\s+/g, '-');
+        url = `/${category}/${postSlug}/`;
+      }
+
+      const description = post.data.description || cleanExcerpt(post.body);
+      const readingTime = getReadingTime(post.body);
+
+      return (
+        <PostCard
+          title={post.data.title}
+          date={post.data.date}
+          category={post.data.category}
+          tags={post.data.tags}
+          url={url}
+          description={description}
+          readingTime={readingTime}
+        />
+      );
+    })}
+  </div>
+
+  <!-- Pagination -->
+  <Pagination
+    currentPage={page.currentPage}
+    lastPage={page.lastPage}
+    basePath="/life/"
+  />
+</BaseLayout>

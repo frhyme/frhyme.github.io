@@ -6,8 +6,6 @@ tags: ["java", "OOP", "programming", "Object", "polymorphism", "overloading", "o
 permalink: "/java/java_polymorphism/"
 ---
 
-## Java - polymorphism
-
 - polymorphism은 다음과 같은 다양한 종류로 나뉩니다.
 - **Ad-hoc polymorphism**: 엄밀한 의미에서 polymorphism은 아니지만, `methodName`이 같고 `argument`가 다른 경우에 대해서 작동하는 것을 말하며, method overloading이 여기에 속합니다. run-time에 결정되는 것이 아니라, compile-time에 결정되기 때문에 그냥 Compile-Time polymorphism이라고 하기도 하죠.
 - **Subtype polymorphism**: 그냥 subtyping이라고도 하는데, 상위 class의 reference variable로 하위 class의 Object를 가리키는 경우를 말합니다. 즉, 상위 class의 reference variable을 사용해서 여러 객체들을 담을 수 있기 때문에 polymorphism 적인 성격을 가지게 되죠. dynamic polymorphism이라고 하기도 합니다.

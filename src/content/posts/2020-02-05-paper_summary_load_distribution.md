@@ -6,8 +6,6 @@ tags: ["paper-summary", "scale-free-network", "network", "load-centrality", "bet
 permalink: "/paper-summary/paper_summary_load_distribution/"
 ---
 
-## Universal Behavior of Load Distribution in Scale-Free Networks
-
 - 제목을 해석한다면, "Scale-free network에서 Load 분포의 범용적 특성"정도가 되겠네요. load centrality에 대해서 정리하던 중에, betweennes centrality와의 특별한 차이가 없는 것 같아서, 자료를 찾다가 이 논문을 발견하게 되었습니다. 
 - 무려, 2001년에 나온 논문이며, 서울대 이론물리학 연구소에서 작성했습니다.
 - [논문링크](http://phya.snu.ac.kr/~dkim/PRL87278701.pdf)

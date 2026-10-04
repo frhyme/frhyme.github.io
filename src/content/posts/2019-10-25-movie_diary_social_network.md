@@ -6,8 +6,6 @@ tags: ["MovieDiary", "Movie", "Film"]
 permalink: "/moviediary/movie_diary_social_network/"
 ---
 
-## 영화 - 소셜 네트워크 
-
 - 얼마 전에 영화 "소셜 네트워크"를 다시 봤습니다(왓챠 플레이로 봤습니다. 왓챠 플레이 만세). 요즘에는 본 영화를 다시 보는 일이 많아요. 영화를 다시 보면 그 전에는 느끼지 못했던 많은 새로운 것들을 깨닫게 됩니다. 분류하여 짧은 여러 글을 써봤습니다.
 
 ### Facebook between Us

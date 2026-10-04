@@ -6,8 +6,6 @@ tags: ["hiphop", "soynlp", "mongoDB", "pymongo", "networkx", "NLP"]
 permalink: "/project/PRJ01_hiphopLE_analysis/"
 ---
 
-## HiphopLE Analysis
-
 - HiphopLE에 올라온 17만 개의 글을 분석하여 이런저런 분석을 수행해 봤습니다.
 - [HiphopLE Analysis](https://docs.google.com/presentation/d/17Nb-dfd2r9ZFtcGDZvFp3Bzm-ZtVUXZuCyWSAqQkKPE/)에서 자세한 내용을 볼 수 있습니다.
 - 이 글에서는 좀 더 세부적인 내용들을 정리합니다.

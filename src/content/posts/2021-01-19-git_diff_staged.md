@@ -6,8 +6,6 @@ tags: ["git", "commit", "stage", "diff"]
 permalink: "/git/git_diff_staged/"
 ---
 
-## Git - commit 전에 staged 파일 diff
-
 - 현재 디렉토리에서 이전 commit과 차이점이 뭐가 있는지 확인하려면 다음을 실행합니다.
 
 ```git

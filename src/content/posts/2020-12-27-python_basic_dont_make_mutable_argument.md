@@ -6,8 +6,6 @@ tags: ["python", "python-basic", "argument"]
 permalink: "/python-basic/python_basic_dont_make_mutable_argument/"
 ---
 
-## python Basic - Don't make Mutable Argument
-
 - 다음과 같이, list에 새로운 원소를 넣어주는 함수가 있습니다.
 - 뭐, 아무 문제가 없죠.
 

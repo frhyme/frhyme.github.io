@@ -6,8 +6,6 @@ tags: ["java", "DataStructure", "programming", "list", "class", "Tree"]
 permalink: "/java/java_dataStructure_BinarySearchTree/"
 ---
 
-## Java - Data Structure - Binary Search Tree
-
 - Java에서 Binary Search Tree를 구현했습니다.
 - `removeNode`가 꽤나 어려웠는데, 지워야 하는 node의 자식 노드가 2개인지 1개인지(왼쪽인지, 오른쪽인지) 없는지에 따라서 과정이 조금씩 달라집니다. 뿐만 아니라, 이 때, 지운 다음 parentNode도 살아남아 있어야 하기 때문에 이게 좀 성가셨죠. 함수 내부에서 값을 `currentNode`, `parentNode`를 2개 return할 수 있으면 해결되는 문제이기는 했는데요, java에서는 이걸 하기가 어려우니까요.
 - 그래서, 하나는 reference로 바로 적용해버리고, 하나는 return으로 처리해서 해결했습니다.

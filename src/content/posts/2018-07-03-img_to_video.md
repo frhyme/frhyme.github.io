@@ -1,7 +1,7 @@
 ---
 title: "python에서 이미지 비디오로 변환하기."
 date: 2018-07-03
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "jupyter-notebook", "HTML", "video", "image", "matplotlib", "np.array"]
 permalink: "/python-lib/img_to_video/"
 ---

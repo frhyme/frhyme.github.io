@@ -6,8 +6,6 @@ tags: ["vim", "vimrc", "vi", "hammerspoon", "lua"]
 permalink: "/vim/vim09_type_kor_on_command_mode/"
 ---
 
-## vim - normal mode에서 자동으로 한영전환하기
-
 - vim은 영어 자판을 사용해야하지만, 한국인들은 영어 자판과 한글 자판을 오가면서 사용하죠. 따라서, 영어인줄 알고 무의식중에 vim command를 사용했으나, 한글 자판이었다면, 한글로 입력된 부분을 지우고, 다시 영어 자판을 입력해줘야 하는 번거로움이 발생합니다.
 - [github - 한국어 키보드로 VIM 사용하기](https://github.com/johngrib/simple_vim_guide/blob/master/md/with_korean.md)에 해당 내용을 극복하기 위한 다양한 방법이 작성되어 있는데요. 
 - 처음에는 langmap이라는 plugin을 사용하려고 했으나, 다음을 통해 현재 vim version에 langmap 이 설치되어 있는지 확인해봤으나, 설치되어 있지 않더군요. 해당 플러그인을 설치하려면 vim 자체를 다시 compile해야 하는데요, 이건 너무 큰 일이 되죠.

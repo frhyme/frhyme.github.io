@@ -22,7 +22,7 @@ permalink: "/python-libs/py_cvxpy_lp/"
 - 그리고, 일단은 그냥 "파이썬 내에서 최적화 문제를 풀기 위한 라이브러리"라고 생각하셔도 문제가 없습니다. 
 - 일단은 설치부터 해보죠. 
 
-```
+```bash
 pip install cvxpy
 ```
 

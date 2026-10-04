@@ -15,7 +15,7 @@ permalink: "/javascript/node_js_install/"
 
 - 일단 node.js를 설치해보자. 나는 Mac OS를 사용하므로 brew를 사용해서 설치한다. 
 
-```
+```bash
 brew install node
 ```
 

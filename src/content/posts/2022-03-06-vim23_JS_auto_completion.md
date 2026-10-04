@@ -6,8 +6,6 @@ tags: ["vim", "javascript", "vi", "tsserver", "autocompletion"]
 permalink: "/vim/vim23_JS_auto_completion/"
 ---
 
-## Vim - Javascript - Auto completion 설정
-
 - Vim에서 javascript auto completion을 사용하려면, [github - neoclide -coc-tsserver](https://github.com/neoclide/coc-tsserver)를 설치해야 하는 걸로 보입니다.
 - coc-tsserver를 사용하려면, [coc.nvim](https://github.com/neoclide/coc.nvim)도 설치되어야 합니다.
 - vim에서 아래 명령어를 실행하여, coc-tsserver를 설치해줍니다.

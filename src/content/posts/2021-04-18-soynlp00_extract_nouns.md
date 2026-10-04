@@ -1,12 +1,10 @@
 ---
 title: "soynlp - extract nouns"
 date: 2021-04-18
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "konlpy", "nlp", "soynlp"]
 permalink: "/python-lib/soynlp00_extract_nouns/"
 ---
-
-## soynlp - extract nouns
 
 - konlpy의 경우 이미 학습된 데이터를 바탕으로 일반적인 단어들에서 명사를 뽑아내 줍니다. 그러나, 비교적 새로운 단어들인 "파이썬", "파이콘"과 사람이름과 같은 고유명사들에 대해서는 명사를 잘 추출해주지 못하죠. 따라서, 만약 내가 가지고 있는 corpus가 특이한 vocabulary를 가지고 있다면, konlpy를 사용해도 효과적인 결과를 얻지 못합니다.
 - 이를 해결한 라이브러리가 바로 [soynlp](https://github.com/lovit/soynlp)입니다. 현재 제가 가지고 있는 corpus를 새로 학습해서 전체 corpus에서 명사를 가져오는 형태죠. 알고리즘은 대략, 낯선 단어라고 해도 "는"과 같은 조사 앞에 있는 단어라면 명사일 확률이 높다, 라는 측면으로 접근해서 bipartite한 Left - Right Graph를 만들어서 처리해주는 것 같습니다. 다만, 문장에서 명사를 각각 가져올 수 있는 것이 아니라, 전체 corpus에서 명사를 모두 뽑아서 가져와야 한다는 것이 konlpy와 비교했을 때 조금은 다른 점이죠.

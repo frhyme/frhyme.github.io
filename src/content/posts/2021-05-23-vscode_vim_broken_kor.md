@@ -1,12 +1,10 @@
 ---
 title: "vscode - vim - 한글 삭제시 글자가 2개 지워지는 현상"
 date: 2021-05-23
-category: "vscode"
+category: "vs-code"
 tags: ["vscode", "vim", "markdown"]
 permalink: "/vscode/vscode_vim_broken_kor/"
 ---
-
-## vscode - vim - 한글 삭제시 글자가 2개 지워지는 현상  
 
 - vs code에서 vim 을 설치했는데, 한글을 지울 때 덜 지워지고 남아 있는 경우가 있습니다. 이게 설명하기는 조금 어려운데, 모음 하나만 남아 있는 경우 지웠는데 지워지지 않아서 한 번 더 지우면 지워진다거나, 하는 등의 문제가 있다는 이야기죠. 
 - 조금 더 구체적으로 설명하자면, "각ㅇ"를 타이핑한 상황에서 backspace를 누르면, "ㅇ" 남습니다. 글자가 자음 하나 있는 상황에서 backspace를 눌렀는데, "ㅇ"가 지워지는 것이 아니라, "각"이 지워지는 이상한 상황이 발생하는 것이죠.

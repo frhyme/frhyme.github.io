@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Sha
 permalink: "/english_study_by_movie_script/Shawshank_Redemption_Trivia00/"
 ---
 
-## 영화 쇼생크탈출에 대한 사소한 사실들 - 0편
-
 - 영화 `<쇼생크 탈출>`에서 모건 프리먼에 관한 몇 가지 사실을 정리해봤습니다. 
 - 레드 역을 맡게 된 이유, 촬영장에서 있었던 일들, 가석방 서류에 붙어 있던 젊었을 때의 레드 사진 그리고, 레드가 교도소에 오게 된  이유에 대해서 IMDB에서 가져와서 정리하였습니다.
 

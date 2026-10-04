@@ -6,8 +6,6 @@ tags: ["html", "table"]
 permalink: "/html/html_table_merging_cells/"
 ---
 
-## html - table 병합하기
-
 - `rowspan`, `colspan` property를 사용해서 table의 cell의 병합해서 사용할 수 있습니다.
 
 ```html

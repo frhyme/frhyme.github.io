@@ -6,8 +6,6 @@ tags: ["java", "programming", "class", "Interface", "Abstract", "OOP"]
 permalink: "/java/java_class_abstractClass_vs_interface/"
 ---
 
-## Java - Abstract Class vs. Interface
-
 - Abstract Class와 Interface는 "아직 구현되지 않은, 추상화된 클래스"를 의미합니다. 직접 Object로 구현되어질 수는 없고, 이후 얘네를 다른 Class가 상속받아서 virtual method들을 새롭게 정의해줘야 하죠. 이렇게 쓰고 보면 이 둘이 매우 비슷해 보이죠.
 - 그렇다면, 이 둘의 차이점은 무엇일까요?(물론 Java의 버전이 업데이트 됨에 따라서 조금씩 달라지기는 합니다만).
   - Abstract Class의 경우는 abstract method와 non-abstract method를 모두 가질 수 있습니다. 즉, 몇몇 method들은 abstract class에서 정의되어서 사용할 수 있다는 이야기죠.

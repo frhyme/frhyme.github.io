@@ -6,8 +6,6 @@ tags: ["js", "javascript"]
 permalink: "/javascript/javascript10_template_literal/"
 ---
 
-## Javascript - Template literal
-
 - Javascript에서 String을 parameterized String형식으로 출력하는 방식은 다음과 같으며, 이를 Template Literal이라 한다.
 
 ```javascript

@@ -6,8 +6,6 @@ tags: ["C", "programming", "C_programming", "time", "clock_t"]
 permalink: "/c_programming/c_prgrmng10_calc_clock/"
 ---
 
-## C - 연산 시간을 계산해봅시다 
-
 - C에서 특정 코드의 연산 시간을 계산하려면, `time.h`에 있는 함수 `clock()`를 사용하면 됩니다.
 
 ```c

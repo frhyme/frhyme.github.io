@@ -6,8 +6,6 @@ tags: ["betweeness-centrality", "sna"]
 permalink: "/paper-summary/paper-summary-betweeness_interdisciplinary/"
 ---
 
-## Betweenness centrality as an indicator of the interdisciplinarity of scientific journals
-
 - [Journal of the Association for Information Science and Technology](https://en.wikipedia.org/wiki/Journal_of_the_Association_for_Information_Science_and_Technology)에 2007년에 실린 논문, impact factor는 2.7 정도
 - [논문 전문은 여기에서 볼 수 있음](https://onlinelibrary.wiley.com/doi/full/10.1002/asi.20614)
 

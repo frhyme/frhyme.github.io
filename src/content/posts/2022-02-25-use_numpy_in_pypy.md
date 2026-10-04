@@ -6,8 +6,6 @@ tags: ["pypy", "compiler", "python", "programming", "RPython", "macOS"]
 permalink: "/pypy/use_numpy_in_pypy/"
 ---
 
-## pypy에서 numpy 설치 및 사용하기
-
 - python으로 개발하고 `python3`로 돌리는데 속도가 너무 느리더군요. 그래서 `pypy3`를 사용해서 돌리려고 보니, 다음과 같은 오류와 함께 돌아가지 않았습니다.
 - python에는 `numpy`가 설치되어 있지만, pypy에는 `numpy`가 설치되어 있지 않기 때문이죠.
 

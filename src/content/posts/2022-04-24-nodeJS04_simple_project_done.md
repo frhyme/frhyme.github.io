@@ -6,8 +6,6 @@ tags: ["nodeJS", "javascript", "web"]
 permalink: "/javascript/nodeJS04_simple_project_done/"
 ---
 
-## nodeJS - 간단한 프로젝트 완성
-
 - [생활코딩 - node.js](https://opentutorials.org/course/3332)를 보고 아주 간단한 nodeJS 프로젝트를 만들었습니다. 디테일한 코드는 수업과 조금 차이 나겠지만, 기능적으로는 겅의 동일합니다.
 - 매번 블로그에 코드를 따로 넣다보니, 이후 유지보수도 어렵고, 개발한 코드 커밋도 깃헙에서 없어서 그냥 앞으로는 뭘 개발하던 다 깃헙에 올리는 방향으로 진행할까 합니다. 그래야 나중에 제가 참고하기도 펴한더라고요. [github - frhyme - nodeJS](https://github.com/frhyme/nodeJS_study)에 해당 코드들이 있습니다.
 - 다음에는 개인적으로 nodeJS를 사용해서 간단한 사이트를 좀 만들어보려고 합니다. 바빠서 올해 말까지는 만들 수 있을지 모르겠네요.

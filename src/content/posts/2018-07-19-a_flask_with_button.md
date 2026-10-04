@@ -1,7 +1,7 @@
 ---
 title: "flask) form 형식을 통해 값을 입력받고 뭔가 출력하기"
 date: 2018-07-19
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "flask", "html", "http", "form"]
 permalink: "/python-lib/a_flask_with_button/"
 ---
@@ -53,7 +53,6 @@ permalink: "/python-lib/a_flask_with_button/"
     - `<button>`: button의 경우는 form 태그 내에 있는 모든 값을 한번에 넘겨줍니다. 즉 form 태그 내에 몇 개의 `<input>` 태그들이 있다고 해도, `name`에서 충돌이 발생하지만 않는다면 다 넘어가서 서버에서 처리할 수 있다는 말입니다. 
 
 ```html 
-{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -96,7 +95,6 @@ permalink: "/python-lib/a_flask_with_button/"
     </div>
 </body>
 </html>
-{% endraw %}
 ```
 
 ## submit_test.py 작성하기 
@@ -218,7 +216,6 @@ if __name__ == '__main__':
 ### submit_test.html 
 
 ```html 
-{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -290,7 +287,6 @@ if __name__ == '__main__':
     </div>
 </body>
 </html>
-{% endraw %}
 ```
 
 ### submit_test.py

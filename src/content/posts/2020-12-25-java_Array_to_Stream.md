@@ -6,8 +6,6 @@ tags: ["java", "programming", "stream", "Array"]
 permalink: "/java/java_Array_to_Stream/"
 ---
 
-## Java - Array to Stream
-
 - Array를 Stream으로 변경하려면, `Array.Stream`을 사용하면 됩니다.
 - 가령 Scanner를 사용해서 입력받은 String을 split하여 바로 Stream으로 처리하려면 다음처럼 하면 되죠.
 

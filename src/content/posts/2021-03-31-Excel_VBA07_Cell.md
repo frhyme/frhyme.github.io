@@ -6,8 +6,6 @@ tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic"]
 permalink: "/ms_office/Excel_VBA07_Cell/"
 ---
 
-## Excel - VBA - Cell
-
 - 보통 VBA는 Excel의 Cell들과 상호작용하려고 사용합니다. 본 글에서는 Cell의 사용법에 대해서 정리합니다.
 
 ## Get, Update Cell Value

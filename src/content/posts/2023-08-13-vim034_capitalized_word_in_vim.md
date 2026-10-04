@@ -6,8 +6,6 @@ tags: ["vi", "vim"]
 permalink: "/vim/vim034_capitalized_word_in_vim/"
 ---
 
-## vim034 - capitalized word in vim
-
 - To capitalize text, follow these steps:
 1. Press `v` to enter visual mode.
 1. Select the text you want to capitalize by highlighting it.

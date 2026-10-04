@@ -6,8 +6,6 @@ tags: ["C", "programming", "C_programming", "c", "stack", "fibonacci", "recursio
 permalink: "/c_programming/c_prgrmng08_fibonacci_by_stack/"
 ---
 
-## C programming - stack 을 사용하여 fibonacci 수열을 구현했습니다 
-
 - 보통 fibonacci는 recursion으로 많이 푸는데, stack을 사용해서 풀 수도 있죠.
 - 아래에서 stack을 구현하여 fibonacci를 구현해봤습니다.
 

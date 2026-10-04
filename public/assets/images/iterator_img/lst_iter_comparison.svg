@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" style="background-color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <rect x="60" y="30" width="550" height="320" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  <line x1="60" y1="350" x2="610" y2="350" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="50" y="354" font-size="12" fill="#666666" text-anchor="end">0</text>
+  <line x1="60" y1="286" x2="610" y2="286" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="50" y="290" font-size="12" fill="#666666" text-anchor="end">20</text>
+  <line x1="60" y1="222" x2="610" y2="222" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="50" y="226" font-size="12" fill="#666666" text-anchor="end">40</text>
+  <line x1="60" y1="158" x2="610" y2="158" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="50" y="162" font-size="12" fill="#666666" text-anchor="end">60</text>
+  <line x1="60" y1="94" x2="610" y2="94" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="50" y="98" font-size="12" fill="#666666" text-anchor="end">80</text>
+  <line x1="60" y1="30" x2="610" y2="30" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="50" y="34" font-size="12" fill="#666666" text-anchor="end">100</text>
+  <line x1="60" y1="30" x2="60" y2="350" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="60" y="370" font-size="12" fill="#666666" text-anchor="middle">0</text>
+  <line x1="117.89473684210526" y1="30" x2="117.89473684210526" y2="350" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="117.89473684210526" y="370" font-size="12" fill="#666666" text-anchor="middle">2</text>
+  <line x1="175.78947368421052" y1="30" x2="175.78947368421052" y2="350" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="175.78947368421052" y="370" font-size="12" fill="#666666" text-anchor="middle">4</text>
+  <line x1="233.68421052631578" y1="30" x2="233.68421052631578" y2="350" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="233.68421052631578" y="370" font-size="12" fill="#666666" text-anchor="middle">6</text>
+  <line x1="291.57894736842104" y1="30" x2="291.57894736842104" y2="350" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="291.57894736842104" y="370" font-size="12" fill="#666666" text-anchor="middle">8</text>
+  <line x1="349.4736842105263" y1="30" x2="349.4736842105263" y2="350" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="349.4736842105263" y="370" font-size="12" fill="#666666" text-anchor="middle">10</text>
+  <line x1="407.36842105263156" y1="30" x2="407.36842105263156" y2="350" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="407.36842105263156" y="370" font-size="12" fill="#666666" text-anchor="middle">12</text>
+  <line x1="465.2631578947368" y1="30" x2="465.2631578947368" y2="350" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="465.2631578947368" y="370" font-size="12" fill="#666666" text-anchor="middle">14</text>
+  <line x1="523.1578947368421" y1="30" x2="523.1578947368421" y2="350" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="523.1578947368421" y="370" font-size="12" fill="#666666" text-anchor="middle">16</text>
+  <line x1="581.0526315789473" y1="30" x2="581.0526315789473" y2="350" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="581.0526315789473" y="370" font-size="12" fill="#666666" text-anchor="middle">18</text>
+  <polyline fill="none" stroke="#1f77b4" stroke-width="2.5" points="60.00,349.95 88.95,350.00 117.89,350.00 146.84,349.98 175.79,349.99 204.74,349.98 233.68,349.96 262.63,349.92 291.58,349.85 320.53,349.71 349.47,349.42 378.42,348.84 407.37,347.65 436.32,345.25 465.26,340.61 494.21,328.42 523.16,311.59 552.11,269.21 581.05,190.98 610.00,38.38" />
+  <polyline fill="none" stroke="#ff7f0e" stroke-width="2.5" stroke-dasharray="6,3" points="60.00,349.95 88.95,350.00 117.89,350.00 146.84,349.98 175.79,349.99 204.74,349.98 233.68,349.96 262.63,349.90 291.58,349.85 320.53,349.69 349.47,349.40 378.42,348.80 407.37,347.57 436.32,345.15 465.26,340.30 494.21,328.34 523.16,310.14 552.11,269.63 581.05,187.17 610.00,30.74" />
+  <circle cx="60.00" cy="349.95" r="3" fill="#1f77b4" />
+  <circle cx="60.00" cy="349.95" r="3" fill="#ff7f0e" />
+  <circle cx="88.95" cy="350.00" r="3" fill="#1f77b4" />
+  <circle cx="88.95" cy="350.00" r="3" fill="#ff7f0e" />
+  <circle cx="117.89" cy="350.00" r="3" fill="#1f77b4" />
+  <circle cx="117.89" cy="350.00" r="3" fill="#ff7f0e" />
+  <circle cx="146.84" cy="349.98" r="3" fill="#1f77b4" />
+  <circle cx="146.84" cy="349.98" r="3" fill="#ff7f0e" />
+  <circle cx="175.79" cy="349.99" r="3" fill="#1f77b4" />
+  <circle cx="175.79" cy="349.99" r="3" fill="#ff7f0e" />
+  <circle cx="204.74" cy="349.98" r="3" fill="#1f77b4" />
+  <circle cx="204.74" cy="349.98" r="3" fill="#ff7f0e" />
+  <circle cx="233.68" cy="349.96" r="3" fill="#1f77b4" />
+  <circle cx="233.68" cy="349.96" r="3" fill="#ff7f0e" />
+  <circle cx="262.63" cy="349.92" r="3" fill="#1f77b4" />
+  <circle cx="262.63" cy="349.90" r="3" fill="#ff7f0e" />
+  <circle cx="291.58" cy="349.85" r="3" fill="#1f77b4" />
+  <circle cx="291.58" cy="349.85" r="3" fill="#ff7f0e" />
+  <circle cx="320.53" cy="349.71" r="3" fill="#1f77b4" />
+  <circle cx="320.53" cy="349.69" r="3" fill="#ff7f0e" />
+  <circle cx="349.47" cy="349.42" r="3" fill="#1f77b4" />
+  <circle cx="349.47" cy="349.40" r="3" fill="#ff7f0e" />
+  <circle cx="378.42" cy="348.84" r="3" fill="#1f77b4" />
+  <circle cx="378.42" cy="348.80" r="3" fill="#ff7f0e" />
+  <circle cx="407.37" cy="347.65" r="3" fill="#1f77b4" />
+  <circle cx="407.37" cy="347.57" r="3" fill="#ff7f0e" />
+  <circle cx="436.32" cy="345.25" r="3" fill="#1f77b4" />
+  <circle cx="436.32" cy="345.15" r="3" fill="#ff7f0e" />
+  <circle cx="465.26" cy="340.61" r="3" fill="#1f77b4" />
+  <circle cx="465.26" cy="340.30" r="3" fill="#ff7f0e" />
+  <circle cx="494.21" cy="328.42" r="3" fill="#1f77b4" />
+  <circle cx="494.21" cy="328.34" r="3" fill="#ff7f0e" />
+  <circle cx="523.16" cy="311.59" r="3" fill="#1f77b4" />
+  <circle cx="523.16" cy="310.14" r="3" fill="#ff7f0e" />
+  <circle cx="552.11" cy="269.21" r="3" fill="#1f77b4" />
+  <circle cx="552.11" cy="269.63" r="3" fill="#ff7f0e" />
+  <circle cx="581.05" cy="190.98" r="3" fill="#1f77b4" />
+  <circle cx="581.05" cy="187.17" r="3" fill="#ff7f0e" />
+  <circle cx="610.00" cy="38.38" r="3" fill="#1f77b4" />
+  <circle cx="610.00" cy="30.74" r="3" fill="#ff7f0e" />
+  <rect x="85" y="55" width="110" height="55" fill="#ffffff" stroke="#dddddd" rx="4"/>
+  <line x1="97" y1="73" x2="122" y2="73" stroke="#1f77b4" stroke-width="2.5"/>
+  <text x="130" y="77" font-size="13" fill="#333333">lst_t</text>
+  <line x1="97" y1="93" x2="122" y2="93" stroke="#ff7f0e" stroke-width="2.5" stroke-dasharray="6,3"/>
+  <text x="130" y="97" font-size="13" fill="#333333">iter_t</text>
+</svg>

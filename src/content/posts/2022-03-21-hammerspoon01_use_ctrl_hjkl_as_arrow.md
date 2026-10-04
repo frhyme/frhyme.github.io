@@ -6,8 +6,6 @@ tags: ["macOS", "hammerspoon", "lua", "vi", "vim"]
 permalink: "/hammerspoon/hammerspoon01_use_ctrl_hjkl_as_arrow/"
 ---
 
-## macOS - hammerspoon01 - ctrl + hjkl 화살표 사용하기
-
 - 키보드 위에서 손이 움직이는 영역을 줄이기 위해, 화살표를 ctrl + hjkl을 이용해서 사용하려고 합니다.
 - [Hammerspoon](https://www.hammerspoon.org/go/)을 이용합니다.
 

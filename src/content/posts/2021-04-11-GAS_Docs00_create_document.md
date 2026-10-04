@@ -6,8 +6,6 @@ tags: ["google", "javascript", "Google_Docs", "macro", "GoogleAppsScript"]
 permalink: "/google/GAS_Docs00_create_document/"
 ---
 
-## Google Apps Script - Docs - Create Document
-
 - Google Apps Script를 사용하여 새로운 문서를 만들고, 문서 내에 글을 작성(Append)하는 방법을 정리하였습니다.
 
 ```js

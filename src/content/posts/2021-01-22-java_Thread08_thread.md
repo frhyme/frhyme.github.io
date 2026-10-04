@@ -6,8 +6,6 @@ tags: ["java", "thread", "programming", "parallelism", "concurrency", "MultiThre
 permalink: "/java/java_Thread08_thread/"
 ---
 
-## Java - Thread - Executors
-
 - Thread가 몇 개 되지 않을때는 관리가 어렵지 않지만, 가령 100개가 넘어간다면 관리가 배우 어려워지죠.
 - Java의 `ExecutorService`는 multi-thread를 효과적으로 관리할 수 있도록 해줍니다. Task Queue를 만들어, 실행되어야 하는 Task를 대기하게 하고, Resource(Thread) Pool을 만들어서, 각 Task를 실행해줍니다.
 - 그림으로 그린다면 대략 다음과 같죠.

@@ -1,7 +1,7 @@
 ---
 title: "matplotlib와 flask 연결하기"
 date: 2018-07-17
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "flask", "matplotlib", "image", "numpy", "io", "html", "decorator"]
 permalink: "/python-lib/flask_matplotlib/"
 ---
@@ -78,7 +78,6 @@ import matplotlib.pyplot as plt
     - `url_for`를 사용해서 `src`를 설정해줍니다. 
 
 ```html
-{% raw %}
 <html>
   <head>
     <title>random normal - {{mean}}, {{var}} </title>
@@ -91,16 +90,13 @@ import matplotlib.pyplot as plt
       width={{width}}, height={{height}}>
   </body>
 </html>
-{% endraw %}
 ```
 
 - 우리는 그림을  `/fig/<int:mean>_<int:var>` 를 통해 그림을 전달받는다. 
 - 이 때 아래와 같은 방식으로 img tag에 해당 url을 넣어서 처리해준다. 
 
 ```html 
-{% raw %}
 <img src="{{ url_for('fig', mean=mean, var=var) }}" alt="Image Placeholder" width={{width}}, height={{height}}>
-{% endraw %}
 ```
 
 ## render_template 
@@ -249,7 +245,6 @@ if __name__ == '__main__':
 ### random_gen.html 
 
 ```html 
-{% raw %}
 <html>
   <head>
     <title>random normal - {{mean}}, {{var}} </title>
@@ -262,5 +257,4 @@ if __name__ == '__main__':
       width={{width}}, height={{height}}>
   </body>
 </html>
-{% endraw %}
 ```

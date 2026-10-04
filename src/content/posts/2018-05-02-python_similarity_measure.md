@@ -1,7 +1,7 @@
 ---
 title: "distance를 비교해봅시다."
 date: 2018-05-02
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "metric", "distance"]
 permalink: "/python-lib scipy/python_similarity_measure/"
 ---

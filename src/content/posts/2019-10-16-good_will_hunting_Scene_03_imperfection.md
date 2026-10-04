@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Goo
 permalink: "/english_study_by_movie_script/good_will_hunting_Scene_03_imperfection/"
 ---
 
-## 영화 Good Will Hunting 명대사 - imperfection
-
 - 영화 <굿윌헌팅>을 좋아합니다. 물론 워낙 유명한 영화고, 이 영화를 보신 분들은 대부분 좋아하시겠지만요.
 - 사실, 사람들에게는 힐링영화라고 많이 알려져 있지만 생각보다 폭력적인 장면들이 많습니다. 
 

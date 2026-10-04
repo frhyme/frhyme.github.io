@@ -6,8 +6,6 @@ tags: ["vim", "vi", "linebreak"]
 permalink: "/vim/vim033_linebreak_showbreak/"
 ---
 
-## vim033 - linebreak showbreak
-
 - When writing text using Vim, some words can be broken in the middle of the word due to the word's position at the end of the line, causing the line length to exceed and split the word. Unlike many modern editors that automatically move the entire word to the next line for better readability, Vim doesn't do this by default. However, it's possible to achieve this behavior by modifying the configuration in the `vimrc` file.
 
 - The solution is relatively simple and involves two settings:

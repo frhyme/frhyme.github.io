@@ -6,8 +6,6 @@ tags: ["python", "programming", "django", "web", "template", "tag"]
 permalink: "/python/django_template01_include_html/"
 ---
 
-## python - Django - include html
-
 - html 문서 내에 다른 html 문서를 집어 넣을 수 있습니다.
 - 가령 아래와 같은 `table1.html`를 다른 문서에 집어넣고 싶다고 하겠습니다.
 
@@ -30,7 +28,7 @@ permalink: "/python/django_template01_include_html/"
 </table>
 ```
 
-- 이 때는 아래 처럼 `{% raw %}{% include html_file_path %}{% endraw %}`를 사용해서 넣어주면 됩니다.
+- 이 때는 아래 처럼 `{% include html_file_path %}`를 사용해서 넣어주면 됩니다.
 
 ```html
 <!DOCTYPE html>
@@ -42,7 +40,7 @@ permalink: "/python/django_template01_include_html/"
     <!--
     - 외부에 정의된 ./table1.html을 현재 html 문서에 넣어줍니다.
     -->
-    {% raw %}{% include "./table1.html" %}{% endraw %}
+    {% include "./table1.html" %}
   </body>
 </html>
 ```

@@ -6,8 +6,6 @@ tags: ["macOS", "pkg", "pkgutil", "dmg"]
 permalink: "/macos/macOS_pkg_uninstall/"
 ---
 
-## macOS - pkg 로 설치한 프로그램 삭제하기
-
 ## things to write
 
 - apple에서 pkg로 설치한 프로그램들을 삭제하고 싶을 때가 있습니다. 이 프로그램들을 삭제하려면 어떻게 해야 하는지를 정리합니다.

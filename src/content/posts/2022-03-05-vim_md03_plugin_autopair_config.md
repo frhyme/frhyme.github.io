@@ -6,8 +6,6 @@ tags: ["vim", "markdown", "plugin", "autopair"]
 permalink: "/vim/vim_md03_plugin_autopair_config/"
 ---
 
-## Vim - plugin AutoPair Config 수정
-
 - 저는 markdown을 포함한 대부분의 문서 파일을 vim을 이용해서 편집합니다.
 - 이 때 괄호 등을 쓸 때가 많은데요. 매번 bracket을 양쪽 다 입력하는 것이 꽤나 번거로운 일이므로, [github - auto-pairs](https://github.com/jiangmiao/auto-pairs)라는 플러그인을 사용하고 있습니다.
 - 다만, filetype별로 활성화가 필요한 자동완성 pair 가 다르기 때문에, 다음 내용을 `.vimrc` 파일 내에 작성하여 filetype 별로 활성화되는 auto pair를 다르게 설정해줍니다.

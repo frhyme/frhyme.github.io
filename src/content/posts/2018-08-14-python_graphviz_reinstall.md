@@ -1,7 +1,7 @@
 ---
 title: "graphviz 다시 설치하기"
 date: 2018-08-14
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "graphviz", "python-lib", "macOS"]
 permalink: "/python-lib/python_graphviz_reinstall/"
 ---

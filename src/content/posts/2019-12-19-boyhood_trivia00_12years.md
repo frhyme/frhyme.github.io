@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/boyhood_trivia00_12years/"
 ---
 
-## 영화 Boyhood의 원래 제목은 12년이었다
-
 - 누가 저에게 가장 좋아하는 영화가 묻는다면, 제가 영화 `<보이후드>`를 언급하면 좋겠습니다. 
 - '언급합니다'가 아니라, '언급하면 좋겠다'라고 대답하는 것은, 사실 세상에 좋은 영화가 너무도 많기 때문이죠. 가끔은 `<굿윌헌팅>` 또 가끔은 `<쇼생크 탈출>` 또 가끔은 뭐 `<샤이닝>` 같은 영화도 있구요. 
 - 아무튼, 오늘은 `<보이후드>`의 영화 제목이 원래는 다른 제목이었다는, 사소한 사실을 가지고 왔습니다.

@@ -6,8 +6,6 @@ tags: ["java", "final", "variable", "lambdaExpression"]
 permalink: "/java/java_variable_used_in_lambda_expressiond/"
 ---
 
-## Java - Variable used in lambda expression should be final or effectively final
-
 - 가령 다음과 같은 코드가 있을 때, "Variable used in lambda expression should be final or effectively final"라는 오류가 발생합니다.
 - "lambda expression에서 사용되는 변수는 final이거나, effecitvely final이어야 한다"라는 말이죠.
   - **final**: 변수를 선언할 때 `final`도 함께 선언되어 한번 값이 지정되면 바뀔 수 없는 것을 말함.

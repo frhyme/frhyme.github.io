@@ -6,8 +6,6 @@ tags: ["java", "programming", "class", "OOP", "inheritance", "polymorphism"]
 permalink: "/java/java_class_nested_class/"
 ---
 
-## Java - Class - nested Class
-
 - 당연하지만, java의 class 내에도 class를 정의할 수 있습니다. static nested class, local inner class로 정의할 수 있죠.
   - static nested class
   - local inner class 

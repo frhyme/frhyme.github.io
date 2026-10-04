@@ -6,8 +6,6 @@ tags: ["java", "String", "equality", "comparison", "programming"]
 permalink: "/java/java_bad_habit_string_use_equality/"
 ---
 
-## Java - String 값을 비교할 때는 equals method를 사용해야 함
-
 - 두 변수를 비교할 때는 두 가지 방법이 있습니다.
   - `reference equality`: 두 변수의 주소 값이 같은지 확인하는 방법
   - `value equality`: 두 변수의 값이 같은지를 확인하는 방법.

@@ -6,8 +6,6 @@ tags: ["R", "R_programming", "ggplot"]
 permalink: "/r_programming/R_ggplot_with_title/"
 ---
 
-## R - ggplot with title
-
 - R에서 ggplot을 이용해서 그림을 그리고 title을 넣어주는 코드입니다.
 
 ```R

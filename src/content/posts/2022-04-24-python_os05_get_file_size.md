@@ -6,8 +6,6 @@ tags: ["python", "os", "file", "python_lib"]
 permalink: "/python/python_os05_get_file_size/"
 ---
 
-## python - os - get file size
-
 - python에서 file size 확인하는 방법은 다음과 같습니다.
 
 ```python

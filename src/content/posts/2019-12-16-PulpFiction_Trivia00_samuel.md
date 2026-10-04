@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Pul
 permalink: "/english_study_by_movie_script/PulpFiction_Trivia00_samuel/"
 ---
 
-## 영화 Pulp Fiction - 사무엘 잭슨은 원래 캐스팅되지 못할 뻔 했다
-
 > Quentin Tarantino wrote the role of Jules specifically for Samuel L. Jackson, however, it was almost given to Paul Calderon after a great audition. 
 
 - 쿠엔틴 타란티노는 극본에서 쥴스 역을 쓸 때, 이미, 사무엘 L. 잭슨을 염두에 두고 썼다. 그러나, Paul Calderon이 오디션을 아주 잘 봤기 때문에, 그 역할이 거의 Paul Calderon에게 주어질 뻔했다. 

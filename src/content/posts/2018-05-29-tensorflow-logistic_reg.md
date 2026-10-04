@@ -6,8 +6,6 @@ tags: ["python", "tensorflow", "python-lib", "logistic-regression"]
 permalink: "/machine-learning/tensorflow-logistic_reg/"
 ---
 
-## logistic regression
-
 - 머신러닝은 단순하게, '모델(hypothesis)'을 세우고, 이 모델이 맞는지/아닌지 평가하는 cost function을 통해 변수를 조절하는 것을 말합니다. 
 - classification의 경우도, '잘 예측할 만한 모델'을 세우고, 이 모델을 평가하는 'cost'를 세우고 변수를 최적화하면서 진행합니다. 이 포스트에서 배울 `logistic regression`은 classification에서 많이 썼던, 초기의 테크닉을 말합니다. 
 

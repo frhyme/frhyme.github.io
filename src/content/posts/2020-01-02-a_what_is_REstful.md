@@ -1,8 +1,8 @@
 ---
-title: "category:"
+title: "RESTful이란 무엇인가"
 date: 2020-01-02
 category: "others"
-tags: []
+tags: ["web", "api"]
 permalink: "/others/a_what_is_REstful/"
 ---
 

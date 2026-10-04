@@ -6,8 +6,6 @@ tags: ["bibliometric", "keyword"]
 permalink: "/paper-summary/paper-summary-a_domain_keyword_analysis/"
 ---
 
-## A domain keyword analysis approach extending Term Frequency-Keyword Active Index with Google Word2Vec model
-
 - scientometric에 2018년 초에 실린 논문. 
 - [링크](https://link.springer.com/article/10.1007/s11192-017-2574-9)
 

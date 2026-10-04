@@ -6,8 +6,6 @@ tags: ["java", "programming", "time"]
 permalink: "/java/java_LocalDateTime/"
 ---
 
-## Java - time package 
-
 - 
 
 ### time.LocalDate

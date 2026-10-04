@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Goo
 permalink: "/english_study_by_movie_script/good_will_hunting_Scene_04_you_owe_it_to_me/"
 ---
 
-## 영화 Good Will Hunting 명대사 - You owe it to me
-
 - 영화 주인공인 맷 데이먼과 주인공 친구로 나오는 벤 에플렉은 실제로 매우 친한 친구로 알려져 있고, 이 극본 또한 둘이 함께 쓴 것으로 알려져 있죠. 
 - 영화 속에서 윌(맷 데이먼)과 처키(벤 애플렉)는 동네 친구입니다. 아침이면, 처키가 윌의 집으로 오고, 같이 공사장에서 일도 하고, 맥주도 먹고 담배도 피우고 싸움도 같이 하고 야구도 같이 보고 아 근데 사실 얘네 되게 친하기는 한데 행동하는 것만 보면 동네 불량배들이기는 합니다.
 - 아무튼, 이 장면은 처키가 처음으로 윌에게 조언을 하는 장면이죠. 

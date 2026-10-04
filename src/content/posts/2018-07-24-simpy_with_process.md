@@ -1,7 +1,7 @@
 ---
 title: "simpy의 process interaction을 알아보자."
 date: 2018-07-24
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "simpy", "simulation", "process", "generator", "exception", "numpy"]
 permalink: "/python-lib/simpy_with_process/"
 ---

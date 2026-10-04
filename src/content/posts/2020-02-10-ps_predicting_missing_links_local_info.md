@@ -6,8 +6,6 @@ tags: ["paper-summary", "network", "link", "prediction", "local-structure"]
 permalink: "/paper-summary/ps_predicting_missing_links_local_info/"
 ---
 
-## Predicting Missing Links via Local Information 
-
 - link prediction을 위한 지표인 Resource Allocation Index는 2009년에 나온 [Predicting Missing Links via Local Information](https://arxiv.org/pdf/0901.0553.pdf)라는 논문에서 제시되었습니다. 
 해당 논문의 초록은 다음과 같습니다. 
 

@@ -6,8 +6,6 @@ tags: ["javascript", "url", "html", "http", "nodejs"]
 permalink: "/javascript/javascript13_url_parsing/"
 ---
 
-## Javascript - url parsing
-
 - Javascript에서 http 모듈을 사용하여 http request를 처리할 수 있는 웹 서버를 하나 만들고, request에서 url 부분만을 쪼개어 parsing하는 코드를 다음과 같이 정리하였습니다.
 
 ```javascript

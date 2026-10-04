@@ -6,8 +6,6 @@ tags: ["python", "programming", "django", "web", "backend"]
 permalink: "/python/django01_django_MVC/"
 ---
 
-## python - Django - Start Django Project
-
 - Django, Spring, ROR(Ruby On Rails)는 모두 MVC(Model - View - Controller)라는 패턴을 따릅니다. MVC는 특정 언어에 국한된 것이 아니라, 소프트웨어 설계적인 접근인데 각각 다음과 같은 의미를 가지죠.
   - M(Model): DB와 같은 데이터적인 부분을 칭하며
   - V(View): 사용자에게 보여지는 부분, 아주 간단하게는 html 문서를 말하는 것이고

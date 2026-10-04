@@ -6,8 +6,6 @@ tags: ["jQuery", "javascript", "html", "web"]
 permalink: "/jquery/jQuery00_basic/"
 ---
 
-## jQuery - basic
-
 - jQuery는 아주 활발하게 사용되는 Javascript library로, 보통 DOM manipulation, AJAX 호출 등을 간편하게 처리할 수 있도록 해주는 라이브러리입니다.
 - 기본적으로는 다음의 형태로 사용되죠. `selector`를 정하고, `action()`을 연쇄적으로 적용해줍니다.
 

@@ -1,7 +1,7 @@
 ---
 title: "VScode - 용량 큰 파일 열기 위해 memory 크기 조정하기"
 date: 2020-05-28
-category: "VScode"
+category: "vs-code"
 tags: ["VScode"]
 permalink: "/vscode/vscode_MemoryLimit/"
 ---

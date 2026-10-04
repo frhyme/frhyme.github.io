@@ -1,7 +1,7 @@
 ---
 title: "list 섞기."
 date: 2018-08-10
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "list", "shuffle", "random", "numpy"]
 permalink: "/python-lib/np_shuffle/"
 ---

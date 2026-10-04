@@ -1,7 +1,7 @@
 ---
 title: "svg는 무엇이고, 또 파이썬에서 어떻게 읽을 수 있나요?"
 date: 2018-06-29
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "image", "svg", "png", "matplotlib"]
 permalink: "/python-lib/python_a_what_is_svg/"
 ---

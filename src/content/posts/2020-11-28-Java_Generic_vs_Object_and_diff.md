@@ -6,8 +6,6 @@ tags: ["java", "programming", "GenericProgramming"]
 permalink: "/java/Java_Generic_vs_Object_and_diff/"
 ---
 
-## Java - Generic Programming vs Object
-
 - 프로그래밍할 때, 타입을 고정하지 않고 Class를 추상화하여 표현할 수 있죠. 이게 불가능하다면 알고리즘의 작동방식이 동일하더라도 Integer, String등 각각의 데이터 타입에 따라서 여러 Class를 정의해두어야 합니다. 단지 데이터 타입만 다를 뿐인데, 비슷한 코드를 여러 번 작성하는 것은 매우 비효율적이죠.
 - 따라서, Generic Programming을 사용해서 이런 중복성을 해결할 수 있습니다만, 사실 그냥 Object를 이용해서 해도 됩니다. 
 - 다음 두 챕터에서 각각 두 방법을 정리해볼게요.

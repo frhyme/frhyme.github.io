@@ -1,12 +1,10 @@
 ---
 title: "python-lib) functools - reduce"
 date: 2020-08-05
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "functools", "functional-programming", "iterator"]
 permalink: "/python-lib/python_lib_functools_reduce/"
 ---
-
-## functools.reduce
 
 - `functools.reduce`는 원래 python2에는 built-in으로 있었으나, 지금은 없어진 함수입니다. 
 - 동작하는 방식이 약간 특이한데, 만약 우리에게 `[A, B, C]`라는 리스트가 있다면, A와 B에 대해서 특정 연산을 해주고, 그 결과를 다시 C와 해주고, 이런 식으로 연쇄적으로 처리해주는 함수죠. 다음 그림을 보면 대충 어떤 식으로 돌아가는지 알 수 있습니다.

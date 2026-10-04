@@ -6,8 +6,6 @@ tags: ["betweenness-centrality", "sna", "network-analysis"]
 permalink: "/paper-summary/paper-summary-betweeness_in_author_network/"
 ---
 
-## Betweenness centrality as a driver of preferential attachment in the evolution of research collaboration networks
-
 - journal of informetris(impact factor: 3.4 정도)에 2012년 중순에 실린 논문. 
 - [논문 전문은 여기서 볼 수 있음](https://www.sciencedirect.com/science/article/pii/S175115771200003X)
 

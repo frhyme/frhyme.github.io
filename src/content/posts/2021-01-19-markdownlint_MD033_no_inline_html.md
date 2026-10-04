@@ -6,8 +6,6 @@ tags: ["markdown", "markdownlint", "tab"]
 permalink: "/markdownlint/markdownlint_MD033_no_inline_html/"
 ---
 
-## MarkdownLint - MD033 - no inline html
-
 - MD033은 markdown document 내에 html 요소를 그대로 집어넣는 경우 발생합니다.
 
 > This rule is triggered whenever raw HTML is used in a markdown document

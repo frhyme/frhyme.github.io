@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Soc
 permalink: "/english_study_by_movie_script/SocialNetwork_Scene02_attention/"
 ---
 
-## 영화 Social Network 명장면 - 나에게 집중하고 있나요
-
 - 오늘은 영화 `<소셜 네트워크>`에서 주커버그가 계속 집중을 안 하고 있을 때, 집중 좀 해달라고 상대방 변호사가 말하니까, **'나는 그럴 의무까지는 없는 걸로 아는데? 그리고 나 지금 다른 중요한 일 있어서 바빠'**라고 응수하는 장면을 가져왔습니다. 실제로 주커버그가 저렇게 행동했는지는 잘 모르겠지만요. 물론 사람들은 영화에서는 그래도 쿨-한 찌질이로 나왔지만, 실제로는 그냥 그정도는 아니라고 하더군요.
 
 ## Scene - Do I have your full attention

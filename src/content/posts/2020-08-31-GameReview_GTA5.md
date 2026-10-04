@@ -1,7 +1,7 @@
 ---
 title: "Game Review - Grand Theft Auto 5"
 date: 2020-08-31
-category: "Game"
+category: "game"
 tags: ["Game", "macOS", "GTA", "GrandTheftAuto5"]
 permalink: "/game/GameReview_GTA5/"
 ---

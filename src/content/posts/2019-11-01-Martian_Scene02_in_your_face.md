@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Mar
 permalink: "/english_study_by_movie_script/Martian_Scene02_in_your_face/"
 ---
 
-## 영화 Martian 명장면 - 봤습니까 닐 암스트롱
-
 - 사실 영화 <마션>에서 마크 와트니는 말이 매우 많습니다. 뭐 저라고 해도 혼자 화성에 남겨지면 그렇게 말이 많을 것 같기는 합니다만.
 - 사실 혼자 그 외로운 곳에 있는데 혼자서라도 떠들지 않으면 그 시간을 버티기가 쉽지 않긴 하겠죠. 뭐, 그 중얼중얼거리고 혼자 화성에서 리얼리티 프로그램을 찍는 것처럼 행동하는 것이 이 영화의 재미이기도 하지만요.
 - 오늘은 짧은 문장을 가져왔습니다. 화성을 자기가 식민지화했다고, 주장하는 제국주의자 "마크 와트니".

@@ -2,11 +2,9 @@
 title: "Getis Ord G"
 date: 2021-01-27
 category: "others"
-tags: []
+tags: ["tech"]
 permalink: "/others/getis_ord_G/"
 ---
-
-## Getis Ord G
 
 - 
 

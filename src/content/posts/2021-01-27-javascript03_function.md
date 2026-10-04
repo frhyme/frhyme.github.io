@@ -6,8 +6,6 @@ tags: ["javascript", "function"]
 permalink: "/javascript/javascript03_function/"
 ---
 
-## javascript - function
-
 - javascript에서 function을 정의하는 방법을 정리합니다.
 
 ```javascript

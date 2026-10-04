@@ -6,8 +6,6 @@ tags: ["scala", "programming", "function"]
 permalink: "/scala/scala02_function/"
 ---
 
-## scala - Function 
-
 - 간단히 다음처럼 `plus3`라는 function을 만들었습니다. 특이한 것이 java에는 `return`이 따로 없습니다.
 - `functionName(inParamName: inParamType): outParamType`의 형태로 input type, output type을 뒤쪽에 `:`과 함께 작성해줍니다.
 

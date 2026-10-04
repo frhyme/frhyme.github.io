@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Goo
 permalink: "/english_study_by_movie_script/good_will_hunting_Trivia_00_math/"
 ---
 
-## 영화 Good Will Hunting Trivia - 원래는 수학자가 아니라 물리학자
-
 - 영화 `<굿윌헌팅>`을 찾아보다가, 기존 설정에서는 윌이 '수학자'가 아니라, '물리학자'였다는 것을 알게 되었습니다. 그리고, 왜 그래야만 했는지, 그로 인해 어떤 장점이 있었는지도 함께 설명하였습니다.
 
 ## Trivia from IMDB

@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/About_Time_Trivia00/"
 ---
 
-## 영화 About Time에 대한 사소한 사실들 - 0편
-
 - 영화 `<어바웃 타임>`에 대한 사소한 사실들을 정리하였습니다. 
 
 1. 레이첼 맥아담스는 시간여행자의 상대 역할만 4번 하였다는 것. 

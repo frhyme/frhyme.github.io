@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "LAL
 permalink: "/english_study_by_movie_script/LALALAND_Trivia00_piano/"
 ---
 
-## 영화 LALALAND 에서 라이언 고슬링은 피아노를 직접 쳤습니다
-
 - 사람마다 다르겠지만, 저는 제가 알고 있는 저의 가장 편한 모습이 있고 그 모습으로 존재할 때가 제일 좋습니다. 
 - 그런데 배우는, 본인의 편한 모습에 안주하고 있으면 '너는 늘 같은 연기밖에 할 줄 몰라'라는 식으로 비판을 받게 되죠. 즉, 배우는 어쩜 자신의 safety zone이 없고 늘 굴러가야 하는 돌 같은 것일지도 몰라요. 
 - 늘 다른 사람이 된다는 것, 막상 다른 사람이 되고 나면 새로운 기분이 들 수도 있지만, 그 지점까지 가는 것에는 아주 많은 시간이 걸리니까요. 

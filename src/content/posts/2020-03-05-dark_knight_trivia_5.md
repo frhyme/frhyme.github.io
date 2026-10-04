@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "dar
 permalink: "/english_study_by_movie_script/dark_knight_trivia_5/"
 ---
 
-## 영화 Dark Knight에 관한 사소한 사실들(trivia) - 5편
-
 - 오늘은 영화 <다크 나이트>에 관한 사실 1가지와, 거짓말 2가지를 가져왔습니다. 그 내용들을 요약하자면, 다음과 같습니다. 
   1. 히스 레저는 그가 말할 때마다 떨어지는 '보철'때문에 실제로 입술을 핥는 습관이 있었다. 
   2. <다크 나이트>의 극작가들은 이미 "조커의 기원"에 대해 이야기하지 않기로 합의를 보았다.

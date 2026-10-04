@@ -2,7 +2,7 @@
 title: "GCP = Google Cloud Billing Migratino"
 date: 2021-04-08
 category: "others"
-tags: []
+tags: ["tech"]
 permalink: "/others/google_cloud_billing_migration_what/"
 ---
 

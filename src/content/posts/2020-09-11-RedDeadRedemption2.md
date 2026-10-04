@@ -1,7 +1,7 @@
 ---
 title: "Game Review - Red Dead Redemption 2"
 date: 2020-09-11
-category: "Game"
+category: "game"
 tags: ["Game", "macOS", "RedDeadRedemption"]
 permalink: "/game/RedDeadRedemption2/"
 ---

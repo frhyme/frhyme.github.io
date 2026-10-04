@@ -6,8 +6,6 @@ tags: ["database", "sql", "nosql", "mongodb", "macOS", "brew"]
 permalink: "/mongodb/mongoDB02_compass/"
 ---
 
-## mongoDB - Compass
-
 - mongoDB를 shell로 접속해서 사용해도 문제 없지만, GUI도 한번 설치해보기로 합니다.
 - [mongoDB - download - compass](https://www.mongodb.com/try/download/compass)에서 다운받습니다. 저는 다음 Spec으로 다운받습니다.
   - Version: 1.26.0(Stable)

@@ -6,8 +6,6 @@ tags: ["graph", "query", "database"]
 permalink: "/database/others_GQL/"
 ---
 
-## GQL: Graph Query Language
-
 ### GQL is not GraphQL
 
 - 우선 [GraphQL](https://graphql.org)과는 다릅니다. GraphQL은 페이스북에서 "API간에 통신(데이터 교환)을 원활하게 하기 위해서 정의한 언어"라고 말할 수 있습니다. 
@@ -55,14 +53,14 @@ permalink: "/database/others_GQL/"
 - Person이라는 개체를 가지는 모든 노드를 리턴
     - p는 제가 임의로 배정한 변수명입니다 마치 sql에서 `as s1`으로 변수명을 지정해주는것과 같죠. 이 변수가 이후에 다른 조건문들에서 쓰일 수 있으므로 만들어주는 것 같아요. 만약 하나밖에 없다면 굳이 만들 필요는 없겠죠. 
 
-```
+```sql
 MATCH (p:Person)
 RETURN p
 ```
 
 - Person이라는 개체들 중에서 name attribute가 "Jennifer"인 개체를 찾고, 리턴. 
 
-```
+```sql
 MATCH (jenn:Person {name: 'Jennifer'})
 RETURN jenn
 ```
@@ -70,7 +68,7 @@ RETURN jenn
 - 개체와 개체간의 관계는 `-[:relation]->`으로 표현됩니다. 
     - 끝에 리턴할 때 company만 리턴한다는 것은 결국 회사만 보여지도록 한다는 것이겠쬬. 
 
-```
+```sql
 MATCH (:Person {name: 'Jennifer'})-[:WORKS_FOR]->(company:Company)
 RETURN company
 ```

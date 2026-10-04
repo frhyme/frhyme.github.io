@@ -6,8 +6,6 @@ tags: ["java", "thread", "programming", "parallelism", "concurrency", "MultiThre
 permalink: "/java/java_Thread05_ThreadSynchronization/"
 ---
 
-## Java - Thread - Thread Synchronization
-
 - Java에서 Thread 간 동기화(Synchronization)을 하는 방법을 정리합니다.
   1. `Critial Section`: Thread들에 DB, variable, object, file 와 같은 shared resource에 접근하는 코드를 말합니다. 이 부분은 동시에 여러 thread가 접근하도록 하면 안되니까요.
   2. `Monitor`: object에 대해 concurrent access가 가능하도록 하는 mechanism을 말합니다. 일단은 '독점권한'이라고 생각하면 되는데, threadA가 monitor를 획득한 상황이라면, 다른 thread들은 monitor를 획득할 수 없죠. threadA가 monitor를 release할 때까지, 사용할 수 없죠.

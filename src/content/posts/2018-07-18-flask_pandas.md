@@ -1,7 +1,7 @@
 ---
 title: "flask와 pandas를 연결해봅시다."
 date: 2018-07-18
-category: "python-lib"
+category: "python-libs"
 tags: ["flask", "pandas", "python", "python-lib", "html", "excel", "dataframe", "css"]
 permalink: "/python-lib/flask_pandas/"
 ---

@@ -6,8 +6,6 @@ tags: ["java", "class", "programming", "abstract"]
 permalink: "/java/java_abstract_class/"
 ---
 
-## Java - Abstract class
-
 - 필요에 따라서, 프로그램의 모든 class가 상속받는 baseClass를 정의할 때가 있습니다. 음, 이건 일종의 디자인 패턴인데요. 가령 RPG게임 같은 것에서 모든 캐릭터가 HP, MP를 가지고 또 비슷한 method 이름들을 가진다면 모든 character class가 상속받는 Abstract baseClass를 만들어서 코드를 중복으로 쓸 필요 없도록 할 수 있겠죠. 
 - 그리고 동시에, baseClass는 Object로서 존재할 수는 없고, 그저 다른 class들이 상속받는 용도로만 사용한다고 할 때, 이럴 대는 abstract class로 설계해서 만들 수 있죠. 
 - abstract class는 다음처럼, class 앞에 `abstract`만을 붙임으로써 선언 및 정의해줄 수 있습니다.

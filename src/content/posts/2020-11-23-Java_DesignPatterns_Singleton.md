@@ -6,8 +6,6 @@ tags: ["DesignPattern", "Singleton", "java", "programming", "class"]
 permalink: "/designpattern/Java_DesignPatterns_Singleton/"
 ---
 
-## Design Pattern - Singleton
-
 - 개발을 하다 보면 딱 하나의 Class Instance만 정의해서 사용해야 할 때가 있습니다. 이런 종류의 설계를 Singleton이라고 하죠. 
   - Singleton은 딱 하나의 Class Instance만 생성하도록 제한됩니다.
   - 그리고 어플리케이션에서 전역변수로 선언됩니다. 정확히 말하면 global access가 가능하다는 얘기죠.

@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Her
 permalink: "/english_study_by_movie_script/Her_Scene00_lesser_version/"
 ---
 
-## 영화 Her 명대사 - Lesser Version
-
 - 사실 저는 요즈음 약간의 허무함을 느끼면서 살고 있습니다.
 - 사실 앞으로 다가올 삶들이 그다지 기대되지 않아요. 그냥 앞으로 살아온 삶들과 크게 다르지 않을 것 같습니다. 앞으로도 제가 느낄 즐거움이 있고 새로움들이 있겠지만, 글쎄요, "이전에 경험하지 못했던"이 아닌, "이미 경험했던 것과 비슷한데 조금 덜한"정도의 즐거움들만 있는 것이 아닐까요. 
 - 2013년에 개봉한 영화 `<Her>`에서도 비슷한 대사가 있습니다(한국에서는 "그녀"라고 개봉했죠). 

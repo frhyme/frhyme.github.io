@@ -1,7 +1,7 @@
 ---
 title: "python에서 genetic algorithm 사용하기"
 date: 2018-09-19
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-libs", "genetic-algorithm", "optimization", "numpy"]
 permalink: "/python-lib/python_genetic_algorithm_in_python/"
 ---

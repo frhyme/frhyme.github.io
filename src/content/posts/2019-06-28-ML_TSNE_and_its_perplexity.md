@@ -1,7 +1,7 @@
 ---
 title: "t-SNE와 perplexity"
 date: 2019-06-28
-category: "machine-learing"
+category: "machine-learning"
 tags: ["tsne", "machine-learning", "dimensionlaity-reduction", "perplexity", "parameter-tuning"]
 permalink: "/machine-learing/ML_TSNE_and_its_perplexity/"
 ---

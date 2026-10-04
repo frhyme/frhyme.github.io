@@ -6,8 +6,6 @@ tags: ["build", "gradle", "java", "maven", "programming"]
 permalink: "/others/Gradle02_build_gradle/"
 ---
 
-## Gradle - build.gradle 살펴보기
-
 - `build.gradle` 파일을 매우 간단하게 설명합니다.
 
 ```groovy

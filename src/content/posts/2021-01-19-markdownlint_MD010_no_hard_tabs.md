@@ -6,8 +6,6 @@ tags: ["markdown", "markdownlint", "tab"]
 permalink: "/markdownlint/markdownlint_MD010_no_hard_tabs/"
 ---
 
-## MarkdownLint - MD010 - no hard tabs
-
 - MD010은 다음을 의미합니다. 해석하면, "들여쓰기(Indentaion)을 할때, space 대신 hard tab을 사용하게 되면, 발생하는 rule입니다. 해결하려면, hard tab을 space로 변환하세요". 
 
 > This rule is triggered by any lines that contain hard tab characters instead of using spaces for indentation. To fix this, replace any hard tab characters with spaces instead.

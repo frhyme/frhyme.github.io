@@ -6,8 +6,6 @@ tags: ["python", "programming", "django", "backend", "server", "form", "GET", "P
 permalink: "/python/django05_submit_GET_POST/"
 ---
 
-## python - Django - submit by GET, POST
-
 - 사용자가 html 문서의 `form` tag로부터 submit한 값을 컨트롤러가 전달받아서 처리해주는 작업을 정리합니다.
 
 ### template with form submit
@@ -18,14 +16,14 @@ permalink: "/python/django05_submit_GET_POST/"
 
 ```html
 <h3> Submit by POST </h3>
-<form action="/submitResult" method="post">{% raw %}{% csrf_token %}{% endraw %}
+<form action="/submitResult" method="post">{% csrf_token %}
     <label>param1</label>
     <input name="param1Name">
     <button type="submit">Submit</button>
 </form>
 
 <h3> Submit by GET </h3>
-<form action="/submitResult" method="get">{% raw %}{% csrf_token %}{% endraw %}
+<form action="/submitResult" method="get">{% csrf_token %}
     <label>param2</label>
     <input name="param2Name">
     <button type="submit">Submit</button>

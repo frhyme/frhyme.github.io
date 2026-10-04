@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Los
 permalink: "/english_study_by_movie_script/Lost_In_Translation_Trivia01/"
 ---
 
-## 영화 "사랑도 통역이 되나요"에 관한 사소한 사실들 - 1편
-
 - 영화 `<사랑도 통역이 되나요>`에 대한 사소한 이야기들을 정리하였습니다.
 - 그리고, 이 영화는 2003년에 나온 영화이므로, 스포일러로부터 자유롭지만, 이 글의 끝에는 이 영화의 결말에 대한 몇 가지 사실이 함께 포함되어 있습니다. 
 - 이 내용은 모두 IMDB에 작성된 `<사랑도 통역이 되나요>`의 Trivia를 번역하여 작성되었습니다.

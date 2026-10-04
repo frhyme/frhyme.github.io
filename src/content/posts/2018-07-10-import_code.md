@@ -76,7 +76,7 @@ import import_from_another_file
 import_from_another_file.test_func()
 ```
 
-```
+```python
 import code in another file
 ```
 

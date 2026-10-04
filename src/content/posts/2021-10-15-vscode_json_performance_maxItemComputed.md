@@ -1,12 +1,10 @@
 ---
 title: "VScode - json file 옮길 때 속도 저하"
 date: 2021-10-15
-category: "vscode"
+category: "vs-code"
 tags: ["vscode", "json"]
 permalink: "/vscode/vscode_json_performance_maxItemComputed/"
 ---
-
-## VScode - json file 옮길 때 속도 저하
 
 - VScode에서 data를 다룰 때, 중간 값을 json file로 저장하곤 합니다. 코드는 대략 다음의 형태가 되죠.
   - `ensure_ascii=False`는 json파일을 열었을 때, 아스키코드로 보이는 것이 아니라, 한글일 경우 한글로 그대로 보여주는 것을 위해서 세팅한 것이고.

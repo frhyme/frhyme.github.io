@@ -6,8 +6,6 @@ tags: ["nodeJS", "javascript"]
 permalink: "/nodejs/nodeJS05_main_code_like_python_name_main/"
 ---
 
-## nodeJS - 직접 실행될 때와, library로 require되는 경우 구분하기
-
 - python에서 code를 작성할 때, 각 file별로 다음과 같은 두 가지 경우가 발생할 수 있습니다. 가령 `a_lib.py` 라는 file을 작성한다고 한다면.
 
 1. 직접 실행되는 경우: `a_lib.py`가 `python a_lib.py`의 형태로 직접 실행되는 경우

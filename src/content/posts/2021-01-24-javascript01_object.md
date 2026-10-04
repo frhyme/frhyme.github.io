@@ -6,8 +6,6 @@ tags: ["javascript", "object", "programming"]
 permalink: "/javascript/javascript01_object/"
 ---
 
-## Javascript - Object
-
 - javascript의 Object를 간단히 정리하였습니다.
 
 ```javascript

@@ -2,11 +2,9 @@
 title: "what is structural holes?"
 date: 2020-08-24
 category: "others"
-tags: []
+tags: ["tech"]
 permalink: "/others/structural_hole_wikipedia/"
 ---
-
-## what is structural holes? 
 
 - [structural holes](https://en.wikipedia.org/wiki/Structural_holes)은 social network 연구 분야에서 주로 쓰이는 개념이며, "두 객체(individual)간의 정보 접근에 대한 차이"로 이해될 수 있다.
 - 현실계에서 일어나는 대부분의 사회적 구조(social structure)는 강한 연결(strong connection)으로 구성된 밀집된 구조(dense cluster)로 특성화됩니다. 따라서, 보통 이 클러스터별로 비슷한 생각, 정보 등을 공유하게 되죠. 

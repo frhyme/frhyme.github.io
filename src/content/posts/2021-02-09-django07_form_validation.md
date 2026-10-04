@@ -6,8 +6,6 @@ tags: ["python", "programming", "django", "backend", "server", "form"]
 permalink: "/python/django07_form_validation/"
 ---
 
-## python - Django - Form
-
 - 보통 html에서 form 요소를 작성할 때는 다음과 같이 작성합니다.
 - 간단한 input의 경우는 다음처럼 작성해도 아무 문제가 없습니다만, input이 여러 개이거나, 잘못된 input에 대해서 백엔드에서 프론트엔드로 메세지를 전달해주기 위해서도, front-end단보다 backend에서 처리해주는 것이 더 좋을 때가 있죠.
 
@@ -131,13 +129,13 @@ urlpatterns = [
 DjangoProj1/App1/templates/App1/child.html
 -->
 <form action="/submitResult" method="post">
-    {% raw %}{% csrf_token %}{% endraw %}
+    {% csrf_token %}
     <table>
         <!--
         - MainController에서 context로 전달받은
         StudentCardForm를 table의 형태로 변환하여 보여줍니다.
         -->
-        {% raw %}{{ StudentCardForm.as_table }}{% endraw %}
+        {{ StudentCardForm.as_table }}
     </table>
     <button type="submit">Submit</button>
 </form>
@@ -191,10 +189,10 @@ DjangoProj1/App1/templates/App1/submitResult.html
     </head>
     <body>
         <h2>Submit Result</h2>
-        <p>student: {% raw %}{{student}}{% endraw %}</p>
-        <p>id: {% raw %}{{ student.id }}{% endraw %}</p>
-        <p>name: {% raw %}{{student.name}}{% endraw %}</p>
-        <p>email: {% raw %}{{student.email}}{% endraw %}</p>
+        <p>student: {{student}}</p>
+        <p>id: {{ student.id }}</p>
+        <p>name: {{student.name}}</p>
+        <p>email: {{student.email}}</p>
     </body>
 </html>
 ```

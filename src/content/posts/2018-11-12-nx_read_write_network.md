@@ -36,7 +36,7 @@ print(f"nodes: {G_loaded.nodes(data=True)}")
 print(f"edges: {G_loaded.edges(data=True)}")
 ```
 
-```
+```bash
 graph [
   node [
     id 0

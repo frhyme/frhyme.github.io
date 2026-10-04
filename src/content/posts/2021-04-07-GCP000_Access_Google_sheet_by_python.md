@@ -6,8 +6,6 @@ tags: ["google", "gcp", "GoogleSheet", "sheet", "python", "GoogleDrive"]
 permalink: "/googlecloudplatform/GCP000_Access_Google_sheet_by_python/"
 ---
 
-## GCP - Google Sheet API를 사용하여 python에서 데이터 긁어오기
-
 - Google Sheet API를 사용하여 python에서 Google Sheet의 데이터를 가져오는 방법을 정리합니다.
 - 물론 [gspread](https://gspread.readthedocs.io/en/latest/)를 사용해서 가져올 수도 있고 이 라이브러리가 github에서 Star가 5k가 넘고 보면 해당 라이브러리가 잘 유지되고 있는 것 같기는 하지만, 직접 접근하는 방법을 좀 정리해보고 싶었습니다.
 - [developers - google - python - quickstart](https://developers.google.com/sheets/api/quickstart/python)를 참고하여 작성하였습니다.

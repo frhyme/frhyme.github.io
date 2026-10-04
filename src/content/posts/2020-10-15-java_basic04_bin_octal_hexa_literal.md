@@ -1,7 +1,7 @@
 ---
 title: "Java - 2진수, 8진수, 16진수"
 date: 2020-10-15
-category: "Java"
+category: "java"
 tags: ["java", "programming"]
 permalink: "/java/java_basic04_bin_octal_hexa_literal/"
 ---

@@ -6,8 +6,6 @@ tags: ["vi", "vim", "markdown", "hyperlink", "netrw"]
 permalink: "/vim/vim30_markdown_hyperlink/"
 ---
 
-## vim - markdown - hyperlink
-
 - 저는 markdown을 vim을 이용해서 편집합니다. 따라서 mouse를 거의 사용하지 않는데요.
 - markdown 에서 다음의 형태로 reference를 넣고, 만약 해당 경로의 페이지에 방문하고 싶을 경우 일반적인 IDE에서는 마우스 클릭만으로 충분합니다. 그러나, vim에서는 마우스가 먹지 않죠.
 

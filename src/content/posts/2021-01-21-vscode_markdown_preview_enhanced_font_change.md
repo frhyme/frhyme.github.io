@@ -1,12 +1,10 @@
 ---
 title: "VScode - Markdown Preview Enhanced - Font Change"
 date: 2021-01-21
-category: "VScode"
+category: "vs-code"
 tags: ["VScode", "markdown", "markdownPreview", "extension", "font"]
 permalink: "/vscode/vscode_markdown_preview_enhanced_font_change/"
 ---
-
-## VScode - Markdown Preview Enhanced - Font Change
 
 - [VScode: markdown-preview-enhanced](https://github.com/shd101wyy/markdown-preview-enhanced)의 font를 바꿀 때는 `setting.json`이 아니라, markdown-preview-enhanced에 대한 `.css`파일을 바꾸어줘야 합니다.
 - `command + shift + P`를 눌러서 command Pallete로 가서 "markdown preview enhanced"를 치고, "Markdown Preview Enhanced: Customize CSS"로 갑니다.

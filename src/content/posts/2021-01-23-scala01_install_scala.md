@@ -6,8 +6,6 @@ tags: ["scala", "programming", "install", "brew", "intellij", "REPL"]
 permalink: "/scala/scala01_install_scala/"
 ---
 
-## Scala - Install scala
-
 - 그냥 `brew install scala`를 사용해서 설치하면 됩니다.
 
 ```plaintext

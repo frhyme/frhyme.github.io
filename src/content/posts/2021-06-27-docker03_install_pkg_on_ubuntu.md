@@ -6,8 +6,6 @@ tags: ["docker", "container", "image"]
 permalink: "/docker/docker03_install_pkg_on_ubuntu/"
 ---
 
-## docker - container 내 필요한 패키지 설치  
-
 - docker에서 만든 ubuntu container 내에, 제가 사용하는 프로그램들을 설치해줍니다.
 
 ### install vim, zsh

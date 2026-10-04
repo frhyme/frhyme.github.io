@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/boyhood_Scene_02_no_bumper/"
 ---
 
-## 영화 Boyhood 명장면 - 인생에는 범퍼가 없어
-
 - 영화 `<보이후드>`에서 에단 호크는 애들과 볼링장에 갑니다. 그리고 자꾸 볼링공이 옆으로 빠지는 아들이, 범퍼가 필요하다고 하니까, 다음과 같이 말하죠. 아주 냉정한 아버지입니다. 
 - 사실, 어릴 때 보조바퀴를 달고 자전거를 타다가, 보조바퀴를 떼고 타기 시작하면 굉장히 어색하게 느껴지죠. 한국에서는 오히려 이 비유가 더 적합할 것 같아요. 
 

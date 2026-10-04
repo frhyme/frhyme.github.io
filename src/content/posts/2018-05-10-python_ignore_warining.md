@@ -1,7 +1,7 @@
 ---
 title: "python에서 warning 무시하기"
 date: 2018-05-10
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "jupyter-notebook"]
 permalink: "/python-lib/python_ignore_warining/"
 ---

@@ -1,12 +1,10 @@
 ---
 title: "matplotlib - scatter 수에 따른 변화"
 date: 2022-04-24
-category: "matplotlib"
+category: "python-libs"
 tags: ["plt", "matplotlib", "scatter", "python", "figure"]
 permalink: "/matplotlib/plt_scatter_stress_test/"
 ---
-
-## matplotlib - scatter 수에 따른 변화
 
 - scatter 에 point를 그릴 때, point의 수가 늘어남에 따라서 그리고 저장하는데 얼마나 시간이 걸리는지 간단하게 테스트 해봤습니다.
 - '.svg' file로 처리했을 경우, 1,000,000 개를 그릴 때, file은 100MBd, 시간은 60초 이상 소요됩니다.

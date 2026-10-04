@@ -6,8 +6,6 @@ tags: ["markdown", "MarkdownPreview", "vim", "mkdp", "vi"]
 permalink: "/markdown/markdown_preview_in_vim/"
 ---
 
-## Vim - Markdown Preview
-
 - 저는 모든 문서 작업을 vim에서 하려고 노력합니다. 과거에는 VScode를 사용했는데요, 어떻게 하면 최대한 마우스를 쓰지 않고 작업을 할 수 있을까 고민하다 보니 현재 vim으로 넘어왔습니다. 마우스를 쓰지 않기 때문에, 꽤 번거로운 일이 생기는 경우들도 있기는 하고, 특히 front end 작업을 해야할 때, 좀 번잡스러운 일들이 있기는 하지만, Vim 에서만 모든 작업을 하는 건 묘한 쾌감 같은게 있는 것 같습니다.
 - 아무튼, vim에서 markdown file을 작성하다 보면 해당 markdown file이 제대로 작성되어 있는 것인지 확신이 들지 않을 때가 있습니다. VScode에서는 바로 markdown preview extension을 사용해서 확인하면 되었는데요.
 - vim에서는 [github - iamcco - markdown preview](https://github.com/iamcco/markdown-preview.nvim) 을 사용하여 해당 마크다운을 브라우저에 띄울 수 있습니다.

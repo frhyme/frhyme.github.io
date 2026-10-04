@@ -6,8 +6,6 @@ tags: ["java", "thread", "programming", "parallelism", "concurrency", "MultiThre
 permalink: "/java/java_Thread01_run_start/"
 ---
 
-## Java - MultiThreading - Make Thread
-
 - 이제 직접 Thread를 만들어보겠습니다.
 - Thread를 만드는데는 다음과 같은 두 가지 방법이 있습니다. 둘다 내부에서 `run()`을 Override 해줘야 하는 것은 동일하죠.
   1. Thread를 extends하여 새로운 Thread를 만들기

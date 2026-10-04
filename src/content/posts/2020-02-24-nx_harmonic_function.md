@@ -1,7 +1,7 @@
 ---
 title: "networkx - node classification - harmonic function"
 date: 2020-02-24
-category: "networkx"
+category: "python-libs"
 tags: ["paper-summary", "node-classification", "harmonic-function", "similarity"]
 permalink: "/networkx/nx_harmonic_function/"
 ---

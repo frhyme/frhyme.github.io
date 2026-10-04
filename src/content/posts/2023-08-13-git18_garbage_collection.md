@@ -6,8 +6,6 @@ tags: ["git", "pack", "GC"]
 permalink: "/git/git18_garbage_collection/"
 ---
 
-## git17 - garbage collection
-
 - When you interact with Git on your computer, you might come across the following message. This message indicates that in order to enhance the performance of Git, it's recommended to remove unnecessary files, unreachable commits, or branches. This action is analogous to performing a "garbage collection," where Git tidies up and optimizes its internal storage for better efficiency.
 
 ```log

@@ -6,8 +6,6 @@ tags: ["java", "programming", "string", "regex"]
 permalink: "/java/java_regex03_shorthand/"
 ---
 
-## Java - Regular Expression - Shorthand 
-
 - Regex를 만들 때 가령 숫자만 포함되어야 하는 경우 `[1-9]`처럼 정할 수도 있지만, `\d`와 같이 더 짧게 처리할 수 있는 방법도 있습니다. 그리고 대문자는 `not`을 의미하죠. 그리고, 정규표현식을 만들 때는 `\`를 1개 쓰는게 아니라 `\\`를 써야 인식됩니다.
   - `\d`: 모든 숫자를 말합니다. `[0-9]`와 동일합니다.
     - `\D`: 숫자가 아닌 것, 을 말합니다. `[^0-9]`와 동일합니다.

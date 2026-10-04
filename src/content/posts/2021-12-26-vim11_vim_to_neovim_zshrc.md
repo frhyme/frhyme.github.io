@@ -6,8 +6,6 @@ tags: ["vim", "vi", "neovim", "nvim", "zsh", "zsrhc"]
 permalink: "/vim/vim11_vim_to_neovim_zshrc/"
 ---
 
-## vim11 - default vi - vim to neovim
-
 - neovim을 설치하고, default vim을 neovim으로 변경합니다.
 - `.zshrc`에 다음 명령어를 설치해줍니다.
 

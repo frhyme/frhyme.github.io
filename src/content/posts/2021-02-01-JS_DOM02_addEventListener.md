@@ -6,8 +6,6 @@ tags: ["javascript", "programming", "selector", "DOM", "event"]
 permalink: "/javascript/JS_DOM02_addEventListener/"
 ---
 
-## Javascript - addEventListener method
-
 - html의 특정 요소에 특정한 event(ex: 마우스 클릭)가 발생했을 때 특정한 동작이 수행되도록 하는 방법을 정리합니다.
 - 다음은 `element`에 마우스 클릭이 발생하면 `console.log`를 해주는 코드입니다.
 

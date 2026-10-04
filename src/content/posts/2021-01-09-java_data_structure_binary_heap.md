@@ -6,8 +6,6 @@ tags: ["java", "DataStructure", "programming", "list", "class", "Tree", "Heap"]
 permalink: "/java/java_data_structure_binary_heap/"
 ---
 
-## Java - Data Structure - Binary Heap
-
 - Java로 Binary Heap을 구현했습니다.
 - Binary Heap은 다음 조건을 만족하는 자료 구조를 말하죠. Heap은 작을수록 우선순위를 가지는 MinHeap과, 클수록 우선순위를 가지는 MaxHeap으로 나뉘는데, 여기서는 MinHeap을 기준으로 설명하겠습니다.
   - 각 node는 node의 subtree중에서 가장 작다. 즉 parent node는 모든 child node보다 값이 작다.

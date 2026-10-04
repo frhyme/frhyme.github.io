@@ -1,7 +1,7 @@
 ---
 title: "넷플릭스 영화 <버드박스> 시청자 4500만 동원했다."
 date: 2019-01-06
-category: "movie"
+category: "MovieDiary"
 tags: ["netflix", "movie", "data-science"]
 permalink: "/movie/others_netflix/"
 ---

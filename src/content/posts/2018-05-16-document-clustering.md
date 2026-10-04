@@ -1,7 +1,7 @@
 ---
 title: "document를 클러스터링해봅시당"
 date: 2018-05-16
-category: "python-lib"
+category: "python-libs"
 tags: ["python-lib", "nlp", "python", "matplotlib", "tsne", "nltk", "clustering"]
 permalink: "/python-lib/document-clustering/"
 ---

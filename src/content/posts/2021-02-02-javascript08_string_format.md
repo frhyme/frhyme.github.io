@@ -6,8 +6,6 @@ tags: ["javascript", "function", "string", "format"]
 permalink: "/javascript/javascript08_string_format/"
 ---
 
-## Javascript - String format
-
 - javascripnt에서 String 내에 변수를 위치시키는 방법을 정리합니다.
 
 ```html

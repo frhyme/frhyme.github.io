@@ -12,13 +12,11 @@ permalink: "/python-libs/jinja_use_function_in_jinja/"
 - 기본적으로는 다음과 같은 것만 가능합니다. 
 
 ```html
-{% raw %}
 <div>
     {% for a in test_lst1 %}
         {{i}}, {{a}}<br>
     {% endfor %}
 </div>
-{% endraw %}
 ```
 
 - 그런데, 필요에 따라서, `zip`, `enumerate`을 사용하고 싶을 때가 있습니다.
@@ -43,7 +41,6 @@ def test():
 - html에서는 다음처럼 그냥 모두 사용하면 됩니다.
 
 ```html
-{% raw %}
 <div>
     {% for i, a in enumerate(test_lst1) %}
         {{i}}, {{a}}
@@ -55,7 +52,6 @@ def test():
     {% endfor %}
     {{Markup(pd.DataFrame({"aa":test_lst1}).to_html())}}
 </div>
-{% endraw %}
 ```
 
 - 만약, 매번 넘기는 것이 귀찮다면, 다음처럼 세팅을 하는 것이 더 좋을 수 있구요. 

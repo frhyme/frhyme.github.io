@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "pandas", "crosstab", "DataFrame"]
 permalink: "/python-libs/pd_crosstab/"
 ---
 
-## pandas - crosstab, pivot_table
-
 - 우리가 이미 `panda.DataFrame`를 사용해서 필요한 데이터를 엑셀처럼 깔끔하게 구축해두었다고 합시다. 그런데, 이 데이터들을 혼합해서 간단한 [cross-table](https://docs.tibco.com/pub/spotfire/7.0.1/doc/html/cross/cross_what_is_a_cross_table.htm)을 만들고 싶을 때가 있죠. 
 - cross-table은 가령, 우리에게 `year`, `fruit`, `consumption`이라는 세 가지의 칼럼이 있다고 할 때, row에는 `fruit`을 column에는 `year`를 그리고, `year`와 `fruit`의 교차 셀에는 `consumption`의 평균/최소/최대/합 등의 값을 배치함으로써, 대용량의 데이터들의 summary를 볼 수 있게 하는 것을 말합니다. 
 

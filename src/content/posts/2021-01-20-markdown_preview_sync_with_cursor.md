@@ -1,12 +1,10 @@
 ---
 title: "VScode - Markdown Preview Sync with Cursor position"
 date: 2021-01-20
-category: "VScode"
+category: "vs-code"
 tags: ["VScode", "markdown", "markdownPreview", "extension", "keyBinding"]
 permalink: "/vscode/markdown_preview_sync_with_cursor/"
 ---
-
-## VScode - Markdown Preview Sync with Cursor position
 
 - 저는 Markdown을 사용해서 문서를 작성합니다. 그리고, 작성 중 문서는 markdown preview를 사용해서 확인하죠(맥에서는 `command + shift + v`).
 - 그러나, editor에서의 scroll 위치와 markdown preview에서의 scroll 위치가 불일치하는 문제가 있습니다. 가령, editor에서는 제일 아래 쪽에 cursor가 위치해 있었다면, markdown preview에서도 문서를 렌더링한 다음 제일 아래쪽을 보여줘야 하는데, 항상 제일 위쪽에 가 있습니다. 

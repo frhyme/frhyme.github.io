@@ -6,8 +6,6 @@ tags: ["web", "toast", "table", "html", "javascript"]
 permalink: "/web/toast_ui_grid00_basic/"
 ---
 
-## Toast UI Grid - Basic
-
 - [toast-ui Grid](https://nhn.github.io/tui.grid/latest/)를 사용하여 table을 그리는 방법을 정리합니다.
 - 일반적으로 html에서 table은 다음의 형태로 표현해줍니다. 뭐...이렇게 해줘도 문제는 없는데 table은 워낙 많이 쓰이는 요소이기 때문에 javascript 단에서 쉽게 쓸 수 있도록 정의해놓은 많은 라이브러리들이 있죠. 그 중 하나가, [toast-ui Grid](https://nhn.github.io/tui.grid/latest/)입니다.
 

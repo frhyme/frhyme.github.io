@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "networkx", "centrality", "closeness-centrality"
 permalink: "/python-libs/nx_information_centrality/"
 ---
 
-## Centrality - Information Centrality
-
 - [Information Centrality](https://www.centiserver.org/centrality/Current-Flow_Closeness_Centrality/) 는 "Current Flow Closeness Centrality"라고도 부릅니다. 여기서 "Current"는 "전류"를 가리키죠. 즉 "전류 흐름에 근거한 근접 중심성 분석"이라는 말이 되죠. 
 - 흔히들 네트워크를 생각할 때, 도로'망', 전력'망'과 같은 예를 많이 들게 됩니다. "전력망"은 전류의 흐름을 모델링하는 것이고, "전류의 흐름을 관리/예측하는 방법"은 이미 무수하게 존재하겠죠. 그리고, 이를 그대로, 일반 네트워크에도 적용하여, 각 노드에 대한 중심성을 어느 정도 도출할 수 있습니다. 
 - 따라서, information Centrality는 노드간의 "effective resistance"에 근거하여, closeness centrality를 가져옵니다만, 제가 보기에는 closeness centrality와 큰 차이가 있어 보이지는 않아요. correlation을 구해보면, 값이 거의 1.0이 나옵니다.

@@ -1,7 +1,7 @@
 ---
 title: "pd.DataFrame를 function으로 그룹핑하기"
 date: 2018-08-01
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "pandas", "dataframe", "groupby", "python-lib", "function"]
 permalink: "/python-lib/dataframe_groupby_func/"
 ---

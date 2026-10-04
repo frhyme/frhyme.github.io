@@ -11,7 +11,7 @@ permalink: "/python-libs/py_pulp_linear_program_basic/"
 - [pulp](https://www.coin-or.org/PuLP/index.html)라는 python에서 linear programming을 할 수 있는 라이브러리를 정리합니다. 우선, 본격적으로 최적화 문제를 풀어야 한다면, 즉, 변수들의 수가 엄청나게 많고 복잡하다면, 그냥 cplex를 사시거나 아니면 gurobi를 사서 풀어보는 것이 더 좋을 수 있습니다. 비교적 pulp의 문서화는 좀 부족하거든요. 
 - 아무튼, 일단 설치부터 합시다. 
 
-```
+```bash
 pip install pulp
 ```
 

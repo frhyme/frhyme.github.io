@@ -1,7 +1,7 @@
 ---
 title: "MS - IntelliCode 하지만 쓰지마세요"
 date: 2020-05-20
-category: "VS-CODE"
+category: "vs-code"
 tags: ["VS-CODE", "intellisense"]
 permalink: "/vs-code/_visual_studio_code_intellicode/"
 ---

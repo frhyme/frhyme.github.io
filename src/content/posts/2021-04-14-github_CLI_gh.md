@@ -6,8 +6,6 @@ tags: ["git", "github", "cli"]
 permalink: "/git/github_CLI_gh/"
 ---
 
-## github - Github CLI(gh)
-
 - 간만에 github에서 특정 repo를 `git clone`하려고 했는데, 복사해서 보니 command가 아래와 같이 좀 달라져 있더군요.
 
 ```bash

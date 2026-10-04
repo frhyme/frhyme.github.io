@@ -6,8 +6,6 @@ tags: ["lua", "function", "module", "hammerspoon"]
 permalink: "/lua/lua_programming02_read_function_from_file/"
 ---
 
-## Lua - Read function from module
-
 - 최근에는 [hammerspoon](https://www.hammerspoon.org/)을 이용해서 맥에서 불편했던 사소한 부분들을 수정하고 있습니다. 가령 ctrl + hjkl을 누르면 화살표가 되도록 한다거나, esc를 누르면 자동으로 한영 전환이 되도록 한다거나, 하는 짓들을 구현하고 있습니다. hammerspoon을 사용하려면 lua를 사용해서 코드를 작성해야 하고요.
 - 현재는 전체 코드가 `main.lua` file 내에 모두 있는데요. 코드가 길어짐에 따라서 코드가 지저분해지고 디버깅이 어려워져서 코드를 분리하려고 합니다. 네, 모듈화한다는 말이죠.
 - 따라서, lua에서는 각 함수를 어떻게 모듈로 처리하는지를 정리합니다.

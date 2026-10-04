@@ -6,8 +6,6 @@ tags: ["C", "programming", "C_programming", "c", "stack"]
 permalink: "/c_programming/c_prgrmng07_stack/"
 ---
 
-## C programming - stack 을 구현해봤습니다
-
 - 간단하게, C로 stack을 구현해 봤습니다.
 - 한방햔 linked list를 사용했고, head, last를 각각 기억합니다.
 

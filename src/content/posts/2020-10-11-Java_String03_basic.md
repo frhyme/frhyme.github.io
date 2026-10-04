@@ -1,7 +1,7 @@
 ---
 title: "Java - String 기본 method"
 date: 2020-10-11
-category: "Java"
+category: "java"
 tags: ["Java", "String", "programming"]
 permalink: "/java/Java_String03_basic/"
 ---

@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Shi
 permalink: "/english_study_by_movie_script/Shining_Trivia01_/"
 ---
 
-## 영화 Shining에 대한 사소한 사실들
-
 - 영화 `<샤이닝>`에 대한 사소한 이야기들을 정리하여 번역하였습니다. 여주인공인 '셸리 듀발'에 관한 이야기들은 이전에 정리하였으며, 본 글에서는 그 외의 사소한 이야기들을 중심으로 작성하였습니다. 
 
 1. 대니 로이드는 이 영화를 가족영화인 줄 알고 촬영했다는 것.

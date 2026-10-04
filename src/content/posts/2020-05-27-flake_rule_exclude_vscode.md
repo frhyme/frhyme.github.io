@@ -1,7 +1,7 @@
 ---
 title: "VScode에서 flake8 특정, rule 제외하기"
 date: 2020-05-27
-category: "VScode"
+category: "vs-code"
 tags: ["vscode", "flake8", "python", "python-lint"]
 permalink: "/vscode/flake_rule_exclude_vscode/"
 ---

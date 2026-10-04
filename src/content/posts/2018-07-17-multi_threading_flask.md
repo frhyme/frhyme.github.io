@@ -1,7 +1,7 @@
 ---
 title: "flask에서 multi-threading 세팅하기"
 date: 2018-07-17
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "matplotlib", "flask", "multi-threading"]
 permalink: "/python-lib/multi_threading_flask/"
 ---
@@ -12,7 +12,6 @@ permalink: "/python-lib/multi_threading_flask/"
 - 다음과 같은 html template가 있을 경우 mean, var를 다르게 한 다양한 그림을 한 웹페이지 안에 보여주게 하고 싶은 것이죠. 
 
 ```html
-{% raw %}
 <html>
   <head>
     <title>random normal - {{mean}}, {{var}} </title>
@@ -28,7 +27,6 @@ permalink: "/python-lib/multi_threading_flask/"
       width={{width}}, height={{height}}>
   </body>
 </html>
-{% endraw %}
 ```
 
 ## 그러나.
@@ -139,7 +137,6 @@ if __name__ == '__main__':
 ### random_gen.html 
 
 ```html
-{% raw %}
 <html>
   <head>
     <title>random normal - {{mean}}, {{var}} </title>
@@ -158,5 +155,4 @@ if __name__ == '__main__':
       width={{width}}, height={{height}}>
   </body>
 </html>
-{% endraw %}
 ```

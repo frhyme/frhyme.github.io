@@ -1,7 +1,7 @@
 ---
 title: "plt.xticks 조절하기"
 date: 2018-08-01
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "matplotlib", "tick"]
 permalink: "/python-lib/plt_xticks/"
 ---

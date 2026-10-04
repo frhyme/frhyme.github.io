@@ -1,7 +1,7 @@
 ---
 title: "python - serialization"
 date: 2018-08-30
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "serialization", "pickle", "json", "xml", "dictioanry", "yaml"]
 permalink: "/python-lib/python_serialization_pickle_json/"
 ---

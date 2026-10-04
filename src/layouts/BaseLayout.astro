@@ -29,6 +29,9 @@ const fullTitle = title === 'frhyme.code' ? title : `${title} : frhyme.code`;
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="canonical" href={canonicalURL} />
 
+    <!-- Pretendard Variable Font (Modern technical typography) -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-variable.dynamic.subset.min.css" />
+
     <!-- Primary Meta Tags -->
     <title>{fullTitle}</title>
     <meta name="title" content={fullTitle} />
@@ -93,10 +96,57 @@ const fullTitle = title === 'frhyme.code' ? title : `${title} : frhyme.code`;
         document.documentElement.classList.remove('dark');
       }
     </script>
+
+    <!-- JSON-LD Structured Data for Search Engines -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(
+        articleDate
+          ? {
+              '@context': 'https://schema.org',
+              '@type': 'BlogPosting',
+              headline: title,
+              description: description,
+              datePublished: articleDate,
+              url: canonicalURL.toString(),
+              author: {
+                '@type': 'Person',
+                name: 'Seunghoon Lee',
+                url: 'https://github.com/frhyme',
+              },
+              publisher: {
+                '@type': 'Organization',
+                name: 'frhyme.code',
+                url: 'https://frhyme.github.io',
+              },
+              mainEntityOfPage: {
+                '@type': 'WebPage',
+                '@id': canonicalURL.toString(),
+              },
+            }
+          : {
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: 'frhyme.code',
+              headline: 'frhyme.code',
+              description: description,
+              url: 'https://frhyme.github.io',
+              author: {
+                '@type': 'Person',
+                name: 'Seunghoon Lee',
+                url: 'https://github.com/frhyme',
+              },
+            }
+      )}
+    />
   </head>
-  <body class="flex flex-col min-h-screen">
+  <body class="flex flex-col min-h-screen relative overflow-x-hidden selection:bg-blue-500/20 selection:text-blue-900 dark:selection:text-blue-200">
+    <!-- Ambient top glow for Vercel/Linear technical aesthetic -->
+    <div class="fixed inset-0 -z-10 pointer-events-none overflow-hidden" aria-hidden="true">
+      <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] sm:w-[900px] h-[360px] bg-gradient-to-b from-blue-500/10 via-indigo-500/5 to-transparent dark:from-blue-600/15 dark:via-purple-600/5 blur-3xl opacity-70"></div>
+    </div>
     <Header />
-    <main class="flex-1 max-w-5xl mx-auto px-4 sm:px-6 w-full py-8">
+    <main class="flex-1 max-w-5xl mx-auto px-4 sm:px-6 w-full py-8 sm:py-10">
       <slot />
     </main>
     <Footer />

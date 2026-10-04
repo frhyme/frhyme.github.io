@@ -6,8 +6,6 @@ tags: ["swift", "tutorial", "enumeration"]
 permalink: "/swift/swift_07_enumerate/"
 ---
 
-## swift - chapter 7 - Enumerations
-
 - swift에 enumeration이라는 자료형이 있습니다. C에서는 보통 '열거형'이라고 번역해놓았는데, 저는 이보다, "연관된 상수 집합"이라고 번역하는 것이 더 좋다고 생각해요. 물론 C에서도 저는 enumeration을 직접 사용해본 적은 매우 적습니다만, 그건 늘 학부 수준에서의 프로젝트만 진행해서 그랬던 것이죠.
 - 구글에 검색해서 찾아보시면 많은 사람들이 왜 `enum`을 쓰는 것이 좋은지에 대해서 정리를 해두기는 했습니다. 대부분, "가독성이 좋아지고 코드의 라인 수가 줄고, 에러를 발생시킬 가능성이 준다"라는 것이 주요 이유네요.
 - 아무튼, 여기서는 swift에서의 enum과 C에서의 enum과의 차이 들에 대해서 대략적으로 정리하겠습니다.

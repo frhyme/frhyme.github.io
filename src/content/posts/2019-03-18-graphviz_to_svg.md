@@ -41,7 +41,6 @@ if __name__ == '__main__':
 - 다음처럼 Html 파일읆 만들면 끝납니다. 
 
 ```html
-{% raw %}
 <html>
     <head>
     </head>
@@ -49,7 +48,6 @@ if __name__ == '__main__':
         {{g_svg}}
     </body>
 </html>
-{% endraw %}
 ```
 
 ## wrap-up

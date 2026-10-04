@@ -6,8 +6,6 @@ tags: ["java", "programming", "class", "OOP", "TypeChecking"]
 permalink: "/java/java_covariant_retury_type/"
 ---
 
-## Java - Covariant Return Type
-
 - Covariant Return Type은 "함께 변하는 Return Type"이라고 해석할 수 있습니다.
 - 기존의 java에서는 subClass에서 Method Overriding이 발생할 때, superClass에서의 Method와 Return type은 같아야 했습니다.
 

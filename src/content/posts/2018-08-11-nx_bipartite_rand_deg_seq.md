@@ -1,7 +1,7 @@
 ---
 title: "nx에서 random bipartite graph만들기"
 date: 2018-08-11
-category: "python-lib"
+category: "python-libs"
 tags: ["networkx", "python", "python-lib", "bipartite", "random", "numpy"]
 permalink: "/python-lib/nx_bipartite_rand_deg_seq/"
 ---

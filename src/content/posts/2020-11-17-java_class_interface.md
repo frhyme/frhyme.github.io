@@ -6,8 +6,6 @@ tags: ["java", "programming", "OOP", "interface", "class"]
 permalink: "/java/java_class_interface/"
 ---
 
-## Java - Interface
-
 - C++을 공부해보신 적이 있으신 분들은 아시겠지만 보통 OOP에서는 Abstract class를 만들어 두고 이를 상속하도록 하는게 일반적이죠. Abstract Class에는 field와 Behaviour가 모두 정의됩니다.
 - 하지만, "네가 누구인지는 네가 무엇을 하는지에 의해 결정된다"를 통해 대상을 결정할 수도 있겠죠. 이렇게 대상을 모델링하기 위해 java에서는 Interface 라는 것을 사용합니다.
 - 아래 code에서 보는 것처럼 `abstract class`를 정의하는 것과 유사하죠. method의 body는 정의되어 있지 않죠.

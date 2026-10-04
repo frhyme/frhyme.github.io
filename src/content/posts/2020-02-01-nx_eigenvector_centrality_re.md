@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "networkx", "centrality", "eigenvector"]
 permalink: "/python-libs/nx_eigenvector_centrality_re/"
 ---
 
-## Centrality - Eigenvector Centrality
-
 - [Eigenvector centrality](https://en.wikipedia.org/wiki/Eigenvector_centrality)는 일반적으로 네트워크 내 노드들의 영향력을 측정하기 위해 사용되는데, 직접적인 영향력만을 반영하며, 노드간의 차이를 구별하지 않는 degree cetrality와 다르게, "중요한 노드(네트워크 내에서 영향력이 큰 노트)가 가리킬 경우, 그 영향력을 더 크게 반영한다"라는 관점을 가지고 있습니다. 
 - 마코브 체인을 배워보신 적이 있으시면 이해가 쉬우실텐데, "네트워크가 stationary distribution을 가진다고 할때(수렴한다고 할떄, 마코브체인의 n이 무한으로 가면 결국 수렴"하게 되죠. 이와 마찬가지로, 방향이 있는 네트워크에서 어떤 흐름 하나를 랜덤하게 돌리면서 새로운 path를 만들어간다고 합시다. 이때, 그 공이 유독 많이 흘러가는 곳이 있다면, 그곳은 네트워크 내에서 중요한 노드라고 할 수 있겠죠? 즉, 이러한 관점을 반영하여 만들어진 것이 eigenvector centrality를 말합니다.
 - 일반적으로 이 지표는 network 상에서 각 노드의 영향력을 측정하기 위해서 사용되는데, 만약,  `Node A`가 Eigenvector centrality가 높은 다른 노드들로부터 directed로 연결된다면, `Node A` 또한, eigen vector가 높게 됩니다. 쉽게 말하자면, "연예인들의 연예인"같은 느낌으로 이해하셔민 되죠.

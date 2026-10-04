@@ -6,8 +6,6 @@ tags: ["css", "background"]
 permalink: "/css/css_linear_gradient/"
 ---
 
-## CSS - linear gradient
-
 - css를 사용해서 html 요소의 background를 linear gradient로 설정합니다.
 - `linear-gradient(angle, color1 color_stop_line, ... , colorN color_stop_line)`으로 정의해줍니다.
   - `angle`: gradient를 그려주는 방향을 결정해줍니다. `0deg`일 경우에는 위쪽으로, `90deg`일 경우에는 오른쪽으로 그려주죠.

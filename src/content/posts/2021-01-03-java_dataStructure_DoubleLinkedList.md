@@ -6,8 +6,6 @@ tags: ["java", "DataStructure", "programming", "list", "class"]
 permalink: "/java/java_dataStructure_DoubleLinkedList/"
 ---
 
-## Java - Data Structure - Double Linked List 
-
 - Java에서 Linked List를 만들었습니다.
 
 ### Node for DoubleLinkedList

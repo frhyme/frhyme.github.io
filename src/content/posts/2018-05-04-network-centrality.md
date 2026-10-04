@@ -1,7 +1,7 @@
 ---
 title: "networkx를 이용하여 기본적인 centrality 분석하기"
 date: 2018-05-04
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "networkx", "matplotlib"]
 permalink: "/python-lib/network-centrality/"
 ---

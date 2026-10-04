@@ -77,7 +77,7 @@ print({**a, **b})
 
 ## why 
 
-- 별이 붙는것이 도대체 뭔가? 싶으신 분은 [제가 예전에 써둔 포스트](https://frhyme.github.io/python-basic/args_kwargs_python/)를 보시면 도움이 될것 같아용 홍홍
+- 별이 붙는것이 도대체 뭔가? 싶으신 분은 [제가 예전에 써둔 포스트](/python-basic/args_kwargs_python/)를 보시면 도움이 될것 같아용 홍홍
 
 ## wrap-up
 

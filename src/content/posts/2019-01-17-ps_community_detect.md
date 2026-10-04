@@ -6,8 +6,6 @@ tags: ["paper-summary", "community-detection"]
 permalink: "/paper-summary/ps_community_detect/"
 ---
 
-## Optics: A bibliometric approach to detect emerging research domains and intellectual bases
-
 - journal of informetric에 2011년 10월에 게재된 논문 
 - [링크](https://www.sciencedirect.com/science/article/pii/S1751157711000319)
 

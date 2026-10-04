@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Sta
 permalink: "/english_study_by_movie_script/StarWars_Episode_VII_Trivia00/"
 ---
 
-## 영화 StarWars Episode 7에 관한 사소한 사실들 - 0편
-
 - 다음 주면 `<Star Wars: The Rise of Skywalker>`가 개봉합니다. 인기가 떨어지는 한국은 조금 늦게 개봉하지만, 이미 북미와 일본은 개봉한 상황이죠. 물론, 최대한 스포일러를 피하기 위해 대부분의 내용을 피하고 있습니다만, 평가가 그다지 좋지 않다는 것쯤은 아주 잘 알고 있습니다. 물론, 그러한 평가와 상관없이 저는 볼 거예요. 
 - 아무튼, `<Star Wars: The Rise of Skywalker>`를 보기 전에 복습 겸 지난 `<스타워즈>`들에 대한 사소한 사실들을 정리하였습니다. 오늘은, `<Star Wars: Episode VII: The Force Awakens>`에 대해 IMDB에 정리된 내용들을 가져왔으며, 스포일러가 포함되어 있으니, 유의하시고요!. 번역하여 다음과 같이 정리하였습니다. 
 

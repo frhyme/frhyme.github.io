@@ -6,8 +6,6 @@ tags: ["java", "programming", "stream", "IntStream", "Collectors"]
 permalink: "/java/java_IntStream_to_List_simple_and_difficult/"
 ---
 
-## Java - stream - IntStream to List
-
 - 아래 코드를 봅시다. `IntStream`에 대해서 간단한 `.filter`를 처리하고 `Collectors.toList()`를 통해 List로 변환해서 넘겨주는 것이죠.
 - 언뜻 보기에는 잘 되는 것처럼 보이지만, 그렇지 않습니다.
 

@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "pandas", "conda", "anaconda", "pandas-profiling
 permalink: "/python-libs/pandas_profile_installing/"
 ---
 
-## intro: pandas-profiling
-
 - 탐색적 데이터 분석(Exploratory Data Analysis)이라는 것이 있습니다. 어려워 보이지만, 간단하게 설명하자면, 주어진 데이터의 특성이 무엇인지를 파악하는 것을 말합니다. 
 - 우선, 저한테 데이터 세트가 있다고 가정을 해보겠습니다. 대략, 엑셀로 정리된 테이블이 있다고 하죠. 대부분 수치 값이겠죠. 
 - 무작정 그냥 모델에 넣어서 돌리면 되는 것 아니야? 라고 말할 수도 있습니다. 하지만, 그렇게 간단하게 그냥 돌려서는 안됩니다. 데이터에는 아주 많은 노이즈들이 존재합니다. 대략 다음으로 정리할 수 있죠. 

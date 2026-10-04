@@ -1,12 +1,10 @@
 ---
 title: "Structural Deep Neural Embedding"
 date: 2019-06-28
-category: "machine-leanring"
+category: "machine-learning"
 tags: ["deep-leanring", "machine-learning", "ML", "graph", "networkx"]
 permalink: "/machine-leanring/graphlearning_SDNE(ing)/"
 ---
-
-## Structural Deep Neural Embedding(SDNE)
 
 - 최근에 네트워크의 노드를 벡터로 변환하는 작업을 수행하고 있습니다. 
 - "왜 잘 있는 노드를 벡터로 변환해?"라고 말씀하실 수도 있는데, 이건, 기존의 많은 ML/DL 라이브러리들이 숫자에 기반하기 때문이죠. 

@@ -6,8 +6,6 @@ tags: ["C", "programming", "C_programming", "tree", "bst", "binary_search_tree",
 permalink: "/c_programming/c_prgrmng09_binary_search_tree/"
 ---
 
-## C - binary search tree를 구현해봤습니다 
-
 - binary search tree를 구현해봤습니다.
 
 ```c

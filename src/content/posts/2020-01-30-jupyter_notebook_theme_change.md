@@ -6,13 +6,11 @@ tags: ["python", "python-libs", "jupyter-notebook"]
 permalink: "/python-libs/jupyter_notebook_theme_change/"
 ---
 
-## jupyter notebook theme 변경하기. 
-
-- 우선 세부적으로 설정을 바꾸고 싶으신 분들은 [jupyter notebook 커스토마이징하기.](https://frhyme.github.io/python-lib/jupyter_notebook_font_change/)라는, 제가 전에 쓴 글을 봐주시면 됩니다. 하지만, 가능하면 하나하나씩 설정을 바꾸지 마시고, 테마로 한번에 뜯어고치시는 것이 유지보수 측면에서 훨씬 좋습니다.
+- 우선 세부적으로 설정을 바꾸고 싶으신 분들은 [jupyter notebook 커스토마이징하기.](/python-lib/jupyter_notebook_font_change/)라는, 제가 전에 쓴 글을 봐주시면 됩니다. 하지만, 가능하면 하나하나씩 설정을 바꾸지 마시고, 테마로 한번에 뜯어고치시는 것이 유지보수 측면에서 훨씬 좋습니다.
 
 - 일단 `jupyterthemes`를 설치해줍니다. 
 
-```
+```bash
 pip install jupyterthemes
 ```
 

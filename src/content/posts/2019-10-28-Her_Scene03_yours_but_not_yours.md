@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Her
 permalink: "/english_study_by_movie_script/Her_Scene03_yours_but_not_yours/"
 ---
 
-## 영화 Her 명장면 - 난 너의 것이지만, 동시에 너의 것이 아니야
-
 - 어느 날 문득, 테오도르는 길에 자기 자신처럼 행동하고 있는 사람들이 많다는 사실을 깨닫습니다. 모두, 인공지능과 대화하고 있는 것을 알아차린 것이죠. 그래서, 사만다에게 묻습니다. 
 - **"너 혹시, 나 말고 다른 사람들과도 나와 같은 관계를 유지하고 있냐고"**
 - 거짓말을 하지 않는 우리 사만다는 "그렇다"라고 답하고, 641명과 당신과 비슷한 가까운 관계를 맺고 있다고 대답합니다. 당연하지만, 테오도르는 충격을 받습니다. 

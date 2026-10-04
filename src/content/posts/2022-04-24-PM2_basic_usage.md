@@ -6,8 +6,6 @@ tags: ["nodeJS", "javascript", "PM2"]
 permalink: "/nodejs/PM2_basic_usage/"
 ---
 
-## nodeJS - PM2 - Basic usage
-
 - nodeJS에는 [pm2](https://pm2.keymetrics.io/)라는 개쩌는 놈이 있습니다. 대충 알아서 꺼지면 켜주고, 리소스 관리하고 로깅 해주고 하는 완벽한 인프라 관리 서비스? 정도로 해석하면 될것 같네요.
 - 아무튼, 보통은 걍 nodeJS로 개발을 끝내고, pm2로 나머지를 처리해주면 되는데요. 아직 간단한 명령어도 숙달되지 않아서, 몇몇 주요 상황에 대해서 어떻게 사용해야 하는지를 정리해 봅니다.
 

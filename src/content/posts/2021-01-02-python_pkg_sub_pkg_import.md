@@ -6,8 +6,6 @@ tags: ["python", "import", "python-basic", "package"]
 permalink: "/python-basic/python_pkg_sub_pkg_import/"
 ---
 
-## python - package and import 
-
 - python으로 개발을 길게 하는 일이 종종 있는데, 귀찮아서 그냥 한 `.py` 파일 내에 모든 함수를 우겨넣고 진행하는 경우들이 많습니다. 뛰어난 개발자라면 어떤 짓을 해도 문제가 없습니다만, 보통의 사람들은 모두 그렇지 않고요, 그냥 저렇게 해버리면 함수가 겹친다거나 하는 자잘한 문제들이 발생하는 경우들이 있죠.
 - 따라서, 관련된 함수들을 잘 묶어서 각각의 `.py` 파일로 처리하고, 또 그 `.py`파일들이 많아지면 폴더 안으로 넣어서 처리해준다거나 하는 것이 관리 측면에서 좋습니다. 
 - 본 글에서는 python에서 보통 어떻게 package를 관리하고 그 package를 import하는지에 대해서 자세하게 정리합니다.ㄴ

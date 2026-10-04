@@ -6,8 +6,6 @@ tags: ["kotlin", "programming", "when"]
 permalink: "/kotlin/kotlin04_when_stmt/"
 ---
 
-## Kotlin - When statement
-
 - kotlin에서 `when`은 `switch`와 유사한 형태의 명령문입니다.
 - `switch`의 경우 하나의 조건에 대해서만 일일이 matching할 수 있었떤 반면, `when`은 여러 조건을 동시에 한 줄에 작성할 수 있습니다.
 - 우리가 흔히 아는 switch문과 유사하게는 다음처럼 작성할 수 있고요.

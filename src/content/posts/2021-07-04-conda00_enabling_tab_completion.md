@@ -6,8 +6,6 @@ tags: ["python", "conda", "anaconda", "tab_completion", "antigen", "zshrc", "zsh
 permalink: "/python-libs/conda00_enabling_tab_completion/"
 ---
 
-## conda - enabling tab completion
-
 - shell에서 conda 명령어 자동완성이 되지 않아서, 세팅해주려고 합니다.
 - [conda - enable tab completion](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/enable-tab-completion.html) 문서를 확인해 보면, bash shell에서는 conda version 4.3 이하에서만 지원된다고 나와 있습니다.
 - 현재 제 conda version을 확인해 보면 4.8.3이기 때문에, 현재 공식 문서에서 알려주는 방법을 사용할 수는 없죠.

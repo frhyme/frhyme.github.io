@@ -6,8 +6,6 @@ tags: ["vim", "python", "pylint", "syntax"]
 permalink: "/vim/vim17_syntastic/"
 ---
 
-## Vim 17 - syntax checking by syntastic
-
 - 작성한 code에 대해서, 잔소리해주는 lint를 설치해보기로 합니다.
 - 보통은 코드를 작성한 다음, 커맨드 라인에서 다음의 형태로 실행합니다만, 이렇게 하게 되면 vim > bash > vim의 순서로 왔다갔다 해야 한다는 번거로움이 있죠.
 

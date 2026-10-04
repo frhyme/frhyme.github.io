@@ -1,12 +1,10 @@
 ---
 title: "VScode - Markdown Scala Syntax"
 date: 2021-01-23
-category: "VScode"
+category: "vs-code"
 tags: ["VScode", "markdown", "scala", "extension"]
 permalink: "/vscode/vscode_markdown_scala_syntax/"
 ---
-
-## VScode - Markdown Scala Syntax
 
 - VScode를 이용해서 마크다운 파일에 scala를 공부한 내용들을 정리하고 있습니다.
 - `command + shift + v`를 통해 markdown preview로 넘어가면 scala syntax highlighting이 되는데, raw markdown에서는 안되더라고요.

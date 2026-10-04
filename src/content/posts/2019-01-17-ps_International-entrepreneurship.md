@@ -6,8 +6,6 @@ tags: ["entrepreneurship", "paper-summary", "bibliometric"]
 permalink: "/paper-summary/ps_International-entrepreneurship/"
 ---
 
-## International entrepreneurship: a bibliometric overview
-
 - International Entrepreneurship and Management Journal(impact factor: 2.46)에 2017년 게재된 논문
 - [link](https://link.springer.com/article/10.1007/s11365-017-0487-y)
 

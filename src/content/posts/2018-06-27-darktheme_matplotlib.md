@@ -1,12 +1,10 @@
 ---
 title: "matplotlib 테마 바꾸기"
 date: 2018-06-27
-category: "python-lib"
+category: "python-libs"
 tags: ["matplotlib", "python-lib", "python", "theme"]
 permalink: "/python-lib/darktheme_matplotlib/"
 ---
-
-## matplotlib 테마 바꾸기 
 
 - 최근에 jupyter notebook에서 jupyter lab으로 변경했습니다. 그리고 jupyter lab의 까만 화면으로 변경했는데, 바꾸고 보니까, `matplotlib`에서 그림을 그릴 때, tick이 잘 안보이는 문제가 있어요. 
 - 기본적으로 `matplotlib`는 그림이 하얀색 배경에 그려진다고 가정합니다. 따라서, tick이 모두 검은색으로 되어 있죠. 

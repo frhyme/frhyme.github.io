@@ -6,8 +6,6 @@ tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic", "String"]
 permalink: "/ms_office/Excel_VBA06_String/"
 ---
 
-## Excel - VBA - String
-
 - VBA에서는 `Left`, `Mid`, `Right` 함수를 사용하여 String 내의 특정 구간을 잘라낼 수 있습니다.
 - `Len`함수를 사용하면 문자열의 길이를 확인할 수 있습니다.
 

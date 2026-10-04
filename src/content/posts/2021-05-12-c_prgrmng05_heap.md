@@ -6,8 +6,6 @@ tags: ["C", "programming", "C_programming", "heap"]
 permalink: "/c_programming/c_prgrmng05_heap/"
 ---
 
-## C - Heap
-
 - 간단하게 Heap을 구현해 봤습니다.
 
 ```c

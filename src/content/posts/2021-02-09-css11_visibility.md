@@ -6,8 +6,6 @@ tags: ["css", "visibility", "html"]
 permalink: "/css/css11_visibility/"
 ---
 
-## CSS - visibility
-
 - visibility의 값을 수정하여, 상황에 따라 보이도록 혹은 보이지 않도록 할 수 있습니다.
 - 기본적으로는 visible하지만, 마우스를 올리면(hover) 보이지 않도록 설정합니다.
 

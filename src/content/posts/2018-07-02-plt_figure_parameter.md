@@ -1,7 +1,7 @@
 ---
 title: "plt.figure()의 parameter를 조정해봅시다."
 date: 2018-07-02
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "matplotlib", "figure", "dpi", "numpy"]
 permalink: "/python-lib/plt_figure_parameter/"
 ---

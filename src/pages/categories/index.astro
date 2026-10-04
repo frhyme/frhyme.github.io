@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getMajorCategory, type MajorCategory } from '../../utils/categories';
 
 const allPosts = await getCollection('posts');
 
@@ -10,32 +11,122 @@ for (const post of allPosts) {
   categoryMap[cat] = (categoryMap[cat] || 0) + 1;
 }
 
-const categories = Object.entries(categoryMap).sort((a, b) => b[1] - a[1]);
+const groups: Record<MajorCategory, [string, number][]> = {
+  tech: [],
+  english: [],
+  life: [],
+};
+
+for (const [cat, count] of Object.entries(categoryMap)) {
+  const major = getMajorCategory(cat);
+  groups[major].push([cat, count]);
+}
+
+// Sort descending by post count
+groups.tech.sort((a, b) => b[1] - a[1]);
+groups.english.sort((a, b) => b[1] - a[1]);
+groups.life.sort((a, b) => b[1] - a[1]);
+
+const totalCategories = Object.keys(categoryMap).length;
+
+const sections: { key: MajorCategory; title: string; icon: string; desc: string; url: string; list: [string, number][] }[] = [
+  {
+    key: 'tech',
+    title: 'Tech & Engineering',
+    icon: '💻',
+    desc: 'Python, Java, AI/ML, Vim, Web, DB 등 소프트웨어 개발 및 엔지니어링',
+    url: '/tech/',
+    list: groups.tech,
+  },
+  {
+    key: 'english',
+    title: 'English Study',
+    icon: '📚',
+    desc: '영화 대본을 통해 정리한 실생활 영어 표현 및 회화 아카이브',
+    url: '/english/',
+    list: groups.english,
+  },
+  {
+    key: 'life',
+    title: 'Life & Hobby',
+    icon: '☕',
+    desc: '야구(세이버메트릭스), 영화 리뷰, 여행기, 일상 단상 등 라이프 아카이브',
+    url: '/life/',
+    list: groups.life,
+  },
+];
 ---
 
 <BaseLayout title="Categories">
-  <div class="mb-8 pb-4 border-b border-zinc-200 dark:border-zinc-800">
-    <h1 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100">
+  <div class="mb-10 pb-6 border-b border-zinc-200 dark:border-zinc-800">
+    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
       Categories
     </h1>
-    <p class="text-sm text-zinc-500 mt-1">
-      총 {categories.length}개의 카테고리로 정리되어 있습니다.
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-2">
+      총 {totalCategories}개의 카테고리가 3대 분야(Tech, English, Life)로 체계화되어 있습니다.
     </p>
+
+    <!-- Quick Navigation Anchors -->
+    <div class="flex flex-wrap gap-2 mt-5">
+      {sections.map((s) => {
+        const totalPosts = s.list.reduce((acc, [, count]) => acc + count, 0);
+        return (
+          <a
+            href={`#${s.key}`}
+            class="text-xs px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-colors flex items-center gap-1.5 font-medium"
+          >
+            <span>{s.icon}</span>
+            <span>{s.title}</span>
+            <span class="text-zinc-400 text-[11px]">({totalPosts})</span>
+          </a>
+        );
+      })}
+    </div>
   </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    {categories.map(([category, count]) => (
-      <a
-        href={`/categories/${category}/`}
-        class="group p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-md transition-all flex items-center justify-between"
-      >
-        <span class="font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 capitalize">
-          {category}
-        </span>
-        <span class="text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 font-semibold">
-          {count}
-        </span>
-      </a>
-    ))}
+  <div class="space-y-12">
+    {sections.map((s) => {
+      const totalPosts = s.list.reduce((acc, [, count]) => acc + count, 0);
+      return (
+        <section id={s.key} class="scroll-mt-24">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-3 mb-5 border-b border-zinc-200/80 dark:border-zinc-800/80 gap-2">
+            <div>
+              <div class="flex items-center space-x-2 text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+                <span>{s.icon}</span>
+                <h2>{s.title}</h2>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 ml-1">
+                  {s.list.length} categories · {totalPosts.toLocaleString()} posts
+                </span>
+              </div>
+              <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
+                {s.desc}
+              </p>
+            </div>
+            <a
+              href={s.url}
+              class="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 self-start sm:self-auto"
+            >
+              전체 모아보기 &rarr;
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+            {s.list.map(([category, count]) => (
+              <a
+                href={`/categories/${category}/`}
+                class="group p-4 rounded-xl border border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-900/40 hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-sm transition-all flex items-center justify-between"
+              >
+                <span class="font-semibold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 truncate mr-2">
+                  {category}
+                </span>
+                <span class="text-xs px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 font-semibold shrink-0">
+                  {count}
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      );
+    })}
   </div>
 </BaseLayout>

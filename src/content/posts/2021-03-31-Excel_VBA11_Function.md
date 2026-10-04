@@ -6,8 +6,6 @@ tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic", "function"]
 permalink: "/ms_office/Excel_VBA11_Function/"
 ---
 
-## Excel - VBA - Function
-
 ### Function with Return type
 
 - 함수 내에서 리턴하는 값이 있는 경우는 다음처럼 작성합니다.

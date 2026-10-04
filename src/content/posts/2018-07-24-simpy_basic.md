@@ -1,7 +1,7 @@
 ---
 title: "파이썬에서 시뮬레이션을 해봅시다."
 date: 2018-07-24
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "simulation", "simpy", "generator"]
 permalink: "/python-lib/simpy_basic/"
 ---
@@ -11,7 +11,7 @@ permalink: "/python-lib/simpy_basic/"
 - 연구하다가 간단하게 시뮬레이션을 돌릴 필요성이 있어서, 시뮬레이션을 파이썬에서 어떻게 지원하는지를 알아보았습니다. 
 - [simpy](http://simpy.readthedocs.io/en/latest/index.html)라는 라이브러리가 있구요. 일단 이걸 설치합니다. 
 
-```
+```bash
 pip install simpy 
 ```
 

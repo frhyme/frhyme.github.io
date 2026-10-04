@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "pandas", "conda", "anaconda", "pandas-profiling
 permalink: "/python-libs/pandas-profiling_desc/"
 ---
 
-## pandas-profiling을 알아보자. 
-
 - 자, 원래는 지난 편에서 좀 더 자세하게, `pandas-profiling`의 사용법을 알아보려고 했습니다만, 라이브러리의 충돌등으로 인해서 잘 되지 않더군요. 그래서 이 편에서 좀 더 정리해봤습니다. 해당 내용들은, [pandas-profiling documentation](https://pandas-profiling.github.io/pandas-profiling/docs/)에서 내용을 참고하여 작성하였습니다. 
 - 도큐멘테이션에서 설명하는 것을 보면, 주어진 dataframe에 대해서 다음의 분석 결과들을 보여줍니다. 
     - Essentials: type, unique values, missing values

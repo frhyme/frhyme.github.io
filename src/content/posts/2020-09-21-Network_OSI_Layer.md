@@ -2,7 +2,7 @@
 title: "네트워크는 무엇인가."
 date: 2020-09-21
 category: "others"
-tags: []
+tags: ["tech"]
 permalink: "/others/Network_OSI_Layer/"
 ---
 

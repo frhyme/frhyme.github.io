@@ -6,8 +6,6 @@ tags: ["javascript", "programming"]
 permalink: "/javascript/javascript05_setTimeout/"
 ---
 
-## Javascript - setTimeout
-
 - javascript에서 일정 시간이 지연된 다음 동작이 수행되게 하려면 `setTimeout(callback_func, delay, args)`를 사용하면 됩니다.
 - 즉 `delay` milli-second가 경과된 다음 `callback_func`가 args를 넘겨 받아서 실행됩니다.
 

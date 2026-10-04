@@ -23,7 +23,7 @@ def func1(param1: int) -> int:
 
 - 설치는 아래와 같이 해줍니다. 
 
-```
+```bash
 pip install mypy
 ```
 

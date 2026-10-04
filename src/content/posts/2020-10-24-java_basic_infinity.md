@@ -6,8 +6,6 @@ tags: ["java", "programming", "infinity"]
 permalink: "/java/java_basic_infinity/"
 ---
 
-## Java - Infinity 
-
 - Java의 실수형 자료형(`double`, `float`)에는 Infinity가 존재합니다. 막연히, "큰 수"가 아니라, double 내의 어떤 수와 비교해도 절대적으로 큰 수인 `Double.POSITIVE_INFINITY`가 존재합니다. 그리고 음의 무한인, `Double.NEGATIVE_INFINITY` 또한 존재하죠.
 - 정확한 이유는 모르겠지만, Int에는 Infinity가 존재하지 않고, float, double과 같은 실수형의 자료형에 속하는 값에만 Infinity가 존재합니다.
 - 대략적인 사용법 및 Infinti의 특성은 다음과 같습니다.

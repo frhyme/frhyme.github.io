@@ -1,7 +1,7 @@
 ---
 title: "graph의 similarity는 어떻게 계산할까요."
 date: 2018-08-23
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "networkx", "similarity", "graph", "ntlk", "distance"]
 permalink: "/python-lib/nx_graph_edit_distance/"
 ---

@@ -6,8 +6,6 @@ tags: ["kotlin", "programming", "random"]
 permalink: "/kotlin/kotlin07_random/"
 ---
 
-## Kotlin - Random
-
 - `kotlin.random.Random`을 통해 random을 사용할 수 있습니다.
 
 ```kotlin

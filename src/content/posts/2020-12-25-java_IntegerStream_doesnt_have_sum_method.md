@@ -6,8 +6,6 @@ tags: ["java", "stream", "IntStream", "programming", "int", "Integer", "sum"]
 permalink: "/java/java_IntegerStream_doesnt_have_sum_method/"
 ---
 
-## Java - Stream - IntStream vs. IntegerStream
-
 - 다음과 같은 간단한 코드가 있습니다. 간단히, `List<Integer>`의 요소들의 합을 모두 게산해주는 코드죠.
 - 코드에 오류가 없을까요?
 

@@ -6,8 +6,6 @@ tags: ["syntastic", "pyflake8", "python"]
 permalink: "/vim/vim_syntastic00_disable_E501/"
 ---
 
-## vim syntastic00 - disable E501
-
 - Recently, I installed the latest version of PyFlake8, a widely used Python linting tool. However, I noticed that after the installation, my Vim editor with the Syntastic plugin started showing an alarm message regarding the E501 issue, indicating that some lines were too long (145 characters, exceeding the recommended 79-character limit). To address this, I tried disabling the E501 alarm using the `syntastic_python_pycodestyle_args` configuration in my `vimrc` file, but unfortunately, it didn't have the desired effect:
 
 ```vim

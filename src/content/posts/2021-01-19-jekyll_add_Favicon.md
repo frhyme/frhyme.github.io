@@ -6,8 +6,6 @@ tags: ["blog", "jekyll", "favicon"]
 permalink: "/blog/jekyll_add_Favicon/"
 ---
 
-## jekyll에 favicon을 추가해줍니다
-
 - favicon없이 `jekyll serve`를 통해 로컬에 블로그를 띄우면, 다음과 같은 사소한 오류가 뜹니다.
 
 ```plaintext

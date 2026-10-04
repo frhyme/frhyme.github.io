@@ -6,8 +6,6 @@ tags: ["html", "javascript"]
 permalink: "/html/html_range_oninput/"
 ---
 
-## html에서 range를 이용해서 input을 받고 input 변화값 보여주기. 
-
 - 사용자가 직접 키보드를 이용해서 원하는 값을 매번 선택할 수도 있습니다. 그게 기본적인 input이죠. 
 - 그런데, 아주 정확한 값을 측정하지는 않아도 되고 대략적인 값만 해도 되고, 또 입력해야 하는 값이 매우 많다면, 그냥 scroll의 형식으로 값을 입력받을 수 있도록 해도 됩니다. 
 - 즉 이를 위해서 input에서 type을 `range`라는 걸로 설정해서 진행할 수 있죠. 

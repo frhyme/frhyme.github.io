@@ -1,12 +1,10 @@
 ---
 title: "time series의 stationarity를 체크해봅시다."
 date: 2018-06-12
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "time-series", "stationarity", "statsmodels", "pandas", "numpy", "matplotlib"]
 permalink: "/python-lib/check_stationary-in-time-series/"
 ---
-
-## time series의 stationarity를 체크해봅시다. 
 
 - 말로 하기는 좀 귀찮으니까, 그림을 봅시다 허허. 아래 그림을 보시면, stationary time series와 non-stationary time series가 나타나 있습니다. 간단히 말하면, stationary의 경우는 시간이 변해도, 일정한 분포를 따르는 경우를 말하고, non-stationary 의 경우는 시간이 변해도, 일정한 분포를 따르지 않는 경우를 말합니다. 
 - time series를 분석할 때, stationarity, 간단히 말하면 통계적 일관성이라고 말할 수도 있겠네요. 이게 지켜지면 얼마나 좋겠냐만, 보통은 지켜지지 않습니다. seasonality가 들어가거나, trend(값이 계속 증가하는 추세이거나) 등등의 변화로 인해 이 성질은 지켜지는 것이 어렵죠. 

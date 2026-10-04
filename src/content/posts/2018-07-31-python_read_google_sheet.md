@@ -1,7 +1,7 @@
 ---
 title: "python에서 구글 sheet 읽기"
 date: 2018-07-31
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "google", "excel", "python-lib", "sheet", "spread-sheet", "google-drive", "gspread"]
 permalink: "/python-lib/python_read_google_sheet/"
 ---
@@ -21,7 +21,7 @@ permalink: "/python-lib/python_read_google_sheet/"
 - 일단 설치합니다.
     - 밑에 있는 다른 것들은 구글 시트 인증? 뭐 그런거랑 연결된 부분인데 이후에 어차피 설치해야 하니 다 설치해줍니다. 
 
-```
+```bash
 pip install gspread
 pip install --upgrade oauth2client
 pip install PyOpenSSL

@@ -6,8 +6,6 @@ tags: ["java", "programming", "method", "class", "function", "FunctionalProgramm
 permalink: "/java/Java_function_method_reference/"
 ---
 
-## Java - Method Reference
-
 - Java에는 이미 수많은 Class들과 Method들이 있습니다. Java에서 Function을 이용해서 프로그래밍을 한다고 할때, Class 혹은 Object의 Method들을 가져와서 동일한 기능을 가지는 함수로 사용할 수 있다면, 좀 더 유영한 프로그래밍이 가능하겠죠.
 - 이처럼 Method를 가져와서 Function에 넣어주는 것을 **Method Reference**라고 합니다. `::`로 구분하여 앞에는 메소드가 속한 것을, 뒤에는 메소드이름을 써주면 됩니다.
 

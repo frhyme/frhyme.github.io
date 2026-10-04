@@ -36,7 +36,7 @@ ImportError: HDFStore requires PyTables, "No module named 'tables'" problem impo
 
 - [pytables](https://www.pytables.org/)는 아주 간단하게 hdf5의 형태로 데이터를 저장하기 위해 필요한 라이브러리입니다. documentation에 들어가면 내용이 길지만, 일단 그냥 설치해줍니다. 
 
-```
+```bash
 pip install tables
 ```
 

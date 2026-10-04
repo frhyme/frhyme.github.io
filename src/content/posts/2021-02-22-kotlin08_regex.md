@@ -6,8 +6,6 @@ tags: ["kotlin", "programming", "regex"]
 permalink: "/kotlin/kotlin08_regex/"
 ---
 
-## Kotlin - Regex
-
 - kotlin으로 regex를 다음처럼 사용할 수 있습니다.
 
 ```kotlin

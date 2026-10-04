@@ -6,8 +6,6 @@ tags: ["selenium", "browser", "python"]
 permalink: "/selenium/selenium_browser_context_manager/"
 ---
 
-## selenium - browser with context
-
 - When using Selenium for web scraping, it's common to encounter situations where the browser is not closed properly, especially if an exception occurs during the process. This can lead to lingering browser instances occupying memory in the background. Additionally, when utilizing Selenium in headless mode (where the browser operates in the background without a visible window), it becomes challenging to determine if the browser is still active or not.
 
 - To address this issue, we can apply a similar approach used when opening Python files using the `with` statement. By implementing a context manager with Selenium, we can ensure that the browser is properly opened and closed, regardless of any exceptions that may occur.

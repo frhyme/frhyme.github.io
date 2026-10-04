@@ -1,7 +1,7 @@
 ---
 title: "networkx로 random tree 만들기"
 date: 2018-08-13
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "tree", "networkx", "random", "partition"]
 permalink: "/python-lib/nx_make_tree/"
 ---

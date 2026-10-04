@@ -6,8 +6,6 @@ tags: ["jQuery", "javascript", "html", "web", "css", "DOM"]
 permalink: "/jquery/jQuery09_Traversal_Descendant/"
 ---
 
-## jQuery - Traversal - Descendant
-
 - jQuery를 사용해서 자식 element를 탐색하는 방법을 정리하였습니다.
   - `element.children()`: element의 바로 아래의 모든 자식 노드를 가리킵니다.
   - `element.find("#div1)`: element의 아래에 있는 모든 자식 노드들 중에서 `#div1`을 찾습니다.

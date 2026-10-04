@@ -6,8 +6,6 @@ tags: ["vim", "indent", "vundle", "plugin", "vi"]
 permalink: "/vim/vim24_plugin_indent_guide/"
 ---
 
-## Vim - indentation guides
-
 - VScode에는 [visualstudio - indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)라는 indent 깊이에 따라 색깔을 다르게 처리해주는 plugin이 있습니다. python처럼 tab size가 4 space인 경우에는 그나마 구분이 확실한 반면, javascript에서처럼 tab size가 2인 경우에는 어디까지가 같은 코드인지 확인하는 게 쉽지 않습니다. 특히 이 과정에서 지옥의 callback function이 이어지면 더 indent가 헷갈리기 시작합니다.
 - 그래서 vim에서도 해결방법이 있는지 확인해 보던 중 [stackexchange - how to add indentation guides lines](https://vi.stackexchange.com/questions/666/how-to-add-indentation-guides-lines)을 통해 몇 가지 해결법을 발견했습니다.
 

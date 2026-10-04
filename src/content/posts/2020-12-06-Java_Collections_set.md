@@ -6,8 +6,6 @@ tags: ["java", "programming", "interface", "collection", "set"]
 permalink: "/java/Java_Collections_set/"
 ---
 
-## Java - Collection - Set Interface
-
 - `Set`는 우리가 흔히 아는 '집합'을 말하는 것이죠. 이 자료 구조 내부에는 중복값이 존재할 수 없습니다. 가령 Array, List등에서는 1을 원소로 넣고, 또 넣을 수 있는 반면, Set에서는 이게 안되요. 그럼 List가 더 좋은 것 아니냐? 그렇지 않습니다. 용도가 다른데, 중복을 허용하지 않는 경우에는 `.contain` method가 List에 비해서 훨씬 빠르게 수행됩니다. 이 또한 당연한 것이, list의 경우는 중복을 허용하기 때문에, 특정한 값이 존재하는지 확인하기 위해서는 모든 원소를 다 읽어야 하는 거죠. 반면, Set는 중복을 허용하지 않으므로 hashing을 해서 처리할 수 있다는 강점이 있죠.
 
 ## Immutable Set

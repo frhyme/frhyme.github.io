@@ -1,7 +1,7 @@
 ---
 title: "Sorting(정렬) 알고리즘의 주요 특성"
 date: 2023-08-13
-category: "Algorithm"
+category: "algorithm"
 tags: ["java", "algorithm", "sorting"]
 permalink: "/algorithm/key_feature_sorting/"
 ---

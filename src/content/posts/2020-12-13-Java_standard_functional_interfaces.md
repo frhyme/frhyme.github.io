@@ -6,8 +6,6 @@ tags: ["java", "programming", "function", "interface", "FunctionalInterface"]
 permalink: "/java/Java_standard_functional_interfaces/"
 ---
 
-## Java - Standard Functional Interface
-
 - 직접 interface와 `@FunctionalInterface` Annotation을 사용하여 Function을 정의하고 구현하여 사용할 수 있으나, 귀찮으므로 웬만하면 이미 Java에서 구현되어 `java.util.function` 패키지에 있는 놈들을 사용하기로 합니다.
 - Java에는 다음과 같은 5 종류의 Functional Interface들이 존재합니다. 각 Interface를 extend하는 더 많은 interface들이 있구요.
   - **Function**: Input과 Ouput이 서로 다른 타입일 수도 있음

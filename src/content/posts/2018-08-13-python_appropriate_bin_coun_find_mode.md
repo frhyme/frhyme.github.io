@@ -1,7 +1,7 @@
 ---
 title: "float list로부터 mode 찾기"
 date: 2018-08-13
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "mode", "counter", "math", "statistics"]
 permalink: "/python-lib/python_appropriate_bin_coun_find_mode/"
 ---

@@ -6,8 +6,6 @@ tags: ["vim", "javascript", "vundle", "eslint", "npm", "syntastic"]
 permalink: "/javascript/nodeJS03_js_dev_env_setting/"
 ---
 
-## Vim - Javascript 개발 환경 구축
-
 ### javascript syntax highlighting
 
 - vim에서 javascript를 작성중에 syntax highlighting이 예쁘게 되지 않아서, vim-javascript라는 플러그인을 vundle을 사용해서 설치해줍니다.

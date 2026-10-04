@@ -6,8 +6,6 @@ tags: ["html", "CSS"]
 permalink: "/html/connecting_CSS_to_html/"
 ---
 
-## html 내에 CSS 연결하기 
-
 - 아래와 같이, html 문서 내 `<head>` 태그 내에 다음 부분을 넣어줍니다.
 
 ```html 

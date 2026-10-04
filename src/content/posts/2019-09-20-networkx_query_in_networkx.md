@@ -6,8 +6,6 @@ tags: ["python-libs", "python", "networkx", "query"]
 permalink: "/python-libs/networkx_query_in_networkx/"
 ---
 
-## query in network? 
-
 - 최근에는 GQL이라는 Graph Query Language를 정리했습니다. 결국 데이터를 Graph로서 표현하고, 이를 필요에 따라서, 필터링해서 볼 수 있는 쿼리언어 표준을 만들자! 라는 것이 해당 언어의 목적이죠. 
 - 저는, 그렇게까지 대용량의 데이터를 쓰지 않기 때문에, DB를 쓰고 있지는 않습니다. 그냥 필요하면 pickle을 사용해서 임시파일로 저장을 하거나, 하는게 다죠. 
 - 아무튼, 저는 networkx를 쓰는데, 여기서 필요한 데이터 혹은 sub-network를 추출하려면 어떠한 방식으로 해야 하는지를 좀 정리하면 좋을 것 같아서 정리를 해봅니다. 
