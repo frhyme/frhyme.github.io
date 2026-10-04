@@ -153,6 +153,153 @@ const featuredDate = featuredPost.data.date
     </div>
   </section>
 
+  <!-- Engineering Stack & Competency Section -->
+  <section class="mt-8 mb-10 p-6 sm:p-7 rounded-3xl border border-zinc-200/90 dark:border-zinc-800/90 bg-gradient-to-br from-zinc-50/50 via-white to-zinc-50/30 dark:from-zinc-900/40 dark:via-zinc-900/20 dark:to-zinc-950 shadow-xs">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-5">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs uppercase tracking-wider font-bold text-zinc-400 dark:text-zinc-500 font-mono">
+            ENGINEERING COMPETENCY
+          </span>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 font-mono">
+            {allPosts.length.toLocaleString()} Articles
+          </span>
+        </div>
+        <h2 class="text-lg sm:text-xl font-extrabold text-zinc-900 dark:text-zinc-100 mt-1 tracking-tight">
+          기술 스택 및 전문 분야 분포
+        </h2>
+      </div>
+      <a
+        href="/about/"
+        class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline group"
+      >
+        <span>상세 포트폴리오 & 이력 보기</span>
+        <span class="group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+      </a>
+    </div>
+
+    <!-- Stack Distribution Bar (GitHub language stats style) -->
+    <div class="space-y-3">
+      <div class="h-3 w-full rounded-full overflow-hidden flex bg-zinc-100 dark:bg-zinc-800 p-0.5 gap-0.5">
+        <div class="h-full bg-blue-500 rounded-l-full transition-all duration-500" style="width: 44.0%;" title="Python Ecosystem: 44.0%"></div>
+        <div class="h-full bg-amber-600 transition-all duration-500" style="width: 16.1%;" title="Java & JVM: 16.1%"></div>
+        <div class="h-full bg-emerald-500 transition-all duration-500" style="width: 13.2%;" title="Dev Tools & Vim: 13.2%"></div>
+        <div class="h-full bg-indigo-500 transition-all duration-500" style="width: 12.8%;" title="NetworkX & Graph: 12.8%"></div>
+        <div class="h-full bg-yellow-400 transition-all duration-500" style="width: 9.0%;" title="Web & JS: 9.0%"></div>
+        <div class="h-full bg-pink-500 rounded-r-full transition-all duration-500" style="width: 6.2%;" title="AI & Data: 6.2%"></div>
+      </div>
+
+      <!-- Legend Pills -->
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-zinc-600 dark:text-zinc-400 pt-1 font-mono">
+        <a href="/tags/python/" class="flex items-center gap-1.5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+          <span class="font-sans font-medium text-zinc-800 dark:text-zinc-200">Python</span>
+          <span class="text-zinc-400 text-[11px]">44.0%</span>
+        </a>
+        <a href="/tags/java/" class="flex items-center gap-1.5 hover:text-amber-600 dark:hover:text-amber-400 transition-colors">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span>
+          <span class="font-sans font-medium text-zinc-800 dark:text-zinc-200">Java</span>
+          <span class="text-zinc-400 text-[11px]">16.1%</span>
+        </a>
+        <a href="/tags/vim/" class="flex items-center gap-1.5 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+          <span class="font-sans font-medium text-zinc-800 dark:text-zinc-200">DevTools/Vim</span>
+          <span class="text-zinc-400 text-[11px]">13.2%</span>
+        </a>
+        <a href="/tags/networkx/" class="flex items-center gap-1.5 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+          <span class="font-sans font-medium text-zinc-800 dark:text-zinc-200">Graph/NetworkX</span>
+          <span class="text-zinc-400 text-[11px]">12.8%</span>
+        </a>
+        <a href="/tags/javascript/" class="flex items-center gap-1.5 hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">
+          <span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+          <span class="font-sans font-medium text-zinc-800 dark:text-zinc-200">Web/JS</span>
+          <span class="text-zinc-400 text-[11px]">9.0%</span>
+        </a>
+        <a href="/tags/machine-learning/" class="flex items-center gap-1.5 hover:text-pink-600 dark:hover:text-pink-400 transition-colors">
+          <span class="w-2.5 h-2.5 rounded-full bg-pink-500"></span>
+          <span class="font-sans font-medium text-zinc-800 dark:text-zinc-200">AI/ML</span>
+          <span class="text-zinc-400 text-[11px]">6.2%</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 3 Core Specialties Mini Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mt-6 pt-6 border-t border-zinc-200/70 dark:border-zinc-800/70">
+      <a
+        href="/tags/networkx/"
+        class="group p-3.5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-indigo-500/50 hover:bg-indigo-50/20 dark:hover:bg-indigo-950/20 transition-all flex flex-col justify-between"
+      >
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-lg p-1.5 rounded-lg bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">🕸</span>
+            <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">
+              180+ Posts
+            </span>
+          </div>
+          <h3 class="font-bold text-sm text-zinc-900 dark:text-zinc-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+            Graph & NetworkX
+          </h3>
+          <p class="text-[11px] text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">
+            국내 유일 수준의 NetworkX 심층 튜토리얼 및 중심성/커뮤니티 그래프 분석
+          </p>
+        </div>
+        <div class="mt-3 flex items-center text-[11px] font-semibold text-indigo-600 dark:text-indigo-400">
+          <span>시리즈 보기</span>
+          <span class="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
+        </div>
+      </a>
+
+      <a
+        href="/tags/python/"
+        class="group p-3.5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-blue-500/50 hover:bg-blue-50/20 dark:hover:bg-blue-950/20 transition-all flex flex-col justify-between"
+      >
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-lg p-1.5 rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400">🐍</span>
+            <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400">
+              620+ Posts
+            </span>
+          </div>
+          <h3 class="font-bold text-sm text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            Python Deep-Dive
+          </h3>
+          <p class="text-[11px] text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">
+            언어 코어 문법, 동시성, CPython 내부 동작, 최적화 및 알고리즘 구현
+          </p>
+        </div>
+        <div class="mt-3 flex items-center text-[11px] font-semibold text-blue-600 dark:text-blue-400">
+          <span>시리즈 보기</span>
+          <span class="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
+        </div>
+      </a>
+
+      <a
+        href="/tags/java/"
+        class="group p-3.5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-amber-500/50 hover:bg-amber-50/20 dark:hover:bg-amber-950/20 transition-all flex flex-col justify-between"
+      >
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-lg p-1.5 rounded-lg bg-amber-500/10 text-amber-600 dark:text-amber-400">☕</span>
+            <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400">
+              140+ Posts
+            </span>
+          </div>
+          <h3 class="font-bold text-sm text-zinc-900 dark:text-zinc-100 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+            Java & System
+          </h3>
+          <p class="text-[11px] text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">
+            객체지향 설계, JVM 메모리 모델, 자료구조 및 디자인 패턴 분석
+          </p>
+        </div>
+        <div class="mt-3 flex items-center text-[11px] font-semibold text-amber-600 dark:text-amber-400">
+          <span>시리즈 보기</span>
+          <span class="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
   <!-- Featured / Latest Spotlight Post -->
   {featuredPost && (
     <section class="mt-10 mb-12">
