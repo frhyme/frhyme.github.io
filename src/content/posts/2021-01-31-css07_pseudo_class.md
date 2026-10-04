@@ -1,8 +1,8 @@
 ---
 title: "CSS - Pseudo Class"
 date: 2021-01-31
-category: "css"
-tags: ["css", "PseudoClass"]
+category: "web"
+tags: ["css", "pseudoclass"]
 permalink: "/css/css07_pseudo_class/"
 ---
 

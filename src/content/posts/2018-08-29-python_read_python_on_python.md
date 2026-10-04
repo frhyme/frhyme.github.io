@@ -2,7 +2,7 @@
 title: "python에서 python 코드 바꿔서 다시 읽기"
 date: 2018-08-29
 category: "python-libs"
-tags: ["python", "python-lib", "import", "importlib"]
+tags: ["python", "python-libs", "import", "importlib"]
 permalink: "/python-lib/python_read_python_on_python/"
 ---
 

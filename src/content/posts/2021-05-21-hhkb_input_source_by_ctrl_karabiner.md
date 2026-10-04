@@ -1,8 +1,8 @@
 ---
 title: "karabiner- 맥북에서 hhkb(해피해킹) 키보드 사용시 ctrl로 한영전환하기"
 date: 2021-05-21
-category: "macOS"
-tags: ["karabiner", "macOS", "hhkb", "keyboard"]
+category: "dev-tools"
+tags: ["karabiner", "macos", "hhkb", "keyboard"]
 permalink: "/macos/hhkb_input_source_by_ctrl_karabiner/"
 ---
 

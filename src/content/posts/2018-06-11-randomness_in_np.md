@@ -2,7 +2,7 @@
 title: "numpy에서 randomness 이용하기"
 date: 2018-06-11
 category: "python-libs"
-tags: ["python", "python-lib", "random", "numpy"]
+tags: ["python", "python-libs", "random", "numpy"]
 permalink: "/python-lib/randomness_in_np/"
 ---
 

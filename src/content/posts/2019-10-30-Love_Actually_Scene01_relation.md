@@ -1,8 +1,8 @@
 ---
 title: "영화 Love Actually 명장면 - 관계라는 말은, 많은 잘못을 덮죠"
 date: 2019-10-30
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "LoveActually"]
+category: "english"
+tags: ["english", "movie", "movie_script", "loveactually"]
 permalink: "/english_study_by_movie_script/Love_Actually_Scene01_relation/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "python bit operator"
 date: 2020-02-19
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "bit", "bit-operator"]
 permalink: "/python-basic/python_bit_operator/"
 ---

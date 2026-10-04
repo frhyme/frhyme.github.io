@@ -1,8 +1,8 @@
 ---
 title: "VScode - Markdown Scala Syntax"
 date: 2021-01-23
-category: "vs-code"
-tags: ["VScode", "markdown", "scala", "extension"]
+category: "dev-tools"
+tags: ["vscode", "markdown", "scala", "extension"]
 permalink: "/vscode/vscode_markdown_scala_syntax/"
 ---
 

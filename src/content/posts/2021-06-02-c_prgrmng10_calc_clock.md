@@ -1,8 +1,8 @@
 ---
 title: "C - 연산 시간을 계산해봅시다"
 date: 2021-06-02
-category: "C_programming"
-tags: ["C", "programming", "C_programming", "time", "clock_t"]
+category: "c-programming"
+tags: ["c", "programming", "c_programming", "time", "clock_t"]
 permalink: "/c_programming/c_prgrmng10_calc_clock/"
 ---
 

@@ -2,7 +2,7 @@
 title: "Optimization in python with cvxpy"
 date: 2020-01-26
 category: "python-libs"
-tags: ["python", "python-libs", "gurobi", "LP", "linearprogramming", "optimization"]
+tags: ["python", "python-libs", "gurobi", "lp", "linearprogramming", "optimization"]
 permalink: "/python-libs/py_cvxpy_lp/"
 ---
 

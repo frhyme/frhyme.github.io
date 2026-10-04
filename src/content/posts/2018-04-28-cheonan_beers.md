@@ -1,7 +1,7 @@
 ---
 title: "천안에 있는 craft beer pub"
 date: 2018-04-28
-category: "tour"
+category: "life"
 tags: ["천안", "수제맥주", "craft-beer", "pub"]
 permalink: "/tour/cheonan_beers/"
 ---

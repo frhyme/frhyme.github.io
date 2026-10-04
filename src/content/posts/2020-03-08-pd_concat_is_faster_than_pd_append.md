@@ -2,7 +2,7 @@
 title: "pd.concat이 df.append보다 빠릅니다."
 date: 2020-03-08
 category: "python-libs"
-tags: ["python", "python-libs", "pandas", "pd.DataFrame"]
+tags: ["python", "python-libs", "pandas", "pd.dataframe"]
 permalink: "/python-libs/pd_concat_is_faster_than_pd_append/"
 ---
 

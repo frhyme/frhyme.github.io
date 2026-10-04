@@ -2,7 +2,7 @@
 title: "PyPDF2 - Merge pdf files"
 date: 2021-01-19
 category: "python"
-tags: ["python", "PyPDF2", "pdf"]
+tags: ["python", "pypdf2", "pdf"]
 permalink: "/python/merge_pdf_files/"
 ---
 

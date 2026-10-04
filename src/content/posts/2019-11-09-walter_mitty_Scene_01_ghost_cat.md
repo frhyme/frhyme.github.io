@@ -1,8 +1,8 @@
 ---
 title: "영화 Secret Life of Walter Mitty 명장면 - 정말 아름다운 것은 관심을 필요로 하지 않아"
 date: 2019-11-09
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "WalterMitty"]
+category: "english"
+tags: ["english", "movie", "movie_script", "waltermitty"]
 permalink: "/english_study_by_movie_script/walter_mitty_Scene_01_ghost_cat/"
 ---
 

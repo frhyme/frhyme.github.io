@@ -2,7 +2,7 @@
 title: "python) callback은 무엇인가?"
 date: 2018-07-22
 category: "python-libs"
-tags: ["python", "python-lib", "callback", "functional-programming"]
+tags: ["python", "python-libs", "callback", "functional-programming"]
 permalink: "/python-lib/callback_func/"
 ---
 

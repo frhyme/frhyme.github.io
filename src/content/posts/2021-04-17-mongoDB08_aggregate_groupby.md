@@ -1,8 +1,8 @@
 ---
 title: "mongoDB - aggregation"
 date: 2021-04-17
-category: "mongoDB"
-tags: ["mongoDB", "python", "pymongo", "database", "db", "sql", "nosql"]
+category: "database"
+tags: ["mongodb", "python", "pymongo", "database", "db", "sql", "nosql"]
 permalink: "/mongodb/mongoDB08_aggregate_groupby/"
 ---
 

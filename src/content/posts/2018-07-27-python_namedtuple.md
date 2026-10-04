@@ -2,7 +2,7 @@
 title: "collections - namedtuple"
 date: 2018-07-27
 category: "python-libs"
-tags: ["python", "python-lib", "collections", "namedtuple", "tuple", "dictionary", "class"]
+tags: ["python", "python-libs", "collections", "namedtuple", "tuple", "dictionary", "class"]
 permalink: "/python-lib/python_namedtuple/"
 ---
 

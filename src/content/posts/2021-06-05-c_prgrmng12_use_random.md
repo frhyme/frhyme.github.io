@@ -1,8 +1,8 @@
 ---
 title: "C - random"
 date: 2021-06-05
-category: "C_programming"
-tags: ["C_programming", "c", "random"]
+category: "c-programming"
+tags: ["c_programming", "c", "random"]
 permalink: "/c_programming/c_prgrmng12_use_random/"
 ---
 

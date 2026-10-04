@@ -2,7 +2,7 @@
 title: "Java - JAR(Java ARchive)"
 date: 2020-11-22
 category: "java"
-tags: ["java", "programming", "JAR"]
+tags: ["java", "programming", "jar"]
 permalink: "/java/java_what_is_JAR/"
 ---
 

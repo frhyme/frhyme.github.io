@@ -2,7 +2,7 @@
 title: "python에서 main function 활용하기"
 date: 2018-07-10
 category: "python"
-tags: ["python", "python-lib"]
+tags: ["python", "python-libs"]
 permalink: "/python/main_function_in_python/"
 ---
 

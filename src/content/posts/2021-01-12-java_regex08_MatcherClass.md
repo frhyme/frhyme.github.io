@@ -2,7 +2,7 @@
 title: "Java - Regex - Matcher Class"
 date: 2021-01-12
 category: "java"
-tags: ["java", "regex", "programming", "String", "pattren", "Matcher"]
+tags: ["java", "regex", "programming", "string", "pattren", "matcher"]
 permalink: "/java/java_regex08_MatcherClass/"
 ---
 

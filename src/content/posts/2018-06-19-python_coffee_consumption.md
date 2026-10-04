@@ -1,8 +1,8 @@
 ---
 title: "3개월동안 먹은 커피 기록을 분석합니다."
 date: 2018-06-19
-category: "data-analysis"
-tags: ["python", "python-lib", "data-science", "quantify-myself", "numpy", "matplotlib", "seaborn", "pandas", "time-series"]
+category: "data-science"
+tags: ["python", "python-libs", "data-science", "quantify-myself", "numpy", "matplotlib", "seaborn", "pandas", "time-series"]
 permalink: "/data-analysis/python_coffee_consumption/"
 ---
 

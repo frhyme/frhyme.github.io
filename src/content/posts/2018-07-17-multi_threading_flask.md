@@ -2,7 +2,7 @@
 title: "flask에서 multi-threading 세팅하기"
 date: 2018-07-17
 category: "python-libs"
-tags: ["python", "python-lib", "matplotlib", "flask", "multi-threading"]
+tags: ["python", "python-libs", "matplotlib", "flask", "multi-threading"]
 permalink: "/python-lib/multi_threading_flask/"
 ---
 

@@ -2,7 +2,7 @@
 title: "Java - Regex - Pattern, Matcher"
 date: 2021-01-11
 category: "java"
-tags: ["java", "regex", "programming", "String"]
+tags: ["java", "regex", "programming", "string"]
 permalink: "/java/java_regex06_patterns_matcher/"
 ---
 

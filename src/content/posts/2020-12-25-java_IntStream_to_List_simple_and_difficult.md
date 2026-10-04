@@ -2,7 +2,7 @@
 title: "Java - stream - IntStream to List"
 date: 2020-12-25
 category: "java"
-tags: ["java", "programming", "stream", "IntStream", "Collectors"]
+tags: ["java", "programming", "stream", "intstream", "collectors"]
 permalink: "/java/java_IntStream_to_List_simple_and_difficult/"
 ---
 

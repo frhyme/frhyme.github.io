@@ -1,8 +1,8 @@
 ---
 title: "pypy00 - Install PyPy"
 date: 2021-12-31
-category: "pypy"
-tags: ["pypy", "compiler", "python", "programming", "RPython", "macOS"]
+category: "python"
+tags: ["pypy", "compiler", "python", "programming", "rpython", "macos"]
 permalink: "/pypy/python_pypy00_intro/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "영화 Before Sunrise 명장면 - 비엔나에서 내리자 우리"
 date: 2019-11-08
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "BeforeSunrise"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script", "beforesunrise"]
 permalink: "/english_study_by_movie_script/BeforeSunrise_Scene00_Vienna/"
 ---
 

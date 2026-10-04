@@ -2,7 +2,7 @@
 title: "Java - String - 값을 비교할 때는 equals method를 사용해야 함"
 date: 2020-10-22
 category: "java"
-tags: ["java", "String", "equality", "comparison", "programming"]
+tags: ["java", "string", "equality", "comparison", "programming"]
 permalink: "/java/java_bad_habit_string_use_equality/"
 ---
 

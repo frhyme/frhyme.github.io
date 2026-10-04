@@ -1,7 +1,7 @@
 ---
 title: "Shell - 파일 내에 특정 문자열이 존재하는지 찾기"
 date: 2022-03-02
-category: "shell"
+category: "dev-tools"
 tags: ["grep", "shell", "linux", "unix"]
 permalink: "/shell/shell02_find_str_from_all_files/"
 ---

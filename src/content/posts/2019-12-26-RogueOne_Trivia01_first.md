@@ -1,8 +1,8 @@
 ---
 title: "영화 Rogue One이 만든 스타워즈 역사의 첫번째 기록"
 date: 2019-12-26
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "RogueOne", "StarWars"]
+category: "english"
+tags: ["english", "movie", "movie_script", "rogueone", "starwars"]
 permalink: "/english_study_by_movie_script/RogueOne_Trivia01_first/"
 ---
 

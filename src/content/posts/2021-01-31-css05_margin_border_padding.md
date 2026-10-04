@@ -1,7 +1,7 @@
 ---
 title: "CSS - margin, padding, border"
 date: 2021-01-31
-category: "css"
+category: "web"
 tags: ["css", "margin", "padding", "border"]
 permalink: "/css/css05_margin_border_padding/"
 ---

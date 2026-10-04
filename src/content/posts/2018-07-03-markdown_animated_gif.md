@@ -1,7 +1,7 @@
 ---
 title: "마크다운에 animated GIF를 넣어봅시다."
 date: 2018-07-03
-category: "others"
+category: "dev-tools"
 tags: ["markdown", "gif"]
 permalink: "/others/markdown_animated_gif/"
 ---

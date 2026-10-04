@@ -2,7 +2,7 @@
 title: "simpy Container 사용하기 - gas fueling 모델링하기"
 date: 2018-07-26
 category: "python-libs"
-tags: ["python", "python-lib", "simuation", "simpy", "numpy", "generator", "class"]
+tags: ["python", "python-libs", "simuation", "simpy", "numpy", "generator", "class"]
 permalink: "/python-lib/simpy_container/"
 ---
 

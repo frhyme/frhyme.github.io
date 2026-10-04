@@ -2,7 +2,7 @@
 title: "Java - Reflection - Basic"
 date: 2021-01-14
 category: "java"
-tags: ["java", "reflection", "class", "programming", "OOP"]
+tags: ["java", "reflection", "class", "programming", "oop"]
 permalink: "/java/java_reflection01_basic/"
 ---
 

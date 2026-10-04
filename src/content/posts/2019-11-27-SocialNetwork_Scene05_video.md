@@ -1,8 +1,8 @@
 ---
 title: "영화 Social Network 명장면 - 그 비디오 게임 잘되길 바라"
 date: 2019-11-27
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "SocialNetwork"]
+category: "english"
+tags: ["english", "movie", "movie_script", "socialnetwork"]
 permalink: "/english_study_by_movie_script/SocialNetwork_Scene05_video/"
 ---
 

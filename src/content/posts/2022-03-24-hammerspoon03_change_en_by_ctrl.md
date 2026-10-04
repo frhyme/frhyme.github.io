@@ -1,7 +1,7 @@
 ---
 title: "Hammerspoon03 - ctrl키로 한영 전환 하기"
 date: 2022-03-24
-category: "hammerspoon"
+category: "dev-tools"
 tags: ["hammerspoon", "ctrl", "hhkb"]
 permalink: "/hammerspoon/hammerspoon03_change_en_by_ctrl/"
 ---

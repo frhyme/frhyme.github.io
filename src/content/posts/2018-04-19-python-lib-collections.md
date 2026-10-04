@@ -1,7 +1,7 @@
 ---
 title: "python - data structure"
 date: 2018-04-19
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "collections", "data-structure"]
 permalink: "/python-basic/python-lib)-collections/"
 ---

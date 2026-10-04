@@ -1,8 +1,8 @@
 ---
 title: "Scala - Install scala"
 date: 2021-01-23
-category: "scala"
-tags: ["scala", "programming", "install", "brew", "intellij", "REPL"]
+category: "java"
+tags: ["scala", "programming", "install", "brew", "intellij", "repl"]
 permalink: "/scala/scala01_install_scala/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "영화 Martian 명장면 - 우주해적"
 date: 2019-11-01
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Martian"]
+category: "english"
+tags: ["english", "movie", "movie_script", "martian"]
 permalink: "/english_study_by_movie_script/Martian_Scene01_pirate/"
 ---
 

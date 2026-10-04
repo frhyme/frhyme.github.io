@@ -2,7 +2,7 @@
 title: "python - statsmodels - GLM"
 date: 2020-01-25
 category: "python-libs"
-tags: ["GLM", "statistics"]
+tags: ["glm", "statistics"]
 permalink: "/python-libs/statsmodels_glm/"
 ---
 

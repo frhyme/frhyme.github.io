@@ -1,7 +1,7 @@
 ---
 title: "Kotlin - Array"
 date: 2021-02-19
-category: "kotlin"
+category: "java"
 tags: ["kotlin", "programming", "array"]
 permalink: "/kotlin/kotlin05_Array/"
 ---

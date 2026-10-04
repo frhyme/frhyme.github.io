@@ -2,7 +2,7 @@
 title: "Javascript - setInterval"
 date: 2021-02-02
 category: "javascript"
-tags: ["javascript", "function", "setInterval", "setTimeout"]
+tags: ["javascript", "function", "setinterval", "settimeout"]
 permalink: "/javascript/javascript07_setInterval/"
 ---
 

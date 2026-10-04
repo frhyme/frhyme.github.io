@@ -1,7 +1,7 @@
 ---
 title: "vscode - sidebar file filtering disable"
 date: 2021-05-23
-category: "vs-code"
+category: "dev-tools"
 tags: ["vscode", "sidebar", "setting", "json"]
 permalink: "/vscode/vscode_sidebar_file_filetering_disable/"
 ---

@@ -2,7 +2,7 @@
 title: "matrix decomposition"
 date: 2018-06-25
 category: "python-libs"
-tags: ["python", "python-lib", "numpy", "matrix-decomposition", "linear-algebra", "scipy"]
+tags: ["python", "python-libs", "numpy", "matrix-decomposition", "linear-algebra", "scipy"]
 permalink: "/python-lib/matrix_decomposition/"
 ---
 

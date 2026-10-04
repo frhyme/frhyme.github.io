@@ -1,7 +1,7 @@
 ---
 title: "python에서 getattr 덮어씌우기."
 date: 2019-08-11
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "getattr", "class"]
 permalink: "/python-basic/python_class_getattr_overwrite/"
 ---

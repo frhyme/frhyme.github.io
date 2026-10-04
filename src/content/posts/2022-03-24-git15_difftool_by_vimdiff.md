@@ -1,7 +1,7 @@
 ---
 title: "Git 15 - Used difftool by Side by Side Compare"
 date: 2022-03-24
-category: "git"
+category: "dev-tools"
 tags: ["git", "config", "diff", "difftool", "compare", "vim", "vi", "gitconfig"]
 permalink: "/git/git15_difftool_by_vimdiff/"
 ---

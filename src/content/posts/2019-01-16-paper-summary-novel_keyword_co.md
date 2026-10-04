@@ -1,7 +1,7 @@
 ---
 title: "paper-summary - Novel keyword co-occurrence network-based methods to foster systematic reviews of scientific literature"
 date: 2019-01-16
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary"]
 permalink: "/paper-summary/paper-summary-novel_keyword_co/"
 ---

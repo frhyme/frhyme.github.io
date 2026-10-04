@@ -1,7 +1,7 @@
 ---
 title: "vscode - vim - 한글 삭제시 글자가 2개 지워지는 현상"
 date: 2021-05-23
-category: "vs-code"
+category: "dev-tools"
 tags: ["vscode", "vim", "markdown"]
 permalink: "/vscode/vscode_vim_broken_kor/"
 ---

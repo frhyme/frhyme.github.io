@@ -1,8 +1,8 @@
 ---
 title: "HiphopLE Analysis 1편"
 date: 2021-05-10
-category: "project"
-tags: ["hiphop", "soynlp", "mongoDB", "pymongo", "networkx", "NLP"]
+category: "others"
+tags: ["hiphop", "soynlp", "mongodb", "pymongo", "networkx", "nlp"]
 permalink: "/project/PRJ01_hiphopLE_analysis/"
 ---
 

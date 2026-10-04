@@ -1,7 +1,7 @@
 ---
 title: "html 내에 코드 embed하기."
 date: 2019-03-12
-category: "others"
+category: "web"
 tags: ["html", "code", "embeded"]
 permalink: "/others/embed_code_in_html/"
 ---

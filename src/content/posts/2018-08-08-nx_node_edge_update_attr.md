@@ -2,7 +2,7 @@
 title: "networkx의 노드, edge의 attribute 추가 및 업데이트하기"
 date: 2018-08-08
 category: "python-libs"
-tags: ["python", "python-lib", "networkx", "network"]
+tags: ["python", "python-libs", "networkx", "network"]
 permalink: "/python-lib/nx_node_edge_update_attr/"
 ---
 

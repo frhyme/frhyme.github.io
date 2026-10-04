@@ -2,7 +2,7 @@
 title: "cairosvg 문제 해결하기"
 date: 2018-08-14
 category: "python-libs"
-tags: ["python", "python-lib", "svg", "png", "cairosvg", "graphviz"]
+tags: ["python", "python-libs", "svg", "png", "cairosvg", "graphviz"]
 permalink: "/python-lib/pyimg_cairosvg_problem/"
 ---
 

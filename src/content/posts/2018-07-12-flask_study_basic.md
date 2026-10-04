@@ -2,7 +2,7 @@
 title: "flask로 웹 사이트 만들기 - basic"
 date: 2018-07-12
 category: "python-libs"
-tags: ["python", "python-lib", "flask", "web", "html"]
+tags: ["python", "python-libs", "flask", "web", "html"]
 permalink: "/python-lib/flask_study_basic/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "영화 - 소셜 네트워크"
 date: 2019-10-25
-category: "MovieDiary"
-tags: ["MovieDiary", "Movie", "Film"]
+category: "life"
+tags: ["moviediary", "movie", "film"]
 permalink: "/moviediary/movie_diary_social_network/"
 ---
 

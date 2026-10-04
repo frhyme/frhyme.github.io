@@ -1,8 +1,8 @@
 ---
 title: "nodeJS - install"
 date: 2021-02-25
-category: "nodeJS"
-tags: ["nodeJS", "javascript", "server", "http", "web"]
+category: "javascript"
+tags: ["nodejs", "javascript", "server", "http", "web"]
 permalink: "/nodejs/nodeJS00_install/"
 ---
 

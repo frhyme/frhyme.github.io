@@ -1,8 +1,8 @@
 ---
 title: "nodeJS - address already in use"
 date: 2021-02-25
-category: "nodeJS"
-tags: ["nodeJS", "javascript", "server", "http", "web", "error"]
+category: "javascript"
+tags: ["nodejs", "javascript", "server", "http", "web", "error"]
 permalink: "/nodejs/nodeJS01_error/"
 ---
 

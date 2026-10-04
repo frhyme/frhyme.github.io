@@ -2,7 +2,7 @@
 title: "time series의 stationarity를 체크해봅시다."
 date: 2018-06-12
 category: "python-libs"
-tags: ["python", "python-lib", "time-series", "stationarity", "statsmodels", "pandas", "numpy", "matplotlib"]
+tags: ["python", "python-libs", "time-series", "stationarity", "statsmodels", "pandas", "numpy", "matplotlib"]
 permalink: "/python-lib/check_stationary-in-time-series/"
 ---
 

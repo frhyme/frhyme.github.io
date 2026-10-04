@@ -1,8 +1,8 @@
 ---
 title: "영화 Shining - 셀리 듀발에 대한 이야기들"
 date: 2020-01-02
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Shining"]
+category: "english"
+tags: ["english", "movie", "movie_script", "shining"]
 permalink: "/english_study_by_movie_script/Shining_Trivia00_Shelly/"
 ---
 

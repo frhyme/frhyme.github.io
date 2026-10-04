@@ -1,8 +1,8 @@
 ---
 title: "영화 Unbreakable 에 관한 사소한 사실들(trivia)"
 date: 2020-01-28
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Unbreakable"]
+category: "english"
+tags: ["english", "movie", "movie_script", "unbreakable"]
 permalink: "/english_study_by_movie_script/unbreakable_trivia/"
 ---
 

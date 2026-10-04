@@ -1,7 +1,7 @@
 ---
 title: "python - E712 - Comparison to true should be 'if cond is true:"
 date: 2020-05-29
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "flake8"]
 permalink: "/python-basic/py_comparison_to_true_should_be_is/"
 ---

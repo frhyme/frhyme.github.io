@@ -2,7 +2,7 @@
 title: "야구) 타자의 공격력을 계산하려고 합니다."
 date: 2018-05-23
 category: "baseball"
-tags: ["baseball", "sabermetrics", "OPS", "park-factor", "wOBA", "OPS+", "GPA", "RE", "RV"]
+tags: ["baseball", "sabermetrics", "ops", "park-factor", "woba", "ops+", "gpa", "re", "rv"]
 permalink: "/baseball/baseball_wOBA/"
 ---
 

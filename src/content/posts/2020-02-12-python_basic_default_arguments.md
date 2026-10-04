@@ -1,7 +1,7 @@
 ---
 title: "SyntaxError - non-default argument follows default argument"
 date: 2020-02-12
-category: "python-basic"
+category: "python"
 tags: ["python", "python-libs", "syntax", "error"]
 permalink: "/python-basic/python_basic_default_arguments/"
 ---

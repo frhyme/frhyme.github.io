@@ -2,7 +2,7 @@
 title: "python-lib) functools - partial"
 date: 2020-08-05
 category: "python-libs"
-tags: ["python", "python-lib", "functools", "functional-programming", "iterator"]
+tags: ["python", "python-libs", "functools", "functional-programming", "iterator"]
 permalink: "/python-lib/python_lib_functools_partial/"
 ---
 

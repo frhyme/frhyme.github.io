@@ -2,7 +2,7 @@
 title: "dot language로 nn 그려서 보기"
 date: 2018-06-20
 category: "machine-learning"
-tags: ["python", "dot", "python-lib", "machine-learning", "neural-network"]
+tags: ["python", "dot", "python-libs", "machine-learning", "neural-network"]
 permalink: "/machine-learning/drawing_nn_with_dot/"
 ---
 

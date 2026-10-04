@@ -2,7 +2,7 @@
 title: "plt.title의 위치 바꾸기."
 date: 2018-08-13
 category: "python-libs"
-tags: ["python-lib", "python", "matplotlib", "heatmap", "position", "title", "numpy", "seaborn", "pandas"]
+tags: ["python-libs", "python", "matplotlib", "heatmap", "position", "title", "numpy", "seaborn", "pandas"]
 permalink: "/python-lib/plt_title_position/"
 ---
 

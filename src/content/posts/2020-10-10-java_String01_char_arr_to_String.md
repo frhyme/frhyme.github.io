@@ -2,7 +2,7 @@
 title: "java - Char array를 String으로 변환하기"
 date: 2020-10-10
 category: "java"
-tags: ["java", "String", "char", "array"]
+tags: ["java", "string", "char", "array"]
 permalink: "/java/java_String01_char_arr_to_String/"
 ---
 

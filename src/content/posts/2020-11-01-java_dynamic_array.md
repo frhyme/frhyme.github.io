@@ -1,7 +1,7 @@
 ---
 title: "Java - Dynamic Array(동적배열)"
 date: 2020-11-01
-category: "data-structure"
+category: "algorithm"
 tags: ["java", "array", "programming"]
 permalink: "/datastructure/java_dynamic_array/"
 ---

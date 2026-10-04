@@ -1,8 +1,8 @@
 ---
 title: "graphviz를 이용하여 키워드 네트워크를 그려 봅시다(실패함)"
 date: 2018-05-08
-category: "project"
-tags: ["python-lib", "matplotlib", "networkx", "python", "graphviz", "not-yet"]
+category: "others"
+tags: ["python-libs", "matplotlib", "networkx", "python", "graphviz", "not-yet"]
 permalink: "/project/draw_network_to_ppt/"
 ---
 

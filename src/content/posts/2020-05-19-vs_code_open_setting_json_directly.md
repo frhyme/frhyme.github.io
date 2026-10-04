@@ -1,7 +1,7 @@
 ---
 title: "VS-code shortcut - ctrl + P(파일 탐색 및 열기)"
 date: 2020-05-19
-category: "markdown"
+category: "dev-tools"
 tags: ["markdown", "lint", "markdown-lint"]
 permalink: "/markdown/vs_code_open_setting_json_directly/"
 ---

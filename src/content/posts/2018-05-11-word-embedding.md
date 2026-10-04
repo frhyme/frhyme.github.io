@@ -2,7 +2,7 @@
 title: "word embedding을 해봅시다."
 date: 2018-05-11
 category: "python-libs"
-tags: ["python", "python-lib", "nltk", "gensim", "word2vec"]
+tags: ["python", "python-libs", "nltk", "gensim", "word2vec"]
 permalink: "/python-lib/word-embedding/"
 ---
 

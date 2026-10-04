@@ -1,8 +1,8 @@
 ---
 title: "영화 '저수지의 개들'에 대한 흥미로운 이야기들"
 date: 2020-01-20
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "ReservoirDogs"]
+category: "english"
+tags: ["english", "movie", "movie_script", "reservoirdogs"]
 permalink: "/english_study_by_movie_script/ReservoirDogs_Trivia00/"
 ---
 

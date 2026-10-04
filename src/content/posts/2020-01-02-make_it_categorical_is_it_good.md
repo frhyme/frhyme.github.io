@@ -2,7 +2,7 @@
 title: "pd.DataFrame의 categorical data"
 date: 2020-01-02
 category: "python-libs"
-tags: ["python", "python-lib", "pandas", "dataframe", "categorical"]
+tags: ["python", "python-libs", "pandas", "dataframe", "categorical"]
 permalink: "/python-lib/make_it_categorical_is_it_good/"
 ---
 

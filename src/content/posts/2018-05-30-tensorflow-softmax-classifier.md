@@ -2,7 +2,7 @@
 title: "tensorflow) softmax classifier"
 date: 2018-05-30
 category: "machine-learning"
-tags: ["python", "python-lib", "tensorflow", "machine-learning"]
+tags: ["python", "python-libs", "tensorflow", "machine-learning"]
 permalink: "/machine-learning/tensorflow-softmax-classifier/"
 ---
 

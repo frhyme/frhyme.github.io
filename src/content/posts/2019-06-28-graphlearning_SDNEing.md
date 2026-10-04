@@ -2,7 +2,7 @@
 title: "Structural Deep Neural Embedding"
 date: 2019-06-28
 category: "machine-learning"
-tags: ["deep-leanring", "machine-learning", "ML", "graph", "networkx"]
+tags: ["deep-leanring", "machine-learning", "ml", "graph", "networkx"]
 permalink: "/machine-leanring/graphlearning_SDNE(ing)/"
 ---
 

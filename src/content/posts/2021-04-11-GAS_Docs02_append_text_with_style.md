@@ -1,8 +1,8 @@
 ---
 title: "Google Apps Script - Docs - Append text with style"
 date: 2021-04-11
-category: "google"
-tags: ["google", "javascript", "Google_Docs", "macro", "GoogleAppsScript"]
+category: "dev-tools"
+tags: ["google", "javascript", "google_docs", "macro", "googleappsscript"]
 permalink: "/google/GAS_Docs02_append_text_with_style/"
 ---
 

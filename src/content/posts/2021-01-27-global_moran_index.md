@@ -2,7 +2,7 @@
 title: "Moran's Index python으로 계산하기"
 date: 2021-01-27
 category: "others"
-tags: ["python", "HypothesisTesting", "scipy", "autocorrelation"]
+tags: ["python", "hypothesistesting", "scipy", "autocorrelation"]
 permalink: "/others/global_moran_index/"
 ---
 

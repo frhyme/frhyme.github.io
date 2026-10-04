@@ -2,7 +2,7 @@
 title: "clustering을 해봅시다."
 date: 2018-05-14
 category: "python-libs"
-tags: ["python-lib", "python", "sklearn", "clustering"]
+tags: ["python-libs", "python", "sklearn", "clustering"]
 permalink: "/python-lib/clustering_in_python/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "got multiple values for argument"
 date: 2019-07-09
-category: "python-basic"
+category: "python"
 tags: ["python", "python-libs"]
 permalink: "/python-basic/python_got_multiple_v_for_arg/"
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Google Apps Script - Google Sheet의 데이터를 python으로 보내기"
 date: 2021-04-12
-category: "google"
-tags: ["google", "javascript", "google_sheet", "macro", "GoogleAppsScript"]
+category: "dev-tools"
+tags: ["google", "javascript", "google_sheet", "macro", "googleappsscript"]
 permalink: "/google/GoogleAppsScript99_distribution/"
 ---
 

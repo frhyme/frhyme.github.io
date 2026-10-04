@@ -2,7 +2,7 @@
 title: "java - BaseClass의 Method가 Overriding되지 않게 하기"
 date: 2020-11-15
 category: "java"
-tags: ["java", "programming", "inheritance", "Overriding"]
+tags: ["java", "programming", "inheritance", "overriding"]
 permalink: "/java/java_baseClass_forbid_overriding/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "mongoDB - get Distinct(unique)"
 date: 2021-04-15
-category: "mongoDB"
-tags: ["mongoDB", "python", "pymongo", "database", "db", "sql", "nosql", "pickle"]
+category: "database"
+tags: ["mongodb", "python", "pymongo", "database", "db", "sql", "nosql", "pickle"]
 permalink: "/mongodb/mongoDB07_distinct_method/"
 ---
 

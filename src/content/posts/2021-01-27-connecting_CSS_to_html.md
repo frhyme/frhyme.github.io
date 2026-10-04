@@ -1,8 +1,8 @@
 ---
 title: "html 내에 CSS 연결하기"
 date: 2021-01-27
-category: "html"
-tags: ["html", "CSS"]
+category: "web"
+tags: ["html", "css"]
 permalink: "/html/connecting_CSS_to_html/"
 ---
 

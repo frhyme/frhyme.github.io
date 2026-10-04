@@ -1,7 +1,7 @@
 ---
 title: "Github - 이전 commit에서 잘못 작성된 author 변경하기."
 date: 2020-05-19
-category: "git"
+category: "dev-tools"
 tags: ["git", "github"]
 permalink: "/git/github_authoring_change/"
 ---

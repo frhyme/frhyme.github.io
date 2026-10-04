@@ -2,7 +2,7 @@
 title: "맥에서 스크린샷 클립보드에 저장하기."
 date: 2019-01-21
 category: "others"
-tags: ["screenshot", "macOS", "clipboard"]
+tags: ["screenshot", "macos", "clipboard"]
 permalink: "/others/others_save_screenshot_to_clipboard_mac/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Kotlin - Range"
 date: 2021-02-16
-category: "kotlin"
+category: "java"
 tags: ["kotlin", "range", "for", "programming"]
 permalink: "/kotlin/kotlin02_range/"
 ---

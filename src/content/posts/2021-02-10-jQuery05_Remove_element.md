@@ -1,8 +1,8 @@
 ---
 title: "jQuery - Remove Element"
 date: 2021-02-10
-category: "jQuery"
-tags: ["jQuery", "javascript", "html", "web"]
+category: "web"
+tags: ["jquery", "javascript", "html", "web"]
 permalink: "/jquery/jQuery05_Remove_element/"
 ---
 

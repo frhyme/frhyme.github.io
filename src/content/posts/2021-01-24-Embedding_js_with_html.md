@@ -1,7 +1,7 @@
 ---
 title: "JavaScript 코드 html에 연결하기"
 date: 2021-01-24
-category: "html"
+category: "web"
 tags: ["html", "javascript"]
 permalink: "/html/Embedding_js_with_html/"
 ---

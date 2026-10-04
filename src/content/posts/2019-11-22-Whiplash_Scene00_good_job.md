@@ -1,8 +1,8 @@
 ---
 title: "영화 Whiplash 명장면 - Good job"
 date: 2019-11-22
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Whiplash"]
+category: "english"
+tags: ["english", "movie", "movie_script", "whiplash"]
 permalink: "/english_study_by_movie_script/Whiplash_Scene00_good_job/"
 ---
 

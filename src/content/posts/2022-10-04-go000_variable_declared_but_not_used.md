@@ -1,7 +1,7 @@
 ---
 title: "go lang - variable declared but not used"
 date: 2022-10-04
-category: "golang"
+category: "go"
 tags: ["go", "golang", "variable", "readability"]
 permalink: "/golang/go000_variable_declared_but_not_used/"
 ---

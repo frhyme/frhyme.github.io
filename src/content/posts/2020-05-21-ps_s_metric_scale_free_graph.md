@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Towards a Theory of Scale-Free Graphs - Definition, Properties, and Implications"
 date: 2020-05-21
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "scale-free-graph"]
 permalink: "/paper-summary/ps_s_metric_scale_free_graph/"
 ---

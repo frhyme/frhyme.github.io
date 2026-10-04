@@ -1,8 +1,8 @@
 ---
 title: "Google Apps Script - Docs - Create Document"
 date: 2021-04-11
-category: "google"
-tags: ["google", "javascript", "Google_Docs", "macro", "GoogleAppsScript"]
+category: "dev-tools"
+tags: ["google", "javascript", "google_docs", "macro", "googleappsscript"]
 permalink: "/google/GAS_Docs00_create_document/"
 ---
 

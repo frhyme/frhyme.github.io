@@ -2,7 +2,7 @@
 title: "python의 os module 사용하기"
 date: 2018-07-03
 category: "python-libs"
-tags: ["python", "os", "python-lib", "bash", "unix", "subprocess"]
+tags: ["python", "os", "python-libs", "bash", "unix", "subprocess"]
 permalink: "/python-lib/python_os_and_subprocess/"
 ---
 

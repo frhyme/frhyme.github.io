@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - A model of Internet topology using k-shell decomposition"
 date: 2020-02-21
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "k-shell"]
 permalink: "/paper-summary/ps_internet_topology_k_shell_decomp/"
 ---

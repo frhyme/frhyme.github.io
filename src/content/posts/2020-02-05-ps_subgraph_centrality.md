@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Subgraph Centrality in Complex Networks"
 date: 2020-02-05
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "network", "centrality", "subgraph"]
 permalink: "/paper-summary/ps_subgraph_centrality/"
 ---

@@ -1,8 +1,8 @@
 ---
 title: "shallow copy and deep copy in python"
 date: 2018-09-08
-category: "python-basic"
-tags: ["python", "python-lib", "copy", "shallow-copy", "deep-copy"]
+category: "python"
+tags: ["python", "python-libs", "copy", "shallow-copy", "deep-copy"]
 permalink: "/python-basic/python_shallow_copy_n_deep_cp/"
 ---
 

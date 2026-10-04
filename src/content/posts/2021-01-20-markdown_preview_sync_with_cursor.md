@@ -1,8 +1,8 @@
 ---
 title: "VScode - Markdown Preview Sync with Cursor position"
 date: 2021-01-20
-category: "vs-code"
-tags: ["VScode", "markdown", "markdownPreview", "extension", "keyBinding"]
+category: "dev-tools"
+tags: ["vscode", "markdown", "markdownpreview", "extension", "keybinding"]
 permalink: "/vscode/markdown_preview_sync_with_cursor/"
 ---
 

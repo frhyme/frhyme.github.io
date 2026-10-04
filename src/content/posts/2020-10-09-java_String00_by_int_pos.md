@@ -2,7 +2,7 @@
 title: "Java - 문자열 정수 index를 사용해서 접근"
 date: 2020-10-09
 category: "java"
-tags: ["java", "programming", "IntelliJ", "String"]
+tags: ["java", "programming", "intellij", "string"]
 permalink: "/java/java_String00_by_int_pos/"
 ---
 

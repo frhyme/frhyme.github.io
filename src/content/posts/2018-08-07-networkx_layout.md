@@ -2,7 +2,7 @@
 title: "networkx의 layout 정리하기"
 date: 2018-08-07
 category: "python-libs"
-tags: ["networkx", "python", "python-lib", "layout", "matplotlib"]
+tags: ["networkx", "python", "python-libs", "layout", "matplotlib"]
 permalink: "/python-lib/networkx_layout/"
 ---
 

@@ -2,7 +2,7 @@
 title: "java - String을 Int로"
 date: 2020-10-10
 category: "java"
-tags: ["java", "String", "Int"]
+tags: ["java", "string", "int"]
 permalink: "/java/java_String02_String_to_int/"
 ---
 

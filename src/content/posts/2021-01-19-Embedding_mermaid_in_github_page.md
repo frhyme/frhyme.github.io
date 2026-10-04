@@ -1,7 +1,7 @@
 ---
 title: "github page에서 Mermaid를 사용하여 diagram 그리기"
 date: 2021-01-19
-category: "mermaid"
+category: "dev-tools"
 tags: ["mermaid", "jekyll", "github", "diagram", "javascript"]
 permalink: "/mermaid/Embedding_mermaid_in_github_page/"
 ---

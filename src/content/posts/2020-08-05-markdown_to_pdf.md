@@ -1,7 +1,7 @@
 ---
 title: "Markdown을 pdf로 변환하려고 합니다."
 date: 2020-08-05
-category: "vs-code"
+category: "dev-tools"
 tags: ["vs-code", "font"]
 permalink: "/vs-code/markdown_to_pdf/"
 ---

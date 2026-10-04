@@ -1,7 +1,7 @@
 ---
 title: "list의 k partition 구하기."
 date: 2019-04-18
-category: "others"
+category: "python"
 tags: ["python", "python-libs", "partition"]
 permalink: "/others/python_list_partition/"
 ---

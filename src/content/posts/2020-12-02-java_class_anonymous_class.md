@@ -2,7 +2,7 @@
 title: "Java - Anonymous Class"
 date: 2020-12-02
 category: "java"
-tags: ["java", "class", "OOP"]
+tags: ["java", "class", "oop"]
 permalink: "/java/java_class_anonymous_class/"
 ---
 

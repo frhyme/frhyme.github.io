@@ -1,8 +1,8 @@
 ---
 title: "영화 BlacKKKlansMan 뒷 이야기(Trivia) - 1편 - Spike Lee"
 date: 2020-01-10
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "BlacKKKlansMan"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script", "blackkklansman"]
 permalink: "/english_study_by_movie_script/BlacKKKlansman_Trivia01/"
 ---
 

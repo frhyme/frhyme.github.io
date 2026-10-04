@@ -1,7 +1,7 @@
 ---
 title: "CSS - Relative Unit"
 date: 2021-01-30
-category: "css"
+category: "web"
 tags: ["css", "unit", "width", "height"]
 permalink: "/css/css01_relative_units_by_percent/"
 ---

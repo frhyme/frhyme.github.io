@@ -1,7 +1,7 @@
 ---
 title: "paper-summary - Selecting publication keywords for domain analysis in bibliometrics - A comparison of three methods"
 date: 2019-01-16
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "keywords"]
 permalink: "/paper-summary/paper-summary-select-keywords/"
 ---

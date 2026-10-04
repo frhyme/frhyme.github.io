@@ -2,7 +2,7 @@
 title: "Google Analytics 결과 분석하기"
 date: 2018-07-18
 category: "others"
-tags: ["analytics", "google", "DNS"]
+tags: ["analytics", "google", "dns"]
 permalink: "/others/google_analytics/"
 ---
 

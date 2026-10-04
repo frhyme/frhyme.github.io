@@ -2,7 +2,7 @@
 title: "matplotlib 테마 바꾸기"
 date: 2018-06-27
 category: "python-libs"
-tags: ["matplotlib", "python-lib", "python", "theme"]
+tags: ["matplotlib", "python-libs", "python", "theme"]
 permalink: "/python-lib/darktheme_matplotlib/"
 ---
 

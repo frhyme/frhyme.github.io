@@ -2,7 +2,7 @@
 title: "python - pandas - crosstab, pivot_table"
 date: 2020-01-17
 category: "python-libs"
-tags: ["python", "python-libs", "pandas", "crosstab", "DataFrame"]
+tags: ["python", "python-libs", "pandas", "crosstab", "dataframe"]
 permalink: "/python-libs/pd_crosstab/"
 ---
 

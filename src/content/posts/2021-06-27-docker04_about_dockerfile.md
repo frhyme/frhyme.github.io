@@ -1,7 +1,7 @@
 ---
 title: "docker - dockerfile"
 date: 2021-06-27
-category: "docker"
+category: "dev-tools"
 tags: ["docker", "dockerfile", "container", "image"]
 permalink: "/docker/docker04_about_dockerfile/"
 ---

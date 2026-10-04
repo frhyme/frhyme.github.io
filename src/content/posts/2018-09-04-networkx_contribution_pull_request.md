@@ -2,7 +2,7 @@
 title: "networkx github에 pull request 날리기"
 date: 2018-09-04
 category: "python-libs"
-tags: ["python", "python-lib", "networkx", "github", "pull"]
+tags: ["python", "python-libs", "networkx", "github", "pull"]
 permalink: "/python-lib/networkx_contribution_pull_request/"
 ---
 

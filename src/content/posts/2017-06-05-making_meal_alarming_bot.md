@@ -1,7 +1,7 @@
 ---
 title: "슬랙에 학생식당 메뉴 알려주는 봇 만들기"
 date: 2017-06-05
-category: "project"
+category: "others"
 tags: ["python", "slack", "bot"]
 permalink: "/project/making_meal_alarming_bot/"
 ---

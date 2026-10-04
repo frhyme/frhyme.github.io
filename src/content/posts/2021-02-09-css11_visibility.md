@@ -1,7 +1,7 @@
 ---
 title: "CSS - visibility"
 date: 2021-02-09
-category: "css"
+category: "web"
 tags: ["css", "visibility", "html"]
 permalink: "/css/css11_visibility/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "VScode - Extension - paste Image"
 date: 2021-07-28
-category: "vs-code"
+category: "dev-tools"
 tags: ["vscode", "extension", "image", "paste"]
 permalink: "/vscode/vscode_extension_paste_image/"
 ---

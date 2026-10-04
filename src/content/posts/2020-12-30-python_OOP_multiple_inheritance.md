@@ -2,7 +2,7 @@
 title: "python - OOP - multiple Inheritance"
 date: 2020-12-30
 category: "python"
-tags: ["python", "OOP", "inheritance"]
+tags: ["python", "oop", "inheritance"]
 permalink: "/python/python_OOP_multiple_inheritance/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "영화 '사랑도 통역이 되나요'에 관한 사소한 사실들 - 1편"
 date: 2019-12-30
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "LostInTranslation"]
+category: "english"
+tags: ["english", "movie", "movie_script", "lostintranslation"]
 permalink: "/english_study_by_movie_script/Lost_In_Translation_Trivia01/"
 ---
 

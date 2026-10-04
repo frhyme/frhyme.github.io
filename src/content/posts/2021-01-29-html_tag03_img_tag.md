@@ -1,7 +1,7 @@
 ---
 title: "html - img tag"
 date: 2021-01-29
-category: "html"
+category: "web"
 tags: ["html", "a", "tag", "img", "image"]
 permalink: "/html/html_tag03_img_tag/"
 ---

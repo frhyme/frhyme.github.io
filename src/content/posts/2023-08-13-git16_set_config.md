@@ -1,7 +1,7 @@
 ---
 title: "Git - git config 설정과 확인"
 date: 2023-08-13
-category: "others"
+category: "dev-tools"
 tags: ["tech"]
 permalink: "/others/git16_set_config/"
 ---

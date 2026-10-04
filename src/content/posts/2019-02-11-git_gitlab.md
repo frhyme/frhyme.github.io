@@ -1,7 +1,7 @@
 ---
 title: "gitlab을 사용합니다."
 date: 2019-02-11
-category: "others"
+category: "dev-tools"
 tags: ["git", "gitlab"]
 permalink: "/others/git_gitlab/"
 ---

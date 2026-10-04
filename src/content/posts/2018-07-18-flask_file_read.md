@@ -2,7 +2,7 @@
 title: "flask에서 파일 읽고 결과 뿌려주기"
 date: 2018-07-18
 category: "python-libs"
-tags: ["python", "flask", "python-lib", "html"]
+tags: ["python", "flask", "python-libs", "html"]
 permalink: "/python-lib/flask_file_read/"
 ---
 

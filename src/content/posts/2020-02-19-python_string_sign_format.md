@@ -1,7 +1,7 @@
 ---
 title: "python 숫자 출력시에, 부호(sign) 출력하는 옵션."
 date: 2020-02-19
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "string", "string-format"]
 permalink: "/python-basic/python_string_sign_format/"
 ---

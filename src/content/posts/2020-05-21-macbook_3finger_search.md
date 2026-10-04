@@ -1,7 +1,7 @@
 ---
 title: "맥북, 세 손가락으로 사전 검색이 되지 않을 때."
 date: 2020-05-21
-category: "macOS"
+category: "dev-tools"
 tags: ["macbook", "force-touch"]
 permalink: "/mac/macbook_3finger_search/"
 ---

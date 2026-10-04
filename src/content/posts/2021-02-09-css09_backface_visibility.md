@@ -1,7 +1,7 @@
 ---
 title: "CSS - backface visiblity"
 date: 2021-02-09
-category: "css"
+category: "web"
 tags: ["css", "visibility"]
 permalink: "/css/css09_backface_visibility/"
 ---

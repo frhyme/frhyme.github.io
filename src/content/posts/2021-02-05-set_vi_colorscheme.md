@@ -1,7 +1,7 @@
 ---
 title: "vim - color theme 설정"
 date: 2021-02-05
-category: "shell"
+category: "dev-tools"
 tags: ["vim", "shell", "terminal", "theme"]
 permalink: "/shell/set_vi_colorscheme/"
 ---

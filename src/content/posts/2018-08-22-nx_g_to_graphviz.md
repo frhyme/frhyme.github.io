@@ -2,7 +2,7 @@
 title: "nx의 graph를 pygraphviz로 변경해서 그리기"
 date: 2018-08-22
 category: "python-libs"
-tags: ["python", "python-lib", "graphviz", "networkx", "graph"]
+tags: ["python", "python-libs", "graphviz", "networkx", "graph"]
 permalink: "/python-lib/nx_g_to_graphviz/"
 ---
 

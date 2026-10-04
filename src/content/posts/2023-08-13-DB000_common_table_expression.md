@@ -2,7 +2,7 @@
 title: "DB000 - common table expression"
 date: 2023-08-13
 category: "database"
-tags: ["DB", "database", "CTE"]
+tags: ["db", "database", "cte"]
 permalink: "/database/DB000_common_table_expression/"
 ---
 

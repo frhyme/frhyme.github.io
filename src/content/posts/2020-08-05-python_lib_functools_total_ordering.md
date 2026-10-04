@@ -1,7 +1,7 @@
 ---
 title: "functools.partial"
 date: 2020-08-05
-category: "others"
+category: "python"
 tags: ["python", "python-libs"]
 permalink: "/others/python_lib_functools_total_ordering/"
 ---

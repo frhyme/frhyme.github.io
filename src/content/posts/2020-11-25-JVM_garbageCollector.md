@@ -2,7 +2,7 @@
 title: "JVM - Garbage Collector"
 date: 2020-11-25
 category: "java"
-tags: ["java", "programming", "JVM"]
+tags: ["java", "programming", "jvm"]
 permalink: "/java/JVM_garbageCollector/"
 ---
 

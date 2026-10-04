@@ -1,8 +1,8 @@
 ---
 title: "영화 Social Network 명장면 - 그냥 공짜로 올렸는데"
 date: 2019-11-17
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "SocialNetwork"]
+category: "english"
+tags: ["english", "movie", "movie_script", "socialnetwork"]
 permalink: "/english_study_by_movie_script/SocialNetwork_Scene01_for_free/"
 ---
 

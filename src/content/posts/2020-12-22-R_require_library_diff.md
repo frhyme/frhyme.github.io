@@ -1,8 +1,8 @@
 ---
 title: "R - library와 require의 차이"
 date: 2020-12-22
-category: "R_programming"
-tags: ["R", "R_programming", "library", "require"]
+category: "data-science"
+tags: ["r", "r_programming", "library", "require"]
 permalink: "/r_programming/R_require_library_diff/"
 ---
 

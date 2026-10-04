@@ -1,7 +1,7 @@
 ---
 title: "jekyll에 favicon을 추가해줍니다."
 date: 2021-01-19
-category: "blog"
+category: "dev-tools"
 tags: ["blog", "jekyll", "favicon"]
 permalink: "/blog/jekyll_add_Favicon/"
 ---

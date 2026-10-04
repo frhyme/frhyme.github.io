@@ -2,7 +2,7 @@
 title: "python에서도 multiprocessing을 사용해야 하는 이유"
 date: 2020-10-09
 category: "python-libs"
-tags: ["python", "multiprocessing", "HyperThreading", "CPU", "joblib"]
+tags: ["python", "multiprocessing", "hyperthreading", "cpu", "joblib"]
 permalink: "/python-libs/multiprocessing_cpu_background/"
 ---
 

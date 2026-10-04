@@ -1,7 +1,7 @@
 ---
 title: "go006 - go rountine"
 date: 2023-07-16
-category: "golang"
+category: "go"
 tags: ["go", "golang", "routine"]
 permalink: "/golang/go006_go_rountine/"
 ---

@@ -2,7 +2,7 @@
 title: "네트워크에서 비슷한 그룹을 찾아봅시다."
 date: 2018-08-09
 category: "python-libs"
-tags: ["python", "python-lib", "networkx", "network", "community", "clustering", "centrality", "betweenness", "metric"]
+tags: ["python", "python-libs", "networkx", "network", "community", "clustering", "centrality", "betweenness", "metric"]
 permalink: "/python-lib/nx_communities/"
 ---
 

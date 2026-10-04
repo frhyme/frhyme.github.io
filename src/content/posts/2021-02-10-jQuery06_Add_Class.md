@@ -1,8 +1,8 @@
 ---
 title: "jQuery - Add Class"
 date: 2021-02-10
-category: "jQuery"
-tags: ["jQuery", "javascript", "html", "web", "css"]
+category: "web"
+tags: ["jquery", "javascript", "html", "web", "css"]
 permalink: "/jquery/jQuery06_Add_Class/"
 ---
 

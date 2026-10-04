@@ -1,8 +1,8 @@
 ---
 title: "optimization 기본"
 date: 2018-06-14
-category: "optimization"
-tags: ["python", "python-lib", "optimization", "matplotlib", "sympy", "numpy"]
+category: "data-science"
+tags: ["python", "python-libs", "optimization", "matplotlib", "sympy", "numpy"]
 permalink: "/optimization/basic_optimization/"
 ---
 

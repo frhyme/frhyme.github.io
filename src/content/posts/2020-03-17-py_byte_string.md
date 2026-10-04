@@ -1,7 +1,7 @@
 ---
 title: "python - byte string, literal string."
 date: 2020-03-17
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "string", "ascii", "utf-8"]
 permalink: "/python-basic/py_byte_string/"
 ---

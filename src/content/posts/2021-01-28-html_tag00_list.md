@@ -1,7 +1,7 @@
 ---
 title: "html - Ordered, Unordered, Definition List"
 date: 2021-01-28
-category: "html"
+category: "web"
 tags: ["html", "list"]
 permalink: "/html/html_tag00_list/"
 ---

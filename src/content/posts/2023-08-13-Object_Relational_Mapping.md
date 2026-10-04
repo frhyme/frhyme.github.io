@@ -2,7 +2,7 @@
 title: "Object Relational Mapping(ORM)"
 date: 2023-08-13
 category: "database"
-tags: ["object", "DataBase", "ORM", "DB", "tuple"]
+tags: ["object", "database", "orm", "db", "tuple"]
 permalink: "/database/Object_Relational_Mapping/"
 ---
 

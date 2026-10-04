@@ -2,7 +2,7 @@
 title: "Java - Read and Write File"
 date: 2020-12-25
 category: "java"
-tags: ["java", "programming", "File", "Stream"]
+tags: ["java", "programming", "file", "stream"]
 permalink: "/java/java_Read_and_Write_File_with_Stream/"
 ---
 

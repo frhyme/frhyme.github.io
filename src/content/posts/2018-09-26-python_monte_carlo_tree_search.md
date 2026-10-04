@@ -1,7 +1,7 @@
 ---
 title: "monte carlo tree search를 알아봅시다."
 date: 2018-09-26
-category: "others"
+category: "python"
 tags: ["python", "python-libs", "simulation", "monte-carlo-tree-search", "tree", "search"]
 permalink: "/others/python_monte_carlo_tree_search/"
 ---

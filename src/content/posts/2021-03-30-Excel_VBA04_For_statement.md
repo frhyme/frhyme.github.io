@@ -1,8 +1,8 @@
 ---
 title: "Excel - VBA - For Statement"
 date: 2021-03-30
-category: "MS_Office"
-tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic", "for"]
+category: "dev-tools"
+tags: ["ms_office", "excel", "vba", "macro", "macos", "basic", "for"]
 permalink: "/ms_office/Excel_VBA04_For_statement/"
 ---
 

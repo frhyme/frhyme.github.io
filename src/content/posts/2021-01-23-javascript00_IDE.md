@@ -2,7 +2,7 @@
 title: "JavaScript - IDE"
 date: 2021-01-23
 category: "javascript"
-tags: ["javascript", "programming", "IDE", "atom"]
+tags: ["javascript", "programming", "ide", "atom"]
 permalink: "/javascript/javascript00_IDE/"
 ---
 

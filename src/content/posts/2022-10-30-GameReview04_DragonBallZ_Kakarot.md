@@ -1,7 +1,7 @@
 ---
 title: "GameReview04 DragonBallZ Kakarot"
 date: 2022-10-30
-category: "game"
+category: "life"
 tags: ["game", "dragonball"]
 permalink: "/game/GameReview04_DragonBallZ_Kakarot/"
 ---

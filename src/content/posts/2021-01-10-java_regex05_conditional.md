@@ -2,7 +2,7 @@
 title: "Java - Regex - Conditional"
 date: 2021-01-10
 category: "java"
-tags: ["java", "regex", "condition", "programming", "String"]
+tags: ["java", "regex", "condition", "programming", "string"]
 permalink: "/java/java_regex05_conditional/"
 ---
 

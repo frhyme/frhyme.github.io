@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Green supply chain management - A review and bibliometric analysis"
 date: 2020-05-02
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "bibliometric-research"]
 permalink: "/paper-summary/ps_2015_green_supply_chain_management_bibliometric_analysis/"
 ---

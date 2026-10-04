@@ -1,8 +1,8 @@
 ---
 title: "영화 Into the Spider-Verse - Heroism"
 date: 2019-11-13
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "SpiderMan", "IntoTheSpiderVerse"]
+category: "english"
+tags: ["english", "movie", "movie_script", "spiderman", "intothespiderverse"]
 permalink: "/english_study_by_movie_script/Into_the_SpiderVerse_Trivia00/"
 ---
 

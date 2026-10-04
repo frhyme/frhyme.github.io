@@ -2,7 +2,7 @@
 title: "야구) Winning Probability Added(WPA)를 계산합시다"
 date: 2018-05-25
 category: "baseball"
-tags: ["baseball", "sabermetrics", "WPA"]
+tags: ["baseball", "sabermetrics", "wpa"]
 permalink: "/baseball/baseball_WPA/"
 ---
 

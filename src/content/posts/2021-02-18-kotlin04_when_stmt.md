@@ -1,7 +1,7 @@
 ---
 title: "Kotlin - When statement"
 date: 2021-02-18
-category: "kotlin"
+category: "java"
 tags: ["kotlin", "programming", "when"]
 permalink: "/kotlin/kotlin04_when_stmt/"
 ---

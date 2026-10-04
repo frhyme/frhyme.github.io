@@ -1,8 +1,8 @@
 ---
 title: "VScode - Workbench indentation more"
 date: 2020-12-29
-category: "vs-code"
-tags: ["VScode"]
+category: "dev-tools"
+tags: ["vscode"]
 permalink: "/vscode/VScode_workbench_indentation_more_and_coloring/"
 ---
 

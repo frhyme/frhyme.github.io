@@ -2,7 +2,7 @@
 title: "간단하게 rnn을 만들어 봅시다."
 date: 2018-06-20
 category: "machine-learning"
-tags: ["python", "python-lib", "matplotlib", "numpy", "keras", "rnn", "sklearn"]
+tags: ["python", "python-libs", "matplotlib", "numpy", "keras", "rnn", "sklearn"]
 permalink: "/machine-learning/simple_rnn/"
 ---
 

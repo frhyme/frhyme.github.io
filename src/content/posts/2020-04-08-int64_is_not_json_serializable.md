@@ -2,7 +2,7 @@
 title: "Python - TypeError - Object of type 'int64' is not JSON serializable"
 date: 2020-04-08
 category: "python-libs"
-tags: ["python", "python-libs", "json", "numpy", "int64", "TypeError"]
+tags: ["python", "python-libs", "json", "numpy", "int64", "typeerror"]
 permalink: "/python-libs/int64_is_not_json_serializable/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "github - token based authtntication"
 date: 2021-03-15
-category: "git"
+category: "dev-tools"
 tags: ["git", "github", "token"]
 permalink: "/git/git_auth_deprecation/"
 ---

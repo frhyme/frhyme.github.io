@@ -1,8 +1,8 @@
 ---
 title: "영화 Her 명대사 - Lesser Version"
 date: 2019-10-23
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Her"]
+category: "english"
+tags: ["english", "movie", "movie_script", "her"]
 permalink: "/english_study_by_movie_script/Her_Scene00_lesser_version/"
 ---
 

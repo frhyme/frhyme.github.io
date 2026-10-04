@@ -2,7 +2,7 @@
 title: "Java - 메모리를 어떻게 구분하고, 어떻게 관리하는가?"
 date: 2020-10-25
 category: "java"
-tags: ["java", "programming", "JVM", "stack", "heap", "static", "GarbageCollection"]
+tags: ["java", "programming", "jvm", "stack", "heap", "static", "garbagecollection"]
 permalink: "/java/java_memory_stack_heap_memory/"
 ---
 

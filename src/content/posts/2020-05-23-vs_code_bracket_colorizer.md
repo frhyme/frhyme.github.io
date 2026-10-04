@@ -1,7 +1,7 @@
 ---
 title: "VS-CODE - Extension - 탭 별로, 괄호 별로 색깔 다르게 보여주기."
 date: 2020-05-23
-category: "vs-code"
+category: "dev-tools"
 tags: ["vscode", "vscode-extension"]
 permalink: "/vscode/vs_code_bracket_colorizer/"
 ---

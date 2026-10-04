@@ -1,8 +1,8 @@
 ---
 title: "영화 Django, Unchained 에 대한 흥미로운 사실들"
 date: 2020-01-21
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "Django_Unchained"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script", "django_unchained"]
 permalink: "/english_study_by_movie_script/Django_Unchained_Trivia00/"
 ---
 

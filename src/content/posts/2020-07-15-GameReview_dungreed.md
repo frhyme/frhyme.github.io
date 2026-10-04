@@ -1,8 +1,8 @@
 ---
 title: "Game Review - Dungreed"
 date: 2020-07-15
-category: "game"
-tags: ["Game", "macOS", "dungreed", "RogueLite"]
+category: "life"
+tags: ["game", "macos", "dungreed", "roguelite"]
 permalink: "/game/GameReview_dungreed/"
 ---
 

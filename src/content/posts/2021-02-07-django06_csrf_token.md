@@ -2,7 +2,7 @@
 title: "python - Django - CSRF protection"
 date: 2021-02-07
 category: "python"
-tags: ["python", "programming", "django", "backend", "server", "form", "GET", "POST"]
+tags: ["python", "programming", "django", "backend", "server", "form", "get", "post"]
 permalink: "/python/django06_csrf_token/"
 ---
 

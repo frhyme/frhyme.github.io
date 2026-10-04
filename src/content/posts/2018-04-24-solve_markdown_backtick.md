@@ -1,8 +1,8 @@
 ---
 title: "mac에서 backtick을 편하게 칩시다."
 date: 2018-04-24
-category: "trivia"
-tags: ["markdown", "macOS", "backtick"]
+category: "life"
+tags: ["markdown", "macos", "backtick"]
 permalink: "/trivia/solve_markdown_backtick/"
 ---
 

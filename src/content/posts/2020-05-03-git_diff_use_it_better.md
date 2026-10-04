@@ -1,7 +1,7 @@
 ---
 title: "Git - git을 사용해서 논문을 쓸겁니다."
 date: 2020-05-03
-category: "git"
+category: "dev-tools"
 tags: ["git"]
 permalink: "/git/git_diff_use_it_better/"
 ---

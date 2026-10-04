@@ -2,7 +2,7 @@
 title: "야구) 타격을 못해도 수비 잘하는 선수가 더 좋아요."
 date: 2018-05-23
 category: "baseball"
-tags: ["baseball", "sabermetrics", "FPct", "RF", "ZR", "UZR"]
+tags: ["baseball", "sabermetrics", "fpct", "rf", "zr", "uzr"]
 permalink: "/baseball/baseball-eval_defence/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "macOS) bootcamp를 이용해서 Windows를 설치해봅시다."
 date: 2020-08-03
-category: "macOS"
-tags: ["macOS", "bootcamp", "windows"]
+category: "dev-tools"
+tags: ["macos", "bootcamp", "windows"]
 permalink: "/macos/install_window_bootcamp/"
 ---
 

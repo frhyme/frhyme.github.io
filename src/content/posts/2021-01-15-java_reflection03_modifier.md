@@ -2,7 +2,7 @@
 title: "Java - Reflection - Modifier"
 date: 2021-01-15
 category: "java"
-tags: ["java", "reflection", "class", "programming", "OOP", "modifier"]
+tags: ["java", "reflection", "class", "programming", "oop", "modifier"]
 permalink: "/java/java_reflection03_modifier/"
 ---
 

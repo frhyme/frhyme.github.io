@@ -1,7 +1,7 @@
 ---
 title: "캐리어 구매기 - 샤오미 캐리어를 구매한 이유"
 date: 2020-07-27
-category: "furniture"
+category: "life"
 tags: ["furniture", "shaomi", "carrier"]
 permalink: "/furniture/shopping_for_carrier/"
 ---

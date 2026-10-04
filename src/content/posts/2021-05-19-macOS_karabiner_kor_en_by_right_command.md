@@ -1,8 +1,8 @@
 ---
 title: "macOS - 카라비너를 사용하여, 오른쪽 커맨드로 한영전환하기"
 date: 2021-05-19
-category: "macOS"
-tags: ["macOS", "karabiner"]
+category: "dev-tools"
+tags: ["macos", "karabiner"]
 permalink: "/macos/macOS_karabiner_kor_en_by_right_command/"
 ---
 

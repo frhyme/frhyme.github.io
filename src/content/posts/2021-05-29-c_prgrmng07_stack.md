@@ -1,8 +1,8 @@
 ---
 title: "C programming - stack 을 구현해봤습니다."
 date: 2021-05-29
-category: "C_programming"
-tags: ["C", "programming", "C_programming", "c", "stack"]
+category: "c-programming"
+tags: ["c", "programming", "c_programming", "stack"]
 permalink: "/c_programming/c_prgrmng07_stack/"
 ---
 

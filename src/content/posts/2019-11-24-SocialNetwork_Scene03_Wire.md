@@ -1,8 +1,8 @@
 ---
 title: "영화 Social Network 명장면 - 걔 지금 아무 말도 안 들릴걸"
 date: 2019-11-24
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "SocialNetwork"]
+category: "english"
+tags: ["english", "movie", "movie_script", "socialnetwork"]
 permalink: "/english_study_by_movie_script/SocialNetwork_Scene03_Wire/"
 ---
 

@@ -2,7 +2,7 @@
 title: "kaggle) bike sharind demand를 맞춰봅시다!"
 date: 2018-06-11
 category: "machine-learning"
-tags: ["python", "kaggle", "machine-learning", "python-lib", "sklearn", "rmsle", "make_score"]
+tags: ["python", "kaggle", "machine-learning", "python-libs", "sklearn", "rmsle", "make_score"]
 permalink: "/machin-learning/kaggle)-bike_sharing_demand/"
 ---
 

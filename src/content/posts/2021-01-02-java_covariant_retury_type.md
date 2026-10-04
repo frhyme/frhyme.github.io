@@ -2,7 +2,7 @@
 title: "Java - Covariant Return Type"
 date: 2021-01-02
 category: "java"
-tags: ["java", "programming", "class", "OOP", "TypeChecking"]
+tags: ["java", "programming", "class", "oop", "typechecking"]
 permalink: "/java/java_covariant_retury_type/"
 ---
 

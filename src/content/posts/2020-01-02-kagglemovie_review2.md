@@ -2,7 +2,7 @@
 title: "kaggle) movie review의 점수를 올려 봅시다. 2편"
 date: 2020-01-02
 category: "machine-learning"
-tags: ["kaggle", "python", "python-lib"]
+tags: ["kaggle", "python", "python-libs"]
 permalink: "/machine-learning/kagglemovie_review2/"
 ---
 

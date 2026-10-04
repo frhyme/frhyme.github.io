@@ -1,7 +1,7 @@
 ---
 title: "docker - copy file from container to local"
 date: 2021-07-03
-category: "docker"
+category: "dev-tools"
 tags: ["docker", "dockerfile", "container", "image"]
 permalink: "/docker/docker05_copy_file_from_container_to_local/"
 ---

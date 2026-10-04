@@ -2,7 +2,7 @@
 title: "networkx의 random tree 만드는 함수 정리"
 date: 2018-08-20
 category: "python-libs"
-tags: ["python", "python-lib", "networkx", "tree", "matplotlib", "random", "pygraphviz"]
+tags: ["python", "python-libs", "networkx", "tree", "matplotlib", "random", "pygraphviz"]
 permalink: "/python-lib/random-tree-in-nx/"
 ---
 

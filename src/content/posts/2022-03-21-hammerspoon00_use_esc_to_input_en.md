@@ -1,8 +1,8 @@
 ---
 title: "macOS - hammerspoon00 - ESC로 한영 변환하기"
 date: 2022-03-21
-category: "hammerspoon"
-tags: ["macOS", "hammerspoon", "lua", "vi", "vim"]
+category: "dev-tools"
+tags: ["macos", "hammerspoon", "lua", "vi", "vim"]
 permalink: "/hammerspoon/hammerspoon00_use_esc_to_input_en/"
 ---
 

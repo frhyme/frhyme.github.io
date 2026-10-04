@@ -1,7 +1,7 @@
 ---
 title: "MarkdownLint - MD010 - no hard tabs"
 date: 2021-01-19
-category: "MarkdownLint"
+category: "dev-tools"
 tags: ["markdown", "markdownlint", "tab"]
 permalink: "/markdownlint/markdownlint_MD010_no_hard_tabs/"
 ---

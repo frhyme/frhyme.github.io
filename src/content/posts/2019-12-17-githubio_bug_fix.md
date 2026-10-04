@@ -1,7 +1,7 @@
 ---
 title: "느려터진 블로그를 빠르게 했다."
 date: 2019-12-17
-category: "others"
+category: "dev-tools"
 tags: ["blog", "githubio", "jekyll"]
 permalink: "/others/githubio_bug_fix/"
 ---

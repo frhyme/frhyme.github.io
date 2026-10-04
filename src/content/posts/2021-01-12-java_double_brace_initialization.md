@@ -2,7 +2,7 @@
 title: "Java - Double Brace Initialization"
 date: 2021-01-12
 category: "java"
-tags: ["java", "programming", "class", "HashMap"]
+tags: ["java", "programming", "class", "hashmap"]
 permalink: "/java/java_double_brace_initialization/"
 ---
 

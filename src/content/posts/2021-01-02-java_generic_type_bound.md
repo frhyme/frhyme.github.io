@@ -2,7 +2,7 @@
 title: "Java - Generic Programming - Type Bound"
 date: 2021-01-02
 category: "java"
-tags: ["java", "programming", "GenericProgramming", "TypeBound"]
+tags: ["java", "programming", "genericprogramming", "typebound"]
 permalink: "/java/java_generic_type_bound/"
 ---
 

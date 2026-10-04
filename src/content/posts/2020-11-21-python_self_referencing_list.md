@@ -1,7 +1,7 @@
 ---
 title: "python - self referencing list"
 date: 2020-11-21
-category: "data-structure"
+category: "algorithm"
 tags: ["python", "python-libs", "data-struture", "list", "shallow_copy", "python-basic"]
 permalink: "/data-structure/python_self_referencing_list/"
 ---

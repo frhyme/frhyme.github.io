@@ -2,7 +2,7 @@
 title: "network를 이쁘기 위해서 공부를 합니다."
 date: 2018-05-10
 category: "python-libs"
-tags: ["python", "python-lib", "networkx", "matplotlib"]
+tags: ["python", "python-libs", "networkx", "matplotlib"]
 permalink: "/python-lib/draw_network(study)/"
 ---
 

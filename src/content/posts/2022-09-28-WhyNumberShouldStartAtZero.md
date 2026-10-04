@@ -1,8 +1,8 @@
 ---
 title: "(발번역) Why Number Should Start at Zero"
 date: 2022-09-28
-category: "translation"
-tags: ["Dijkstra", "zero"]
+category: "others"
+tags: ["dijkstra", "zero"]
 permalink: "/translation/WhyNumberShouldStartAtZero/"
 ---
 

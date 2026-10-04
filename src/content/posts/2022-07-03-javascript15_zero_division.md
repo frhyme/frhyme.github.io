@@ -2,7 +2,7 @@
 title: "Javascript - Zero Division"
 date: 2022-07-03
 category: "javascript"
-tags: ["javascript", "programming", "ZeroDivisionError", "ZeroDivision"]
+tags: ["javascript", "programming", "zerodivisionerror", "zerodivision"]
 permalink: "/javascript/javascript15_zero_division/"
 ---
 

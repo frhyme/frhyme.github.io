@@ -2,7 +2,7 @@
 title: "callable object? callable 객체?"
 date: 2018-06-24
 category: "others"
-tags: ["python", "object-orietned-programming", "OOP"]
+tags: ["python", "object-orietned-programming", "oop"]
 permalink: "/others/callable_object/"
 ---
 

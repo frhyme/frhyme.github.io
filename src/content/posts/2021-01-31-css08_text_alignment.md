@@ -1,7 +1,7 @@
 ---
 title: "CSS - Text Alignment"
 date: 2021-01-31
-category: "css"
+category: "web"
 tags: ["css", "text", "alignment"]
 permalink: "/css/css08_text_alignment/"
 ---

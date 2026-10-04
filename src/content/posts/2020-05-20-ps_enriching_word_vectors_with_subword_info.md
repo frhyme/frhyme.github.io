@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Enriching Word Vectors with Subword Information"
 date: 2020-05-20
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "nlp", "fastext"]
 permalink: "/paper-summary/ps_enriching_word_vectors_with_subword_info/"
 ---

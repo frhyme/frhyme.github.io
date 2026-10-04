@@ -1,7 +1,7 @@
 ---
 title: "c - data structure - graph"
 date: 2021-06-05
-category: "C_programming"
+category: "c-programming"
 tags: ["c_programming", "c", "datastructure", "graph"]
 permalink: "/c_programming/c_prgrmng11_simple_graph/"
 ---

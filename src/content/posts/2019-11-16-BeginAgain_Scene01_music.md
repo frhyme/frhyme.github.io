@@ -1,8 +1,8 @@
 ---
 title: "영화 Begin Again 명장면 - 그게 내가 음악을 좋아하는 이유지"
 date: 2019-11-16
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "BeginAgain"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script", "beginagain"]
 permalink: "/english_study_by_movie_script/BeginAgain_Scene01_music/"
 ---
 

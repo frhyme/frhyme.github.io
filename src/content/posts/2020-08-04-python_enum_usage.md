@@ -1,7 +1,7 @@
 ---
 title: "python에서 enum을 어떻게 쓸 수 있는가?"
 date: 2020-08-04
-category: "python-basic"
+category: "python"
 tags: ["python-libs", "python", "python-basic", "enumeration"]
 permalink: "/python-basic/python_enum_usage/"
 ---

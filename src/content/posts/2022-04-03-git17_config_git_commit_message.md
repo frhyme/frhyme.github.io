@@ -1,7 +1,7 @@
 ---
 title: "git 17 - set commit message template"
 date: 2022-04-03
-category: "git"
+category: "dev-tools"
 tags: ["git", "commit", "config"]
 permalink: "/git/git17_config_git_commit_message/"
 ---

@@ -2,7 +2,7 @@
 title: "Java - Data Structure - Double Linked List"
 date: 2021-01-03
 category: "java"
-tags: ["java", "DataStructure", "programming", "list", "class"]
+tags: ["java", "datastructure", "programming", "list", "class"]
 permalink: "/java/java_dataStructure_DoubleLinkedList/"
 ---
 

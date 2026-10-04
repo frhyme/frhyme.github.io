@@ -2,7 +2,7 @@
 title: "urllib.parse"
 date: 2018-09-09
 category: "python-libs"
-tags: ["python", "python-lib", "urlparse", "urllib", "http"]
+tags: ["python", "python-libs", "urlparse", "urllib", "http"]
 permalink: "/python-lib/python_urllib_parse/"
 ---
 

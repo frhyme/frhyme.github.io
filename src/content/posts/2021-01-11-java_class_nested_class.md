@@ -2,7 +2,7 @@
 title: "Java - Class - nested Class"
 date: 2021-01-11
 category: "java"
-tags: ["java", "programming", "class", "OOP", "inheritance", "polymorphism"]
+tags: ["java", "programming", "class", "oop", "inheritance", "polymorphism"]
 permalink: "/java/java_class_nested_class/"
 ---
 

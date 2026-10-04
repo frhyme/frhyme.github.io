@@ -2,7 +2,7 @@
 title: "gradient boosting이 무엇인가?"
 date: 2020-01-02
 category: "machine-learning"
-tags: ["python", "python-lib", "machin-learning", "regression"]
+tags: ["python", "python-libs", "machin-learning", "regression"]
 permalink: "/machine-learning/gradient_boosting/"
 ---
 

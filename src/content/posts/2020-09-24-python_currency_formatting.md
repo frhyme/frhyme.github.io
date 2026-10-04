@@ -1,7 +1,7 @@
 ---
 title: "python - 통화를 표현하기 위해서 3칸마다 쉼표 넣기."
 date: 2020-09-24
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "f-string", "string", "currency"]
 permalink: "/python-basic/python_currency_formatting/"
 ---

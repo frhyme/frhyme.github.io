@@ -2,7 +2,7 @@
 title: "Java - Thread - Thread Synchronization"
 date: 2021-01-17
 category: "java"
-tags: ["java", "thread", "programming", "parallelism", "concurrency", "MultiThreading", "Synchronization"]
+tags: ["java", "thread", "programming", "parallelism", "concurrency", "multithreading", "synchronization"]
 permalink: "/java/java_Thread05_ThreadSynchronization/"
 ---
 

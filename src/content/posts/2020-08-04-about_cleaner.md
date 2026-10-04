@@ -1,7 +1,7 @@
 ---
 title: "청소기 구매기 - 샤오미 shunzao 차량용 무선 청소기 Z1 Pro 2세대, 블랙"
 date: 2020-08-04
-category: "furniture"
+category: "life"
 tags: ["shaomi"]
 permalink: "/furniture/about_cleaner/"
 ---

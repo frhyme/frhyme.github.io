@@ -1,7 +1,7 @@
 ---
 title: "github 블로그 만들고 꾸미기"
 date: 2018-04-27
-category: "others"
+category: "dev-tools"
 tags: ["github", "blog", "jekyll"]
 permalink: "/others/blog_githubio/"
 ---

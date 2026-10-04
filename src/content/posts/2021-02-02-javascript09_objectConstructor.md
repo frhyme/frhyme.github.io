@@ -2,7 +2,7 @@
 title: "Javascript - Object Constructor"
 date: 2021-02-02
 category: "javascript"
-tags: ["javascript", "programming", "object", "constructor", "function"]
+tags: ["javascript", "programming", "object", "function Object() { [native code] }", "function"]
 permalink: "/javascript/javascript09_objectConstructor/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "VScode - Markdown Preview Enhanced - Font Change"
 date: 2021-01-21
-category: "vs-code"
-tags: ["VScode", "markdown", "markdownPreview", "extension", "font"]
+category: "dev-tools"
+tags: ["vscode", "markdown", "markdownpreview", "extension", "font"]
 permalink: "/vscode/vscode_markdown_preview_enhanced_font_change/"
 ---
 

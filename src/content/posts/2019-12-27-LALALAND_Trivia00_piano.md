@@ -1,8 +1,8 @@
 ---
 title: "영화 LALALAND 에서 라이언 고슬링은 피아노를 직접 쳤습니다."
 date: 2019-12-27
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "LALALAND"]
+category: "english"
+tags: ["english", "movie", "movie_script", "lalaland"]
 permalink: "/english_study_by_movie_script/LALALAND_Trivia00_piano/"
 ---
 

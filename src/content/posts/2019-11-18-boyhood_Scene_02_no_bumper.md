@@ -1,8 +1,8 @@
 ---
 title: "영화 Boyhood 명장면 - 인생에는 범퍼가 없어"
 date: 2019-11-18
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "Boyhood"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script"]
 permalink: "/english_study_by_movie_script/boyhood_Scene_02_no_bumper/"
 ---
 

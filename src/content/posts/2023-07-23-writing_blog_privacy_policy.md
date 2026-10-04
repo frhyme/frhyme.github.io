@@ -1,8 +1,8 @@
 ---
 title: "writing blog privacy policy"
 date: 2023-07-23
-category: "blog"
-tags: ["GDPR", "blog"]
+category: "dev-tools"
+tags: ["gdpr", "blog"]
 permalink: "/blog/writing_blog_privacy_policy/"
 ---
 

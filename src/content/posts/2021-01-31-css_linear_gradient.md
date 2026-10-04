@@ -1,7 +1,7 @@
 ---
 title: "CSS - linear gradient"
 date: 2021-01-31
-category: "css"
+category: "web"
 tags: ["css", "background"]
 permalink: "/css/css_linear_gradient/"
 ---

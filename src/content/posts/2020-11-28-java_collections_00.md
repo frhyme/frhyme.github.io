@@ -2,7 +2,7 @@
 title: "Java - Collections"
 date: 2020-11-28
 category: "java"
-tags: ["java", "programming", "collections", "GenericProgramming"]
+tags: ["java", "programming", "collections", "genericprogramming"]
 permalink: "/java/java_collections_00/"
 ---
 

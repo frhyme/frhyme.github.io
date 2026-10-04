@@ -2,7 +2,7 @@
 title: "wikipedia - Heteroscedasticity"
 date: 2020-01-15
 category: "others"
-tags: ["GLM", "GEE", "statistics", "Heteroscedasticity"]
+tags: ["glm", "gee", "statistics", "heteroscedasticity"]
 permalink: "/others/Heteroscedasticity/"
 ---
 

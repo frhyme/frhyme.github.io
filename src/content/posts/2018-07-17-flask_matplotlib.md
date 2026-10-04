@@ -2,7 +2,7 @@
 title: "matplotlib와 flask 연결하기"
 date: 2018-07-17
 category: "python-libs"
-tags: ["python", "python-lib", "flask", "matplotlib", "image", "numpy", "io", "html", "decorator"]
+tags: ["python", "python-libs", "flask", "matplotlib", "image", "numpy", "io", "html", "decorator"]
 permalink: "/python-lib/flask_matplotlib/"
 ---
 

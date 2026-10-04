@@ -1,8 +1,8 @@
 ---
 title: "C에서 enum 사용하는 이유"
 date: 2020-08-04
-category: "C_programming"
-tags: ["C", "programming", "macOS", "C_programming"]
+category: "c-programming"
+tags: ["c", "programming", "macos", "c_programming"]
 permalink: "/c_programming/c_enumerate/"
 ---
 

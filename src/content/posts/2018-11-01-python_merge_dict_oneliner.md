@@ -1,7 +1,7 @@
 ---
 title: "dictionary 한줄로 합치기."
 date: 2018-11-01
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "python-libs", "dictionary"]
 permalink: "/python-basic/python_merge_dict_oneliner/"
 ---

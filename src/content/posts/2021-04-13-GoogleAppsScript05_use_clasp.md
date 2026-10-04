@@ -1,8 +1,8 @@
 ---
 title: "Google Apps Script - clasp를 사용하여 local에서 script 작성하기"
 date: 2021-04-13
-category: "google"
-tags: ["google", "javascript", "terminal", "macro", "GoogleAppsScript", "GCP"]
+category: "dev-tools"
+tags: ["google", "javascript", "terminal", "macro", "googleappsscript", "gcp"]
 permalink: "/google/GoogleAppsScript05_use_clasp/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "영화 Inglourious Basterds 에 관한 사소한 사실들(trivia)"
 date: 2020-01-23
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "IngloriousBasterds"]
+category: "english"
+tags: ["english", "movie", "movie_script", "ingloriousbasterds"]
 permalink: "/english_study_by_movie_script/Inglourious_basterds_trivia/"
 ---
 

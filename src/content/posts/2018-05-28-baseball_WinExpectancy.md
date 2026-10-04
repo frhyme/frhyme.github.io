@@ -2,7 +2,7 @@
 title: "야구) 기대 승률을 알고, 이로부터 WPA를 계산해봅시다."
 date: 2018-05-28
 category: "baseball"
-tags: ["baseball", "sabermetrics", "WE", "WPA"]
+tags: ["baseball", "sabermetrics", "we", "wpa"]
 permalink: "/baseball/baseball_WinExpectancy/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "영화 기생충 뒷이야기 - 1편"
 date: 2020-01-18
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Martian"]
+category: "english"
+tags: ["english", "movie", "movie_script", "martian"]
 permalink: "/english_study_by_movie_script/Parasite_Trivia01/"
 ---
 

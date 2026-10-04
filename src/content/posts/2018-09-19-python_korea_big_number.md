@@ -1,7 +1,7 @@
 ---
 title: "한국의 큰 수 체계를 알아봅시다."
 date: 2018-09-19
-category: "others"
+category: "python"
 tags: ["python", "number", "big-number", "zip"]
 permalink: "/others/python_korea_big_number/"
 ---

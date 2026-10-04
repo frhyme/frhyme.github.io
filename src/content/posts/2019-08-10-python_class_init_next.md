@@ -1,7 +1,7 @@
 ---
 title: "python class에서 next, iter"
 date: 2019-08-10
-category: "python-basic"
+category: "python"
 tags: ["python", "class", "iterator"]
 permalink: "/python-basic/python_class_init_next/"
 ---

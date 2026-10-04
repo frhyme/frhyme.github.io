@@ -1,7 +1,7 @@
 ---
 title: "css property - text shadow"
 date: 2021-01-30
-category: "css"
+category: "web"
 tags: ["css", "css_property", "text_shadow"]
 permalink: "/css/css00_text_shadow/"
 ---

@@ -2,7 +2,7 @@
 title: "Java - Array to Stream"
 date: 2020-12-25
 category: "java"
-tags: ["java", "programming", "stream", "Array"]
+tags: ["java", "programming", "stream", "array"]
 permalink: "/java/java_Array_to_Stream/"
 ---
 

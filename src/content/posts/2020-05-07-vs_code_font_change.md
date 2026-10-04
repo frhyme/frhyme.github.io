@@ -1,7 +1,7 @@
 ---
 title: "VS-code의 editor 내 font 를 변경합니다."
 date: 2020-05-07
-category: "vs-code"
+category: "dev-tools"
 tags: ["vs-code", "font"]
 permalink: "/vs-code/vs_code_font_change/"
 ---

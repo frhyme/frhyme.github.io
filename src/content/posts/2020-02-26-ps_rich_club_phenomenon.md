@@ -1,7 +1,7 @@
 ---
 title: "PaperSummary - Rich-club phenomenon across complex network hierarchies"
 date: 2020-02-26
-category: "paper-summary"
+category: "machine-learning"
 tags: ["paper-summary", "rich-club", "density"]
 permalink: "/paper-summary/ps_rich_club_phenomenon/"
 ---

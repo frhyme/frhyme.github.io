@@ -2,7 +2,7 @@
 title: "PostegreSQL - install it."
 date: 2023-08-13
 category: "others"
-tags: ["database", "sql", "postgresql", "relationalDB"]
+tags: ["database", "sql", "postgresql", "relationaldb"]
 permalink: "/others/old_postgresql00_install_it/"
 ---
 

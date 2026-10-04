@@ -2,7 +2,7 @@
 title: "simpy에서 resource를 사용해봅시다."
 date: 2018-07-24
 category: "python-libs"
-tags: ["python", "python-lib", "simpy", "simulation", "resource"]
+tags: ["python", "python-libs", "simpy", "simulation", "resource"]
 permalink: "/python-lib/simpy_resource/"
 ---
 

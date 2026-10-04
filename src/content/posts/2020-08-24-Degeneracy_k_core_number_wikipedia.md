@@ -2,7 +2,7 @@
 title: "Degeneracy(graph theory) in wikipedia(번역)"
 date: 2020-08-24
 category: "others"
-tags: ["network", "graph-theory", "Degeneracy"]
+tags: ["network", "graph-theory", "degeneracy"]
 permalink: "/others/Degeneracy_k_core_number_wikipedia/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "C - malloc example"
 date: 2021-05-10
-category: "C_programming"
-tags: ["C", "programming", "C_programming", "malloc"]
+category: "c-programming"
+tags: ["c", "programming", "c_programming", "malloc"]
 permalink: "/c_programming/c_prgrmng04_malloc/"
 ---
 

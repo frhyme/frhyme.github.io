@@ -2,7 +2,7 @@
 title: "Java - Generic Programming"
 date: 2020-11-26
 category: "java"
-tags: ["java", "programming", "GenericProgramming"]
+tags: ["java", "programming", "genericprogramming"]
 permalink: "/java/java_GenericProgramming00/"
 ---
 

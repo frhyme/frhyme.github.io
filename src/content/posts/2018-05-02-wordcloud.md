@@ -2,7 +2,7 @@
 title: "wordcloud를 만들어봅시다."
 date: 2018-05-02
 category: "python-libs"
-tags: ["python", "python-lib", "PIL", "wordcloud"]
+tags: ["python", "python-libs", "pil", "wordcloud"]
 permalink: "/python-lib/wordcloud/"
 ---
 

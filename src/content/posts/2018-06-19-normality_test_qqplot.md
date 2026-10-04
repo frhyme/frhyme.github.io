@@ -2,7 +2,7 @@
 title: "Q-Q plot을 이용한 normality test"
 date: 2018-06-19
 category: "data-science"
-tags: ["python", "python-lib", "scipy", "normality", "qqplot", "numpy", "matplotlib", "boxplot", "seaborn"]
+tags: ["python", "python-libs", "scipy", "normality", "qqplot", "numpy", "matplotlib", "boxplot", "seaborn"]
 permalink: "/data-science/normality_test_qqplot/"
 ---
 

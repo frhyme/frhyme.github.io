@@ -2,7 +2,7 @@
 title: "R처럼 python에서도 pipeline을 사용합시다."
 date: 2020-01-02
 category: "python-libs"
-tags: ["python", "python-lib", "sklearn", "pipeline"]
+tags: ["python", "python-libs", "sklearn", "pipeline"]
 permalink: "/python-lib/sklearn_pipeline/"
 ---
 

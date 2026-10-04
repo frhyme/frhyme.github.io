@@ -1,8 +1,8 @@
 ---
 title: "영화 Begin Again 명장면 - 고양이를 위해서"
 date: 2019-12-15
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "BeginAgain"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script", "beginagain"]
 permalink: "/english_study_by_movie_script/BeginAgain_Scene02_for_my_cat/"
 ---
 

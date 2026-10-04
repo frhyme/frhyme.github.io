@@ -1,8 +1,8 @@
 ---
 title: "영화 Boyhood 명장면 - 난 뭐가 더 있을줄 알았다."
 date: 2019-10-24
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "Boyhood"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script"]
 permalink: "/english_study_by_movie_script/boyhood_Scene_00_more/"
 ---
 

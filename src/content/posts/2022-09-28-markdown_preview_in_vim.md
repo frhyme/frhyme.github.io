@@ -1,8 +1,8 @@
 ---
 title: "Vim - Markdown Preview"
 date: 2022-09-28
-category: "markdown"
-tags: ["markdown", "MarkdownPreview", "vim", "mkdp", "vi"]
+category: "dev-tools"
+tags: ["markdown", "markdownpreview", "vim", "mkdp", "vi"]
 permalink: "/markdown/markdown_preview_in_vim/"
 ---
 

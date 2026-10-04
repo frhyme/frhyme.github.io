@@ -1,7 +1,7 @@
 ---
 title: "selenium - browser with context"
 date: 2023-07-22
-category: "selenium"
+category: "dev-tools"
 tags: ["selenium", "browser", "python"]
 permalink: "/selenium/selenium_browser_context_manager/"
 ---

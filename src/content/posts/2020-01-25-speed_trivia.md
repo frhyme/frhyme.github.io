@@ -1,8 +1,8 @@
 ---
 title: "영화 Speed 에 관한 사소한 사실들(trivia)"
 date: 2020-01-25
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Speed"]
+category: "english"
+tags: ["english", "movie", "movie_script", "speed"]
 permalink: "/english_study_by_movie_script/speed_trivia/"
 ---
 

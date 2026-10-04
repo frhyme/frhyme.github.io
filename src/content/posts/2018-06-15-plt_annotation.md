@@ -2,7 +2,7 @@
 title: "plt annotation하기"
 date: 2018-06-15
 category: "python-libs"
-tags: ["python", "python-lib", "annotation", "matplolib"]
+tags: ["python", "python-libs", "annotation", "matplolib"]
 permalink: "/python-lib/plt_annotation/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "python에서 객체 isinstance 체크하기"
 date: 2018-04-26
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "object-oriented-programming", "type-checking"]
 permalink: "/python-basic/python_isinstance/"
 ---

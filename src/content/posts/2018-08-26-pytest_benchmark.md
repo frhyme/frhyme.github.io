@@ -2,7 +2,7 @@
 title: "pytest-benchmark 사용하기"
 date: 2018-08-26
 category: "python-libs"
-tags: ["python", "python-lib", "pytest", "test", "benchmark", "jupyter-notebook"]
+tags: ["python", "python-libs", "pytest", "test", "benchmark", "jupyter-notebook"]
 permalink: "/python-lib/pytest_benchmark/"
 ---
 

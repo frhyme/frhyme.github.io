@@ -1,7 +1,7 @@
 ---
 title: "value type vs. reference type"
 date: 2018-09-07
-category: "python-basic"
+category: "python"
 tags: ["python", "memory", "python-basic", "id", "object", "value-type", "reference-type"]
 permalink: "/python-basic/python_id_in_python/"
 ---

@@ -2,7 +2,7 @@
 title: "Java - JVM, Class, Bytecode"
 date: 2020-11-27
 category: "java"
-tags: ["java", "JVM", "class", "bytecode", "programming"]
+tags: ["java", "jvm", "class", "bytecode", "programming"]
 permalink: "/java/Java_JVM_class_Bytecode/"
 ---
 

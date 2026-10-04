@@ -1,7 +1,7 @@
 ---
 title: "python에서 string을 다양한 방식으로 출력하기"
 date: 2018-05-29
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "format", "string"]
 permalink: "/python-basic/python_string_format/"
 ---

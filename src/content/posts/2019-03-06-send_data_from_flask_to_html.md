@@ -1,7 +1,7 @@
 ---
 title: "flask에서 데이터를 html, javascript로 보내자."
 date: 2019-03-06
-category: "others"
+category: "web"
 tags: ["d3js", "javascript", "csv", "python", "flask"]
 permalink: "/others/send_data_from_flask_to_html/"
 ---

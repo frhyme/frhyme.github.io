@@ -2,7 +2,7 @@
 title: "Optimization in python with pulp - Basic."
 date: 2020-01-26
 category: "python-libs"
-tags: ["python", "python-libs", "gurobi", "LP", "linearprogramming", "optimization", "pulp"]
+tags: ["python", "python-libs", "gurobi", "lp", "linearprogramming", "optimization", "pulp"]
 permalink: "/python-libs/py_pulp_linear_program_basic/"
 ---
 

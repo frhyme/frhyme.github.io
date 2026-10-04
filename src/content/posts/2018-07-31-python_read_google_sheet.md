@@ -2,7 +2,7 @@
 title: "python에서 구글 sheet 읽기"
 date: 2018-07-31
 category: "python-libs"
-tags: ["python", "google", "excel", "python-lib", "sheet", "spread-sheet", "google-drive", "gspread"]
+tags: ["python", "google", "excel", "python-libs", "sheet", "spread-sheet", "google-drive", "gspread"]
 permalink: "/python-lib/python_read_google_sheet/"
 ---
 

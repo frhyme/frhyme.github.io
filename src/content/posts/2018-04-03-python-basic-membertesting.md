@@ -1,7 +1,7 @@
 ---
 title: "python-basic) member testing in python"
 date: 2018-04-03
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "member-testing", "list", "set"]
 permalink: "/python-basic/python-basic)-membertesting/"
 ---

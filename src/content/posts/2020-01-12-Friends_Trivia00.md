@@ -1,8 +1,8 @@
 ---
 title: "미드 Friends 의 뒷 이야기들 - 0 편"
 date: 2020-01-12
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Friends"]
+category: "english"
+tags: ["english", "movie", "movie_script", "friends"]
 permalink: "/english_study_by_movie_script/Friends_Trivia00/"
 ---
 

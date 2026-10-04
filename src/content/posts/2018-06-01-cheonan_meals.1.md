@@ -1,7 +1,7 @@
 ---
 title: "천안 커피집/맥주집"
 date: 2018-06-01
-category: "tour"
+category: "life"
 tags: ["천안", "coffee", "beer"]
 permalink: "/tour/cheonan_meals.1/"
 ---

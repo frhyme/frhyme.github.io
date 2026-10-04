@@ -2,7 +2,7 @@
 title: "powerpoint vs. google presentation vs. keynote"
 date: 2018-10-13
 category: "others"
-tags: ["ppt", "google", "keynote", "powerpoint", "presentation", "office", "macOS", "windows"]
+tags: ["ppt", "google", "keynote", "powerpoint", "presentation", "office", "macos", "windows"]
 permalink: "/others/others_keynode_google_ppt/"
 ---
 

@@ -2,7 +2,7 @@
 title: "networkx와 matplotlib를 사용하여 graph를 예쁘게 그려 봅시다."
 date: 2018-05-09
 category: "python-libs"
-tags: ["python", "python-lib", "networkx", "matplotlib"]
+tags: ["python", "python-libs", "networkx", "matplotlib"]
 permalink: "/python-lib/draw_network_better/"
 ---
 

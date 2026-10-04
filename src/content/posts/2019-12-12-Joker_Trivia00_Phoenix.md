@@ -1,8 +1,8 @@
 ---
 title: "영화 Jocker - 디카프리오가 조커가 될 뻔했다고?"
 date: 2019-12-12
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Joker"]
+category: "english"
+tags: ["english", "movie", "movie_script", "joker"]
 permalink: "/english_study_by_movie_script/Joker_Trivia00_Phoenix/"
 ---
 

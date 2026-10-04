@@ -1,7 +1,7 @@
 ---
 title: "python으로 alpha-algorithm을 구현해봅니다."
 date: 2017-11-13
-category: "process-mining"
+category: "data-science"
 tags: ["python", "process-mining", "process-discovery", "pandas", "matplotlib", "networkx", "itertools", "functools", "seaborn"]
 permalink: "/process-mining/alpha-algorithm/"
 ---

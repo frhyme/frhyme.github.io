@@ -1,8 +1,8 @@
 ---
 title: "영화 Good Will Hunting 명대사 - Apples?"
 date: 2019-10-16
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "GoodWillHunting"]
+category: "english"
+tags: ["english", "movie", "movie_script", "goodwillhunting"]
 permalink: "/english_study_by_movie_script/good_will_hunting_Scene_02_apples/"
 ---
 

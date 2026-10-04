@@ -1,7 +1,7 @@
 ---
 title: "MarkdownLint - MD014 - Dollar signs used before commands without showing output"
 date: 2021-01-19
-category: "MarkdownLint"
+category: "dev-tools"
 tags: ["markdown", "markdownlint"]
 permalink: "/markdownlint/markdownlint_MD014_dollar_sign/"
 ---

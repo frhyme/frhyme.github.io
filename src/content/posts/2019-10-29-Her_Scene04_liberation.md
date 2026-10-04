@@ -1,8 +1,8 @@
 ---
 title: "영화 Her 명장면 - 그녀는 자유로워지기 시작했어요."
 date: 2019-10-29
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Her"]
+category: "english"
+tags: ["english", "movie", "movie_script", "her"]
 permalink: "/english_study_by_movie_script/Her_Scene04_liberation/"
 ---
 

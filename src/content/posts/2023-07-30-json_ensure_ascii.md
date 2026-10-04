@@ -1,7 +1,7 @@
 ---
 title: "json - ensure ascii"
 date: 2023-07-30
-category: "json"
+category: "dev-tools"
 tags: ["json", "python"]
 permalink: "/json/json_ensure_ascii/"
 ---

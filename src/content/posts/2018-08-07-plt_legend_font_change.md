@@ -2,7 +2,7 @@
 title: "plt.legend의 font 변경하기"
 date: 2018-08-07
 category: "python-libs"
-tags: ["python", "python-lib", "matplotlib", "legend", "font"]
+tags: ["python", "python-libs", "matplotlib", "legend", "font"]
 permalink: "/python-lib/plt_legend_font_change/"
 ---
 

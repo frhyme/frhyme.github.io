@@ -1,7 +1,7 @@
 ---
 title: "python Basic - Don't make Mutable Argument"
 date: 2020-12-27
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "argument"]
 permalink: "/python-basic/python_basic_dont_make_mutable_argument/"
 ---

@@ -2,7 +2,7 @@
 title: "Java - Functional Stream - map, flatMap"
 date: 2020-12-20
 category: "java"
-tags: ["java", "programming", "stream", "FunctionalProgramming", "map", "flatMap"]
+tags: ["java", "programming", "stream", "functionalprogramming", "map", "flatmap"]
 permalink: "/java/java_function_stream_map_flatmap/"
 ---
 

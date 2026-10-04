@@ -1,7 +1,7 @@
 ---
 title: "stack을 이용해서 recursion을 iteration으로 바꾸기."
 date: 2020-03-06
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "stack", "recursion", "data-structure"]
 permalink: "/python-basic/py_recursion_to_iteration_using_stack/"
 ---

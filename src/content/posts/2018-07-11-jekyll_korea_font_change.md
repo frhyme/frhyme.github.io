@@ -1,7 +1,7 @@
 ---
 title: "지킬에서 한글 폰트 바꾸는 방법"
 date: 2018-07-11
-category: "others"
+category: "dev-tools"
 tags: ["jekyll", "font", "korean", "blog"]
 permalink: "/others/jekyll_korea_font_change/"
 ---

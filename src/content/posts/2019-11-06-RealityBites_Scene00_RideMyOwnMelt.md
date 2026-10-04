@@ -1,8 +1,8 @@
 ---
 title: "영화 RealityBites 명장면 - Ride My Own Melt"
 date: 2019-11-06
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "RealityBites"]
+category: "english"
+tags: ["english", "movie", "movie_script", "realitybites"]
 permalink: "/english_study_by_movie_script/RealityBites_Scene00_RideMyOwnMelt/"
 ---
 

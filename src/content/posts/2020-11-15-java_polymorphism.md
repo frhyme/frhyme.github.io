@@ -2,7 +2,7 @@
 title: "Java - Polymorphism"
 date: 2020-11-15
 category: "java"
-tags: ["java", "OOP", "programming", "Object", "polymorphism", "overloading", "overridding"]
+tags: ["java", "oop", "programming", "object", "polymorphism", "overloading", "overridding"]
 permalink: "/java/java_polymorphism/"
 ---
 

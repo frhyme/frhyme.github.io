@@ -2,7 +2,7 @@
 title: "강화학습을 공부해봅시다. 3편"
 date: 2018-06-28
 category: "machine-learning"
-tags: ["reinforcement-learning", "python", "python-lib", "gym", "matplotlib", "tensorflow"]
+tags: ["reinforcement-learning", "python", "python-libs", "gym", "matplotlib", "tensorflow"]
 permalink: "/machine-learning/reinforcement_learning3/"
 ---
 

@@ -2,7 +2,7 @@
 title: "tsne는 정말 얼마나 느린가요? pca보다 얼마나 느린가요?"
 date: 2018-05-17
 category: "python-libs"
-tags: ["python", "python-lib", "dimensionality-reductino", "tsne", "pca"]
+tags: ["python", "python-libs", "dimensionality-reduction", "tsne", "pca"]
 permalink: "/python-lib/tsne-how-slower/"
 ---
 

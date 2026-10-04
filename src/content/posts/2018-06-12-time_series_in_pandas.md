@@ -2,7 +2,7 @@
 title: "pandas에서 time series 활용하기"
 date: 2018-06-12
 category: "python-libs"
-tags: ["python", "python-lib", "pandas", "time-series", "matplotlib", "datetime"]
+tags: ["python", "python-libs", "pandas", "time-series", "matplotlib", "datetime"]
 permalink: "/python-lib/time_series_in_pandas/"
 ---
 

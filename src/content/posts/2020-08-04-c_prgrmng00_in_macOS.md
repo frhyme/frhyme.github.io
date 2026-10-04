@@ -1,8 +1,8 @@
 ---
 title: "macOS에서 C 프로그래밍하기"
 date: 2020-08-04
-category: "C_programming"
-tags: ["C", "programming", "macOS", "C_programming"]
+category: "c-programming"
+tags: ["c", "programming", "macos", "c_programming"]
 permalink: "/c_programming/c_prgrmng00_in_macOS/"
 ---
 

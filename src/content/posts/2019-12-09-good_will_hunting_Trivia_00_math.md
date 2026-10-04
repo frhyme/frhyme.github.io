@@ -1,8 +1,8 @@
 ---
 title: "영화 Good Will Hunting Trivia - 원래는 수학자가 아니라 물리학자"
 date: 2019-12-09
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "GoodWillHunting"]
+category: "english"
+tags: ["english", "movie", "movie_script", "goodwillhunting"]
 permalink: "/english_study_by_movie_script/good_will_hunting_Trivia_00_math/"
 ---
 

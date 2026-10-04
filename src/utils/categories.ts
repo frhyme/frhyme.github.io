@@ -1,18 +1,19 @@
 export type MajorCategory = 'tech' | 'english' | 'life';
 
 export const ENGLISH_CATEGORIES = new Set([
+  'english',
   'english_study_by_movie_script',
 ]);
 
 export const LIFE_CATEGORIES = new Set([
   'baseball',
+  'life',
   'moviediary',
   'trip',
   'trip_log',
   'tour',
   'game',
   'furniture',
-  'life',
   'essay',
   'trivia',
 ]);

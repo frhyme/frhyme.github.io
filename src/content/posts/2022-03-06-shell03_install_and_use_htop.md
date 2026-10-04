@@ -1,7 +1,7 @@
 ---
 title: "Install and Use htop"
 date: 2022-03-06
-category: "shell"
+category: "dev-tools"
 tags: ["bash", "shell", "htop", "unix", "linux", "brew"]
 permalink: "/bash/shell03_install_and_use_htop/"
 ---

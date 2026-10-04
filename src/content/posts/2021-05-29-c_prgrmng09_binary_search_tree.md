@@ -1,8 +1,8 @@
 ---
 title: "C - binary search tree를 구현해봤습니다."
 date: 2021-05-29
-category: "C_programming"
-tags: ["C", "programming", "C_programming", "tree", "bst", "binary_search_tree", "data_structure"]
+category: "c-programming"
+tags: ["c", "programming", "c_programming", "tree", "bst", "binary_search_tree", "data_structure"]
 permalink: "/c_programming/c_prgrmng09_binary_search_tree/"
 ---
 

@@ -2,7 +2,7 @@
 title: "What is REPL?"
 date: 2019-01-17
 category: "others"
-tags: ["REPL", "programming"]
+tags: ["repl", "programming"]
 permalink: "/others/julia_REPL/"
 ---
 

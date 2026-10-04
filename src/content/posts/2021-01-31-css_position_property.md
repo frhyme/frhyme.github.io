@@ -1,7 +1,7 @@
 ---
 title: "CSS - position property"
 date: 2021-01-31
-category: "css"
+category: "web"
 tags: ["css", "position"]
 permalink: "/css/css_position_property/"
 ---

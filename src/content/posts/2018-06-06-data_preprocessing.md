@@ -1,8 +1,8 @@
 ---
 title: "data preprocessing 잘하기"
 date: 2018-06-06
-category: "data-preprocessing"
-tags: ["python", "python-lib", "scipy", "skewness"]
+category: "data-science"
+tags: ["python", "python-libs", "scipy", "skewness"]
 permalink: "/data-preprocessing/data_preprocessing/"
 ---
 

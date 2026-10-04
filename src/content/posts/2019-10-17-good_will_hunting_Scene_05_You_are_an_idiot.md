@@ -1,8 +1,8 @@
 ---
 title: "영화 Good Will Hunting 명대사 - You're an idiot"
 date: 2019-10-17
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "GoodWillHunting"]
+category: "english"
+tags: ["english", "movie", "movie_script", "goodwillhunting"]
 permalink: "/english_study_by_movie_script/good_will_hunting_Scene_05_You_are_an_idiot/"
 ---
 

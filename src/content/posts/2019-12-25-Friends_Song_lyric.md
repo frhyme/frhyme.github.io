@@ -1,8 +1,8 @@
 ---
 title: "미드 Friends 주제곡 가사 번역"
 date: 2019-12-25
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Friends"]
+category: "english"
+tags: ["english", "movie", "movie_script", "friends"]
 permalink: "/english_study_by_movie_script/Friends_Song_lyric/"
 ---
 

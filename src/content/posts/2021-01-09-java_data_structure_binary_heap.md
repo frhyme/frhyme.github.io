@@ -2,7 +2,7 @@
 title: "Java - Data Structure - Binary Heap"
 date: 2021-01-09
 category: "java"
-tags: ["java", "DataStructure", "programming", "list", "class", "Tree", "Heap"]
+tags: ["java", "datastructure", "programming", "list", "class", "tree", "heap"]
 permalink: "/java/java_data_structure_binary_heap/"
 ---
 

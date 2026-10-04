@@ -2,7 +2,7 @@
 title: "JSONDecodeError를 처리합시다."
 date: 2018-12-17
 category: "python-libs"
-tags: ["python", "python-libs", "json", "jsondecodeerror", "UTF-8"]
+tags: ["python", "python-libs", "json", "jsondecodeerror", "utf-8"]
 permalink: "/python-libs/python_JSONDecodeError/"
 ---
 

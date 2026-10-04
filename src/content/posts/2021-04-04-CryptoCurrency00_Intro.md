@@ -1,8 +1,8 @@
 ---
 title: "CryptoCurrency - Intro"
 date: 2021-04-04
-category: "CryptoCurrency"
-tags: ["CyptoCurrency", "Coin", "investment", "upbit"]
+category: "others"
+tags: ["cyptocurrency", "coin", "investment", "upbit"]
 permalink: "/cyptocurrency/CryptoCurrency00_Intro/"
 ---
 

@@ -2,7 +2,7 @@
 title: "List 내 모든 역순(inversion) 수 찾기"
 date: 2020-11-11
 category: "algorithm"
-tags: ["Algorithms", "mergeSort", "python", "bubbleSort", "Sorting"]
+tags: ["algorithms", "mergesort", "python", "bubblesort", "sorting"]
 permalink: "/algorithms/python_count_inversion_in_lst/"
 ---
 

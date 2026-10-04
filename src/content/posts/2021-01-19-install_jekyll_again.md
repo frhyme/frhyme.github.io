@@ -1,7 +1,7 @@
 ---
 title: "jekyll을 설치하고 로컬에 블로그를 뛰우려고 합니다."
 date: 2021-01-19
-category: "blog"
+category: "dev-tools"
 tags: ["blog", "jekyll", "ruby", "gem"]
 permalink: "/blog/install_jekyll_again/"
 ---

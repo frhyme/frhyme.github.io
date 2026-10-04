@@ -2,7 +2,7 @@
 title: "sequence to sequence model"
 date: 2020-01-02
 category: "machine-learning"
-tags: ["keras", "machine-learning", "python", "python-lib"]
+tags: ["keras", "machine-learning", "python", "python-libs"]
 permalink: "/machine-learning/a_seqtoseq/"
 ---
 

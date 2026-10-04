@@ -1,8 +1,8 @@
 ---
 title: "영화 Home Alone - Buzz Number"
 date: 2019-12-24
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "HomeAlone"]
+category: "english"
+tags: ["english", "movie", "movie_script", "homealone"]
 permalink: "/english_study_by_movie_script/HomeAlone_Scene01_BuzzNumber/"
 ---
 

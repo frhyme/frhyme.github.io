@@ -1,7 +1,7 @@
 ---
 title: "VS-code에서 markdown-preview를 할때 font와 font크기를 변경하는 방법"
 date: 2020-05-07
-category: "vs-code"
+category: "dev-tools"
 tags: ["vs-code", "font"]
 permalink: "/vs-code/vs_code_markdown_preview_font_change/"
 ---

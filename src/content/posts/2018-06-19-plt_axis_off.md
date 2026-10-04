@@ -2,7 +2,7 @@
 title: "matplotlib에서 axis를 제거해봅시다."
 date: 2018-06-19
 category: "python-libs"
-tags: ["python", "python-lib", "matplotlib", "axis"]
+tags: ["python", "python-libs", "matplotlib", "axis"]
 permalink: "/python-lib/plt_axis_off/"
 ---
 

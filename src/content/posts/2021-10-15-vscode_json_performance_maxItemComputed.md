@@ -1,7 +1,7 @@
 ---
 title: "VScode - json file 옮길 때 속도 저하"
 date: 2021-10-15
-category: "vs-code"
+category: "dev-tools"
 tags: ["vscode", "json"]
 permalink: "/vscode/vscode_json_performance_maxItemComputed/"
 ---

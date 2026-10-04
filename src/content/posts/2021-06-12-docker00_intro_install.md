@@ -1,7 +1,7 @@
 ---
 title: "Docker - Mac에 Docker 설치하고 간단히 사용해보기"
 date: 2021-06-12
-category: "docker"
+category: "dev-tools"
 tags: ["docker", "mac", "container", "dockerfile"]
 permalink: "/docker/docker00_intro_install/"
 ---

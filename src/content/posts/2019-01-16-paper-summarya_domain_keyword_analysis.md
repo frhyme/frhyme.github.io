@@ -1,7 +1,7 @@
 ---
 title: "paper-summary - A domain keyword analysis approach extending Term Frequency-Keyword Active Index with Google Word2Vec model"
 date: 2019-01-16
-category: "paper-summary"
+category: "machine-learning"
 tags: ["bibliometric", "keyword"]
 permalink: "/paper-summary/paper-summary-a_domain_keyword_analysis/"
 ---

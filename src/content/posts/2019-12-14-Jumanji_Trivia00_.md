@@ -1,8 +1,8 @@
 ---
 title: "영화 Jumanji에 대한 사소한 사실들 - 0 편"
 date: 2019-12-14
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Jumanji"]
+category: "english"
+tags: ["english", "movie", "movie_script", "jumanji"]
 permalink: "/english_study_by_movie_script/Jumanji_Trivia00_/"
 ---
 

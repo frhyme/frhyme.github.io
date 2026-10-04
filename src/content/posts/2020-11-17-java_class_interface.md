@@ -2,7 +2,7 @@
 title: "Java - Interface"
 date: 2020-11-17
 category: "java"
-tags: ["java", "programming", "OOP", "interface", "class"]
+tags: ["java", "programming", "oop", "interface", "class"]
 permalink: "/java/java_class_interface/"
 ---
 

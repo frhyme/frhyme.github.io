@@ -1,8 +1,8 @@
 ---
 title: "macOS - SplitView 비활성화하기"
 date: 2020-12-26
-category: "macOS"
-tags: ["macOS", "SplitView", "MissionControl"]
+category: "dev-tools"
+tags: ["macos", "splitview", "missioncontrol"]
 permalink: "/macos/macOS_split_view_disable/"
 ---
 

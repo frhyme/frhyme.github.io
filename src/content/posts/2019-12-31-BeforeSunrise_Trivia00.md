@@ -1,8 +1,8 @@
 ---
 title: "영화 Before Sunrise 에 대한 사소한 사실들"
 date: 2019-12-31
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "BeforeSunrise"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script", "beforesunrise"]
 permalink: "/english_study_by_movie_script/BeforeSunrise_Trivia00/"
 ---
 

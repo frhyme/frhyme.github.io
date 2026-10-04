@@ -1,8 +1,8 @@
 ---
 title: "Excel - VBA - Function"
 date: 2021-03-31
-category: "MS_Office"
-tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic", "function"]
+category: "dev-tools"
+tags: ["ms_office", "excel", "vba", "macro", "macos", "basic", "function"]
 permalink: "/ms_office/Excel_VBA11_Function/"
 ---
 

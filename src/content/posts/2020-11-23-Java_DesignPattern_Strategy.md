@@ -1,8 +1,8 @@
 ---
 title: "Java - Design Pattern - Strategy"
 date: 2020-11-23
-category: "DesignPattern"
-tags: ["DesignPattern", "Strategy", "java", "programming", "class"]
+category: "java"
+tags: ["designpattern", "strategy", "java", "programming", "class"]
 permalink: "/designpattern/Java_DesignPattern_Strategy/"
 ---
 

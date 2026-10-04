@@ -2,7 +2,7 @@
 title: "python에서 simpy를 사용하여 시뮬레이션해보기"
 date: 2018-07-22
 category: "python-libs"
-tags: ["python", "python-lib", "simpy"]
+tags: ["python", "python-libs", "simpy"]
 permalink: "/python-lib/simpy_python/"
 ---
 

@@ -2,7 +2,7 @@
 title: "statsmodel 활용하기"
 date: 2020-01-02
 category: "python-libs"
-tags: ["python", "python-lib", "statsmodel"]
+tags: ["python", "python-libs", "statsmodel"]
 permalink: "/python-lib/statsmodel/"
 ---
 

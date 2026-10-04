@@ -1,8 +1,8 @@
 ---
 title: "영화 IrishMan에 대한 사소한 사실들 - 0편"
 date: 2019-12-11
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "IrishMan"]
+category: "english"
+tags: ["english", "movie", "movie_script", "irishman"]
 permalink: "/english_study_by_movie_script/IrishMan_Trivia00/"
 ---
 

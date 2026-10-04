@@ -2,7 +2,7 @@
 title: "What is a link function?"
 date: 2020-01-15
 category: "others"
-tags: ["GLM", "statistics"]
+tags: ["glm", "statistics"]
 permalink: "/others/link_function/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "python에서 string 내 space 가 없어지지 않을때(non-breaking-space)"
 date: 2020-03-12
-category: "python-basic"
+category: "python"
 tags: ["python", "python-basic", "string", "space"]
 permalink: "/python-basic/py_no_break_space/"
 ---

@@ -2,7 +2,7 @@
 title: "python에서 한글 자음/모음 분해하기"
 date: 2018-07-23
 category: "python"
-tags: ["python-lib", "python", "string", "korean"]
+tags: ["python-libs", "python", "string", "korean"]
 permalink: "/python/python_korean_englished/"
 ---
 

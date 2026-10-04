@@ -1,7 +1,7 @@
 ---
 title: "python-basic) Linked list(basic)"
 date: 2018-04-04
-category: "python-basic"
+category: "python"
 tags: ["python", "linked-list", "python-basic"]
 permalink: "/python-basic/python-basic)-linkedListBasic/"
 ---

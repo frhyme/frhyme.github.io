@@ -2,7 +2,7 @@
 title: "kaggle) 집 가격을 예측해 봅시다."
 date: 2018-06-07
 category: "machine-learning"
-tags: ["kaggle", "machine-learning", "python", "python-lib", "sklearn"]
+tags: ["kaggle", "machine-learning", "python", "python-libs", "sklearn"]
 permalink: "/machine-learning/kaggle_house_price/"
 ---
 

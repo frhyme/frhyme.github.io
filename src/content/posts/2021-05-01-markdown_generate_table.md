@@ -1,7 +1,7 @@
 ---
 title: "Markdown - Generate table by python"
 date: 2021-05-01
-category: "markdown"
+category: "dev-tools"
 tags: ["markdown", "python", "table"]
 permalink: "/markdown/markdown_generate_table/"
 ---

@@ -2,7 +2,7 @@
 title: "(very basic)blockchain 다시 공부하고 완성하기."
 date: 2018-09-09
 category: "others"
-tags: ["python", "python-lib", "blockchain", "bit-coin", "database", "consensus", "hash", "urllib", "hashlib", "json"]
+tags: ["python", "python-libs", "blockchain", "bit-coin", "database", "consensus", "hash", "urllib", "hashlib", "json"]
 permalink: "/others/blockchain_again/"
 ---
 

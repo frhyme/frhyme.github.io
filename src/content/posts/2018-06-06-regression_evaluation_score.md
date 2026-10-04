@@ -2,7 +2,7 @@
 title: "regression 결과를 평가해봅시다."
 date: 2018-06-06
 category: "machine-learning"
-tags: ["sklearn", "python", "python-lib", "machin-learning", "regression"]
+tags: ["sklearn", "python", "python-libs", "machin-learning", "regression"]
 permalink: "/machine-learning/regression_evaluation_score/"
 ---
 

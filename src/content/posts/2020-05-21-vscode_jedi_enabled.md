@@ -1,7 +1,7 @@
 ---
 title: "vs-code - jediEnabled?"
 date: 2020-05-21
-category: "vs-code"
+category: "dev-tools"
 tags: ["vs-code", "intellisense"]
 permalink: "/vs-code/vscode_jedi_enabled/"
 ---

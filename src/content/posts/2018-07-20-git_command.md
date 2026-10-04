@@ -1,7 +1,7 @@
 ---
 title: "git command를 정리해봅시다."
 date: 2018-07-20
-category: "others"
+category: "dev-tools"
 tags: ["git", "shell", "basic"]
 permalink: "/others/git_command/"
 ---

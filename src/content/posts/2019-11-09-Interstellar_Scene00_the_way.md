@@ -1,8 +1,8 @@
 ---
 title: "영화 Interstellar 명장면 - 우리는 답을 찾을 것이다. 늘 그래왔듯이"
 date: 2019-11-09
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Interstellar"]
+category: "english"
+tags: ["english", "movie", "movie_script", "interstellar"]
 permalink: "/english_study_by_movie_script/Interstellar_Scene00_the_way/"
 ---
 

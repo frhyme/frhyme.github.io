@@ -2,7 +2,7 @@
 title: "sklearn.mlpregressor는 쓸만한가요?"
 date: 2018-06-07
 category: "python-libs"
-tags: ["python", "python-lib", "sklearn", "regression", "neural-network", "matplotlib"]
+tags: ["python", "python-libs", "sklearn", "regression", "neural-network", "matplotlib"]
 permalink: "/python-lib/is_mlp_regressor_good/"
 ---
 

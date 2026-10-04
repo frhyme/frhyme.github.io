@@ -1,8 +1,8 @@
 ---
 title: "mongoDB - dump to pickle by python"
 date: 2021-04-12
-category: "mongoDB"
-tags: ["mongoDB", "python", "pymongo", "database", "db", "sql", "nosql", "pickle"]
+category: "database"
+tags: ["mongodb", "python", "pymongo", "database", "db", "sql", "nosql", "pickle"]
 permalink: "/mongodb/mongoDB06_dump_to_pickle/"
 ---
 

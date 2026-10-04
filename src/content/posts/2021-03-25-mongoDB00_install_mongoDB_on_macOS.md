@@ -1,8 +1,8 @@
 ---
 title: "mongoDB - Install mongoDB on macOS"
 date: 2021-03-25
-category: "mongoDB"
-tags: ["database", "sql", "nosql", "mongodb", "macOS", "brew"]
+category: "database"
+tags: ["database", "sql", "nosql", "mongodb", "macos", "brew"]
 permalink: "/mongodb/mongoDB00_install_mongoDB_on_macOS/"
 ---
 

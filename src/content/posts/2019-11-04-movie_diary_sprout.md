@@ -1,8 +1,8 @@
 ---
 title: "영화 '콩나물' - 어른의 일상이 아이에게는 모험이죠"
 date: 2019-11-04
-category: "MovieDiary"
-tags: ["MovieDiary", "Movie", "Film"]
+category: "life"
+tags: ["moviediary", "movie", "film"]
 permalink: "/moviediary/movie_diary_sprout/"
 ---
 

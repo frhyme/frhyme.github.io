@@ -1,8 +1,8 @@
 ---
 title: "영화 Die Hard 에 관한 사소한 사실들(trivia)"
 date: 2020-01-27
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "DieHard"]
+category: "english"
+tags: ["english", "movie", "movie_script", "diehard"]
 permalink: "/english_study_by_movie_script/Die_Hard_trivia/"
 ---
 

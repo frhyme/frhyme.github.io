@@ -2,7 +2,7 @@
 title: "파이썬에서 이미지를 저장할 때 공백을 없앱시다."
 date: 2018-07-03
 category: "python-libs"
-tags: ["python", "python-lib", "image", "matplotlib", "padding", "margins"]
+tags: ["python", "python-libs", "image", "matplotlib", "padding", "margins"]
 permalink: "/python-lib/img_savefig_공백제거/"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "영화 Social Network - 제시 아이젠버그는 영화 촬영 전에 C++을 공부했다고 합니다."
 date: 2019-12-18
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "SocialNetwork"]
+category: "english"
+tags: ["english", "movie", "movie_script", "socialnetwork"]
 permalink: "/english_study_by_movie_script/SocialNetwork_Trivia00_dummies/"
 ---
 

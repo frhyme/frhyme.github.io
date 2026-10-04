@@ -1,8 +1,8 @@
 ---
 title: "영화 Eternal Sunshine에서 그녀의 머리는 4가지 색깔"
 date: 2019-12-17
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "EternalSunshine"]
+category: "english"
+tags: ["english", "movie", "movie_script", "eternalsunshine"]
 permalink: "/english_study_by_movie_script/EternalSunshine_Trivia00_hair/"
 ---
 

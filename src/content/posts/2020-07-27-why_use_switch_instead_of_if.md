@@ -1,7 +1,7 @@
 ---
 title: "Programming) 왜 아직도 switch 문이 살아 있는가?"
 date: 2020-07-27
-category: "programming"
+category: "others"
 tags: ["programming", "c", "switch", "if", "readability"]
 permalink: "/programming/why_use_switch_instead_of_if/"
 ---

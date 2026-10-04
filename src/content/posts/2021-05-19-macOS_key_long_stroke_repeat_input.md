@@ -1,8 +1,8 @@
 ---
 title: "macOS - 맥북에서 키를 누른 채로 유지할 때, 키 반복 입력 사용하기"
 date: 2021-05-19
-category: "macOS"
-tags: ["macOS"]
+category: "dev-tools"
+tags: ["macos"]
 permalink: "/macos/macOS_key_long_stroke_repeat_input/"
 ---
 

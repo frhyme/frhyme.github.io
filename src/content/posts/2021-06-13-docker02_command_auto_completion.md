@@ -1,7 +1,7 @@
 ---
 title: "docker - command auto completion"
 date: 2021-06-13
-category: "docker"
+category: "dev-tools"
 tags: ["docker", "command", "bash", "zsh", "zshrc"]
 permalink: "/docker/docker02_command_auto_completion/"
 ---

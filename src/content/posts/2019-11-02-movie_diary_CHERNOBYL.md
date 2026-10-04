@@ -1,8 +1,8 @@
 ---
 title: "미드 - CHERNOBYL - 당신의 거짓말의 대가는 무엇인가요"
 date: 2019-11-02
-category: "MovieDiary"
-tags: ["MovieDiary", "Movie", "Film"]
+category: "life"
+tags: ["moviediary", "movie", "film"]
 permalink: "/moviediary/movie_diary_CHERNOBYL/"
 ---
 

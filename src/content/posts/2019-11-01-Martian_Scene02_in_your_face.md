@@ -1,8 +1,8 @@
 ---
 title: "영화 Martian 명장면 - 봤습니까 닐 암스트롱!"
 date: 2019-11-01
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Martian"]
+category: "english"
+tags: ["english", "movie", "movie_script", "martian"]
 permalink: "/english_study_by_movie_script/Martian_Scene02_in_your_face/"
 ---
 

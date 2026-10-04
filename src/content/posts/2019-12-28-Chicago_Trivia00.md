@@ -1,8 +1,8 @@
 ---
 title: "영화 Chicago의 두 주인공은 실제 사건으로부터 영감을 받았다."
 date: 2019-12-28
-category: "english_study_by_movie_script"
-tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_script", "Chicago"]
+category: "english"
+tags: ["english", "movie", "boyhood", "movie_script", "chicago"]
 permalink: "/english_study_by_movie_script/Chicago_Trivia00/"
 ---
 

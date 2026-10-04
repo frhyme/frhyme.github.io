@@ -2,7 +2,7 @@
 title: "kaggle) simple binary classification"
 date: 2018-06-08
 category: "machine-learning"
-tags: ["python", "python-lib", "sklearn", "classification", "keras"]
+tags: ["python", "python-libs", "sklearn", "classification", "keras"]
 permalink: "/machin-learning/kaggle_datascience_london/"
 ---
 

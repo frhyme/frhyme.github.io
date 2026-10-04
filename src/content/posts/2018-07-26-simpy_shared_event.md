@@ -2,7 +2,7 @@
 title: "simpy로 event 이용하기 - 영화관 모델링하기"
 date: 2018-07-26
 category: "python-libs"
-tags: ["python", "python-lib", "simpy", "numpy", "simulation", "event", "example", "class", "generator"]
+tags: ["python", "python-libs", "simpy", "numpy", "simulation", "event", "example", "class", "generator"]
 permalink: "/python-lib/simpy_shared_event/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Mapping the evolution of entrepreneurship as a field of research (1990–2013) - A scientometric analysis"
 date: 2019-01-23
-category: "paper-summary"
+category: "machine-learning"
 tags: ["entrepreneurship", "paper-summary"]
 permalink: "/paper-summary/ps_Mapping-the-evolution-of-entrepreneurship/"
 ---

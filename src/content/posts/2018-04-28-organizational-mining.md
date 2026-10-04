@@ -1,8 +1,8 @@
 ---
 title: "organizational mining(basic)"
 date: 2018-04-28
-category: "process-mining"
-tags: ["python", "python-lib", "matplotlib", "seaborn", "organizational-mining", "process-mining"]
+category: "data-science"
+tags: ["python", "python-libs", "matplotlib", "seaborn", "organizational-mining", "process-mining"]
 permalink: "/process-mining/organizational-mining/"
 ---
 

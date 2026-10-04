@@ -1,7 +1,7 @@
 ---
 title: "uuidv1 vs. uuidv4"
 date: 2018-10-04
-category: "others"
+category: "python"
 tags: ["uuid", "python"]
 permalink: "/others/python_uuid_v1_v4/"
 ---

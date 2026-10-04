@@ -2,7 +2,7 @@
 title: "python - requests"
 date: 2021-04-04
 category: "python-libs"
-tags: ["python", "python-lib", "requests"]
+tags: ["python", "python-libs", "requests"]
 permalink: "/python-lib/python_requests00_tutorial/"
 ---
 

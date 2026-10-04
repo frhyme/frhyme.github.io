@@ -1,7 +1,7 @@
 ---
 title: "jekyll로 만든 블로그 페이지 로딩을 빠르게 해봅시다."
 date: 2018-07-20
-category: "others"
+category: "dev-tools"
 tags: ["jekyll", "blog"]
 permalink: "/others/jekyll_faster/"
 ---

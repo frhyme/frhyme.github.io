@@ -1,7 +1,7 @@
 ---
 title: "git에 대해서 좀 더 자세하게 정리해봅시다."
 date: 2018-07-22
-category: "others"
+category: "dev-tools"
 tags: ["git", "shell", "svn", "snapshot"]
 permalink: "/others/git_background/"
 ---

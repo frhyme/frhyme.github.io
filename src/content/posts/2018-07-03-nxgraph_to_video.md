@@ -2,7 +2,7 @@
 title: "네트워크 변화 비디오로 만들기"
 date: 2018-07-03
 category: "python-libs"
-tags: ["networx", "python", "python-lib", "matplotlib", "image", "video", "numpy"]
+tags: ["networx", "python", "python-libs", "matplotlib", "image", "video", "numpy"]
 permalink: "/python-lib/nxgraph_to_video/"
 ---
 

@@ -2,7 +2,7 @@
 title: "Javascript - class List"
 date: 2021-02-02
 category: "javascript"
-tags: ["javascript", "programming", "selector", "DOM", "class"]
+tags: ["javascript", "programming", "selector", "dom", "class"]
 permalink: "/javascript/JS_DOM03_classList/"
 ---
 

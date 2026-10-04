@@ -1,8 +1,8 @@
 ---
 title: "mongoDB - basic"
 date: 2021-03-26
-category: "mongoDB"
-tags: ["database", "sql", "nosql", "mongodb", "macOS", "brew"]
+category: "database"
+tags: ["database", "sql", "nosql", "mongodb", "macos", "brew"]
 permalink: "/mongodb/mongoDB01_basic/"
 ---
 
