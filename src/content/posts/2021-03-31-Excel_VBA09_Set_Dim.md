@@ -6,8 +6,6 @@ tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic"]
 permalink: "/ms_office/Excel_VBA09_Set_Dim/"
 ---
 
-## Excel - VBA - 변수 선언 및 정의
-
 - VBA에서는 `Dim`을 사용하여 변수를 선언합니다.
 - 그리고 변수를 값(Value)를 정의해줄 때는 `=`를 사용하지만, 객체(Object)를 정의할 때는 `Set`를 사용합니다.
 

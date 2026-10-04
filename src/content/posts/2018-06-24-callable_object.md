@@ -6,8 +6,6 @@ tags: ["python", "object-orietned-programming", "OOP"]
 permalink: "/others/callable_object/"
 ---
 
-## callable object? callable 객체?
-
 - keras로 코딩을 하다가, `model`와 `Sequential`의 차이가 궁금해서 찾아보고 있었습니다. 그런데 [제가 참고한 포스트](https://datascienceschool.net/view-notebook/1bde49133d7d40c0806e78b70513040b/)에서 다음을 언급하더군요. 
 
 > Keras의 Model 클래스 객체와 레이어(Tensor) 객체는 callable 객체.

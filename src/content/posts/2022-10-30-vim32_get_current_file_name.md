@@ -1,12 +1,10 @@
 ---
 title: "vim32 - get current file name"
 date: 2022-10-30
-category: "vi"
+category: "vim"
 tags: ["vi", "vim"]
 permalink: "/vi/vim32_get_current_file_name/"
 ---
-
-## vim32 - get current file name
 
 - 저는 markdown을 vim을 사용하여 편집합니다. 이 때, markdown file name을 해당 post의 제목으로 그대로 정하는 경우들이 많은데요. 이게 몹시 사소하지만, 모든 markdown 편집에서 동일하게 작헙하는 내용이라 간단한 명령어로 1) 현재 file 이름을 가져오고, 2) 제목이 들어가야 할 위치에 넣어주기, 로 처리할 수 있을 것 같더라고요.
   - 예를 들어 file name이 `vim_get_current_file_name.md`로 들어온 다면, "vim getlcurrent file name"과 같이, ".md"를 삭제하고, underbar를 space로 변경하는 기능을 추가한 다음, vim cursor에 집어넣어주려고 합니다.

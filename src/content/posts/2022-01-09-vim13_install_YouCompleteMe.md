@@ -6,8 +6,6 @@ tags: ["vi", "vim", "python", "jedi", "plugin", "vundle", "YCM", "YouCompleteMe"
 permalink: "/vim/vim13_install_YouCompleteMe/"
 ---
 
-## vim 13 - Install YouCompleteME - 실패기
-
 - Vim에서 프로그래밍을 하기 위해, AutoComplete Plugin 인 [github - YouCompleteme - Installation](https://github.com/ycm-core/YouCompleteMe#installation)를 설치하려고 하였으나, 결국은 되지 않아서 그 실패기를 정리합니다.
 - macOS Monterey(12.1)에 설치를 시도했으며, 결국은 되지 않았습니다. 해당 이슈는 맥북에서만 빈번하게 등장하는 이슈인 것으로 보이기는 하는데요.
 

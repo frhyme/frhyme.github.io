@@ -6,8 +6,6 @@ tags: ["java", "programming", "collectiond"]
 permalink: "/java/java_collections_methods/"
 ---
 
-## Java - collections
-
 - java에서 `Collections`는 유용한 method들이 모여 있는 library로 이해하시면 됩니다. `Collection`과는 다릅니다. `Collection`은 Interface를 말합니다.
 
 ```java

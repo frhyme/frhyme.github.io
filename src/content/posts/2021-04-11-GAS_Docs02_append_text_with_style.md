@@ -6,8 +6,6 @@ tags: ["google", "javascript", "Google_Docs", "macro", "GoogleAppsScript"]
 permalink: "/google/GAS_Docs02_append_text_with_style/"
 ---
 
-## Google Apps Script - Docs - Append text with style
-
 - 문서에 text를 집어넣을 때, 기 정의된 style을 사용하여 집어넣어절 수도 있습니다.
 
 ```js

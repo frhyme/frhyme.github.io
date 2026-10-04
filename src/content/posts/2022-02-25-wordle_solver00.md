@@ -1,12 +1,10 @@
 ---
 title: "wordle solver 만들어보기 - basic"
 date: 2022-02-25
-category: "projet"
+category: "project"
 tags: ["wordle", "python", "pypy"]
 permalink: "/projet/wordle_solver00/"
 ---
-
-## wordle solver 만들어보기 - basic
 
 - 요즘 친구들과 [wordle](https://www.nytimes.com/games/wordle/index.html) 게임을 하고 있습니다. 그냥 5 문자로 된 word를 맞추는 게임인데요, 이게 하루에 1기기로 1번만 할 수 있어서인지 모르겠지만 꽤 오랫동안 매일 해오고 있습니다.
 

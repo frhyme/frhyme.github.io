@@ -6,8 +6,6 @@ tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic"]
 permalink: "/ms_office/Excel_VBA10_Range/"
 ---
 
-## Excel - VBA - Range
-
 - `Range`를 사용하여 Cell의 범위에 한번에 값을 지정해줄 수 있습니다.
 - 시트의 특정 범위에 값을 하나씩 입력하는 것 보다는 한번에 입력해주는 것이 시간상 훨씬 효율적입니다.
 

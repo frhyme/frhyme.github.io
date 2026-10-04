@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/boyhood_Scene_01_the_moment/"
 ---
 
-## 영화 Boyhood 명장면 - the Moment
-
 - 우리는 늘 순간에 집중하며 살아가려고 노력합니다. 순간이 모여서, 어떤 시간들이 되고, 새로운 변화들을 가져오고는 하죠. 다만, 정말 아름다운 순간이 오면, 우리는 "집중해야 한다"는 생각마저 잊어버립니다. 그냥 나라는 존재가 순간에 흡수되는 것 같은 느낌을 받곤 하죠. 그렇게 시간이 영원히 그 순간에 멈춘 것 같은 느낌이 들어요. 영화 `<보이후드>`의 마지막 장면에 이를 정확히 표현한 대사가 나옵니다.
 
 ## Scene - the Moment

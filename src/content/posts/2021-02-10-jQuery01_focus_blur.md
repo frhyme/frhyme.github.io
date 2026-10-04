@@ -6,8 +6,6 @@ tags: ["jQuery", "javascript", "html", "web"]
 permalink: "/jquery/jQuery01_focus_blur/"
 ---
 
-## jQuery - focus, blur
-
 - jQuery를 사용해서 input에 커서가 들어왔을때(focus), 나갈때(blur) input의 배경색을 변경해줍니다.
 
 ```html

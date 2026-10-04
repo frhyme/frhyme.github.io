@@ -1,8 +1,8 @@
 ---
-title: "category:"
+title: "Python Multiprocessing - CPU Core와 하이퍼스레딩"
 date: 2020-10-11
 category: "others"
-tags: []
+tags: ["python"]
 permalink: "/others/old_multiprocessing_cpu_count/"
 ---
 

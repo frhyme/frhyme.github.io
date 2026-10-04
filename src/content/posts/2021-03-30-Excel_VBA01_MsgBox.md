@@ -6,8 +6,6 @@ tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic"]
 permalink: "/ms_office/Excel_VBA01_MsgBox/"
 ---
 
-## Excel - VBA - MsgBox
-
 - 윈도우에서 MS office를 사용하는 경우에는 VBA를 편집하거나 할때 아무 문제가 없습니다. 다만, macOS에서 MS-Office를 사용할 때는 꽤 렉이 심하죠. 특히, 엑셀 VBA를 편집할 때는 그 정도가 너무 지나칩니다.
 - 따라서, 저는 작성은 VScode에서 하고, 복사하여 엑셀 VBA 창에 집어넣는 식으로 처리해줬습니다.
 - 그래도 기본적인 intellisense가 없으니 불편해서 찾아보니, [stackoverflow - using visual studio code for vb net how to enable vb net intellisense](https://stackoverflow.com/questions/52052380/using-visual-studio-code-for-vb-net-how-to-enable-vb-net-intellisense)라는 글이 있습니다. 

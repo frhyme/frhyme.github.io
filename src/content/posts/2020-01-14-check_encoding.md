@@ -77,7 +77,7 @@ with open('test_csv_190114.csv') as f:
 - 아래에서 보시는 것처럼 csv 파일을 `utf-8`로 저장하든, `utf-16`으로 저장하든 상관없이, 그냥 `encoding='UTF-8`으로 표시해줍니다. 
 - 그리고 파일이 utf-8로 인코딩되어 있다고 생각하고 읽기 때문에, 이를 실제로 읽어서 출력하려고 하면, 다음과 같이 에러가 발생하죠.
 
-```
+```python
 ========================================
 == df csv file is encoded utf-8
 file type is: <_io.TextIOWrapper name='test_csv_190114.csv' mode='r' encoding='UTF-8'>

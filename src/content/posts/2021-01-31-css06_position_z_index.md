@@ -6,8 +6,6 @@ tags: ["css", "position"]
 permalink: "/css/css06_position_z_index/"
 ---
 
-## CSS - z index
-
 - z-index는 html 내에서 요소들이 서로 겹쳐졌을 때 머넞 보이는 순서를 말합니다. z-index값이 클수록 위에 있습니다. 즉 커야 가장 바깥 쪽에 위치한 다는 이야기죠. 아무 값도 설정하지 않았을 때는 가장 나중에 만들어진 요소가 가장 높은 우선순위를 가집니다.
 - 다음 처럼 값을 설정해 줍니다.
 

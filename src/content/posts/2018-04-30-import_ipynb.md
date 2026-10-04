@@ -1,7 +1,7 @@
 ---
 title: "jupyter notebook에서 import ipynb"
 date: 2018-04-30
-category: "other"
+category: "others"
 tags: ["jupyter-notebook", "python", "not-yet"]
 permalink: "/other/import_ipynb/"
 ---
@@ -18,7 +18,7 @@ permalink: "/other/import_ipynb/"
 - 해당 파일은 딕셔너리의 형태로 구성되어 있습니다(혹은 json). 대략 다음의 형태이며, 코드만 가져오고 싶다면, "cell_type"이 "code"인 부분만 가져오면 됩니다. 다만, 내부는 줄별로 줄바꿈이 되어 있으므로 이를 고려해서 합치면 될것 같네요. 음 `ipynb`파일을 `.py`파일로 바꾸는 건 그렇게 어려운 문제가 아닐것 같아요. 일단 제 생각에는 그렇습니다
 
 
-```
+```python
 {
     "cells":[
         {
@@ -79,7 +79,7 @@ print(return_unique_activities(test_log))
 
 ### `sample_ipynb_to_import.ipynb`
 
-```
+```json
 {
  "cells": [
   {

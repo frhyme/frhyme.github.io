@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Sta
 permalink: "/english_study_by_movie_script/StarWars_Episode_VIII_Trivia00/"
 ---
 
-## 영화 StarWars Episode 8에 관한 사실들 - 0편
-
 - `<Star War: Episode VIII>`, `<라스트 제다이>`에 대한 사소한 사실들을 정리합니다. 슬프게도, 다른 에피소드들에 비해서 내용이 현저하게 적네요. 이는 사실 해당 작품에 대한 팬들의 반응이 매우 좋지 않았음을 의미합니다. 저 또한, 이 작품을 찬양하지는 않습니다(물론 평론가들은 호평을 했었지만요). 
 - `<스타워즈>` 시리즈는 매우 오랫동안 '스카이워커' 중심의 세계였으며, 동시에 루크 스카이워커 - 다스베이더로 이어지는 막장가족의 모습도 가지고 있습니다. 즉, Episode VII을 보는 모든 스타워즈 팬들의 마음속에는 공통적으로 'Rey는 그래서 누구의 핏줄인가?'라는 질문이 떠돌아다녔죠. 그리고 Episode VIII은 그 질문에 답을 하지 않았을 뿐만 아니라, 작품적으로도 올드팬의 마음을 부숴버렸던 참혹한 작품이었죠. 
 - 그러함에도 저는 다음 주에 Episode XI를 볼 예정입니다. 네, 저는 그저 그런 그냥 스타워즈 팬일 뿐이죠.

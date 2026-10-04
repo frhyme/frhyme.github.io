@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/Avengers_EndGame_Trivia00/"
 ---
 
-## 영화 Avengers Endgame에 대한 사소한 사실들 - 0편
-
 - `<어벤저스:엔드게임>`에 대한 사소한 사실들을 정리해봤습니다. 모든 내용은 IMDB로부터 가져왔습니다.
 
 ## Triviai - Robert Downey Jr

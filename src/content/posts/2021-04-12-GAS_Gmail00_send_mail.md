@@ -6,8 +6,6 @@ tags: ["google", "javascript", "macro", "GoogleAppsScript", "Gmail"]
 permalink: "/google/GAS_Gmail00_send_mail/"
 ---
 
-## Google Apps Script - Gmail - Send Mail
-
 - Google Apps Script에서 Gmail API를 사용하여 메일을 보내는 코드를 정리하였습니다.
 
 ```js

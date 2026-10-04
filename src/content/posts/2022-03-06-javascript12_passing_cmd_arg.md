@@ -6,8 +6,6 @@ tags: ["nodejs", "javascript", "argument"]
 permalink: "/javascript/javascript12_passing_cmd_arg/"
 ---
 
-## NodeJS - Passing Command line arguments
-
 - nodejs를 command line에서 실행할 때, argument를 넘겨주는 방법은 다음과 같습니다.
 
 ```sh

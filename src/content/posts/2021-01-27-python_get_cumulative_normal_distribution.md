@@ -1,12 +1,10 @@
 ---
 title: "python - Cumulative normal distribution"
 date: 2021-01-27
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-basic", "scipy"]
 permalink: "/python-lib/python_get_cumulative_normal_distribution/"
 ---
-
-## python - Cumulative normal distribution function
 
 - python에서 누적 정규 분포 함수(CDF, Cumulative normal Distribution Function)을 계산하는 방법을 정리했습니다.
 - `scipy`를 이용하면 다음과 같습니다.

@@ -6,8 +6,6 @@ tags: ["vi", "vim", "vundle", "plugin", "bracket"]
 permalink: "/vim/vim07_bracket_complete/"
 ---
 
-## vim - bracket completion
-
 - vim을 사용해서 c로 간단한 코드를 개발하던 중에, 일반적인 IDE들에서는 모두 존재하는 '{'을 타이핑하면 알아서 '}'을 생성해주는 bracket completion이 Vim에서는 되지 않았다. 따라서, vim에서 해당 기능이 구현되도록 설정해보려고 한다.
 - 찾아보니 보통 [github - delimitMate](https://github.com/Raimondi/delimitMate)를 사용하는 것으로 보입니다. 다만, 해당 링크로 들어가 보시면, 사용 방법에 대해서 생각보다 자세히 나와 있지 않은 것을 알 수 있습니다.
 - 따라서, 저는 [github - auto pairs](https://github.com/jiangmiao/auto-pairs)라고 하는 플러그인을 사용해보기로 합니다. 얘는 delimitMate에 비해서 설치 법등이 훨씬 상세하게 적혀 있습니다.

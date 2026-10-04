@@ -1,12 +1,10 @@
 ---
 title: "pandas에서 time series 활용하기"
 date: 2018-06-12
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "pandas", "time-series", "matplotlib", "datetime"]
 permalink: "/python-lib/time_series_in_pandas/"
 ---
-
-## pandas에서 time series 활용하기
 
 - 최근에 kaggle에서 뭘 좀 하다가, time series 데이터를 분석할 일이 있었습니다. 생각해보니, 예전에도 datacamp에서 사용했던 적이 있었는데, 아무튼 기본적인 time series 활용법을 정리해두려고 합니당. 
 - 우선 제가 참고한 포스트에서는 `pandas-datareader`에서 데이터를 가져와서 분석합니다. 저도 같은 방식으로 진행할 것이기 때문에 `conda install pandas-datareader`을 해주세용

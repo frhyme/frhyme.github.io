@@ -1,7 +1,7 @@
 ---
 title: "numpyp - random multiple choice"
 date: 2018-07-26
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "random", "choice", "numpy"]
 permalink: "/python-lib/random_multiple_choice/"
 ---

@@ -6,8 +6,6 @@ tags: ["java", "programming", "GenericProgramming", "TypeBound"]
 permalink: "/java/java_generic_type_bound/"
 ---
 
-## Java - Generic Programming - Type Bound
-
 - Type Bound는 Generic Programming을 사용할 때, "특정 타입을 상속받는 객체"만 허용되도록 제한하는 것을 말합니다.
 - 다음 코드에서 `<TS extends List>`는 type parameter인 TS가 "List를 상속받는다"라는 것을 의미하죠. List는 interface이므로 `implements`가 되어야 하는 것 아닐까? 싶지만, interface, class와 무관하게 항상 `extends`를 사용합니다.
 

@@ -6,8 +6,6 @@ tags: ["mongoDB", "python", "pymongo", "database", "db", "sql", "nosql", "brew"]
 permalink: "/mongodb/mongoDB05_dump_restore/"
 ---
 
-## mongoDB - dump, restore
-
 - mongoDB를 사용하여 특정 DB를 백업하고 복구하는 방법을 정리합니다.
 - 그냥 mongodump를 사용하여 백업하면 된다고 하는데 실제로 해보니까 다음과 같은 오류가 발생합니다.
 

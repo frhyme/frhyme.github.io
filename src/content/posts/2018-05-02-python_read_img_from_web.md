@@ -1,7 +1,7 @@
 ---
 title: "웹에서 이미지를 읽읍시다."
 date: 2018-05-02
-category: "python-lib"
+category: "python-libs"
 tags: ["python-lib", "python", "image", "requests", "PIL"]
 permalink: "/python-lib/python_read_img_from_web/"
 ---

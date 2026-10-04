@@ -1,7 +1,7 @@
 ---
 title: "python-lib) MacOS에서 konlpy 설치하고 사용하기(실패기)"
 date: 2018-04-12
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "konlpy", "macOS", "jpype", "not-yet"]
 permalink: "/python-lib/python-lib_konlpy/"
 ---

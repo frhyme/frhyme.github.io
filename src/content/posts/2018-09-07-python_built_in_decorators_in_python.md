@@ -17,7 +17,7 @@ permalink: "/python-basic/python_built_in_decorators_in_python/"
 
 > 함수를 먹고 확장된 더 좋은 함수를 리턴해주는 함수
 
-- 라고 생각하시면 됩니다. 혹시 더 궁금하시다면, 제가 예전에 쓴 [python-basic) Decorator in python](https://frhyme.github.io/python-basic/python-basic)-Python_decorator/)를 참고하시면 좋습니다 하하핳
+- 라고 생각하시면 됩니다. 혹시 더 궁금하시다면, 제가 예전에 쓴 [python-basic) Decorator in python](/python-basic/python-basic)-Python_decorator/)를 참고하시면 좋습니다 하하핳
 
 - 아무튼, 여기서는 decorator의 개념들보다, [python3에 기본적으롷 설치되어 있는 built-in decorator들에 대해서 알아보려고 합니다](http://buildingskills.itmaybeahack.com/book/python-2.6/html/p03/p03c06_decorators.html#objects-decorators-available). 
 

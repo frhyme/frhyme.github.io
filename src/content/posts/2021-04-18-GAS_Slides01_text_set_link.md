@@ -6,8 +6,6 @@ tags: ["google", "javascript", "GoogleSlides", "macro", "GoogleAppsScript"]
 permalink: "/google/GAS_Slides01_text_set_link/"
 ---
 
-## Google Apps Script - Slides - text에 link연결하기
-
 - Google Apps Script를 사용해서 slide의 text에 link를 연결하는 방법을 정리합니다.
 
 ```js
@@ -26,6 +24,6 @@ function set_link() {
   // style을 가져오고, 여기에 link를 연결해줍니다.
   var text = textBox.getText()
   var textStyle = text.getTextStyle()
-  textStyle.setLinkUrl("https://frhyme.github.io/")
+  textStyle.setLinkUrl("/")
 }
 ```

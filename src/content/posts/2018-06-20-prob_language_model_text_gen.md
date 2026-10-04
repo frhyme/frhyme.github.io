@@ -1,7 +1,7 @@
 ---
 title: "확률적 언어 모형을 만들어서, 그럴듯한 문장을 생성합니다."
 date: 2018-06-20
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "nltk", "numpy", "counter", "movie_reviews"]
 permalink: "/python-lib/prob_language_model_text_gen/"
 ---

@@ -6,8 +6,6 @@ tags: ["google", "javascript", "Google_Docs", "macro", "GoogleAppsScript"]
 permalink: "/google/GAS_Docs03_replace_text/"
 ---
 
-## Google Apps Script - Docs - Replace text
-
 - `.replaceText("originalText", "newText")`를 사용해서 텍스트를 변환할 수 있습니다.
 - 원래 문서에 다음과 같이 작성되어 있다고 하겠습니다.
 

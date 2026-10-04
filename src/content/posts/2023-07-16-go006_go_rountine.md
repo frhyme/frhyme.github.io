@@ -6,8 +6,6 @@ tags: ["go", "golang", "routine"]
 permalink: "/golang/go006_go_rountine/"
 ---
 
-## go006 go rountine
-
 - in the Go language, utilizing multiple tasks with goroutines is incredibly simple. Unlike other languages like Python, where you would need to import additional libraries like "multiprocessing" to achieve multiprocessing, Go language provides multiple processing as a default feature.
 - Each goroutine in Go operates on a single thread, utilizing a dedicated CPU core. This eliminates the need for costly context switching when switching between threads. Since each thread exclusively operates on its assigned CPU core, there is no need to save the context of the existing thread during thread switching. Consequently, in Go language, each thread operates on its respective CPU core, aligning with the concept mentioned earlier. Although it may initially seem complex, in reality, each CPU core corresponds to one thread, and each thread corresponds to one goroutine. If there are two CPU cores, then two threads can simultaneously execute. However, when the number of goroutines exceeds the available CPU cores, the goroutines are switched on the same thread. This type of goroutine switching on the same OS thread is not considered context switching and does not incur significant costs, unlike switching threads on CPU cores. This lightweight nature of goroutines stems from this particular design principle.
 

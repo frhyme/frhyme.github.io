@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Los
 permalink: "/english_study_by_movie_script/Lost_In_Translation_Trivia00/"
 ---
 
-## 영화 "사랑도 통역이 되나요"에 관한 사소한 사실들 - 0편
-
 - 영화 `<사랑도 통역이 되나요>`의 원제는 "Lost in Translation", 즉 "번역에서 잃어버리는 것들"이라는 말이죠. 이 정도의 의역은 뭐 어느 정도 존중해줄 수도 있지만, 영화를 보고 나면 원제가 훨씬 적합하다고 느껴집니다. 이 영화는 '스칼렛 요한슨과 빌 머레이의 로맨스'가 담기기는 해도 그 정서가 전부가 아니거든요. 한국 개봉명인 '사랑도 통역이 되나요'는 이 영화를 좀 무겁고 진지한 로맨스 영화처럼 보이게 만든 것 같아요. 
 - 오히려, 이 영화는 영화 `<캐스트 어웨이>`와 비슷한 외로움의 정서가 깔려 있습니다. 그리고 꽤 경쾌한 약간은 씁쓸한 개그들도 쏠쏠하죠. 아무튼 오늘은 IMDB에 정리된 `<Lost in Translation>`의 Trivia들을 번역하여, 정리하였습니다.
 

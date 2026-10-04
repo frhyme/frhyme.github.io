@@ -6,8 +6,6 @@ tags: ["google", "javascript", "GoogleSlides", "macro", "GoogleAppsScript"]
 permalink: "/google/GAS_Slides00_insert_table/"
 ---
 
-## Google Apps Script - Slides - Insert Table
-
 - Google Apps Script를 사용해서 slide에 Table을 집어넣고 값을 작성하는 방법을 다음과 같이 정리하였습니다.
 
 ```js

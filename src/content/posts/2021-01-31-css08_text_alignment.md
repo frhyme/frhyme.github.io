@@ -6,8 +6,6 @@ tags: ["css", "text", "alignment"]
 permalink: "/css/css08_text_alignment/"
 ---
 
-## CSS - Text Alignment
-
 - CSS의 `text-align`은 텍스트의 정렬 을 정의합니다.
   - `text-align: left`: 왼쪽 정렬
   - `text-align: right`: 오른쪽 정렬 

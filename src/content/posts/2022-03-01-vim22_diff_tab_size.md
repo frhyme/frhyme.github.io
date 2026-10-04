@@ -6,8 +6,6 @@ tags: ["vim", "tab", "filetype", "javascript", "autocmd"]
 permalink: "/vim/vim22_diff_tab_size/"
 ---
 
-## Vim 22 - File 별로 Tab Size 다르게 하기
-
 - Vim에서 Python 개발만 진행하다가, 최근에는 Javascrip도 조금씩 쓰고 있습니다.
 - python의 경우 tab이 4 space인 반면 JS의 경우는 2 space죠. js에서 2 space가 표준이 된 배경에는 "callback hell"이 있다고 생각됩니다. 들여쓰기를 연속해서 하게 되는 deep nesting이 자주 발생하게 되는데, 이 때 만약 tab이 4 space일 경우 모니터를 넘어가는 일이 생길 수도 있으니까요.
 - 저의 경우는 tab보다는 space를 선호하고, 2 space보다는 4 space를 선호합니다. 4 space가 가독성이 훨씬 좋다고 생각하거든요. 하지만, 표준이 있다면 표준을 따릅니다.

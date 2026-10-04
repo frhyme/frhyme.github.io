@@ -21,7 +21,6 @@ permalink: "/others/jekyll_related_post/"
 - 우선 제 포스트를 렌더링하는 템플릿을 체크해봅니다. 맨 아래 쪽에 related post가 있는 부분이 있습니다.
 
 ```html
-{% raw %}
 {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
  {% if page.id and page.related and site.related_posts.size > 0 %}
    <div class="page__related">
@@ -43,7 +42,6 @@ permalink: "/others/jekyll_related_post/"
      </div>
    </div>
  {% endif %}
-{% endraw %}
 ```
 
 - 다음 두 가지로 구분되어 있습니다.

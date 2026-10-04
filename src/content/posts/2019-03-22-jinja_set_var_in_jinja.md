@@ -18,19 +18,16 @@ permalink: "/python-libs/jinja_set_var_in_jinja/"
 - 앞에 `set`을 붙여주면 끝납니다. 
 
 ```html
-{% raw %}
 <div>
     {% set a = 3 %}
     {{a}}    
 </div>
-{% endraw %}
 ```
 
 - 비슷하게, 리스트를 선언하고 값을 넣어줄 수도 있습니다.
 - 그러나, `a.append(i)` 부분이 statement가 아니라, statement with print로 되어 있는 것을 알 수 있습니다. 즉, 해당 부분이 실제 Html에서 출력이 된다는 것이죠. 해당 부분이 따로 값을 리턴하지 않기 때문에, 그냥 `None`이 리턴되기는 합니다. 
 
 ```html
-{% raw %}
 <div>
     {% set a = [] %}
     {% for i in range(0, 10) %}
@@ -38,13 +35,11 @@ permalink: "/python-libs/jinja_set_var_in_jinja/"
     {% endfor %}
     {{a}}
 </div>
-{% endraw %}
 ```
 
 - 사실, 이럴때는 그냥 이 부분을 script로 넘겨버리면 되기는 합니다. 
 
 ```html
-{% raw %}
 <div>
     <script>
         {% set a = [] %}
@@ -54,13 +49,11 @@ permalink: "/python-libs/jinja_set_var_in_jinja/"
     </script>
     {{a}}
 </div>
-{% endraw %}
 ```
 
 - 비슷하게, 딕셔너리에 대해서도 다음처럼 만들수 있죠. 
 
 ```html
-{% raw %}
 <div>
     <script>
         {% set a_lst = [] %}
@@ -76,7 +69,6 @@ permalink: "/python-libs/jinja_set_var_in_jinja/"
     {{a_lst}}
     <br>
     {{b_dict}}
-{% endraw %}
 </div>
 
 ```

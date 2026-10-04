@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Lov
 permalink: "/english_study_by_movie_script/Love_Actually_Scene00_Love_is_everywhere/"
 ---
 
-## 영화 Love Actually 명장면 - Love is Everywhere
-
 - 저는 보통 하루의 대부분의 시간을 스타벅스에서 보냅니다.
 - 오늘도 스타벅스에 왔는데, 벌써, 크리스마스 캐럴이 들리더군요. 그래서 <러브 액츄얼리>를 골라봤습니다. 찾아보니, 2003년에 나온 영화로군요. 이제 조금 있으면 20년이 다 되어가는데, 아직도 저에게 크리스마스라면, <러브 액츄얼리>가 떠오릅니다. 요즘 대학생들에게는 무슨 영화가 떠오를지 모르겠네요. 
 - 사실, 저는 이제 크리스마스가 다가오면 신나기보다는 우울해지긴 합니다. 또 한 살 먹었는데 올해는 뭘 했나, 그런 생각이 들죠. 그러고 보니 이제 정말 또 얼마 안 남았군요. 후. 

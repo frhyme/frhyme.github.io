@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Ete
 permalink: "/english_study_by_movie_script/EternalSunshine_Trivia00_hair/"
 ---
 
-## 영화 Eternal Sunshine에서 그녀의 머리는 4가지 색깔
-
 - 영화 `<이터널 선샤인>`의 원제는 "Eternal Sunshine of the spotless mind"죠. spotless는 '티끌 하나 남지 않은'을 의미하며, 즉, 이 영화 제목은 **'아무것도 남지 않은 마음의 영원한 햇살'**이라고 번역할 수 있겠네요. 
 - 아무튼, 영화를 세심하게 보신 분들은 아시겠지만, 영화 속에서 케이트 윈슬렛의 머리 색은 계속 변합니다. 그리고, 각각의 머리 색에도 이름이 붙어 있죠. 영화의 시간적 배열이 아닌, 조엘(짐 캐리)과 클레멘타인(케이트 윈슬렛)의 사랑이 변해가는 순으로 배치하면 초록(Green Revolution), 빨강(Red Menace), 주황(Agent Orange), 파랑(Blue Ruin)입니다. 
 - 처음 사람을 만나는 것은 말 그대로 혁명(Revolution)이고, 사랑에 빠지는 것은 정말 뜨겁지만, 그만큼 위험하고, 가장 사랑했던 시기를 지나 소위 말하는 콩깍지가 벗겨지면, 조금씩 메말라 가죠. 이를 과거 베트남 전쟁에 사용했던 고엽제의 이름을 따서 Agent Orange라고 지었습니다. 그리고 마지막, 모든 것이 없어지고 폐허(Ruin)가 되어버리죠. 

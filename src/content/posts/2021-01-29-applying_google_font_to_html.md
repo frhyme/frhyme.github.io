@@ -6,8 +6,6 @@ tags: ["html", "font", "css"]
 permalink: "/html/applying_google_font_to_html/"
 ---
 
-## html - Google Font 연결하기
-
 - [Google - Font](https://fonts.google.com/)에 존재하는 다양한 font를 가져와서, html 문서에 적용할 수 있습니다.
 - local computer에 font를 다운 받은 다음 적용하는 것이 아니라, 웹피이지를 열 때 직접 [Google - Font](https://fonts.google.com/)에서 font를 가져오는 것이죠. 그냥 클라우드처럼 쓴다고 생각하셔도 문제가 없습니다.
 - [Google - Font](https://fonts.google.com/)에서 원하는 font를 눌러서 보면 다음 2가지가 오른편에 뜨는 것을 볼 수 있습니다.

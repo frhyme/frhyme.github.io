@@ -6,8 +6,6 @@ tags: ["entrepreneurship", "bibliometric", "co-citation"]
 permalink: "/paper-summary/ps_scholarly_communities/"
 ---
 
-## Scholarly Communities in Entrepreneurship Research - A Co–Citation Analysis
-
 - Entrepreneurship Theory and Practice(impact factor over 5.0)에 2006년 5월에 게재된 논문.
 - [link](https://journals.sagepub.com/doi/abs/10.1111/j.1540-6520.2006.00126.x?journalCode=etpb)
 

@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "networkx", "community", "community-detecction"]
 permalink: "/python-libs/nx_algorithm_girvan_newman_method/"
 ---
 
-## networkx - community detection - girvan newman method.
-
 - community detection 방법은 네트워크에서 보다 긴밀한 관계를 가지는, 노드 그룹을 뽑아내는 방법을 말합니다.  특히, girvan newman method는 가장 가치가 높은 edge를 순차적으로 잘라나가면서 group을 계층적으로 분화하는데, 여기서 edge의 가치는 기본적으로는 `edge_betweenenss centrality`를 통해서 평가됩니다. 
 - 물론, 필요에 따라서, 직접 변경해서 처리할 수도 있구요. 
 

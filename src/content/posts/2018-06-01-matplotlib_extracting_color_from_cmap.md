@@ -1,7 +1,7 @@
 ---
 title: "matplotlib의 cmap을 알아봅시다."
 date: 2018-06-01
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "matplotlib", "colormap", "numpy", "pandas", "itertools"]
 permalink: "/python-lib/matplotlib_extracting_color_from_cmap/"
 ---

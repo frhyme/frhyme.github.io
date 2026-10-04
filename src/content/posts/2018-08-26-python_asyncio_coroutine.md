@@ -1,7 +1,7 @@
 ---
 title: "asyncio - coroutine"
 date: 2018-08-26
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "coroutine", "asyncio", "concurrency", "parallelism"]
 permalink: "/python-lib/python_asyncio_coroutine/"
 ---

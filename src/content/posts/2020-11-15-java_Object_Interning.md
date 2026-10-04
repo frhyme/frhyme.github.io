@@ -6,8 +6,6 @@ tags: ["java", "Object", "Class", "programming"]
 permalink: "/java/java_Object_Interning/"
 ---
 
-## Java - Object Interning
-
 - Object Interning은 여러 개의 Object가 동일한 값을 가질 때, 하나의 메모리의 값을 공유하도록 함으로써, 메모리를 적게 사용하도록 하는 기법을 말합니다.
 - 아래, 코드를 보면 서로 다른 두 객체인 `aStr`와 `bStr`이 같은 메모리 값을 가지고 있음을 알 수 있죠.
 

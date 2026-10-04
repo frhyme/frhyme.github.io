@@ -6,8 +6,6 @@ tags: ["java", "programming", "stream", "Collectors", "groupingBy"]
 permalink: "/java/java_stream_collectors_groupinbBy/"
 ---
 
-## Java - stream - Collectors.groupingBy
-
 - `Collectors.groupingBy(function)`은 stream의 각 요소에 `function`을 적용하고 적용 결과를 key에 원소를 value에 넣어서 Map으로 리턴하는 방법을 말합니다.
 
 ```java

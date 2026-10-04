@@ -1,7 +1,7 @@
 ---
 title: "seaborn - basic"
 date: 2018-06-04
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "seaborn", "matplotlib", "heatmap"]
 permalink: "/python-lib/seaborn_quicksheet/"
 ---

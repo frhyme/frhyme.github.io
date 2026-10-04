@@ -6,8 +6,6 @@ tags: ["vim", "vi", "markdown", "syntax", "highlight"]
 permalink: "/vim/vim_md01_markdown_syntax_highlight/"
 ---
 
-## Vim21 - Markdown Code block syntax highlight
-
 - `~/.vimrc` file 내에 아래 내용을 추가하면, python, vim, json code block에 대해서 markdown 내에서 syntax highlight이 지원됩니다.
   - `g:`: global을 의미하며, 아래 설정을 전역적(globally)으로 설정해준다는 것을 의미합니다.
 

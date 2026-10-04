@@ -22,7 +22,7 @@ print(func1(1, 2)) ## 실행됨
 print(func1(1, 2, 3)) ## argument의 수가 많으므로 실행이 안됨 
 ```
 
-```
+```python
 3
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)

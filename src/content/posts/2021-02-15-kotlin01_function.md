@@ -6,8 +6,6 @@ tags: ["kotlin", "function"]
 permalink: "/kotlin/kotlin01_function/"
 ---
 
-## Kotlin - function
-
 - Kotlin에서는 function 또한, Object로 사용되며 변수가 가리키도록 할 수도 있고, 함수에 넘겨주고 다시 함수에서 넘겨받는 것도 가능합니다. 보통 이런 걸, first-class citizen이라고 하는데, 뭐 그냥 "함수도 변수처럼 쓸 수 있다"라고만 알고 있어도 큰 문제는 없어요.
 
 ## Function Reference

@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Goo
 permalink: "/english_study_by_movie_script/good_will_hunting_Scene_08_good_night_lay/"
 ---
 
-## 영화 Good Will Hunting 명대사 - Good Night Lay
-
 - 전에도 말한 것 같기는 합니다만, 영화 <굿윌헌팅>속에서 윌과 스카일라가 마음껏 사랑에 빠져 있는 모습은 생각보다 많이 나오지 않습니다. 사실 스카일라는 어느 정도, 윌의 "애정결핍", "분리불안"적인 성향과 사랑에 빠질수록 불안해지는 모습을 나타내기 위해서 만들어진 캐릭터에 가까우니까요. 냉정히 말하면, '도구'적인 캐릭터에 가깝다고 생각해요.
 - 물론, 둘이 사랑에 빠져서 콩닥콩닥 하는 장면이 있기는 합니다. 영화 속에서 최소한 이 장면에서 만큼은 둘은 그냥 보통의 연인처럼 보입니다. "행복했던 한 때"정도로 말할 수 있겠네요. 
 

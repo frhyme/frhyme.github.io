@@ -6,8 +6,6 @@ tags: ["python", "python-libs"]
 permalink: "/python-basic/python_got_multiple_v_for_arg/"
 ---
 
-## got multiple values for argument 
-
 - 사소한 오류이기는 한데, 정리합니다. 
 - 아래 코드에서 보는 것과 같이, func에 변수를 함께 넘길 경우에는 
   - 해당 함수가 선언되었을 때의 변수 순서에 맞춰서 넘기거나 

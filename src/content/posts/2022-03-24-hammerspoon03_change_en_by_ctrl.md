@@ -6,8 +6,6 @@ tags: ["hammerspoon", "ctrl", "hhkb"]
 permalink: "/hammerspoon/hammerspoon03_change_en_by_ctrl/"
 ---
 
-## Hammerspoon03 - ctrl키로 한영 전환 하기
-
 - hammerspoon을 사용하여 ctrl 키가 눌렸을 때, 한영 전환이 발생하도록 설정했습니다.
 - 저는 CTRL키가 Caps Lock 위치에 있는 HHKB를 사용하기 때문에, CTRL 키에 한영 전환을 매핑하는 것이 더 효율적입니다.
 

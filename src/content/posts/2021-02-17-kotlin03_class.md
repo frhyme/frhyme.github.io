@@ -6,8 +6,6 @@ tags: ["kotlin", "programming", "class"]
 permalink: "/kotlin/kotlin03_class/"
 ---
 
-## Kotlin - class
-
 - kotlin에서 class를 정의하는 방법을 정리하였습니다.
   - kotlin에서는 Constructor를 내부 method로 정의하는 것이 아니라, `class Student(...)` 부분에 값을 넣어서 넘겨줍니다.
   - 내부에 `init` block으로 만들어 줄 수도 있긴 하죠.

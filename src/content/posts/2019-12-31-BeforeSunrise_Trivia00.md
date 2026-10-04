@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/BeforeSunrise_Trivia00/"
 ---
 
-## 영화 Before Sunrise 에 대한 사소한 사실들
-
 - 영화 `<Before Sunrise>`에 대한 사소한 사실들을 정리했습니다. 각본이 그저 11일 만에 쓰였다는 것, 그리고 이후에 그 각본이 주연 배우인 쥴리 델피와 에단 호크에 의해서 여러 번 다시 쓰였다는 것 등이 인상적이네요. 
 
 ## Trivia - She

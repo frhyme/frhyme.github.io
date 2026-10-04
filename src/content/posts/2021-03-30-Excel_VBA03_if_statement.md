@@ -6,8 +6,6 @@ tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic"]
 permalink: "/ms_office/Excel_VBA03_if_statement/"
 ---
 
-## Excel - VBA - If Statement
-
 - VBA에서 If statement는 다음처럼 사용할 수 있습니다.
 - 아래 코드는 변수 `a`의 값이 2의 배수, 3의 배수 그리고 나머지에 대해서 각각 서로 다른 메세지를 출력해 주도록 합니다.
 

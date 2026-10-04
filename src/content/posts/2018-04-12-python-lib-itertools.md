@@ -54,7 +54,7 @@ print(iter(iter_lst))
 print(iter(iter_lst)[0]) # iteragor를 integer position으로 접근하면 error occur
 ```
 
-```
+```python
     ['a', 'b']
     <list_iterator object at 0x00000158531F0C18>
 
@@ -82,7 +82,7 @@ while True:
     print(next(a))
 ```
 
-```
+```python
     1
     2
     3

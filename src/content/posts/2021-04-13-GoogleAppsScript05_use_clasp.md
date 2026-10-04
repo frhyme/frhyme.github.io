@@ -6,8 +6,6 @@ tags: ["google", "javascript", "terminal", "macro", "GoogleAppsScript", "GCP"]
 permalink: "/google/GoogleAppsScript05_use_clasp/"
 ---
 
-## Google Apps Script - clasp를 사용하여 local에서 script 작성하기
-
 - 지금까지는 google apps script를 사용하기 위해서는 구글 드라이브(혹은 닥스)에 접속해서 Google Apps Script를 생성하고 브라우저에 수정하는 일들을 했습니다. 코드가 작을 때는 이렇게 해도 아무 문제가 없습니다만, 코드가 길어지거나 하면, local에서 작업하고 싶을 때가 있습니다. git을 쓰기도 하고 뭐 이런저런 이유 때문이죠.
 - 본 글에서는 clasp라는 툴을 사용하여 local에서 Google Apps Script를 사용하는 방법을 정리합니다. [github - google - clasp](https://github.com/google/clasp)를 참고했습니다.
 

@@ -1,7 +1,7 @@
 ---
 title: "Java - Array의 크기를 변수로 정의해주는 것이 가능합니다."
 date: 2020-10-16
-category: "Java"
+category: "java"
 tags: ["java", "programming", "array"]
 permalink: "/java/java_array01_array_size_by_var/"
 ---

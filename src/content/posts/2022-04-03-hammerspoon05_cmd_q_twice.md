@@ -6,8 +6,6 @@ tags: ["hammerspoon", "macOS", "cmd"]
 permalink: "/hammerspoon/hammerspoon05_cmd_q_twice/"
 ---
 
-## Hammerspoon05 - cmd + q 두 번 눌러야 실행되도록 변경
-
 - macOS에서는 "command + q" 를 누르면 현재 어플리케이션이 바로 종료됩니다. 다만 실수로라도 잘못 누르면 바로 종료되어서, 키보드를 던져버리고 싶은 기분이 들 때가 있습니다.
 - 따라서, "command + q"를 눌렀을 때 바롷 종료되지 않고, 시간 내에 연속으로 두 번 눌러야 종료되도록 처리하는 기능을 개발했습니다.
 - [drewrothstein/cmq.lua](https://gist.github.com/drewrothstein/3568a4624e2e9675fa0dfc2930e9eca5)를 참고하여 코드를 수정하였습니다.

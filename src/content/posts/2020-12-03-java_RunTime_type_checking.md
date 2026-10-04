@@ -6,8 +6,6 @@ tags: ["java", "programming", "class", "OOP"]
 permalink: "/java/java_RunTime_type_checking/"
 ---
 
-## Java - Runtime Type Checking
-
 - Java를 포함한 OOP 언어들에서는 BaseClass(혹은 Interface)의 reference Variable을 사용해서 DerivedClass의 Class Instance를 가리키게 할 수 있습니다. 대략 다음과 같죠.
 
 ```java

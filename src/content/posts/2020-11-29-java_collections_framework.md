@@ -6,8 +6,6 @@ tags: ["java", "programming", "collections", "interface", "class"]
 permalink: "/java/java_collections_framework/"
 ---
 
-## Java - Collection interface
-
 - Java에서는 미리 다양한 자료구조에 대한 Interface를 설계 해두었습니다. 관리의 용이성 혹은 method명을 표준화시켜 관리하는 것이 목적이겠죠.
 - `Collection<E>`: 동일한 type의 object들을 모아두는 container입니다. `List<E>`, `Set<E>`, `Queue<E>`, `SortedSet<E>`, `Deque<E>`는 `Collection<E>` interface를 상속받죠. 그리고, 자주 쓰이는 `ArrayList`는 `List<E>`를 상속받죠. 즉, 구조적으로 보면 `Collection` > `List` > `ArrayList`의 형태로 상속받는 것이죠. 여기서 `T`가 아닌 `E`가 쓰인 이유는 "Element"의 약자라서 그렇죠.
 - `Map<K, V>`: `K, V`는 각각 Key, Value를 의미합니다. 즉, 그냥 값만 관리하는 것이 아니라, Key와 Value를 가리키는 형태로 데이터를 관리하고 싶을 때 사용하죠.

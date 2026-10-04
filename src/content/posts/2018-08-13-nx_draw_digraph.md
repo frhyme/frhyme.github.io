@@ -1,7 +1,7 @@
 ---
 title: "DiGraph를 arrow로 그립시다."
 date: 2018-08-13
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "networkx", "matplotlib", "arrow", "digraph"]
 permalink: "/python-lib/nx_draw_digraph/"
 ---

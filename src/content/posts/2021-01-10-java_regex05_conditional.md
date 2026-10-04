@@ -6,8 +6,6 @@ tags: ["java", "regex", "condition", "programming", "String"]
 permalink: "/java/java_regex05_conditional/"
 ---
 
-## Java - Regex - Conditional 
-
 - Regex에서도 문자열의 패턴에 따라 if statement를 구성할 수 있습니다.
 - 아래 코드에서는 일반적인 시간 표시(`15:56`)과 같은 시간만 유효하도록 판단하는 regex를 만들었습니다.
 

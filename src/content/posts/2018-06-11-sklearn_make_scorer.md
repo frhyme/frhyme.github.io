@@ -2,7 +2,7 @@
 title: "sklearn에서 custom metric으로 모델 선정하기"
 date: 2018-06-11
 category: "others"
-tags: []
+tags: ["python", "sklearn", "machine-learning"]
 permalink: "/sklearn_make_scorer/"
 ---
 

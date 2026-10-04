@@ -6,8 +6,6 @@ tags: ["game", "dragonball"]
 permalink: "/game/GameReview04_DragonBallZ_Kakarot/"
 ---
 
-## GameReview04 DragonBallZ Kakarot
-
 - [드래곤볼 Z 카카로트](https://namu.wiki/w/%EB%93%9C%EB%9E%98%EA%B3%A4%EB%B3%BC%20Z%20%EC%B9%B4%EC%B9%B4%EB%A1%9C%ED%8A%B8)를 플레이했습니다. 꽤 재밌게 한 편이고요. 간단하게 장단점을 작성해보겠습니다.
 
 ## 총평

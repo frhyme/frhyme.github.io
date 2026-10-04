@@ -19,7 +19,7 @@ error: failed to push some refs to 'https://github.com/frhyme/frhyme.github.io.g
 
 - 깊게 고민하지 마시고 아래 커맨드를 실행하시면 됩니다. 로컬파일들을 그대로 덮어씌우는 것이 아니라, 보통은 그대로 두고 업데이트된 파일들만 가져옵니다. 
 
-```
+```bash
 git pull origin master 
 ```
 

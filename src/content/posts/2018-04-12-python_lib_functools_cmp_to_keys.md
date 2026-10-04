@@ -1,7 +1,7 @@
 ---
 title: "python-lib) functools cmp_to_keys"
 date: 2018-04-12
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "functools", "functional-programming", "iterator"]
 permalink: "/python-lib/python_lib_functools_cmp_to_keys/"
 ---

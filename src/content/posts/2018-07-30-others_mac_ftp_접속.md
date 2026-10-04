@@ -6,8 +6,6 @@ tags: ["mac"]
 permalink: "/others/others_mac_ftp_접속/"
 ---
 
-## mac에서 ftp 접속하기 
-
 - 간단하기, 맥의 finder menu를 누르면, **서버에 연결** 이라는 부분이 있습니다. 
 - 이걸 누르고, 저는 삼바로 접속하기 때문에 다음을 쳐주면 알아서 잘 됩니다. 
 

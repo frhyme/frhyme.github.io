@@ -6,8 +6,6 @@ tags: ["python", "optimization", "python-lib", "scipy", "LP", "QP"]
 permalink: "/optimization/optimization_LP_QP/"
 ---
 
-## LP and QP 
-
 - 다시 최적화시간이 생각납니다 하하핫. LP는 Linear Programming의 약자인데, **간단히 말하면 연립방정식의 해를 찾는 것**라고 해도 아무 문제가 없습니다. 
 - LP의 기본적인 형태는 대략 다음과 같습니다. 목적식이 있고, 이 목적식을 만족하는 equality constraint가 있고, 모든 x는 0보다 커야 합니다. 
 ```

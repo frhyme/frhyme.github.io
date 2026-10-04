@@ -1,7 +1,7 @@
 ---
 title: "matplotlib로 부등식 그려보기"
 date: 2018-06-15
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "matplotlib"]
 permalink: "/python-lib/drawing_ineq_python/"
 ---

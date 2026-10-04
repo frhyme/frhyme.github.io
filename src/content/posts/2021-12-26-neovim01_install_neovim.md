@@ -6,8 +6,6 @@ tags: ["vim", "vi", "neovim", "nvim"]
 permalink: "/vim/neovim01_install_neovim/"
 ---
 
-## NeoVim - Install Neovim 
-
 ### Intro 
 
 - 기존 vim을 사용하다가 jedi-vim의 실행 속도가 매우 느려서 혹시 default vim을 사용하는 것이 문제인가 싶어서, NeoVim을 설치해봤습니다.

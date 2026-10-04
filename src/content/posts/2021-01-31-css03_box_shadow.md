@@ -6,8 +6,6 @@ tags: ["css", "shadow", "html"]
 permalink: "/css/css03_box_shadow/"
 ---
 
-## CSS - Box Shadow
-
 - 요소의 글 상자 만큼의 `box-shadow`를 만드는 방법을 정리합니다.
 - `box-shadow`는 `offset_x, offset_y, blur_radius, spread_radius, color`로 정의됩니다.
   - `offset_x`: box_shadow의 위치 양수(오른쪽), 음수(왼쪽)

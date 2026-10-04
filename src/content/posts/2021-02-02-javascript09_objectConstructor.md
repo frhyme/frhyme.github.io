@@ -6,8 +6,6 @@ tags: ["javascript", "programming", "object", "constructor", "function"]
 permalink: "/javascript/javascript09_objectConstructor/"
 ---
 
-## Javascript - Object Constructor
-
 - javascript에서는 `function`을 사용해서 Object Constructor를 만들어 줍니다.
 
 ```javascript

@@ -6,8 +6,6 @@ tags: ["javascript", "programming", "selector", "DOM", "class"]
 permalink: "/javascript/JS_DOM03_classList/"
 ---
 
-## Javascript - class List
-
 - html 특정 요소에게 속한 class들을 수정하는 방법을 정리하였습니다.
 
 ```html

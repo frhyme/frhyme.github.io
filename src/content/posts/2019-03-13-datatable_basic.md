@@ -47,7 +47,6 @@ permalink: "/others/datatable_basic/"
 - 예시 code는 다음과 같습니다. 저는 flask를 이용하기 때문에 jinja 형식으로 템플릿이 구성되어 있습니다. 
 
 ```html
-{% raw %}
 
 <!-- data table에서 jquery를 사용하기 때문에 가져옵니다.-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -83,7 +82,6 @@ permalink: "/others/datatable_basic/"
         $('#simulate_log').DataTable();
     });
 </script>
-{% endraw %}
 ```
 
 ## wrap-up

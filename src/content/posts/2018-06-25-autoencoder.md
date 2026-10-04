@@ -6,8 +6,6 @@ tags: ["python", "python-lib", "machine-learning", "keras", "auto-encoder", "enc
 permalink: "/machine-learning/autoencoder/"
 ---
 
-## auto-encoding decoding??
-
 - 최근에 Generative Adversarial Network를 공부했습니다. 슥 만들고 보니까, 예전에 한 번 슬쩍 봤던, Auto encoder/decoder와 유사하다는 생각이 들었습니다. 
     - 제가 이전에 했던 것은 GAN을 이용해서 MNIST 이미지와 비슷한 이미지를 만드는 generator를 만들었습니다. 
     - 뭔가, 예전에도, auto-encoder, decoder를 이용해서, mnist 이미지 샘플을 더 만드는 걸 봤던 것 같아서요. 

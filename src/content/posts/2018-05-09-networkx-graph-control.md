@@ -1,7 +1,7 @@
 ---
 title: "networkx Graph에서 새로운 Graph 만들기(filtering, map 등)"
 date: 2018-05-09
-category: "python-lib"
+category: "python-libs"
 tags: ["networkx", "python-lib", "python"]
 permalink: "/python-lib/networkx-graph-control/"
 ---
@@ -56,7 +56,7 @@ for e in testG.edges(data=True):
 
 - 따라서 앞으로는 `add_edges_from`만을 쓰기로 합니다. 다음처럼 3-tuple의 마지막 원소를 `dictionary`로 넘겨주면 됩니다. 
 
-```
+```python
 graph_size = 5
 testG = nx.Graph()
 

@@ -1,7 +1,7 @@
 ---
 title: "simpy - process communication"
 date: 2018-07-27
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "simpy", "numpy", "simulation", "dictionary"]
 permalink: "/python-lib/simpy_process_communication/"
 ---

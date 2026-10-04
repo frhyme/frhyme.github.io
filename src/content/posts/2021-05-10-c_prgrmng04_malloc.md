@@ -6,8 +6,6 @@ tags: ["C", "programming", "C_programming", "malloc"]
 permalink: "/c_programming/c_prgrmng04_malloc/"
 ---
 
-## C - malloc example
-
 - `malloc`을 간단하게 사용해 봤습니다.
 - 저는 사실 `malloc`보다는 `calloc`이 더 편해요 호호
 

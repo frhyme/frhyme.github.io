@@ -6,8 +6,6 @@ tags: ["google", "javascript", "google_sheet", "macro", "GoogleAppsScript"]
 permalink: "/google/GoogleAppsScript01_Sheet_basic/"
 ---
 
-## Google Apps Script - Get spreadsheed, set sheet Name
-
 ### Get spreadsheet by its ID
 
 - Google Apps Script를 사용해서 Sheet file을 열 때, 다음처럼 사용할 수도 있습니다.

@@ -1,7 +1,7 @@
 ---
 title: "scopus에서 서지정보 가져오기(fail)"
 date: 2018-09-10
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "scopus", "python-lib", "selenium", "pandas", "html"]
 permalink: "/python-lib/python_scopus/"
 ---

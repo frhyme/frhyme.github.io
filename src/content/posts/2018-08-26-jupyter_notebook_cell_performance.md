@@ -1,7 +1,7 @@
 ---
 title: "jupyter notebook에서 현재 cell performance 체크하기"
 date: 2018-08-26
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "timeit", "jupyter-notebook"]
 permalink: "/python-lib/jupyter_notebook_cell_performance/"
 ---

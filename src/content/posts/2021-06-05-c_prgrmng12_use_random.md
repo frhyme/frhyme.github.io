@@ -6,8 +6,6 @@ tags: ["C_programming", "c", "random"]
 permalink: "/c_programming/c_prgrmng12_use_random/"
 ---
 
-## C - random
-
 - c에서는 `rand()` 함수를 사용해서, 랜덤 값을 가져올 수 있습니다.
 - `srand()`를 사용하면 난수를 만드는 첫번째 값을 조정할 수 있죠. 그냥, seed 값이 같으면, '난수 발생 순서가 같다'라고 이해하셔도 됩니다.
 

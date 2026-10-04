@@ -6,8 +6,6 @@ tags: ["paper-summary", "network", "community-detection", "label-propagation"]
 permalink: "/paper-summary/ps_label_propagation_semi_sync/"
 ---
 
-## Community Detection via Semi-Synchronous Label Propagation Algorithms
-
 - graph의 각 노드들의 label을 파악하기 위한 Label Propatation Algorithm(LPA) 방법은 처음 제시되었을 때는 "비동기적인 방법"이어서, 속도가 매우 느렸던, 반명, 본 논문에서 제시하는 방법은, "Semi-Synchronous"한 방법이어서, 훨씬 효율적이다. 라는 것을 말하고 있음.
 - 2011년 3월에 나온 논문, [논문 링크](https://arxiv.org/abs/1103.4550)
 

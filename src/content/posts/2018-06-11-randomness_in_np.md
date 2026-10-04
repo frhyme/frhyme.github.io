@@ -1,12 +1,10 @@
 ---
 title: "numpy에서 randomness 이용하기"
 date: 2018-06-11
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "random", "numpy"]
 permalink: "/python-lib/randomness_in_np/"
 ---
-
-## numpy에서 randomness 이용하기 
 
 - python numpy에 다양한 random 함수들이 있는데, 이를 어떻게 이용할 수 있을지를 정리합니다. 
 

@@ -6,8 +6,6 @@ tags: ["jQuery", "javascript", "html", "web", "css"]
 permalink: "/jquery/jQuery06_Add_Class/"
 ---
 
-## jQuery - Add Class
-
 - jQuery를 사용해서 class를 추가하고 삭제하는 방법을 정리하였습니다.
 
 ```html

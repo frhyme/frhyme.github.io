@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Her
 permalink: "/english_study_by_movie_script/Her_Scene02_freak/"
 ---
 
-## 영화 Her 명장면 - 사랑은 사회적으로 인정받은 미친 짓이지
-
 - 영화 `<Her>`에서 테오도르는 인공지능인 사만다와 사랑에 빠졌고, 그 사실을 친구인 에이미에게 털어놓습니다. 사실 이미 에이미도 인공지능과 교감하고 있는 상황이었기 때문에, 그 사실을 털어놓는 것이 편했죠. 
 - 다만, 영화 속에서는 '인공지능'이 아니라, '운영체제'라고 표현하기는 했습니다. 
 

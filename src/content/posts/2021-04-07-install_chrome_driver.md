@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "seleinum", "chrome"]
 permalink: "/python-libs/install_chrome_driver/"
 ---
 
-## Python - Selenium - Chrome driver
-
 - 맥에서 다음과 같은 코드로 selenium에서 chrome browser를 사용하려고 하는 경우에 아래와 같은 오류가 발생합니디. 
 
 ```python

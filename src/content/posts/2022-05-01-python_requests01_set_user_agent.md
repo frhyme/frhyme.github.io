@@ -6,8 +6,6 @@ tags: ["python", "requests"]
 permalink: "/python/python_requests01_set_user_agent/"
 ---
 
-## python requests - 403 Forbidden because of User agent
-
 ### Problem
 
 - python requests package 를 사용해서 웹 크롤링을 할 때, 웹브라우저에서는 잘 보이는 문서가, requests 로 가져올 때는 403 forbidden이 발생하는 경우가 있습니다. code는 간단히 다음과 같죠.

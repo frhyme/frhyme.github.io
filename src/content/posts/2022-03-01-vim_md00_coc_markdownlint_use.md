@@ -6,8 +6,6 @@ tags: ["vim", "markdown", "markdownlint", "lint"]
 permalink: "/vim/vim_md00_coc_markdownlint_use/"
 ---
 
-## Use coc markdownlint
-
 - Vim에서 markdown을 작성 중에 오류 혹은 표준을 잡기 위해서 lint를 사용하려고 합니다. vscode에서는 extension을 설치하면 되지만, vim에서는 이게 조금은 번거롭죠.
 - 저는 [coc.nvim](https://github.com/neoclide/coc.nvim)을 사용하고 있어서, 아래 명령어를 사용하여 [github - coc-markdownlint](https://github.com/fannheyward/coc-markdownlint)를 설치하였습니다.
 

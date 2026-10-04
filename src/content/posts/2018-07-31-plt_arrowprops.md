@@ -1,7 +1,7 @@
 ---
 title: "plt.annotate의 화살표 특성 제어하기"
 date: 2018-07-31
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "matplotlib", "arrow", "annotation", "font"]
 permalink: "/python-lib/plt_arrowprops/"
 ---

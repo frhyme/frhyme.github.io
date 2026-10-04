@@ -6,8 +6,6 @@ tags: ["paper-summary", "nlp", "fastext"]
 permalink: "/paper-summary/ps_enriching_word_vectors_with_subword_info/"
 ---
 
-## Enriching Word Vectors with Subword Information
-
 ## Abstract 초월 번역
 
 - 연속된 단어를 표현하는 방식(Continuous word representation)에 있어서, unlabeled corpora에 대해서 학습하는 것이 충분히 의미있다는 것을 word2vec과 같은 많은 NLP의 연구들이 증명했다.

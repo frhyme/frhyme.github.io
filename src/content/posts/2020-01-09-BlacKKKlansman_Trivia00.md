@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/BlacKKKlansman_Trivia00/"
 ---
 
-## 영화 BlacKKKlansMan 뒷 이야기(Trivia) - 0편
-
 - 언젠가부터 잠입 경찰에 대한 이야기는 '조폭-경찰'의 프레임 속에 갇혀 있지만, 영화 `<블랙클랜스맨>`의 경우는 "KKK단에 잠입한 흑인 경찰"이라는 흥미로운 이야기를 다루죠. 그리고 더 충격적인 것은, 이 모든 것이 다 '실화'라는 것입니다. 실제로, 스파이크 리 감독은 이 시나리오를 처음 보았을 때, '무슨 블랙코미디 시나리오 같다'라고 생각했는데, 실화라는 것을 알게 되고는 감독직을 수락하기도 했죠. 또한, 이 영화의 실존 모델인 Ron Stallworth는 지금도 KKK 회원 카드를 가지고 있다고 합니다
 
 ## Trivia - KKK단의 맹세

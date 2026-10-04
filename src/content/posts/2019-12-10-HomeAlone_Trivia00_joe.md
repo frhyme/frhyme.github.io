@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Hom
 permalink: "/english_study_by_movie_script/HomeAlone_Trivia00_joe/"
 ---
 
-## 영화 Home Alone - Trivia - Joe Pesci and others
-
 - 크리스마스가 다가오고 있습니다. 사실 저는 여자 친구가 있거나 없거나, 크리스마스를 딱히 특별하게 보내지 않는 것 같아요. 밖에 사람이 너무 많고, 복잡해서 집에서 쉬는 게 제일 좋습니다. 그리고, 이 시즌에는 이제 거의 30년이 다 되어가지만, 역시 `<나홀로 집에>`만 한 게 없죠.
 - 그래서, `<나홀로 집에>`에 관한 몇 가지 사실을 정리했습니다. 아래의 글들은 모두 IMDB의 Home Alone Trivia에서 가져왔습니다.
 

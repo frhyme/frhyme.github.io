@@ -6,8 +6,6 @@ tags: ["db", "database", "posgresql", "sql"]
 permalink: "/postgresql/postgresql000_install/"
 ---
 
-## postgresql 000 - Install postgresql
-
 - 지금까지는 주로 OracleDB를 주로 사용해 왔는데요. postgresql을 한번 공부해보면서 그 내용들을 정리해보려고 합니다.
 - 로컬에 설치하지 않고, docker를 설치한 다음 docker에 가상으로 띄워서 접속해보려고 합니다. 이게, 매번 귀찮아서 그냥 local에 그대로 설치하다 보면 이후에 충돌이 발생한다거나 하는 문제가 있더라고요.
 - 문제는 docker를 사용하지 않은지 오래되었다는 건데....뭐 이번에 복습하면 되죠 호호호.

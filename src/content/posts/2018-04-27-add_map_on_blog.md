@@ -1,7 +1,7 @@
 ---
 title: "블로그에 map 추가하기"
 date: 2018-04-27
-category: "other"
+category: "others"
 tags: ["markdown", "html", "google-map", "blog"]
 permalink: "/other/add_map_on_blog/"
 ---

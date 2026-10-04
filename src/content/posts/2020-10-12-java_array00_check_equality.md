@@ -1,7 +1,7 @@
 ---
 title: "Java - Array의 모든 원소가 같은지 확인하기"
 date: 2020-10-12
-category: "Java"
+category: "java"
 tags: ["java", "programming", "array", "equality"]
 permalink: "/java/java_array00_check_equality/"
 ---

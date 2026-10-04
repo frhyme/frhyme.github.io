@@ -1,12 +1,10 @@
 ---
 title: "Java - Serialization"
 date: 2021-02-10
-category: "Java"
+category: "java"
 tags: ["java", "programming", "Serialization", "Serializable", "class"]
 permalink: "/java/java_serialization00_basic/"
 ---
-
-## Java - Serialization
 
 - Serialization은 Object를 json, xml과 같은 binary data format으로 변환하는 것을 말하고, 반대로 json, xml로부터 Object로 변경하는 것을 Deserialization이라고 합니다.
 

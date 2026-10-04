@@ -6,8 +6,6 @@ tags: ["jQuery", "javascript", "html", "web"]
 permalink: "/jquery/jQuery03_set_text/"
 ---
 
-## jQuery - Set text
-
 - jQuery를 사용해서 요소의 text, html, attribute를 바꿀 수 있습니다.
 - 다음 코드는 `#btn1` 요소를 클릭했을 때, `#div1`의 text가 바뀌도록 설정하는 것을 말합니다. 구조는 대략 이런 형태인 것이죠.
 

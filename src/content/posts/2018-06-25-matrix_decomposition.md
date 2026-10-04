@@ -1,12 +1,10 @@
 ---
 title: "matrix decomposition"
 date: 2018-06-25
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "numpy", "matrix-decomposition", "linear-algebra", "scipy"]
 permalink: "/python-lib/matrix_decomposition/"
 ---
-
-## matrix decomposition 을 정리합니다. 
 
 - 원래는 matrix decomposition을 해서, 이후에 또 어디에 쓰일 수 있다, 뭐 이런 부분까지 쓰려고 했는데, 정작 정리하고 나니, 그부분을 쓰는게 모호해지더라구요. 
 - 그냥, 필요에 따라서 행렬방정시에서 계산을 좀 효율적으로 하거나 하는 데 쓰이곤 합니다. 

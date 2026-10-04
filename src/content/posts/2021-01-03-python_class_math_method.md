@@ -6,8 +6,6 @@ tags: ["python", "python-basic", "OOP", "math", "method"]
 permalink: "/python-basic/python_class_math_method/"
 ---
 
-## python - class - Math method
-
 - python에서 class의 기본 연산자를 지원하는 method를 정의합니다.
 
 ```python

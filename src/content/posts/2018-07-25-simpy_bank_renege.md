@@ -1,7 +1,7 @@
 ---
 title: "simpy conditional event 사용하기 - 은행 모델링 하기"
 date: 2018-07-25
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "simpy", "numpy", "simulation", "generator"]
 permalink: "/python-lib/simpy_bank_renege/"
 ---

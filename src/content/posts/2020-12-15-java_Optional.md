@@ -6,8 +6,6 @@ tags: ["java", "programming", "optional", "NPE"]
 permalink: "/java/java_Optional/"
 ---
 
-## Java - Optional 
-
 - 다음처럼 Object에 Null이 assign되어 있는 경우에는 `java.lang.NullPointerException`이 발생합니다.
 
 ```java

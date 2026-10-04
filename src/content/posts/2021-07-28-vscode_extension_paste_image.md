@@ -1,12 +1,10 @@
 ---
 title: "VScode - Extension - paste Image"
 date: 2021-07-28
-category: "vscode"
+category: "vs-code"
 tags: ["vscode", "extension", "image", "paste"]
 permalink: "/vscode/vscode_extension_paste_image/"
 ---
-
-## VScode - Extension - paste Image
 
 - 저는 vscode를 사용해서 마크다운을 편집합니다. 
 - 마크다운은 글의 형식과 내용을 한 번에 맞춰서 정리할 수 있다는 점에서 매우 유용합니다. 다만, 아쉽게도 이미지를 첨부히가가 좀 번거롭죠.

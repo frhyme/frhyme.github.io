@@ -6,8 +6,6 @@ tags: ["docker", "dockerfile", "container", "image"]
 permalink: "/docker/docker04_about_dockerfile/"
 ---
 
-## docker - dockerfile
-
 - dockerfile을 사용하면, container의 환경을 좀더 정확하게 구축할 수 있습니다.
 - 아래 내용에서 보는 것처럼, 그냥 리눅스 커맨드들이 쭉 쓰여져 있는 형태다, 라고만 생각하셔도 일단은 상관이 없죠.
 

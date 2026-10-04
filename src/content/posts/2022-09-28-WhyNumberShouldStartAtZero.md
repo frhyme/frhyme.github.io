@@ -6,8 +6,6 @@ tags: ["Dijkstra", "zero"]
 permalink: "/translation/WhyNumberShouldStartAtZero/"
 ---
 
-## Dijkstar - Why Number Should Start at Zero
-
 - [(Original) Why Number Should Start at Zero](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)을 번역하여 아래에 작성하였습니다만, 번역이라고 하기에는 좀 너무 대충 중요한 부분만 선택해서 번역한 느낌이 있습니다. 원문을 그대로 보시면 아주 고급적으로 비꼬는 기술을 확인하실 수 있습니다.
 
 ## 번역 - 왜 번호 붙이기(numbering)은 0부터 시작해야만 하는가

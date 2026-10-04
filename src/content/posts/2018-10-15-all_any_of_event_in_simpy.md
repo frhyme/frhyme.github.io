@@ -97,7 +97,7 @@ env.run(until=20)
 
 > AttributeError: 'generator' object has no attribute 'env'
 
-```
+```python
 ---------------------------------------------------------------------------
 AttributeError                            Traceback (most recent call last)
 <ipython-input-179-a69dfb363172> in <module>()

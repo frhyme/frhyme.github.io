@@ -6,8 +6,6 @@ tags: ["java", "programming", "collections", "GenericProgramming"]
 permalink: "/java/java_collections_00/"
 ---
 
-## Java - Collections
-
 - Java에서 기본으로 제공하는 Array의 경우 사용할 수 있는 Array의 크기가 고정되어 있죠. 그런데 실제 상황에서는 필요에 따라 Array의 크기가 추가로 더 필요할 때가 있죠. 물론, 어려운 코드는 아닙니다. 더 큰 크기의 New Array를 만들고, 기존 Array의 원소들을 모두 복사하여 New Array에 넣어주면 되죠. 물론 그저 귀찮을 뿐입니다. 
 - 당연하지만, 그래서 Java에는 Collections 라는 라이브러리가 있습니다. 얘는 크기가 고정되어 있지 않은 Array(Dynamic Array)이며, 얘는 Class이기 때문에, 매우 다양한 종류의 method를 지원합니다. 그리고 당연하지만, 그래서 그냥 Array에 비해서 속도가 느리겠죠. 또한 Generic type이기 때문에, 어떤 타입에 대해서도 Array를 만들 수 있죠.
 - Java Standard Library에 이런 다양한 종류의 Collection들이 있지만, 만약 충분하지 못할 경우 [Guava: Google Core Libraries for Java](https://github.com/google/guava)를 사용할 수도 있습니다.

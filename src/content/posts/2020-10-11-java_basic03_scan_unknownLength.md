@@ -1,7 +1,7 @@
 ---
 title: "Java - 길이를 모르는, 여러 값을 입력받기"
 date: 2020-10-11
-category: "Java"
+category: "java"
 tags: ["java", "programming", "Scanner", "input"]
 permalink: "/java/java_basic03_scan_unknownLength/"
 ---

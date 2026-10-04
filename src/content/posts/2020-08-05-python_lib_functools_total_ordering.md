@@ -2,11 +2,9 @@
 title: "functools.partial"
 date: 2020-08-05
 category: "others"
-tags: []
+tags: ["python", "python-libs"]
 permalink: "/others/python_lib_functools_total_ordering/"
 ---
-
-### functools.partial
 
 - 복잡한 함수를 간단한 함수로 변환해주는 function
     - ex: `functools.partial(function, target_argument=2)`
@@ -65,7 +63,7 @@ b = student("222")
 print(a >= b) # not work 
 ```
 
-```
+```python
     ---------------------------------------------------------------------------
 
     TypeError                                 Traceback (most recent call last)

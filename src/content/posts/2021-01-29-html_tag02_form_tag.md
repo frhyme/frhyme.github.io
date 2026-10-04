@@ -6,8 +6,6 @@ tags: ["html", "a", "tag", "form", "label", "input"]
 permalink: "/html/html_tag02_form_tag/"
 ---
 
-## html - form tag
-
 - html에서 form tag를 사용해서 사용자로부터 입력을 받는 방식을 정리하였습니다.
 - 입력받는 방식도 다양한 형식이 있고, 입력받은 값을 다른 html 문서로 GET 혹은 POST 방식을 사용해서 보낼 수 있습니다.
 - 그리고 입력받은 값은 전달받은 html 문서에서 javascript 혹은 php를 사용해서 해체해서 사용할 수 있습니다.

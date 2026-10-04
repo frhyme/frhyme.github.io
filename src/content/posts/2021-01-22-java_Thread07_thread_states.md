@@ -6,8 +6,6 @@ tags: ["java", "thread", "programming", "parallelism", "concurrency", "MultiThre
 permalink: "/java/java_Thread07_thread_states/"
 ---
 
-## Java - Thread - State of Thread
-
 - Thread 또한 life cycle을 가지며 state가 변하죠. 프로그래머가 Interruption 등으로 Thread의 state를 변경하는 경우도 있고, OS로 인해 바뀌는 경우도 있습니다.
 - Thread의 상태는 enum type인 `Thread.state`으로 다음 6가지로 나뉘어 표현됩니다.
   - `NEW`: Thread가 생성되었지만, `.start()`는 실행되지 않은 상태

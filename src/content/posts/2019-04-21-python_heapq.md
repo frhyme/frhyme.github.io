@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "data-struture", "heap"]
 permalink: "/data-structure/python_heapq/"
 ---
 
-## heap을 사용해봅시다
-
 - 요즘 심심할때 간단한 코딩 문제를 푸는데, 간단한 자료구조가 나옵니다. 이른바 heap이라는 것이죠. 
 - complete binary graph(대충, children이 두개 씩만 있어야 하고, 음, 대충 꽉 채워진 그래프입니다 설명하기 귀찮네효 하하하)이고, max, min heap으로 나뉠 수 있는데 각각 parent가 children보다 항상 크거나, 항상 작거나의 조건을 만족해야 합니다. 
 - 아무튼, 이걸 이용하면 우리가 흔히 사용하는 list를 효율적으로 사용할 수 있습니다. 말이 이상하네요. 

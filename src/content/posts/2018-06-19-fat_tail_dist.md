@@ -1,7 +1,7 @@
 ---
 title: "student-t dist를 알아보겠습니다."
 date: 2018-06-19
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "probability", "student-t", "matplotlib", "numpy", "scipy"]
 permalink: "/python-lib/fat_tail_dist/"
 ---

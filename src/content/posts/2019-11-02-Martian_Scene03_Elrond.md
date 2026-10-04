@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Mar
 permalink: "/english_study_by_movie_script/Martian_Scene03_Elrond/"
 ---
 
-## 영화 Martian 명장면 - Elrond 프로젝트가 도대체 뭐야?
-
 - 영화 `<반지의 제왕>`을 보셨고, 또 조금 잘 아시는 분이라면 영화 `<마션>` 중에 빵 터지는 부분이 있습니다.
 - 똑똑한 사람들이 다 모여서 회의를 하는데, 회의 이름이 "Elrond"인 거죠. **"이게 뭐냐, 프로젝트 이름이 뭐 이러냐?"**라고 물었는데 자기 빼고 이미 다 알고 있는 거죠. 덕후놈들...부들부들.
 - 이 장면이 특히 재미있는 것은, `<반지의 제왕>`에서 보로미르 연기를 하고 영화 속 "The Council of Elrond"에 참석한 숀빈이 이 회의에 참석해 있다는 사실이죠. 사실 사람들이, '숀빈'이 나오니까 일부러 집어넣은 장면으로 알고 있는데요, 원작 소설에도 그대로 있고(심지어 소설에서는 조금 표현이 더 쎄고). 

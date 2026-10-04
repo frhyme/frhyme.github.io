@@ -6,8 +6,6 @@ tags: ["java", "class", "OOP"]
 permalink: "/java/java_class_anonymous_class/"
 ---
 
-## Java - Anonymous Class
-
 - python에서 필요에 따라 anonymous function을 정의해서 임시적으로 사용하는 것처럼, Java에서도 Anonymous Class 혹은 Anonymous Interface를 재정의해서 사용할 수 있습니다. 필요에 따라, 특정 method만을 바꾼 class를 넘겨주거나 할 필요가 있으니까요.
 - 만약 익명 함수를 reference 변수에 저장하지 않고 바로 사용하려면 다음처럼 정의하고 바로 사용할 수 있습니다. 
 

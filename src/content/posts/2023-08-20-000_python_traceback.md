@@ -6,8 +6,6 @@ tags: ["python", "traceback"]
 permalink: "/python/000_python_traceback/"
 ---
 
-## python - traceback
-
 - When dealing with exceptions in Python, we would make use of the traceback module, as demonstrated in the code snippet below.
 - In cases where errors occur during the execution of Python code, the traceback module traces back from the most recent function call to the root call in its call stack. This enables us to identify the specific line and function that triggered the error.
 

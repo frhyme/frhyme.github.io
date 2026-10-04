@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "networkx"]
 permalink: "/python-libs/closed_open_walk_trail_path/"
 ---
 
-## Definitions of walk, trail, path, cycle, circuit
-
 - `walk`: "Node, edge가 반복되어도 상관없으며, graph에서 발생할 수 있는 
     - `Closed Walk`: walk중에서 source와 target이 같은 경우. 
     - `Open Walk`: walk 중에서 source와 target이 다른 경우. 

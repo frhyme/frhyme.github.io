@@ -6,8 +6,6 @@ tags: ["java", "programming", "string", "regex"]
 permalink: "/java/java_regex04_quantifier/"
 ---
 
-## Java - Regular Expression - Quantifier
-
 - 정규표현식에서 특정문자가 몇개 반복되는지 파악하는 방법을 설명합니다.
 
 ```java

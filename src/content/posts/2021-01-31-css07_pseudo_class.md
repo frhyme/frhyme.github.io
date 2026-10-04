@@ -6,8 +6,6 @@ tags: ["css", "PseudoClass"]
 permalink: "/css/css07_pseudo_class/"
 ---
 
-## CSS - Pseudo Class
-
 - css에서 각 요소들의 property를 사용자의 동작에 따라 변하도록 할 수 있습니다.
 - 가령 다음과 같이, `h1:hover`에 대해서 정의하면 `h1`요소에 마우스가 올라가면(hover), 빨간 색으로 바뀌도록 할 수 있죠.
 

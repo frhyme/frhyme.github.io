@@ -6,8 +6,6 @@ tags: ["java", "programming", "stream", "parallel"]
 permalink: "/java/java_stream_parallel_stream/"
 ---
 
-## Java - Stream - Parallel Stream
-
 - 말 그대로 stream을 병렬로 수행해주는 아이를 말하는데, 어렵지 않고 그냥 Stream에서 `.paralle()`를 호출한 다음 그냥 죽 이어서 하면 됩니다. 보통은 그냥 `.sequential()`로 생각하고 진행하게 되죠.
 - 아래에서는 간단히, 1부터 1000000000(billion)까지 3의 배수들의 합을 구하는 연산을 수행하였는데, 첫번째에서는 `.parallel()`를 사용해서 병렬연산을 수행하였고, 두번째에서는 `.sequential()`(기본값)을 통해 그냥 실행했죠.
 - 결과를 보시면 알겠지만, 병렬이 훨씬 빠릅니다.

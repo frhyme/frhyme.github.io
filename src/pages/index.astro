@@ -2,6 +2,8 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
+import { getMajorCategory } from '../utils/categories';
+import { cleanExcerpt, getReadingTime } from '../utils/excerpt';
 
 const allPosts = await getCollection('posts');
 
@@ -10,7 +12,14 @@ const sortedPosts = allPosts.sort(
   (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
 );
 
-const recentPosts = sortedPosts.slice(0, 15);
+// Featured post (latest post)
+const featuredPost = sortedPosts[0];
+const recentPosts = sortedPosts.slice(1, 13);
+
+// Major category counts
+const techCount = allPosts.filter((p) => getMajorCategory(p.data.category) === 'tech').length;
+const englishCount = allPosts.filter((p) => getMajorCategory(p.data.category) === 'english').length;
+const lifeCount = allPosts.filter((p) => getMajorCategory(p.data.category) === 'life').length;
 
 // Category stats
 const categoryCounts: Record<string, number> = {};
@@ -22,59 +31,206 @@ for (const post of allPosts) {
 const topCategories = Object.entries(categoryCounts)
   .sort((a, b) => b[1] - a[1])
   .slice(0, 8);
+
+function getPostUrl(post: any): string {
+  if (post.data.permalink) return post.data.permalink;
+  const filename = post.id.replace(/\.md$/, '');
+  const slugMatch = filename.match(/^(\d{4}-\d{2}-\d{2})-(.*)$/);
+  const postSlug = slugMatch ? slugMatch[2] : filename;
+  const category = (post.data.category || 'others').toLowerCase().replace(/\s+/g, '-');
+  return `/${category}/${postSlug}/`;
+}
+
+const featuredUrl = getPostUrl(featuredPost);
+const featuredExcerpt = featuredPost.data.description || cleanExcerpt(featuredPost.body, 180);
+const featuredReadingTime = getReadingTime(featuredPost.body);
+const featuredDate = featuredPost.data.date
+  ? new Date(featuredPost.data.date).toISOString().split('T')[0]
+  : '';
 ---
 
 <BaseLayout title="frhyme.code">
   <!-- Hero Section -->
-  <section class="py-8 border-b border-zinc-200 dark:border-zinc-800">
-    <div class="flex items-center space-x-3 mb-3">
-      <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-      <span class="text-xs uppercase tracking-wider font-semibold text-zinc-500 dark:text-zinc-400">
-        Personal Engineering Knowledge Base
-      </span>
+  <section class="pt-4 pb-10 border-b border-zinc-200/80 dark:border-zinc-800/80">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/5 text-blue-600 dark:text-blue-400 text-xs font-medium mb-5 backdrop-blur-xs">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      <span>Personal Knowledge Base · {allPosts.length.toLocaleString()} Articles</span>
     </div>
-    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
+
+    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 leading-tight">
       study, code, re-study
     </h1>
-    <p class="mt-2 text-zinc-600 dark:text-zinc-400 max-w-2xl text-sm sm:text-base leading-relaxed">
-      파이썬, 네트워크 분석, 알고리즘 및 소프트웨어 개발 과정에서 배우고 정리한 {allPosts.length.toLocaleString()}개의 지식 기록입니다.
+    <p class="mt-3 text-zinc-600 dark:text-zinc-400 max-w-2xl text-base leading-relaxed font-normal">
+      파이썬, 그래프 알고리즘, 시스템 도구 및 소프트웨어 개발 과정에서 배우고 정리한 지식 아카이브입니다.
     </p>
 
+    <!-- Major Category Showcase Cards (Linear / Vercel Aesthetic) -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+      <a
+        href="/tech/"
+        class="group relative flex flex-col justify-between p-5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-zinc-900/40 hover:bg-white dark:hover:bg-zinc-900/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+      >
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl p-2 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400">💻</span>
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 font-mono">
+              {techCount.toLocaleString()} posts
+            </span>
+          </div>
+          <h3 class="font-bold text-lg text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            Tech & Engineering
+          </h3>
+          <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1.5 line-clamp-2 leading-relaxed">
+            Python, Java, AI/ML, Vim, Web 등 소프트웨어 개발 및 엔지니어링 아카이브
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/50 flex items-center text-xs font-semibold text-blue-600 dark:text-blue-400">
+          <span>둘러보기</span>
+          <span class="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
+        </div>
+      </a>
+
+      <a
+        href="/english/"
+        class="group relative flex flex-col justify-between p-5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-zinc-900/40 hover:bg-white dark:hover:bg-zinc-900/80 hover:border-emerald-500/50 dark:hover:border-emerald-500/50 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+      >
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl p-2 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">📚</span>
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-mono">
+              {englishCount.toLocaleString()} posts
+            </span>
+          </div>
+          <h3 class="font-bold text-lg text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+            English Study
+          </h3>
+          <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1.5 line-clamp-2 leading-relaxed">
+            영화 대본(인턴, 어바웃타임 등)을 통해 정리한 실생활 영어 표현 및 회화 아카이브
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/50 flex items-center text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+          <span>둘러보기</span>
+          <span class="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
+        </div>
+      </a>
+
+      <a
+        href="/life/"
+        class="group relative flex flex-col justify-between p-5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-zinc-900/40 hover:bg-white dark:hover:bg-zinc-900/80 hover:border-amber-500/50 dark:hover:border-amber-500/50 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+      >
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl p-2 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400">☕</span>
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 font-mono">
+              {lifeCount.toLocaleString()} posts
+            </span>
+          </div>
+          <h3 class="font-bold text-lg text-zinc-900 dark:text-zinc-100 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+            Life & Hobby
+          </h3>
+          <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1.5 line-clamp-2 leading-relaxed">
+            야구(세이버메트릭스), 영화 리뷰, 여행, 게임, 일상 단상 등 라이프 아카이브
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/50 flex items-center text-xs font-semibold text-amber-600 dark:text-amber-400">
+          <span>둘러보기</span>
+          <span class="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
+        </div>
+      </a>
+    </div>
+
     <!-- Top Categories Quick Chips -->
-    <div class="flex flex-wrap items-center gap-2 mt-5">
-      <span class="text-xs text-zinc-400 font-medium">인기 주제:</span>
+    <div class="flex flex-wrap items-center gap-2 mt-6">
+      <span class="text-xs text-zinc-400 font-medium">인기 카테고리:</span>
       {topCategories.map(([cat, count]) => (
         <a
           href={`/categories/${cat}/`}
-          class="text-xs px-2.5 py-1 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-colors"
+          class="text-xs px-2.5 py-1 rounded-lg border border-zinc-200/80 dark:border-zinc-800 bg-white/60 dark:bg-zinc-900/40 text-zinc-600 dark:text-zinc-400 hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-colors"
         >
-          {cat} <span class="text-zinc-400 ml-0.5">({count})</span>
+          {cat} <span class="text-zinc-400 text-[11px] font-mono">({count})</span>
         </a>
       ))}
     </div>
   </section>
 
-  <!-- Post List -->
+  <!-- Featured / Latest Spotlight Post -->
+  {featuredPost && (
+    <section class="mt-10 mb-12">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xs uppercase tracking-wider font-bold text-zinc-400 dark:text-zinc-500 flex items-center gap-1.5">
+          <span class="text-amber-500">✨</span>
+          <span>Featured & Latest</span>
+        </h2>
+      </div>
+
+      <article class="group relative p-6 sm:p-8 rounded-3xl border border-zinc-200/90 dark:border-zinc-800/90 bg-gradient-to-br from-white via-zinc-50/50 to-blue-50/30 dark:from-zinc-900/60 dark:via-zinc-900/30 dark:to-blue-950/20 hover:border-blue-500/60 dark:hover:border-blue-500/60 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200">
+        <div class="flex flex-wrap items-center justify-between gap-3 text-xs mb-4">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-1 rounded-md font-semibold text-[11px] uppercase tracking-wider bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+              {featuredPost.data.category || 'Tech'}
+            </span>
+            <span class="px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+              New
+            </span>
+          </div>
+          <div class="flex items-center gap-2 text-zinc-400 text-xs font-mono">
+            <time datetime={featuredDate}>{featuredDate}</time>
+            <span>·</span>
+            <span>⏱ 약 {featuredReadingTime}분 소요</span>
+          </div>
+        </div>
+
+        <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-tight">
+          <a href={featuredUrl} class="after:absolute after:inset-0">
+            {featuredPost.data.title}
+          </a>
+        </h3>
+
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-3 line-clamp-3 leading-relaxed">
+          {featuredExcerpt}
+        </p>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 mt-6 pt-5 border-t border-zinc-200/60 dark:border-zinc-800/60">
+          <div class="relative z-10 flex flex-wrap gap-1.5">
+            {featuredPost.data.tags?.slice(0, 4).map((t: string) => (
+              <a
+                href={`/tags/${t.toLowerCase()}/`}
+                class="text-xs px-2.5 py-1 rounded-md bg-white dark:bg-zinc-800 border border-zinc-200/80 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
+                #{t}
+              </a>
+            ))}
+          </div>
+
+          <span class="text-xs font-semibold text-blue-600 dark:text-blue-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            아티클 읽기 &rarr;
+          </span>
+        </div>
+      </article>
+    </section>
+  )}
+
+  <!-- Recent Posts Grid -->
   <section class="mt-8">
     <div class="flex items-center justify-between mb-6">
-      <h2 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-        Latest Posts
-      </h2>
-      <a href="/page/2/" class="text-xs font-medium text-blue-600 dark:text-blue-400 hover:underline">
-        전체 {allPosts.length.toLocaleString()}개 글 목록 &rarr;
+      <div>
+        <h2 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+          Recent Posts
+        </h2>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+          최근 기록된 엔지니어링 및 학습 포스트
+        </p>
+      </div>
+      <a href="/page/2/" class="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1">
+        전체 {allPosts.length.toLocaleString()}개 아카이브 &rarr;
       </a>
     </div>
 
-    <div class="divide-y divide-zinc-100 dark:divide-zinc-800">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {recentPosts.map((post) => {
-        let url = post.data.permalink;
-        if (!url) {
-          const filename = post.id.replace(/\.md$/, '');
-          const slugMatch = filename.match(/^(\d{4}-\d{2}-\d{2})-(.*)$/);
-          const postSlug = slugMatch ? slugMatch[2] : filename;
-          const category = (post.data.category || 'others').toLowerCase().replace(/\s+/g, '-');
-          url = `/${category}/${postSlug}/`;
-        }
+        const url = getPostUrl(post);
+        const description = post.data.description || cleanExcerpt(post.body);
+        const readingTime = getReadingTime(post.body);
 
         return (
           <PostCard
@@ -83,18 +239,21 @@ const topCategories = Object.entries(categoryCounts)
             category={post.data.category}
             tags={post.data.tags}
             url={url}
+            description={description}
+            readingTime={readingTime}
           />
         );
       })}
     </div>
 
     <!-- More Posts Button -->
-    <div class="text-center mt-12 pt-6 border-t border-zinc-200 dark:border-zinc-800">
+    <div class="text-center mt-12 pt-8 border-t border-zinc-200/80 dark:border-zinc-800/80">
       <a
         href="/page/2/"
-        class="inline-flex items-center px-6 py-3 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm font-semibold text-zinc-800 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-800 shadow-sm transition-all"
+        class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm font-semibold text-zinc-800 dark:text-zinc-200 hover:border-zinc-400 dark:hover:border-zinc-500 hover:shadow-md transition-all"
       >
-        다음 페이지로 이동 (Page 2) &rarr;
+        <span>전체 글 더보기 (Page 2)</span>
+        <span>&rarr;</span>
       </a>
     </div>
   </section>

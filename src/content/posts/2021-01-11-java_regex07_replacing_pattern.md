@@ -6,8 +6,6 @@ tags: ["java", "regex", "programming", "String", "pattren"]
 permalink: "/java/java_regex07_replacing_pattern/"
 ---
 
-## Java - Regex - Replacing Patterns
-
 - Java에서 Regex를 사용해서 regex pattern에 속하는 string을 replace합니다.
 
 ```java

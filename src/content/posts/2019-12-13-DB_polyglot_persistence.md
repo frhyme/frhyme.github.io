@@ -6,8 +6,6 @@ tags: ["database", "nosql", "polyglot"]
 permalink: "/others/DB_polyglot_persistence/"
 ---
 
-## (번역) polyglot persistence
-
 > Polyglot persistence is the concept of using different data storage technologies to handle different data storage needs within a given software application. Polyglot programming, a term coined by Neal Ford in 2006, expresses the idea that computer applications should be written in a mix of different programming languages, in order to take advantage of the fact that different languages are suitable for tackling different problems. 
 - Polyglot persistence(다양한 언어에 대한 고집)은 주어진 소프트웨어 어플리케이션 에서 다양한 데이터 저장소에 대한 필요를 컨트롤하기 위해서, 다양한 저장 기술을 사용하는 것을 말합니다. 
 - polyglot programming은 Neal Ford가 2006년에 다양한 문제별로 잘 작동하는 언어들이 다르기 때문에, 이를 효과적으로 이용하기 위해, 컴퓨터 응용 프로그램이 다양한 프로그래밍 언어의 조합으로 쓰여지는 것이 필요하다는 것을 말합니다.

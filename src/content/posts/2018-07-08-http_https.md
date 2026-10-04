@@ -1,7 +1,7 @@
 ---
 title: "http와 https의 차이는 무엇인가?"
 date: 2018-07-08
-category: "other"
+category: "others"
 tags: ["https", "http"]
 permalink: "/other/http_https/"
 ---

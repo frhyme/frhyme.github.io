@@ -6,8 +6,6 @@ tags: ["vim", "vi", "nerdtree", "plug"]
 permalink: "/vim/vim20_nerdtree/"
 ---
 
-## vim 20 - Install NerdTree
-
 - Vundle을 이용해 설치하므로, NerdTree를 Vundle 목록에 추가해줍니다.
 - 추가한 다음, `:PluginInstall`을 실행해주구요.
 

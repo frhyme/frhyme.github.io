@@ -6,8 +6,6 @@ tags: ["java", "programming", "class", "shadowing", "InnerClass"]
 permalink: "/java/java_accessing_outerclass_from_innerclass/"
 ---
 
-## Java - Inner Class에서 Outer Class 접근하기
-
 - Class 안에 InnerClass를 만들었습니다.
 - 그리고 InnerClass의 method인 `printAllName()`에서 OuterClass의 field인 `OuterName`과 InnerClass의 field인 `InnerName`을 모두 출력하죠.
 - OuterClass의 field인 `OuterName`이 private이지만 InnerClass에서는 접근 가능하기 때문에 다음처럼 쉽게 접근할 수 있죠.

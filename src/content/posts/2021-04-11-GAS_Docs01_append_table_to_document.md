@@ -6,8 +6,6 @@ tags: ["google", "javascript", "Google_Docs", "macro", "GoogleAppsScript"]
 permalink: "/google/GAS_Docs01_append_table_to_document/"
 ---
 
-## Google Apps Script - Docs - Append Table
-
 - `doc.getBody().appendTable()`을 사용해서 Google Doc 문서 내에 Table을 추가할 수 있습니다.
 
 ```js

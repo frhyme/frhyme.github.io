@@ -1,7 +1,7 @@
 ---
 title: "python-lib) nltk 에서 영단어 온톨로지(wordnet) 사용하기"
 date: 2018-04-20
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "nltk", "python-lib", "wordnet", "ontology"]
 permalink: "/python-lib/nltk-wordnet/"
 ---

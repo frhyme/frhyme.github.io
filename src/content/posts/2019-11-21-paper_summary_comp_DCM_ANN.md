@@ -6,8 +6,6 @@ tags: ["data", "machine-learning", "discrete-choice-model", "neural-network"]
 permalink: "/machine-learning/paper_summary_comp_DCM_ANN/"
 ---
 
-## Comparison of Discrete Choice Models and Artificial Neural Networks in Presence of Missing Variables(번역)
-
 - 요새 discrete choice model이라는 것을 좀 파고 들고 있습니다. 그런데, 조금 파보니까, 이게 제 기준에서는 classification 문제와 크게 다르지 않은 것처럼 보여요. 다만, 일반적으로 머신러닝에서 푸는 분류 문제는 해당 데이터 세트에 이미 '일관성'이 존재한다고 보는 반면에, discrete choice model은 보통 설문조사 등을 통해서 데이터를 획득하죠. 그 과정에서 '개개인별로 가지는 오차', '시간의 변화로 인해 발생하는 오차' 등이 있다고 가정하죠. 따라서, 이를 보완하기 위해서 다양한, 테크닉들도 있고, 이런저런 모델들이 있습니다. 
 - 아무튼 간에, [그러다가 찾은 논문](https://arxiv.org/pdf/1811.02284.pdf)입니다. 간단하게 abstract만 번역해서 두겠습니다.
 

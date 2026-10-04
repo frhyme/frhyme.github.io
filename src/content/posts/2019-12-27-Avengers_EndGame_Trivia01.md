@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/Avengers_EndGame_Trivia01/"
 ---
 
-## 영화 Avengers Endgame에 대한 사소한 사실들 - 1편
-
 - **스포일러가 포함되어 있습니다.**
 - 물론, 사실 `<어벤저스: 엔드게임>`이 이미 개봉한지도 오래되었고, 스포일러를 모르는 사람이 있을까 싶습니다만, 그래도 혹시나 싶어서 언급합니다. 또한, 이 모든 내용은 IMDB의 <어벤저스:엔드게임>에 대한 Trivia로부터 가져와서, 번역하여 정리하였습니다.
 

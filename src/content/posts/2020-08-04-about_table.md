@@ -1,8 +1,8 @@
 ---
-title: "category:"
+title: "가구 고르기 - 원목 식탁과 가구 소재 구분법"
 date: 2020-08-04
 category: "others"
-tags: []
+tags: ["life"]
 permalink: "/others/about_table/"
 ---
 

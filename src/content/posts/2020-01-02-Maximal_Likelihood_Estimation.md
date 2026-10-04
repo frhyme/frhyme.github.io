@@ -1,8 +1,8 @@
 ---
-title: "category:"
+title: "MLE(Maximal Likelihood Estimation)이란 무엇인가"
 date: 2020-01-02
 category: "others"
-tags: []
+tags: ["statistics", "machine-learning"]
 permalink: "/others/Maximal_Likelihood_Estimation/"
 ---
 

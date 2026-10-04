@@ -6,8 +6,6 @@ tags: ["paper-summary", "scale-free-graph"]
 permalink: "/paper-summary/ps_s_metric_scale_free_graph/"
 ---
 
-## Towards a Theory of Scale-Free Graphs - Definition, Properties, and Implications
-
 - 해당 논문은 2005년에 나온 논문입니다
 
 ## Abstract 초월 번역

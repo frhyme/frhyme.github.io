@@ -6,8 +6,6 @@ tags: ["java", "programming", "JVM"]
 permalink: "/java/JVM_garbageCollector/"
 ---
 
-## JVM - Garbage Collector
-
 - C나 C++에서는 직접 `free`를 통해 메모리를 직접 해제해야 하지만, JVM에서는 Garbage Collector가 직접 알아서 메모리를 해제해줍니다. Java에서는 JVM의 heap memory에 `new`에 의해 생성되는 Object를 올려서 관리합니다. 그런데, 메모리를 효율적으로 사용하기 위해서, 더이상 Object가 필요없다는 판단이 들면 알아서 처리해주죠. 따라서, Java 개발자는 보통은 직접 GC를 관리할 필요가 없기는 한데, 더 잘 쓰기 위해서는 GC가 어떻게 메모리를 제거하는지, 언 정도 알고 있는 것이 좋습니다.
 - 직접 GC를 호출하는 방법은 다음과 같은 두 가지가 있습니다.
 

@@ -6,8 +6,6 @@ tags: ["video", "format"]
 permalink: "/others/a_video_format/"
 ---
 
-## 코덱과 컨테이너
-
 ### 코덱
 
 - 코덱은 COder and DECoder 를 말합니다. 

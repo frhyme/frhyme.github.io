@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Goo
 permalink: "/english_study_by_movie_script/good_will_hunting_Scene_02_apples/"
 ---
 
-## 영화 Good Will Hunting 명대사 - Apples?
-
 - 영화에서 자주 등장하지는 않지만, 등장해서 윌한테 아주 혼쭐나고 나오지 않는 사람이 있습니다.
 - 클라크 라고, 미국의 경제 변화에 대해서 잘난척 하며 여자들한테 멋있게 보이려다가 윌한테 아주 혼쭐이 납니다.  
 - 그 이후에, 윌은 스카일라라는 여자에게서 전화번호를 받습니다. 그리고 술집을 나와서, 걸어가는 길에 클라크가 던킨도너츠에 있는 걸 보게 됩니다. 클라크는 그곳에서도 유리창에 등을 기댄 채로 한참 다른 사람에게 또 무엇인가를 떠벌떠벌 말하고 있습니다.

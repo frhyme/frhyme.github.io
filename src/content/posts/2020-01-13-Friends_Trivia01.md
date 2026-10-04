@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Fri
 permalink: "/english_study_by_movie_script/Friends_Trivia01/"
 ---
 
-## 미드 Friends 의 뒷 이야기들 - 1 편
-
 - 미드 `<프렌즈>`에 관한 사소한 사실들을 정리하였습니다. 모든 내용들은 IMDB에서 `<프렌즈>`에 대해 작성된 Trivia를 가져와서 번역 및 정리하였습니다.
 
 ## Trivia - Crush

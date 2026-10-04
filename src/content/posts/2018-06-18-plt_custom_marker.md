@@ -1,12 +1,10 @@
 ---
 title: "plt에서 custom marker를 사용할 수 있을까요?"
 date: 2018-06-18
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "matplotlib", "marker", "numpy"]
 permalink: "/python-lib/plt_custom_marker/"
 ---
-
-## custom marker를 사용할 수 있을까요?  
 
 - plt로 그림을 그리는 중에 marker를 사용하다보니 조금 더 예쁘게, 정확하게는 상황에 맞게 그려보고 싶다는 생각을 했습니다. 
 - 현재는 아주 간단하게, 커피를 얼마나 먹었는지 패턴을 정리했는데, marker를 커피 icon으로 할 수는 없을까? 하는 생각이 드는거죠. 그러다보니, custom marker를 사용할 수는 없나? 라는 생각이 들었습니다. 

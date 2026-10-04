@@ -6,8 +6,6 @@ tags: ["mongoDB", "python", "pymongo", "database", "db", "sql", "nosql"]
 permalink: "/mongodb/mongoDB08_aggregate_groupby/"
 ---
 
-## mongoDB - aggregation
-
 - mongoDB의 aggreation을 정리합니다. 의미적으로는 SQL의 group by 라고 생각하셔도 됩니다.
 - 저는 python을 사용해서 mongoDB에 접속합니다.
 

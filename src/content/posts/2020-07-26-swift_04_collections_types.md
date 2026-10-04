@@ -6,8 +6,6 @@ tags: ["swift", "array", "collection"]
 permalink: "/swift/swift_04_collections_types/"
 ---
 
-## swift - chapter 4 - Collection Types
-
 - swift에는 array, set, dictionary라는 3가지 종류의 collection이 존재합니다
   - array는 순서가 있는 리스트. 
   - set는 순서 없는 집합 

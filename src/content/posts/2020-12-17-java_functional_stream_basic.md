@@ -6,8 +6,6 @@ tags: ["java", "programming", "stream", "list", "reduce", "map", "filter", "Func
 permalink: "/java/java_functional_stream_basic/"
 ---
 
-## Java - Functional Stream 
-
 - Java에서 List와 같이 연속된 값들을 처리할 때는 두 가지 방식이 있습니다. `for`문을 사용하는 방법과, `.stream()`을 통해 method를 chaining해 가면서 쓰는 방법이 있죠.
 
 ```java

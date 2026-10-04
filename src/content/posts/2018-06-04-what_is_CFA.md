@@ -2,7 +2,7 @@
 title: "CFA가 뭡니까."
 date: 2018-06-04
 category: "others"
-tags: []
+tags: ["finance"]
 permalink: "/others/what_is_CFA/"
 ---
 

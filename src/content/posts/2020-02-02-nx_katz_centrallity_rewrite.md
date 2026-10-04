@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "networkx", "centrality", "eigenvector"]
 permalink: "/python-libs/nx_katz_centrallity_rewrite/"
 ---
 
-## Centrality - Katz Centrality
-
 - [Katz Centrality](https://en.wikipedia.org/wiki/Katz_centrality)는 Network 내 Node의 중심성(centrality)를 측정하기 위한 방법 중 하나입니다. 다른 centrality measure들과는 다르게, node pair간의 path를 고려하여 영향력을 측정합니다. 
 - 가령 "A에게서 어떤 영향력이 시작된다면, 시간(T)가 흐름에 따라서 다른 노드들에게 어느 정도의 힘으로 전달될 것인가?"를 측정할 수 있게 되죠. 이 때 당연하지만, 노드 A로부터 멀수록, 그 "힘"이라는 것은 작아질 텐데, 이 정도를 `alpha(attenuation factor)`로 조정합니다.
 - eigen centrality와 거의 비슷하며(pagerank도 마찬가지), 다만 lower bound를 잡아준다는 차이가 있겠네요.

@@ -6,8 +6,6 @@ tags: ["java", "programming", "File", "Scanner"]
 permalink: "/java/java_scanner_file_read/"
 ---
 
-## Java - Read File by Scanner
-
 - 흔히 시스템 입출력(`System.in`)에서 사용하는 `Scanner`에 `File`을 넘겨서 사용할 수도 있습니다.
 - `test.txt`에는 다음과 같이 데이터가 담겨 있다고 하고요.
 

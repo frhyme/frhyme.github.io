@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Ing
 permalink: "/english_study_by_movie_script/Inglourious_basterds_trivia/"
 ---
 
-## 영화 Inglourious Basterds 에 관한 사소한 사실들(trivia)
-
 - 영화 `<Inglorious Basterds>`, 한국 개봉명으로는 <바스터즈: 거친 녀석들>은 **1) "브래드 피트"가 출연했다는 점, 2) 히틀러를 멋있게 표현하지 않고 매우 희화화해서 표현했다는 점, 3) 크리스토퍼 월츠의 연기와 완급조절이 경이로웠다는 것**, 정도가 기억에 남네요.
 - 물론 그 외로도, 술집에서 벌어지는 스무고개 놀이에서 "킹콩"을 "노예"라고 오해해서 답을 하는 것이나, 술집 내에서의 그 살얼음판 같은 긴장감이라던가, 같은 것들이 있죠. 물론, 얼마 전에 OCN에서 하길래 봤더니, 술집 장면들은 대부분 편집되어 날아갔습니다. 
 - 그런데, 뭐 다른 것들보다도 이 영화는 거의 철저하게, "크리스토퍼 월츠"의 영화입니다. 이 영화로부터, 배우의 커리어가 시작되었다고 봐도 과언이 아니죠.

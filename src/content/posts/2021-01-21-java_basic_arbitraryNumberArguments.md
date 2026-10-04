@@ -6,8 +6,6 @@ tags: ["java", "java_basic", "argument", "function", "parameter"]
 permalink: "/java/java_basic_arbitraryNumberArguments/"
 ---
 
-## Java - Arbitrary Number of Argument
-
 - java에서 method를 정의할 때, 변수가 몇 개 들어오더라도 문제없이 처리해주도록 하려면 `...`을 이용하면 됩니다.
 - 가령 다음처럼 `String...`로 정의할 경우 String argument가 몇 개 들어올지 정해주지 않아도 됩니다. 즉, 1개 들어오든 2개 들어오든 다 array로 생각하고 처리해주게 되죠.
 

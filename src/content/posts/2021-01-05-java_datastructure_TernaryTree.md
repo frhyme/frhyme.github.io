@@ -6,8 +6,6 @@ tags: ["java", "DataStructure", "programming", "list", "class", "Tree"]
 permalink: "/java/java_datastructure_TernaryTree/"
 ---
 
-## Java - Data Structure - Ternary Tree
-
 - Java로 3명의 child를 가지는 Tree를 구현했습니다.
 
 ```java

@@ -6,8 +6,6 @@ tags: ["python", "programming", "django", "web", "backend", "server", "http"]
 permalink: "/python/django03_HttpResponse/"
 ---
 
-## python - Django - HttpResponse
-
 - Controller에서 String을 `HttpResponse`에 묻혀서 View로 보내는 방법을 정리하였습니다.
 
 ## views.py - MainController

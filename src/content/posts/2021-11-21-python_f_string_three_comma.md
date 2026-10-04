@@ -6,8 +6,6 @@ tags: ["python", "f_string", "string", "number", "print", "locale"]
 permalink: "/python/python_f_string_three_comma/"
 ---
 
-## python - f_string - 숫자 3개마다 comma 넣어서 출력하기
-
 - 일반적으로 숫자를 표기할 때, 3 digit마다 comma를 집어넣습니다.
 - 이는 1000을 기본 단위로 하는 미국식 숫자 쓰기 방식인데요. thousand -> million -> billion 으로 되어 있어 3 digit마다 comma를 찍어야 숫자를 읽기가 편하기 떄문이죠.
 - 사실 한국이라면 10000을 단위로 comma를 찍어야 일기 편합니다만 호호 이미 저게 나름 표준처럼 자리잡혀 있기에 우리만 마음대로 4자리마다 comma를 찍도록 하기는 어렵죠.

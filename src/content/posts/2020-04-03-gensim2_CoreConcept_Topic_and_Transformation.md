@@ -2,7 +2,7 @@
 title: "Gensim2 Coreconcept Topic And Transformation"
 date: 2020-04-03
 category: "others"
-tags: []
+tags: ["python", "nlp", "gensim"]
 permalink: "/others/gensim2_CoreConcept_Topic_and_Transformation/"
 ---
 

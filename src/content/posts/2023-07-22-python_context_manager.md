@@ -6,8 +6,6 @@ tags: ["python", "context"]
 permalink: "/python/python_context_manager/"
 ---
 
-## python - context manager
-
 - A context manager in Python is a programming construct that allows you to manage the setup and teardown of resources in a structured and convenient way. It's primarily used to ensure that certain operations are performed before and after a block of code is executed. The primary purpose of context managers is to handle resource allocation and deallocation in a clean and safe manner.
 - Context managers are implemented using two special methods in Python classes: `__enter__()` and `__exit__()`. These methods define what happens when a context is entered (before the indented block of code) and when it is exited (after the indented block of code).
 

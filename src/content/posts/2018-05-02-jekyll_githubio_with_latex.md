@@ -1,7 +1,7 @@
 ---
 title: "jekyll에서 마크다운 적용할 때 latex 도 렌더링되게 하기"
 date: 2018-05-02
-category: "other"
+category: "others"
 tags: ["blog", "jekyll", "markdown", "latex"]
 permalink: "/other/jekyll_githubio_with_latex/"
 ---

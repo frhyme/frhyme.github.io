@@ -16,13 +16,16 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
 
 {filteredHeadings.length > 0 && (
   <nav class="toc-container p-4 rounded-xl bg-zinc-100/60 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 text-xs">
-    <p class="font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-3">Contents</p>
-    <ul class="space-y-1.5">
+    <p class="font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-3 flex items-center gap-1.5">
+      <span>📑</span> Contents
+    </p>
+    <ul class="space-y-1 relative border-l border-zinc-200 dark:border-zinc-800 pl-2">
       {filteredHeadings.map((h) => (
         <li class={h.depth === 3 ? 'pl-3' : ''}>
           <a
             href={`#${h.slug}`}
-            class="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 block transition-colors leading-relaxed"
+            data-toc-slug={h.slug}
+            class="toc-link text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 block transition-all leading-relaxed py-0.5 rounded px-1.5 -ml-1.5"
           >
             {h.text}
           </a>
@@ -30,4 +33,60 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
       ))}
     </ul>
   </nav>
+
+  <script is:inline>
+    (() => {
+      const tocLinks = document.querySelectorAll('.toc-link');
+      if (!tocLinks.length) return;
+
+      const headings = Array.from(tocLinks)
+        .map((link) => {
+          const slug = link.getAttribute('data-toc-slug');
+          return slug ? document.getElementById(slug) : null;
+        })
+        .filter(Boolean);
+
+      if (!headings.length) return;
+
+      const onScroll = () => {
+        const scrollY = window.scrollY;
+        let currentSlug = '';
+
+        for (const heading of headings) {
+          const top = heading.getBoundingClientRect().top + scrollY - 120;
+          if (scrollY >= top) {
+            currentSlug = heading.id;
+          } else {
+            break;
+          }
+        }
+
+        tocLinks.forEach((link) => {
+          const slug = link.getAttribute('data-toc-slug');
+          if (slug === currentSlug) {
+            link.classList.add(
+              'text-blue-600',
+              'dark:text-blue-400',
+              'font-semibold',
+              'bg-blue-50',
+              'dark:bg-blue-950/50'
+            );
+            link.classList.remove('text-zinc-600', 'dark:text-zinc-400');
+          } else {
+            link.classList.remove(
+              'text-blue-600',
+              'dark:text-blue-400',
+              'font-semibold',
+              'bg-blue-50',
+              'dark:bg-blue-950/50'
+            );
+            link.classList.add('text-zinc-600', 'dark:text-zinc-400');
+          }
+        });
+      };
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
 )}

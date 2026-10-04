@@ -1,7 +1,7 @@
 ---
 title: "networkx github에 pull request 날리기"
 date: 2018-09-04
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "networkx", "github", "pull"]
 permalink: "/python-lib/networkx_contribution_pull_request/"
 ---
@@ -30,7 +30,7 @@ permalink: "/python-lib/networkx_contribution_pull_request/"
 
 - pull request를 생성하고 기다리면, [해당 프로젝트에서 권한을 가진 멤버](https://github.com/dschult)가 코멘트를 남겨 줍니다. 코멘트는 대략 다음과 같아요. 
 
-```
+```python
 Thanks for this!
 
 Just a couple comments -- mostly about getting the function integrated with the whole networkx API.
@@ -66,7 +66,7 @@ rescale_layout
 
 - 그리고 다음처럼 글을 써서 다시 pull request를 날립니다. 
 
-```
+```python
 There are some comment to integer it. and I fixed it all.
 
 You should include the new function in the all variable defined at the top (to have it imported to the networkx namespace. ==> complete

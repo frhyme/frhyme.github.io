@@ -1,12 +1,10 @@
 ---
 title: "C programming - quick sort"
 date: 2021-06-08
-category: "c_programming"
+category: "C_programming"
 tags: ["c", "c_programming", "programming", "quick_sort", "sorting", "divide_and_conquer"]
 permalink: "/c_programming/c_prgrmng14_quick_sort/"
 ---
-
-## C programming - quick sort
 
 - 간단하게 quick sort를 구현해봤습니다.
 - merge sort의 경우 왼쪽 array를 정렬하고 오른쪽 array를 정렬한 다음, 이 둘을 함께 읽으면서 가장 작은 애부터 순차적으로 뽑아서 정렬해주는 형식을 말합니다. 이 과정에서 추가적인 메모리 공간을 필요로 하지만, quick sort와 달리 stable하게 sort할 수 있다는 장점이 있습니다.

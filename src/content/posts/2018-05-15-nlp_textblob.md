@@ -1,7 +1,7 @@
 ---
 title: "textblob, nltk를 활용하여 간단하게 텍스트 처리합시다."
 date: 2018-05-15
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "textblob", "nlp", "inflection"]
 permalink: "/python-lib/nlp_textblob/"
 ---

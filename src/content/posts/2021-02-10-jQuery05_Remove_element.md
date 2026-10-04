@@ -6,8 +6,6 @@ tags: ["jQuery", "javascript", "html", "web"]
 permalink: "/jquery/jQuery05_Remove_element/"
 ---
 
-## jQuery - Remove Element
-
 - jQuery를 사용하여 element를 추가하고 지우는 방법을 정리합니다.
 
 ```html

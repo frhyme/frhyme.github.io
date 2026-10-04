@@ -6,8 +6,6 @@ tags: ["python", "python-basic", "bit", "bit-operator"]
 permalink: "/python-basic/python_bit_operator/"
 ---
 
-## python bit operator
-
 - 사실, bit operator를 쓸 일이 거의 없기는 한데, 잠깐 써야할 일이 있어서 이 때 정리해두기로 합니다. 
 - 내용 자체가 복잡하지 않으므로, 코드에 주석을 달아서 그대로 정리하였습니다. 
 

@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Sta
 permalink: "/english_study_by_movie_script/StarWars_Episode_IV_Trivia00/"
 ---
 
-## 영화 StarWars Episode 4에 관한 사소한 사실들 - 0편
-
 - 저는 `<스타 워즈 클래식 시리즈>`가 개봉했을 때는 세상에 없었고, `<스타워즈 프리퀄 시리즈>`가 개봉했을 때는 스타워즈를 잘 모르면서도 그냥 영화관 가서 봤고, '자자 빙크스'를 혐오하면서 "왜 다들 이 시리즈를 좋아하는 걸까?"라는 생각을 했던 것 같아요. 
 - 그런데, 그런 제가 지금은 `<스타워즈>`를 좋아하고 있습니다. 사실, 각 영화를 좋아한다기보다는 스타워즈 세계관을 좋아하는 것 같습니다. 그리고 인물들도 하나같이 매력이 있으니까요. 
 - 아무튼, 오늘은 스타워즈의 시작, `<스타워즈: 새로운 희망>`에 대해 IMDB에 정리된 Trivia들을 번역하여 정리합니다. 

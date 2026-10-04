@@ -6,8 +6,6 @@ tags: ["vim", "space", "highlight", "autocmd", "BufWritePre", "vi"]
 permalink: "/vim/vim25_remove_trailing_space/"
 ---
 
-## Vim25 - Marking and Deleting Trailing Space
-
 - code나 글을 작성하다 보면 습관적으로 마지막에 space를 넣어주는 못된 습관이 있습니다. 이렇게 마지막에 위치한 white space를 "Trailing space"라고 부릅니다. trail이 "끌다"라는 의미를 가지기 때문에, 한글로 번역한다면 "질질 끌리는 공백" 정도로 표현할 수 있겠네요.
 - 보통 Code를 작성할 때, Trailing Space는 지양하는 것이 좋죠. 이유는 [stackexchange - why is trailing whitespace a big deal](https://softwareengineering.stackexchange.com/questions/121555/why-is-trailing-whitespace-a-big-deal)을 읽어 보시면 되는데요. 대충 다음과 같습니다.
 

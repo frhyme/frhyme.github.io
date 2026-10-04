@@ -6,8 +6,6 @@ tags: ["vim", "jedi", "python", "programming"]
 permalink: "/vim/vim10_jedi_vim_python/"
 ---
 
-## vim10 - Install jedi-vim for python
-
 ### Install Vundle, Jedi-Vim 
 
 - Vundle을 이용해서, jedi-vim을 설치해봅니다.

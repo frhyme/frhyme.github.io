@@ -6,8 +6,6 @@ tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic", "for"]
 permalink: "/ms_office/Excel_VBA05_InputBox/"
 ---
 
-## Excel - VBA - InputBox
-
 - InputBox를 사용하여 사용자로부터 값을 입력받을 수도 있습니다.
 
 ```vb

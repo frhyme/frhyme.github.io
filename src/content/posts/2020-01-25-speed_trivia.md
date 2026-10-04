@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Spe
 permalink: "/english_study_by_movie_script/speed_trivia/"
 ---
 
-## 영화 Speed 에 관한 사소한 사실들(trivia)
-
 - 1994년에 나온 영화 <스피드>를 이제서야 봤습니다. 예전에 나온 영화들은 최근에 나오는 영화들에 비해서, 비교적 '지뢰'를 밟을 확률이 낮아서 요즘은 예전에 나온 유명한 영화 중에서 안 본 영화 혹은, 본 영화를 또 보는 일이 많습니다. 
 - 나름 재미있는 부분들이 있었지만 너무 옛날 영화이기도 하고 무리하게 질질 끈다는 느낌을 받기도 했죠. 30분 정도를 잘라내고 더 'speedy'하게 만들었다면 더 즐겁게 봤을 것 같아요. 
 - 아무튼, 오늘도 IMDB에서 영화 `<Speed>`에 대한 사소한 사실들을 번역하여 정리합니다.

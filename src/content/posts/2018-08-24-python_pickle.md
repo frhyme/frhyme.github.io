@@ -1,7 +1,7 @@
 ---
 title: "pickle로 모든 객체를 그대로 쓰고 읽읍시다."
 date: 2018-08-24
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "pickle"]
 permalink: "/python-lib/python_pickle/"
 ---

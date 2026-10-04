@@ -1,7 +1,7 @@
 ---
 title: "simpy - 세차 프로세스 시뮬레이션"
 date: 2018-07-25
-category: "python-lib"
+category: "python-libs"
 tags: ["python-lib", "simpy", "simulation", "python", "numpy", "class", "generator"]
 permalink: "/python-lib/simpy_car_wash_m/"
 ---

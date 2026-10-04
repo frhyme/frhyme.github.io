@@ -6,8 +6,6 @@ tags: ["kotlin", "programming", "array"]
 permalink: "/kotlin/kotlin05_Array/"
 ---
 
-## Kotlin - Array
-
 - array는 다음처럼 정의할 수 있습니다.
 
 ```kotlin

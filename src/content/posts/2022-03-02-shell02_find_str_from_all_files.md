@@ -6,8 +6,6 @@ tags: ["grep", "shell", "linux", "unix"]
 permalink: "/shell/shell02_find_str_from_all_files/"
 ---
 
-## Shell - 파일 내에 특정 문자열이 존재하는지 찾기
-
 - shell에서 작업을 하다 보면, 파일 내에 특정한 문자열이 있는지, 있다면 어디에 있는지 검색해야 할 때가 있습니다.
 - [stackoverflow - how do i find all files containing specific text on linux](https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux)에 자세한 내용이 나와있는데요. 해당 내용을 정리하면 다음과 같습니다.
 

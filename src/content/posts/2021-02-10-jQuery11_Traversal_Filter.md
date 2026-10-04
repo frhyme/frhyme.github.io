@@ -6,8 +6,6 @@ tags: ["jQuery", "javascript", "html", "web", "css", "DOM"]
 permalink: "/jquery/jQuery11_Traversal_Filter/"
 ---
 
-## jQuery - Traversal - Filter
-
 - jQuery를 사용하여, 요소를 filter하는 방법을 정리합니다.
   - `.first()`: 요소중에서 첫번째 요소를 리턴
   - `.last()`: 요소중에서 마지막 요소를 리턴

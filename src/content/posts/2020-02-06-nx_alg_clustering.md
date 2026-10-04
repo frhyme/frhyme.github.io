@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "clustering", "triangle"]
 permalink: "/others/nx_alg_clustering/"
 ---
 
-## networkx - algorithms - clustering
-
 - [networkx - clustering](https://networkx.github.io/documentation/stable/reference/algorithms/clustering.html)의 내용들을 정리합니다.
 
 ### triangles

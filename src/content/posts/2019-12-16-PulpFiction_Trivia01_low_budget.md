@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Pul
 permalink: "/english_study_by_movie_script/PulpFiction_Trivia01_low_budget/"
 ---
 
-## 영화 Pulp Fiction - 미국에서는 8백만달러가 저예산이죠
-
 - 영화 `<펄프 픽션>`은 1994년작이며, 그 당시에 이 영화로 타란티노 감독은 칸 영화제에서 황금 종려상을 받게 되죠. 약 20년 전인 그 시대를 고려한다면, 조금 더 들었겠지만, 그래도 800만 달러밖에 들지 않은 것은 좀 놀랍네요.
 
 ## Scene - 

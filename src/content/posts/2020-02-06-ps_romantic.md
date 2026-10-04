@@ -6,8 +6,6 @@ tags: ["paper-summary", "network", "centrality", "subgraph"]
 permalink: "/paper-summary/ps_romantic/"
 ---
 
-## PaperSummary - Romantic Partnerships and the Dispersion of Social Ties - A Network Analysis of Relationship Status on Facebook
-
 - 페이스북 직원과 코넬대학교의 연구자가 같이 연구해서 발표한 저작물이군요. 
 - 제목을 번역한다면, "페이스북의 'relationship status'에 대한 네트워크 분석"이 되겠군요.
 - [논문 링크](https://arxiv.org/pdf/1310.6753v1.pdf)

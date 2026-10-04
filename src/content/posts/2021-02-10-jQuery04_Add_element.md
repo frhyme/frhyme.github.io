@@ -6,8 +6,6 @@ tags: ["jQuery", "javascript", "html", "web"]
 permalink: "/jquery/jQuery04_Add_element/"
 ---
 
-## jQuery - Add Element
-
 - html 요소에 새로운 요소를 추가하거나, text를 변경하거나 하는 작업을 정리합니다.
 
 ```html

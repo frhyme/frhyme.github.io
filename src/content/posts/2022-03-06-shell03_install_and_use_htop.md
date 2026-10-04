@@ -1,12 +1,10 @@
 ---
 title: "Install and Use htop"
 date: 2022-03-06
-category: "bash"
+category: "shell"
 tags: ["bash", "shell", "htop", "unix", "linux", "brew"]
 permalink: "/bash/shell03_install_and_use_htop/"
 ---
-
-## Install and Use htop
 
 - 개발 중에 현재 CPU 등에 과부하가 얼마나 걸리는지 확인하기 위하여, htop이라는 어플리케이션을 설치해보려고 합니다.
 - Ubuntu 드에서는 apt-get 을 이용하여 설치하지만, macOS에서는 apt-get을 설치하는 것이 불가능하므로, brew를 이용하여 설치합니다.

@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "tra
 permalink: "/english_study_by_movie_script/Trainspotting_trivia_3/"
 ---
 
-## 영화 Trainspotting 에 관한 사소한 사실들(trivia) - 3편
-
 - 오늘도 영화 <트레인스포팅>에 관한 사소한 이야기들을 IMDB에서 번역하여 정리하여 올립니다. 미처 몰랐던 사소한 내용들이 무척 많았기 때문에, 나누어 올리고 있습니다.
 
 ---

@@ -6,8 +6,6 @@ tags: ["paper-summary"]
 permalink: "/paper-summary/paper-summary-novel_keyword_co/"
 ---
 
-## Novel keyword co-occurrence network-based methods to foster systematic reviews of scientific literature
-
 - PLOS ONE(impact factor: 2.7, open-access journal)에서 2017년에 발행된 논문
 - [link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172778)
 

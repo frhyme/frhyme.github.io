@@ -6,8 +6,6 @@ tags: ["shell", "locale"]
 permalink: "/shell/shell05_locale/"
 ---
 
-## Shell - local
-
 - shell locale에 대해서 정리하려고 시작한 것은 아닌데, `git difftool`을 사용할 때 계속 한글로 message 가 발생하는 것이 성가셔서 찾다보니 locale에서 발생한 문자였다는 사실을 깨달았습니다. 생각해보니, 한글날에 locale을 english로 바꾼다는 나의 마음이 뭔가 참혹한데요...한글 사랑합니다. 킹세종 갓세종
 - 아무튼, `git difftool`을 사용할 때 다음과 같은 한글 메세지가 발생합니다. 그냥 한글이기는 한데, 다 영문으로 작성되어 있는데 저 부분만 한글로 작성되어 있는 것이 일관성이 떨어지는 기분이 들더군요.
 

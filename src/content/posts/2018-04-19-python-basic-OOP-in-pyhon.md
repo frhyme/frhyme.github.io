@@ -99,7 +99,7 @@ test(1, 2)
 
 #### code result 
 
-```
+```python
     ---------------------------------------------------------------------------
 
     TypeError                                 Traceback (most recent call last)

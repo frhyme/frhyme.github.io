@@ -6,8 +6,6 @@ tags: ["google", "javascript", "google_sheet", "macro", "GoogleAppsScript"]
 permalink: "/google/GoogleAppsScript00_intro/"
 ---
 
-## Google Apps Script - Intro
-
 - Excel에서 VBA를 사용해서 시트의 데이터들을 처리해주는 작업을 하다가, 구글 시트에도 비슷한 게 있지 않을까 싶어서 찾아보니 Google App Script라는 것이 있더군요.
 - 저는 맥북 유저라서 사실 MS Office 계열의 제품들보다는 Google Office의 제품들을 주로 사용합니다. 그래서 얘가 좀 더 유용할 것 같아요.
 

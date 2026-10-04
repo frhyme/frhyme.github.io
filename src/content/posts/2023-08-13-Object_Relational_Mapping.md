@@ -6,8 +6,6 @@ tags: ["object", "DataBase", "ORM", "DB", "tuple"]
 permalink: "/database/Object_Relational_Mapping/"
 ---
 
-## Object Relational Mapping
-
 - RDB와 프로그래밍 언어들을 데이터를 읽고 쓰는 방법이 다릅니다. 따라서, 이 둘간의 데이터 교환을 효과적으로 하기 위한 방법이 바로 Object Relaional Mapping(ORM)이죠. 즉, DB에서의 SQL 접근과, 프로그래밍에서의 객체지향적인 방법간의 상호 접근을 편하게 하기 위한 방법이죠.
 - 즉, 데이터베이스에 있는 객체 정보들을 가져와서, 프로그래밍에서 객체로 변환해주고, 프로그래밍에서 객체를 데이터베이스에 넣어주는 것을 ORM이라고 하며, 대부분의 프로그래밍 언어들은 이미 ORM library를 가지고 있죠.
 - 일반적으로 Relational DB에서는 Table의 각 Row에 값을 저장합니다. 이 Row는 tuple을 의미하는데, 이미 대부분의 프로그래밍 언어에서는 tuple이 존재하죠. OOP에서의 Object를 Table의 Row에 tuple로 넣어 줍니다. 그런데 보통 Database에서는 테이블 간에 관계가 존재하죠. 가령 "학생"이라는 테이블이 있고, "학생들의 성적"이라는 테이블이 있다고 가정합시다. 이 때, 학생의 특정 row가 사라지면 학생 테이블을 참조하는 학생들의 성적의 Row들은 삭제되어야 겠죠. "삭제된 학생이 학생 테이블에는 없고, 학생 성적테이블에만 존재"하면 얼마나 무서운가 말이죠. 따라서 ORM Library들은 객체에서 생긴 변화가 DB 상에서 연속적으로 반영되도록 설계되어야 합니다. 사실 cascade deletion등이 가능하도록 해라, 라는 말이죠.

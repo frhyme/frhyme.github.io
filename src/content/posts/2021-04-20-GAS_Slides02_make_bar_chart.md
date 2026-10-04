@@ -6,8 +6,6 @@ tags: ["google", "javascript", "GoogleSlides", "macro", "GoogleAppsScript"]
 permalink: "/google/GAS_Slides02_make_bar_chart/"
 ---
 
-## Google Apps Script - Slides - Bar chart 만들기
-
 - 저는 엑셀이나 matplotlib 등을 사용해서 차트를 만드는 것보다, 구글 슬라이드에서 직접 모양을 하나씩 넣어가면서 차트를 만드는 것을 더 좋아합니다.
 - 따라서, 오늘은 간단한 bar chart의 형태를 하나하나 모양을 추가하면서 만드는 코드를 정리하였습니다.
 

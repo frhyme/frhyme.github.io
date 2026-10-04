@@ -1,7 +1,7 @@
 ---
 title: "natural language processing을 해보장"
 date: 2018-05-15
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "nltk"]
 permalink: "/python-lib/nlp_vector/"
 ---

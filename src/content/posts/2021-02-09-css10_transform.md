@@ -6,8 +6,6 @@ tags: ["css", "Transform", "html"]
 permalink: "/css/css10_transform/"
 ---
 
-## CSS - transform
-
 - css의 `transform`를 사용해서 요소를 이동(translate), 기울이기(skew), 회전(rotate), 확대 혹은 축소(scale)하는 방법을 정리하였습니다.
 
 ## Define style.css

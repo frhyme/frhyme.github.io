@@ -1,7 +1,7 @@
 ---
 title: "cairosvg 문제 해결하기"
 date: 2018-08-14
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "svg", "png", "cairosvg", "graphviz"]
 permalink: "/python-lib/pyimg_cairosvg_problem/"
 ---
@@ -25,7 +25,7 @@ OSError: dlopen() failed to load a library:
 
 - 잘 몰라서 검색해보니 다시 깔라고 해서 다시 깔았는데 
 
-```
+```bash
 pip install cairosvg
 conda install cairosvg
 ```

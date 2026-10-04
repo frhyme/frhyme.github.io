@@ -6,8 +6,6 @@ tags: ["java", "programming", "constructor", "inheritance"]
 permalink: "/java/java_invoking_constructor_from_constructor/"
 ---
 
-## Java - Invoking base constructor from derived class
-
 - Base Class와 Derived Class가 있을 때 내부에서 constructor를 구성하는 방법은 다음과 같은 두 가지가 있습니다.
 - 첫번째로는 다음처럼 `super()`를 통해 BaseClass의 Constructor를 직접 호출하는 방법이 있구요.
 - 단, 이 때 `super()`는 첫번째 statement가 되어야 합니다. 그렇지 않을 경우 `Call to 'super()' must be first statement in constructor body` 에러가 발생하죠.

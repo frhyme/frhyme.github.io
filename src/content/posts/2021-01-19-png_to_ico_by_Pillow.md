@@ -1,12 +1,10 @@
 ---
 title: "Pillow - png를 ico로 변환"
 date: 2021-01-19
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "pillow", "png", "ico", "image"]
 permalink: "/python-lib/png_to_ico_by_Pillow/"
 ---
-
-## Pillow - png를 ico로 변환
 
 - 일단 [Pillow](https://pillow.readthedocs.io/en/stable/)를 설치합니다.
 

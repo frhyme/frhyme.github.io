@@ -1,12 +1,10 @@
 ---
 title: "python - requests"
 date: 2021-04-04
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "requests"]
 permalink: "/python-lib/python_requests00_tutorial/"
 ---
-
-## python - requests
 
 - python library인 [requests](https://docs.python-requests.org/en/master/user/quickstart/)는 http 통신을 위한 python library입니다.
 - 그냥 "웹의 리소스들에게 데이터를 보내고 받는 일들을 한다"라고만 생각하셔도 됩니다.

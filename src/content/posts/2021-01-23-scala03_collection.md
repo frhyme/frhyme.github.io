@@ -6,8 +6,6 @@ tags: ["scala", "programming", "collection"]
 permalink: "/scala/scala03_collection/"
 ---
 
-## Scala - Collection 
-
 - scala의 collection, Array, List, Set, Map에 대해서 간단하게 정리하였습니다.
 
 ```scala

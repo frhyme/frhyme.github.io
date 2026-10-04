@@ -6,8 +6,6 @@ tags: ["R", "R_programming", "library", "require"]
 permalink: "/r_programming/R_require_library_diff/"
 ---
 
-## R - library와 require의 차이
-
 - R에서는 library를 import하는 방법으로 `require`, `library`라는 두 가지 방법이 있습니다.
 - 기본적으로 둘 다 필요한 라이브러리를 가져온다는 점에서는 같지만,
   - `library()`의 경우 만약 해당 라이브러리가 설치되어 있지 않다면 오류를 발생시키며 프로그램이 멈추고,

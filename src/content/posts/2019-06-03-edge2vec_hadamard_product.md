@@ -6,8 +6,6 @@ tags: ["ml", "machiine-learing", "har"]
 permalink: "/machine-learning/edge2vec_hadamard_product/"
 ---
 
-## hadamard product?
-
 - node2vec논문을 보면, 초반에는 쭉쭉, node embedding에 대해서 나오다가, 뒤쪽에 뜬금없이 edge embedding이 나오면서, 이거는 hadamard product로 처리하면 좋다, 정도의 언급이 있습니다. 
 - 이건 그냥 binary operator이고, "이 두 노드의 벡터를 합해서 edge를 의미하는 새로운 벡터를 만든다"가 기본 골자인데, 어렵다고 생각했는데, 막상 써보니 존나 쉬워서 정리하기로 했습니다 하하. 
 

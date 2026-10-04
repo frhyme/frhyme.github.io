@@ -1,12 +1,10 @@
 ---
 title: "python-lib) functools - partial"
 date: 2020-08-05
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "functools", "functional-programming", "iterator"]
 permalink: "/python-lib/python_lib_functools_partial/"
 ---
-
-## functools.partial
 
 - `functools.partial`은 다양한 argument를 가지는 함수에 대해서, 특정한 argument를 제한하여, 좁은 기능의 function을 리턴해주는 함수를 말합니다.
 - 가령, `func(a, b, c)`라는 함수가 있을 때, a의 값을 특정 값으로 고정하고, b, c만 input으로 받아들이는 함수를 만든다는 것이죠.

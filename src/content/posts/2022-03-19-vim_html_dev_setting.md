@@ -6,8 +6,6 @@ tags: ["vi", "vim", "html", "tag"]
 permalink: "/html/vim_html_dev_setting/"
 ---
 
-## Auto Closing html tag
-
 - html 문서를 작성할 때는 tag를 닫아주는 게 가장 귀찮습니다. 아마 학부 때는 자동으로 닫아주는 게 있다는 사실을 모르고 하나하나 모두 타이핑 해줬던 것으로 기억하는데요.
 - [github - vim-closetag](https://github.com/alvan/vim-closetag)를 사용하면 vim에서도 자동으로 닫히는 tag를 쓸 수 있습니다.
 - 저는 Vundle을 이용하여 설치할 것이기 때문에, `.vimrc` file 내에 아래 내용을 추가합니다.

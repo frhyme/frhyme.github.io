@@ -1,7 +1,7 @@
 ---
 title: "matplotlib로 그린 그림에 text를 추가합시다."
 date: 2018-05-15
-category: "python-lib"
+category: "python-libs"
 tags: ["python-lib", "python", "matplotlib"]
 permalink: "/python-lib/text-in-matplotlib/"
 ---

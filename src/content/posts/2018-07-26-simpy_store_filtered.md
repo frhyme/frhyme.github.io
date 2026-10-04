@@ -1,12 +1,10 @@
 ---
 title: "simpy - Resource, Store 이용하기"
 date: 2018-07-26
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "simpy", "numpy", "filter", "simulation"]
 permalink: "/python-lib/simpy_store_filtered/"
 ---
-
-## simpy.Resource - store
 
 - 앞서 말씀드린 바와 같이 `simpy`에서는 Resource, Container, Store 라는 세 가지 종류의 리소스가 있습니다. 
     - `Resources`

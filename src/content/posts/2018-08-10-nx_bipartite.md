@@ -1,7 +1,7 @@
 ---
 title: "networkx의 bipartite 다루기"
 date: 2018-08-10
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "networkx", "bipartite"]
 permalink: "/python-lib/nx_bipartite/"
 ---

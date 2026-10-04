@@ -86,7 +86,7 @@ Hi aaa14.5
 - 하지만, 우리는 type-checking을 하고 프로그램을 돌리고 싶습니다. 이를 위해서는 [`mypy`](https://mypy.readthedocs.io/en/stable/getting_started.html)라는 다른 라이브러리를 설치해줘야 하죠. 
 - 일단 `mypy`를 설치합니다.
 
-```
+```bash
 pip install mypy
 ```
 

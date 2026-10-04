@@ -6,8 +6,6 @@ tags: ["java", "reflection", "class", "programming", "OOP"]
 permalink: "/java/java_reflection02_retriveClass/"
 ---
 
-## Java - Reflection - Retrieving Class
-
 - `java.lang.Class`를 통해, Class에 접근할 수 있는 다양한 방법을 정리하였습니다.
 
 ```java

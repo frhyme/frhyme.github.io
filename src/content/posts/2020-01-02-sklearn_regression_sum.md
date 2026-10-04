@@ -1,8 +1,8 @@
 ---
-title: "category:"
+title: "Scikit-learn - Regression 방법 정리"
 date: 2020-01-02
 category: "others"
-tags: []
+tags: ["python", "sklearn", "machine-learning"]
 permalink: "/others/sklearn_regression_sum/"
 ---
 

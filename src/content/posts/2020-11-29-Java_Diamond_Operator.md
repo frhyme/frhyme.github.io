@@ -6,8 +6,6 @@ tags: ["java", "programming"]
 permalink: "/java/Java_Diamond_Operator/"
 ---
 
-## Java - Explicit type arguments can be replaced by Diamond Operator?
-
 - Java에서 Collection을 사용하다 보변 다음과 같은 Warning 메세지가 뜰 때가 있습니다. 
 
 ```java

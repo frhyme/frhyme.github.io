@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/BlacKKKlansman_Trivia03/"
 ---
 
-## 영화 BlacKKKlansMan 에 관한 사소한 사실들(trivia)
-
 - 그나저나, 요즘 배우 '애덤 드라이버'가 참 많이 나오네요. 넷플릭스 영화인 `<결혼 이야기>`, `<스타워즈>`의 Sequel Trilogy 그리고 `<블랙클랜스맨>`, `<패터슨>`까지. 젊은 나이에 좋은 커리어를 가져가고 있는 배우라고 생각했는데, 83년생이면 또 그렇게 젊지만은 않군요. 
 - 그리고, 영화 `<블랙클랜스맨>`에 출연한 '존 데이빗 워싱턴'은 '덴젤 워싱턴'의 아들이기도 하고, 이 영화 이후 '크리스토퍼 놀란' 감독의 'TENET'에 주연으로 출연합니다. 그러고 보니 이 배우도 84년생으로 그렇게 젊지는 않군요.
 - 아무튼 전도유망한 두 배우가 출연한, 영화 <블랙클랜스맨>사소한 이야기들을 IMDB에서 가져와서 번역하여 정리해봅니다.

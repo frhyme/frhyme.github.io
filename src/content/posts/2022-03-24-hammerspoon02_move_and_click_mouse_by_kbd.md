@@ -6,8 +6,6 @@ tags: ["hammerspoon", "mouse", "keyboard"]
 permalink: "/hammerspoon/hammerspoon02_move_and_click_mouse_by_kbd/"
 ---
 
-## Hammerspoon02 - 키보드로 마우스 움직이고 클릭하기
-
 - hammerspoon을 이용해서 키보드로 마우스를 움직일 수 있도록 설정해봤습니다.
 
 ```lua

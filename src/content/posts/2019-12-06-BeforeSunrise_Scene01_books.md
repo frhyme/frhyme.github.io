@@ -6,8 +6,6 @@ tags: ["english", "movie", "boyhood", "movie_script", "english_study_by_movie_sc
 permalink: "/english_study_by_movie_script/BeforeSunrise_Scene01_books/"
 ---
 
-## 영화 Before Sunrise 명장면 - 셀리느와 제시, 그리고 책들
-
 - 영화를 볼 때 관객은 꼼꼼하게 보지 않더라도, 감독과 스탭들은 꼼꼼하게 챙기는 것이 있습니다. '소품'이라는 것이죠. 한번 여쭤보겠습니다. 혹시, 이 글을 읽으시는 분들 중에서, 제시(에단 호크)와 셀린느(쥴리 델피)가 기차역에서 각각 어떤 책을 읽고 있었는지 알고 계시는 분들 있나요?
 - 저도 최근에, `<Before Sunrise>`의 대본을 보다가 알았습니다. 물론, 짧게 지나가고 놓쳐도 영화 전체를 이해하는 데는 아무런 문제가 없습니다. 하지만, 관객에게는 중요하지 않더라도, 배우나 관객 입장에서는 매우 중요한 문제입니다. 읽는 책은 그 사람의 성격을 말해주니까요. 다시 말하자면, 이 책은 어느 정도 제시와 셀린느의 성격 그리고 취향을 드러내 준다는 것이죠.
 - **셀린느는 조르주 바타유(Georges Bataill)의 눈의 이야기(Story of the Eye)를 읽고 있었고, 제시는 클라우스 킨스키의 자서전(All I need is Love)을 읽고 있습니다.** 사실, 뭐 말을 더 덧붙일 수도 있지만, 저는 저 작가들도, 책들도 처음 들어봤기 때문에 말을 덧붙이지는 않을게요. 다만, [이 블로그에](https://m.blog.naver.com/PostView.nhn?blogId=dibrary1004&logNo=220223419600&proxyReferer=https:%2F%2Fwww.google.com%2F) 각각의 책에 대한 설명과 왜 캐릭터가 이 책을 읽었는지에 대해서, 비교적 자세하게 작성되어 있습니다.

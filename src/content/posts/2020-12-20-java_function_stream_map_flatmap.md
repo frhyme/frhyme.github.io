@@ -6,8 +6,6 @@ tags: ["java", "programming", "stream", "FunctionalProgramming", "map", "flatMap
 permalink: "/java/java_function_stream_map_flatmap/"
 ---
 
-## Java - Functional Stream - map
-
 - `.map`은 list의 요소들을 각각 정의된 function대로 변경해주는 것을 말합니다.
 - 가령 `[1, 2, 3]`이라는 리스트가 있을 때 얘를 모두 square로 변경하고 싶다면 다음처럼 하면 되죠.
 

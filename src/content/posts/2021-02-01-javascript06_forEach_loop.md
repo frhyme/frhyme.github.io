@@ -6,8 +6,6 @@ tags: ["javascript", "programming", "loop", "for"]
 permalink: "/javascript/javascript06_forEach_loop/"
 ---
 
-## Javascript - forEach loop
-
 - List에서 forEach를 사용하여 각 원소별 동작을 수행하도록 할 수 있습니다.
 
 ```html

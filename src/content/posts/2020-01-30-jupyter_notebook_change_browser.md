@@ -27,7 +27,7 @@ permalink: "/python-libs/jupyter_notebook_change_browser/"
 
 - 기본 폴더 내에 `.jupyter`라는 폴더가 있고, 그 안에 `jupyter_notebook_config.py`라는 python 파일이 있습니다. 없다면, 아래 커맨드를 쳐서 생성하시면 됩니다. 확장자가 json 등이 아니라, python이라는 것이 조금 신기하죠.
 
-```
+```bash
 $ jupyter notebook --generate-config
 ```
 

@@ -6,8 +6,6 @@ tags: ["java", "programming", "stream", "FunctionalProgramming", "map", "flatMap
 permalink: "/java/java_flatMap_without_flatMap/"
 ---
 
-## Java - Functional Stream - Without flatMap
-
 - `flatMap`은 `List<List<Integer>>`와 2차원으로 되어 있는 List를 1차원 List로 변형해줄 때 쓰입니다. 말 그대로, 평평하게 해주는 애들이죠.
 - 가령 `[[1, 2], [3, 4]]`를 `[1, 2, 3, 4]`로 바꿔준다.
 

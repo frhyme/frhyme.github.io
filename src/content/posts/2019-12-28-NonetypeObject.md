@@ -27,7 +27,7 @@ print(None_var.aa)
 - 결과는 다음과 같이, 세번째 구문인 `print(None_var.aa)`을 실행할 때 문제가 발생하죠.
 - 즉, 없는 값을 리턴하려고 할때, 발생하는 코드입니다.
 
-```
+```python
 This function does not return any
 type(None_var) ==> <class 'NoneType'>
 None_var ==> None

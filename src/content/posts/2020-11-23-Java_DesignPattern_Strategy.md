@@ -6,8 +6,6 @@ tags: ["DesignPattern", "Strategy", "java", "programming", "class"]
 permalink: "/designpattern/Java_DesignPattern_Strategy/"
 ---
 
-## Java - Design Pattern - Strategy
-
 - Strategy Pattern은 객체지향적 설계에서 가장 많이 사용되는 패턴이죠.
 - 하나의 예를 들어 보겠습니다. 클래스 `Clustering`이 있을 때, 점간의 거리를 측정하는 `GetDistance` 클래스가 내부에 있겠죠. 거리 측정은 조금씩 다를 수 있는데, 필요에 따라 내부의 `GetDistance`를 다른 클래스들로 정의할 수 가 있겠죠. 이렇게 클래스 내부에 다른 class instance가 있는 경우, 그리고 내부 class instance를 필요에 따라 여러 class의 instance로 변경해주는 경우를 strategy라고 하죠. 여기서 strategy는 보통 behaviour를 정의하죠.
 

@@ -6,8 +6,6 @@ tags: ["java", "programming", "argument", "array"]
 permalink: "/java/java_method_variable_arguments/"
 ---
 
-## Java - 가변 Argument 선언하고 사용하기
-
 - 대부분의 함수는 정해진 수의 argument를 넘겨받습니다. 그리고 디자인 측면에서도, 이게 훨씬 좋은 설계방식이라고 생각하고요.
 - 다만, 경우에 따라, argument의 수가 여러 개 들어오도록 설계할 때도 있죠.
 - 가령 `sum(a, b)`, `sum(a, b, c)`처럼, 2개의 합, 3개의 합 이런 식으로 처리해주는 함수를 만들고 싶을 수 있으니까요.

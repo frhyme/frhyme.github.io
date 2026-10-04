@@ -1,12 +1,10 @@
 ---
 title: "python - lib - datetime - timedelta를 float로 변환하기"
 date: 2021-11-20
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python_lib", "datetime", "timedelta", "float"]
 permalink: "/python-lib/python_lib_datetime_timedelta_to_float/"
 ---
-
-## python - lib - datetime - timedelta를 float로 변환하기 
 
 - python에서 시간을 다룰 때는 보통 `datetime` library를 사용합니다.
 - `datetime.datetime()`은 "날짜 + 시각"을 `datetime.timedelta()`는 시간 차이를 표현하죠. 

@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Unb
 permalink: "/english_study_by_movie_script/unbreakable_trivia/"
 ---
 
-## 영화 Unbreakable 에 관한 사소한 사실들(trivia)
-
 - 2000년에 개봉한 'M. 나이트 샤말란'의 영화, `<Unbreakable>`을 보셨나요? 영화 자체는 매우 오래되었지만 가능하시면 아무 정보 없이 꼭 보시기를 바랍니다. 
 - 이 영화는 `<Sixth Sense>`에서의 그것처럼 딱 하나의 톱니가 빠진 채로 이야기가 흘러갑니다. 그리고, 당연하지만, 그 톱니가 빠졌다는 사실조차 모르죠. 그 톱니가 없어도 완벽한 이야기로 들리니까요. 하지만, 마지막에 그 톱니가 빠졌다는 사실과 함께 그 톱니가 무엇인지 알게 되었을 때의 소름 돋는 감각, 그것이 바로 'M. 나이트 샤말란'이 영화 `<Sixth Sense>`와 이 영화 `<Unbreakable>`에서 보여준 그의 장기죠. 
 - 그리고, 이 영화는 십수 년이 지나 2017년에 `<Split>`(한국 개봉명 '23 Identity')로 세계관을 확장하고, 2019년에는 `<Glass>`로 다시 그의 고유한 Cinematic Universe를 만들기도 했죠. `<Split>`에서는 `<Unbreakable>` 과의 작은 선을 하나 만들었다고 보는 것이 적합하고, `<Glass>`에서는 이를 삼각형의 형태로서, 드디어 모든 인물이 만나도록 만들었죠. 더 자세한 이야기는 이후, 영화를 본 이후에 하도록 하겠습니다. 

@@ -6,8 +6,6 @@ tags: ["javascript", "programming", "ZeroDivisionError", "ZeroDivision"]
 permalink: "/javascript/javascript15_zero_division/"
 ---
 
-## Javascript - Zero Division
-
 ### python Zero Division Error
 
 - 제가 알고 있는 프로그래밍 언어들에서는 보통 다음과 같이 0으로 나누는 경우 Zero division Error가 발생합니다. 아래는 python code이구요.

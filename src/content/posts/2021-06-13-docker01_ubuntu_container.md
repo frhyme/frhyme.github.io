@@ -6,8 +6,6 @@ tags: ["docker", "ubuntu", "container"]
 permalink: "/docker/docker01_ubuntu_container/"
 ---
 
-## docker - ubuntu container 구동하기 
-
 - 이제 docker를 이용해서, ubuntu container를 하나 구동해보려고 합니다.
 - docker를 이용해서 ubunut image를 docker hub에서 찾고, local로 가져옵니다.
   - `docker images`: local에 존재하는 docker image를 보여줍니다.

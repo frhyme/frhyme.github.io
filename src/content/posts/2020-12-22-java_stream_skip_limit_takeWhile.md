@@ -6,8 +6,6 @@ tags: ["java", "programming", "stream"]
 permalink: "/java/java_stream_skip_limit_takeWhile/"
 ---
 
-## Java - Stream - limit, skip, takeWhile, dropWhile
-
 - `limit`, `skip`, `takeWhile`, `dropWhile`의 사용법을 정리하였습니다.
 
 ```java

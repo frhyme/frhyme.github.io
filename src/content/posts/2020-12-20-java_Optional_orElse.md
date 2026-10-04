@@ -6,8 +6,6 @@ tags: ["java", "programming", "optional", "NPE"]
 permalink: "/java/java_Optional_orElse/"
 ---
 
-## Java - Optional.orElse
-
 - java에서 `Optional`은 "메서드의 반환 값이 '없음'을 의미적으로 표현할 필요가 있지만, null값으로 반환하고 싶지는 않은 경우"에 사용하기 위해서 만들어졌습니다.
 - 이상하죠. 실제로 null은 아니지만, 의미적으로 아무 것도 반환되지 않았다! 라는 것을 확실하게 하기 위해서, null 비슷한 값을 리턴하도록 해준 것이죠.
 - 아래 코드에서 보는 것처럼, List의 Stream, `.reduce`를 사용하는 경우 `Optional`을 리턴하게 됩니다. 

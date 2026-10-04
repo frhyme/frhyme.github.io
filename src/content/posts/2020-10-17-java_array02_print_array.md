@@ -1,7 +1,7 @@
 ---
 title: "Java - Array를 출력하기."
 date: 2020-10-17
-category: "Java"
+category: "java"
 tags: ["java", "programming", "array"]
 permalink: "/java/java_array02_print_array/"
 ---

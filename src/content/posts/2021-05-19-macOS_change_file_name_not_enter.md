@@ -1,12 +1,10 @@
 ---
 title: "vs code - explorer에서 enter로 이름 변경되는 것을 해제하려고 했으나.."
 date: 2021-05-19
-category: "vscode"
+category: "vs-code"
 tags: ["vscode", "vim", "vi"]
 permalink: "/vscode/macOS_change_file_name_not_enter/"
 ---
-
-## vs code - explorer에서 enter로 이름 변경되는 것을 해제하려고 했으나
  
 - VS code의 explorer에서 여러 파일과 폴더들을 위 아래로 navigating할 수 있습니다. 편집 창에서 explorer로 이동하려면 `ctrl + 0`를 사용하면 됩니다.
 - 저는 vim을 사용하고 있기 때문에, j, k 를 사용해서 위아래로 navigating할 수 있죠. 다 좋은데, 파일을 선택하기 위해서 enter를 누르면, 해당 파일이 편집창에 열리는 것이 아니라, 파일명을 변경하게 됩니다.

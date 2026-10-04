@@ -6,8 +6,6 @@ tags: ["paper-summary", "sme", "entrepreneurship"]
 permalink: "/paper-summary/ps_entrepreneurship_sme/"
 ---
 
-## Is Small and Medium Enterprises (SMEs) an Entrepreneurship?
-
 - 2012년 1월에 International journal of academic research in business and social science에 게재됨
 - [link](https://pdfs.semanticscholar.org/5955/2d251e3d5f7d42d67a89300cfcd0a6dbfec4.pdf)
 

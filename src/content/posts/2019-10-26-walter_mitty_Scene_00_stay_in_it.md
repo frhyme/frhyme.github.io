@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Wal
 permalink: "/english_study_by_movie_script/walter_mitty_Scene_00_stay_in_it/"
 ---
 
-## 영화 Secret Life of Walter Mitty 명장면 - Stay in it
-
 영화 `<Secret life of walter mitty`, 한국 개봉명은 "월터의 상상은 현실이 된다" 속에서, 유명한 사진 작가가 오랫동안 기다려온 피사체를 찍으려다가, 결국 아무 것도 찍지 않으면서 말합니다.
 
 ## Scene - Stay in it

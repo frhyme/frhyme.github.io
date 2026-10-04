@@ -6,8 +6,6 @@ tags: ["build", "gradle", "java", "maven", "programming"]
 permalink: "/others/Gradle01_gradle_run/"
 ---
 
-## Gradle - basic
-
 - [spring initializer](https://start.spring.io/)에서 config을 설정하고 다운받습니다. 
 - 압축을 풀고 나서 해당 경로에서 다음 명령어를 실행해 주면 해당 경로에 필요한 plungin을 모두 설치해주고 build를 해줍니다.
 - intelliJ의 경우는 그냥 해당 프로젝트의 폴더를 열면 알아서 다 처리해줍니다.

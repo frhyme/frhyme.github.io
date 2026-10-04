@@ -1,8 +1,8 @@
 ---
-title: "category:"
+title: "Graph Deep Learning 입문"
 date: 2020-01-02
 category: "others"
-tags: []
+tags: ["graph", "deep-learning"]
 permalink: "/others/a_graph_deep_learning/"
 ---
 

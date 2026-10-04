@@ -6,8 +6,6 @@ tags: ["html", "a", "tag", "img", "image"]
 permalink: "/html/html_tag03_img_tag/"
 ---
 
-## html - img tag
-
 - `img` tag를 활용하여 image를 html 문서에 작성하는 방법을 정리하였습니다.
 - `img` tag는 다음의 5가지 format을 허용합니다.
   - `JPEG`

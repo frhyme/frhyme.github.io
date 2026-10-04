@@ -6,8 +6,6 @@ tags: ["javascript", "programming", "selector", "DOM"]
 permalink: "/javascript/JS_DOM01_getElement/"
 ---
 
-## Javascript - DOM methods - querySelector, getElementById
-
 - javascript에서 문서 내에 존재하는 element들을 selector, id를 통해 탐색하고 해당 요소의 성질을 변경하는 코드를 작성하였습니다.
 
 ```javascript

@@ -6,8 +6,6 @@ tags: ["GDPR", "blog"]
 permalink: "/blog/writing_blog_privacy_policy/"
 ---
 
-## writing blog privacy policy
-
 - Recently, Google AdSense notified me that I should implement GDPR messages for European citizens. The General Data Protection Regulation (GDPR) is a data protection and privacy regulation that applies to European Union nations. Initially, when I received this message, I didn't think that my simple blog would be directly affected by such legislation. However, upon further investigation, I realized that since my blog is linked with Google Analytics and Google AdSense, it does fall under the scope of GDPR, as these services are subject to the regulation due to the potential collection and processing of personal data.
 
 - Understanding the importance of complying with GDPR and being committed to safeguarding the privacy of my blog's users, I took the necessary steps to create a comprehensive privacy policy. This privacy policy serves as a legally binding document that outlines how I collect, use, and protect any data that users may share while accessing my blog.

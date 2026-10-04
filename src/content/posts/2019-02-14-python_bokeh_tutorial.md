@@ -276,8 +276,8 @@ def bokeh_with_json():
     </head>
     <body>
         <h1>This is h1</h1>
-        {% raw %} {{ plot1_div }} {% endraw %} 
-        {% raw %} {{ plot1_script }} {% endraw %} 
+         {{ plot1_div }}  
+         {{ plot1_script }}  
     </body>
 </html>
 ```

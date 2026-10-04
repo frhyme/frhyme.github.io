@@ -6,8 +6,6 @@ tags: ["java", "programming", "string", "regex"]
 permalink: "/java/java_regex02_set_range_except/"
 ---
 
-## Java - Regular Expression - Set, Range, Except
-
 - Regex를 사용하여 유효한 문자들에 대해서 범위를 지정하는 방법을 정리합니다.
   - `[]`: 유효한 문자 그룹을 지정합니다.
     - ex) `[abc]`: a, b, c 유효

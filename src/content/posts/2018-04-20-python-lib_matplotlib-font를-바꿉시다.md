@@ -1,7 +1,7 @@
 ---
 title: "python-lib) matplotlib 폰트 변경하기"
 date: 2018-04-20
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "matplotlib"]
 permalink: "/python-lib/python-lib_matplotlib-font를-바꿉시다/"
 ---

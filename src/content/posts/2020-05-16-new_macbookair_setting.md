@@ -1,7 +1,7 @@
 ---
 title: "Macbook_air 2020년형을 샀습니다."
 date: 2020-05-16
-category: "macbook"
+category: "macOS"
 tags: ["macbook", "macbook_air", "vscode", "macOS", "python"]
 permalink: "/macbook/new_macbookair_setting/"
 ---

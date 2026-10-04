@@ -6,8 +6,6 @@ tags: ["C", "programming", "C_programming", "malloc", "linked_list"]
 permalink: "/c_programming/c_prgrmng01_linked_list/"
 ---
 
-## C - linked list example
-
 - 간단하게 linked list를 만들어 봤습니다.
 
 ```c

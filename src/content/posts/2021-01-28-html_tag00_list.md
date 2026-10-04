@@ -6,8 +6,6 @@ tags: ["html", "list"]
 permalink: "/html/html_tag00_list/"
 ---
 
-## html - Ordered, Unordered, Definition List
-
 - 간단하게, `<li>` tag를 사용해서 List를 만들어 줬습니다. 
 - `<ol>`로 묶으면 Ordered List, `<ul>`로 묶으면 Unordered List가 되죠. 번호를 매기는 순서나, 형태, 모양 등을 변경할 수 있죠.
 - 마지막에는 `dl`이라는 `Definition List`를 의미하는 tag도 있습니다. table의 형태처럼, `(term, defintion)`이 한 row에 오도록 만들어 집니다.

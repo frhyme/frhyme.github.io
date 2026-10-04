@@ -6,8 +6,6 @@ tags: ["python", "python-libs", "data-struture", "list", "shallow_copy", "python
 permalink: "/data-structure/python_self_referencing_list/"
 ---
 
-## python - self referencing list
-
 - 이상한 짓을 합니다.
   - 비어 있는 list `lst`를 만들고요.
   - reference variable `ref_lst`가 `lst`를 지칭하도록 합니다.

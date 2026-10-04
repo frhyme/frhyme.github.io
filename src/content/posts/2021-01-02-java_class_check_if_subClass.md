@@ -6,8 +6,6 @@ tags: ["java", "programming", "class", "OOP", "TypeChecking"]
 permalink: "/java/java_class_check_if_subClass/"
 ---
 
-## Java - Check class A is subClass of class B
-
 - java에서 class instance a가 class B의 instance인지 확인하려면 보통 `instanceof`를 사용합니다.
 - `instanceof`의 경우 runtime 시에 발생하는 type checking이며, 아래와 같이, 사용할 수 있습니다.
 

@@ -530,7 +530,7 @@ draw_petri_net_arrow(DG, nx.spectral_layout(DG))
 plt.savefig("../../assets/images/markdown_img/alpha_spectral_layout_with_new_arrow.png")
 ```
 
-![spectral_layout_with_new_arrow](/assets/images/markdown_img/spectral_layout_with_new_arrow.png)
+![spectral_layout_with_new_arrow](/assets/images/markdown_img/alpha_spectral_layout_with_new_arrow.png)
 
 ### 나중에 추가할 것들
 

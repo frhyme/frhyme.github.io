@@ -1,7 +1,7 @@
 ---
 title: "pandas - dataframe - sampling"
 date: 2020-01-09
-category: "pandas"
+category: "python-libs"
 tags: ["python", "python-libs", "dataframe", "sampling", "pandas"]
 permalink: "/pandas/df_sampling_shuffling/"
 ---

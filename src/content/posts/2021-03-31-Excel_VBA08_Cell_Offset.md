@@ -6,8 +6,6 @@ tags: ["MS_Office", "excel", "vba", "macro", "macOS", "basic"]
 permalink: "/ms_office/Excel_VBA08_Cell_Offset/"
 ---
 
-## Excel - VBA - Offset
-
 - `.Offset`은 특정 Cell에서 행으로 몇 칸, 열로 몇 칸 움직여서 그 위치에 해당하는 Cell을 가리킵니다.
 - `Cells(1, 1)`: 1행 1열에 위치한 Cell을 말하므로 "A1"에 위치한 Cell를 가리키죠.
 - `Cells(1, 1).Offset(0, 1)`: 1행 1열에 위치한 Cell에서 열로 1칸 움직였으므로 "A2"를 가리키고.

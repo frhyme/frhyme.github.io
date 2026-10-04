@@ -6,8 +6,6 @@ tags: ["vim", "vi", "backspace"]
 permalink: "/vim/vim11_vim_backspace_not_working/"
 ---
 
-## vim11 - Insert mode에서 backspace 가 먹히지 않을때
-
 - 종종 vi, vim에서 Insert Mode에서 character를 지울 때 backspace 가 먹히지 않을 때가 있습니다.
 
 ```bash

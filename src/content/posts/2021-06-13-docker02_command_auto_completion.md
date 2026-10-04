@@ -6,8 +6,6 @@ tags: ["docker", "command", "bash", "zsh", "zshrc"]
 permalink: "/docker/docker02_command_auto_completion/"
 ---
 
-## docker - command auto completion
-
 - docker에서 command를 사용할 때, tab completion이 먹히지 않습니다. 가령, `docker ru`을 누르고 tab을 누르면, `docker run`으로 될 수 있어야 하는데, 뜨지 않죠.
 - 뭐, `run`정도야 문제가 아닌데, `docker rmi`를 사용할 때는 난수화되어 있는 image_id 값을 하나하나 입력해야 한다는 번거로움이 있습니다. 그래서, docker command에 대해서 tab completion이 가능하도록 설정해보려고 합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: "Wide and Long data format"
 date: 2020-01-10
-category: "other"
+category: "others"
 tags: ["data-format", "table"]
 permalink: "/other/long_wide_data_format/"
 ---

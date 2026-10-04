@@ -72,7 +72,6 @@ permalink: "/others/google_ad_sense/"
 - 원래는 해당 요소의 코드는 다음과 같이, 작성되어 있습니다만, 
 
 ```html 
-{% raw %}
 {% if page.toc %}
 <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
     <nav class="toc">
@@ -85,13 +84,11 @@ permalink: "/others/google_ad_sense/"
     </nav>
 </aside>
 {% endif %}
-{% endraw %}
 ```
 
 - 이런 형태로 바뀌게 되죠. 의미를 대충 보면, toc 혹은 toc_ads가 트루이면, `GoogleAdSenseSidbar.html`로부터 html 코드를 가져와서 붙인다는 말입니다. 
 
 ```html
-{% raw %}
 {% if page.toc or page.toc_ads %}
     <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
         <nav class="toc">
@@ -109,7 +106,6 @@ permalink: "/others/google_ad_sense/"
         </nav>
     </aside>
 {% endif %}
-{% endraw %}
 ```
 
 - 그리고 `_config.yml`부분의 코드도 변경해줍니다. 여기서는 두 가지 변수를 변경해주는데, 아래와 같이 `toc`에 대한 부분이 작성된 곳에 나머지를 붙여주면 됩니다. 

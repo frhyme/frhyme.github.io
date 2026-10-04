@@ -6,8 +6,6 @@ tags: ["nodeJS", "javascript", "server", "http", "web", "error"]
 permalink: "/nodejs/nodeJS01_error/"
 ---
 
-## nodeJS - address already in use
-
 - 다음과 같은 오류와 함께 nodeJS로 만든 서버가 구동되지 않는 경우가 있습니다.
 
 ```plaintext

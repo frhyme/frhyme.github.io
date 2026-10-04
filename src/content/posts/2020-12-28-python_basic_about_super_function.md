@@ -6,8 +6,6 @@ tags: ["python", "OOP", "super", "inheritance", "MRO"]
 permalink: "/python/python_basic_about_super_function/"
 ---
 
-## python basic - super()
-
 - `super()` function은 보통 상속(Inheritance)에서 상위 class의 method에 접근할 때 사용합니다.
 - 가령 다음과 같이 간단한 `Child` class의 `print()` method를 사용할 수 있죠.
 

@@ -1,7 +1,7 @@
 ---
 title: "Android와 Java는 도대체 무슨 관계인가?"
 date: 2020-10-09
-category: "Java"
+category: "java"
 tags: ["Java", "Android", "Programming", "Google", "Kotlin", "Oracle"]
 permalink: "/java/java_01_java_and_android/"
 ---

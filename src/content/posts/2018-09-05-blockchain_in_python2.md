@@ -1,7 +1,7 @@
 ---
 title: "python으로 블록체인 만들기 - 2편"
 date: 2018-09-05
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "hashlib", "blockchain", "datetime", "hash", "sha256"]
 permalink: "/python-lib/blockchain_in_python2/"
 ---

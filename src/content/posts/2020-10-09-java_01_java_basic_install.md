@@ -1,7 +1,7 @@
 ---
 title: "IntelliJ를 설치하고 Java를 간단하게 공부해봅니다."
 date: 2020-10-09
-category: "Java"
+category: "java"
 tags: ["java", "programming", "IntelliJ"]
 permalink: "/java/java_01_java_basic_install/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "python lib) numpy 기본적인 사용법"
 date: 2018-04-12
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "numpy"]
 permalink: "/python-lib/python-lib)-numpy_basic/"
 ---

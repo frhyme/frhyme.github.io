@@ -6,8 +6,6 @@ tags: ["java", "spring", "programming", "framework"]
 permalink: "/java/what_is_spring_boot/"
 ---
 
-## Spring Framework and Spring Boot
-
 - Spring Framework는 자바 진영에서 가장 인기있는 어플리케이션 개발 프레임워크입니다. 하지만 Spring Batch처럼 Spring Framework를 사용해서 만들어진 새로운 Framework도 있기 때문에, 오히려 스프링은 단순한 프레임워크라기보다는 meta-Framework라고 불러도 될것 같습니다.
 - 스프링의 주요 특징은 다음과 같습니다. 즉, 무엇이든 만들 수 있도록 모든 요소가 다 존재한다고 생각하면 됩니다.
   - 어플리케이션 내에서 Object의 Life-Cycle을 관리할 수 있는 Component contaiiner

@@ -1,12 +1,10 @@
 ---
 title: "java - Array를 Reverse해보자"
 date: 2020-10-10
-category: "Java"
+category: "java"
 tags: ["java", "programming", "array", "list", "reverse"]
 permalink: "/java/java_02_java_array_reverse/"
 ---
-
-## java - Array를 Reverse
 
 - 코딩을 하다 보면, list 혹은 array에 들어 있는 값들의 순서를 역순으로 변경하고 싶을 때가 있습니다.
 - 가령 python에서는 다음과 같죠. 참 쉽죠?

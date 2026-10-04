@@ -1,7 +1,7 @@
 ---
 title: "python-lib) python - datetime.datetime"
 date: 2020-08-05
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "datetime"]
 permalink: "/python-lib/python_lib_datetime_datetime/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "pytest-benchmark 사용하기"
 date: 2018-08-26
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "pytest", "test", "benchmark", "jupyter-notebook"]
 permalink: "/python-lib/pytest_benchmark/"
 ---
@@ -25,7 +25,7 @@ print(time.time() = start_time)
 - 다른 사람들 코드를 보다보면 속도를 비교할때 보통 pytest-benchmark를 사용하더라구요. 그래서 저도 한 번 사용해봤습니다. 
 - 일단 설치부터 하구요. 
 
-```
+```bash
 pip install pytest-benchmark
 ```
 

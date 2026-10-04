@@ -6,8 +6,6 @@ tags: ["hammerspoon", "ctrl", "hhkb", "macOS", "lua"]
 permalink: "/hammerspoon/hammerspoon04_change_en_by_ctrl_better/"
 ---
 
-## Hammerspoon04 - ctrl키로 한영 전환 및 충돌 피하기
-
 - macOS에서 HHKB를 사용해서 개발을 하고 있습니다.
 - macOS 기본 키보드에서는 capslock을 이용해서 한영전환을 하는데요, 이게 기존 방식(오른쪽 엄지손가락 사용하는 방식)보다 훨씬 편해서, HHKB에서도 capslock 위치에 있는 ctrl 버튼을 사용해서 한영 전환을 하도록 설정하였습니다.
 - 다만 저는 `ctrl` + `hjkl`을 화살표로 사용하고 있습니다. 이 상태에서 위 코드를 사용하게 되면 화살표를 누를 때마다 한영 변환이 발생하게 되는 문제점이 있습니다. hammerspoon을 사용하였고, 해당 코드는 다음과 같죠.

@@ -1,7 +1,7 @@
 ---
 title: "python에서 pandas를 이용해서 excel을 읽어봅시다"
 date: 2018-04-04
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "excel", "pandas", "OrderedDict"]
 permalink: "/python-lib/python-lib)-python에서-excel을-읽읍시다/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "networkx에서 graph를 만들고 relabeling하기"
 date: 2018-08-11
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "networkx", "graph", "relabel", "bipartite", "matplotlib"]
 permalink: "/python-lib/nx_graph_relabeling/"
 ---
@@ -61,11 +61,11 @@ for bg in bg_lst :
 
 - 원래 graph는 다음과 같고요 
 
-![](/assets/images/markdown_img/180811_graph_relabel_label with integer.svg)
+![](/assets/images/markdown_img/180811_graph_relabel_label%20with%20integer.svg)
 
 - 바뀐 것은 다음과 같습니다. 하하 사실 별 차이 없는 것처럼 그림상에서는 보일 수 있는데 매우 큰 차이가 있습니다. 
 
-![](/assets/images/markdown_img/180811_graph_relabel_label with object.svg)
+![](/assets/images/markdown_img/180811_graph_relabel_label%20with%20object.svg)
 
 ## wrap-up
 

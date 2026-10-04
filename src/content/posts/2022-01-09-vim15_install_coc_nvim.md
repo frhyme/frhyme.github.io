@@ -6,8 +6,6 @@ tags: ["vim", "completer", "vi", "plugin", "c", "go"]
 permalink: "/vim/vim15_install_coc_nvim/"
 ---
 
-## Vim 15 - Install coc.nvim
-
 - 
 - 기존에 설치한 Vim Plugin Manager인 Vundle을 사용하여 coc.nvim을 설치하려고 하였습니다. 다만, Vundle을 사용하여 설치하는 방법이 따로 적혀 있지 않기에, 찾아보니 [github - coc.nvim - How to install using Vundle #1210A](https://github.com/neoclide/coc.nvim/issues/1210)에서, 대충 "Vundle은 유지보수도 되고 있지 않은 프로젝트라서 얘는 지원안하고, Vim Plug만 가능하다"는 뉘앙스의 이야기가 있습니다. 넵 그렇다면 Vim Plug를 사용하겠습니다.
 

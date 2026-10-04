@@ -6,8 +6,6 @@ tags: ["vim", "vi", "powerline", "plugin", "shell"]
 permalink: "/vim/vim12_install_powerline/"
 ---
 
-## vim12 - Install Powerline
-
 - Vim에서 작업시에, [Powerline](https://github.com/powerline/powerline)을 이용해서, 좀더 효과적으로 현재 상황을 확인할 수 있습니다.
 - Vundle을 이용해서 설치할 수 있는데요, `.vimrc` 파일 내에 아래와 같은 내용을 작성해줍니다.
 

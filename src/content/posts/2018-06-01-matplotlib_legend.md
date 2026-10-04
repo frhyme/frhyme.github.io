@@ -1,7 +1,7 @@
 ---
 title: "matplotlib legend 조절하기"
 date: 2018-06-01
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "matplotlib", "legend"]
 permalink: "/python-lib/matplotlib_legend/"
 ---
@@ -55,11 +55,11 @@ plt.scatter(np.random.normal(5, 2.5, 10), np.random.normal(0, 1, 10),
 plt.scatter(np.random.normal(5, 2.5, 10), np.random.normal(0, 1, 10), 
             marker='x', c=plt.cm.rainbow(0.1), label='scatter')
 plt.legend(loc='upper left', bbox_to_anchor=(1.0, 1.0), fontsize='x-large')
-plt.savefig('../../assets/images/markdown_img/180601_legend_outside.svg')
+plt.savefig('../../assets/images/markdown_img/180601_legend_outside_colormap.svg')
 plt.show()
 ```
 
-![](/assets/images/markdown_img/180601_legend_outside.svg)
+![](/assets/images/markdown_img/180601_legend_outside_colormap.svg)
 
 ## wrap-up 
 

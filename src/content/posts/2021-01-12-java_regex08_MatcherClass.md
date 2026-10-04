@@ -6,8 +6,6 @@ tags: ["java", "regex", "programming", "String", "pattren", "Matcher"]
 permalink: "/java/java_regex08_MatcherClass/"
 ---
 
-## Java - Regex - Matcher Class
-
 - Java에서 `Pattern`, `Matcher`를 사용해서, String 내에 존재하는 pattern은 순차적으로 찾고 출력하는 방법을 정리하였습니다.
 
 ```java

@@ -6,8 +6,6 @@ tags: ["paper-summary", "patent"]
 permalink: "/paper-summary/ps_monitoring_newly/"
 ---
 
-## Monitoring Newly Adopted Technologies Using Keyword Based Analysis of Cited Patents
-
 - IEEE access에 2017년에 게재된 논문 
 - [link](https://ieeexplore.ieee.org/document/8085383)
 

@@ -7,7 +7,8 @@ interface Props {
 
 const { currentPage, lastPage, basePath = '/page/' } = Astro.props;
 
-const prevUrl = currentPage > 2 ? `${basePath}${currentPage - 1}/` : currentPage === 2 ? '/' : null;
+const rootPath = basePath === '/page/' ? '/' : basePath;
+const prevUrl = currentPage > 2 ? `${basePath}${currentPage - 1}/` : currentPage === 2 ? rootPath : null;
 const nextUrl = currentPage < lastPage ? `${basePath}${currentPage + 1}/` : null;
 ---
 

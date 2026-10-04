@@ -6,8 +6,6 @@ tags: ["css", "margin", "padding", "border"]
 permalink: "/css/css05_margin_border_padding/"
 ---
 
-## CSS - margin, padding, border
-
 - html의 각 요소는 모두 content, padding, border, margin이라는 값을 가집니다.
   - `content`: 일반적으로 각 요소에 정의하는 `width`, `height`는 content의 너비, 높이를 의미합니다. 이 값은 padding, border, margin에 따라 줄어들거나 커지지 않습니다. 고정되어 있죠.
   - `padding`: content와 border 사이의 간격을 의미합니다.

@@ -1,7 +1,7 @@
 ---
 title: "selenium을 사용해봅시다. - 1편"
 date: 2018-09-10
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "selenium", "web", "web-browser", "automation", "webdriver"]
 permalink: "/python-lib/python_selenium/"
 ---

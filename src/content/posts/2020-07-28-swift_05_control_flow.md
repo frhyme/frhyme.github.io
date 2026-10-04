@@ -6,8 +6,6 @@ tags: ["swift", "tutorial", "switch"]
 permalink: "/swift/swift_05_control_flow/"
 ---
 
-## swift - chapter 5 - Control flow
-
 - `for`, `while`과 같은 loop를 위한 명령어들과, `if`를 사용하여 제어를 배웁니다. 사실 문법 조차 python과 유사하여, 따로 배울 것들은 없습니다.
 
 ### switch

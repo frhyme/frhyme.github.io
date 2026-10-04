@@ -2,11 +2,9 @@
 title: "Thing to Write"
 date: 2021-04-12
 category: "others"
-tags: []
+tags: ["tech"]
 permalink: "/others/google_docs/"
 ---
-
-## Thing to Write
 
 - Google Apps Script를 사용해서 Google Docs를 어떻게 더 잘 사용할 수 있을지에 대해서 정리해봄
 - table 집어넣기 

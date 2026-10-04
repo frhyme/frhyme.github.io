@@ -6,8 +6,6 @@ tags: ["java", "reflection", "class", "programming", "OOP", "modifier"]
 permalink: "/java/java_reflection03_modifier/"
 ---
 
-## Java - Reflection - Modifier
-
 - class 내 field, method등의 Modifier(`public`, `static` 등)을 확인하는 방법을 정리하였습니다.
 - `AAA`는 다음과 같은 field를 가지고 있습니다. 이때, 각 field의 Modifier를 확인하는 방법을 정리하였습니다.
 - 그리고, 이 글에서는 field에 대해서만 처리했지만, constructor를 포함한 모든 method에 대해서도 modifier를 확인할 수 있습니다.

@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Die
 permalink: "/english_study_by_movie_script/Die_Hard_trivia/"
 ---
 
-## 영화 Die Hard 에 관한 사소한 사실들(trivia)
-
 - 얼마전에, 영화 `<Die Hard>`를 다시 봤습니다. 1988년 작이므로 영화가 개봉한 지 어느새 30년이 넘었음에도 그다지 촌스럽다고 생각되지 않고, 오히려 요즘 나오는 웬만한 영화볻, 훨씬 흥미진진하게 영화가 전개되어 꽤 충격적이었습니다. 특히, '브루스 윌리스'의 옛날 모습을 보는 것도, 그리고 '앨런 릭맨'을 다시 보는 것만으로도 즐거움이 있더군요. 
 - 오늘도 IMDB에서 영화 `<Die Hard>`에 관해 정리된 사소한 사실들을 번역하여 정리하였습니다. 
 

@@ -59,7 +59,7 @@ RETURN result
 
 - 또한 아래와 같이 graph에 대해서도 특정한 값을 가져와서 list로 처리할 수도 있죠.
 
-```
+```sql
 MATCH (a:Person { name: 'Keanu Reeves' })
 RETURN [(a)-->(b) WHERE b:Movie | b.released] AS years
 ```

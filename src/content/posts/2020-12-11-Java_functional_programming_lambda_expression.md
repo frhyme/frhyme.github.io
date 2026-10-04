@@ -6,8 +6,6 @@ tags: ["java", "programming", "lambda", "function"]
 permalink: "/java/Java_functional_programming_lambda_expression/"
 ---
 
-## Java - Functional Programming - Lambda Expression
-
 - Java는 OOP, 객체지향 언어입니다. OOP 자체가 꽤나 올드한 패러다임이기는 하고 저도 오랫동안 "그거 옛날 패러다임이잖아?"라면서 무시했던 일들도 있는데, 장난감 레벨에서 뭔가를 만드는 것이 아니라, 거대한 시스템을 만들어야 하는 상황에서는 객체지향적인 접근이 훨씬 효과적일 때가 있습니다. 
 - 그런데, 우리가 처음 프로그래밍을 배울 때를 생각해보면 class부터 생각하지 않습니다. 보통 Function의 단위로 접근하게 되는데, 이는 Class 자체가 처음 프로그래밍을 하는 사람의 입장에서, 그리고 아직 큰 규모의 프로젝트를 경험해본 적이 없는 살마의 입장에서는 매우 어려운 개념이 되기 때문이죠. 저 또한 처음 OOP 수업을 들었을 때, 이 내용이 코딩이라기보다는 '철학'에 가까운 느낌을 받아서 놀라기도 했었습니다.
 - 아무튼, 그래도, 그냥 Function을 하나만 만들면 되는데, 그리고 Functional Programming을 하기 위해서 기존의 OOP는 약간의 충돌이 발생합니다. OOP는 "모든 것이 Object"다, 라는 접근을 가지고 있다면, Functional Programming(FP)은 "모든 것이 Function이다"라는 접근으로 문제를 풀어나가는 것이죠. 무엇이 옳다 그르다는 무의미하고 둘다 필요에 따라서 합당하게 쓰는 것이 필요합니다.
@@ -15,7 +13,7 @@ permalink: "/java/Java_functional_programming_lambda_expression/"
 ## python - Lambda Expression
 
 - lambda expression은 익명함수, 라고 하기도 합니다. python에서 코딩할 때 많이 사용하긴 하는데, 음 별로 좋은 방식은 아닙니다. 갑자기 python얘기지만, 만약 다음처럼 lambda function을 만들게 되면, pylint가 바꾸라고 뭐라고 하죠.
-- 또, 미묘하지만, [python - flake8 - e731 - Do not assign a lambda expression, use a def](https://frhyme.github.io/python-basic/python_flake8_e731/)에 그 차이를 정확하게 작성해두었습니다.
+- 또, 미묘하지만, [python - flake8 - e731 - Do not assign a lambda expression, use a def](/python-basic/python_flake8_e731/)에 그 차이를 정확하게 작성해두었습니다.
 
 ```python
 # BAD Function Definition

@@ -1,12 +1,10 @@
 ---
 title: "konlpy - extract nouns"
 date: 2021-04-18
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "konlpy", "nlp"]
 permalink: "/python-lib/konlpy00_extract_noun/"
 ---
-
-## konlpy - extract nouns
 
 - konlpy를 사용하여 한글 문장에서 noun, pos등을 뽑아내는 방법을 정리합니다.
 - konlpy에는 `Kkma`, `Hannanum`, `Okt(Twitter)`, `Komoran`, `Mecab`와 같은 형태소 분석기(POS tagger)가 존재합니다.

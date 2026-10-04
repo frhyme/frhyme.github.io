@@ -1,7 +1,7 @@
 ---
 title: "python - collections - deque가 list보다 항상 빠른가?"
 date: 2020-12-29
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "collections", "deque", "list", "queue", "stack"]
 permalink: "/python-lib/python_deque_is_faster_than_lst/"
 ---

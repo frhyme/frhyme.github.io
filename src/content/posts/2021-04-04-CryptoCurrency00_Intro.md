@@ -1,12 +1,10 @@
 ---
 title: "CryptoCurrency - Intro"
 date: 2021-04-04
-category: "CyptoCurrency"
+category: "CryptoCurrency"
 tags: ["CyptoCurrency", "Coin", "investment", "upbit"]
 permalink: "/cyptocurrency/CryptoCurrency00_Intro/"
 ---
-
-## CryptoCurrency - Intro
 
 - 얼마전부터 암호화폐에 돈을 조금씩 넣고 있습니다. 그리고 현재까지는 나쁘지 않은 수익을 거두고 있구요. 물론 현재의 시장이 워낙 거품으로 가득차 있어, 현재의 평가액이 어느 순간 물거품이 될지도 모르는 것이므로 다음주 아니 당장 내일이라도 손해를 볼 수도 있는 상황입니다. "현재"는 이득이라는 이야기겠죠. 
 - 화폐라는 것은 우선 복제가 되면 안되고(혹은 희소해야 하고), 그것으로 특정한 재화 혹은 서비스를 살 수 있어야 합니다. 우리가 사용하고 있는 지폐의 경우 그 양이 국가에 의해 통제되고, 

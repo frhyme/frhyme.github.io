@@ -6,8 +6,6 @@ tags: ["database", "sql", "postgresql", "relationalDB"]
 permalink: "/others/old_postgresql00_install_it/"
 ---
 
-## PostegreSQL - install it on Mac
-
 - PostregreSQL을 설치해보기로 했습니다.
 - [PostgreSQL](https://www.enterprisedb.com/postgresql-tutorial-resources-training?cid=438)을 통해 13.1 버전을 다운받아서 설치했는데...비밀번호가 자꾸 안 맞는다고 해서, 지웠습니다.
 - brew를 사용해서 다운받으려고 했지만,

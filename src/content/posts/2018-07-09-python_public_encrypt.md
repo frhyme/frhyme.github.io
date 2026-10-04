@@ -1,7 +1,7 @@
 ---
 title: "python에서 데이터 암호화하기"
 date: 2018-07-09
-category: "python-lib"
+category: "python-libs"
 tags: ["python", "python-lib", "RSA", "AES", "Crypto", "PyCrypto"]
 permalink: "/python-lib/python_public_encrypt/"
 ---

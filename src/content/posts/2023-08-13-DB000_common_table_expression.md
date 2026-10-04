@@ -6,8 +6,6 @@ tags: ["DB", "database", "CTE"]
 permalink: "/database/DB000_common_table_expression/"
 ---
 
-## DB000 common table expression
-
 - When write a query to a table, I have to wrtie very complex query to get the data that I want. In that case, I usually write query like below. This kind of statment using `WITH` is called as Common Table Expression. Sometime it used to compared with View which is managed in DB and stay alive before deleteing it, but Common Table Express which is known as CTE is just alive for just that query. It mean it can't be called after the end of that query.
 
 ```sql

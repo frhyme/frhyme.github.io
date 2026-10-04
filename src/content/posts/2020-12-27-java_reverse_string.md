@@ -6,8 +6,6 @@ tags: ["java", "programming", "string", "StringBuilder"]
 permalink: "/java/java_reverse_string/"
 ---
 
-## Java - StringBuilder를 사용하여 String Reverse
-
 - `StringBuilder`를 사용하여 `String`을 Reverse해줍니다.
 
 ```java

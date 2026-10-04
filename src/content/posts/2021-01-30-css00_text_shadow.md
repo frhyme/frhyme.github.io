@@ -6,8 +6,6 @@ tags: ["css", "css_property", "text_shadow"]
 permalink: "/css/css00_text_shadow/"
 ---
 
-## css property - text shadow 
-
 - css를 사용해서 text의 그림자를 생성할 수 있습니다.
 
 ```css

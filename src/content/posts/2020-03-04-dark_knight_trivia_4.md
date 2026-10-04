@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "dar
 permalink: "/english_study_by_movie_script/dark_knight_trivia_4/"
 ---
 
-## 영화 Dark Knight에 관한 사소한 사실들(trivia) - 4편
-
 - 영화 <다크 나이트>에 관한 사소한 사실을 IMDB에서 가져와서 번역하여 정리합니다. 
 - 오늘은 "히스레저의 죽음"에 관한 이야기입니다. 저를 포함한 많은 사람들은 아마도 그의 죽음이 "조커"와 연결되었다고 생각하지만(또한 그렇게 믿고 싶기도 하지만), 사실은 약물중독 문제였다고 합니다. 물론, 근본적으로 본다면 그의 불면증과 연결되어 있으므로 완전히 연결되어 있지 않다고 보기는 어렵죠.
 

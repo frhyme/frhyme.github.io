@@ -6,8 +6,6 @@ tags: ["python", "conda", "anaconda"]
 permalink: "/python-libs/conda_create_new_env/"
 ---
 
-## conda - 새로운 environment 만들기
-
 - conda를 사용해서 새로운 python 독립 환경을 만들기 위해서는 다음 커맨드를 사용하면 됩니다.
 
 ```bash

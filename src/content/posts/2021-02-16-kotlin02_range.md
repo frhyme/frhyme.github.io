@@ -6,8 +6,6 @@ tags: ["kotlin", "range", "for", "programming"]
 permalink: "/kotlin/kotlin02_range/"
 ---
 
-## Kotlin - Range
-
 - kotlin에서 Range를 정의하는 방법은 대략 다음과 같습니다.
 
 ```kotlin

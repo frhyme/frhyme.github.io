@@ -6,8 +6,6 @@ tags: ["css", "background"]
 permalink: "/css/css02_background_properties/"
 ---
 
-## CSS - background properties
-
 - css의 background의 다양한 설정값을 변경합니다.
   - `background-image`: 요소의 background를 image로 설정합니다.
     - 값을 `linear-gradient(red, blue)`으로 설정하면 gradient로 예쁘게 설정됩니다. 호호.

@@ -6,8 +6,6 @@ tags: ["java", "thread", "programming", "parallelism", "concurrency", "MultiThre
 permalink: "/java/java_Thread06_Interruption/"
 ---
 
-## Java - Thread - Interruption
-
 - 실행되고 있는 Thread를 `.interrupt()`를 사용해서 종료시킬 수 있습니다. 단, 이때 Thread가 `.join()`이나, `.sleep()`를 실행하고 있는 상황이어야 하죠.
 
 ```java

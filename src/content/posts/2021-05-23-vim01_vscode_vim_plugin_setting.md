@@ -6,8 +6,6 @@ tags: ["vim", "vscode"]
 permalink: "/vim/vim01_vscode_vim_plugin_setting/"
 ---
 
-## vim - vscode vim plugin setting
-
 - vs code에서 vim을 사용하기 위하여, [vscode - vim plugin](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)를 설치하여 사용하고 있습니다.
 - 사용중에 약간 번거로움들이 있어서, 설정과 key binding을 아래와 같이 수정하였습니다. 해석하기는 어렵지 않을 거에요.
 - 다만, 한글의 경우 영어에 비해서 늦게 입력되는 감이 있어서, 누른다음 정확히 적용되었는지 확인하려면, space를 눌러주는 것이 좋습니다. 특히, 방향키의 경우는 조금 늦게 입력되는 값이 있으니까 꼭 스페이스를 눌러주는 것이 좋습니다. 

@@ -6,8 +6,6 @@ tags: ["english", "movie", "movie_script", "english_study_by_movie_script", "Sta
 permalink: "/english_study_by_movie_script/StarWars_Episode_VII_Trivia01/"
 ---
 
-## 영화 StarWars Episode 7에 관한 사소한 사실들 - 1편
-
 - `<스타워즈: 깨어난 포스>`에 대한 사소한 이야기를 정리합니다. 한국에서는 스타워즈 시리즈가 그렇게 인기 있지는 않고 동시에 에피소드 8부터는 평가조차 좋지 못하여, 여러 아쉬움이 있기는 합니다만, 그래도 다음 주에는 에피소드 IX 가 개봉하고, 저는 또 기대를 하게 되겠죠.
 - 사실 이제 와서 하는 말이지만, 저는 제가 '스타워즈 시리즈를 좋아했던 것인지' 아니면, '스타워즈 시리즈를 좋아해야 멋있을 것 같아서 좋아하다 보니 이렇게 된 것인지' 거의 구분이 가지 않습니다. 물론, 이제는 그 둘 중 어느 것이든 무슨 상관인가 싶지만요.
 - IMDB에 `<Star Wars: The Force Awakens>`에 대해 작성된 Trivia를 번역하여 정리하였습니다.
