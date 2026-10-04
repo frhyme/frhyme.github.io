@@ -1,0 +1,337 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('posts');
+const totalPosts = allPosts.length;
+
+// Yearly distribution stats
+const yearlyCounts: Record<string, number> = {};
+for (const post of allPosts) {
+  const year = new Date(post.data.date).getFullYear().toString();
+  yearlyCounts[year] = (yearlyCounts[year] || 0) + 1;
+}
+
+const years = ['2017', '2018', '2019', '2020', '2021', '2022', '2023'];
+const maxYearly = Math.max(...Object.values(yearlyCounts));
+
+// Skill Matrix Definition
+const skillDomains = [
+  {
+    category: 'Programming Languages',
+    icon: '💻',
+    skills: [
+      { name: 'Python', count: 621, tag: 'python', primary: true },
+      { name: 'Java', count: 139, tag: 'java', primary: true },
+      { name: 'JavaScript', count: 79, tag: 'javascript', primary: true },
+      { name: 'C', count: 21, tag: 'c' },
+      { name: 'Go', count: 9, tag: 'go' },
+      { name: 'Swift', count: 10, tag: 'swift' },
+    ],
+  },
+  {
+    category: 'Graph & Data Engineering',
+    icon: '🕸',
+    skills: [
+      { name: 'NetworkX', count: 141, tag: 'networkx', primary: true },
+      { name: 'Matplotlib', count: 78, tag: 'matplotlib', primary: true },
+      { name: 'NumPy', count: 69, tag: 'numpy', primary: true },
+      { name: 'Graph Theory', count: 37, tag: 'centrality' },
+      { name: 'Pandas', count: 25, tag: 'pandas' },
+      { name: 'Process Mining', count: 5, tag: 'process-mining' },
+    ],
+  },
+  {
+    category: 'AI & Machine Learning',
+    icon: '🧠',
+    skills: [
+      { name: 'Machine Learning', count: 35, tag: 'machine-learning', primary: true },
+      { name: 'NLP & Text', count: 26, tag: 'nlp', primary: true },
+      { name: 'Deep Learning / CNN', count: 15, tag: 'cnn' },
+      { name: 'Paper Summary', count: 36, cat: 'machine-learning' },
+    ],
+  },
+  {
+    category: 'Dev Tools & Environment',
+    icon: '🛠',
+    skills: [
+      { name: 'Vim / Neovim', count: 54, tag: 'vim', primary: true },
+      { name: 'macOS Automation', count: 52, tag: 'macos', primary: true },
+      { name: 'Git & GitHub', count: 18, tag: 'git' },
+      { name: 'Shell / Bash', count: 13, tag: 'shell' },
+      { name: 'Docker', count: 6, tag: 'docker' },
+      { name: 'Markdown', count: 15, tag: 'markdown' },
+    ],
+  },
+  {
+    category: 'Database & Storage',
+    icon: '🗄',
+    skills: [
+      { name: 'Database & SQL', count: 51, tag: 'database', primary: true },
+      { name: 'SQL Query / CTE', count: 24, tag: 'sql' },
+      { name: 'MongoDB (NoSQL)', count: 10, tag: 'mongodb' },
+      { name: 'JDBC / ORM', count: 12, tag: 'jdbc' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="About & Engineering Portfolio"
+  description="데이터 분석과 소프트웨어 개발 과정에서 축적한 1,427편의 엔지니어링 기록과 핵심 기술 역량 포트폴리오입니다."
+>
+  <div class="space-y-16">
+    <!-- Hero Profile Section -->
+    <section class="relative p-6 sm:p-10 rounded-3xl border border-zinc-200/90 dark:border-zinc-800/90 bg-gradient-to-br from-white via-zinc-50/60 to-blue-50/30 dark:from-zinc-900/70 dark:via-zinc-900/40 dark:to-blue-950/20 shadow-sm overflow-hidden">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+        <div class="flex items-start sm:items-center gap-5">
+          <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-950 flex items-center justify-center font-mono font-bold text-2xl sm:text-3xl shadow-md shrink-0">
+            f_
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
+                Seunghoon Lee
+              </h1>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 font-mono font-medium">
+                @frhyme
+              </span>
+            </div>
+            <p class="text-sm font-semibold text-blue-600 dark:text-blue-400 mt-1">
+              Data & Software Engineer
+            </p>
+            <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+              study, code, re-study · 지속적인 학습과 코드로 문제를 해결합니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2 self-start sm:self-auto">
+          <a
+            href="https://github.com/frhyme"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-3.5 py-2 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-xs font-semibold text-zinc-800 dark:text-zinc-200 hover:border-zinc-400 dark:hover:border-zinc-600 hover:shadow-sm transition-all flex items-center gap-1.5"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            <span>GitHub Profile</span>
+          </a>
+          <a
+            href="/rss.xml"
+            class="px-3.5 py-2 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-xs font-semibold text-zinc-800 dark:text-zinc-200 hover:border-zinc-400 dark:hover:border-zinc-600 hover:shadow-sm transition-all flex items-center gap-1.5"
+          >
+            <span>RSS 피드</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-zinc-200/60 dark:border-zinc-800/60 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-3xl">
+        <p>
+          배운 것을 철저히 코드로 검증하고, 재사용 가능한 지식으로 정제하여 축적해 온 <strong>{totalPosts.toLocaleString()}편의 기술 아카이브</strong>입니다. 
+          특히 <strong>네트워크 및 그래프 분석(NetworkX)</strong>, <strong>파이썬 데이터 파이프라인</strong>, 그리고 <strong>객체지향 엔터프라이즈 자바 아키텍처</strong>에 깊은 관심을 두고 실전 문제를 해결해 왔습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top 3 Core Specialties -->
+    <section>
+      <div class="mb-6">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">🏆</span>
+          <h2 class="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+            Core Specialties (3대 핵심 전문성)
+          </h2>
+        </div>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
+          1,427편의 기술 글 중 가장 집중적으로 연구하고 방대한 지식을 구축한 대표 역량입니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- Specialty 1: NetworkX & Graph Theory -->
+        <div class="p-6 rounded-2xl border border-indigo-500/30 bg-indigo-500/5 dark:bg-indigo-950/20 flex flex-col justify-between hover:border-indigo-500/60 transition-all duration-200">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-2xl p-2.5 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">🕸</span>
+              <span class="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+                182 Articles
+              </span>
+            </div>
+            <h3 class="font-bold text-lg text-zinc-900 dark:text-zinc-100 mb-2">
+              Network & Graph Analysis
+            </h3>
+            <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+              국내 최고 수준의 <strong>NetworkX</strong> 및 복잡계 네트워크 이론 아카이브. 중심성(Centrality), Bipartite, 커뮤니티 탐지 및 그래프 알고리즘 실전 적용.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-indigo-500/20">
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-600 dark:text-indigo-300">#networkx</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-600 dark:text-indigo-300">#centrality</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-600 dark:text-indigo-300">#graph</span>
+          </div>
+        </div>
+
+        <!-- Specialty 2: Python Ecosystem -->
+        <div class="p-6 rounded-2xl border border-blue-500/30 bg-blue-500/5 dark:bg-blue-950/20 flex flex-col justify-between hover:border-blue-500/60 transition-all duration-200">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-2xl p-2.5 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400">🐍</span>
+              <span class="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+                628 Articles
+              </span>
+            </div>
+            <h3 class="font-bold text-lg text-zinc-900 dark:text-zinc-100 mb-2">
+              Python Ecosystem & Data
+            </h3>
+            <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+              파이썬 코어 언어 철학(이터레이터, 데코레이터, OOP)부터 <strong>NumPy, Matplotlib, Pandas</strong> 기반 데이터 엔지니어링 및 시각화 전반.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-blue-500/20">
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-600 dark:text-blue-300">#python</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-600 dark:text-blue-300">#matplotlib</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-600 dark:text-blue-300">#numpy</span>
+          </div>
+        </div>
+
+        <!-- Specialty 3: Enterprise Java & Architecture -->
+        <div class="p-6 rounded-2xl border border-amber-500/30 bg-amber-500/5 dark:bg-amber-950/20 flex flex-col justify-between hover:border-amber-500/60 transition-all duration-200">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-2xl p-2.5 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400">☕</span>
+              <span class="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+                144 Articles
+              </span>
+            </div>
+            <h3 class="font-bold text-lg text-zinc-900 dark:text-zinc-100 mb-2">
+              Enterprise Java & OOP
+            </h3>
+            <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+              객체지향 원칙(OOP), GoF 디자인 패턴(Factory, Strategy 등), 정교한 예외 계층 처리 및 <strong>Kotlin, Scala, JDBC</strong> 백엔드 아키텍처.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-amber-500/20">
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-300">#java</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-300">#oop</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-300">#designpattern</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill & Technology Matrix -->
+    <section>
+      <div class="mb-6">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">📊</span>
+          <h2 class="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+            Technology Stack Matrix
+          </h2>
+        </div>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
+          실제 포스트 기록으로 증명되는 5대 엔지니어링 영역별 기술 스택입니다. 각 기술을 클릭하면 연관 글 모음으로 이동합니다.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        {skillDomains.map((domain) => (
+          <div class="p-5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-zinc-900/40">
+            <div class="flex items-center gap-2 font-bold text-sm text-zinc-900 dark:text-zinc-100 mb-3.5">
+              <span>{domain.icon}</span>
+              <span>{domain.category}</span>
+            </div>
+
+            <div class="flex flex-wrap gap-2.5">
+              {domain.skills.map((skill) => {
+                const href = skill.tag ? `/tags/${skill.tag}/` : `/categories/${skill.cat}/`;
+                return (
+                  <a
+                    href={href}
+                    class:list={[
+                      "group px-3 py-1.5 rounded-xl border text-xs font-medium transition-all duration-200 flex items-center gap-1.5",
+                      skill.primary
+                        ? "bg-blue-50/60 dark:bg-blue-950/40 border-blue-200 dark:border-blue-900/60 text-blue-700 dark:text-blue-300 hover:border-blue-400 dark:hover:border-blue-400 hover:shadow-xs"
+                        : "bg-white dark:bg-zinc-800/60 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 dark:hover:border-zinc-500"
+                    ]}
+                  >
+                    <span>{skill.name}</span>
+                    <span class="text-[11px] font-mono px-1.5 py-0.2 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 font-semibold group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                      {skill.count}
+                    </span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Growth & Activity Timeline (2017 - 2023) -->
+    <section>
+      <div class="mb-6">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">📈</span>
+          <h2 class="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+            7-Year Growth & Study Timeline
+          </h2>
+        </div>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
+          2017년부터 2023년까지 7년간 지속적으로 지식을 축적해 온 연도별 기록 그래프입니다.
+        </p>
+      </div>
+
+      <div class="p-6 sm:p-8 rounded-3xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-zinc-900/40 space-y-4">
+        {years.map((year) => {
+          const count = yearlyCounts[year] || 0;
+          const percent = Math.round((count / maxYearly) * 100);
+          const isPeak = count === maxYearly;
+
+          return (
+            <div class="flex items-center gap-3 sm:gap-4 text-xs">
+              <span class="font-mono font-bold w-12 text-zinc-700 dark:text-zinc-300 shrink-0">
+                {year}
+              </span>
+
+              <div class="flex-1 bg-zinc-100 dark:bg-zinc-800/80 rounded-full h-5 overflow-hidden p-0.5">
+                <div
+                  class:list={[
+                    "h-full rounded-full transition-all duration-500 flex items-center justify-end pr-2",
+                    isPeak
+                      ? "bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold"
+                      : "bg-blue-500/70 dark:bg-blue-600/60 text-white"
+                  ]}
+                  style={`width: ${Math.max(percent, 8)}%`}
+                >
+                  {percent >= 20 && (
+                    <span class="text-[10px] font-mono leading-none">
+                      {count}
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <div class="w-24 text-right font-mono text-zinc-500 dark:text-zinc-400 shrink-0 text-[11px] flex items-center justify-end gap-1.5">
+                <span>{count} posts</span>
+                {isPeak && (
+                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 font-semibold border border-amber-500/20">
+                    Peak
+                  </span>
+                )}
+              </div>
+            </div>
+          );
+        })}
+
+        <div class="mt-6 pt-4 border-t border-zinc-200/60 dark:border-zinc-800/60 flex items-center justify-between text-xs text-zinc-500">
+          <span>총 7년간의 연속적 학습 기록</span>
+          <span class="font-mono font-bold text-zinc-800 dark:text-zinc-200 text-sm">
+            누적 {totalPosts.toLocaleString()}편 아카이브
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

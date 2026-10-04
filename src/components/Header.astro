@@ -61,6 +61,15 @@ const currentPath = Astro.url.pathname;
       >
         Tags
       </a>
+      <a
+        href="/about/"
+        class:list={[
+          "px-2.5 py-1.5 rounded-lg hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all",
+          currentPath.startsWith('/about') && "text-blue-600 dark:text-blue-400 bg-zinc-100 dark:bg-zinc-900 font-semibold"
+        ]}
+      >
+        About
+      </a>
     </nav>
 
     <!-- Right utilities -->
