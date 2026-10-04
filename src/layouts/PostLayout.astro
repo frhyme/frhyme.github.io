@@ -66,23 +66,37 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
     <article class="lg:col-span-8 min-w-0" data-pagefind-body>
       <!-- Post Meta Header -->
       <header class="mb-8 pb-6 border-b border-zinc-200 dark:border-zinc-800">
-        <div class="flex flex-wrap items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 mb-3">
-          <time datetime={formattedDate}>{formattedDate}</time>
-          <span>&bull;</span>
-          <a
-            href={`/categories/${category.toLowerCase()}/`}
-            class="font-semibold text-blue-600 dark:text-blue-400 hover:underline uppercase tracking-wider"
+        <div class="flex flex-wrap items-center justify-between gap-3 text-xs text-zinc-500 dark:text-zinc-400 mb-3">
+          <div class="flex flex-wrap items-center gap-2">
+            <time datetime={formattedDate}>{formattedDate}</time>
+            <span>&bull;</span>
+            <a
+              href={`/categories/${category.toLowerCase()}/`}
+              class="font-semibold text-blue-600 dark:text-blue-400 hover:underline uppercase tracking-wider"
+            >
+              {category}
+            </a>
+            {readingTime && (
+              <>
+                <span>&bull;</span>
+                <span class="text-zinc-500 dark:text-zinc-400 flex items-center gap-1">
+                  ⏱ 약 {readingTime}분 소요
+                </span>
+              </>
+            )}
+          </div>
+
+          <button
+            id="share-btn"
+            type="button"
+            class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 hover:border-zinc-300 dark:hover:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 text-[11px] font-medium transition-all cursor-pointer shadow-2xs"
+            title="글 주소 복사하기"
           >
-            {category}
-          </a>
-          {readingTime && (
-            <>
-              <span>&bull;</span>
-              <span class="text-zinc-500 dark:text-zinc-400 flex items-center gap-1">
-                ⏱ 약 {readingTime}분 소요
-              </span>
-            </>
-          )}
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+            </svg>
+            <span>URL 복사</span>
+          </button>
         </div>
 
         <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 leading-tight">
@@ -237,13 +251,79 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
     </svg>
   </button>
 
+  <!-- Toast Notification Container -->
+  <div
+    id="toast-notification"
+    class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-2xl bg-zinc-900/95 dark:bg-zinc-100/95 text-white dark:text-zinc-900 text-xs font-semibold shadow-xl border border-zinc-700/50 dark:border-zinc-300/50 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 transform translate-y-3 flex items-center gap-2"
+  >
+    <svg class="w-4 h-4 text-emerald-400 dark:text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+    </svg>
+    <span id="toast-message">글 주소가 클립보드에 복사되었습니다.</span>
+  </div>
+
+  <!-- Image Zoom / Lightbox Modal -->
+  <div
+    id="image-lightbox"
+    class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4 sm:p-8 cursor-zoom-out"
+    aria-hidden="true"
+  >
+    <img
+      id="lightbox-img"
+      src=""
+      alt=""
+      class="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl transition-transform duration-300 scale-95"
+    />
+    <button
+      id="lightbox-close"
+      type="button"
+      class="absolute top-4 right-4 sm:top-6 sm:right-6 p-2 rounded-full bg-zinc-800/80 hover:bg-zinc-700 text-white transition-colors cursor-pointer"
+      aria-label="Close image modal"
+    >
+      <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
   <script is:inline>
     (() => {
-      // 1. Code block copy buttons
+      // 0. Toast Helper
+      let toastTimer;
+      function showToast(message) {
+        const toast = document.getElementById('toast-notification');
+        const toastMsg = document.getElementById('toast-message');
+        if (toast && toastMsg) {
+          toastMsg.textContent = message;
+          toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
+          toast.classList.add('opacity-100', 'translate-y-0');
+          clearTimeout(toastTimer);
+          toastTimer = setTimeout(() => {
+            toast.classList.remove('opacity-100', 'translate-y-0');
+            toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-3');
+          }, 2500);
+        }
+      }
+
+      // 1. Code blocks: copy buttons & language tags
       const pres = document.querySelectorAll('.prose pre');
       pres.forEach((pre) => {
         pre.style.position = 'relative';
 
+        // Language tag badge
+        const lang = pre.dataset.language || (pre.className.match(/language-(\w+)/) ? pre.className.match(/language-(\w+)/)[1] : '');
+        if (lang && lang !== 'plaintext' && lang !== 'text') {
+          pre.style.paddingTop = '2.3rem';
+          const langBadge = document.createElement('span');
+          langBadge.className =
+            'code-lang-badge absolute top-2 left-3 px-2 py-0.5 text-[10px] font-mono font-semibold rounded-md border border-zinc-700/80 bg-zinc-800/80 text-zinc-400 select-none uppercase tracking-wider pointer-events-none';
+          langBadge.textContent = lang;
+          pre.appendChild(langBadge);
+        } else {
+          pre.style.paddingTop = '2rem';
+        }
+
+        // Copy button
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.setAttribute('aria-label', 'Copy code');
@@ -267,6 +347,7 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
               </svg>
               <span class="text-emerald-400 font-semibold">Copied!</span>
             `;
+            showToast('코드가 클립보드에 복사되었습니다.');
             setTimeout(() => {
               btn.innerHTML = `
                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -284,7 +365,63 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
         pre.appendChild(btn);
       });
 
-      // 2. Back to top button
+      // 2. Share / URL Copy button
+      const shareBtn = document.getElementById('share-btn');
+      if (shareBtn) {
+        shareBtn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(window.location.href);
+            showToast('글 주소가 클립보드에 복사되었습니다.');
+          } catch (e) {
+            showToast('주소 복사에 실패했습니다.');
+          }
+        });
+      }
+
+      // 3. Image Zoom / Lightbox modal
+      const lightbox = document.getElementById('image-lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxClose = document.getElementById('lightbox-close');
+
+      const proseImages = document.querySelectorAll('.prose img');
+      proseImages.forEach((img) => {
+        img.classList.add('cursor-zoom-in', 'hover:opacity-95', 'transition-opacity');
+        img.addEventListener('click', () => {
+          if (lightbox && lightboxImg) {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt || 'Zoomed image';
+            lightbox.classList.remove('opacity-0', 'pointer-events-none');
+            lightbox.classList.add('opacity-100');
+            lightboxImg.classList.remove('scale-95');
+            lightboxImg.classList.add('scale-100');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      function closeLightbox() {
+        if (lightbox && lightboxImg) {
+          lightbox.classList.remove('opacity-100');
+          lightbox.classList.add('opacity-0', 'pointer-events-none');
+          lightboxImg.classList.remove('scale-100');
+          lightboxImg.classList.add('scale-95');
+          document.body.style.overflow = '';
+        }
+      }
+
+      lightbox?.addEventListener('click', (e) => {
+        if (e.target !== lightboxImg) {
+          closeLightbox();
+        }
+      });
+      lightboxClose?.addEventListener('click', closeLightbox);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox && !lightbox.classList.contains('opacity-0')) {
+          closeLightbox();
+        }
+      });
+
+      // 4. Back to top button
       const topBtn = document.getElementById('back-to-top');
       if (topBtn) {
         window.addEventListener('scroll', () => {
@@ -302,7 +439,7 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
         });
       }
 
-      // 3. Reading progress bar
+      // 5. Reading progress bar
       const progressEl = document.getElementById('reading-progress');
       if (progressEl) {
         window.addEventListener('scroll', () => {
@@ -314,7 +451,7 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
         }, { passive: true });
       }
 
-      // 4. External links target="_blank"
+      // 6. External links target="_blank"
       const proseLinks = document.querySelectorAll('.prose a');
       proseLinks.forEach((link) => {
         if (link.hostname && link.hostname !== window.location.hostname) {
