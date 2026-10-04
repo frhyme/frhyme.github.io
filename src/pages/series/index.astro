@@ -1,0 +1,203 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('posts');
+
+const tracks = [
+  {
+    id: 'networkx',
+    title: 'NetworkX & 그래프 데이터 사이언스',
+    subtitle: 'Graph Data Science & Complex Network Analysis',
+    icon: '🕸',
+    color: 'indigo',
+    badge: '국내 최다 140+편 규모',
+    count: 143,
+    level: '기초 ~ 고급',
+    description:
+      '국내에서 찾아보기 힘든 수준의 NetworkX 심층 튜토리얼입니다. 노드/엣지 속성 제어부터 이분 그래프, 중심성(Centrality) 분석, 커뮤니티 구조 분석, 고품질 시각화까지 전 과정을 다룹니다.',
+    modules: [
+      { step: '01', title: '그래프 기초 생성, 노드·엣지 속성 조작 및 필터링' },
+      { step: '02', title: 'Bipartite(이분 그래프), MultiGraph 및 서브그래프' },
+      { step: '03', title: '중심성(Centrality) 지표 분석 (Degree, Betweenness, Closeness 등)' },
+      { step: '04', title: '구조적 등위성(Structural Equivalence)과 커뮤니티 탐지' },
+      { step: '05', title: 'Matplotlib 기반 고품질 네트워크 레이아웃 시각화 및 내보내기' },
+    ],
+    primaryTag: 'networkx',
+    targetUrl: '/tags/networkx/',
+  },
+  {
+    id: 'python',
+    title: 'Python Deep-Dive & 내부 메커니즘',
+    subtitle: 'Python Core Architecture & Performance',
+    icon: '🐍',
+    color: 'blue',
+    badge: '누적 620+편 아카이브',
+    count: 621,
+    level: '중급 ~ 고급',
+    description:
+      '단순 문법 학습을 넘어 파이썬 런타임의 동작 원리와 고급 테크닉을 다룹니다. 이터레이터/제너레이터 프로토콜, 데코레이터, GIL과 동시성 모델, NumPy 벡터 연산 최적화를 학습합니다.',
+    modules: [
+      { step: '01', title: '이터레이터, 제너레이터 & 컴프리헨션 내부 동작 원리' },
+      { step: '02', title: '일급 객체 함수와 데코레이터(Decorator) 실전 패턴' },
+      { step: '03', title: '파이썬 OOP, 덕 타이핑 및 매직 메서드(__dunder__)' },
+      { step: '04', title: '멀티스레딩, 멀티프로세싱 및 GIL(Global Interpreter Lock) 심층 분석' },
+      { step: '05', title: 'NumPy 벡터 연산 최적화와 Matplotlib 커스텀 시각화' },
+    ],
+    primaryTag: 'python',
+    targetUrl: '/tags/python/',
+  },
+  {
+    id: 'algorithm',
+    title: '자료구조 & 코딩 테스트 문제 해결 패턴',
+    subtitle: 'Data Structures & Problem Solving Patterns',
+    icon: '⚡',
+    color: 'amber',
+    badge: '핵심 90+편 수록',
+    count: 89,
+    level: '기초 ~ 중급',
+    description:
+      '실전 문제 해결력을 기르기 위한 자료구조 구현과 알고리즘 핵심 패턴 정리입니다. 트리, 그래프, 동적 계획법(DP), 백트래킹의 대표 문제와 해결 전략을 체계적으로 다룹니다.',
+    modules: [
+      { step: '01', title: '연결 리스트(Linked List), 스택, 큐, 힙 기본기 완성' },
+      { step: '02', title: '그래프 & 트리 완전 탐색 (DFS, BFS, 백트래킹)' },
+      { step: '03', title: '동적 계획법 (Dynamic Programming) 핵심 상태 정의와 최적화' },
+      { step: '04', title: '투 포인터, 슬라이딩 윈도우 및 문자열 처리 기법' },
+    ],
+    primaryTag: 'algorithm',
+    targetUrl: '/categories/algorithm/',
+  },
+  {
+    id: 'java',
+    title: 'Java & 엔터프라이즈 객체지향 아키텍처',
+    subtitle: 'Java OOP, JVM & Database Engineering',
+    icon: '☕',
+    color: 'orange',
+    badge: '총 140+편 수록',
+    count: 139,
+    level: '기초 ~ 중급',
+    description:
+      '객체지향 설계 원칙(SOLID), JVM 런타임 메모리 모델, 실전 디자인 패턴, 그리고 SQL/데이터베이스 인터랙션을 학습하여 견고하고 확장 가능한 소프트웨어를 작성하는 방법을 다룹니다.',
+    modules: [
+      { step: '01', title: '객체지향 5대 설계 원칙(SOLID)과 유지보수 가능한 코드 작성' },
+      { step: '02', title: '실전 디자인 패턴 (싱글톤, 팩토리, 옵저버, 전략 패턴 등)' },
+      { step: '03', title: 'JVM 메모리 구조 (Stack/Heap) 및 가비지 컬렉션(GC) 동작' },
+      { step: '04', title: 'JDBC 영속성 계층과 SQL 쿼리 최적화' },
+    ],
+    primaryTag: 'java',
+    targetUrl: '/categories/java/',
+  },
+];
+---
+
+<BaseLayout
+  title="Curated Series & Learning Tracks"
+  description="방대한 1,427편의 기술 블로그 중 핵심 전문 영역(NetworkX, Python, Algorithm, Java)을 체계적으로 학습할 수 있는 큐레이션 시리즈 로드맵입니다."
+>
+  <div class="space-y-12">
+    <!-- Header Hero -->
+    <header class="pb-8 border-b border-zinc-200/80 dark:border-zinc-800/80">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/5 text-blue-600 dark:text-blue-400 text-xs font-mono font-medium mb-4">
+        <span>CURATED LEARNING PATHS</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
+        기술 분야별 큐레이션 시리즈 & 로드맵
+      </h1>
+      <p class="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 mt-2 max-w-2xl leading-relaxed">
+        누적 {allPosts.length.toLocaleString()}편의 기술 아카이브 중, 핵심 전문성을 집중적으로 조망할 수 있는 4대 주력 시리즈입니다. 각 트랙의 커리큘럼을 따라 체계적으로 학습하실 수 있습니다.
+      </p>
+    </header>
+
+    <!-- Track Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+      {tracks.map((track) => (
+        <article class="p-6 sm:p-7 rounded-3xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white/80 dark:bg-zinc-900/40 hover:border-blue-500/50 hover:shadow-lg transition-all flex flex-col justify-between">
+          <div>
+            <!-- Header Badges -->
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <span class="text-3xl p-2.5 rounded-2xl bg-zinc-100 dark:bg-zinc-800/80">
+                {track.icon}
+              </span>
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded-full text-xs font-mono font-semibold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+                  {track.badge}
+                </span>
+                <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400">
+                  {track.level}
+                </span>
+              </div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
+              {track.title}
+            </h2>
+            <p class="text-xs font-mono text-zinc-400 dark:text-zinc-500 mt-0.5 mb-3">
+              {track.subtitle}
+            </p>
+
+            <!-- Description -->
+            <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+              {track.description}
+            </p>
+
+            <!-- Curriculum Modules -->
+            <div class="space-y-2 mb-6 pt-4 border-t border-zinc-100 dark:border-zinc-800/60">
+              <h3 class="text-[11px] font-mono font-bold uppercase tracking-wider text-zinc-400 mb-2">
+                Curriculum Syllabus
+              </h3>
+              {track.modules.map((m) => (
+                <div class="flex items-start gap-2.5 text-xs text-zinc-700 dark:text-zinc-300">
+                  <span class="font-mono text-[11px] font-semibold text-blue-600 dark:text-blue-400 shrink-0 mt-0.5">
+                    {m.step}.
+                  </span>
+                  <span class="leading-snug">{m.title}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Bottom CTA Button -->
+          <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/60 flex items-center justify-between">
+            <span class="text-xs text-zinc-400 font-mono">
+              아카이브 {track.count}편 수록
+            </span>
+            <a
+              href={track.targetUrl}
+              class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-zinc-900 dark:bg-zinc-100 hover:bg-blue-600 dark:hover:bg-blue-500 text-white dark:text-zinc-950 dark:hover:text-white text-xs font-semibold shadow-xs transition-all group"
+            >
+              <span>트랙 포스트 전체보기</span>
+              <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <!-- Bottom Help Banner -->
+    <div class="p-6 rounded-2xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/60 dark:bg-zinc-900/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div>
+        <h4 class="font-bold text-zinc-800 dark:text-zinc-200">
+          원하는 기술 주제를 더 자유롭게 찾아보고 싶으신가요?
+        </h4>
+        <p class="text-zinc-500 dark:text-zinc-400 mt-0.5">
+          블로그의 모든 포스트는 카테고리와 키워드 태그로 체계적으로 분류되어 있습니다.
+        </p>
+      </div>
+      <div class="flex items-center gap-2 shrink-0">
+        <a
+          href="/categories/"
+          class="px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:border-blue-500 hover:text-blue-600 font-medium transition-colors"
+        >
+          카테고리 전체보기
+        </a>
+        <a
+          href="/tags/"
+          class="px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:border-blue-500 hover:text-blue-600 font-medium transition-colors"
+        >
+          태그 클라우드
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

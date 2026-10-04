@@ -20,6 +20,29 @@ export async function getStaticPaths() {
     (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
   );
 
+  const postMetaList = sortedPosts.map((p) => ({
+    id: p.id,
+    title: p.data.title,
+    url: getPostUrl(p),
+    category: p.data.category || 'others',
+    tags: (p.data.tags || []).map((t: string) => t.toLowerCase().trim()).filter(Boolean),
+    date: p.data.date ? new Date(p.data.date).toISOString().split('T')[0] : '',
+  }));
+
+  // Inverted index by tag and category for fast related post scoring
+  const tagIndex = new Map<string, number[]>();
+  const catIndex = new Map<string, number[]>();
+
+  postMetaList.forEach((p, idx) => {
+    p.tags.forEach((tag) => {
+      if (!tagIndex.has(tag)) tagIndex.set(tag, []);
+      tagIndex.get(tag)!.push(idx);
+    });
+    const cat = p.category.toLowerCase();
+    if (!catIndex.has(cat)) catIndex.set(cat, []);
+    catIndex.get(cat)!.push(idx);
+  });
+
   return sortedPosts.map((post, index) => {
     // Determine route slug from permalink or filename
     let routeSlug: string;
@@ -56,18 +79,48 @@ export async function getStaticPaths() {
           }
         : null;
 
+    // Calculate related posts using tag/category overlap
+    const currentMeta = postMetaList[index];
+    const scoreMap = new Map<number, number>();
+
+    currentMeta.tags.forEach((tag) => {
+      const matchingIndices = tagIndex.get(tag) || [];
+      matchingIndices.forEach((idx) => {
+        if (idx !== index) {
+          scoreMap.set(idx, (scoreMap.get(idx) || 0) + 3);
+        }
+      });
+    });
+
+    const sameCatIndices = catIndex.get(currentMeta.category.toLowerCase()) || [];
+    sameCatIndices.forEach((idx) => {
+      if (idx !== index) {
+        scoreMap.set(idx, (scoreMap.get(idx) || 0) + 1);
+      }
+    });
+
+    const relatedPosts = Array.from(scoreMap.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 3)
+      .map(([idx]) => ({
+        title: postMetaList[idx].title,
+        url: postMetaList[idx].url,
+        category: postMetaList[idx].category,
+        date: postMetaList[idx].date,
+      }));
+
     return {
       params: {
         slug: routeSlug,
       },
-      props: { post, identifier, prevPost, nextPost },
+      props: { post, identifier, prevPost, nextPost, relatedPosts },
     };
   });
 }
 
 import { cleanExcerpt, getReadingTime } from '../utils/excerpt';
 
-const { post, identifier, prevPost, nextPost } = Astro.props;
+const { post, identifier, prevPost, nextPost, relatedPosts } = Astro.props;
 const { Content, headings } = await render(post);
 
 const description = post.data.description || cleanExcerpt(post.body);
@@ -83,6 +136,7 @@ const readingTimeMinutes = getReadingTime(post.body);
   slug={identifier}
   prevPost={prevPost}
   nextPost={nextPost}
+  relatedPosts={relatedPosts}
   readingTime={readingTimeMinutes}
   description={description}
 >

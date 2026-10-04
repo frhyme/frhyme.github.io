@@ -44,6 +44,15 @@ const currentPath = Astro.url.pathname;
         <span class="hidden sm:inline">☕ </span>Life
       </a>
       <a
+        href="/series/"
+        class:list={[
+          "hidden sm:inline px-2.5 py-1.5 rounded-lg hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all",
+          currentPath.startsWith('/series') && "text-blue-600 dark:text-blue-400 bg-zinc-100 dark:bg-zinc-900 font-semibold"
+        ]}
+      >
+        Series
+      </a>
+      <a
         href="/categories/"
         class:list={[
           "hidden md:inline px-2.5 py-1.5 rounded-lg hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all",
