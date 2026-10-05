@@ -51,6 +51,46 @@ const {
 const formattedDate = date ? new Date(date).toISOString().split('T')[0] : '';
 const currentUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
+
+// Check if post belongs to one of the 4 signature curated series
+const lowerCategory = (category || '').toLowerCase();
+const tagSet = new Set((tags || []).map((t) => t.toLowerCase().trim()));
+
+let seriesInfo: { title: string; subtitle: string; icon: string; url: string; count: string } | null = null;
+
+if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite')) {
+  seriesInfo = {
+    title: 'NetworkX & 그래프 데이터 사이언스 시리즈',
+    subtitle: '노드·엣지 제어부터 중심성 지표, 커뮤니티 탐지 및 네트워크 시각화 로드맵',
+    icon: '🕸',
+    url: '/series/',
+    count: '140+편',
+  };
+} else if (lowerCategory === 'algorithm' || tagSet.has('algorithm') || tagSet.has('tree') || tagSet.has('linkedlist') || tagSet.has('dp')) {
+  seriesInfo = {
+    title: '자료구조 & 코딩 테스트 문제 해결 패턴',
+    subtitle: '대표적인 자료구조 구현과 빈출 코딩 테스트 핵심 알고리즘 패턴',
+    icon: '⚡',
+    url: '/series/',
+    count: '90+편',
+  };
+} else if (lowerCategory === 'java' || tagSet.has('java')) {
+  seriesInfo = {
+    title: 'Java & 엔터프라이즈 객체지향 아키텍처',
+    subtitle: '객체지향 설계 원칙(SOLID), JVM 메모리 구조, 실전 디자인 패턴과 JDBC',
+    icon: '☕',
+    url: '/series/',
+    count: '140+편',
+  };
+} else if (lowerCategory === 'python' || tagSet.has('python')) {
+  seriesInfo = {
+    title: 'Python Deep-Dive & 내부 메커니즘 시리즈',
+    subtitle: '파이썬 런타임의 동작 원리, 이터레이터, 데코레이터 및 동시성 최적화',
+    icon: '🐍',
+    url: '/series/',
+    count: '620+편',
+  };
+}
 ---
 
 <BaseLayout title={title} description={description} articleDate={formattedDate}>
@@ -116,6 +156,37 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
           </div>
         )}
       </header>
+
+      <!-- Series Roadmap Track Banner -->
+      {seriesInfo && (
+        <aside class="mb-8 p-4 rounded-2xl border border-blue-500/20 bg-gradient-to-r from-blue-50/50 via-indigo-50/20 to-transparent dark:from-blue-950/20 dark:via-indigo-950/10 dark:to-transparent text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-2xs">
+          <div class="flex items-center gap-3">
+            <span class="text-xl p-2 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 shrink-0">
+              {seriesInfo.icon}
+            </span>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-zinc-900 dark:text-zinc-100 text-xs sm:text-sm">
+                  {seriesInfo.title}
+                </span>
+                <span class="px-2 py-0.2 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 text-[10px] font-mono font-semibold">
+                  {seriesInfo.count}
+                </span>
+              </div>
+              <p class="text-zinc-500 dark:text-zinc-400 mt-0.5 line-clamp-1">
+                {seriesInfo.subtitle}
+              </p>
+            </div>
+          </div>
+          <a
+            href={seriesInfo.url}
+            class="inline-flex items-center gap-1 font-semibold text-blue-600 dark:text-blue-400 hover:underline shrink-0 self-start sm:self-auto text-xs group"
+          >
+            <span>전체 로드맵 & 커리큘럼</span>
+            <span class="group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+          </a>
+        </aside>
+      )}
 
       <!-- Mobile Table of Contents (Collapsible) -->
       {filteredHeadings.length > 0 && (
