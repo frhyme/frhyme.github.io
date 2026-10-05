@@ -24,6 +24,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         resetFilters: false,
         showSubResults: true,
       });
+
+      // Automatically execute search if query parameter ?q= is present
+      const urlParams = new URLSearchParams(window.location.search);
+      const query = urlParams.get('q');
+      if (query) {
+        const intervalId = setInterval(() => {
+          const input = document.querySelector('.pagefind-ui__search-input');
+          if (input) {
+            clearInterval(intervalId);
+            input.value = query;
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+        }, 50);
+        setTimeout(() => clearInterval(intervalId), 3000);
+      }
     });
   </script>
 </BaseLayout>
