@@ -30,6 +30,16 @@ interface Props {
     category: string;
     date: string;
   }>;
+  seriesNav?: {
+    seriesId: string;
+    seriesName: string;
+    seriesUrl: string;
+    currentIndex: number;
+    totalCount: number;
+    prevPost: { title: string; url: string } | null;
+    nextPost: { title: string; url: string } | null;
+  } | null;
+  filePath?: string;
   readingTime?: number;
   description?: string;
 }
@@ -44,6 +54,8 @@ const {
   prevPost,
   nextPost,
   relatedPosts = [],
+  seriesNav,
+  filePath,
   readingTime,
   description,
 } = Astro.props;
@@ -71,7 +83,7 @@ if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite'
     title: 'NetworkX & 그래프 데이터 사이언스 시리즈',
     subtitle: '노드·엣지 제어부터 중심성 지표, 커뮤니티 탐지 및 네트워크 시각화 로드맵',
     icon: '🕸',
-    url: '/series/',
+    url: '/series/networkx/',
     count: '140+편',
   };
 } else if (lowerCategory === 'algorithm' || tagSet.has('algorithm') || tagSet.has('tree') || tagSet.has('linkedlist') || tagSet.has('dp')) {
@@ -79,7 +91,7 @@ if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite'
     title: '자료구조 & 코딩 테스트 문제 해결 패턴',
     subtitle: '대표적인 자료구조 구현과 빈출 코딩 테스트 핵심 알고리즘 패턴',
     icon: '⚡',
-    url: '/series/',
+    url: '/series/algorithm/',
     count: '90+편',
   };
 } else if (lowerCategory === 'java' || tagSet.has('java')) {
@@ -87,7 +99,7 @@ if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite'
     title: 'Java & 엔터프라이즈 객체지향 아키텍처',
     subtitle: '객체지향 설계 원칙(SOLID), JVM 메모리 구조, 실전 디자인 패턴과 JDBC',
     icon: '☕',
-    url: '/series/',
+    url: '/series/java/',
     count: '140+편',
   };
 } else if (lowerCategory === 'python' || tagSet.has('python')) {
@@ -95,13 +107,21 @@ if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite'
     title: 'Python Deep-Dive & 내부 메커니즘 시리즈',
     subtitle: '파이썬 런타임의 동작 원리, 이터레이터, 데코레이터 및 동시성 최적화',
     icon: '🐍',
-    url: '/series/',
+    url: '/series/python/',
     count: '620+편',
   };
 }
+
+// Breadcrumbs for Google SEO Rich Snippets and user navigation
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: category, url: `/categories/${category.toLowerCase()}/` },
+  ...(seriesInfo ? [{ name: seriesInfo.title.split(' ')[0] + ' 시리즈', url: seriesInfo.url }] : []),
+  { name: title, url: currentUrl },
+];
 ---
 
-<BaseLayout title={title} description={description} articleDate={formattedDate}>
+<BaseLayout title={title} description={description} articleDate={formattedDate} breadcrumbs={breadcrumbs}>
   <!-- Top Reading Progress Bar -->
   <div
     id="reading-progress"
@@ -114,6 +134,23 @@ if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite'
     <article class="lg:col-span-8 min-w-0" data-pagefind-body>
       <!-- Post Meta Header -->
       <header class="mb-8 pb-6 border-b border-zinc-200 dark:border-zinc-800">
+        <!-- Breadcrumb trail -->
+        <nav class="flex items-center space-x-1.5 text-xs text-zinc-400 mb-3 font-medium flex-wrap" aria-label="Breadcrumb">
+          <a href="/" class="hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors">Home</a>
+          <span>/</span>
+          <a href={`/categories/${category.toLowerCase()}/`} class="hover:text-zinc-700 dark:hover:text-zinc-200 uppercase tracking-wider transition-colors">
+            {category}
+          </a>
+          {seriesInfo && (
+            <>
+              <span>/</span>
+              <a href={seriesInfo.url} class="hover:text-blue-600 dark:hover:text-blue-400 text-blue-600/90 dark:text-blue-400/90 transition-colors">
+                {seriesInfo.title.split(' ')[0]} 시리즈
+              </a>
+            </>
+          )}
+        </nav>
+
         <div class="flex flex-wrap items-center justify-between gap-3 text-xs text-zinc-500 dark:text-zinc-400 mb-3">
           <div class="flex flex-wrap items-center gap-2">
             <time datetime={formattedDate}>{formattedDate}</time>
@@ -241,9 +278,68 @@ if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite'
         <slot />
       </div>
 
+      <!-- Series Sequential Track Navigator -->
+      {seriesNav && (
+        <aside class="my-8 p-4 sm:p-5 rounded-2xl border border-blue-500/25 bg-blue-50/40 dark:bg-blue-950/20 shadow-2xs">
+          <div class="flex items-center justify-between text-xs mb-3 pb-2.5 border-b border-blue-500/10">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-blue-600 dark:text-blue-400">
+                {seriesNav.seriesName}
+              </span>
+              <span class="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 font-mono text-[10px] font-semibold">
+                {seriesNav.currentIndex} / {seriesNav.totalCount}편
+              </span>
+            </div>
+            <a href={seriesNav.seriesUrl} class="text-zinc-500 hover:text-blue-600 dark:text-zinc-400 dark:hover:text-blue-400 font-medium transition-colors">
+              전체 커리큘럼 보기 &rarr;
+            </a>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            {seriesNav.prevPost ? (
+              <a href={seriesNav.prevPost.url} class="p-3 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/60 hover:border-blue-500 transition-colors flex flex-col justify-between group">
+                <span class="text-zinc-400 font-medium mb-1">&larr; 시리즈 이전 편</span>
+                <span class="font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-1">{seriesNav.prevPost.title}</span>
+              </a>
+            ) : (
+              <div class="p-3 rounded-xl border border-dashed border-zinc-200 dark:border-zinc-800 text-zinc-400 text-center flex items-center justify-center">
+                시리즈의 첫 번째 글입니다 🚀
+              </div>
+            )}
+            {seriesNav.nextPost ? (
+              <a href={seriesNav.nextPost.url} class="p-3 rounded-xl border border-blue-500/40 bg-white/90 dark:bg-zinc-900/80 hover:border-blue-600 transition-colors flex flex-col justify-between sm:text-right group">
+                <span class="text-blue-600 dark:text-blue-400 font-semibold mb-1">시리즈 다음 편 정주행 &rarr;</span>
+                <span class="font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-1">{seriesNav.nextPost.title}</span>
+              </a>
+            ) : (
+              <div class="p-3 rounded-xl border border-dashed border-zinc-200 dark:border-zinc-800 text-zinc-400 text-center flex items-center justify-center sm:text-right">
+                시리즈의 마지막 편입니다 🎉
+              </div>
+            )}
+          </div>
+        </aside>
+      )}
+
+      <!-- GitHub Edit & Source Link -->
+      {filePath && (
+        <div class="mt-8 pt-4 pb-2 border-t border-zinc-200/80 dark:border-zinc-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+          <a
+            href={`https://github.com/frhyme/frhyme.github.io/blob/master/src/content/posts/${filePath}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+          >
+            <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+            <span>GitHub에서 이 글의 마크다운 원본 보기 &amp; 수정 제안</span>
+          </a>
+          <span class="font-mono text-[11px] text-zinc-400 select-all">src/content/posts/{filePath}</span>
+        </div>
+      )}
+
       <!-- Related Posts Section -->
       {relatedPosts && relatedPosts.length > 0 && (
-        <section class="mt-12 pt-8 border-t border-zinc-200/80 dark:border-zinc-800/80">
+        <section class="mt-8 pt-8 border-t border-zinc-200/80 dark:border-zinc-800/80">
           <div class="flex items-center justify-between mb-4">
             <h3 class="text-xs uppercase tracking-wider font-bold text-zinc-400 dark:text-zinc-500 flex items-center gap-1.5 font-mono">
               <span class="text-blue-500">💡</span>
@@ -399,22 +495,32 @@ if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite'
         }
       }
 
-      // 1. Code blocks: copy buttons & language tags
+      // 1. Code blocks: copy buttons, language tags & macOS window dots
       const pres = document.querySelectorAll('.prose pre');
       pres.forEach((pre) => {
         pre.style.position = 'relative';
 
+        // macOS 3-color window dots
+        const dots = document.createElement('div');
+        dots.className = 'code-window-dots absolute top-3 left-3.5 flex items-center gap-1.5 select-none pointer-events-none';
+        dots.innerHTML = `
+          <span class="w-2.5 h-2.5 rounded-full bg-rose-500/70 inline-block"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-500/70 inline-block"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/70 inline-block"></span>
+        `;
+        pre.appendChild(dots);
+
         // Language tag badge
         const lang = pre.dataset.language || (pre.className.match(/language-(\w+)/) ? pre.className.match(/language-(\w+)/)[1] : '');
         if (lang && lang !== 'plaintext' && lang !== 'text') {
-          pre.style.paddingTop = '2.3rem';
+          pre.style.paddingTop = '2.4rem';
           const langBadge = document.createElement('span');
           langBadge.className =
-            'code-lang-badge absolute top-2 left-3 px-2 py-0.5 text-[10px] font-mono font-semibold rounded-md border border-zinc-700/80 bg-zinc-800/80 text-zinc-400 select-none uppercase tracking-wider pointer-events-none';
+            'code-lang-badge absolute top-2 left-16 px-2 py-0.5 text-[10px] font-mono font-semibold rounded-md border border-zinc-700/80 bg-zinc-800/80 text-zinc-400 select-none uppercase tracking-wider pointer-events-none';
           langBadge.textContent = lang;
           pre.appendChild(langBadge);
         } else {
-          pre.style.paddingTop = '2rem';
+          pre.style.paddingTop = '2.2rem';
         }
 
         // Copy button
