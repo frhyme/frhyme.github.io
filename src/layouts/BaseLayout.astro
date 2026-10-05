@@ -8,6 +8,7 @@ interface Props {
   description?: string;
   image?: string;
   articleDate?: string;
+  breadcrumbs?: Array<{ name: string; url: string }>;
 }
 
 const {
@@ -15,6 +16,7 @@ const {
   description = 'study, code, re-study - 개발 지식 저장소',
   image = '/assets/images/og-default.png',
   articleDate,
+  breadcrumbs,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -139,6 +141,23 @@ const fullTitle = title === 'frhyme.code' ? title : `${title} : frhyme.code`;
             }
       )}
     />
+
+    <!-- BreadcrumbList Schema for Google Rich Snippets -->
+    {breadcrumbs && breadcrumbs.length > 0 && (
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: breadcrumbs.map((bc, idx) => ({
+            '@type': 'ListItem',
+            position: idx + 1,
+            name: bc.name,
+            item: bc.url.startsWith('http') ? bc.url : new URL(bc.url, Astro.site).toString(),
+          })),
+        })}
+      />
+    )}
   </head>
   <body class="flex flex-col min-h-screen relative overflow-x-hidden selection:bg-blue-500/20 selection:text-blue-900 dark:selection:text-blue-200">
     <!-- Ambient top glow for Vercel/Linear technical aesthetic -->

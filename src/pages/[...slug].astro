@@ -109,18 +109,85 @@ export async function getStaticPaths() {
         date: postMetaList[idx].date,
       }));
 
+    // Series Sequential Navigator (1편 -> N편 순서)
+    function getSeriesKey(category: string, tags: string[]): string | null {
+      const lowerCat = (category || '').toLowerCase();
+      const tagSet = new Set((tags || []).map((t) => t.toLowerCase().trim()));
+      if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite')) {
+        return 'networkx';
+      }
+      if (lowerCat === 'algorithm' || tagSet.has('algorithm') || tagSet.has('tree') || tagSet.has('linkedlist') || tagSet.has('dp')) {
+        return 'algorithm';
+      }
+      if (lowerCat === 'java' || tagSet.has('java')) {
+        return 'java';
+      }
+      if (lowerCat === 'python' || tagSet.has('python')) {
+        return 'python';
+      }
+      return null;
+    }
+
+    const seriesTitles: Record<string, string> = {
+      networkx: 'NetworkX & 그래프 데이터 사이언스',
+      python: 'Python Deep-Dive & 내부 메커니즘',
+      algorithm: '자료구조 & 코딩 테스트 문제 해결 패턴',
+      java: 'Java & 엔터프라이즈 객체지향 아키텍처',
+    };
+
+    const seriesKey = getSeriesKey(post.data.category || '', post.data.tags || []);
+    let seriesNav = null;
+    if (seriesKey) {
+      // Collect matching posts in chronological order (step 1 -> step N)
+      const chronPosts = [...sortedPosts]
+        .reverse()
+        .filter((p) => getSeriesKey(p.data.category || '', p.data.tags || []) === seriesKey);
+      const sIdx = chronPosts.findIndex((p) => p.id === post.id);
+      if (sIdx !== -1) {
+        seriesNav = {
+          seriesId: seriesKey,
+          seriesName: seriesTitles[seriesKey],
+          seriesUrl: `/series/${seriesKey}/`,
+          currentIndex: sIdx + 1,
+          totalCount: chronPosts.length,
+          prevPost:
+            sIdx > 0
+              ? {
+                  title: chronPosts[sIdx - 1].data.title,
+                  url: getPostUrl(chronPosts[sIdx - 1]),
+                }
+              : null,
+          nextPost:
+            sIdx < chronPosts.length - 1
+              ? {
+                  title: chronPosts[sIdx + 1].data.title,
+                  url: getPostUrl(chronPosts[sIdx + 1]),
+                }
+              : null,
+        };
+      }
+    }
+
     return {
       params: {
         slug: routeSlug,
       },
-      props: { post, identifier, prevPost, nextPost, relatedPosts },
+      props: {
+        post,
+        identifier,
+        prevPost,
+        nextPost,
+        relatedPosts,
+        seriesNav,
+        filePath: post.id,
+      },
     };
   });
 }
 
 import { cleanExcerpt, getReadingTime } from '../utils/excerpt';
 
-const { post, identifier, prevPost, nextPost, relatedPosts } = Astro.props;
+const { post, identifier, prevPost, nextPost, relatedPosts, seriesNav, filePath } = Astro.props;
 const { Content, headings } = await render(post);
 
 const description = post.data.description || cleanExcerpt(post.body);
@@ -137,6 +204,8 @@ const readingTimeMinutes = getReadingTime(post.body);
   prevPost={prevPost}
   nextPost={nextPost}
   relatedPosts={relatedPosts}
+  seriesNav={seriesNav}
+  filePath={filePath}
   readingTime={readingTimeMinutes}
   description={description}
 >
