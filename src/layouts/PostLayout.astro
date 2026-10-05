@@ -52,6 +52,14 @@ const formattedDate = date ? new Date(date).toISOString().split('T')[0] : '';
 const currentUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
 
+// Outdated content calculation (3+ years old)
+const postDate = date ? new Date(date) : null;
+const now = new Date();
+const yearsAgo = postDate
+  ? Math.floor((now.getTime() - postDate.getTime()) / (1000 * 60 * 60 * 24 * 365.25))
+  : 0;
+const isOutdated = yearsAgo >= 3;
+
 // Check if post belongs to one of the 4 signature curated series
 const lowerCategory = (category || '').toLowerCase();
 const tagSet = new Set((tags || []).map((t) => t.toLowerCase().trim()));
@@ -211,6 +219,21 @@ if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite'
             </ul>
           </details>
         </div>
+      )}
+
+      <!-- Outdated Post Notice Banner -->
+      {isOutdated && (
+        <aside class="mb-8 p-3.5 sm:p-4 rounded-2xl border border-amber-500/25 bg-amber-50/60 dark:bg-amber-950/20 text-xs text-amber-900 dark:text-amber-200 flex items-start gap-3 shadow-2xs">
+          <span class="text-base sm:text-lg shrink-0 select-none">💡</span>
+          <div class="leading-relaxed">
+            <p class="font-bold text-amber-950 dark:text-amber-100 text-xs sm:text-sm">
+              작성된 지 {yearsAgo}년 이상 지난 아티클입니다 ({formattedDate})
+            </p>
+            <p class="text-amber-800/80 dark:text-amber-300/80 mt-0.5">
+              이 글은 작성된 지 시간이 다소 경과하여 최신 라이브러리/프레임워크 버전, 의존성 패키지 또는 언어 문법과 일부 차이가 있을 수 있으니 참고해 주시기 바랍니다.
+            </p>
+          </div>
+        </aside>
       )}
 
       <!-- Markdown Prose Content -->
@@ -449,7 +472,7 @@ if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite'
         });
       }
 
-      // 3. Image Zoom / Lightbox modal
+      // 3. Image Zoom / Lightbox modal & Alt Caption
       const lightbox = document.getElementById('image-lightbox');
       const lightboxImg = document.getElementById('lightbox-img');
       const lightboxClose = document.getElementById('lightbox-close');
@@ -468,6 +491,16 @@ if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite'
             document.body.style.overflow = 'hidden';
           }
         });
+
+        // Image caption from alt attribute
+        const alt = (img.getAttribute('alt') || '').trim();
+        const lowerAlt = alt.toLowerCase();
+        if (alt && lowerAlt !== 'pic' && lowerAlt !== 'image' && lowerAlt !== 'img' && lowerAlt !== 'photo' && !img.nextElementSibling?.classList.contains('img-caption')) {
+          const caption = document.createElement('figcaption');
+          caption.className = 'img-caption text-center text-xs text-zinc-500 dark:text-zinc-400 mt-2 mb-4 font-mono select-none';
+          caption.textContent = `▲ ${alt}`;
+          img.insertAdjacentElement('afterend', caption);
+        }
       });
 
       function closeLightbox() {
@@ -528,6 +561,79 @@ if (tagSet.has('networkx') || tagSet.has('centrality') || tagSet.has('bipartite'
         if (link.hostname && link.hostname !== window.location.hostname) {
           link.setAttribute('target', '_blank');
           link.setAttribute('rel', 'noopener noreferrer');
+        }
+      });
+
+      // 7. GFM Alerts (Note, Tip, Important, Warning, Caution)
+      const blockquotes = document.querySelectorAll('.prose blockquote');
+      blockquotes.forEach((bq) => {
+        const firstP = bq.querySelector('p');
+        if (!firstP) return;
+        const text = firstP.innerHTML.trim();
+        const match = text.match(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\](?:\s*<br\s*\/?>|\s*\n)?\s*([\s\S]*)$/i);
+        if (match) {
+          const type = match[1].toUpperCase();
+          const remaining = match[2];
+          if (remaining.trim()) {
+            firstP.innerHTML = remaining;
+          } else {
+            firstP.remove();
+          }
+          bq.classList.add('gfm-alert', `gfm-alert-${type.toLowerCase()}`);
+
+          const header = document.createElement('div');
+          header.className = 'flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider mb-2 select-none';
+
+          let icon = 'ℹ️';
+          let label = 'NOTE';
+          if (type === 'TIP') { icon = '💡'; label = 'TIP'; }
+          else if (type === 'IMPORTANT') { icon = '📌'; label = 'IMPORTANT'; }
+          else if (type === 'WARNING') { icon = '⚠️'; label = 'WARNING'; }
+          else if (type === 'CAUTION') { icon = '🚨'; label = 'CAUTION'; }
+
+          header.innerHTML = `<span>${icon}</span><span>${label}</span>`;
+          bq.insertBefore(header, bq.firstChild);
+        }
+      });
+
+      // 8. Heading Section Deep Links (Hover anchor & copy link)
+      const proseHeadings = document.querySelectorAll('.prose h2, .prose h3, .prose h4');
+      proseHeadings.forEach((h) => {
+        if (!h.id) return;
+        h.classList.add('group');
+        const anchor = document.createElement('a');
+        anchor.href = `#${h.id}`;
+        anchor.className =
+          'heading-anchor inline-flex items-center ml-2 text-zinc-400 dark:text-zinc-500 hover:text-blue-600 dark:hover:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity no-underline font-mono text-sm font-normal select-none cursor-pointer';
+        anchor.setAttribute('aria-label', `Link to ${h.textContent}`);
+        anchor.title = '섹션 링크 복사하기';
+        anchor.innerHTML = `
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+          </svg>
+        `;
+        anchor.addEventListener('click', async (e) => {
+          e.preventDefault();
+          const url = new URL(window.location.href);
+          url.hash = h.id;
+          history.pushState(null, '', url.toString());
+          h.scrollIntoView({ behavior: 'smooth' });
+          try {
+            await navigator.clipboard.writeText(url.toString());
+            showToast('해당 섹션 링크가 복사되었습니다.');
+          } catch (err) {}
+        });
+        h.appendChild(anchor);
+      });
+
+      // 9. Responsive Table Wrapper
+      const tables = document.querySelectorAll('.prose table');
+      tables.forEach((table) => {
+        if (table.parentElement && !table.parentElement.classList.contains('table-wrapper')) {
+          const wrapper = document.createElement('div');
+          wrapper.className = 'table-wrapper overflow-x-auto my-6 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-2xs';
+          table.parentNode.insertBefore(wrapper, table);
+          wrapper.appendChild(table);
         }
       });
     })();

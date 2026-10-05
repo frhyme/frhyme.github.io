@@ -20,7 +20,7 @@ export default defineConfig({
     }),
     shikiConfig: {
       theme: 'github-dark',
-      wrap: true,
+      wrap: false,
     },
   },
 });
