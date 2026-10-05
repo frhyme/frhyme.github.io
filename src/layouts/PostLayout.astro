@@ -40,6 +40,7 @@ interface Props {
     nextPost: { title: string; url: string } | null;
   } | null;
   filePath?: string;
+  tldr?: string;
   readingTime?: number;
   description?: string;
 }
@@ -56,6 +57,7 @@ const {
   relatedPosts = [],
   seriesNav,
   filePath,
+  tldr,
   readingTime,
   description,
 } = Astro.props;
@@ -273,6 +275,18 @@ const breadcrumbs = [
         </aside>
       )}
 
+      <!-- Article TL;DR Summary Box (Google Featured Snippet optimized) -->
+      {tldr && (
+        <aside class="mb-8 p-4 rounded-2xl border border-blue-500/20 bg-blue-50/40 dark:bg-blue-950/20 text-xs flex items-start gap-3 shadow-2xs">
+          <div class="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 font-mono font-bold text-[10px] shrink-0 mt-0.5 select-none uppercase tracking-wider">
+            TL;DR
+          </div>
+          <p class="leading-relaxed text-zinc-700 dark:text-zinc-300 font-medium">
+            {tldr}
+          </p>
+        </aside>
+      )}
+
       <!-- Markdown Prose Content -->
       <div class="prose dark:prose-invert">
         <slot />
@@ -336,6 +350,35 @@ const breadcrumbs = [
           <span class="font-mono text-[11px] text-zinc-400 select-all">src/content/posts/{filePath}</span>
         </div>
       )}
+
+      <!-- Topic Hubs & Internal Knowledge Links -->
+      <div class="mt-8 pt-6 border-t border-zinc-200/80 dark:border-zinc-800/80">
+        <div class="flex flex-wrap items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+          <span class="font-semibold text-zinc-700 dark:text-zinc-300 mr-1">🔗 연관 지식 허브:</span>
+          <a
+            href={`/categories/${category.toLowerCase()}/`}
+            class="px-2.5 py-1 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 font-mono text-[11px] transition-colors"
+          >
+            📂 {category} 카테고리
+          </a>
+          {seriesInfo && (
+            <a
+              href={seriesInfo.url}
+              class="px-2.5 py-1 rounded-lg border border-blue-500/30 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 font-medium text-[11px] hover:border-blue-500 transition-colors"
+            >
+              {seriesInfo.icon} {seriesInfo.title.split(' ')[0]} 커리큘럼
+            </a>
+          )}
+          {tags.slice(0, 3).map((t) => (
+            <a
+              href={`/tags/${t.toLowerCase()}/`}
+              class="px-2.5 py-1 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/40 text-zinc-600 dark:text-zinc-400 hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 font-mono text-[11px] transition-colors"
+            >
+              #{t}
+            </a>
+          ))}
+        </div>
+      </div>
 
       <!-- Related Posts Section -->
       {relatedPosts && relatedPosts.length > 0 && (
@@ -523,6 +566,17 @@ const breadcrumbs = [
           pre.style.paddingTop = '2.2rem';
         }
 
+        // Detect Error Log / Traceback in code block
+        const codeText = pre.querySelector('code')?.innerText || pre.innerText;
+        if (/traceback \(most recent call last\)|exception:|error:|syntaxerror:|typeerror:/i.test(codeText)) {
+          pre.classList.add('border-rose-500/30', 'bg-rose-950/10');
+          const errBadge = document.createElement('span');
+          errBadge.className =
+            'code-error-badge absolute top-2 right-20 px-2 py-0.5 text-[10px] font-mono font-semibold rounded-md border border-rose-500/30 bg-rose-500/10 text-rose-400 select-none';
+          errBadge.textContent = '🚨 Error Log';
+          pre.appendChild(errBadge);
+        }
+
         // Copy button
         const btn = document.createElement('button');
         btn.type = 'button';
@@ -702,11 +756,21 @@ const breadcrumbs = [
         }
       });
 
-      // 8. Heading Section Deep Links (Hover anchor & copy link)
+      // 8. Heading Section Deep Links & Error Indicator
       const proseHeadings = document.querySelectorAll('.prose h2, .prose h3, .prose h4');
       proseHeadings.forEach((h) => {
         if (!h.id) return;
         h.classList.add('group');
+
+        // Error heading indicator if discussing an error/issue
+        const hText = h.textContent || '';
+        if (/\b(error|exception|traceback|warning|fail|failed|문제|오류|에러)\b/i.test(hText) && !h.querySelector('.error-icon')) {
+          const errIcon = document.createElement('span');
+          errIcon.className = 'error-icon inline-flex items-center text-rose-500 mr-1.5 select-none text-sm';
+          errIcon.textContent = '⚠️';
+          h.insertBefore(errIcon, h.firstChild);
+        }
+
         const anchor = document.createElement('a');
         anchor.href = `#${h.id}`;
         anchor.className =

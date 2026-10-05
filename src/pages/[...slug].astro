@@ -2,6 +2,8 @@
 import { getCollection, render } from 'astro:content';
 import PostLayout from '../layouts/PostLayout.astro';
 
+import { cleanTitle } from '../utils/seoTitle';
+
 export async function getStaticPaths() {
   function getPostUrl(post: any) {
     if (post.data.permalink) {
@@ -22,7 +24,7 @@ export async function getStaticPaths() {
 
   const postMetaList = sortedPosts.map((p) => ({
     id: p.id,
-    title: p.data.title,
+    title: cleanTitle(p.data.title),
     url: getPostUrl(p),
     category: p.data.category || 'others',
     tags: (p.data.tags || []).map((t: string) => t.toLowerCase().trim()).filter(Boolean),
@@ -63,7 +65,7 @@ export async function getStaticPaths() {
     const nextPost =
       index > 0
         ? {
-            title: sortedPosts[index - 1].data.title,
+            title: cleanTitle(sortedPosts[index - 1].data.title),
             url: getPostUrl(sortedPosts[index - 1]),
             category: sortedPosts[index - 1].data.category || 'others',
           }
@@ -73,41 +75,11 @@ export async function getStaticPaths() {
     const prevPost =
       index < sortedPosts.length - 1
         ? {
-            title: sortedPosts[index + 1].data.title,
+            title: cleanTitle(sortedPosts[index + 1].data.title),
             url: getPostUrl(sortedPosts[index + 1]),
             category: sortedPosts[index + 1].data.category || 'others',
           }
         : null;
-
-    // Calculate related posts using tag/category overlap
-    const currentMeta = postMetaList[index];
-    const scoreMap = new Map<number, number>();
-
-    currentMeta.tags.forEach((tag) => {
-      const matchingIndices = tagIndex.get(tag) || [];
-      matchingIndices.forEach((idx) => {
-        if (idx !== index) {
-          scoreMap.set(idx, (scoreMap.get(idx) || 0) + 3);
-        }
-      });
-    });
-
-    const sameCatIndices = catIndex.get(currentMeta.category.toLowerCase()) || [];
-    sameCatIndices.forEach((idx) => {
-      if (idx !== index) {
-        scoreMap.set(idx, (scoreMap.get(idx) || 0) + 1);
-      }
-    });
-
-    const relatedPosts = Array.from(scoreMap.entries())
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 3)
-      .map(([idx]) => ({
-        title: postMetaList[idx].title,
-        url: postMetaList[idx].url,
-        category: postMetaList[idx].category,
-        date: postMetaList[idx].date,
-      }));
 
     // Series Sequential Navigator (1편 -> N편 순서)
     function getSeriesKey(category: string, tags: string[]): string | null {
@@ -136,6 +108,46 @@ export async function getStaticPaths() {
     };
 
     const seriesKey = getSeriesKey(post.data.category || '', post.data.tags || []);
+
+    // Calculate related posts using series weight + tag/category overlap
+    const currentMeta = postMetaList[index];
+    const scoreMap = new Map<number, number>();
+
+    currentMeta.tags.forEach((tag) => {
+      const matchingIndices = tagIndex.get(tag) || [];
+      matchingIndices.forEach((idx) => {
+        if (idx !== index) {
+          scoreMap.set(idx, (scoreMap.get(idx) || 0) + 3);
+        }
+      });
+    });
+
+    const sameCatIndices = catIndex.get(currentMeta.category.toLowerCase()) || [];
+    sameCatIndices.forEach((idx) => {
+      if (idx !== index) {
+        scoreMap.set(idx, (scoreMap.get(idx) || 0) + 1);
+      }
+    });
+
+    // If both belong to the same signature series, boost score for strong internal linking
+    if (seriesKey) {
+      postMetaList.forEach((p, idx) => {
+        if (idx !== index && getSeriesKey(p.category, p.tags) === seriesKey) {
+          scoreMap.set(idx, (scoreMap.get(idx) || 0) + 5);
+        }
+      });
+    }
+
+    const relatedPosts = Array.from(scoreMap.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 4)
+      .map(([idx]) => ({
+        title: postMetaList[idx].title,
+        url: postMetaList[idx].url,
+        category: postMetaList[idx].category,
+        date: postMetaList[idx].date,
+      }));
+
     let seriesNav = null;
     if (seriesKey) {
       // Collect matching posts in chronological order (step 1 -> step N)
@@ -153,14 +165,14 @@ export async function getStaticPaths() {
           prevPost:
             sIdx > 0
               ? {
-                  title: chronPosts[sIdx - 1].data.title,
+                  title: cleanTitle(chronPosts[sIdx - 1].data.title),
                   url: getPostUrl(chronPosts[sIdx - 1]),
                 }
               : null,
           nextPost:
             sIdx < chronPosts.length - 1
               ? {
-                  title: chronPosts[sIdx + 1].data.title,
+                  title: cleanTitle(chronPosts[sIdx + 1].data.title),
                   url: getPostUrl(chronPosts[sIdx + 1]),
                 }
               : null,
@@ -185,17 +197,18 @@ export async function getStaticPaths() {
   });
 }
 
-import { cleanExcerpt, getReadingTime } from '../utils/excerpt';
+import { cleanExcerpt, extractTldr, getReadingTime } from '../utils/excerpt';
 
 const { post, identifier, prevPost, nextPost, relatedPosts, seriesNav, filePath } = Astro.props;
 const { Content, headings } = await render(post);
 
-const description = post.data.description || cleanExcerpt(post.body);
+const tldr = post.data.description || extractTldr(post.body);
 const readingTimeMinutes = getReadingTime(post.body);
+const optimizedTitle = cleanTitle(post.data.title);
 ---
 
 <PostLayout
-  title={post.data.title}
+  title={optimizedTitle}
   date={post.data.date}
   category={post.data.category}
   tags={post.data.tags}
@@ -206,8 +219,9 @@ const readingTimeMinutes = getReadingTime(post.body);
   relatedPosts={relatedPosts}
   seriesNav={seriesNav}
   filePath={filePath}
+  tldr={tldr}
   readingTime={readingTimeMinutes}
-  description={description}
+  description={tldr}
 >
   <Content />
 </PostLayout>

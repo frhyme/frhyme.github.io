@@ -3,6 +3,8 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { cleanExcerpt, getReadingTime } from '../../utils/excerpt';
 
+import { cleanTitle } from '../../utils/seoTitle';
+
 export async function getStaticPaths() {
   function getPostUrl(post: any) {
     if (post.data.permalink) {
@@ -85,7 +87,7 @@ export async function getStaticPaths() {
 
     const curriculum = matchingPosts.map((p, idx) => ({
       index: idx + 1,
-      title: p.data.title,
+      title: cleanTitle(p.data.title),
       url: getPostUrl(p),
       date: p.data.date ? new Date(p.data.date).toISOString().split('T')[0] : '',
       readingTime: getReadingTime(p.body),
